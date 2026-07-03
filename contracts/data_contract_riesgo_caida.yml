@@ -1,19 +1,13 @@
 name: data_contract_riesgo_caida
-version: 0.1.0
+version: 0.6.1
 owner: Chief Data Officer + Chief Economist
+contract_type: raw_or_audit_learning_dataset
 business_question: ¿Qué separaciones tienen mayor riesgo de caída a 30 días?
-grain: una fila por operación/separación
-source_type: synthetic_sample_for_learning
-privacy: no contiene datos reales ni PII
+grain: una fila por operación/separación o una fila por operación/snapshot según fuente
+source_type: synthetic_or_sperant_gold_audit
+privacy: no debe contener PII en repositorio
+model_ready_contract: contracts/model_ready_contract_riesgo_caida.yml
 columns:
-  - name: id_operacion
-    type: string
-    required: true
-    description: Identificador sintético de la operación.
-  - name: fecha_separacion
-    type: date
-    required: true
-    description: Fecha de separación.
   - name: proyecto
     type: string
     required: true
@@ -50,12 +44,19 @@ columns:
   - name: caida_30d
     type: integer
     required: true
-    description: Variable objetivo. 1 si la separación cae dentro de 30 días.
+    description: Variable objetivo. 1 si la separación cae dentro del horizonte definido.
+audit_columns_allowed_in_raw_not_model_ready:
+  - fecha_caida
+  - fecha_firma
+  - motivo_caida
+  - fecha_anulacion
 quality_rules:
   - precio_departamento > 0
   - dias_en_tuberia >= 0
   - caida_30d in [0, 1]
+  - audit columns may exist only before model-ready transformation
 output:
-  gold_table: gold.fact_riesgo_caida_training
+  audit_gold_table: gold.fact_riesgo_caida_training
+  model_ready_table: gold.riesgo_caida_training_model_ready
   model_endpoint: /predict/riesgo-caida
   decision_owner: asesor_comercial

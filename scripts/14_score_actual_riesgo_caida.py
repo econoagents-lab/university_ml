@@ -11,7 +11,7 @@ import joblib
 import pandas as pd
 
 from src.mlu.official_rules import FEATURE_COLUMNS
-from src.mlu.leakage import assert_no_forbidden_columns
+from src.mlu.leakage import audit_forbidden_columns, assert_no_forbidden_columns, drop_forbidden_columns
 
 DEFAULT_INPUT = Path("data/processed/gold/riesgo_caida_scoring_actual.parquet")
 DEFAULT_MODEL = Path("models/riesgo_caida_model.joblib")
@@ -52,16 +52,24 @@ def main() -> None:
         raise FileNotFoundError(f"No existe modelo: {model_path}")
 
     df = pd.read_parquet(input_path)
-    assert_no_forbidden_columns(df, context="scoring_actual_input")
+
+    # El input puede venir desde una tabla audit/raw con columnas futuras.
+    # No se permite que esas columnas sobrevivan en X ni en el ranking operativo.
+    input_audit = audit_forbidden_columns(df)
+
     for col in FEATURE_COLUMNS:
         if col not in df.columns:
             df[col] = False if col == "tiene_cuota_inicial" else 0
-    X = df[FEATURE_COLUMNS].copy()
+
+    X = df.loc[:, FEATURE_COLUMNS].copy()
     X["tiene_cuota_inicial"] = X["tiene_cuota_inicial"].astype(bool).astype(int)
     assert_no_forbidden_columns(X, context="scoring_X")
+
     model = joblib.load(model_path)
     scores = model.predict_proba(X)[:, 1]
-    out = df.copy()
+
+    out, removed_forbidden = drop_forbidden_columns(df)
+    assert_no_forbidden_columns(out, context="scoring_output_before_business_columns")
     out["riesgo_caida"] = scores
     out["nivel_riesgo"] = out["riesgo_caida"].map(risk_level)
     out["decision_recomendada"] = out["riesgo_caida"].map(decision)
@@ -69,6 +77,7 @@ def main() -> None:
     out["valor_esperado_en_riesgo"] = (out["riesgo_caida"] * out["precio_departamento"].fillna(0) * 0.15).round(2)
     out = out.sort_values(["valor_esperado_en_riesgo", "riesgo_caida"], ascending=False)
     out["ranking_prioridad"] = range(1, len(out) + 1)
+    assert_no_forbidden_columns(out, context="scoring_output_final")
 
     out_parquet = Path(args.out_parquet)
     out_csv = Path(args.out_csv)
@@ -80,6 +89,8 @@ def main() -> None:
         "rows": int(len(out)),
         "riesgo_promedio": float(out["riesgo_caida"].mean()),
         "valor_esperado_en_riesgo_total": float(out["valor_esperado_en_riesgo"].sum()),
+        "forbidden_columns_present_in_input_audit": input_audit.forbidden_present,
+        "forbidden_columns_removed_from_output": removed_forbidden,
         "output_parquet": str(out_parquet),
         "output_csv": str(out_csv),
     }

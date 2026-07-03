@@ -1,7 +1,9 @@
-version: 0.5.0
+version: 0.6.1
 name: riesgo_caida_training_model_ready
 status: active
 owner: data_science_mlops
+contract_type: model_ready_dataset
+strict_forbidden_columns: true
 primary_key:
   - codigo_proforma
   - codigo_unidad
@@ -27,8 +29,17 @@ forbidden_columns:
   - fecha_anulacion
   - momento_caida
   - dias_hasta_caida
+allowed_audit_sources:
+  - data/processed/gold/riesgo_caida_training.parquet
+  - data/processed/gold/riesgo_caida_training_inferred.parquet
+model_ready_output:
+  - data/processed/gold/riesgo_caida_training_model_ready.parquet
 quality_rules:
   - target must be binary 0/1
+  - forbidden columns must not be present in model-ready dataset
   - forbidden columns must not be present in model matrix X
   - precio_departamento must be positive when available
   - dias_en_tuberia must be non-negative
+notes:
+  - fecha_caida may exist in raw/gold audit to build the target.
+  - fecha_caida must be removed before feature selection, training, scoring and operational ranking.

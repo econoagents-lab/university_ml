@@ -3,13 +3,30 @@
   "output_path": "data\\processed\\gold\\riesgo_caida_training_model_ready.parquet",
   "rows": 3518,
   "target_rate": 0.07276861853325753,
-  "forbidden_columns_removed": [
+  "forbidden_columns_present_in_input_audit": [
     "fecha_caida",
-    "motivo_caida",
-    "estado_final",
-    "fecha_firma",
-    "fecha_anulacion",
-    "momento_caida",
-    "dias_hasta_caida"
+    "fecha_firma"
+  ],
+  "forbidden_columns_present_in_model_ready": [],
+  "model_ready_columns": [
+    "codigo_proforma",
+    "codigo_unidad",
+    "fecha_separacion",
+    "fecha_snapshot",
+    "snapshot_day",
+    "source_system",
+    "dataset_version",
+    "proyecto",
+    "asesor",
+    "medio_captacion",
+    "canal_agrupado",
+    "dormitorios",
+    "precio_departamento",
+    "dias_en_tuberia",
+    "tiene_cuota_inicial",
+    "cambios_unidad",
+    "interacciones_ult_7d",
+    "descuento_pct",
+    "caida_30d"
   ]
 }

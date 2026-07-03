@@ -1,0 +1,76 @@
+﻿{
+    "project_root":  "C:\\Repos\\freelance\\ml_university_ready",
+    "mode":  "sperant",
+    "generated_at":  "2026-07-03T11:23:38",
+    "counts":  {
+                   "ok":  9,
+                   "warning":  0,
+                   "fail":  0,
+                   "skipped":  0
+               },
+    "results":  [
+                    {
+                        "step":  "Activate virtual environment",
+                        "status":  "ok",
+                        "detail":  ".venv activo.",
+                        "log_path":  "",
+                        "timestamp":  "2026-07-03T11:23:13"
+                    },
+                    {
+                        "step":  "Prepare model-ready dataset",
+                        "status":  "ok",
+                        "detail":  "Completado.",
+                        "log_path":  "C:\\Repos\\freelance\\ml_university_ready\\reports\\executive_runs\\20260703_112313\\logs\\prepare_model_ready.log",
+                        "timestamp":  "2026-07-03T11:23:14"
+                    },
+                    {
+                        "step":  "Train/evaluate official model",
+                        "status":  "ok",
+                        "detail":  "Completado.",
+                        "log_path":  "C:\\Repos\\freelance\\ml_university_ready\\reports\\executive_runs\\20260703_112313\\logs\\train_evaluate_official.log",
+                        "timestamp":  "2026-07-03T11:23:20"
+                    },
+                    {
+                        "step":  "Score current risk",
+                        "status":  "ok",
+                        "detail":  "Completado.",
+                        "log_path":  "C:\\Repos\\freelance\\ml_university_ready\\reports\\executive_runs\\20260703_112313\\logs\\score_actual.log",
+                        "timestamp":  "2026-07-03T11:23:24"
+                    },
+                    {
+                        "step":  "Evaluate lift deciles",
+                        "status":  "ok",
+                        "detail":  "Completado.",
+                        "log_path":  "C:\\Repos\\freelance\\ml_university_ready\\reports\\executive_runs\\20260703_112313\\logs\\lift_deciles.log",
+                        "timestamp":  "2026-07-03T11:23:30"
+                    },
+                    {
+                        "step":  "Initialize feedback loop",
+                        "status":  "ok",
+                        "detail":  "Completado.",
+                        "log_path":  "C:\\Repos\\freelance\\ml_university_ready\\reports\\executive_runs\\20260703_112313\\logs\\feedback_init.log",
+                        "timestamp":  "2026-07-03T11:23:31"
+                    },
+                    {
+                        "step":  "Merge feedback outcomes",
+                        "status":  "ok",
+                        "detail":  "Completado.",
+                        "log_path":  "C:\\Repos\\freelance\\ml_university_ready\\reports\\executive_runs\\20260703_112313\\logs\\feedback_merge.log",
+                        "timestamp":  "2026-07-03T11:23:32"
+                    },
+                    {
+                        "step":  "Generate CEO brief",
+                        "status":  "ok",
+                        "detail":  "Completado.",
+                        "log_path":  "C:\\Repos\\freelance\\ml_university_ready\\reports\\executive_runs\\20260703_112313\\logs\\ceo_brief.log",
+                        "timestamp":  "2026-07-03T11:23:33"
+                    },
+                    {
+                        "step":  "Pytest",
+                        "status":  "ok",
+                        "detail":  "Completado.",
+                        "log_path":  "C:\\Repos\\freelance\\ml_university_ready\\reports\\executive_runs\\20260703_112313\\logs\\pytest.log",
+                        "timestamp":  "2026-07-03T11:23:38"
+                    }
+                ]
+}
