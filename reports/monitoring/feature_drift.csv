@@ -2,7 +2,7 @@ feature,drift_metric,status,reference_rows,current_rows,reference_null_rate,curr
 proyecto,6.718554791480698,fail,2638,880,0.0,0.0
 asesor,4.917388793971117,fail,2638,880,0.0,0.0
 descuento_pct,1.8585865108747286,fail,2638,880,0.0,0.0
-precio_departamento,0.43669378887585636,fail,2638,880,0.0,0.0
+precio_departamento,0.4356558535669853,fail,2638,880,0.0,0.0
 tiene_cuota_inicial,0.09735616432658302,ok,2638,880,0.0,0.0
 dias_en_tuberia,0.0015530112378483063,ok,2638,880,0.0,0.0
 medio_captacion,0.0,ok,2638,880,0.0,0.0

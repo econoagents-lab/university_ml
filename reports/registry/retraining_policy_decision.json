@@ -7,8 +7,8 @@
   ],
   "should_promote_challenger": false,
   "promotion_candidate": null,
-  "current_champion": "riesgo_caida_random_forest_dataset_riesgo_caida_sperant_2026_07_03_v005_c02",
-  "registered_models": 15,
-  "registered_datasets": 5,
-  "comparison_rows": 15
+  "current_champion": "riesgo_caida_random_forest_dataset_riesgo_caida_crm_2026_07_03_v001_c02",
+  "registered_models": 3,
+  "registered_datasets": 1,
+  "comparison_rows": 3
 }

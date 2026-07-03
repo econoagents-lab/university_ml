@@ -1,7 +1,7 @@
 {
   "rows": 880,
-  "brier_score": 0.28854244499609066,
-  "mean_abs_calibration_gap": 0.45319903648750903,
-  "max_abs_calibration_gap": 0.5517250154341173,
+  "brier_score": 0.2646625087420126,
+  "mean_abs_calibration_gap": 0.42624710583107517,
+  "max_abs_calibration_gap": 0.5274874046172663,
   "bins": 10
 }

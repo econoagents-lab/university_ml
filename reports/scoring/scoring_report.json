@@ -1,9 +1,9 @@
 {
   "rows": 763,
-  "riesgo_promedio": 0.42306487261605374,
-  "valor_esperado_en_riesgo_total": 22542416.42,
+  "riesgo_promedio": 0.39820558935159694,
+  "valor_esperado_en_riesgo_total": 21232580.48,
   "forbidden_columns_present_in_input_audit": [],
   "forbidden_columns_removed_from_output": [],
-  "output_parquet": "data\\processed\\scoring\\ranking_operaciones_riesgo_caida.parquet",
-  "output_csv": "data\\processed\\scoring\\ranking_operaciones_riesgo_caida.csv"
+  "output_parquet": "data/processed/scoring/ranking_operaciones_riesgo_caida.parquet",
+  "output_csv": "data/processed/scoring/ranking_operaciones_riesgo_caida.csv"
 }

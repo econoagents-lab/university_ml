@@ -1,0 +1,13 @@
+{
+  "corpus_dir": "corpus",
+  "documents": 7,
+  "chunks": 11,
+  "embedding_model": "local_tfidf_fallback",
+  "techniques": [
+    "citations",
+    "guardrails",
+    "multi_query_expansion",
+    "light_reranking",
+    "text_to_sql"
+  ]
+}

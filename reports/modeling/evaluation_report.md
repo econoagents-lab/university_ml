@@ -17,19 +17,19 @@ Modelo gobernado de riesgo de caída entrenado sobre dataset model-ready sin col
 
 | Métrica | Valor |
 |---|---:|
-| ROC AUC | 0.499 |
-| Average Precision | 0.112 |
-| Threshold recomendado | 0.50 |
-| Precision | 0.095 |
-| Recall | 0.844 |
-| F1 | 0.171 |
+| ROC AUC | 0.517 |
+| Average Precision | 0.115 |
+| Threshold recomendado | 0.40 |
+| Precision | 0.090 |
+| Recall | 0.961 |
+| F1 | 0.165 |
 
 ## Confusion Matrix
 
 | Real / Predicho | Predice No Caída | Predice Caída |
 |---|---:|---:|
-| Real No Caída | 185 | 618 |
-| Real Caída | 12 | 65 |
+| Real No Caída | 57 | 746 |
+| Real Caída | 3 | 74 |
 
 ## Lectura económica
 

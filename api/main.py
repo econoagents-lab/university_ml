@@ -206,3 +206,17 @@ def auth_whoami(role: str = Query("public"), _auth: bool = Depends(optional_api_
 def production_release_checklist():
     path = PROJECT_ROOT / "docs" / "PRODUCTION_RELEASE_CHECKLIST.md"
     return {"path": str(path), "text": path.read_text(encoding="utf-8") if path.exists() else "not_found"}
+
+
+@app.get("/metadata/uni-final-rag")
+def get_uni_final_rag_metadata():
+    """
+    Yo expongo metadata del entregable UNI para demostrar trazabilidad del sistema RAG.
+    """
+    return {
+        "version": "v1.1_uni_final_rag_economic_hypothesis_pack",
+        "domain": "inteligencia comercial inmobiliaria",
+        "techniques": ["citations", "guardrails", "multi_query_expansion", "reranking", "text_to_sql", "ragas_like_evaluation"],
+        "notebook": "notebooks/UNI_Final_RAG_Asistente_Economico_Inmobiliario.ipynb",
+        "safe_mode": True,
+    }

@@ -20,3 +20,12 @@ duckdb>=0.10
 redshift-connector>=2.1
 
 tabulate>=0.9
+
+# v1.1 UNI RAG pack
+pypdf>=4.0.0
+beautifulsoup4>=4.12.0
+rank-bm25>=0.2.2
+gradio>=4.44.0
+# Opcionales para embeddings reales y FAISS; el código tiene fallback sklearn si no están instalados.
+faiss-cpu>=1.8.0
+sentence-transformers>=3.0.0

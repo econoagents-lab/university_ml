@@ -1,0 +1,21 @@
+metrics:
+  - name: conversion_lead_separacion
+    formula: separaciones / leads
+    grain: proyecto_mes
+    decision: "Medir eficiencia de captación."
+  - name: conversion_separacion_minuta
+    formula: minutas / separaciones
+    grain: proyecto_mes
+    decision: "Medir efectividad de cierre."
+  - name: caida_rate
+    formula: caidas / separaciones
+    grain: proyecto_mes
+    decision: "Detectar pérdida comercial."
+  - name: valor_en_riesgo
+    formula: score_riesgo * precio_departamento
+    grain: operacion
+    decision: "Priorizar seguimiento."
+  - name: brecha_precio_m2
+    formula: precio_m2_proyecto - precio_m2_mercado_distrito
+    grain: proyecto_mes
+    decision: "Revisar pricing y stock."

@@ -23,7 +23,7 @@
     },
     {
       "feature": "precio_departamento",
-      "drift_metric": 0.43669378887585636,
+      "drift_metric": 0.4356558535669853,
       "status": "fail"
     },
     {

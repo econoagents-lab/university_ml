@@ -1,0 +1,50 @@
+project: asistente_economico_rag_inmobiliario
+version: 1.1
+language: es
+principle: "Primero hipótesis económica, luego evidencia, después RAG."
+
+hypotheses:
+  - id: H01
+    name: "Tubería envejecida aumenta riesgo de caída"
+    question: "¿Las separaciones con más días en tubería tienen mayor probabilidad de caer?"
+    unit_of_analysis: "separacion_snapshot"
+    target: "caida_30d"
+    expected_sign: "positivo"
+    features: [dias_en_tuberia, proyecto, asesor, precio_departamento, medio_captacion]
+    business_action: "Priorizar seguimiento de operaciones antiguas en tubería."
+
+  - id: H02
+    name: "Demora en cuota inicial reduce conversión a minuta"
+    question: "¿Más días hasta cuota inicial reducen la probabilidad de minuta?"
+    unit_of_analysis: "separacion"
+    target: "firma_minuta"
+    expected_sign: "negativo"
+    features: [dias_hasta_cuota_inicial, canal, asesor, proyecto, precio_departamento]
+    business_action: "Alertar separaciones sin cuota inicial temprana."
+
+  - id: H03
+    name: "Brecha precio-mercado presiona stock lento y caída"
+    question: "¿Un precio por m² superior al mercado distrital aumenta stock lento o caída?"
+    unit_of_analysis: "unidad_mes"
+    target: "stock_lento_o_caida"
+    expected_sign: "positivo"
+    features: [precio_m2_unidad, precio_m2_mercado_distrito, brecha_precio_m2, dormitorios]
+    business_action: "Revisar pricing, descuento o campaña."
+
+  - id: H04
+    name: "Especialización asesor-proyecto mejora conversión"
+    question: "¿Los asesores con más experiencia en un proyecto convierten mejor?"
+    unit_of_analysis: "asesor_proyecto_mes"
+    target: "conversion_sep_minuta"
+    expected_sign: "positivo"
+    features: [separaciones_previas_asesor_proyecto, minutas_previas_asesor_proyecto, proyecto, canal]
+    business_action: "Asignar leads por especialización comercial."
+
+  - id: H05
+    name: "Migración de canal revela cierre asistido"
+    question: "¿Las ventas que migran entre canales requieren una estrategia comercial distinta?"
+    unit_of_analysis: "venta"
+    target: "firma_minuta"
+    expected_sign: "ambiguo"
+    features: [canal_inicial, canal_cierre, migro_canal, asesor]
+    business_action: "Diseñar rutas de cierre por canal."

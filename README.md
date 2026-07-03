@@ -1,16 +1,14 @@
-# Machine Learning University v1.0 · Production Release
+# Machine Learning University v1.1 · UNI Final RAG Economic Hypothesis Pack
 
-No es un curso de notebooks. Es una universidad ejecutable para convertir data CRM/Sperant en modelos gobernados, APIs, dashboards, feedback loops y decisiones económicas.
+Esta versión convierte la plataforma de ML inmobiliario en un entregable final para UNI: un **Sistema RAG vertical de dominio inmobiliario** con hipótesis económicas, corpus propio, FAISS/fallback vectorial, guardrails, Text-to-SQL, evaluación RAGAS-like y demo Gradio.
 
-## Qué trae v1.0
+## Qué problema resuelve
 
-- API FastAPI productiva con metadata, dashboard, feedback y health checks.
-- Autenticación API Key opcional para despliegue local/Railway.
-- Feedback store local-first con contrato SQL para PostgreSQL/Supabase.
-- Dashboard HTML ejecutivo y cola diaria de decisión.
-- Model registry, champion/challenger, dataset versioning y retraining policy.
-- Production readiness report, release checklist y demo pack.
-- Modo CRM-first con demo/sample data como simulador seguro.
+Yo construyo un asistente que permite consultar y explicar decisiones comerciales inmobiliarias: riesgo de caída, conversión, tubería, pricing, stock, drift y acciones comerciales. El sistema responde con evidencia recuperada, citas y restricciones de seguridad.
+
+## Modo seguro
+
+No incluyo `.env`, credenciales ni datos personales reales. El corpus incluido es `sample_safe` y está anonimizado para evaluación académica.
 
 ## Ejecución rápida
 
@@ -18,30 +16,37 @@ No es un curso de notebooks. Es una universidad ejecutable para convertir data C
 python -m venv .venv
 .\.venv\Scripts\Activate.ps1
 pip install -r requirements.txt
-python scripts/45_run_v10_production_release.py
+python scripts/51_run_v11_uni_final_rag_pack.py
 pytest -q
-uvicorn api.main:app --reload
 ```
 
-Swagger: `http://127.0.0.1:8000/docs`
-Dashboard: `http://127.0.0.1:8000/dashboard/riesgo-caida`
-
-## Seguridad
-
-Por defecto, `MLU_AUTH_ENABLED=false` para no romper el laboratorio local. Para activar API key:
-
-```powershell
-$env:MLU_AUTH_ENABLED="true"
-$env:MLU_API_KEY="cambia_esto"
-uvicorn api.main:app --reload
-```
-
-Enviar header:
+## Notebook final UNI
 
 ```text
-X-API-Key: cambia_esto
+notebooks/UNI_Final_RAG_Asistente_Economico_Inmobiliario.ipynb
 ```
 
-## Principio rector
+## Demo Gradio
 
-El modelo no termina en un score. Termina en una cola de decisión, un responsable, una acción, un feedback y una medición del resultado.
+```powershell
+python app/gradio_app.py
+```
+
+## Artefactos principales
+
+```text
+reports/uni_final/
+├── RAGAS_LIKE_RESULTS.csv
+├── RAGAS_LIKE_SUMMARY.md
+├── BENCHMARK_BASE_VS_ADVANCED.md
+├── DEMO_ANSWERS.md
+└── FINAL_TECHNICAL_REPORT.md
+```
+
+## Comentarios en primera persona
+
+Los módulos nuevos tienen comentarios y docstrings en primera persona. Ejemplo:
+
+```python
+# Yo limpio el corpus antes de indexarlo para evitar exponer PII.
+```
