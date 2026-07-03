@@ -30,3 +30,13 @@ reports/alerts/UNI_READINESS_ALERT.md
 reports/alerts/ALERTS_MANIFEST.md
 site/alerts/index.html
 ```
+
+## Validación v1.2.1
+
+```powershell
+python scripts/66_build_all_alerts.py
+python scripts/68_export_alerts_static_site.py
+pytest -q
+```
+
+En GitHub Actions, `RAG Quality Gate` ahora es amigable por defecto: publica alertas y artifacts sin fallar, salvo que ejecutes manualmente con `fail_on_alert=true`.

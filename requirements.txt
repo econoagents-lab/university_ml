@@ -29,3 +29,5 @@ gradio>=4.44.0
 # Opcionales para embeddings reales y FAISS; el código tiene fallback sklearn si no están instalados.
 faiss-cpu>=1.8.0
 sentence-transformers>=3.0.0
+
+nbformat>=5.10

@@ -15,3 +15,10 @@
 ## v1.1.0 - UNI Final RAG Economic Hypothesis Pack
 
 - Paquete RAG económico con hipótesis, corpus seguro, Text-to-SQL, guardrails y RAGAS-like.
+
+## v1.2.1 - Colab notebook + soft GitHub gates
+
+- Corrijo celda del notebook final que generaba `SyntaxError: unterminated string literal` en Colab.
+- Cambio `rag_quality_gate.yml` para no fallar por defecto ante alertas `warning`.
+- Mantengo modo estricto con `fail_on_alert=true`.
+- Agrego `tests/test_notebook_syntax.py` para compilar celdas del notebook final.

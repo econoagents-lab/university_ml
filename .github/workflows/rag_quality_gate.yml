@@ -4,9 +4,9 @@ on:
   workflow_dispatch:
     inputs:
       fail_on_alert:
-        description: "Fail workflow if RAG quality is below threshold"
+        description: "Fail workflow if RAG quality is below threshold. Default false: alerts should notify, not block."
         required: false
-        default: "true"
+        default: "false"
   push:
     paths:
       - "reports/uni_final/RAGAS_LIKE_SUMMARY.md"
@@ -41,10 +41,10 @@ jobs:
         id: ragas
         continue-on-error: true
         run: |
-          if [ "${{ github.event.inputs.fail_on_alert }}" = "false" ]; then
-            python scripts/63_validate_ragas_quality_gate.py
-          else
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ] && [ "${{ github.event.inputs.fail_on_alert }}" = "true" ]; then
             python scripts/63_validate_ragas_quality_gate.py --fail-on-alert
+          else
+            python scripts/63_validate_ragas_quality_gate.py
           fi
 
       - name: Publish RAG summary
@@ -89,8 +89,8 @@ jobs:
             reports/alerts/RAGAS_ISSUE_BODY.md
             evaluation/eval_questions.csv
 
-      - name: Fail if requested and alert exists
-        if: always() && github.event.inputs.fail_on_alert != 'false'
+      - name: Fail if explicitly requested and alert exists
+        if: always() && github.event_name == 'workflow_dispatch' && github.event.inputs.fail_on_alert == 'true'
         run: |
           python - <<'PY'
           import json, pathlib, sys
