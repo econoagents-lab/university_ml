@@ -1,0 +1,33 @@
+{
+  "rows": 3518,
+  "target_rate": 0.07276861853325753,
+  "unit_focus": "departamentos",
+  "snapshot_days": [
+    7,
+    14,
+    30
+  ],
+  "columns": [
+    "codigo_proforma",
+    "codigo_unidad",
+    "fecha_separacion",
+    "fecha_snapshot",
+    "snapshot_day",
+    "proyecto",
+    "asesor",
+    "medio_captacion",
+    "canal_agrupado",
+    "dormitorios",
+    "precio_departamento",
+    "dias_en_tuberia",
+    "tiene_cuota_inicial",
+    "cambios_unidad",
+    "interacciones_ult_7d",
+    "descuento_pct",
+    "fecha_firma",
+    "fecha_caida",
+    "caida_30d",
+    "source_system",
+    "dataset_version"
+  ]
+}

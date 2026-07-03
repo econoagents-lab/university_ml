@@ -1,0 +1,32 @@
+{
+  "model_version": "0.5.0-official_rules",
+  "total_rows": 3518,
+  "training_rows": 2638,
+  "test_rows": 880,
+  "target_rate": 0.07276861853325753,
+  "roc_auc": 0.4988678818068607,
+  "average_precision": 0.11215738925394667,
+  "recommended_threshold": 0.5,
+  "precision": 0.0951683748169839,
+  "recall": 0.8441558441558441,
+  "f1": 0.17105263157894737,
+  "confusion_matrix": {
+    "tn": 185,
+    "fp": 618,
+    "fn": 12,
+    "tp": 65
+  },
+  "feature_columns": [
+    "proyecto",
+    "asesor",
+    "medio_captacion",
+    "canal_agrupado",
+    "dormitorios",
+    "precio_departamento",
+    "dias_en_tuberia",
+    "tiene_cuota_inicial",
+    "cambios_unidad",
+    "interacciones_ult_7d",
+    "descuento_pct"
+  ]
+}

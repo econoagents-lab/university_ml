@@ -1,0 +1,13 @@
+﻿STEP: Profile Sperant sources
+COMMAND: python scripts/09_profile_sperant_sources.py
+EXIT_CODE: 0
+DURATION_SECONDS: 1.28
+--- OUTPUT ---
+     table_name   rows  columns  null_cells  duplicate_rows
+       clientes 137312       56     2835470               0
+   datos_extras  20561        7           0               0
+       procesos   4782       79      140774               0
+proforma_unidad  41548       28      107970               0
+      proyectos     18       27          78               0
+       unidades   3237       41       54329               0
+OK: perfil guardado en C:\Repos\freelance\ml_university_ready\data\metadata\sperant_table_profile.parquet

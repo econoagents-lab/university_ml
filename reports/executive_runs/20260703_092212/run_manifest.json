@@ -1,0 +1,70 @@
+﻿{
+    "project_root":  "C:\\Repos\\freelance\\ml_university_ready",
+    "mode":  "sperant",
+    "run_dir":  "C:\\Repos\\freelance\\ml_university_ready\\reports\\executive_runs\\20260703_092212",
+    "generated_at":  "2026-07-03T09:24:36",
+    "counts":  {
+                   "ok":  6,
+                   "warning":  2,
+                   "fail":  0,
+                   "skipped":  0
+               },
+    "results":  [
+                    {
+                        "step":  "Activate virtual environment",
+                        "status":  "ok",
+                        "detail":  ".venv activo.",
+                        "log_path":  "",
+                        "timestamp":  "2026-07-03T09:22:12"
+                    },
+                    {
+                        "step":  "Normalize local parquets",
+                        "status":  "warning",
+                        "detail":  "No se encontraron parquets locales nuevos para copiar.",
+                        "log_path":  "",
+                        "timestamp":  "2026-07-03T09:22:12"
+                    },
+                    {
+                        "step":  "Extract Redshift to Parquet",
+                        "status":  "warning",
+                        "detail":  "Completado con warnings. Revisar log.",
+                        "log_path":  "C:\\Repos\\freelance\\ml_university_ready\\reports\\executive_runs\\20260703_092212\\logs\\extract_redshift.log",
+                        "timestamp":  "2026-07-03T09:24:28"
+                    },
+                    {
+                        "step":  "Profile Sperant sources",
+                        "status":  "ok",
+                        "detail":  "Completado.",
+                        "log_path":  "C:\\Repos\\freelance\\ml_university_ready\\reports\\executive_runs\\20260703_092212\\logs\\profile_sperant.log",
+                        "timestamp":  "2026-07-03T09:24:30"
+                    },
+                    {
+                        "step":  "Build Sperant training dataset",
+                        "status":  "ok",
+                        "detail":  "Completado.",
+                        "log_path":  "C:\\Repos\\freelance\\ml_university_ready\\reports\\executive_runs\\20260703_092212\\logs\\build_sperant_training.log",
+                        "timestamp":  "2026-07-03T09:24:31"
+                    },
+                    {
+                        "step":  "Build inferred rules gold table",
+                        "status":  "ok",
+                        "detail":  "Completado.",
+                        "log_path":  "C:\\Repos\\freelance\\ml_university_ready\\reports\\executive_runs\\20260703_092212\\logs\\build_inferred_rules.log",
+                        "timestamp":  "2026-07-03T09:24:32"
+                    },
+                    {
+                        "step":  "Validate foundations",
+                        "status":  "ok",
+                        "detail":  "Completado.",
+                        "log_path":  "C:\\Repos\\freelance\\ml_university_ready\\reports\\executive_runs\\20260703_092212\\logs\\validate_foundations.log",
+                        "timestamp":  "2026-07-03T09:24:33"
+                    },
+                    {
+                        "step":  "Train from Sperant",
+                        "status":  "ok",
+                        "detail":  "Completado.",
+                        "log_path":  "C:\\Repos\\freelance\\ml_university_ready\\reports\\executive_runs\\20260703_092212\\logs\\train_from_sperant.log",
+                        "timestamp":  "2026-07-03T09:24:36"
+                    }
+                ]
+}

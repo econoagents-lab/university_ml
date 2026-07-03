@@ -1,0 +1,16 @@
+metrics:
+  - name: tasa_caida_30d
+    formula: caidas_30d / separaciones
+    grain: mes, proyecto, asesor, canal
+    owner: Chief Economist
+    decision: priorizar seguimiento y proteger ventas en riesgo
+  - name: valor_esperado_en_riesgo
+    formula: riesgo_caida * precio_departamento * recovery_rate
+    grain: operación
+    owner: Gerencia Comercial
+    decision: priorizar acciones por impacto económico esperado
+  - name: conversion_separacion_minuta
+    formula: minutas / separaciones
+    grain: mes, proyecto, asesor, canal
+    owner: Comercial
+    decision: detectar cuellos de botella de cierre

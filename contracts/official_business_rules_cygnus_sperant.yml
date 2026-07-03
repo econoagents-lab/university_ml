@@ -1,0 +1,52 @@
+version: 0.5.0-official_rules
+status: draft_official_pending_business_signoff
+owner: Chief Data Officer + Chief Economist Intelligence Factory
+source_system: Sperant / Redshift
+business_product: riesgo_caida
+
+unit_of_analysis:
+  grain: codigo_proforma + codigo_unidad + fecha_snapshot
+  target: caida_30d
+  prediction_horizon_days: 30
+  focus_initial: departamentos
+
+rules:
+  separacion_valida:
+    definition: codigo_proforma no nulo + fecha_separacion no nula + flujo/estado compatible con separación comercial
+    official_date: fecha_separacion
+  minuta_valida:
+    definition: operación con firma/minuta válida antes o en snapshot
+    official_date: fecha_firma
+  caida_valida:
+    definition: anulación/caída registrada con fecha oficial posterior a separación
+    official_date: fecha_caida
+  tuberia:
+    definition: separación activa al snapshot, sin firma ni caída antes o en snapshot
+
+model_ready_dataset:
+  path: data/processed/gold/riesgo_caida_training_model_ready.parquet
+  allowed_features:
+    - proyecto
+    - asesor
+    - medio_captacion
+    - canal_agrupado
+    - dormitorios
+    - precio_departamento
+    - dias_en_tuberia
+    - tiene_cuota_inicial
+    - cambios_unidad
+    - interacciones_ult_7d
+    - descuento_pct
+
+forbidden_columns:
+  - fecha_caida
+  - motivo_caida
+  - estado_final
+  - fecha_firma
+  - fecha_anulacion
+  - momento_caida
+  - dias_hasta_caida
+
+anti_leakage_policy:
+  fail_if_forbidden_in_X: true
+  warning_if_forbidden_in_audit_gold: true

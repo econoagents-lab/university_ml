@@ -1,0 +1,7 @@
+﻿STEP: Build Sperant training dataset
+COMMAND: python scripts/10_build_sperant_training_dataset.py --unit-focus departamentos
+EXIT_CODE: 0
+DURATION_SECONDS: 1.1
+--- OUTPUT ---
+OK: training gold -> C:\Repos\freelance\ml_university_ready\data\processed\gold\riesgo_caida_training.parquet | rows=3518 | target_rate=7.28%
+OK: scoring actual -> C:\Repos\freelance\ml_university_ready\data\processed\gold\riesgo_caida_scoring_actual.parquet | rows=763

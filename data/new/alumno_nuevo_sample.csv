@@ -1,0 +1,3 @@
+id_operacion,fecha_separacion,proyecto,asesor,medio_captacion,canal_agrupado,tipo_unidad,dormitorios,precio_departamento,dias_en_tuberia,tiene_cuota_inicial,cambios_unidad,interacciones_ult_7d,descuento_pct
+NEW-0001,2026-06-01,Proyecto Aurora,Asesor Norte,facebook,digital,departamento,3,620000,45,False,1,0,0.03
+NEW-0002,2026-06-02,Proyecto Bruma,Asesora Sur,sala de ventas,tradicional,departamento,2,410000,8,True,0,3,0.02

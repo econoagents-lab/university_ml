@@ -1,0 +1,48 @@
+feature,importance
+num__descuento_pct,0.2360389553883998
+num__precio_departamento,0.18943685969290175
+cat__asesor_Enzo Villanueva,0.14846129642628925
+cat__proyecto_Edificio Cuba Connect,0.05484246860524745
+num__dormitorios,0.03682602036412173
+cat__proyecto_Edificio Saenz,0.03314082713837009
+cat__proyecto_Edificio Santa Cruz Infinite,0.03237668236193315
+cat__proyecto_Los Jardines de Urteaga,0.030714745701432962
+cat__proyecto_Edificio Mariategui,0.02210502135392335
+cat__asesor_Cinthia Román Villavicencio,0.02088787530078541
+num__dias_en_tuberia,0.020236357924790255
+cat__proyecto_Matera,0.019809514583863937
+cat__proyecto_Tizón y Bueno,0.018531340406804108
+cat__asesor_Yomira  Pacheco,0.015632546570642062
+cat__proyecto_Sialia,0.015029332158986351
+cat__asesor_Nelly Román Villavicencio,0.01310817665299668
+cat__proyecto_Edificio Valdizan,0.012908317655647318
+cat__asesor_Joceline Arizabal Corimanya,0.010125033816928352
+cat__asesor_Luis Peñaloza,0.009027922045741007
+cat__proyecto_Edificio Urbanzen,0.0074264706257872095
+bool__tiene_cuota_inicial,0.006973390683343949
+cat__asesor_Antonio Martinez,0.0065015513163003726
+cat__proyecto_Modena,0.0052086633099809815
+cat__proyecto_Alicanto,0.005175163970461297
+cat__asesor_Ivan La Riva,0.005002933384471778
+cat__asesor_Percy Soto,0.004563731333014943
+cat__proyecto_Torre Nápoles,0.004256813185672537
+cat__asesor_Edwing Soller,0.004181129201617832
+cat__asesor_Ana Lucia DelSolar,0.004034814647282622
+cat__proyecto_Capadocia,0.0038661913950199917
+cat__proyecto_Fenix,0.0028618234577769803
+cat__asesor_Jackeline Espichan Medina,0.0007080293394646077
+cat__proyecto_Edificio Unique,0.0
+num__interacciones_ult_7d,0.0
+num__cambios_unidad,0.0
+cat__asesor_Ingrid Valencia,0.0
+cat__asesor_Fernando Chamochumbi,0.0
+cat__asesor_Andres Vargas,0.0
+cat__proyecto_Tradiciones Prime,0.0
+cat__asesor_Kenyi Arotinco,0.0
+cat__asesor_Luis Enrique Del Solar Cáceres,0.0
+cat__asesor_Karlo  Vargas,0.0
+cat__asesor_Ornella Muñoz Alfaro,0.0
+cat__asesor_Sonia Paredes,0.0
+cat__asesor_Silvia Orellana,0.0
+cat__medio_captacion_manual,0.0
+cat__canal_agrupado_sin_clasificar,0.0

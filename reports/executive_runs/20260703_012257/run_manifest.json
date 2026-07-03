@@ -1,0 +1,97 @@
+﻿{
+    "project_root":  "C:\\Repos\\freelance\\ml_university_ready",
+    "timestamp":  "20260703_012257",
+    "mode":  "safe",
+    "install_deps":  true,
+    "extract_limit":  0,
+    "run_tests":  false,
+    "readiness":  "yellow",
+    "steps_total":  3,
+    "steps_success":  2,
+    "steps_failed":  1,
+    "warnings":  [
+
+                 ],
+    "recommendations":  [
+                            "Add or extract real Sperant parquet files into data/raw/sperant for real-data training."
+                        ],
+    "inventory":  {
+                      "parquet_raw_count":  0,
+                      "parquet_processed_count":  0,
+                      "csv_count":  3,
+                      "model_files_count":  1,
+                      "contract_files_count":  8,
+                      "notebook_count":  16,
+                      "script_count":  12,
+                      "api_py_count":  3,
+                      "docs_md_count":  20,
+                      "data_raw_size_mb":  0,
+                      "data_processed_size_mb":  0,
+                      "reports_size_mb":  0.04
+                  },
+    "artifact_availability":  [
+                                  {
+                                      "path":  "reports\\foundations\\foundation_audit_riesgo_caida.json",
+                                      "exists":  true,
+                                      "size_kb":  0.62
+                                  },
+                                  {
+                                      "path":  "reports\\foundations\\inferred_rules_build_report.json",
+                                      "exists":  false,
+                                      "size_kb":  0
+                                  },
+                                  {
+                                      "path":  "reports\\sperant_profile.json",
+                                      "exists":  false,
+                                      "size_kb":  0
+                                  },
+                                  {
+                                      "path":  "reports\\model_report.json",
+                                      "exists":  false,
+                                      "size_kb":  0
+                                  },
+                                  {
+                                      "path":  "models\\model_card.md",
+                                      "exists":  true,
+                                      "size_kb":  0.72
+                                  }
+                              ],
+    "steps":  [
+                  {
+                      "name":  "Install requirements",
+                      "command":  "python -m pip install -r requirements.txt",
+                      "status":  "success",
+                      "exit_code":  0,
+                      "started_at":  "2026-07-03T01:22:58",
+                      "finished_at":  "2026-07-03T01:23:03",
+                      "duration_seconds":  5.53,
+                      "log_file":  "C:\\Repos\\freelance\\ml_university_ready\\reports\\executive_runs\\20260703_012257\\logs\\02_install_requirements.log",
+                      "critical":  false,
+                      "error":  null
+                  },
+                  {
+                      "name":  "Validate foundations",
+                      "command":  "python \"C:\\Repos\\freelance\\ml_university_ready\\scripts\\12_validate_foundations.py\"",
+                      "status":  "success",
+                      "exit_code":  0,
+                      "started_at":  "2026-07-03T01:23:03",
+                      "finished_at":  "2026-07-03T01:23:05",
+                      "duration_seconds":  1.96,
+                      "log_file":  "C:\\Repos\\freelance\\ml_university_ready\\reports\\executive_runs\\20260703_012257\\logs\\10_validate_foundations.log",
+                      "critical":  false,
+                      "error":  null
+                  },
+                  {
+                      "name":  "Build inferred rules gold table",
+                      "command":  "python \"C:\\Repos\\freelance\\ml_university_ready\\scripts\\13_build_from_inferred_rules.py\"",
+                      "status":  "failed",
+                      "exit_code":  null,
+                      "started_at":  "2026-07-03T01:23:05",
+                      "finished_at":  "2026-07-03T01:23:07",
+                      "duration_seconds":  1.41,
+                      "log_file":  "C:\\Repos\\freelance\\ml_university_ready\\reports\\executive_runs\\20260703_012257\\logs\\11_build_inferred_rules.log",
+                      "critical":  false,
+                      "error":  "Traceback (most recent call last):"
+                  }
+              ]
+}

@@ -1,0 +1,53 @@
+contract_name: feedback_contract_riesgo_caida
+version: 0.6.0
+owner: Chief Data Officer + Chief Economist
+objective: registrar acciones comerciales posteriores al score y resultados observados
+primary_key:
+  - codigo_proforma
+  - codigo_unidad
+  - fecha_score
+required_columns:
+  - codigo_proforma
+  - codigo_unidad
+  - fecha_score
+  - riesgo_caida
+  - nivel_riesgo
+  - ranking_prioridad
+  - responsable
+  - accion_tomada
+  - fecha_accion
+  - resultado_7d
+  - resultado_30d
+  - caida_real_30d
+  - comentario
+allowed_values:
+  accion_tomada:
+    - contactado_cliente
+    - contactado_banco
+    - renegociacion_precio
+    - regularizo_cuota_inicial
+    - cambio_unidad
+    - escalado_gerencia
+    - sin_accion
+    - pendiente
+  resultado_7d:
+    - sigue_tuberia
+    - firmo_minuta
+    - cayo
+    - reprogramado
+    - sin_actualizacion
+    - pendiente
+  resultado_30d:
+    - sigue_tuberia
+    - firmo_minuta
+    - cayo
+    - reprogramado
+    - sin_actualizacion
+    - pendiente
+rules:
+  score_original_is_immutable: true
+  feedback_is_append_only: true
+  future_outcomes_must_not_enter_same_snapshot_features: true
+outputs:
+  template_csv: data/feedback/feedback_log_template.csv
+  merged_outcomes: data/feedback/feedback_outcomes_merged.parquet

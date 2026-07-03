@@ -1,0 +1,133 @@
+﻿{
+    "project_root":  "C:\\Repos\\freelance\\ml_university_ready",
+    "timestamp":  "20260703_012428",
+    "mode":  "sperant",
+    "install_deps":  false,
+    "extract_limit":  1000,
+    "run_tests":  false,
+    "readiness":  "red",
+    "steps_total":  6,
+    "steps_success":  2,
+    "steps_failed":  4,
+    "warnings":  [
+
+                 ],
+    "recommendations":  [
+                            "Add or extract real Sperant parquet files into data/raw/sperant for real-data training."
+                        ],
+    "inventory":  {
+                      "parquet_raw_count":  0,
+                      "parquet_processed_count":  0,
+                      "csv_count":  3,
+                      "model_files_count":  1,
+                      "contract_files_count":  8,
+                      "notebook_count":  16,
+                      "script_count":  12,
+                      "api_py_count":  3,
+                      "docs_md_count":  20,
+                      "data_raw_size_mb":  0,
+                      "data_processed_size_mb":  0,
+                      "reports_size_mb":  0.05
+                  },
+    "artifact_availability":  [
+                                  {
+                                      "path":  "reports\\foundations\\foundation_audit_riesgo_caida.json",
+                                      "exists":  true,
+                                      "size_kb":  0.62
+                                  },
+                                  {
+                                      "path":  "reports\\foundations\\inferred_rules_build_report.json",
+                                      "exists":  false,
+                                      "size_kb":  0
+                                  },
+                                  {
+                                      "path":  "reports\\sperant_profile.json",
+                                      "exists":  false,
+                                      "size_kb":  0
+                                  },
+                                  {
+                                      "path":  "reports\\model_report.json",
+                                      "exists":  false,
+                                      "size_kb":  0
+                                  },
+                                  {
+                                      "path":  "models\\model_card.md",
+                                      "exists":  true,
+                                      "size_kb":  0.72
+                                  }
+                              ],
+    "steps":  [
+                  {
+                      "name":  "Validate foundations",
+                      "command":  "python \"C:\\Repos\\freelance\\ml_university_ready\\scripts\\12_validate_foundations.py\"",
+                      "status":  "success",
+                      "exit_code":  0,
+                      "started_at":  "2026-07-03T01:24:28",
+                      "finished_at":  "2026-07-03T01:24:30",
+                      "duration_seconds":  1.85,
+                      "log_file":  "C:\\Repos\\freelance\\ml_university_ready\\reports\\executive_runs\\20260703_012428\\logs\\10_validate_foundations.log",
+                      "critical":  false,
+                      "error":  null
+                  },
+                  {
+                      "name":  "Build inferred rules gold table",
+                      "command":  "python \"C:\\Repos\\freelance\\ml_university_ready\\scripts\\13_build_from_inferred_rules.py\"",
+                      "status":  "failed",
+                      "exit_code":  null,
+                      "started_at":  "2026-07-03T01:24:30",
+                      "finished_at":  "2026-07-03T01:24:32",
+                      "duration_seconds":  1.65,
+                      "log_file":  "C:\\Repos\\freelance\\ml_university_ready\\reports\\executive_runs\\20260703_012428\\logs\\11_build_inferred_rules.log",
+                      "critical":  false,
+                      "error":  "Traceback (most recent call last):"
+                  },
+                  {
+                      "name":  "Extract Redshift to Parquet",
+                      "command":  "python \"C:\\Repos\\freelance\\ml_university_ready\\scripts\\00_extract_redshift_to_parquet.py\"",
+                      "status":  "failed",
+                      "exit_code":  null,
+                      "started_at":  "2026-07-03T01:24:32",
+                      "finished_at":  "2026-07-03T01:24:37",
+                      "duration_seconds":  4.85,
+                      "log_file":  "C:\\Repos\\freelance\\ml_university_ready\\reports\\executive_runs\\20260703_012428\\logs\\20_extract_redshift.log",
+                      "critical":  false,
+                      "error":  "C:\\Repos\\freelance\\ml_university_ready\\src\\mlu\\redshift_client.py:97: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy."
+                  },
+                  {
+                      "name":  "Profile Sperant sources",
+                      "command":  "python \"C:\\Repos\\freelance\\ml_university_ready\\scripts\\09_profile_sperant_sources.py\"",
+                      "status":  "success",
+                      "exit_code":  0,
+                      "started_at":  "2026-07-03T01:24:37",
+                      "finished_at":  "2026-07-03T01:24:42",
+                      "duration_seconds":  4.77,
+                      "log_file":  "C:\\Repos\\freelance\\ml_university_ready\\reports\\executive_runs\\20260703_012428\\logs\\21_profile_sperant_sources.log",
+                      "critical":  false,
+                      "error":  null
+                  },
+                  {
+                      "name":  "Build Sperant training dataset",
+                      "command":  "python \"C:\\Repos\\freelance\\ml_university_ready\\scripts\\10_build_sperant_training_dataset.py\"",
+                      "status":  "failed",
+                      "exit_code":  null,
+                      "started_at":  "2026-07-03T01:24:42",
+                      "finished_at":  "2026-07-03T01:24:43",
+                      "duration_seconds":  1.45,
+                      "log_file":  "C:\\Repos\\freelance\\ml_university_ready\\reports\\executive_runs\\20260703_012428\\logs\\22_build_sperant_training.log",
+                      "critical":  false,
+                      "error":  "Traceback (most recent call last):"
+                  },
+                  {
+                      "name":  "Train from Sperant",
+                      "command":  "python \"C:\\Repos\\freelance\\ml_university_ready\\scripts\\11_train_from_sperant.py\"",
+                      "status":  "failed",
+                      "exit_code":  null,
+                      "started_at":  "2026-07-03T01:24:43",
+                      "finished_at":  "2026-07-03T01:24:48",
+                      "duration_seconds":  5.21,
+                      "log_file":  "C:\\Repos\\freelance\\ml_university_ready\\reports\\executive_runs\\20260703_012428\\logs\\23_train_sperant.log",
+                      "critical":  false,
+                      "error":  "No existe data/processed/gold/riesgo_caida_training.parquet. Ejecuta primero scripts/10_build_sperant_training_dataset.py"
+                  }
+              ]
+}

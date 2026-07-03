@@ -1,0 +1,38 @@
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+.ipynb_checkpoints/
+.pytest_cache/
+
+# Real/private data
+/data/raw/*
+/data/private/*
+/data/real/*
+
+# Generated outputs
+reports/figures/*.png
+reports/chapter_summaries/*.md
+reports/exams/*.md
+models/*.joblib
+models/*.pkl
+
+# Keep sample and metadata
+!data/sample/
+!data/sample/*.csv
+!models/model_manifest.json
+!models/model_card.md
+
+# Redshift/Sperant generated data
+/data/raw/sperant/*.parquet
+/data/raw/sperant/*.json
+/data/processed/gold/*.parquet
+/data/processed/silver/*.parquet
+/data/metadata/*.parquet
+/logs/*
+/artifacts/*

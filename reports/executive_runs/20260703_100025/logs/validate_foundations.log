@@ -1,0 +1,33 @@
+﻿STEP: Validate foundations
+COMMAND: python scripts/12_validate_foundations.py
+EXIT_CODE: 0
+DURATION_SECONDS: 0.56
+--- OUTPUT ---
+{
+  "rows": 3518,
+  "missing_required_columns": [],
+  "forbidden_columns_present": [
+    "fecha_caida"
+  ],
+  "target_rate": 0.07276861853325753,
+  "has_snapshot_column": true,
+  "has_minimum_grain": true,
+  "ready_for_training": true,
+  "model_matrix_columns": [
+    "proyecto",
+    "asesor",
+    "medio_captacion",
+    "canal_agrupado",
+    "dormitorios",
+    "precio_departamento",
+    "dias_en_tuberia",
+    "tiene_cuota_inicial",
+    "cambios_unidad",
+    "interacciones_ult_7d",
+    "descuento_pct"
+  ],
+  "model_matrix_rows": 3518,
+  "dataset_path": "C:\\Repos\\freelance\\ml_university_ready\\data\\processed\\gold\\riesgo_caida_training.parquet"
+}
+
+AuditorÝa guardada en: C:\Repos\freelance\ml_university_ready\reports\foundations\foundation_audit_riesgo_caida.json

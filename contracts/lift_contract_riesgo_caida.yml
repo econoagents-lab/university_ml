@@ -1,0 +1,29 @@
+contract_name: lift_contract_riesgo_caida
+version: 0.6.0
+owner: Chief Data Officer + Chief Economist
+metric_family: model_evaluation
+model: riesgo_caida_model
+objective: medir si el ranking concentra caídas reales en los primeros deciles
+input:
+  dataset: data/processed/gold/riesgo_caida_training_model_ready.parquet
+  model: models/riesgo_caida_model.joblib
+  target: caida_30d
+  score: riesgo_caida
+outputs:
+  lift_deciles: reports/modeling/lift_deciles.csv
+  precision_at_k: reports/modeling/precision_at_k.csv
+  report: reports/modeling/lift_report.md
+rules:
+  sort_order: riesgo_caida desc
+  deciles: 10
+  top_decile: decile = 1
+  baseline_rate: mean(caida_30d) on temporal test split
+acceptance:
+  no_forbidden_columns_in_X: true
+  top_decile_lift_should_be_reported: true
+  top_20_capture_rate_should_be_reported: true
+business_use:
+  decile_1: seguimiento inmediato
+  decile_2_3: seguimiento prioritario
+  decile_4_6: monitoreo semanal
+  decile_7_10: seguimiento estándar

@@ -1,0 +1,7 @@
+﻿STEP: Train from Sperant
+COMMAND: $env:MLU_DATA_MODE='sperant'; python scripts/11_train_from_sperant.py
+EXIT_CODE: 0
+DURATION_SECONDS: 3.66
+--- OUTPUT ---
+OK: modelo entrenado con gold table Sperant/Redshift
+ROC AUC: 0.652

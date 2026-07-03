@@ -1,0 +1,15 @@
+{
+  "input_path": "data\\processed\\gold\\riesgo_caida_training.parquet",
+  "output_path": "data\\processed\\gold\\riesgo_caida_training_model_ready.parquet",
+  "rows": 3518,
+  "target_rate": 0.07276861853325753,
+  "forbidden_columns_removed": [
+    "fecha_caida",
+    "motivo_caida",
+    "estado_final",
+    "fecha_firma",
+    "fecha_anulacion",
+    "momento_caida",
+    "dias_hasta_caida"
+  ]
+}

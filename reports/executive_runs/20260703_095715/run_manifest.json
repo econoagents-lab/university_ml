@@ -1,0 +1,77 @@
+﻿{
+    "project_root":  "C:\\Repos\\freelance\\ml_university_ready",
+    "mode":  "full",
+    "run_dir":  "C:\\Repos\\freelance\\ml_university_ready\\reports\\executive_runs\\20260703_095715",
+    "generated_at":  "2026-07-03T09:57:27",
+    "counts":  {
+                   "ok":  6,
+                   "warning":  null,
+                   "fail":  null,
+                   "skipped":  null
+               },
+    "results":  [
+                    {
+                        "step":  "Activate virtual environment",
+                        "status":  "ok",
+                        "detail":  ".venv activo.",
+                        "log_path":  "",
+                        "timestamp":  "2026-07-03T09:57:15"
+                    },
+                    {
+                        "step":  "Normalize local parquets",
+                        "status":  "warning",
+                        "detail":  "No se encontraron parquets locales nuevos para copiar.",
+                        "log_path":  "",
+                        "timestamp":  "2026-07-03T09:57:15"
+                    },
+                    {
+                        "step":  "Extract Redshift to Parquet",
+                        "status":  "skipped",
+                        "detail":  "Omitido por parquets locales existentes.",
+                        "log_path":  "",
+                        "timestamp":  "2026-07-03T09:57:15"
+                    },
+                    {
+                        "step":  "Profile Sperant sources",
+                        "status":  "ok",
+                        "detail":  "Completado.",
+                        "log_path":  "C:\\Repos\\freelance\\ml_university_ready\\reports\\executive_runs\\20260703_095715\\logs\\profile_sperant.log",
+                        "timestamp":  "2026-07-03T09:57:17"
+                    },
+                    {
+                        "step":  "Build Sperant training dataset",
+                        "status":  "ok",
+                        "detail":  "Completado.",
+                        "log_path":  "C:\\Repos\\freelance\\ml_university_ready\\reports\\executive_runs\\20260703_095715\\logs\\build_sperant_training.log",
+                        "timestamp":  "2026-07-03T09:57:18"
+                    },
+                    {
+                        "step":  "Build inferred rules gold table",
+                        "status":  "ok",
+                        "detail":  "Completado.",
+                        "log_path":  "C:\\Repos\\freelance\\ml_university_ready\\reports\\executive_runs\\20260703_095715\\logs\\build_inferred_rules.log",
+                        "timestamp":  "2026-07-03T09:57:19"
+                    },
+                    {
+                        "step":  "Validate foundations",
+                        "status":  "ok",
+                        "detail":  "Completado.",
+                        "log_path":  "C:\\Repos\\freelance\\ml_university_ready\\reports\\executive_runs\\20260703_095715\\logs\\validate_foundations.log",
+                        "timestamp":  "2026-07-03T09:57:19"
+                    },
+                    {
+                        "step":  "Train from Sperant",
+                        "status":  "ok",
+                        "detail":  "Completado.",
+                        "log_path":  "C:\\Repos\\freelance\\ml_university_ready\\reports\\executive_runs\\20260703_095715\\logs\\train_from_sperant.log",
+                        "timestamp":  "2026-07-03T09:57:21"
+                    },
+                    {
+                        "step":  "Pytest",
+                        "status":  "fail",
+                        "detail":  "  C:\\Repos\\freelance\\ml_university_ready\\.venv\\Lib\\site-packages\\joblib\\numpy_pickle.py:207: DeprecationWarning: Setting the shape on a NumPy array has been deprecated in NumPy 2.5. |   As an alternative, you can create a new view using np.reshape (with copy=False if needed). |     array.shape = self.shape |  | -- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html | =========================== short test summary info =========================== | FAILED tests/test_contracts.py::test_data_contract_is_valid - AssertionError:... | ================= 1 failed, 16 passed, 1008 warnings in 2.60s =================",
+                        "log_path":  "C:\\Repos\\freelance\\ml_university_ready\\reports\\executive_runs\\20260703_095715\\logs\\pytest.log",
+                        "timestamp":  "2026-07-03T09:57:27"
+                    }
+                ]
+}

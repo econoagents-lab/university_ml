@@ -1,0 +1,28 @@
+﻿{
+    "project_root":  "C:\\Repos\\freelance\\ml_university_ready",
+    "mode":  "safe",
+    "run_dir":  "C:\\Repos\\freelance\\ml_university_ready\\reports\\executive_runs\\20260703_091937",
+    "generated_at":  "2026-07-03T09:19:38",
+    "counts":  {
+                   "ok":  2,
+                   "warning":  0,
+                   "fail":  0,
+                   "skipped":  0
+               },
+    "results":  [
+                    {
+                        "step":  "Activate virtual environment",
+                        "status":  "ok",
+                        "detail":  ".venv activo.",
+                        "log_path":  "",
+                        "timestamp":  "2026-07-03T09:19:37"
+                    },
+                    {
+                        "step":  "Validate foundations",
+                        "status":  "ok",
+                        "detail":  "Completado.",
+                        "log_path":  "C:\\Repos\\freelance\\ml_university_ready\\reports\\executive_runs\\20260703_091937\\logs\\validate_foundations.log",
+                        "timestamp":  "2026-07-03T09:19:38"
+                    }
+                ]
+}

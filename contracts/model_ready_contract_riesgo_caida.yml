@@ -1,0 +1,34 @@
+version: 0.5.0
+name: riesgo_caida_training_model_ready
+status: active
+owner: data_science_mlops
+primary_key:
+  - codigo_proforma
+  - codigo_unidad
+  - fecha_snapshot
+target: caida_30d
+feature_columns:
+  - proyecto
+  - asesor
+  - medio_captacion
+  - canal_agrupado
+  - dormitorios
+  - precio_departamento
+  - dias_en_tuberia
+  - tiene_cuota_inicial
+  - cambios_unidad
+  - interacciones_ult_7d
+  - descuento_pct
+forbidden_columns:
+  - fecha_caida
+  - motivo_caida
+  - estado_final
+  - fecha_firma
+  - fecha_anulacion
+  - momento_caida
+  - dias_hasta_caida
+quality_rules:
+  - target must be binary 0/1
+  - forbidden columns must not be present in model matrix X
+  - precio_departamento must be positive when available
+  - dias_en_tuberia must be non-negative

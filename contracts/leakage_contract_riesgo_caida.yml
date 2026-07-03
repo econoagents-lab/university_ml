@@ -1,0 +1,35 @@
+contract_name: leakage_contract_riesgo_caida
+version: 0.3.0
+time_column: fecha_snapshot
+target: caida_30d
+horizon_days: 30
+allowed_features:
+  - proyecto
+  - asesor
+  - medio_captacion
+  - canal_agrupado
+  - dormitorios
+  - precio_departamento
+  - dias_en_tuberia
+  - tiene_cuota_inicial
+  - cambios_unidad
+  - interacciones_ult_7d
+  - descuento_pct
+forbidden_columns:
+  - fecha_caida
+  - motivo_caida
+  - estado_final
+  - fecha_firma_futura
+  - fecha_minuta_futura
+  - fecha_anulacion_futura
+  - monto_pagado_posterior_snapshot
+  - estado_cobranza_posterior_snapshot
+rules:
+  - "Toda feature debe existir en o antes de fecha_snapshot."
+  - "Ninguna variable derivada del resultado puede entrar a X."
+  - "Toda feature agregada debe declarar ventana temporal."
+  - "El target debe mirar hacia adelante desde fecha_snapshot."
+minimum_grain:
+  - codigo_proforma
+  - codigo_unidad
+  - fecha_snapshot

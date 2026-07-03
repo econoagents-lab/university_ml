@@ -1,0 +1,11 @@
+{
+  "model_version": "0.6.0-feedback_and_lift",
+  "test_rows": 880,
+  "target_rate_test": 0.0875,
+  "roc_auc_test": 0.4988678818068607,
+  "average_precision_test": 0.11215738925394667,
+  "top_decile_rate": 0.10227272727272728,
+  "top_decile_lift": 1.168831168831169,
+  "top_20_capture_rate": 0.18181818181818182,
+  "total_positives_test": 77
+}

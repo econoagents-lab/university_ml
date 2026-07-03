@@ -1,0 +1,16 @@
+.\run_executive_reporting_bitacora.ps1 -Mode safe -InstallDeps
+
+Copia el .ps1 en la raíz de tu proyecto:
+C:\Repos\freelance\ml_university\
+
+Luego ejecuta:
+
+.\run_executive_reporting_bitacora.ps1 -Mode safe -InstallDeps
+
+Para Sperant/Redshift:
+
+.\run_executive_reporting_bitacora.ps1 -Mode sperant -ExtractLimit 1000
+
+Para intentar todo lo posible:
+
+.\run_executive_reporting_bitacora.ps1 -Mode full -RunTests $true

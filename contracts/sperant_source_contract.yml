@@ -1,0 +1,39 @@
+contract_name: sperant_source_contract
+version: 0.2.0
+owner: Chief Data Officer + Chief Economist
+purpose: Definir las fuentes mínimas de Sperant/Redshift para construir la universidad de Machine Learning.
+security:
+  real_data_policy: No commitear data/raw, data/private ni .env.
+  pii_policy: No publicar documentos, nombres, emails, celulares ni clientes reales.
+required_tables:
+  procesos:
+    grain: evento de proceso comercial por proforma/unidad
+    required_columns:
+      - codigo_proforma
+      - codigo_unidad
+      - nombre_proyecto
+      - tipo_unidad_principal
+      - nombres_usuario
+      - origen_proforma
+      - nombre_flujo
+      - fecha_inicio
+      - fecha_anulacion
+      - precio_venta
+  unidades:
+    grain: unidad inmobiliaria
+    required_columns:
+      - codigo
+      - tipo_unidad
+      - total_habitaciones
+      - area_techada
+      - area_total
+      - precio_lista
+optional_tables:
+  clientes:
+    use: enriquecimiento comercial, cohortes y segmentación, cuidando PII
+  datos_extras:
+    use: variables complementarias de negocio
+  proforma_unidad:
+    use: cruces de precio, asignación, estado y financiamiento
+  fact_leads_enriched:
+    use: lead scoring y conversión lead a minuta

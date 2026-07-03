@@ -1,0 +1,40 @@
+contract_name: decision_contract_riesgo_caida
+version: 0.3.0
+owner_role: jefe_comercial
+model_use_case: riesgo_caida_30d
+business_question: "Qué separaciones activas tienen mayor probabilidad de caer en los próximos 30 días"
+score_output: riesgo_caida
+thresholds:
+  bajo:
+    min: 0.0
+    max: 0.3999
+    action: seguimiento_estandar
+    responsible_role: asesor
+    sla: "durante_la_semana"
+  medio:
+    min: 0.4
+    max: 0.6999
+    action: contacto_priorizado
+    responsible_role: asesor
+    sla: "24_horas"
+  alto:
+    min: 0.7
+    max: 1.0
+    action: escalamiento_comercial
+    responsible_role: jefe_comercial
+    sla: "hoy"
+feedback_required:
+  - codigo_proforma
+  - fecha_score
+  - riesgo_predicho
+  - nivel_riesgo
+  - accion_tomada
+  - responsable
+  - resultado_30d
+  - caida_real
+  - minuta_real
+economic_measure:
+  name: valor_esperado_en_riesgo
+  formula: "riesgo_caida * precio_departamento"
+notes:
+  - "Los umbrales son iniciales y deben calibrarse con capacidad operativa y costo de error."

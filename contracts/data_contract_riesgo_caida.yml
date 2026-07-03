@@ -1,0 +1,61 @@
+name: data_contract_riesgo_caida
+version: 0.1.0
+owner: Chief Data Officer + Chief Economist
+business_question: ¿Qué separaciones tienen mayor riesgo de caída a 30 días?
+grain: una fila por operación/separación
+source_type: synthetic_sample_for_learning
+privacy: no contiene datos reales ni PII
+columns:
+  - name: id_operacion
+    type: string
+    required: true
+    description: Identificador sintético de la operación.
+  - name: fecha_separacion
+    type: date
+    required: true
+    description: Fecha de separación.
+  - name: proyecto
+    type: string
+    required: true
+  - name: asesor
+    type: string
+    required: true
+  - name: medio_captacion
+    type: string
+    required: true
+  - name: canal_agrupado
+    type: string
+    required: true
+  - name: dormitorios
+    type: integer
+    required: true
+  - name: precio_departamento
+    type: float
+    required: true
+  - name: dias_en_tuberia
+    type: integer
+    required: true
+  - name: tiene_cuota_inicial
+    type: boolean
+    required: true
+  - name: cambios_unidad
+    type: integer
+    required: true
+  - name: interacciones_ult_7d
+    type: integer
+    required: true
+  - name: descuento_pct
+    type: float
+    required: true
+  - name: caida_30d
+    type: integer
+    required: true
+    description: Variable objetivo. 1 si la separación cae dentro de 30 días.
+quality_rules:
+  - precio_departamento > 0
+  - dias_en_tuberia >= 0
+  - caida_30d in [0, 1]
+output:
+  gold_table: gold.fact_riesgo_caida_training
+  model_endpoint: /predict/riesgo-caida
+  decision_owner: asesor_comercial

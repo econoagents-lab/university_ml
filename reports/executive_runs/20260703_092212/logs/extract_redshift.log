@@ -1,0 +1,25 @@
+﻿STEP: Extract Redshift to Parquet
+COMMAND: python scripts/00_extract_redshift_to_parquet.py
+EXIT_CODE: 0
+DURATION_SECONDS: 135.82
+--- OUTPUT ---
+C:\Repos\freelance\ml_university_ready\src\mlu\redshift_client.py:97: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql(query, conn)
+C:\Repos\freelance\ml_university_ready\src\mlu\redshift_client.py:97: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql(query, conn)
+C:\Repos\freelance\ml_university_ready\src\mlu\redshift_client.py:97: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql(query, conn)
+C:\Repos\freelance\ml_university_ready\src\mlu\redshift_client.py:97: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql(query, conn)
+C:\Repos\freelance\ml_university_ready\src\mlu\redshift_client.py:97: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql(query, conn)
+C:\Repos\freelance\ml_university_ready\src\mlu\redshift_client.py:97: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql(query, conn)
+C:\Repos\freelance\ml_university_ready\scripts\00_extract_redshift_to_parquet.py:40: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  "extracted_at": datetime.utcnow().isoformat() + "Z",
+OK: C:\Repos\freelance\ml_university_ready\data\raw\sperant\proforma_unidad.parquet
+OK: C:\Repos\freelance\ml_university_ready\data\raw\sperant\procesos.parquet
+OK: C:\Repos\freelance\ml_university_ready\data\raw\sperant\datos_extras.parquet
+OK: C:\Repos\freelance\ml_university_ready\data\raw\sperant\unidades.parquet
+OK: C:\Repos\freelance\ml_university_ready\data\raw\sperant\clientes.parquet
+OK: C:\Repos\freelance\ml_university_ready\data\raw\sperant\proyectos.parquet

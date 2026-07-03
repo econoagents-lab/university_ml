@@ -1,0 +1,38 @@
+contract_name: sperant_riesgo_caida_training_contract
+version: 0.2.0
+product: Riesgo de Caída
+business_question: ¿Qué operaciones inmobiliarias activas tienen mayor probabilidad de caer y deben recibir seguimiento prioritario?
+grain: operación inmobiliaria observada en un snapshot posterior a separación
+source_system: Sperant / Redshift
+default_unit_focus: departamentos
+snapshot_days:
+  - 7
+  - 14
+  - 30
+target:
+  name: caida_30d
+  definition: 1 si la operación cae dentro de los 30 días posteriores a fecha_snapshot; 0 en caso contrario.
+  leakage_warning: No usar fecha_firma, fecha_caida, motivo_caida ni estados futuros como features.
+features:
+  categorical:
+    - proyecto
+    - asesor
+    - medio_captacion
+    - canal_agrupado
+  numeric:
+    - dormitorios
+    - precio_departamento
+    - dias_en_tuberia
+    - cambios_unidad
+    - interacciones_ult_7d
+    - descuento_pct
+  boolean:
+    - tiene_cuota_inicial
+economic_decision:
+  score_high: Escalar a gerente comercial y contactar hoy.
+  score_medium: Priorizar seguimiento en 24 horas.
+  score_low: Mantener cadencia estándar.
+monitoring:
+  primary_metric: roc_auc
+  business_metric: valor_esperado_en_riesgo
+  feedback_loop: Registrar acción tomada, responsable, resultado final y fecha.

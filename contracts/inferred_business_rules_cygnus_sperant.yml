@@ -1,0 +1,117 @@
+contract_name: inferred_business_rules_cygnus_sperant
+version: 0.4.0-draft
+status: draft_inferred_from_recent_history
+owner: CDO + Chief Economist
+source_system: Sperant / Redshift
+primary_source_table: procesos
+
+warning: >
+  Contrato inferido desde historial reciente y estructura de parquets. Debe revisarse
+  antes de declararse oficial para gerencia.
+
+business_entities:
+  separacion:
+    grain: codigo_proforma + codigo_unidad
+    official_date_candidate: fecha_inicio
+    required_columns:
+      - codigo_proforma
+      - codigo_unidad
+      - nombre_flujo
+      - fecha_inicio
+    rule: >
+      codigo_proforma not null AND fecha_inicio not null AND lower(nombre_flujo) contains 'separ'
+    training_note: >
+      Para entrenamiento histórico no exigir estado='Activo' automáticamente, porque una separación
+      que luego cayó o convirtió puede estar inactiva hoy. Para scoring actual sí filtrar operaciones vivas.
+
+  venta_minuta:
+    grain: codigo_proforma + codigo_unidad
+    official_date_candidates_ordered:
+      - fecha_fin
+      - fecha_inicio
+      - fecha_contrato
+      - fecha_minuta
+    rule: >
+      codigo_proforma not null AND lower(nombre_flujo) contains any of ['proceso de venta', 'minuta']
+    power_bi_flow_rule: >
+      flujo_separacion='Separación Oficial' AND (flujo_venta='Minuta Oficial' OR flujo_venta is blank)
+      is considered flujo correcto for separation control.
+
+  caida:
+    grain: codigo_proforma + codigo_unidad
+    official_date_candidates_ordered:
+      - fecha_anulacion
+      - fecha_fin
+      - fecha_inicio
+    rule: >
+      fecha_anulacion not null OR lower(flujo_anulacion) contains 'anul' OR
+      lower(nombre_flujo) contains 'anul' OR momento_caida in ['proceso','venta']
+
+  tuberia:
+    grain: codigo_proforma + codigo_unidad + fecha_snapshot
+    rule: >
+      fecha_separacion <= fecha_snapshot AND no fecha_firma <= fecha_snapshot AND no fecha_caida <= fecha_snapshot
+
+modeling:
+  first_use_case: riesgo_caida
+  target: caida_30d
+  target_definition: >
+    1 if fecha_caida > fecha_snapshot and fecha_caida <= fecha_snapshot + 30 days, else 0.
+  first_unit_focus: departamento
+  future_unit_families:
+    - estacionamiento
+    - deposito
+    - local
+    - otro
+  recommended_grain: codigo_proforma + codigo_unidad + fecha_snapshot
+
+allowed_features:
+  - proyecto
+  - asesor
+  - medio_captacion
+  - canal_agrupado
+  - dormitorios
+  - precio_departamento
+  - dias_en_tuberia
+  - tiene_cuota_inicial
+  - cambios_unidad
+  - interacciones_ult_7d
+  - descuento_pct
+
+forbidden_features:
+  - fecha_caida
+  - motivo_caida
+  - momento_caida
+  - flujo_anulacion
+  - fecha_anulacion
+  - fecha_firma_futura
+  - fecha_minuta_futura
+  - estado_final
+  - monto_pagado_posterior_snapshot
+  - estado_cobranza_posterior_snapshot
+
+decision_thresholds:
+  bajo:
+    min_score: 0.0
+    max_score: 0.3999
+    action: seguimiento_estandar
+    responsible_role: asesor
+    sla: semana
+  medio:
+    min_score: 0.4
+    max_score: 0.6999
+    action: contacto_priorizado
+    responsible_role: asesor
+    sla: 24_horas
+  alto:
+    min_score: 0.7
+    max_score: 1.0
+    action: escalamiento_comercial
+    responsible_role: jefe_comercial
+    sla: hoy
+
+open_questions:
+  - Confirmar fecha oficial de venta/minuta.
+  - Confirmar si cambios de departamento/proyecto son caída, evento separado o exclusión.
+  - Confirmar costos reales de falso positivo/falso negativo.
+  - Confirmar destino final de feedback loop.

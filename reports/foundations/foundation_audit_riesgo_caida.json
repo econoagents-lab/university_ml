@@ -1,0 +1,24 @@
+{
+  "rows": 3000,
+  "missing_required_columns": [],
+  "forbidden_columns_present": [],
+  "target_rate": 0.276,
+  "has_snapshot_column": true,
+  "has_minimum_grain": true,
+  "ready_for_training": true,
+  "model_matrix_columns": [
+    "proyecto",
+    "asesor",
+    "medio_captacion",
+    "canal_agrupado",
+    "dormitorios",
+    "precio_departamento",
+    "dias_en_tuberia",
+    "tiene_cuota_inicial",
+    "cambios_unidad",
+    "interacciones_ult_7d",
+    "descuento_pct"
+  ],
+  "model_matrix_rows": 3000,
+  "dataset_path": "/mnt/data/machine_learning_university_v0_3_foundations/data/sample/fact_operaciones_sample.csv"
+}

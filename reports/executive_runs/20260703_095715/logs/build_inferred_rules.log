@@ -1,0 +1,54 @@
+﻿STEP: Build inferred rules gold table
+COMMAND: python scripts/13_build_from_inferred_rules.py
+EXIT_CODE: 0
+DURATION_SECONDS: 0.76
+--- OUTPUT ---
+{
+  "source_path": "C:\\Repos\\freelance\\ml_university_ready\\data\\raw\\sperant\\procesos.parquet",
+  "output_path": "C:\\Repos\\freelance\\ml_university_ready\\data\\processed\\gold\\riesgo_caida_training_inferred.parquet",
+  "rules_summary": {
+    "rows": 4782,
+    "separaciones_validas": 1870,
+    "ventas_minutas_validas": 431,
+    "caidas_validas": 979,
+    "familias_unidad": {
+      "departamento": 3808,
+      "estacionamiento": 865,
+      "deposito": 106,
+      "local": 3
+    },
+    "fecha_inicio_min": "2018-03-16 00:00:00",
+    "fecha_inicio_max": "2026-07-02 00:00:00"
+  },
+  "gold_rows": 3657,
+  "target_rate": 0.0700027344818157,
+  "foundation_audit": {
+    "rows": 3657,
+    "missing_required_columns": [],
+    "forbidden_columns_present": [
+      "fecha_caida"
+    ],
+    "target_rate": 0.0700027344818157,
+    "has_snapshot_column": true,
+    "has_minimum_grain": true,
+    "ready_for_training": true,
+    "model_matrix_columns": [
+      "proyecto",
+      "asesor",
+      "medio_captacion",
+      "canal_agrupado",
+      "dormitorios",
+      "precio_departamento",
+      "dias_en_tuberia",
+      "tiene_cuota_inicial",
+      "cambios_unidad",
+      "interacciones_ult_7d",
+      "descuento_pct"
+    ],
+    "model_matrix_rows": 3657
+  },
+  "status": "draft_inferred_rules_review_required"
+}
+
+Gold generado en: C:\Repos\freelance\ml_university_ready\data\processed\gold\riesgo_caida_training_inferred.parquet
+Reporte guardado en: C:\Repos\freelance\ml_university_ready\reports\foundations\inferred_rules_build_report.json

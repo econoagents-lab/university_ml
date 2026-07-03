@@ -1,0 +1,21 @@
+model: riesgo_caida
+horizon_days: 30
+snapshot_days: [7, 14, 30]
+unit_focus: departamentos
+allow_inactive_historical_for_training: true
+use_estado_activo_for_current_scoring: true
+
+date_priority:
+  separacion: [fecha_inicio]
+  venta_minuta: [fecha_fin, fecha_inicio, fecha_contrato, fecha_minuta]
+  caida: [fecha_anulacion, fecha_fin, fecha_inicio]
+
+flow_patterns:
+  separacion: ['separ']
+  venta_minuta: ['proceso de venta', 'minuta']
+  caida: ['anul', 'caid']
+
+exclude:
+  missing_required: true
+  non_department_for_first_model: true
+  cambios_departamento_proyecto: review

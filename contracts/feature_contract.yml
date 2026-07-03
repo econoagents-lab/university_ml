@@ -1,0 +1,25 @@
+features:
+  - name: dias_en_tuberia
+    source: separación
+    type: numeric
+    allowed_at_prediction_time: true
+    leakage_risk: low
+  - name: tiene_cuota_inicial
+    source: cobranza/proceso
+    type: boolean
+    allowed_at_prediction_time: true
+    leakage_risk: medium
+    note: validar que se conoce antes del momento de scoring
+  - name: precio_departamento
+    source: unidad/proforma
+    type: numeric
+    allowed_at_prediction_time: true
+  - name: cambios_unidad
+    source: procesos
+    type: numeric
+    allowed_at_prediction_time: true
+  - name: asesor
+    source: proceso comercial
+    type: categorical
+    allowed_at_prediction_time: true
+    governance_note: usar para operación, no para castigo automático
