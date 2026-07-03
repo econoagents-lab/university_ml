@@ -1,0 +1,20 @@
+project: riesgo_caida
+version: 0.8.0
+policy_name: crm_first_retraining_policy
+schedule:
+  frequency: weekly
+triggers:
+  prediction_psi_gt: 0.25
+  feature_drift_fail_count_gte: 3
+  champion_max_age_days: 30
+  min_new_feedback_rows: 100
+  min_top_decile_lift: 1.20
+  min_recall: 0.50
+promotion_rule:
+  ranking_metric: promotion_score
+  require_recall_gte: 0.50
+  require_top_decile_lift_gte: 1.20
+  require_manual_approval: true
+notes:
+  - El modelo no se reemplaza por ansiedad, sino por evidencia.
+  - Drift fail dispara revisión/retraining; promoción requiere comparación champion/challenger.

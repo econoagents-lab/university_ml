@@ -1,0 +1,25 @@
+contract_name: dataset_registry_contract_riesgo_caida
+version: 0.8.0
+purpose: Versionar datasets model-ready utilizados por los modelos.
+crm_first: true
+demo_supported: true
+required_fields:
+  - dataset_version
+  - data_mode
+  - source_system
+  - rules_version
+  - rows
+  - target_rate
+  - feature_columns
+  - target
+  - file_sha256
+  - dataframe_fingerprint
+allowed_data_modes:
+  - crm
+  - demo
+forbidden_columns_in_model_ready:
+  - fecha_caida
+  - motivo_caida
+  - fecha_firma
+  - fecha_anulacion
+  - dias_hasta_caida

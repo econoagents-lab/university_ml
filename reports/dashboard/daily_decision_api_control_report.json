@@ -1,0 +1,19 @@
+{
+  "status": "ok",
+  "step": "daily_decision_api_control",
+  "queue_rows": 763,
+  "artifacts": {
+    "decision_queue_parquet": "C:\\Repos\\freelance\\ml_university_ready\\reports\\dashboard\\decision_queue_riesgo_caida.parquet",
+    "decision_queue_csv": "C:\\Repos\\freelance\\ml_university_ready\\reports\\dashboard\\decision_queue_riesgo_caida.csv",
+    "dashboard_payload": "C:\\Repos\\freelance\\ml_university_ready\\reports\\dashboard\\decision_dashboard_payload.json"
+  },
+  "html": "C:\\Repos\\freelance\\ml_university_ready\\reports\\dashboard\\DECISION_DASHBOARD_RIESGO_CAIDA.html",
+  "brief": "C:\\Repos\\freelance\\ml_university_ready\\reports\\dashboard\\EXECUTIVE_DECISION_BRIEF_RIESGO_CAIDA.md",
+  "figures": {
+    "priority_distribution": "C:\\Repos\\freelance\\ml_university_ready\\reports\\figures\\dashboard\\01_priority_distribution.png",
+    "project_value_at_risk": "C:\\Repos\\freelance\\ml_university_ready\\reports\\figures\\dashboard\\02_project_value_at_risk.png",
+    "advisor_value_at_risk": "C:\\Repos\\freelance\\ml_university_ready\\reports\\figures\\dashboard\\03_advisor_value_at_risk.png",
+    "top20_operations_value_at_risk": "C:\\Repos\\freelance\\ml_university_ready\\reports\\figures\\dashboard\\04_top20_operations_value_at_risk.png"
+  },
+  "decision": "usar cola P0/P1 como control diario, registrar feedback y monitorear drift"
+}

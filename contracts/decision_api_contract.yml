@@ -1,0 +1,36 @@
+contract_name: decision_api_riesgo_caida
+version: 0.9.0
+owner: Machine Learning University
+base_path: /decision/riesgo-caida
+endpoints:
+  - path: /decision/riesgo-caida/kpis
+    method: GET
+    purpose: KPIs ejecutivos de la cola de riesgo
+  - path: /decision/riesgo-caida/queue
+    method: GET
+    purpose: lista priorizada de operaciones
+    query_params:
+      limit: int opcional
+      prioridad: str opcional
+  - path: /decision/riesgo-caida/by-proyecto
+    method: GET
+    purpose: agregado por proyecto
+  - path: /decision/riesgo-caida/by-asesor
+    method: GET
+    purpose: agregado por asesor
+  - path: /decision/riesgo-caida/action-plan
+    method: GET
+    purpose: top operaciones a intervenir
+  - path: /decision/riesgo-caida/brief
+    method: GET
+    purpose: lectura ejecutiva para gerencia
+  - path: /dashboard/riesgo-caida
+    method: GET
+    purpose: dashboard HTML operativo
+  - path: /metadata/model-registry
+    method: GET
+    purpose: metadata del champion/challenger registry
+non_goals:
+  - sustituir criterio del gerente comercial
+  - usar columnas futuras o auditadas en scoring
+  - exponer credenciales o .env

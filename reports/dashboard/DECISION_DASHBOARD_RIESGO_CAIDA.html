@@ -1,0 +1,41 @@
+
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>Decision Dashboard - Riesgo de Caída</title>
+<style>
+body { font-family: Arial, sans-serif; margin: 32px; background: #0f172a; color: #e5e7eb; }
+.card { background: #111827; border: 1px solid #334155; border-radius: 14px; padding: 18px; margin: 14px 0; }
+.grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; }
+.kpi { font-size: 26px; font-weight: 700; color: #fbbf24; }
+.label { color: #94a3b8; font-size: 12px; text-transform: uppercase; }
+table { width: 100%; border-collapse: collapse; margin-top: 12px; }
+th, td { border-bottom: 1px solid #334155; padding: 8px; text-align: left; font-size: 13px; }
+th { color: #fbbf24; }
+small { color: #94a3b8; }
+</style>
+</head>
+<body>
+<h1>Decision Dashboard - Riesgo de Caída</h1>
+<p><small>CRM-first · generado: 2026-07-03T12:17:19 · fuente: C:\Repos\freelance\ml_university_ready\data\processed\scoring\ranking_operaciones_riesgo_caida.parquet</small></p>
+<div class="grid">
+  <div class="card"><div class="label">Operaciones</div><div class="kpi">2</div></div>
+  <div class="card"><div class="label">Valor total en riesgo</div><div class="kpi">S/ 122,000</div></div>
+  <div class="card"><div class="label">P0 + P1</div><div class="kpi">1</div></div>
+  <div class="card"><div class="label">Riesgo promedio</div><div class="kpi">0.370</div></div>
+</div>
+<div class="card">
+<h2>Lectura ejecutiva</h2>
+<p>Priorizar primero operaciones P0/P1 por valor esperado en riesgo y SLA comercial. Esta cola convierte el score del modelo en una lista accionable por responsable.</p>
+</div>
+<div class="card">
+<h2>Top proyectos por valor en riesgo</h2>
+<table><thead><tr><th>Proyecto</th><th>Ops</th><th>Riesgo prom.</th><th>Valor riesgo</th><th>P0</th><th>P1</th></tr></thead><tbody><tr><td>Proyecto Aurora</td><td>1</td><td>0.62</td><td>S/ 110,000</td><td>1</td><td>0</td></tr><tr><td>Proyecto Bruma</td><td>1</td><td>0.12</td><td>S/ 12,000</td><td>0</td><td>0</td></tr></tbody></table>
+</div>
+<div class="card">
+<h2>Plan de acción operativo</h2>
+<table><thead><tr><th>#</th><th>Proyecto</th><th>Asesor</th><th>Unidad</th><th>Riesgo</th><th>Prioridad</th><th>Valor riesgo</th><th>Acción</th></tr></thead><tbody><tr><td>1</td><td>Proyecto Aurora</td><td>Asesor Uno</td><td>A101</td><td>0.620</td><td>P0_intervenir_hoy</td><td>S/ 110,000</td><td>Llamada gerente/asesor hoy + revisar condición financiera y cuota inicial.</td></tr><tr><td>2</td><td>Proyecto Bruma</td><td>Asesor Dos</td><td>B202</td><td>0.120</td><td>P3_monitoreo</td><td>S/ 12,000</td><td>Mantener seguimiento estándar y observar señales nuevas.</td></tr></tbody></table>
+</div>
+</body>
+</html>

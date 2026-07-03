@@ -1,0 +1,14 @@
+{
+  "status": "retraining_required",
+  "should_retrain": true,
+  "reasons": [
+    "prediction_psi_gt_0.25",
+    "feature_drift_fail_count_gte_3"
+  ],
+  "should_promote_challenger": false,
+  "promotion_candidate": null,
+  "current_champion": "riesgo_caida_random_forest_dataset_riesgo_caida_crm_2026_07_03_v001_c02",
+  "registered_models": 3,
+  "registered_datasets": 1,
+  "comparison_rows": 3
+}

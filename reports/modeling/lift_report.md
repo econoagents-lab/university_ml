@@ -10,10 +10,10 @@ El objetivo de este reporte no es volver a preguntar si el modelo es perfecto. L
 |---|---:|
 | Filas test | 880 |
 | Tasa caída test | 8.75% |
-| ROC AUC test | 0.499 |
-| Average Precision test | 0.112 |
-| Tasa caída top decil | 10.23% |
-| Lift top decil | 1.17x |
+| ROC AUC test | 0.517 |
+| Average Precision test | 0.115 |
+| Tasa caída top decil | 9.09% |
+| Lift top decil | 1.04x |
 | Captura top 20% | 18.18% |
 
 ## Interpretación

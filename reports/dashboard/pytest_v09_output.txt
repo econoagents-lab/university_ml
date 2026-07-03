@@ -1,0 +1,8 @@
+...............................................                          [100%]
+=============================== warnings summary ===============================
+tests/test_experiments.py::test_analyze_intervention_effect_insufficient_without_outcomes
+  /mnt/data/machine_learning_university_v0_9_decision_dashboard_api/src/mlu/experiments.py:39: FutureWarning: Downcasting behavior in `replace` is deprecated and will be removed in a future version. To retain the old behavior, explicitly call `result.infer_objects(copy=False)`. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+    outcome_raw = df["caida_real_30d"].replace({"": np.nan, "True": 1, "False": 0, True: 1, False: 0})
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+47 passed, 1 warning in 5.47s

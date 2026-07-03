@@ -1,0 +1,7 @@
+# Abstract borrador
+
+Este trabajo presenta una arquitectura CRM-first para Machine Learning aplicado a riesgo de caída en operaciones inmobiliarias. El sistema transforma datos operativos provenientes de CRM/Sperant en datasets model-ready gobernados, con separación explícita entre columnas raw, auditables, target y features permitidas. Para evitar leakage, variables futuras como `fecha_caida` pueden existir en auditoría o construcción del target, pero son bloqueadas antes de la matriz de entrenamiento y scoring.
+
+La solución implementa un pipeline end-to-end: construcción de gold table, entrenamiento, evaluación, scoring actual, feedback loop, monitoreo de drift, calibración y registry local de modelos. La versión v0.8 incorpora champion/challenger, versionado de datasets, histórico de experimentos, política de retraining y endpoint `/metadata/model-registry`. Además, genera un paquete de figuras para sustentar el modelo en contextos académicos y ejecutivos: funnel del problema, distribución del target, split temporal, arquitectura anti-leakage, ROC, Precision-Recall, matriz de confusión, lift por deciles, calibración, drift, comparación champion/challenger, importancia de variables e impacto de intervención.
+
+El aporte principal no es únicamente predictivo, sino arquitectónico: convertir un score en un sistema de decisión trazable, auditable y conectado a acciones comerciales reales.

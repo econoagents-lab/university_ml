@@ -1,0 +1,24 @@
+contract_name: monitoring_contract_riesgo_caida
+version: 0.7.0
+owner: CDO + Chief Economist
+purpose: Detectar drift de features, scores y calibración antes de confiar en el ranking diario.
+grain: model_run + monitoring_window
+reference_window: entrenamiento_temporal_75pct
+current_window: test_temporal_25pct_o_scoring_actual
+thresholds:
+  feature_psi_warning: 0.10
+  feature_psi_fail: 0.25
+  prediction_psi_warning: 0.10
+  prediction_psi_fail: 0.25
+outputs:
+  - reports/monitoring/feature_drift.csv
+  - reports/monitoring/prediction_drift.json
+  - reports/monitoring/calibration_table.csv
+  - reports/executive/WEEKLY_MONITORING_REPORT.md
+anti_leakage:
+  raw_audit_can_contain: [fecha_caida]
+  model_matrix_must_not_contain: [fecha_caida, fecha_firma, fecha_anulacion, motivo_caida, estado_final]
+decision_policy:
+  ok: Usar ranking operativo.
+  warning: Usar ranking con revisión humana y revisar features con mayor drift.
+  fail: No usar ranking para priorización sin reentrenar o auditar fuente.

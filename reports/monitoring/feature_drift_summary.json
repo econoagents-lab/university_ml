@@ -1,0 +1,36 @@
+{
+  "global_status": "fail",
+  "feature_status_counts": {
+    "ok": 6,
+    "fail": 4,
+    "warning": 1
+  },
+  "top_drift_features": [
+    {
+      "feature": "proyecto",
+      "drift_metric": 6.718554791480698,
+      "status": "fail"
+    },
+    {
+      "feature": "asesor",
+      "drift_metric": 4.917388793971117,
+      "status": "fail"
+    },
+    {
+      "feature": "descuento_pct",
+      "drift_metric": 1.8585865108747286,
+      "status": "fail"
+    },
+    {
+      "feature": "precio_departamento",
+      "drift_metric": 0.4356558535669853,
+      "status": "fail"
+    },
+    {
+      "feature": "dormitorios",
+      "drift_metric": 0.23016309316795758,
+      "status": "warning"
+    }
+  ],
+  "prediction_drift": {}
+}

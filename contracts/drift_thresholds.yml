@@ -1,0 +1,11 @@
+version: 0.7.0
+psi:
+  ok_max: 0.10
+  warning_min: 0.10
+  fail_min: 0.25
+calibration:
+  brier_score_watch: 0.10
+  mean_abs_gap_watch: 0.10
+minimum_rows:
+  monitoring: 100
+  intervention_analysis: 20

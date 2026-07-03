@@ -1,0 +1,24 @@
+contract_name: model_registry_contract_riesgo_caida
+version: 0.8.0
+owner: Machine Learning University
+purpose: Gobernar el ciclo de vida de modelos champion/challenger para riesgo de caída.
+required_fields:
+  - model_id
+  - algorithm
+  - status
+  - dataset_version
+  - artifact_path
+  - artifact_sha256
+  - metrics
+valid_statuses:
+  - challenger
+  - champion
+  - retired
+metrics_required:
+  - roc_auc
+  - average_precision
+  - precision
+  - recall
+  - f1
+  - top_decile_lift
+anti_leakage_rule: Ningún modelo puede registrarse si fue entrenado con columnas prohibidas en X.

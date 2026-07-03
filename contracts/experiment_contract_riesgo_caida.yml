@@ -1,0 +1,20 @@
+contract_name: experiment_contract_riesgo_caida
+version: 0.7.0
+owner: Jefe Comercial + Data Science
+purpose: Medir si intervenir operaciones de alto riesgo reduce caídas o acelera minutas.
+unit: codigo_proforma + codigo_unidad + fecha_score
+eligible_population: top N operaciones por valor_esperado_en_riesgo
+recommended_top_n: 100
+holdout_rate: 0.20
+groups:
+  intervention: seguimiento priorizado con SLA
+  control_holdout: seguimiento estándar, no abandono comercial
+primary_metric: caida_real_30d
+secondary_metrics:
+  - firmo_minuta_30d
+  - resultado_7d
+  - accion_tomada
+ethical_guardrail: El holdout no elimina atención comercial; solo evita tratamiento extra para medir impacto.
+outputs:
+  - data/experiments/riesgo_caida_experiment_assignments.parquet
+  - reports/experiments/intervention_effect_report.json

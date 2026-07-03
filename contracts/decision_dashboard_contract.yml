@@ -1,0 +1,45 @@
+contract_name: decision_dashboard_riesgo_caida
+version: 0.9.0
+owner: Chief Data Officer + Chief Economist
+source:
+  primary: data/processed/scoring/ranking_operaciones_riesgo_caida.parquet
+  source_system: Sperant/CRM via scoring actual
+business_question: >
+  ¿Qué operaciones activas deben ser intervenidas primero para reducir riesgo de caída y proteger valor económico?
+grain: una operación activa scoreada por codigo_proforma + codigo_unidad
+required_columns:
+  - codigo_proforma
+  - codigo_unidad
+  - proyecto
+  - asesor
+  - precio_departamento
+  - dias_en_tuberia
+  - riesgo_caida
+  - nivel_riesgo
+  - decision_recomendada
+  - responsable
+  - valor_esperado_en_riesgo
+  - ranking_prioridad
+forbidden_columns:
+  - fecha_caida
+  - motivo_caida
+  - estado_final
+  - fecha_firma
+  - fecha_anulacion
+decision_outputs:
+  - prioridad_operativa
+  - sla_horas
+  - fecha_limite_accion
+  - accion_operativa
+  - decision_owner
+priority_rules:
+  P0_intervenir_hoy: riesgo >= 0.70 OR valor_esperado_en_riesgo >= 150000 OR dias_en_tuberia >= 120
+  P1_24_horas: riesgo >= 0.40 OR valor_esperado_en_riesgo >= 75000 OR dias_en_tuberia >= 60
+  P2_72_horas: riesgo >= 0.25 OR valor_esperado_en_riesgo >= 35000
+  P3_monitoreo: otherwise
+artifacts:
+  - reports/dashboard/decision_queue_riesgo_caida.parquet
+  - reports/dashboard/decision_queue_riesgo_caida.csv
+  - reports/dashboard/decision_dashboard_payload.json
+  - reports/dashboard/DECISION_DASHBOARD_RIESGO_CAIDA.html
+  - reports/dashboard/EXECUTIVE_DECISION_BRIEF_RIESGO_CAIDA.md

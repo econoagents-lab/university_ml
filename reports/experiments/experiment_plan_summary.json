@@ -1,0 +1,9 @@
+{
+  "rows": 100,
+  "groups": {
+    "intervention": 78,
+    "control_holdout": 22
+  },
+  "holdout_rate": 0.2,
+  "output": "data/experiments/riesgo_caida_experiment_assignments.parquet"
+}

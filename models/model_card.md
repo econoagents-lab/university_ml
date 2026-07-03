@@ -9,11 +9,11 @@
 
 | Métrica | Valor |
 |---|---:|
-| ROC AUC | 0.499 |
-| Average Precision | 0.112 |
-| Precision | 0.095 |
-| Recall | 0.844 |
-| F1 | 0.171 |
+| ROC AUC | 0.517 |
+| Average Precision | 0.115 |
+| Precision | 0.090 |
+| Recall | 0.961 |
+| F1 | 0.165 |
 
 ## Features
 

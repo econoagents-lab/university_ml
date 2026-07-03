@@ -1,0 +1,12 @@
+{
+  "reference_rows": 2638,
+  "current_rows": 880,
+  "reference_mean_score": 0.40793994465529276,
+  "current_mean_score": 0.5137471058310752,
+  "reference_p90_score": 0.5916951290388297,
+  "current_p90_score": 0.5979685637756353,
+  "prediction_psi": 3.712529781554015,
+  "status": "fail",
+  "threshold_warning": 0.1,
+  "threshold_fail": 0.25
+}

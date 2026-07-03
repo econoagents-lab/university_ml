@@ -1,0 +1,17 @@
+contract_name: experiment_history_contract_riesgo_caida
+version: 0.8.0
+purpose: Registrar histórico de experimentos de modelos challengers.
+required_columns:
+  - model_id
+  - algorithm
+  - dataset_version
+  - status
+  - metric_roc_auc
+  - metric_average_precision
+  - metric_precision
+  - metric_recall
+  - metric_f1
+  - metric_top_decile_lift
+output_files:
+  - models/registry/experiment_history.parquet
+  - models/registry/experiment_history.csv

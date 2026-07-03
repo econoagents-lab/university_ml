@@ -2,7 +2,7 @@
 
 ## Fuente
 
-`data\feedback\feedback_log_template.csv`
+`data/feedback/feedback_log_template.csv`
 
 ## Resultado
 

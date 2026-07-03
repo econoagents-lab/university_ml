@@ -1,0 +1,62 @@
+﻿[
+    {
+        "step":  "Activate virtual environment",
+        "status":  "ok",
+        "detail":  ".venv activo",
+        "timestamp":  "2026-07-03T12:03:44"
+    },
+    {
+        "step":  "Prepare model-ready dataset",
+        "status":  "ok",
+        "detail":  "C:\\Repos\\freelance\\ml_university_ready\\reports\\executive_runs\\20260703_120344\\logs\\Prepare_model_ready_dataset.log",
+        "timestamp":  "2026-07-03T12:03:45"
+    },
+    {
+        "step":  "Register dataset version",
+        "status":  "ok",
+        "detail":  "C:\\Repos\\freelance\\ml_university_ready\\reports\\executive_runs\\20260703_120344\\logs\\Register_dataset_version.log",
+        "timestamp":  "2026-07-03T12:03:46"
+    },
+    {
+        "step":  "Train challenger models",
+        "status":  "ok",
+        "detail":  "C:\\Repos\\freelance\\ml_university_ready\\reports\\executive_runs\\20260703_120344\\logs\\Train_challenger_models.log",
+        "timestamp":  "2026-07-03T12:03:50"
+    },
+    {
+        "step":  "Compare champion vs challengers",
+        "status":  "ok",
+        "detail":  "C:\\Repos\\freelance\\ml_university_ready\\reports\\executive_runs\\20260703_120344\\logs\\Compare_champion_vs_challengers.log",
+        "timestamp":  "2026-07-03T12:03:53"
+    },
+    {
+        "step":  "Promote champion model",
+        "status":  "ok",
+        "detail":  "C:\\Repos\\freelance\\ml_university_ready\\reports\\executive_runs\\20260703_120344\\logs\\Promote_champion_model.log",
+        "timestamp":  "2026-07-03T12:03:56"
+    },
+    {
+        "step":  "Retraining policy check",
+        "status":  "ok",
+        "detail":  "C:\\Repos\\freelance\\ml_university_ready\\reports\\executive_runs\\20260703_120344\\logs\\Retraining_policy_check.log",
+        "timestamp":  "2026-07-03T12:03:59"
+    },
+    {
+        "step":  "Generate congress figures",
+        "status":  "fail",
+        "detail":  "C:\\Repos\\freelance\\ml_university_ready\\.venv\\Lib\\site-packages\\sklearn\\base.py:525: InconsistentVersionWarning: Trying to unpickle estimator SimpleImputer from version 1.8.0 when using version 1.9.0. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:",
+        "timestamp":  "2026-07-03T12:04:15"
+    },
+    {
+        "step":  "Build registry metadata",
+        "status":  "ok",
+        "detail":  "C:\\Repos\\freelance\\ml_university_ready\\reports\\executive_runs\\20260703_120344\\logs\\Build_registry_metadata.log",
+        "timestamp":  "2026-07-03T12:04:16"
+    },
+    {
+        "step":  "Pytest",
+        "status":  "ok",
+        "detail":  "C:\\Repos\\freelance\\ml_university_ready\\reports\\executive_runs\\20260703_120344\\logs\\Pytest.log",
+        "timestamp":  "2026-07-03T12:04:21"
+    }
+]
