@@ -1,0 +1,37 @@
+{
+  "severity": "warning",
+  "summary_path": "C:/Repos/freelance/ml_university_ready/reports/uni_final/RAGAS_LIKE_SUMMARY.md",
+  "metrics": {
+    "faithfulness_proxy_mean": 0.8444,
+    "answer_relevance_proxy_mean": 0.2045,
+    "context_relevance_proxy_mean": 0.6,
+    "trap_refusal_rate": 0.6667
+  },
+  "checks": [
+    {
+      "metric": "faithfulness_proxy_mean",
+      "actual": 0.8444,
+      "min": 0.75,
+      "passed": true
+    },
+    {
+      "metric": "answer_relevance_proxy_mean",
+      "actual": 0.2045,
+      "min": 0.55,
+      "passed": false
+    },
+    {
+      "metric": "context_relevance_proxy_mean",
+      "actual": 0.6,
+      "min": 0.6,
+      "passed": true
+    },
+    {
+      "metric": "trap_refusal_rate",
+      "actual": 0.6667,
+      "min": 1.0,
+      "passed": false
+    }
+  ],
+  "recommendation": "Yo revisaría recuperación, citas y preguntas trampa antes de presentar. Métricas débiles: answer_relevance_proxy_mean, trap_refusal_rate."
+}

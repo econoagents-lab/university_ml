@@ -1,0 +1,81 @@
+name: UNI Delivery Readiness
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - "notebooks/**"
+      - "docs/TRACEABILITY_TABLE_UNI.md"
+      - "reports/uni_final/FINAL_TECHNICAL_REPORT.md"
+      - "reports/uni_final/RAGAS_LIKE_SUMMARY.md"
+      - "evaluation/eval_questions.csv"
+      - "app/gradio_app.py"
+      - "config/alert_thresholds.yml"
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  validate-uni-readiness:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install pyyaml
+
+      - name: Validate UNI readiness
+        run: |
+          python scripts/62_validate_uni_readiness.py
+
+      - name: Publish readiness summary
+        if: always()
+        run: |
+          cat reports/alerts/UNI_READINESS_ALERT.md >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Create issue body
+        if: always()
+        run: |
+          python scripts/64_create_alert_issue_body.py --alert-type uni --output reports/alerts/UNI_READINESS_ISSUE_BODY.md
+
+      - name: Open issue on critical readiness alert
+        if: always()
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          python - <<'PY'
+          import json, subprocess, os, pathlib
+          payload = json.loads(pathlib.Path('reports/alerts/UNI_READINESS_ALERT.json').read_text(encoding='utf-8'))
+          if payload.get('severity') != 'critical':
+              print('No abro issue porque readiness no está crítico.')
+              raise SystemExit(0)
+          subprocess.run([
+              'gh', 'issue', 'create',
+              '--title', '🚨 UNI Delivery Readiness crítico',
+              '--body-file', 'reports/alerts/UNI_READINESS_ISSUE_BODY.md',
+              '--label', 'alert,uni,delivery'
+          ], check=False, env={**os.environ, 'GH_TOKEN': os.environ.get('GITHUB_TOKEN','')})
+          PY
+
+      - name: Upload final delivery artifacts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: uni-final-readiness
+          retention-days: 30
+          path: |
+            docs/TRACEABILITY_TABLE_UNI.md
+            reports/uni_final/FINAL_TECHNICAL_REPORT.md
+            reports/uni_final/RAGAS_LIKE_SUMMARY.md
+            reports/alerts/UNI_READINESS_ALERT.md
+            reports/alerts/UNI_READINESS_ALERT.json

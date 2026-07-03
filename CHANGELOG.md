@@ -1,12 +1,17 @@
 # Changelog
 
-## 1.0.0
+## v1.2.0 - GitHub Actions Commercial Alerts
 
-- Agrega módulo de seguridad `src/mlu/security.py`.
-- Agrega feedback store `src/mlu/feedback_store.py`.
-- Agrega readiness/release helpers `src/mlu/production.py`.
-- Agrega endpoints productivos de metadata, health y feedback schema.
-- Agrega SQL para feedback store PostgreSQL/Supabase.
-- Agrega scripts 42-45 para release productivo.
-- Agrega runner PowerShell v1.0.
-- Agrega docs de deployment, roles, demo ejecutiva y release checklist.
+- Agregué workflows para Commercial KPI Digest, RAG Quality Gate y UNI Delivery Readiness.
+- Agregué workflow global `intelligence_factory_alerts_all.yml`.
+- Agregué workflow self-hosted para correr CRM real desde Lenovo.
+- Agregué workflow Railway smoke para validar API desplegada.
+- Agregué workflow opcional para publicar alertas en GitHub Pages.
+- Agregué scripts 61-68 para alertas, quality gates, issue body, webhooks y sitio estático.
+- Agregué `config/alert_thresholds.yml` para separar KPIs normales de alertas reales.
+- Agregué documentación de seguridad, operación y decisión Lenovo vs Railway.
+- Mantengo comentarios y docstrings nuevos en primera persona.
+
+## v1.1.0 - UNI Final RAG Economic Hypothesis Pack
+
+- Paquete RAG económico con hipótesis, corpus seguro, Text-to-SQL, guardrails y RAGAS-like.

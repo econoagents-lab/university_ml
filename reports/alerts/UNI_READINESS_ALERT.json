@@ -1,0 +1,31 @@
+{
+  "severity": "warning",
+  "missing_files": [],
+  "traceability_present_terms": [
+    "Corpus propio",
+    "Ingesta multiformato",
+    "Chunking",
+    "Embeddings",
+    "FAISS",
+    "Recuperación top-k",
+    "Guardrails",
+    "Citación",
+    "Text-to-SQL",
+    "Evaluación 15 preguntas",
+    "RAGAS-like",
+    "Interfaz"
+  ],
+  "traceability_missing_terms": [],
+  "final_report_present_terms": [
+    "RAG",
+    "hipótesis",
+    "guardrails",
+    "RAGAS"
+  ],
+  "final_report_missing_terms": [
+    "demo"
+  ],
+  "reasons": [
+    "El reporte final no menciona: ['demo']"
+  ]
+}

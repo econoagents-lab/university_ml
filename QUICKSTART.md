@@ -1,47 +1,32 @@
-# Quickstart v1.0 Production Release
-
-## 1. Crear entorno
+# Quickstart v1.2
 
 ```powershell
-python -m venv .venv
-.\.venv\Scripts\Activate.ps1
-pip install -r requirements.txt
-```
-
-## 2. Ejecutar pipeline de release
-
-```powershell
-python scripts/45_run_v10_production_release.py
-```
-
-## 3. Tests
-
-```powershell
+python scripts/66_build_all_alerts.py
+python scripts/61_build_commercial_alert_digest.py
+python scripts/63_validate_ragas_quality_gate.py
+python scripts/62_validate_uni_readiness.py
+python scripts/68_export_alerts_static_site.py
 pytest -q
 ```
 
-## 4. API
+## Workflows principales
 
-```powershell
-uvicorn api.main:app --reload
+```text
+.github/workflows/commercial_kpi_digest.yml
+.github/workflows/rag_quality_gate.yml
+.github/workflows/uni_delivery_readiness.yml
+.github/workflows/intelligence_factory_alerts_all.yml
+.github/workflows/crm_full_runner_self_hosted.yml
+.github/workflows/railway_api_smoke_and_alert.yml
+.github/workflows/publish_alerts_static_site.yml
 ```
 
-Endpoints clave:
+## Salidas
 
-- `GET /health`
-- `GET /production/health`
-- `GET /metadata/release`
-- `GET /metadata/production-readiness`
-- `GET /metadata/model-registry`
-- `GET /dashboard/riesgo-caida`
-- `GET /decision/riesgo-caida/queue`
-- `POST /feedback/riesgo-caida`
-
-## 5. Auth opcional
-
-```powershell
-$env:MLU_AUTH_ENABLED="true"
-$env:MLU_API_KEY="cambia_esto"
+```text
+reports/alerts/EXECUTIVE_KPI_DIGEST.md
+reports/alerts/RAGAS_ALERT.md
+reports/alerts/UNI_READINESS_ALERT.md
+reports/alerts/ALERTS_MANIFEST.md
+site/alerts/index.html
 ```
-
-Luego enviar header `X-API-Key`.

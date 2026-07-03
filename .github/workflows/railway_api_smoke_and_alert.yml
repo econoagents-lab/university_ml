@@ -1,0 +1,45 @@
+name: Railway API Smoke and Alert
+
+on:
+  workflow_dispatch:
+  schedule:
+    # 14:00 UTC = 09:00 Lima. Yo lo uso para validar que Railway siga respirando.
+    - cron: "0 14 * * 1-5"
+
+permissions:
+  contents: read
+  actions: read
+
+jobs:
+  railway-smoke:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Railway API smoke
+        env:
+          MLU_RAILWAY_BASE_URL: ${{ secrets.MLU_RAILWAY_BASE_URL }}
+        run: |
+          python scripts/67_railway_api_smoke.py
+
+      - name: Publish Railway summary
+        if: always()
+        run: |
+          cat reports/alerts/RAILWAY_SMOKE.md >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Upload Railway smoke artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: railway-api-smoke
+          retention-days: 30
+          path: |
+            reports/alerts/RAILWAY_SMOKE.md
+            reports/alerts/RAILWAY_SMOKE.json

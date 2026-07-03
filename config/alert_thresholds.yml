@@ -1,0 +1,61 @@
+project: machine_learning_university
+version: v1.2_github_actions_commercial_alerts
+
+commercial_risk:
+  ranking_path: data/processed/scoring/ranking_operaciones_riesgo_caida.csv
+  p0_warning_count: 10
+  p0_critical_count: 50
+  p0_critical_share: 0.40
+  average_risk_warning: 0.35
+  average_risk_critical: 0.55
+  value_at_risk_warning: 5000000
+  value_at_risk_critical: 15000000
+  top_n: 5
+
+rag_quality:
+  summary_path: reports/uni_final/RAGAS_LIKE_SUMMARY.md
+  faithfulness_proxy_mean_min: 0.75
+  answer_relevance_proxy_mean_min: 0.55
+  context_relevance_proxy_mean_min: 0.60
+  trap_refusal_rate_min: 1.00
+
+uni_readiness:
+  required_files:
+    - notebooks/UNI_Final_RAG_Asistente_Economico_Inmobiliario.ipynb
+    - docs/TRACEABILITY_TABLE_UNI.md
+    - reports/uni_final/RAGAS_LIKE_SUMMARY.md
+    - reports/uni_final/FINAL_TECHNICAL_REPORT.md
+    - evaluation/eval_questions.csv
+    - app/gradio_app.py
+  traceability_required_terms:
+    - Corpus propio
+    - Ingesta multiformato
+    - Chunking
+    - Embeddings
+    - FAISS
+    - Recuperación top-k
+    - Guardrails
+    - Citación
+    - Text-to-SQL
+    - Evaluación 15 preguntas
+    - RAGAS-like
+    - Interfaz
+  final_report_required_terms:
+    - RAG
+    - hipótesis
+    - guardrails
+    - RAGAS
+    - demo
+
+github_actions:
+  create_issue_on_critical: true
+  create_issue_on_warning: false
+  artifact_retention_days: 30
+  timezone_note: Los cron de GitHub Actions corren en UTC. Lima es UTC-5.
+
+notifications:
+  slack_enabled_env: SLACK_WEBHOOK_URL
+  discord_enabled_env: DISCORD_WEBHOOK_URL
+  telegram_token_env: TELEGRAM_BOT_TOKEN
+  telegram_chat_env: TELEGRAM_CHAT_ID
+  railway_base_url_env: MLU_RAILWAY_BASE_URL

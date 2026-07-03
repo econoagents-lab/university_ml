@@ -1,0 +1,74 @@
+name: CRM Full Runner Self-Hosted Lenovo
+
+on:
+  workflow_dispatch:
+    inputs:
+      full_extract:
+        description: "Run full CRM extract instead of local parquet validation"
+        required: false
+        default: "false"
+      run_tests:
+        description: "Run pytest after pipeline"
+        required: false
+        default: "true"
+
+permissions:
+  contents: read
+  issues: write
+  actions: read
+
+jobs:
+  crm-full-on-lenovo:
+    # Yo uso self-hosted Windows cuando necesito acceso local a Redshift, Parquet, PowerShell y carpetas privadas.
+    runs-on: [self-hosted, Windows]
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        shell: pwsh
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Run CRM local/full pipeline
+        shell: pwsh
+        run: |
+          if (Test-Path .\run_executive_reporting_bitacora_v10_2_full_extract.ps1) {
+            if ("${{ github.event.inputs.full_extract }}" -eq "true") {
+              .\run_executive_reporting_bitacora_v10_2_full_extract.ps1 -Mode full -ForceExtract -FullExtract -RunTests:$${{ github.event.inputs.run_tests }} -OpenReport
+            } else {
+              .\run_executive_reporting_bitacora_v10_2_full_extract.ps1 -Mode crm -PreferLocalParquets -OnlyCRMValidation -RunTests:$${{ github.event.inputs.run_tests }} -OpenReport
+            }
+          } elseif (Test-Path .\run_uni_final_rag_pack.ps1) {
+            .\run_uni_final_rag_pack.ps1 -RunTests -OpenReport
+          } else {
+            python scripts/66_build_all_alerts.py
+          }
+
+      - name: Build friendly alerts
+        if: always()
+        shell: pwsh
+        run: |
+          python scripts/66_build_all_alerts.py
+          Get-Content reports/alerts/ALERTS_MANIFEST.md | Out-File -FilePath $env:GITHUB_STEP_SUMMARY -Append
+          Get-Content reports/alerts/EXECUTIVE_KPI_DIGEST.md | Out-File -FilePath $env:GITHUB_STEP_SUMMARY -Append
+
+      - name: Upload CRM artifacts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: crm-full-runner-lenovo-artifacts
+          retention-days: 30
+          path: |
+            reports/alerts/**
+            reports/executive_latest.md
+            reports/executive_runs/**
+            data/processed/scoring/ranking_operaciones_riesgo_caida.csv
+            reports/uni_final/**

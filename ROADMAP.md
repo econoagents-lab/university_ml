@@ -1,18 +1,27 @@
 # Roadmap
 
-## v1.0 Production Release
+## v1.2 - GitHub Actions Commercial Alerts
 
-- API productiva local/Railway ready.
-- Auth opcional por API key.
-- Feedback store local-first + SQL Supabase/Postgres.
-- Dashboard ejecutivo estable.
-- Release checklist y readiness report.
-- Demo pack para gerencia/congreso.
+Estado: generado.
 
-## v1.1 recomendada
+Objetivo: que outputs del sistema se conviertan en alertas amigables, artifacts, issues y checks de entrega.
 
-- UI web con roles reales.
-- Escritura directa a Supabase habilitada por variable de entorno.
-- Jobs programados diarios/semanales.
-- Alertas Slack/Email.
-- Dashboard multi-modelo: riesgo caída, conversión, stock lento, cobranza.
+## v1.3 - Multi-model Commercial Intelligence
+
+Objetivo recomendado:
+
+- riesgo de caída;
+- lead scoring;
+- stock lento;
+- cobranza en riesgo;
+- alertas por producto analítico;
+- dashboard ejecutivo multi-modelo.
+
+## v1.4 - Feedback Store Productivo
+
+Objetivo recomendado:
+
+- Supabase/Postgres feedback store;
+- acciones comerciales reales;
+- medición de intervención;
+- experimentos controlados.

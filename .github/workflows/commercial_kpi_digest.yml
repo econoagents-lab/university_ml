@@ -1,0 +1,96 @@
+name: Commercial KPI Digest
+
+on:
+  workflow_dispatch:
+    inputs:
+      fail_on_critical:
+        description: "Fail workflow if commercial alert is critical"
+        required: false
+        default: "false"
+  schedule:
+    # 13:00 UTC = 08:00 Lima. Ajusto este horario si mi reunión comercial ocurre antes.
+    - cron: "0 13 * * 1-5"
+
+permissions:
+  contents: read
+  issues: write
+  actions: read
+
+jobs:
+  build-commercial-digest:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install pandas pyyaml
+
+      - name: Build commercial alert digest
+        id: digest
+        run: |
+          if [ "${{ github.event.inputs.fail_on_critical }}" = "true" ]; then
+            python scripts/61_build_commercial_alert_digest.py --fail-on-critical
+          else
+            python scripts/61_build_commercial_alert_digest.py
+          fi
+
+      - name: Publish friendly summary
+        if: always()
+        run: |
+          cat reports/alerts/EXECUTIVE_KPI_DIGEST.md >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Create issue body
+        if: always()
+        run: |
+          python scripts/64_create_alert_issue_body.py --alert-type commercial --output reports/alerts/COMMERCIAL_ALERT_ISSUE_BODY.md
+
+      - name: Send optional webhook
+        if: always()
+        env:
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          python scripts/65_send_webhook_alert.py --alert-file reports/alerts/EXECUTIVE_KPI_DIGEST.md
+
+      - name: Open issue on critical commercial alert
+        if: always()
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          python - <<'PY'
+          import json, subprocess, os, pathlib
+          payload = json.loads(pathlib.Path('reports/alerts/EXECUTIVE_KPI_DIGEST.json').read_text(encoding='utf-8'))
+          if payload.get('severity') != 'critical':
+              print('No abro issue porque la alerta no es crítica.')
+              raise SystemExit(0)
+          body_path = pathlib.Path('reports/alerts/COMMERCIAL_ALERT_ISSUE_BODY.md')
+          subprocess.run([
+              'gh', 'issue', 'create',
+              '--title', '🚨 Commercial KPI Digest crítico',
+              '--body-file', str(body_path),
+              '--label', 'alert,commercial,mlops'
+          ], check=False, env={**os.environ, 'GH_TOKEN': os.environ.get('GITHUB_TOKEN','')})
+          PY
+
+      - name: Upload alert artifacts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: commercial-kpi-digest
+          retention-days: 30
+          path: |
+            reports/alerts/EXECUTIVE_KPI_DIGEST.md
+            reports/alerts/EXECUTIVE_KPI_DIGEST.json
+            reports/alerts/COMMERCIAL_ALERT_ISSUE_BODY.md
+            data/processed/scoring/ranking_operaciones_riesgo_caida.csv

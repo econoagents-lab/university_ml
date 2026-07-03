@@ -1,0 +1,30 @@
+[
+  {
+    "name": "commercial_digest",
+    "status": "ok",
+    "returncode": 0,
+    "stdout": "Digest generado en C:\\Repos\\freelance\\ml_university_ready\\reports\\alerts\\EXECUTIVE_KPI_DIGEST.md\n",
+    "stderr": ""
+  },
+  {
+    "name": "ragas_gate",
+    "status": "ok",
+    "returncode": 0,
+    "stdout": "RAGAS gate generado en C:\\Repos\\freelance\\ml_university_ready\\reports\\alerts\\RAGAS_ALERT.md\n",
+    "stderr": ""
+  },
+  {
+    "name": "uni_readiness",
+    "status": "ok",
+    "returncode": 0,
+    "stdout": "Readiness generado en C:\\Repos\\freelance\\ml_university_ready\\reports\\alerts\\UNI_READINESS_ALERT.md\n",
+    "stderr": ""
+  },
+  {
+    "name": "issue_body",
+    "status": "fail",
+    "returncode": 1,
+    "stdout": "",
+    "stderr": "Traceback (most recent call last):\n  File \"C:\\Repos\\freelance\\ml_university_ready\\scripts\\64_create_alert_issue_body.py\", line 78, in <module>\n    main()\n  File \"C:\\Repos\\freelance\\ml_university_ready\\scripts\\64_create_alert_issue_body.py\", line 74, in main\n    print(body)\n  File \"C:\\Users\\dinat\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\encodings\\cp1252.py\", line 19, in encode\n    return codecs.charmap_encode(input,self.errors,encoding_table)[0]\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nUnicodeEncodeError: 'charmap' codec can't encode character '\\U0001f6a8' in position 2: character maps to <undefined>\n"
+  }
+]

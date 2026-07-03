@@ -1,0 +1,99 @@
+name: RAG Quality Gate
+
+on:
+  workflow_dispatch:
+    inputs:
+      fail_on_alert:
+        description: "Fail workflow if RAG quality is below threshold"
+        required: false
+        default: "true"
+  push:
+    paths:
+      - "reports/uni_final/RAGAS_LIKE_SUMMARY.md"
+      - "evaluation/eval_questions.csv"
+      - "rag/**"
+      - "prompts/**"
+      - "config/alert_thresholds.yml"
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  rag-quality-gate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install pyyaml
+
+      - name: Validate RAGAS-like summary
+        id: ragas
+        continue-on-error: true
+        run: |
+          if [ "${{ github.event.inputs.fail_on_alert }}" = "false" ]; then
+            python scripts/63_validate_ragas_quality_gate.py
+          else
+            python scripts/63_validate_ragas_quality_gate.py --fail-on-alert
+          fi
+
+      - name: Publish RAG summary
+        if: always()
+        run: |
+          cat reports/alerts/RAGAS_ALERT.md >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Create issue body
+        if: always()
+        run: |
+          python scripts/64_create_alert_issue_body.py --alert-type ragas --output reports/alerts/RAGAS_ISSUE_BODY.md
+
+      - name: Open issue when RAG quality is weak
+        if: always()
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          python - <<'PY'
+          import json, subprocess, os, pathlib
+          payload = json.loads(pathlib.Path('reports/alerts/RAGAS_ALERT.json').read_text(encoding='utf-8'))
+          if payload.get('severity') == 'ok':
+              print('No abro issue porque RAGAS está dentro de umbrales.')
+              raise SystemExit(0)
+          subprocess.run([
+              'gh', 'issue', 'create',
+              '--title', '⚠️ RAG Quality Gate requiere revisión',
+              '--body-file', 'reports/alerts/RAGAS_ISSUE_BODY.md',
+              '--label', 'alert,rag,uni'
+          ], check=False, env={**os.environ, 'GH_TOKEN': os.environ.get('GITHUB_TOKEN','')})
+          PY
+
+      - name: Upload RAG artifacts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: rag-quality-gate
+          retention-days: 30
+          path: |
+            reports/uni_final/RAGAS_LIKE_SUMMARY.md
+            reports/alerts/RAGAS_ALERT.md
+            reports/alerts/RAGAS_ALERT.json
+            reports/alerts/RAGAS_ISSUE_BODY.md
+            evaluation/eval_questions.csv
+
+      - name: Fail if requested and alert exists
+        if: always() && github.event.inputs.fail_on_alert != 'false'
+        run: |
+          python - <<'PY'
+          import json, pathlib, sys
+          payload = json.loads(pathlib.Path('reports/alerts/RAGAS_ALERT.json').read_text(encoding='utf-8'))
+          sys.exit(2 if payload.get('severity') != 'ok' else 0)
+          PY
