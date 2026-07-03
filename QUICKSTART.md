@@ -1,25 +1,47 @@
-# Quickstart v0.9
+# Quickstart v1.0 Production Release
+
+## 1. Crear entorno
 
 ```powershell
-cd machine_learning_university_v0_9_decision_dashboard_api
 python -m venv .venv
 .\.venv\Scripts\Activate.ps1
 pip install -r requirements.txt
-python scripts/41_run_v09_decision_dashboard_pipeline.py
-python -m pytest -q
+```
+
+## 2. Ejecutar pipeline de release
+
+```powershell
+python scripts/45_run_v10_production_release.py
+```
+
+## 3. Tests
+
+```powershell
+pytest -q
+```
+
+## 4. API
+
+```powershell
 uvicorn api.main:app --reload
 ```
 
-Abrir:
+Endpoints clave:
 
-```text
-http://127.0.0.1:8000/dashboard/riesgo-caida
-http://127.0.0.1:8000/docs
+- `GET /health`
+- `GET /production/health`
+- `GET /metadata/release`
+- `GET /metadata/production-readiness`
+- `GET /metadata/model-registry`
+- `GET /dashboard/riesgo-caida`
+- `GET /decision/riesgo-caida/queue`
+- `POST /feedback/riesgo-caida`
+
+## 5. Auth opcional
+
+```powershell
+$env:MLU_AUTH_ENABLED="true"
+$env:MLU_API_KEY="cambia_esto"
 ```
 
-Output principal:
-
-- `reports/dashboard/decision_queue_riesgo_caida.csv`
-- `reports/dashboard/decision_dashboard_payload.json`
-- `reports/dashboard/DECISION_DASHBOARD_RIESGO_CAIDA.html`
-- `reports/dashboard/EXECUTIVE_DECISION_BRIEF_RIESGO_CAIDA.md`
+Luego enviar header `X-API-Key`.

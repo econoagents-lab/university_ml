@@ -70,20 +70,6 @@ def predict_riesgo_caida(payload: dict) -> dict:
 
 
 def append_feedback(payload: dict) -> dict:
-    from pathlib import Path
-    from src.mlu.feedback import FEEDBACK_COLUMNS, validate_feedback_log
+    from src.mlu.feedback_store import append_feedback_record
 
-    output_path = Path("data/feedback/feedback_log_api.csv")
-    output_path.parent.mkdir(parents=True, exist_ok=True)
-    row = {col: payload.get(col, "") for col in FEEDBACK_COLUMNS}
-    df_new = pd.DataFrame([row])
-    validation = validate_feedback_log(df_new)
-    if not validation["is_valid"]:
-        raise ValueError(f"Feedback inválido: {validation}")
-    if output_path.exists():
-        df_old = pd.read_csv(output_path)
-        df_out = pd.concat([df_old, df_new], ignore_index=True)
-    else:
-        df_out = df_new
-    df_out.to_csv(output_path, index=False, encoding="utf-8-sig")
-    return {"status": "ok", "output_path": str(output_path), "rows_written": int(len(df_out))}
+    return append_feedback_record(payload)

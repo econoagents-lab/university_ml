@@ -1,8 +1,8 @@
 feature,exists,rows,null_rate,dtype,n_unique,top_value,mean,std,p10,p50,p90
-proyecto,True,2638,0.0,object,17,Edificio Cuba Connect,,,,,
-asesor,True,2638,0.0,object,21,Enzo Villanueva,,,,,
-medio_captacion,True,2638,0.0,object,1,manual,,,,,
-canal_agrupado,True,2638,0.0,object,1,sin_clasificar,,,,,
+proyecto,True,2638,0.0,str,17,Edificio Cuba Connect,,,,,
+asesor,True,2638,0.0,str,21,Enzo Villanueva,,,,,
+medio_captacion,True,2638,0.0,str,1,manual,,,,,
+canal_agrupado,True,2638,0.0,str,1,sin_clasificar,,,,,
 dormitorios,True,2638,0.0,float64,5,,2.484078847611827,0.8400370433531021,1.0,3.0,3.0
 precio_departamento,True,2638,0.0,float64,809,,492056.9443707354,136863.10347222784,326910.154,493022.0,642653.573
 dias_en_tuberia,True,2638,0.0,int64,3,,16.462471569370734,9.487188428992441,7.0,14.0,30.0

@@ -1,0 +1,110 @@
+﻿{
+    "project_root":  "C:\\Repos\\freelance\\ml_university_ready",
+    "mode":  "crm",
+    "data_mode":  "sperant",
+    "force_extract":  true,
+    "extract_limit":  1000,
+    "prefer_local_parquets":  false,
+    "only_crm_validation":  false,
+    "run_dir":  "C:\\Repos\\freelance\\ml_university_ready\\reports\\executive_runs\\20260703_125230",
+    "generated_at":  "2026-07-03T12:53:43",
+    "counts":  {
+                   "ok":  11,
+                   "skipped":  1,
+                   "warning":  0,
+                   "fail":  1
+               },
+    "results":  [
+                    {
+                        "step":  "Activate virtual environment",
+                        "status":  "ok",
+                        "detail":  ".venv activo.",
+                        "log_path":  "",
+                        "timestamp":  "2026-07-03T12:52:30"
+                    },
+                    {
+                        "step":  "Install dependencies",
+                        "status":  "skipped",
+                        "detail":  "No solicitado.",
+                        "log_path":  "",
+                        "timestamp":  "2026-07-03T12:52:30"
+                    },
+                    {
+                        "step":  "Extract Redshift to Parquet",
+                        "status":  "fail",
+                        "detail":  "C:\\Repos\\freelance\\ml_university_ready\\src\\mlu\\redshift_client.py:97: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.",
+                        "log_path":  "C:\\Repos\\freelance\\ml_university_ready\\reports\\executive_runs\\20260703_125230\\logs\\extract_redshift.log",
+                        "timestamp":  "2026-07-03T12:52:45"
+                    },
+                    {
+                        "step":  "Profile Sperant sources",
+                        "status":  "ok",
+                        "detail":  "Completado.",
+                        "log_path":  "C:\\Repos\\freelance\\ml_university_ready\\reports\\executive_runs\\20260703_125230\\logs\\profile_sperant.log",
+                        "timestamp":  "2026-07-03T12:52:45"
+                    },
+                    {
+                        "step":  "Build Sperant training dataset",
+                        "status":  "ok",
+                        "detail":  "Completado.",
+                        "log_path":  "C:\\Repos\\freelance\\ml_university_ready\\reports\\executive_runs\\20260703_125230\\logs\\build_sperant_training.log",
+                        "timestamp":  "2026-07-03T12:52:46"
+                    },
+                    {
+                        "step":  "Prepare model-ready dataset",
+                        "status":  "ok",
+                        "detail":  "Completado.",
+                        "log_path":  "C:\\Repos\\freelance\\ml_university_ready\\reports\\executive_runs\\20260703_125230\\logs\\prepare_model_ready.log",
+                        "timestamp":  "2026-07-03T12:52:47"
+                    },
+                    {
+                        "step":  "Train/evaluate official model",
+                        "status":  "ok",
+                        "detail":  "Completado.",
+                        "log_path":  "C:\\Repos\\freelance\\ml_university_ready\\reports\\executive_runs\\20260703_125230\\logs\\train_evaluate_official.log",
+                        "timestamp":  "2026-07-03T12:52:50"
+                    },
+                    {
+                        "step":  "Score actual riesgo caida",
+                        "status":  "ok",
+                        "detail":  "Completado.",
+                        "log_path":  "C:\\Repos\\freelance\\ml_university_ready\\reports\\executive_runs\\20260703_125230\\logs\\score_actual.log",
+                        "timestamp":  "2026-07-03T12:52:52"
+                    },
+                    {
+                        "step":  "Weekly monitoring report",
+                        "status":  "ok",
+                        "detail":  "Completado.",
+                        "log_path":  "C:\\Repos\\freelance\\ml_university_ready\\reports\\executive_runs\\20260703_125230\\logs\\weekly_monitoring.log",
+                        "timestamp":  "2026-07-03T12:52:58"
+                    },
+                    {
+                        "step":  "Registry pipeline v0.8",
+                        "status":  "ok",
+                        "detail":  "Completado.",
+                        "log_path":  "C:\\Repos\\freelance\\ml_university_ready\\reports\\executive_runs\\20260703_125230\\logs\\registry_v08.log",
+                        "timestamp":  "2026-07-03T12:53:17"
+                    },
+                    {
+                        "step":  "Decision dashboard pipeline v0.9",
+                        "status":  "ok",
+                        "detail":  "Completado.",
+                        "log_path":  "C:\\Repos\\freelance\\ml_university_ready\\reports\\executive_runs\\20260703_125230\\logs\\decision_dashboard_v09.log",
+                        "timestamp":  "2026-07-03T12:53:28"
+                    },
+                    {
+                        "step":  "Production release pipeline v1.0",
+                        "status":  "ok",
+                        "detail":  "Completado.",
+                        "log_path":  "C:\\Repos\\freelance\\ml_university_ready\\reports\\executive_runs\\20260703_125230\\logs\\production_release_v10.log",
+                        "timestamp":  "2026-07-03T12:53:39"
+                    },
+                    {
+                        "step":  "Pytest",
+                        "status":  "ok",
+                        "detail":  "Completado.",
+                        "log_path":  "C:\\Repos\\freelance\\ml_university_ready\\reports\\executive_runs\\20260703_125230\\logs\\pytest.log",
+                        "timestamp":  "2026-07-03T12:53:43"
+                    }
+                ]
+}

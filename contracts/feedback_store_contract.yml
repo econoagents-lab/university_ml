@@ -1,0 +1,10 @@
+contract_name: feedback_store_contract
+version: 1.0.0
+storage_modes:
+  mvp: local_csv_parquet
+  professional: postgres_supabase
+local_outputs:
+  - data/feedback/feedback_log_api.csv
+  - data/feedback/feedback_log_api.parquet
+sql_schema: sql/production_feedback_store_schema.sql
+business_rule: todo score accionable debe poder recibir feedback de accion y resultado.

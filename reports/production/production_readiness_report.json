@@ -1,0 +1,50 @@
+{
+  "status": "production_ready",
+  "generated_at": "2026-07-03T13:18:11",
+  "checks_ok": 7,
+  "checks_total": 7,
+  "checks": [
+    {
+      "check": "model",
+      "path": "C:\\Repos\\freelance\\ml_university_ready\\models\\riesgo_caida_model.joblib",
+      "exists": true
+    },
+    {
+      "check": "feature_columns",
+      "path": "C:\\Repos\\freelance\\ml_university_ready\\models\\feature_columns.json",
+      "exists": true
+    },
+    {
+      "check": "model_registry",
+      "path": "C:\\Repos\\freelance\\ml_university_ready\\models\\registry\\model_registry.json",
+      "exists": true
+    },
+    {
+      "check": "decision_queue",
+      "path": "C:\\Repos\\freelance\\ml_university_ready\\reports\\dashboard\\decision_queue_riesgo_caida.parquet",
+      "exists": true
+    },
+    {
+      "check": "dashboard_html",
+      "path": "C:\\Repos\\freelance\\ml_university_ready\\reports\\dashboard\\DECISION_DASHBOARD_RIESGO_CAIDA.html",
+      "exists": true
+    },
+    {
+      "check": "feedback_sql",
+      "path": "C:\\Repos\\freelance\\ml_university_ready\\sql\\production_feedback_store_schema.sql",
+      "exists": true
+    },
+    {
+      "check": "release_checklist",
+      "path": "C:\\Repos\\freelance\\ml_university_ready\\docs\\PRODUCTION_RELEASE_CHECKLIST.md",
+      "exists": true
+    }
+  ],
+  "security": {
+    "auth_enabled": false,
+    "api_key_configured": false,
+    "environment": "local",
+    "auth_mode": "api_key_optional"
+  },
+  "recommended_next_action": "Deploy local/Railway only after setting MLU_AUTH_ENABLED=true and MLU_API_KEY in production."
+}

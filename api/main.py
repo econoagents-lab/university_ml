@@ -3,7 +3,7 @@ from __future__ import annotations
 import json
 from pathlib import Path
 
-from fastapi import FastAPI, Query
+from fastapi import FastAPI, Query, Header, HTTPException, Depends
 from fastapi.responses import FileResponse, HTMLResponse
 
 from api.schemas import (
@@ -20,13 +20,20 @@ from src.mlu.config import FEATURE_COLUMNS_PATH, MODEL_MANIFEST_PATH, PROJECT_RO
 app = FastAPI(
     title="Machine Learning University API",
     description="API educativa-productiva para servir modelos de ML inmobiliario con datos sintéticos o Sperant/Redshift.",
-    version="0.9.0",
+    version="1.0.0",
 )
+
+
+def optional_api_key_guard(x_api_key: str | None = Header(default=None)) -> bool:
+    from src.mlu.security import require_api_key
+    if not require_api_key(x_api_key):
+        raise HTTPException(status_code=401, detail="Invalid or missing X-API-Key")
+    return True
 
 
 @app.get("/health")
 def health_check():
-    return {"status": "ok", "service": "machine-learning-university", "version": "0.9.0"}
+    return {"status": "ok", "service": "machine-learning-university", "version": "1.0.0"}
 
 
 @app.get("/metadata/model")
@@ -153,3 +160,49 @@ def dashboard_riesgo_caida():
     if not DASHBOARD_HTML_PATH.exists():
         generate_dashboard_html(load_dashboard_payload())
     return HTMLResponse(DASHBOARD_HTML_PATH.read_text(encoding="utf-8"))
+
+
+@app.get("/production/health")
+def production_health():
+    from src.mlu.production import load_readiness_metadata
+    readiness = load_readiness_metadata()
+    return {
+        "status": "ok",
+        "service": "machine-learning-university",
+        "version": "1.0.0",
+        "release": "v1.0_production_release",
+        "readiness_status": readiness.get("status"),
+        "checks_ok": readiness.get("checks_ok"),
+        "checks_total": readiness.get("checks_total"),
+    }
+
+
+@app.get("/metadata/release")
+def release_metadata():
+    from src.mlu.production import load_release_metadata
+    return load_release_metadata()
+
+
+@app.get("/metadata/production-readiness")
+def production_readiness_metadata():
+    from src.mlu.production import load_readiness_metadata
+    return load_readiness_metadata()
+
+
+@app.get("/feedback/store/schema")
+def feedback_store_schema_endpoint():
+    from src.mlu.feedback_store import feedback_store_schema
+    return feedback_store_schema()
+
+
+@app.get("/auth/whoami")
+def auth_whoami(role: str = Query("public"), _auth: bool = Depends(optional_api_key_guard)):
+    from src.mlu.security import get_security_settings, role_capabilities
+    settings = get_security_settings()
+    return {"security": settings.__dict__, "access": role_capabilities(role)}
+
+
+@app.get("/production/release/checklist")
+def production_release_checklist():
+    path = PROJECT_ROOT / "docs" / "PRODUCTION_RELEASE_CHECKLIST.md"
+    return {"path": str(path), "text": path.read_text(encoding="utf-8") if path.exists() else "not_found"}

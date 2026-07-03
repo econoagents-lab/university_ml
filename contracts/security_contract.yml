@@ -1,0 +1,14 @@
+contract_name: security_contract
+version: 1.0.0
+auth:
+  local_default: disabled
+  production_recommended: enabled
+  env_enabled: MLU_AUTH_ENABLED
+  env_api_key: MLU_API_KEY
+  header: X-API-Key
+roles:
+  - admin
+  - manager
+  - advisor
+  - analyst
+  - public

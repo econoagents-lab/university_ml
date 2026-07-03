@@ -1,21 +1,18 @@
 # Roadmap
 
-## Completado hasta v0.9
+## v1.0 Production Release
 
-1. Fundamentos ML con narrativa.
-2. Data contracts y Sperant adapter.
-3. Reglas inferidas/oficiales.
-4. Anti-leakage.
-5. Model-ready dataset.
-6. Lift y feedback.
-7. Monitoring y experimentos.
-8. Registry champion/challenger.
-9. Decision dashboard API.
+- API productiva local/Railway ready.
+- Auth opcional por API key.
+- Feedback store local-first + SQL Supabase/Postgres.
+- Dashboard ejecutivo estable.
+- Release checklist y readiness report.
+- Demo pack para gerencia/congreso.
 
-## Próximo: v1.0 production release
+## v1.1 recomendada
 
-- Autenticación básica.
-- Feedback store en Supabase/Postgres.
-- Dashboard web ligero.
-- Deploy local/Railway.
-- Release estable para demo ejecutiva/congreso.
+- UI web con roles reales.
+- Escritura directa a Supabase habilitada por variable de entorno.
+- Jobs programados diarios/semanales.
+- Alertas Slack/Email.
+- Dashboard multi-modelo: riesgo caída, conversión, stock lento, cobranza.

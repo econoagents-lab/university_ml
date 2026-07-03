@@ -1,0 +1,49 @@
+{
+  "project": "Machine Learning University",
+  "release": "v1.0_production_release",
+  "version": "1.0.0",
+  "generated_at": "2026-07-03T13:18:11",
+  "data_mode": "crm_first_demo_supported",
+  "api": {
+    "framework": "FastAPI",
+    "health": "/health",
+    "dashboard": "/dashboard/riesgo-caida",
+    "model_registry": "/metadata/model-registry",
+    "production_readiness": "/metadata/production-readiness",
+    "feedback_schema": "/feedback/store/schema"
+  },
+  "security": {
+    "auth_enabled": false,
+    "api_key_configured": false,
+    "environment": "local",
+    "auth_mode": "api_key_optional"
+  },
+  "feedback_store": {
+    "columns": [
+      "codigo_proforma",
+      "codigo_unidad",
+      "fecha_score",
+      "riesgo_caida",
+      "nivel_riesgo",
+      "ranking_prioridad",
+      "responsable",
+      "accion_tomada",
+      "fecha_accion",
+      "resultado_7d",
+      "resultado_30d",
+      "caida_real_30d",
+      "comentario"
+    ],
+    "local_csv": "C:\\Repos\\freelance\\ml_university_ready\\data\\feedback\\feedback_log_api.csv",
+    "local_parquet": "C:\\Repos\\freelance\\ml_university_ready\\data\\feedback\\feedback_log_api.parquet",
+    "store_mode": "local_files",
+    "sql_path": "C:\\Repos\\freelance\\ml_university_ready\\sql\\production_feedback_store_schema.sql"
+  },
+  "roles": [
+    "admin",
+    "manager",
+    "advisor",
+    "analyst",
+    "public"
+  ]
+}

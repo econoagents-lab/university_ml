@@ -1,0 +1,23 @@
+contract_name: production_release_contract
+version: 1.0.0
+project: riesgo_caida
+release_type: stable_local_railway_ready
+required_artifacts:
+  - models/riesgo_caida_model.joblib
+  - models/feature_columns.json
+  - models/registry/model_registry.json
+  - reports/dashboard/decision_queue_riesgo_caida.parquet
+  - reports/dashboard/DECISION_DASHBOARD_RIESGO_CAIDA.html
+  - sql/production_feedback_store_schema.sql
+required_endpoints:
+  - /health
+  - /production/health
+  - /metadata/release
+  - /metadata/production-readiness
+  - /metadata/model-registry
+  - /dashboard/riesgo-caida
+  - /decision/riesgo-caida/queue
+  - /feedback/riesgo-caida
+security:
+  mode: api_key_optional_local_required_production
+  header: X-API-Key

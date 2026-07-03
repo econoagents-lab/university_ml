@@ -199,7 +199,7 @@ def build_dashboard_payload(queue_df: pd.DataFrame) -> dict[str, Any]:
     return {
         "metadata": {
             "project": "riesgo_caida",
-            "dashboard_version": "0.9.0",
+            "dashboard_version": "1.0.0",
             "data_mode": "crm_first",
             "generated_at": datetime.now().isoformat(timespec="seconds"),
             "source": str(SCORING_RANKING_PATH),
@@ -307,7 +307,7 @@ small {{ color: #94a3b8; }}
 def generate_executive_brief(payload: dict[str, Any] | None = None) -> Path:
     payload = payload or load_dashboard_payload()
     k = payload["kpis"]
-    md = f"""# Executive Decision Brief - Riesgo de Caída v0.9
+    md = f"""# Executive Decision Brief - Riesgo de Caída v1.0
 
 ## Estado operativo
 

@@ -1,16 +1,16 @@
-# Machine Learning University v0.9 - Decision Dashboard API
+# Machine Learning University v1.0 · Production Release
 
-Versión CRM-first para convertir el modelo de riesgo de caída en una cola diaria de decisión comercial.
+No es un curso de notebooks. Es una universidad ejecutable para convertir data CRM/Sperant en modelos gobernados, APIs, dashboards, feedback loops y decisiones económicas.
 
-## Qué contiene
+## Qué trae v1.0
 
-- FastAPI predictiva y operativa.
-- Decision queue P0/P1/P2/P3.
-- KPIs ejecutivos.
-- Dashboard HTML local.
-- Export CSV para Power BI/Excel.
-- Brief ejecutivo reproducible.
-- Registry v0.8, monitoring v0.7, feedback/lift v0.6 y anti-leakage v0.6.1 conservados.
+- API FastAPI productiva con metadata, dashboard, feedback y health checks.
+- Autenticación API Key opcional para despliegue local/Railway.
+- Feedback store local-first con contrato SQL para PostgreSQL/Supabase.
+- Dashboard HTML ejecutivo y cola diaria de decisión.
+- Model registry, champion/challenger, dataset versioning y retraining policy.
+- Production readiness report, release checklist y demo pack.
+- Modo CRM-first con demo/sample data como simulador seguro.
 
 ## Ejecución rápida
 
@@ -18,34 +18,30 @@ Versión CRM-first para convertir el modelo de riesgo de caída en una cola diar
 python -m venv .venv
 .\.venv\Scripts\Activate.ps1
 pip install -r requirements.txt
-python scripts/41_run_v09_decision_dashboard_pipeline.py
+python scripts/45_run_v10_production_release.py
 pytest -q
 uvicorn api.main:app --reload
 ```
 
-Swagger:
+Swagger: `http://127.0.0.1:8000/docs`
+Dashboard: `http://127.0.0.1:8000/dashboard/riesgo-caida`
 
-```text
-http://127.0.0.1:8000/docs
+## Seguridad
+
+Por defecto, `MLU_AUTH_ENABLED=false` para no romper el laboratorio local. Para activar API key:
+
+```powershell
+$env:MLU_AUTH_ENABLED="true"
+$env:MLU_API_KEY="cambia_esto"
+uvicorn api.main:app --reload
 ```
 
-Dashboard:
+Enviar header:
 
 ```text
-http://127.0.0.1:8000/dashboard/riesgo-caida
+X-API-Key: cambia_esto
 ```
 
-## Endpoints clave
+## Principio rector
 
-- `GET /decision/riesgo-caida/kpis`
-- `GET /decision/riesgo-caida/queue`
-- `GET /decision/riesgo-caida/by-proyecto`
-- `GET /decision/riesgo-caida/by-asesor`
-- `GET /decision/riesgo-caida/action-plan`
-- `GET /decision/riesgo-caida/brief`
-- `GET /dashboard/riesgo-caida`
-- `GET /metadata/model-registry`
-
-## Principio
-
-Ningún modelo termina en score. Termina en una cola, un responsable, una acción, un SLA y feedback.
+El modelo no termina en un score. Termina en una cola de decisión, un responsable, una acción, un feedback y una medición del resultado.

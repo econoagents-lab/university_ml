@@ -6,28 +6,28 @@
       "script": "22_monitor_feature_drift.py",
       "returncode": 0,
       "status": "ok",
-      "stdout_tail": "{\n  \"global_status\": \"fail\",\n  \"feature_status_counts\": {\n    \"ok\": 6,\n    \"fail\": 4,\n    \"warning\": 1\n  },\n  \"top_drift_features\": [\n    {\n      \"feature\": \"proyecto\",\n      \"drift_metric\": 6.718554791480698,\n      \"status\": \"fail\"\n    },\n    {\n      \"feature\": \"asesor\",\n      \"drift_metric\": 4.917388793971117,\n      \"status\": \"fail\"\n    },\n    {\n      \"feature\": \"descuento_pct\",\n      \"drift_metric\": 1.8585865108747286,\n      \"status\": \"fail\"\n    },\n    {\n      \"feature\": \"precio_departamento\",\n      \"drift_metric\": 0.4356558535669853,\n      \"status\": \"fail\"\n    },\n    {\n      \"feature\": \"dormitorios\",\n      \"drift_metric\": 0.23016309316795758,\n      \"status\": \"warning\"\n    }\n  ],\n  \"prediction_drift\": {}\n}\n",
+      "stdout_tail": "{\n  \"global_status\": \"fail\",\n  \"feature_status_counts\": {\n    \"ok\": 6,\n    \"fail\": 4,\n    \"warning\": 1\n  },\n  \"top_drift_features\": [\n    {\n      \"feature\": \"proyecto\",\n      \"drift_metric\": 6.718554791480698,\n      \"status\": \"fail\"\n    },\n    {\n      \"feature\": \"asesor\",\n      \"drift_metric\": 4.917388793971117,\n      \"status\": \"fail\"\n    },\n    {\n      \"feature\": \"descuento_pct\",\n      \"drift_metric\": 1.8585865108747286,\n      \"status\": \"fail\"\n    },\n    {\n      \"feature\": \"precio_departamento\",\n      \"drift_metric\": 0.43669378887585636,\n      \"status\": \"fail\"\n    },\n    {\n      \"feature\": \"dormitorios\",\n      \"drift_metric\": 0.23016309316795758,\n      \"status\": \"warning\"\n    }\n  ],\n  \"prediction_drift\": {}\n}\n",
       "stderr_tail": ""
     },
     {
       "script": "23_monitor_prediction_drift.py",
       "returncode": 0,
       "status": "ok",
-      "stdout_tail": "{\n  \"reference_rows\": 2638,\n  \"current_rows\": 880,\n  \"reference_mean_score\": 0.40793994465529276,\n  \"current_mean_score\": 0.5137471058310752,\n  \"reference_p90_score\": 0.5916951290388297,\n  \"current_p90_score\": 0.5979685637756353,\n  \"prediction_psi\": 3.712529781554015,\n  \"status\": \"fail\",\n  \"threshold_warning\": 0.1,\n  \"threshold_fail\": 0.25\n}\n",
+      "stdout_tail": "{\n  \"reference_rows\": 2638,\n  \"current_rows\": 880,\n  \"reference_mean_score\": 0.4302683413020061,\n  \"current_mean_score\": 0.540699036487509,\n  \"reference_p90_score\": 0.6105323502979398,\n  \"current_p90_score\": 0.619493083919819,\n  \"prediction_psi\": 3.731872012965562,\n  \"status\": \"fail\",\n  \"threshold_warning\": 0.1,\n  \"threshold_fail\": 0.25\n}\n",
       "stderr_tail": ""
     },
     {
       "script": "24_evaluate_calibration.py",
       "returncode": 0,
       "status": "ok",
-      "stdout_tail": "{\n  \"rows\": 880,\n  \"brier_score\": 0.2646625087420126,\n  \"mean_abs_calibration_gap\": 0.42624710583107517,\n  \"max_abs_calibration_gap\": 0.5274874046172663,\n  \"bins\": 10\n}\n",
+      "stdout_tail": "{\n  \"rows\": 880,\n  \"brier_score\": 0.28854244499609066,\n  \"mean_abs_calibration_gap\": 0.45319903648750903,\n  \"max_abs_calibration_gap\": 0.5517250154341173,\n  \"bins\": 10\n}\n",
       "stderr_tail": ""
     },
     {
       "script": "25_create_experiment_plan.py",
       "returncode": 0,
       "status": "ok",
-      "stdout_tail": "{\n  \"rows\": 100,\n  \"groups\": {\n    \"intervention\": 78,\n    \"control_holdout\": 22\n  },\n  \"holdout_rate\": 0.2,\n  \"output\": \"data/experiments/riesgo_caida_experiment_assignments.parquet\"\n}\n",
+      "stdout_tail": "{\n  \"rows\": 100,\n  \"groups\": {\n    \"intervention\": 78,\n    \"control_holdout\": 22\n  },\n  \"holdout_rate\": 0.2,\n  \"output\": \"data\\\\experiments\\\\riesgo_caida_experiment_assignments.parquet\"\n}\n",
       "stderr_tail": ""
     },
     {
@@ -41,7 +41,7 @@
       "script": "27_export_feedback_store_schema.py",
       "returncode": 0,
       "status": "ok",
-      "stdout_tail": "{\n  \"sql_path\": \"sql/feedback_store_supabase_schema.sql\",\n  \"doc_path\": \"docs/SUPABASE_FEEDBACK_STORE.md\"\n}\n",
+      "stdout_tail": "{\n  \"sql_path\": \"sql\\\\feedback_store_supabase_schema.sql\",\n  \"doc_path\": \"docs\\\\SUPABASE_FEEDBACK_STORE.md\"\n}\n",
       "stderr_tail": ""
     }
   ],
@@ -70,7 +70,7 @@
       },
       {
         "feature": "precio_departamento",
-        "drift_metric": 0.4356558535669853,
+        "drift_metric": 0.43669378887585636,
         "status": "fail"
       },
       {
@@ -84,20 +84,20 @@
   "prediction_drift": {
     "reference_rows": 2638,
     "current_rows": 880,
-    "reference_mean_score": 0.40793994465529276,
-    "current_mean_score": 0.5137471058310752,
-    "reference_p90_score": 0.5916951290388297,
-    "current_p90_score": 0.5979685637756353,
-    "prediction_psi": 3.712529781554015,
+    "reference_mean_score": 0.4302683413020061,
+    "current_mean_score": 0.540699036487509,
+    "reference_p90_score": 0.6105323502979398,
+    "current_p90_score": 0.619493083919819,
+    "prediction_psi": 3.731872012965562,
     "status": "fail",
     "threshold_warning": 0.1,
     "threshold_fail": 0.25
   },
   "calibration": {
     "rows": 880,
-    "brier_score": 0.2646625087420126,
-    "mean_abs_calibration_gap": 0.42624710583107517,
-    "max_abs_calibration_gap": 0.5274874046172663,
+    "brier_score": 0.28854244499609066,
+    "mean_abs_calibration_gap": 0.45319903648750903,
+    "max_abs_calibration_gap": 0.5517250154341173,
     "bins": 10
   }
 }

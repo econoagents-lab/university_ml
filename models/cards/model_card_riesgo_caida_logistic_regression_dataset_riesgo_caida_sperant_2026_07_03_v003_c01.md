@@ -11,12 +11,12 @@
 
 | Métrica | Valor |
 |---|---:|
-| ROC AUC | 0.5178793808930795 |
-| Average Precision | 0.09596477580853703 |
-| Precision | 0.096 |
-| Recall | 0.818 |
-| F1 | 0.171 |
-| Top decile lift | 0.909 |
+| ROC AUC | 0.46056941295036535 |
+| Average Precision | 0.09724844482774159 |
+| Precision | 0.091 |
+| Recall | 0.238 |
+| F1 | 0.132 |
+| Top decile lift | 0.952 |
 
 ## Gobierno
 

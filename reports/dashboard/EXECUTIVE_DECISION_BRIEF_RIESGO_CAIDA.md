@@ -1,4 +1,4 @@
-# Executive Decision Brief - Riesgo de Caída v0.9
+# Executive Decision Brief - Riesgo de Caída v1.0
 
 ## Estado operativo
 
