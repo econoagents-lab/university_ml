@@ -29,8 +29,37 @@
       "target": "caida_30d",
       "file_sha256": "899b3f6a119eab1278dc8585884495097bec59378dcdab310f16aee46fdf85a6",
       "dataframe_fingerprint": "f765707a435723bceaef2ee864737464124ba3f2847432dd49a09ae33f238e86"
+    },
+    {
+      "dataset_version": "dataset_riesgo_caida_sperant_2026_07_04_v002",
+      "project": "riesgo_caida",
+      "data_mode": "sperant",
+      "source_system": "sperant_redshift_parquet",
+      "rules_version": "0.5.0-official_rules",
+      "created_at": "2026-07-04T03:00:09+00:00",
+      "path": "data\\processed\\versions\\dataset_riesgo_caida_sperant_2026_07_04_v002.parquet",
+      "source_path": "data/processed/gold/riesgo_caida_training_model_ready.parquet",
+      "rows": 3518,
+      "columns": 19,
+      "target_rate": 0.07276861853325753,
+      "feature_columns": [
+        "proyecto",
+        "asesor",
+        "medio_captacion",
+        "canal_agrupado",
+        "dormitorios",
+        "precio_departamento",
+        "dias_en_tuberia",
+        "tiene_cuota_inicial",
+        "cambios_unidad",
+        "interacciones_ult_7d",
+        "descuento_pct"
+      ],
+      "target": "caida_30d",
+      "file_sha256": "07f04c2f11227999d68eec7863a33a4db3608fef92250abd8e680f178ee89ecc",
+      "dataframe_fingerprint": "3e19edf3f5abfb004f0c0fbcd0556826ddce6839d09143c1ba102f047448c2e5"
     }
   ],
-  "latest_dataset": "dataset_riesgo_caida_crm_2026_07_03_v001",
-  "updated_at": "2026-07-03T16:53:30+00:00"
+  "latest_dataset": "dataset_riesgo_caida_sperant_2026_07_04_v002",
+  "updated_at": "2026-07-04T03:00:09+00:00"
 }

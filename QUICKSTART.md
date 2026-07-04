@@ -1,3 +1,23 @@
+# Quickstart · v1.2.2
+
+## Colab
+
+1. Sube el ZIP completo del proyecto a `/content`.
+2. Abre `notebooks/UNI_Final_RAG_Asistente_Economico_Inmobiliario.ipynb`.
+3. Ejecuta primero la celda “Yo preparo el entorno...”.
+4. Confirma que imprime `Import path listo: True`.
+5. Ejecuta el resto del notebook.
+
+Si aparece `ModuleNotFoundError: No module named 'rag'`, significa que Colab no está en la raíz del proyecto o que subiste solo el notebook.
+
+## Local
+
+```powershell
+python scripts/66_build_all_alerts.py
+python scripts/68_export_alerts_static_site.py
+pytest -q
+```
+
 # Quickstart v1.2
 
 ```powershell

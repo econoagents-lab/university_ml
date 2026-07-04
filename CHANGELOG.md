@@ -1,5 +1,13 @@
 # Changelog
 
+## v1.2.2 · Colab import fix + GitHub Actions soft gate hardening
+
+- Yo corregí el bootstrap de Colab para detectar la raíz del proyecto antes de importar `rag.pipeline`.
+- Yo agregué descompresión automática si el ZIP completo del proyecto está en `/content`.
+- Yo agregué `scripts/00_colab_bootstrap.py` como celda reusable de emergencia.
+- Yo mantuve los gates de GitHub Actions en modo alerta por defecto y bloqueo solo cuando se solicita explícitamente.
+
+
 ## v1.2.0 - GitHub Actions Commercial Alerts
 
 - Agregué workflows para Commercial KPI Digest, RAG Quality Gate y UNI Delivery Readiness.

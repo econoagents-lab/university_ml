@@ -63,7 +63,7 @@
       "valor_esperado_en_riesgo": 1892075.93
     }
   ],
-  "source_path": "C:/Repos/freelance/ml_university_ready/data/processed/scoring/ranking_operaciones_riesgo_caida.csv",
+  "source_path": "/mnt/data/machine_learning_university_v1_2_1_fix_colab_and_soft_gates/data/processed/scoring/ranking_operaciones_riesgo_caida.csv",
   "severity": "critical",
   "alert_reasons": [
     "Riesgo promedio=0.398 supera umbral de advertencia.",

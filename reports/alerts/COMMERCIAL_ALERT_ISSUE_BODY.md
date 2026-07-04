@@ -77,4 +77,4 @@
 Yo revisaría primero la cola P0, validaría concentración por proyecto/asesor y cerraría el día con feedback de intervención.
 
 ## Archivos fuente
-- Ranking: `C:/Repos/freelance/ml_university_ready/data/processed/scoring/ranking_operaciones_riesgo_caida.csv`
+- Ranking: `/mnt/data/machine_learning_university_v1_2_1_fix_colab_and_soft_gates/data/processed/scoring/ranking_operaciones_riesgo_caida.csv`

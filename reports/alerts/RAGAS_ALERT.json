@@ -1,6 +1,6 @@
 {
   "severity": "warning",
-  "summary_path": "C:/Repos/freelance/ml_university_ready/reports/uni_final/RAGAS_LIKE_SUMMARY.md",
+  "summary_path": "/mnt/data/machine_learning_university_v1_2_1_fix_colab_and_soft_gates/reports/uni_final/RAGAS_LIKE_SUMMARY.md",
   "metrics": {
     "faithfulness_proxy_mean": 0.8444,
     "answer_relevance_proxy_mean": 0.2045,

@@ -1,6 +1,6 @@
 {
-  "input_path": "data/processed/gold/riesgo_caida_training.parquet",
-  "output_path": "data/processed/gold/riesgo_caida_training_model_ready.parquet",
+  "input_path": "data\\processed\\gold\\riesgo_caida_training.parquet",
+  "output_path": "data\\processed\\gold\\riesgo_caida_training_model_ready.parquet",
   "rows": 3518,
   "target_rate": 0.07276861853325753,
   "forbidden_columns_present_in_input_audit": [

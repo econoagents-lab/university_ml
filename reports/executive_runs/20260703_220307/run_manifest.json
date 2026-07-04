@@ -1,0 +1,90 @@
+﻿{
+    "project_root":  "C:\\Repos\\freelance\\ml_university_ready",
+    "mode":  "crm",
+    "data_mode":  "sperant",
+    "force_extract":  false,
+    "extract_limit":  0,
+    "full_extract":  false,
+    "prefer_local_parquets":  true,
+    "only_crm_validation":  true,
+    "run_dir":  "C:\\Repos\\freelance\\ml_university_ready\\reports\\executive_runs\\20260703_220307",
+    "generated_at":  "2026-07-03T22:03:41",
+    "counts":  {
+                   "ok":  7,
+                   "skipped":  3,
+                   "warning":  0,
+                   "fail":  0
+               },
+    "results":  [
+                    {
+                        "step":  "Activate virtual environment",
+                        "status":  "ok",
+                        "detail":  ".venv activo.",
+                        "log_path":  "",
+                        "timestamp":  "2026-07-03T22:03:07"
+                    },
+                    {
+                        "step":  "Install dependencies",
+                        "status":  "skipped",
+                        "detail":  "No solicitado.",
+                        "log_path":  "",
+                        "timestamp":  "2026-07-03T22:03:07"
+                    },
+                    {
+                        "step":  "Extract Redshift to Parquet",
+                        "status":  "skipped",
+                        "detail":  "Omitido: se usan parquets locales existentes. Usa -ForceExtract para probar Redshift vivo.",
+                        "log_path":  "",
+                        "timestamp":  "2026-07-03T22:03:07"
+                    },
+                    {
+                        "step":  "Profile Sperant sources",
+                        "status":  "ok",
+                        "detail":  "Completado.",
+                        "log_path":  "C:\\Repos\\freelance\\ml_university_ready\\reports\\executive_runs\\20260703_220307\\logs\\profile_sperant.log",
+                        "timestamp":  "2026-07-03T22:03:09"
+                    },
+                    {
+                        "step":  "Build Sperant training dataset",
+                        "status":  "ok",
+                        "detail":  "Completado.",
+                        "log_path":  "C:\\Repos\\freelance\\ml_university_ready\\reports\\executive_runs\\20260703_220307\\logs\\build_sperant_training.log",
+                        "timestamp":  "2026-07-03T22:03:12"
+                    },
+                    {
+                        "step":  "Prepare model-ready dataset",
+                        "status":  "ok",
+                        "detail":  "Completado.",
+                        "log_path":  "C:\\Repos\\freelance\\ml_university_ready\\reports\\executive_runs\\20260703_220307\\logs\\prepare_model_ready.log",
+                        "timestamp":  "2026-07-03T22:03:13"
+                    },
+                    {
+                        "step":  "Train/evaluate official model",
+                        "status":  "ok",
+                        "detail":  "Completado.",
+                        "log_path":  "C:\\Repos\\freelance\\ml_university_ready\\reports\\executive_runs\\20260703_220307\\logs\\train_evaluate_official.log",
+                        "timestamp":  "2026-07-03T22:03:19"
+                    },
+                    {
+                        "step":  "Score actual riesgo caida",
+                        "status":  "ok",
+                        "detail":  "Completado.",
+                        "log_path":  "C:\\Repos\\freelance\\ml_university_ready\\reports\\executive_runs\\20260703_220307\\logs\\score_actual.log",
+                        "timestamp":  "2026-07-03T22:03:23"
+                    },
+                    {
+                        "step":  "Production/registry/dashboard pipelines",
+                        "status":  "skipped",
+                        "detail":  "OnlyCRMValidation activado.",
+                        "log_path":  "",
+                        "timestamp":  "2026-07-03T22:03:23"
+                    },
+                    {
+                        "step":  "Pytest",
+                        "status":  "ok",
+                        "detail":  "Completado.",
+                        "log_path":  "C:\\Repos\\freelance\\ml_university_ready\\reports\\executive_runs\\20260703_220307\\logs\\pytest.log",
+                        "timestamp":  "2026-07-03T22:03:41"
+                    }
+                ]
+}

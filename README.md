@@ -1,52 +1,39 @@
-# Machine Learning University v1.1 · UNI Final RAG Economic Hypothesis Pack
+# Machine Learning University v1.2 · GitHub Actions Commercial Alerts
 
-Esta versión convierte la plataforma de ML inmobiliario en un entregable final para UNI: un **Sistema RAG vertical de dominio inmobiliario** con hipótesis económicas, corpus propio, FAISS/fallback vectorial, guardrails, Text-to-SQL, evaluación RAGAS-like y demo Gradio.
+## Propósito
 
-## Qué problema resuelve
+Yo convierto los outputs de la Intelligence Factory en alertas comerciales, quality gates y evidencia descargable para operación, UNI y demo ejecutiva.
 
-Yo construyo un asistente que permite consultar y explicar decisiones comerciales inmobiliarias: riesgo de caída, conversión, tubería, pricing, stock, drift y acciones comerciales. El sistema responde con evidencia recuperada, citas y restricciones de seguridad.
+## Outputs vigilados
 
-## Modo seguro
+```text
+data/processed/scoring/ranking_operaciones_riesgo_caida.csv
+reports/uni_final/RAGAS_LIKE_SUMMARY.md
+reports/uni_final/FINAL_TECHNICAL_REPORT.md
+docs/TRACEABILITY_TABLE_UNI.md
+```
 
-No incluyo `.env`, credenciales ni datos personales reales. El corpus incluido es `sample_safe` y está anonimizado para evaluación académica.
-
-## Ejecución rápida
+## Ejecutar local
 
 ```powershell
-python -m venv .venv
-.\.venv\Scripts\Activate.ps1
-pip install -r requirements.txt
-python scripts/51_run_v11_uni_final_rag_pack.py
+python scripts/66_build_all_alerts.py
+python scripts/68_export_alerts_static_site.py
 pytest -q
 ```
 
-## Notebook final UNI
+## Ejecutar GitHub Actions
 
-```text
-notebooks/UNI_Final_RAG_Asistente_Economico_Inmobiliario.ipynb
-```
+- `Commercial KPI Digest`: alerta comercial diaria.
+- `RAG Quality Gate`: calidad del asistente RAG.
+- `UNI Delivery Readiness`: checklist de entrega final.
+- `CRM Full Runner Self-Hosted Lenovo`: corrida real con Lenovo.
+- `Railway API Smoke and Alert`: salud de API desplegada.
+- `Publish Alerts Static Site`: HTML simple para GitHub Pages.
 
-## Demo Gradio
+## Lenovo vs Railway
 
-```powershell
-python app/gradio_app.py
-```
+Yo uso Lenovo para correr CRM real y Railway para exponer API/dashboard. GitHub Actions se convierte en el centro de alertas y evidencia.
 
-## Artefactos principales
+## Seguridad
 
-```text
-reports/uni_final/
-├── RAGAS_LIKE_RESULTS.csv
-├── RAGAS_LIKE_SUMMARY.md
-├── BENCHMARK_BASE_VS_ADVANCED.md
-├── DEMO_ANSWERS.md
-└── FINAL_TECHNICAL_REPORT.md
-```
-
-## Comentarios en primera persona
-
-Los módulos nuevos tienen comentarios y docstrings en primera persona. Ejemplo:
-
-```python
-# Yo limpio el corpus antes de indexarlo para evitar exponer PII.
-```
+No incluyo `.env`, credenciales ni datos personales sensibles. Usa GitHub Secrets para tokens/webhooks y self-hosted runner para data privada.

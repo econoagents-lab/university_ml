@@ -1,7 +1,7 @@
 # ⚠️ RAG Quality Gate
 
 - Severidad: **WARNING**
-- Fuente: `C:/Repos/freelance/ml_university_ready/reports/uni_final/RAGAS_LIKE_SUMMARY.md`
+- Fuente: `/mnt/data/machine_learning_university_v1_2_1_fix_colab_and_soft_gates/reports/uni_final/RAGAS_LIKE_SUMMARY.md`
 
 ## Checks
 - ✅ `faithfulness_proxy_mean` = 0.8444 | mínimo = 0.75
