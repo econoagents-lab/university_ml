@@ -1,6 +1,6 @@
 {
   "version": "v1.9_experiment_power_and_policy_engine",
-  "generated_at": "2026-07-04T21:17:46.159745+00:00",
+  "generated_at": "2026-07-04T23:15:14.963983+00:00",
   "alpha": 0.05,
   "target_power": 0.8,
   "baseline_negative_rate": 0.15,

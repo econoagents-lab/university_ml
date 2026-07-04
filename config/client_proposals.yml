@@ -1,0 +1,182 @@
+# Yo declaro cómo transformar una demo multi-tenant en una propuesta comercial vendible.
+proposal_engine:
+  version: v2.3
+  currency: USD
+  default_discount_pct: 0
+  proposal_validity_days: 15
+  payment_terms: "50% inicio, 50% contra entrega del MVP operativo"
+  legal_note: "Documento comercial referencial. El contrato final debe ser revisado por las partes."
+  privacy_position: "No se entrega ni expone PII. Railway solo usa payload agregado. CRM completo corre en entorno privado."
+
+packages:
+  diagnostic:
+    name: "Diagnóstico Comercial Inteligente"
+    setup_fee: 1500
+    monthly_fee: 0
+    duration_days: 10
+    modules:
+      - ceo_brief
+      - railway_public_dashboard
+      - privacy_audit
+      - metric_contracts
+    excluded_modules:
+      - crm_full_pipeline
+      - ml_retraining
+      - rag_business_memory
+      - experimentation_policy_engine
+
+  mvp:
+    name: "MVP Intelligence Factory"
+    setup_fee: 7500
+    monthly_fee: 750
+    duration_days: 30
+    modules:
+      - ceo_brief
+      - risk_to_action_queue
+      - dashboard_catalog
+      - railway_public_dashboard
+      - github_alerts
+      - metric_contracts
+      - privacy_audit
+    excluded_modules:
+      - advanced_market_scraping
+      - full_multi_tenant_rollout
+
+  professional:
+    name: "Commercial Intelligence OS Professional"
+    setup_fee: 18000
+    monthly_fee: 1800
+    duration_days: 45
+    modules:
+      - ceo_brief
+      - risk_to_action_queue
+      - dashboard_catalog
+      - dashboard_metrics_engine
+      - railway_public_dashboard
+      - github_alerts
+      - rag_business_memory
+      - real_marts
+      - action_feedback_lab
+      - metric_contracts
+      - privacy_audit
+    excluded_modules:
+      - custom_mobile_app
+
+  enterprise:
+    name: "Commercial Intelligence OS Enterprise"
+    setup_fee: 38000
+    monthly_fee: 4500
+    duration_days: 75
+    modules:
+      - ceo_brief
+      - risk_to_action_queue
+      - dashboard_catalog
+      - dashboard_metrics_engine
+      - railway_public_dashboard
+      - github_alerts
+      - rag_business_memory
+      - real_marts
+      - action_feedback_lab
+      - experimentation_policy_engine
+      - multi_tenant_packaging
+      - custom_onboarding
+      - metric_contracts
+      - privacy_audit
+    excluded_modules: []
+
+tenant_package_recommendations:
+  cliente_alpha: mvp
+  cliente_bravo: professional
+  cliente_condor: enterprise
+
+default_metric_contract:
+  grain: proyecto_mes
+  refresh_frequency: diaria
+  official_timezone: America/Lima
+  allowed_public_data: agregados
+  forbidden_public_data:
+    - cliente
+    - documento
+    - dni
+    - email
+    - telefono
+    - celular
+    - direccion
+    - codigo_proforma
+    - codigo_unidad
+    - credenciales
+
+implementation_phases:
+  - day_range: "Día 1-3"
+    name: "Alineamiento económico y contrato de métricas"
+    deliverables:
+      - definición de venta, separación, caída, tubería y cobranza
+      - mapa de fuentes y owners
+      - reglas de privacidad
+  - day_range: "Día 4-10"
+    name: "Data foundation y marts"
+    deliverables:
+      - extracción segura
+      - marts agregados
+      - validación de data quality
+  - day_range: "Día 11-18"
+    name: "Dashboards y alertas"
+    deliverables:
+      - CEO Brief
+      - ranking de riesgo
+      - dashboard público seguro
+      - GitHub Actions alerts
+  - day_range: "Día 19-25"
+    name: "RAG y explicación ejecutiva"
+    deliverables:
+      - corpus seguro
+      - respuestas con citas
+      - guardrails
+  - day_range: "Día 26-30"
+    name: "Feedback loop y entrega ejecutiva"
+    deliverables:
+      - plantilla de intervención
+      - demo final
+      - handoff técnico-económico
+
+module_catalog:
+  ceo_brief:
+    label: "CEO Brief Ejecutivo"
+    metric_owner: "Gerencia"
+    decision: "Qué debe decidirse esta semana"
+  risk_to_action_queue:
+    label: "Risk-to-Action Queue"
+    metric_owner: "Jefatura Comercial"
+    decision: "Qué operaciones priorizar hoy"
+  railway_public_dashboard:
+    label: "Railway Public Safe Dashboard"
+    metric_owner: "Producto/Demo"
+    decision: "Qué puede ver un tercero sin PII"
+  rag_business_memory:
+    label: "RAG Business Memory"
+    metric_owner: "Intelligence Team"
+    decision: "Qué evidencia sustenta una respuesta"
+  real_marts:
+    label: "Real Mart Evidence Layer"
+    metric_owner: "CDO"
+    decision: "Qué métricas son oficiales vs proxy"
+  action_feedback_lab:
+    label: "Decision Action Feedback Lab"
+    metric_owner: "Operaciones Comerciales"
+    decision: "Qué intervención funcionó"
+  experimentation_policy_engine:
+    label: "Experiment & Policy Engine"
+    metric_owner: "Chief Economist"
+    decision: "Qué política comercial escala"
+  metric_contracts:
+    label: "Contratos de métricas"
+    metric_owner: "CDO"
+    decision: "Qué número es defendible"
+  github_alerts:
+    label: "GitHub Alerts Tower"
+    metric_owner: "MLOps"
+    decision: "Qué falla o alerta debe atenderse"
+  privacy_audit:
+    label: "Privacy & PII Audit"
+    metric_owner: "Data Governance"
+    decision: "Qué puede publicarse"

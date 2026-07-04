@@ -1,0 +1,40 @@
+{
+  "invoice_id": "CI-OS-CLIENTE_ALPHA-20260704",
+  "invoice_type": "proforma",
+  "country": "PE",
+  "work_order_id": "WO-CLIENTE_ALPHA-20260704",
+  "tenant_id": "cliente_alpha",
+  "client_display_name": "cliente_alpha",
+  "issue_date": "2026-07-04",
+  "currency": "USD",
+  "subtotal": 7500.0,
+  "tax_pct": 0.0,
+  "tax_amount": 0.0,
+  "total": 7500.0,
+  "total_formatted": "USD 7,500.00",
+  "line_items": [
+    {
+      "payment_id": "PAY-M1",
+      "milestone_id": "M1",
+      "concept": "Kickoff, gobierno y privacidad",
+      "issue_date": "2026-07-07",
+      "due_date": "2026-07-14",
+      "currency": "USD",
+      "amount": 3750.0,
+      "amount_formatted": "USD 3,750.00",
+      "status": "pending"
+    },
+    {
+      "payment_id": "PAY-M3",
+      "milestone_id": "M3",
+      "concept": "Demo ejecutiva, handoff y cierre MVP",
+      "issue_date": "2026-07-30",
+      "due_date": "2026-08-06",
+      "currency": "USD",
+      "amount": 3750.0,
+      "amount_formatted": "USD 3,750.00",
+      "status": "pending"
+    }
+  ],
+  "legal_note": "Documento operativo y comercial referencial. La firma contractual final debe ser revisada por las partes."
+}

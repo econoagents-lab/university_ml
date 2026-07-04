@@ -1,0 +1,45 @@
+name: Client Success and Renewal Intelligence
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - "config/client_success_renewal.yml"
+      - "src/mlu/client_success_and_renewal_intelligence.py"
+      - "scripts/12*_*.py"
+      - "reports/contract_ops/**"
+      - "reports/client_tenants/**"
+      - "reports/client_proposals/**"
+
+permissions:
+  contents: read
+
+jobs:
+  client-success-renewal:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt || pip install pandas pyyaml fastapi pytest
+      - name: Build client success renewal artifacts
+        run: python scripts/128_run_v25_client_success_and_renewal_intelligence.py
+      - name: Test client success renewal
+        run: pytest -q tests/test_client_success_and_renewal_intelligence.py
+      - name: Publish summary
+        if: always()
+        run: cat reports/client_success/CLIENT_SUCCESS_AND_RENEWAL_INTELLIGENCE.md >> $GITHUB_STEP_SUMMARY
+      - name: Upload artifacts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: client-success-renewal-intelligence
+          path: |
+            reports/client_success/**
+            config/client_success_renewal.yml

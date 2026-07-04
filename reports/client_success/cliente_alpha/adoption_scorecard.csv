@@ -1,0 +1,7 @@
+adoption_kpi,adoption_score,evidence_mode,module_id,tenant_id,upsell_path,value_driver
+briefs revisados,55,proxy_until_usage_tracking,ceo_brief,cliente_alpha,board_pack_automatizado,decisión ejecutiva semanal
+visitas y validación de payload público,60,proxy_until_usage_tracking,railway_public_dashboard,cliente_alpha,portal_cliente_autenticado,demo ejecutiva segura
+acciones registradas sobre P0/P1,55,proxy_until_usage_tracking,risk_to_action_queue,cliente_alpha,feedback_loop_y_experimentos,ventas salvadas por priorización
+unidades revisadas con brecha precio/mercado,40,proxy_until_usage_tracking,stock_pricing,cliente_alpha,pricing_engine_avanzado,velocidad de venta y ajuste de precio
+preguntas respondidas con citas,40,proxy_until_usage_tracking,rag_business_memory,cliente_alpha,rag_multifuente_mercado_y_crm,memoria institucional consultable
+alerts revisadas por semana,60,proxy_until_usage_tracking,github_alerts,cliente_alpha,alertas_por_rol_y_slack_telegram,alertas automáticas y trazabilidad

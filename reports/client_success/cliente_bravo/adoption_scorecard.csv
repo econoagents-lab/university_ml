@@ -1,0 +1,7 @@
+adoption_kpi,adoption_score,evidence_mode,module_id,tenant_id,upsell_path,value_driver
+briefs revisados,55,proxy_until_usage_tracking,ceo_brief,cliente_bravo,board_pack_automatizado,decisión ejecutiva semanal
+uso observado,45,proxy_until_usage_tracking,funnel_conversion,cliente_bravo,expansion,valor comercial pendiente de especificar
+uso observado,45,proxy_until_usage_tracking,advisor_project_matrix,cliente_bravo,expansion,valor comercial pendiente de especificar
+acciones registradas sobre P0/P1,55,proxy_until_usage_tracking,risk_to_action_queue,cliente_bravo,feedback_loop_y_experimentos,ventas salvadas por priorización
+uso observado,45,proxy_until_usage_tracking,feedback_loop,cliente_bravo,expansion,valor comercial pendiente de especificar
+uso observado,45,proxy_until_usage_tracking,experiment_policy,cliente_bravo,expansion,valor comercial pendiente de especificar

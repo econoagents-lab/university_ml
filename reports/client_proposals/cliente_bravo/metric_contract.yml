@@ -1,0 +1,75 @@
+tenant_id: cliente_bravo
+client_display_name: Cliente Bravo · Gerencia comercial
+package: professional
+created_at: '2026-07-04T23:15:03+00:00'
+grain: proyecto_mes
+refresh_frequency: diaria
+official_timezone: America/Lima
+allowed_public_data: agregados
+forbidden_public_data:
+- cliente
+- documento
+- dni
+- email
+- telefono
+- celular
+- direccion
+- codigo_proforma
+- codigo_unidad
+- credenciales
+metrics:
+- metric_id: ceo_brief
+  name: CEO Brief Ejecutivo
+  owner: Gerencia
+  decision_enabled: Qué debe decidirse esta semana
+  status: included_in_scope
+- metric_id: risk_to_action_queue
+  name: Risk-to-Action Queue
+  owner: Jefatura Comercial
+  decision_enabled: Qué operaciones priorizar hoy
+  status: included_in_scope
+- metric_id: dashboard_catalog
+  name: dashboard_catalog
+  owner: por_confirmar
+  decision_enabled: por_confirmar
+  status: included_in_scope
+- metric_id: dashboard_metrics_engine
+  name: dashboard_metrics_engine
+  owner: por_confirmar
+  decision_enabled: por_confirmar
+  status: included_in_scope
+- metric_id: railway_public_dashboard
+  name: Railway Public Safe Dashboard
+  owner: Producto/Demo
+  decision_enabled: Qué puede ver un tercero sin PII
+  status: included_in_scope
+- metric_id: github_alerts
+  name: GitHub Alerts Tower
+  owner: MLOps
+  decision_enabled: Qué falla o alerta debe atenderse
+  status: included_in_scope
+- metric_id: rag_business_memory
+  name: RAG Business Memory
+  owner: Intelligence Team
+  decision_enabled: Qué evidencia sustenta una respuesta
+  status: included_in_scope
+- metric_id: real_marts
+  name: Real Mart Evidence Layer
+  owner: CDO
+  decision_enabled: Qué métricas son oficiales vs proxy
+  status: included_in_scope
+- metric_id: action_feedback_lab
+  name: Decision Action Feedback Lab
+  owner: Operaciones Comerciales
+  decision_enabled: Qué intervención funcionó
+  status: included_in_scope
+- metric_id: metric_contracts
+  name: Contratos de métricas
+  owner: CDO
+  decision_enabled: Qué número es defendible
+  status: included_in_scope
+- metric_id: privacy_audit
+  name: Privacy & PII Audit
+  owner: Data Governance
+  decision_enabled: Qué puede publicarse
+  status: included_in_scope

@@ -593,3 +593,173 @@ def client_tenant_package_endpoint(tenant_id: str):
         return get_tenant_package(tenant_id)
     except FileNotFoundError:
         raise HTTPException(status_code=404, detail="Tenant no encontrado")
+
+
+@app.get("/metadata/client-proposals")
+def client_proposals_metadata_endpoint():
+    """
+    Yo expongo metadata del motor de propuestas comerciales por cliente.
+    """
+    from src.mlu.client_proposal_and_contract_automation import client_proposal_metadata
+    return client_proposal_metadata()
+
+
+@app.get("/proposals/clients", response_class=HTMLResponse)
+def client_proposals_index_endpoint():
+    """
+    Yo sirvo el índice HTML de propuestas comerciales por cliente.
+    """
+    from src.mlu.client_proposal_and_contract_automation import INDEX_HTML, run_client_proposal_and_contract_automation
+    if not INDEX_HTML.exists():
+        run_client_proposal_and_contract_automation()
+    return HTMLResponse(INDEX_HTML.read_text(encoding="utf-8"))
+
+
+@app.get("/proposal/client/{tenant_id}", response_class=HTMLResponse)
+def client_proposal_html_endpoint(tenant_id: str):
+    """
+    Yo sirvo la propuesta HTML de un tenant específico.
+    """
+    from src.mlu.client_proposal_and_contract_automation import normalize_tenant_id, run_client_proposal_and_contract_automation, tenant_output_dir
+    tenant_id = normalize_tenant_id(tenant_id)
+    proposal = tenant_output_dir(tenant_id) / "proposal.html"
+    if not proposal.exists():
+        run_client_proposal_and_contract_automation()
+    if not proposal.exists():
+        raise HTTPException(status_code=404, detail="Propuesta de tenant no encontrada")
+    return HTMLResponse(proposal.read_text(encoding="utf-8"))
+
+
+@app.get("/proposal/client/{tenant_id}/package")
+def client_proposal_package_endpoint(tenant_id: str):
+    """
+    Yo devuelvo el paquete de propuesta, precio, scope y contrato de métricas por tenant.
+    """
+    from src.mlu.client_proposal_and_contract_automation import get_client_proposal_package
+    try:
+        return get_client_proposal_package(tenant_id)
+    except FileNotFoundError:
+        raise HTTPException(status_code=404, detail="Propuesta de tenant no encontrada")
+
+@app.get("/metadata/contract-ops")
+def contract_ops_metadata_endpoint():
+    """
+    Yo expongo metadata del motor propuesta → firma → invoice.
+    """
+    from src.mlu.contract_to_signature_and_invoice_ops import contract_ops_metadata
+    return contract_ops_metadata()
+
+
+@app.get("/contracts/ops/clients", response_class=HTMLResponse)
+def contract_ops_clients_index_endpoint():
+    """
+    Yo sirvo el índice HTML de expedientes contractuales por cliente.
+    """
+    from src.mlu.contract_to_signature_and_invoice_ops import INDEX_HTML, run_contract_to_signature_and_invoice_ops
+    if not INDEX_HTML.exists():
+        run_contract_to_signature_and_invoice_ops()
+    return HTMLResponse(INDEX_HTML.read_text(encoding="utf-8"))
+
+
+@app.get("/contract/client/{tenant_id}/work-order", response_class=HTMLResponse)
+def contract_client_work_order_endpoint(tenant_id: str):
+    """
+    Yo sirvo la orden de trabajo HTML de un tenant.
+    """
+    from src.mlu.contract_to_signature_and_invoice_ops import normalize_tenant_id, run_contract_to_signature_and_invoice_ops, tenant_output_dir
+    tenant_id = normalize_tenant_id(tenant_id)
+    path = tenant_output_dir(tenant_id) / "work_order.html"
+    if not path.exists():
+        run_contract_to_signature_and_invoice_ops()
+    if not path.exists():
+        raise HTTPException(status_code=404, detail="Orden de trabajo no encontrada")
+    return HTMLResponse(path.read_text(encoding="utf-8"))
+
+
+@app.get("/contract/client/{tenant_id}/invoice", response_class=HTMLResponse)
+def contract_client_invoice_endpoint(tenant_id: str):
+    """
+    Yo sirvo la proforma HTML de un tenant.
+    """
+    from src.mlu.contract_to_signature_and_invoice_ops import normalize_tenant_id, run_contract_to_signature_and_invoice_ops, tenant_output_dir
+    tenant_id = normalize_tenant_id(tenant_id)
+    path = tenant_output_dir(tenant_id) / "invoice_proforma.html"
+    if not path.exists():
+        run_contract_to_signature_and_invoice_ops()
+    if not path.exists():
+        raise HTTPException(status_code=404, detail="Proforma no encontrada")
+    return HTMLResponse(path.read_text(encoding="utf-8"))
+
+
+@app.get("/contract/client/{tenant_id}/ops-package")
+def contract_client_ops_package_endpoint(tenant_id: str):
+    """
+    Yo devuelvo el paquete contractual de un tenant.
+    """
+    from src.mlu.contract_to_signature_and_invoice_ops import get_contract_ops_package
+    try:
+        return get_contract_ops_package(tenant_id)
+    except FileNotFoundError:
+        raise HTTPException(status_code=404, detail="Paquete contractual no encontrado")
+
+@app.get("/metadata/client-success")
+def client_success_metadata_endpoint():
+    """
+    Yo expongo metadata del motor de client success, adopción, churn y renovación.
+    """
+    from src.mlu.client_success_and_renewal_intelligence import client_success_metadata
+    return client_success_metadata()
+
+
+@app.get("/success/clients", response_class=HTMLResponse)
+def client_success_clients_index_endpoint():
+    """
+    Yo sirvo el índice HTML de salud y renovación por tenant.
+    """
+    from src.mlu.client_success_and_renewal_intelligence import INDEX_HTML, run_client_success_and_renewal_intelligence
+    if not INDEX_HTML.exists():
+        run_client_success_and_renewal_intelligence()
+    return HTMLResponse(INDEX_HTML.read_text(encoding="utf-8"))
+
+
+@app.get("/success/client/{tenant_id}/health", response_class=HTMLResponse)
+def client_success_health_endpoint(tenant_id: str):
+    """
+    Yo sirvo el reporte de salud de un tenant específico.
+    """
+    from src.mlu.client_success_and_renewal_intelligence import normalize_tenant_id, run_client_success_and_renewal_intelligence, tenant_dir
+    tenant_id = normalize_tenant_id(tenant_id)
+    path = tenant_dir(tenant_id) / "success_health.html"
+    if not path.exists():
+        run_client_success_and_renewal_intelligence()
+    if not path.exists():
+        raise HTTPException(status_code=404, detail="Success health no encontrado")
+    return HTMLResponse(path.read_text(encoding="utf-8"))
+
+
+@app.get("/success/client/{tenant_id}/renewal-plan", response_class=HTMLResponse)
+def client_success_renewal_plan_endpoint(tenant_id: str):
+    """
+    Yo sirvo el plan de renovación de un tenant específico.
+    """
+    from src.mlu.client_success_and_renewal_intelligence import normalize_tenant_id, run_client_success_and_renewal_intelligence, tenant_dir
+    tenant_id = normalize_tenant_id(tenant_id)
+    path = tenant_dir(tenant_id) / "renewal_plan.html"
+    if not path.exists():
+        run_client_success_and_renewal_intelligence()
+    if not path.exists():
+        raise HTTPException(status_code=404, detail="Renewal plan no encontrado")
+    return HTMLResponse(path.read_text(encoding="utf-8"))
+
+
+@app.get("/success/client/{tenant_id}/package")
+def client_success_package_endpoint(tenant_id: str):
+    """
+    Yo devuelvo el paquete JSON de health, adopción, upsell y renovación por tenant.
+    """
+    from src.mlu.client_success_and_renewal_intelligence import get_client_success_package
+    try:
+        return get_client_success_package(tenant_id)
+    except FileNotFoundError:
+        raise HTTPException(status_code=404, detail="Client success package no encontrado")
+

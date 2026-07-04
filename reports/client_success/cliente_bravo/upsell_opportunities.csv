@@ -1,0 +1,4 @@
+confidence,currency,estimated_value,label,recommended_timing,tenant_id,trigger,upsell_key
+rescue_only,USD,3500.0,Board Pack Automatizado,after_rescue_plan,cliente_bravo,CEO Brief activo y necesidad de comité mensual,board_pack_automatizado
+rescue_only,USD,0.0,expansion,after_rescue_plan,cliente_bravo,valor comercial pendiente de especificar,expansion
+rescue_only,USD,6500.0,Feedback Loop + Experimentos Comerciales,after_rescue_plan,cliente_bravo,cola de riesgo activa sin medición causal suficiente,feedback_loop_y_experimentos

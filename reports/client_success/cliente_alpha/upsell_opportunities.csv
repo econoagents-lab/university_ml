@@ -1,0 +1,7 @@
+confidence,currency,estimated_value,label,recommended_timing,tenant_id,trigger,upsell_key
+rescue_only,USD,3500.0,Board Pack Automatizado,after_rescue_plan,cliente_alpha,CEO Brief activo y necesidad de comité mensual,board_pack_automatizado
+rescue_only,USD,5000.0,Portal Cliente Autenticado,after_rescue_plan,cliente_alpha,Railway público validado y necesidad de acceso por rol,portal_cliente_autenticado
+rescue_only,USD,6500.0,Feedback Loop + Experimentos Comerciales,after_rescue_plan,cliente_alpha,cola de riesgo activa sin medición causal suficiente,feedback_loop_y_experimentos
+rescue_only,USD,4500.0,Pricing Engine Avanzado,after_rescue_plan,cliente_alpha,stock/pricing activo o brecha mercado pendiente,pricing_engine_avanzado
+rescue_only,USD,8000.0,RAG Multifuente Mercado + CRM,after_rescue_plan,cliente_alpha,uso de memoria de negocio o preguntas ejecutivas recurrentes,rag_multifuente_mercado_y_crm
+rescue_only,USD,0.0,alertas_por_rol_y_slack_telegram,after_rescue_plan,cliente_alpha,alertas automáticas y trazabilidad,alertas_por_rol_y_slack_telegram

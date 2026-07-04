@@ -1,0 +1,20 @@
+{
+  "tenant_id": "cliente_alpha",
+  "display_name": "Tenant Alpha · Desarrollador multifamiliar",
+  "generated_at": "2026-07-04T23:16:39+00:00",
+  "success_stage": "onboarding",
+  "health_score": 51.43,
+  "health_band": "red",
+  "churn_risk": "high",
+  "adoption_score": 51.67,
+  "milestone_completion_score": 10.0,
+  "payment_status_score": 45.0,
+  "qbr_score": 50.0,
+  "value_realization_score": 98.0,
+  "renewal_recommendation": "plan_de_rescate_churn",
+  "renewal_message": "Riesgo alto: intervención ejecutiva y replanteo de alcance.",
+  "package_name": "MVP Intelligence Factory",
+  "year_one_total": 16500.0,
+  "currency": "USD",
+  "privacy_status": "ok"
+}

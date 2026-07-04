@@ -2,7 +2,7 @@
 
 **Versión:** v1.5_dashboard_metrics_engine  
 **Generados:** 62  
-**Fecha:** 2026-07-04T16:17:38
+**Fecha:** 2026-07-04T18:15:07
 
 Yo genero estos dashboards desde `config/dashboard_catalog.yml`. Si cambia una pregunta económica, owner o parámetro, cambio configuración y regenero.
 

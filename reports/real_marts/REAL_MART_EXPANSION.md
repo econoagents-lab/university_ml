@@ -2,7 +2,7 @@
 
 Yo reemplazo proxies por marts reales seguros para que cada dashboard pueda defender una métrica con fuente, grano y modo de evidencia.
 
-**Generado:** 2026-07-04T16:17:48  
+**Generado:** 2026-07-04T18:15:17  
 **Safe aggregate only:** True  
 **Private data copied to repo:** False
 

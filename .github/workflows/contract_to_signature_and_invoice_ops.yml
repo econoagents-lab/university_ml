@@ -1,0 +1,53 @@
+name: Contract to Signature and Invoice Ops
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - "config/contract_ops.yml"
+      - "config/client_proposals.yml"
+      - "src/mlu/contract_to_signature_and_invoice_ops.py"
+      - "scripts/12*_*.py"
+      - "tests/test_contract_to_signature_and_invoice_ops.py"
+
+permissions:
+  contents: read
+  actions: read
+
+jobs:
+  contract-ops:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Build contract ops package
+        run: python scripts/124_run_v24_contract_to_signature_and_invoice_ops.py
+
+      - name: Run tests
+        run: pytest -q tests/test_contract_to_signature_and_invoice_ops.py
+
+      - name: Publish summary
+        if: always()
+        run: cat reports/contract_ops/CONTRACT_TO_SIGNATURE_AND_INVOICE_OPS.md >> $GITHUB_STEP_SUMMARY
+
+      - name: Upload artifacts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: contract-to-signature-invoice-ops
+          path: |
+            reports/contract_ops/**
+            docs/CONTRACT_TO_SIGNATURE_AND_INVOICE_OPS.md
+            docs/CONTRACT_OPS_RUNBOOK.md
+            docs/INVOICE_AND_MILESTONE_POLICY.md

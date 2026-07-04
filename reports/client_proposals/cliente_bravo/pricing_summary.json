@@ -1,0 +1,12 @@
+{
+  "currency": "USD",
+  "setup_fee": 18000.0,
+  "monthly_fee": 1800.0,
+  "discount_pct": 0.0,
+  "discount_amount": 0.0,
+  "net_setup_fee": 18000.0,
+  "year_one_total": 39600.0,
+  "formatted_setup_fee": "USD 18,000",
+  "formatted_monthly_fee": "USD 1,800",
+  "formatted_year_one_total": "USD 39,600"
+}

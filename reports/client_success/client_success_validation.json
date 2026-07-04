@@ -1,0 +1,10 @@
+{
+  "status": "ok",
+  "tenant_count": 3,
+  "green_count": 0,
+  "yellow_count": 0,
+  "red_count": 3,
+  "missing": [],
+  "forbidden_hits": {},
+  "generated_at": "2026-07-04T23:16:39+00:00"
+}

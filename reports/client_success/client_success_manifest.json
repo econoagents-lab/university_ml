@@ -1,0 +1,21 @@
+{
+  "version": "v2.5_client_success_and_renewal_intelligence",
+  "generated_at": "2026-07-04T23:16:39+00:00",
+  "tenant_count": 3,
+  "packages": [
+    {
+      "tenant_id": "cliente_alpha",
+      "package": "reports/client_success/cliente_alpha/client_success_package.json"
+    },
+    {
+      "tenant_id": "cliente_bravo",
+      "package": "reports/client_success/cliente_bravo/client_success_package.json"
+    },
+    {
+      "tenant_id": "cliente_condor",
+      "package": "reports/client_success/cliente_condor/client_success_package.json"
+    }
+  ],
+  "index_html": "reports/client_success/client_success_index.html",
+  "index_md": "reports/client_success/CLIENT_SUCCESS_INDEX.md"
+}

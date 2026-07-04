@@ -1,0 +1,117 @@
+client_success_engine:
+  version: "v2.5_client_success_and_renewal_intelligence"
+  currency: "USD"
+  health_thresholds:
+    green: 80
+    yellow: 55
+    red: 35
+  renewal_window_days: 60
+  qbr_frequency_days: 30
+  default_contract_months: 12
+  current_date_mode: "utc_today"
+  privacy_position: "Solo se publican métricas agregadas por tenant, estado de adopción, hitos, pagos y oportunidades comerciales; nunca datos personales ni credenciales."
+
+adoption_weights:
+  product_activation: 0.30
+  executive_usage: 0.20
+  feedback_loop: 0.20
+  data_freshness: 0.15
+  governance: 0.15
+
+health_weights:
+  adoption_score: 0.35
+  milestone_completion: 0.20
+  payment_status: 0.15
+  qbr_status: 0.10
+  value_realization: 0.20
+
+module_value_map:
+  ceo_brief:
+    value_driver: "decisión ejecutiva semanal"
+    adoption_kpi: "briefs revisados"
+    upsell_path: "board_pack_automatizado"
+  risk_to_action_queue:
+    value_driver: "ventas salvadas por priorización"
+    adoption_kpi: "acciones registradas sobre P0/P1"
+    upsell_path: "feedback_loop_y_experimentos"
+  stock_pricing:
+    value_driver: "velocidad de venta y ajuste de precio"
+    adoption_kpi: "unidades revisadas con brecha precio/mercado"
+    upsell_path: "pricing_engine_avanzado"
+  rag_business_memory:
+    value_driver: "memoria institucional consultable"
+    adoption_kpi: "preguntas respondidas con citas"
+    upsell_path: "rag_multifuente_mercado_y_crm"
+  github_alerts:
+    value_driver: "alertas automáticas y trazabilidad"
+    adoption_kpi: "alerts revisadas por semana"
+    upsell_path: "alertas_por_rol_y_slack_telegram"
+  railway_public_dashboard:
+    value_driver: "demo ejecutiva segura"
+    adoption_kpi: "visitas y validación de payload público"
+    upsell_path: "portal_cliente_autenticado"
+
+success_stage_rules:
+  not_started:
+    label: "Implementación no iniciada"
+    action: "Confirmar firma, primer pago y kickoff."
+  onboarding:
+    label: "Onboarding"
+    action: "Cerrar contratos de métricas, fuentes y owners."
+  adoption:
+    label: "Adopción"
+    action: "Medir uso, feedback y valor observado."
+  renewal:
+    label: "Renovación"
+    action: "Preparar QBR, caso de valor y plan de expansión."
+
+upsell_catalog:
+  pricing_engine_avanzado:
+    label: "Pricing Engine Avanzado"
+    trigger: "stock/pricing activo o brecha mercado pendiente"
+    estimated_value: 4500
+  feedback_loop_y_experimentos:
+    label: "Feedback Loop + Experimentos Comerciales"
+    trigger: "cola de riesgo activa sin medición causal suficiente"
+    estimated_value: 6500
+  rag_multifuente_mercado_y_crm:
+    label: "RAG Multifuente Mercado + CRM"
+    trigger: "uso de memoria de negocio o preguntas ejecutivas recurrentes"
+    estimated_value: 8000
+  portal_cliente_autenticado:
+    label: "Portal Cliente Autenticado"
+    trigger: "Railway público validado y necesidad de acceso por rol"
+    estimated_value: 5000
+  board_pack_automatizado:
+    label: "Board Pack Automatizado"
+    trigger: "CEO Brief activo y necesidad de comité mensual"
+    estimated_value: 3500
+
+renewal_policy:
+  green:
+    recommendation: "renovar_y_expandir"
+    message: "Cliente saludable: preparar renovación y upsell selectivo."
+  yellow:
+    recommendation: "rescatar_adopcion_antes_de_renovar"
+    message: "Cliente en zona media: reforzar adopción, QBR y quick wins."
+  red:
+    recommendation: "plan_de_rescate_churn"
+    message: "Riesgo alto: intervención ejecutiva y replanteo de alcance."
+
+forbidden_public_terms:
+  - dni
+  - documento
+  - teléfono
+  - telefono
+  - celular
+  - email
+  - dirección
+  - direccion
+  - nombre completo
+  - codigo_proforma
+  - codigo_unidad
+  - password
+  - secret
+  - credential
+  - credenciales
+  - redshift_password

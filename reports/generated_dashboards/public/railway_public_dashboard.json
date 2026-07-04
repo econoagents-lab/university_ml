@@ -203,5 +203,5 @@
     "decision": "Yo sirvo solo payload público agregado en Railway y bloqueo fallback demo en producción."
   },
   "recommended_action": "Servir solo agregados públicos; bloquear sample fallback y cualquier campo sensible.",
-  "generated_at": "2026-07-04T16:17:38"
+  "generated_at": "2026-07-04T18:15:07"
 }

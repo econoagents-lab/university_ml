@@ -1,0 +1,17 @@
+{
+  "tenant_id": "cliente_bravo",
+  "generated_at": "2026-07-04T23:16:39+00:00",
+  "health_band": "red",
+  "churn_risk": "high",
+  "renewal_recommendation": "plan_de_rescate_churn",
+  "qbr_target_date": "2026-07-18",
+  "renewal_target_date": "2026-09-02",
+  "estimated_upsell_value": 0,
+  "currency": "USD",
+  "actions": [
+    "Escalamiento ejecutivo",
+    "Reducir alcance a quick wins",
+    "No proponer upsell hasta estabilizar salud"
+  ],
+  "referral_readiness": false
+}

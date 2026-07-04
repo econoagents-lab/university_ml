@@ -2,7 +2,7 @@
   "tenant_id": "cliente_alpha",
   "display_name": "Cliente Alpha · Desarrollador multifamiliar",
   "segment": "desarrollador_inmobiliario",
-  "generated_at": "2026-07-04T21:25:52+00:00",
+  "generated_at": "2026-07-04T23:15:16+00:00",
   "token_env_var": "MLU_DEMO_TOKEN_CLIENTE_ALPHA",
   "enabled_modules": [
     "ceo_brief",

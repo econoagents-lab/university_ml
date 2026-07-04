@@ -1,0 +1,215 @@
+# Yo declaro cómo una propuesta aceptada se convierte en orden de trabajo,
+# hitos, factura/proforma y seguimiento operativo.
+contract_ops_engine:
+  version: v2.4
+  currency: USD
+  default_start_offset_days: 2
+  default_tax_pct: 0
+  invoice_series: CI-OS
+  invoice_country: PE
+  invoice_type: proforma
+  payment_terms: "50% inicio, 50% contra entrega del MVP operativo"
+  legal_note: "Documento operativo y comercial referencial. La firma contractual final debe ser revisada por las partes."
+  privacy_position: "No se envía PII del CRM. Los anexos comerciales usan métricas agregadas, contratos de métricas y entregables definidos."
+  allowed_public_data: agregados
+  forbidden_public_data:
+    - cliente
+    - dni
+    - email
+    - telefono
+    - teléfono
+    - celular
+    - direccion
+    - dirección
+    - nombre completo
+    - codigo_proforma
+    - codigo_unidad
+    - password
+    - secret
+    - credential
+    - credenciales
+    - redshift_password
+
+status_flow:
+  proposal_sent: "Propuesta enviada"
+  accepted: "Propuesta aceptada"
+  work_order_created: "Orden de trabajo creada"
+  kickoff_scheduled: "Kickoff agendado"
+  in_delivery: "Implementación en curso"
+  ready_for_handoff: "Listo para handoff"
+  closed: "Cerrado"
+
+commercial_rules:
+  require_signed_acceptance_before_kickoff: true
+  require_first_payment_before_private_data_access: true
+  require_metric_contract_before_build: true
+  require_privacy_policy_before_demo: true
+  require_handoff_before_final_invoice: true
+
+invoice_rules:
+  upfront_pct: 50
+  delivery_pct: 50
+  monthly_first_invoice_after_days: 30
+  include_monthly_fee_in_first_invoice: false
+  payment_due_days: 7
+  accepted_payment_methods:
+    - transferencia bancaria
+    - invoice internacional
+    - acuerdo comercial directo
+
+milestone_templates:
+  diagnostic:
+    - id: M1
+      name: "Kickoff y contrato de métricas"
+      offset_days: 1
+      duration_days: 2
+      billing_pct: 50
+      owner: "Intelligence Lead"
+      acceptance_criteria:
+        - contrato de métricas validado
+        - fuentes y accesos confirmados
+    - id: M2
+      name: "Diagnóstico ejecutivo y recomendaciones"
+      offset_days: 7
+      duration_days: 3
+      billing_pct: 50
+      owner: "Intelligence Lead"
+      acceptance_criteria:
+        - reporte ejecutivo entregado
+        - backlog MVP priorizado
+  mvp:
+    - id: M1
+      name: "Kickoff, gobierno y privacidad"
+      offset_days: 1
+      duration_days: 3
+      billing_pct: 50
+      owner: "Product Owner / CDO"
+      acceptance_criteria:
+        - contrato de métricas aprobado
+        - política de privacidad aprobada
+        - ruta privada de data confirmada
+    - id: M2
+      name: "Marts, scoring y dashboards base"
+      offset_days: 7
+      duration_days: 10
+      billing_pct: 0
+      owner: "Data/MLOps"
+      acceptance_criteria:
+        - ranking de riesgo generado
+        - payload público agregado validado
+        - dashboards base generados
+    - id: M3
+      name: "Demo ejecutiva, handoff y cierre MVP"
+      offset_days: 24
+      duration_days: 6
+      billing_pct: 50
+      owner: "Intelligence Lead"
+      acceptance_criteria:
+        - demo ejecutiva presentada
+        - handoff técnico entregado
+        - checklist de aceptación firmado
+  professional:
+    - id: M1
+      name: "Kickoff, contrato de métricas y arquitectura"
+      offset_days: 1
+      duration_days: 5
+      billing_pct: 40
+      owner: "Product Owner / CDO"
+      acceptance_criteria:
+        - owners definidos
+        - contratos de datos aprobados
+        - arquitectura validada
+    - id: M2
+      name: "Fábrica de marts, dashboards y alertas"
+      offset_days: 8
+      duration_days: 16
+      billing_pct: 30
+      owner: "Data Engineering / Analytics"
+      acceptance_criteria:
+        - marts reales generados
+        - dashboards por catálogo operativos
+        - GitHub alerts configurados
+    - id: M3
+      name: "RAG, feedback loop y despliegue demo"
+      offset_days: 25
+      duration_days: 14
+      billing_pct: 20
+      owner: "MLOps / RAG"
+      acceptance_criteria:
+        - RAG con citas funcionando
+        - feedback loop exportable
+        - Railway payload seguro
+    - id: M4
+      name: "Handoff, capacitación y cierre"
+      offset_days: 40
+      duration_days: 5
+      billing_pct: 10
+      owner: "Intelligence Lead"
+      acceptance_criteria:
+        - runbooks entregados
+        - capacitación realizada
+        - cierre aprobado
+  enterprise:
+    - id: M1
+      name: "Discovery ejecutivo y contrato marco"
+      offset_days: 1
+      duration_days: 7
+      billing_pct: 30
+      owner: "Executive Sponsor / CDO"
+      acceptance_criteria:
+        - scope ejecutivo aprobado
+        - matriz de módulos priorizada
+        - contrato de datos aprobado
+    - id: M2
+      name: "Data foundation y seguridad"
+      offset_days: 8
+      duration_days: 18
+      billing_pct: 20
+      owner: "Data Engineering"
+      acceptance_criteria:
+        - pipelines privados operativos
+        - política anti-PII validada
+        - lineage y data quality documentados
+    - id: M3
+      name: "Commercial Intelligence OS"
+      offset_days: 27
+      duration_days: 25
+      billing_pct: 25
+      owner: "Analytics / MLOps"
+      acceptance_criteria:
+        - dashboards y API operativos
+        - RAG con guardrails
+        - feedback y experiment policy activos
+    - id: M4
+      name: "Multi-tenant, capacitación y handoff"
+      offset_days: 55
+      duration_days: 20
+      billing_pct: 25
+      owner: "Product Owner"
+      acceptance_criteria:
+        - tenants configurados
+        - paquete ejecutivo entregado
+        - operación transferida
+
+deliverable_templates:
+  base:
+    - "Orden de trabajo"
+    - "Contrato de métricas"
+    - "Checklist de onboarding"
+    - "Plan de 30 días"
+    - "Proforma / invoice schedule"
+  mvp:
+    - "Dashboard público seguro"
+    - "Ranking de riesgo"
+    - "GitHub Actions básicos"
+    - "Runbook de despliegue"
+  professional:
+    - "RAG business memory"
+    - "Marts reales"
+    - "Action feedback lab"
+    - "Quality gates"
+  enterprise:
+    - "Multi-tenant packaging"
+    - "Experiment policy engine"
+    - "Client data room policy"
+    - "Executive rollout pack"

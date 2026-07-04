@@ -1,0 +1,3 @@
+confidence,currency,estimated_value,label,recommended_timing,tenant_id,trigger,upsell_key
+rescue_only,USD,3500.0,Board Pack Automatizado,after_rescue_plan,cliente_condor,CEO Brief activo y necesidad de comité mensual,board_pack_automatizado
+rescue_only,USD,0.0,expansion,after_rescue_plan,cliente_condor,valor comercial pendiente de especificar,expansion

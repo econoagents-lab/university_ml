@@ -1,6 +1,6 @@
 {
   "version": "v1.8_experimentation_causal_impact_lab",
-  "generated_at": "2026-07-04T21:17:46.893534+00:00",
+  "generated_at": "2026-07-04T23:15:15.674607+00:00",
   "experiment_id": "riesgo_caida_action_impact_v1",
   "name": "Intervención comercial sobre riesgo de caída",
   "objective": "Medir si las acciones sobre P0/P1 reducen caídas y aumentan resultados positivos 7d/30d.",

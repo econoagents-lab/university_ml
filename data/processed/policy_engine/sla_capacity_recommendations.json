@@ -1,6 +1,6 @@
 {
   "version": "v1.9_experiment_power_and_policy_engine",
-  "generated_at": "2026-07-04T21:17:46.379982+00:00",
+  "generated_at": "2026-07-04T23:15:15.135013+00:00",
   "status": "capacity_warning",
   "current_team_daily_capacity": 30,
   "recommended_daily_capacity": 74,

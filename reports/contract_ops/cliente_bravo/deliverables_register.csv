@@ -1,0 +1,18 @@
+acceptance_required,deliverable,deliverable_id,milestone_id,owner,status
+True,Orden de trabajo,D01,M1,Product Owner / CDO,planned
+True,Contrato de métricas,D02,M2,Data/MLOps,planned
+True,Checklist de onboarding,D03,M3,Intelligence Lead,planned
+True,Plan de 30 días,D04,M3,Intelligence Lead,planned
+True,Proforma / invoice schedule,D05,M3,Intelligence Lead,planned
+True,Dashboard público seguro,D06,M3,Intelligence Lead,planned
+True,Ranking de riesgo,D07,M3,Intelligence Lead,planned
+True,GitHub Actions básicos,D08,M3,Intelligence Lead,planned
+True,Runbook de despliegue,D09,M3,Intelligence Lead,planned
+True,"{'module_id': 'ceo_brief', 'label': 'CEO Brief Ejecutivo', 'metric_owner': 'Gerencia', 'decision': 'Qué debe decidirse esta semana'}",D10,M3,Intelligence Lead,planned
+True,"{'module_id': 'risk_to_action_queue', 'label': 'Risk-to-Action Queue', 'metric_owner': 'Jefatura Comercial', 'decision': 'Qué operaciones priorizar hoy'}",D11,M3,Intelligence Lead,planned
+True,"{'module_id': 'dashboard_catalog', 'label': 'dashboard_catalog', 'metric_owner': 'por_confirmar', 'decision': 'por_confirmar'}",D12,M3,Intelligence Lead,planned
+True,"{'module_id': 'dashboard_metrics_engine', 'label': 'dashboard_metrics_engine', 'metric_owner': 'por_confirmar', 'decision': 'por_confirmar'}",D13,M3,Intelligence Lead,planned
+True,"{'module_id': 'railway_public_dashboard', 'label': 'Railway Public Safe Dashboard', 'metric_owner': 'Producto/Demo', 'decision': 'Qué puede ver un tercero sin PII'}",D14,M3,Intelligence Lead,planned
+True,"{'module_id': 'github_alerts', 'label': 'GitHub Alerts Tower', 'metric_owner': 'MLOps', 'decision': 'Qué falla o alerta debe atenderse'}",D15,M3,Intelligence Lead,planned
+True,"{'module_id': 'rag_business_memory', 'label': 'RAG Business Memory', 'metric_owner': 'Intelligence Team', 'decision': 'Qué evidencia sustenta una respuesta'}",D16,M3,Intelligence Lead,planned
+True,"{'module_id': 'real_marts', 'label': 'Real Mart Evidence Layer', 'metric_owner': 'CDO', 'decision': 'Qué métricas son oficiales vs proxy'}",D17,M3,Intelligence Lead,planned
