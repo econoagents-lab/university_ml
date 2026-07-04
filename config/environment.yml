@@ -1,0 +1,15 @@
+environment_defaults:
+  local:
+    data_mode: demo_or_crm
+    disable_sample_fallback: false
+  production:
+    data_mode: crm
+    disable_sample_fallback: true
+    public_payload_required: true
+railway:
+  MLU_ENV: production
+  MLU_DISABLE_SAMPLE_FALLBACK: 'true'
+  MLU_DATA_MODE: crm
+lenovo_self_hosted:
+  role: private_crm_full_runner
+  allowed_to_extract_redshift: true

@@ -1,0 +1,9 @@
+north_star:
+  metric: valor_esperado_en_riesgo_intervenido_y_convertido
+  owner: Gerencia Comercial
+  cadence: weekly
+lineage:
+  raw: data/raw or data/anon
+  silver: data/processed/silver
+  gold: data/processed/gold
+  products: reports/dashboard

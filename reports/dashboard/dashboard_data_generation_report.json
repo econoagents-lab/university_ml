@@ -1,24 +1,24 @@
 {
   "status": "ok",
   "artifacts": {
-    "decision_queue_parquet": "C:\\Repos\\freelance\\ml_university_ready\\reports\\dashboard\\decision_queue_riesgo_caida.parquet",
-    "decision_queue_csv": "C:\\Repos\\freelance\\ml_university_ready\\reports\\dashboard\\decision_queue_riesgo_caida.csv",
-    "dashboard_payload": "C:\\Repos\\freelance\\ml_university_ready\\reports\\dashboard\\decision_dashboard_payload.json"
+    "decision_queue_parquet": "/mnt/data/machine_learning_university_v1_0_production_release/reports/dashboard/decision_queue_riesgo_caida.parquet",
+    "decision_queue_csv": "/mnt/data/machine_learning_university_v1_0_production_release/reports/dashboard/decision_queue_riesgo_caida.csv",
+    "dashboard_payload": "/mnt/data/machine_learning_university_v1_0_production_release/reports/dashboard/decision_dashboard_payload.json"
   },
   "kpis": {
-    "generated_at": "2026-07-03T22:01:09",
+    "generated_at": "2026-07-03T17:22:01",
     "total_operaciones": 763,
-    "valor_total_en_riesgo": 22542416.42,
-    "riesgo_promedio": 0.4231,
-    "riesgo_p90": 0.5903,
+    "valor_total_en_riesgo": 21232580.48,
+    "riesgo_promedio": 0.3982,
+    "riesgo_p90": 0.5631,
     "p0_operaciones": 707,
     "p1_operaciones": 54,
     "p2_operaciones": 2,
     "p3_operaciones": 0,
-    "p0_p1_valor_en_riesgo": 22495994.24,
+    "p0_p1_valor_en_riesgo": 21191194.15,
     "top_proyecto_por_valor": "Tizón y Bueno",
-    "top_proyecto_valor_en_riesgo": 2844867.87,
+    "top_proyecto_valor_en_riesgo": 2769922.88,
     "top_asesor_por_valor": "Nelly Román Villavicencio",
-    "top_asesor_valor_en_riesgo": 4592732.9
+    "top_asesor_valor_en_riesgo": 4395201.77
   }
 }

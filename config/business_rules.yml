@@ -1,0 +1,44 @@
+funnel_rules:
+  stages:
+  - registros
+  - leads
+  - nuevos
+  - recontactos
+  - proformados
+  - separaciones
+  - minutas
+separacion_valida:
+  official_date: fecha_separacion
+  rule: proceso de separación válido y no duplicado
+minuta_valida:
+  official_date: fecha_minuta
+  rule: firma/minuta válida según contrato comercial
+caida_valida:
+  official_date: fecha_caida
+  rule: anulación/caída comercial válida
+tuberia_activa:
+  rule: separación viva sin minuta ni caída al snapshot
+lead_asignado:
+  rule: lead con fecha_asignacion + asesor + documento anonimizado
+stock_disponible:
+  rule: unidad disponible para venta
+caida_motivos:
+  homologation_required: true
+motivos_financieros:
+  keywords:
+  - financiero
+  - crédito
+  - banco
+  - cuota
+  - condiciones
+cuota_inicial:
+  official_fields:
+  - fecha_cuota_inicial
+  - monto_cuota_inicial
+absorcion:
+  formula: ventas_mes / stock_inicial_mes
+cobranza:
+  rule: pago válido con empresa/proyecto/unidad detectada
+pagos_matching:
+  tolerance_amount: 1.0
+  use_project_aliases: true

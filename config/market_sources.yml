@@ -1,0 +1,19 @@
+sources:
+  bcrp:
+    status: planned
+    use: tasas, crédito, contexto macro
+  inei:
+    status: planned
+    use: demografía y distritos
+  capeco:
+    status: planned
+    use: mercado inmobiliario
+  fondo_mivivienda:
+    status: planned
+    use: financiamiento y demanda
+  scraping_oferta_lima:
+    status: planned
+    use: precio m2 comparable
+price_m2_market:
+  granularity: distrito_mes_dormitorios
+  comparison_metric: brecha_precio_m2_pct

@@ -1,0 +1,3 @@
+default:
+  psi_warning: 0.1
+  psi_fail: 0.25

@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Data Quality</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 32px; background: #f7f8fb; color: #0b2538; }
+    .card { background: white; border: 1px solid #d9e0e8; border-radius: 14px; padding: 20px; margin: 16px 0; box-shadow: 0 2px 8px rgba(0,0,0,.04); }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px; }
+    .kpi { background: #0b2538; color: white; border-radius: 12px; padding: 16px; }
+    .kpi small { color: #bed2df; }
+    table { border-collapse: collapse; width: 100%; background: white; }
+    th, td { border: 1px solid #d9e0e8; padding: 8px; text-align: left; }
+    th { background: #123f63; color: white; }
+    code, pre { background: #eef3f7; padding: 8px; border-radius: 8px; overflow:auto; }
+    a { color: #0a66c2; }
+  </style>
+</head>
+<body>
+  <h1>Data Quality</h1>
+  <p><strong>Familia:</strong> data_quality · <strong>Owner:</strong> CDO / Analytics Engineering · <strong>Prioridad:</strong> governance</p>
+  <div class="card"><h2>Pregunta económica</h2><p>¿Qué tablas tienen nulos, duplicados o llaves rotas?</p></div>
+  <div class="grid">
+    <div class="kpi"><small>Total operaciones</small><h2>763</h2></div>
+    <div class="kpi"><small>Valor total en riesgo</small><h2>S/ 21,232,580.48</h2></div>
+    <div class="kpi"><small>Riesgo promedio</small><h2>0.398</h2></div>
+    <div class="kpi"><small>P0/P1</small><h2>{'operaciones': 761, 'valor_en_riesgo': 21191194.15}</h2></div>
+  </div>
+  <div class="card"><h2>Acción recomendada</h2><p>Usar el tablero para convertir datos en decisión, responsable, plazo y métrica de resultado.</p></div>
+  <div class="card"><h2>Top proyectos agregados</h2><table><thead><tr><th>proyecto</th><th>operaciones</th><th>valor_en_riesgo</th><th>riesgo_promedio</th><th>p0_p1</th></tr></thead><tbody><tr><td>Tizón y Bueno</td><td>82</td><td>2769922.88</td><td>0.5073</td><td>82</td></tr><tr><td>Edificio Cuba Connect</td><td>83</td><td>1986299.7</td><td>0.2822</td><td>83</td></tr><tr><td>Edificio Urbanzen</td><td>45</td><td>1783878.84</td><td>0.4903</td><td>45</td></tr><tr><td>Edificio Santa Cruz Infinite</td><td>84</td><td>1772295.82</td><td>0.2639</td><td>84</td></tr><tr><td>Modena</td><td>53</td><td>1672002.71</td><td>0.4932</td><td>53</td></tr></tbody></table></div>
+  <div class="card"><h2>Top asesores agregados</h2><table><thead><tr><th>asesor_anon</th><th>operaciones</th><th>valor_en_riesgo</th><th>riesgo_promedio</th><th>p0_p1</th></tr></thead><tbody><tr><td>Asesor_26DEBB0E</td><td>130</td><td>4395201.77</td><td>0.4635</td><td>130</td></tr><tr><td>Asesor_10B2BE3F</td><td>216</td><td>3678489.2</td><td>0.2044</td><td>216</td></tr><tr><td>Asesor_C931A67B</td><td>66</td><td>2219467.94</td><td>0.4375</td><td>65</td></tr><tr><td>Asesor_1F3B24E1</td><td>58</td><td>1961023.49</td><td>0.5103</td><td>58</td></tr><tr><td>Asesor_B56EAA59</td><td>58</td><td>1892075.93</td><td>0.5045</td><td>58</td></tr></tbody></table></div>
+  <div class="card"><h2>Top canales agregados</h2><table><thead><tr><th>canal</th><th>operaciones</th><th>valor_en_riesgo</th><th>riesgo_promedio</th><th>p0_p1</th></tr></thead><tbody><tr><td>sin_clasificar</td><td>763</td><td>21232580.48</td><td>0.3982</td><td>761</td></tr></tbody></table></div>
+  <div class="card"><h2>Donde cambiar</h2><p><code>contracts/data_contract_riesgo_caida.yml</code></p></div>
+  <div class="card"><h2>Parámetros actuales</h2><pre>name: data_contract_riesgo_caida
+version: 0.6.1
+owner: Chief Data Officer + Chief Economist
+contract_type: raw_or_audit_learning_dataset
+business_question: ¿Qué separaciones tienen mayor riesgo de caída a 30 días?
+grain: una fila por operación/separación o una fila por operación/snapshot según fuente
+source_type: synthetic_or_sperant_gold_audit
+privacy: no debe contener PII en repositorio
+model_ready_contract: contracts/model_ready_contract_riesgo_caida.yml
+columns:
+- name: proyecto
+  type: string
+  required: true
+- name: asesor
+  type: string
+  required: true
+- name: medio_captacion
+  type: string
+  required: true
+- name: canal_agrupado
+  type: string
+  required: true
+- name: dormitorios
+  type: integer
+  required: true
+- name: precio_departamento
+  type: float
+  required: true
+- name: dias_en_tuberia
+  type: integer
+  required: true
+- name: tiene_cuota_inicial
+  type: boolean
+  required: true
+- name: cambios_unidad
+  type: integer
+  required: true
+- name: interacciones_ult_7d
+  type: integer
+  required: true
+- name: descuento_pct
+  type: float
+  required: true
+- name: caida_30d
+  type: integer
+  required: true
+  description: Variable objetivo. 1 si la separación cae dentro del horizonte definido.
+audit_columns_allowed_in_raw_not_model_ready:
+- fecha_caida
+- fecha_firma
+- motivo_caida
+- fecha_anulacion
+quality_rules:
+- precio_departamento &gt; 0
+- dias_en_tuberia &gt;= 0
+- caida_30d in [0, 1]
+- audit columns may exist only before model-ready transformation
+output:
+  audit_gold_table: gold.fact_riesgo_caida_training
+  model_ready_table: gold.riesgo_caida_training_model_ready
+  model_endpoint: /predict/riesgo-caida
+  decision_owner: asesor_comercial
+</pre></div>
+  <p><a href="../index.html">Volver al índice</a></p>
+</body>
+</html>

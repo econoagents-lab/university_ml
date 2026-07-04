@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Minutas Mensuales</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 32px; background: #f7f8fb; color: #0b2538; }
+    .card { background: white; border: 1px solid #d9e0e8; border-radius: 14px; padding: 20px; margin: 16px 0; box-shadow: 0 2px 8px rgba(0,0,0,.04); }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px; }
+    .kpi { background: #0b2538; color: white; border-radius: 12px; padding: 16px; }
+    .kpi small { color: #bed2df; }
+    table { border-collapse: collapse; width: 100%; background: white; }
+    th, td { border: 1px solid #d9e0e8; padding: 8px; text-align: left; }
+    th { background: #123f63; color: white; }
+    code, pre { background: #eef3f7; padding: 8px; border-radius: 8px; overflow:auto; }
+    a { color: #0a66c2; }
+  </style>
+</head>
+<body>
+  <h1>Minutas Mensuales</h1>
+  <p><strong>Familia:</strong> commercial · <strong>Owner:</strong> BI Comercial · <strong>Prioridad:</strong> professional</p>
+  <div class="card"><h2>Pregunta económica</h2><p>¿Dónde se materializa la venta?</p></div>
+  <div class="grid">
+    <div class="kpi"><small>Total operaciones</small><h2>763</h2></div>
+    <div class="kpi"><small>Valor total en riesgo</small><h2>S/ 21,232,580.48</h2></div>
+    <div class="kpi"><small>Riesgo promedio</small><h2>0.398</h2></div>
+    <div class="kpi"><small>P0/P1</small><h2>{'operaciones': 761, 'valor_en_riesgo': 21191194.15}</h2></div>
+  </div>
+  <div class="card"><h2>Acción recomendada</h2><p>Usar el tablero para convertir datos en decisión, responsable, plazo y métrica de resultado.</p></div>
+  <div class="card"><h2>Top proyectos agregados</h2><table><thead><tr><th>proyecto</th><th>operaciones</th><th>valor_en_riesgo</th><th>riesgo_promedio</th><th>p0_p1</th></tr></thead><tbody><tr><td>Tizón y Bueno</td><td>82</td><td>2769922.88</td><td>0.5073</td><td>82</td></tr><tr><td>Edificio Cuba Connect</td><td>83</td><td>1986299.7</td><td>0.2822</td><td>83</td></tr><tr><td>Edificio Urbanzen</td><td>45</td><td>1783878.84</td><td>0.4903</td><td>45</td></tr><tr><td>Edificio Santa Cruz Infinite</td><td>84</td><td>1772295.82</td><td>0.2639</td><td>84</td></tr><tr><td>Modena</td><td>53</td><td>1672002.71</td><td>0.4932</td><td>53</td></tr></tbody></table></div>
+  <div class="card"><h2>Top asesores agregados</h2><table><thead><tr><th>asesor_anon</th><th>operaciones</th><th>valor_en_riesgo</th><th>riesgo_promedio</th><th>p0_p1</th></tr></thead><tbody><tr><td>Asesor_26DEBB0E</td><td>130</td><td>4395201.77</td><td>0.4635</td><td>130</td></tr><tr><td>Asesor_10B2BE3F</td><td>216</td><td>3678489.2</td><td>0.2044</td><td>216</td></tr><tr><td>Asesor_C931A67B</td><td>66</td><td>2219467.94</td><td>0.4375</td><td>65</td></tr><tr><td>Asesor_1F3B24E1</td><td>58</td><td>1961023.49</td><td>0.5103</td><td>58</td></tr><tr><td>Asesor_B56EAA59</td><td>58</td><td>1892075.93</td><td>0.5045</td><td>58</td></tr></tbody></table></div>
+  <div class="card"><h2>Top canales agregados</h2><table><thead><tr><th>canal</th><th>operaciones</th><th>valor_en_riesgo</th><th>riesgo_promedio</th><th>p0_p1</th></tr></thead><tbody><tr><td>sin_clasificar</td><td>763</td><td>21232580.48</td><td>0.3982</td><td>761</td></tr></tbody></table></div>
+  <div class="card"><h2>Donde cambiar</h2><p><code>config/business_rules.yml#minuta_valida</code></p></div>
+  <div class="card"><h2>Parámetros actuales</h2><pre>official_date: fecha_minuta
+rule: firma/minuta válida según contrato comercial
+</pre></div>
+  <p><a href="../index.html">Volver al índice</a></p>
+</body>
+</html>

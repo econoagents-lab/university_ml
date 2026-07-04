@@ -246,3 +246,49 @@ def public_decision_dashboard_html():
         raise HTTPException(status_code=503, detail=str(exc)) from exc
     path = generate_public_dashboard_html(payload)
     return HTMLResponse(path.read_text(encoding="utf-8"))
+
+@app.get("/metadata/dashboard-catalog")
+def dashboard_catalog_metadata():
+    """
+    Yo expongo el catálogo de dashboards para auditar qué productos de decisión existen.
+    """
+    from src.mlu.dashboard_control import dashboard_control_metadata, load_dashboard_catalog
+    meta = dashboard_control_metadata()
+    catalog = load_dashboard_catalog()
+    return {**meta, "dashboards": catalog.get("dashboards", [])}
+
+
+@app.get("/metadata/dashboard-params")
+def dashboard_params_metadata():
+    """
+    Yo expongo decisiones y parámetros de alto nivel sin revelar datos CRM.
+    """
+    from src.mlu.dashboard_control import load_dashboard_params, load_privacy_policy
+    params = load_dashboard_params()
+    privacy = load_privacy_policy()
+    return {
+        "version": params.get("version"),
+        "validated_decisions": params.get("validated_decisions", {}),
+        "public_dashboard": params.get("public_dashboard", {}),
+        "privacy_public_dashboard": privacy.get("public_dashboard", {}),
+    }
+
+
+@app.get("/metadata/generated-dashboards")
+def generated_dashboards_metadata():
+    """
+    Yo expongo metadata de los dashboards generados desde catálogo para auditoría y demo.
+    """
+    from src.mlu.dashboard_generator import dashboard_generator_metadata
+    return dashboard_generator_metadata()
+
+
+@app.get("/dashboard/catalog", response_class=HTMLResponse)
+def dashboard_catalog_generated_index():
+    """
+    Yo sirvo el índice HTML de dashboards generados desde catálogo.
+    """
+    from src.mlu.dashboard_generator import INDEX_HTML_PATH, generate_dashboards_from_catalog
+    if not INDEX_HTML_PATH.exists():
+        generate_dashboards_from_catalog()
+    return HTMLResponse(INDEX_HTML_PATH.read_text(encoding="utf-8"))

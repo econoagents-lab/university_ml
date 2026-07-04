@@ -1,0 +1,14 @@
+project: machine_learning_university
+version: v1.4_dashboard_generator_from_catalog
+safe_aggregate_only: true
+generate_markdown: true
+generate_html: true
+generate_json: true
+max_top_items: 5
+output_dir: reports/generated_dashboards
+principle: "Yo genero dashboards desde catálogo y parámetros; no reescribo pantallas a mano."
+public_policy:
+  railway_public_payload_only: true
+  no_row_level_operations: true
+  no_pii: true
+  sample_fallback_blocked_in_production: true

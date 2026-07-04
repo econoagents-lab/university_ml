@@ -1,0 +1,51 @@
+name: Dashboard Generator From Catalog
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - "config/dashboard_catalog.yml"
+      - "config/dashboard_params.yml"
+      - "config/model_params.yml"
+      - "config/privacy_policy.yml"
+      - "src/mlu/dashboard_generator.py"
+      - "scripts/77_generate_dashboards_from_catalog.py"
+      - "scripts/80_run_v14_dashboard_generator.py"
+
+permissions:
+  contents: read
+  actions: read
+
+jobs:
+  generate-dashboard-catalog:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install pandas pyyaml pytest pyarrow
+
+      - name: Generate dashboards from catalog
+        run: |
+          python scripts/80_run_v14_dashboard_generator.py
+
+      - name: Publish dashboard summary
+        if: always()
+        run: |
+          cat reports/generated_dashboards/DASHBOARD_INDEX.md >> $GITHUB_STEP_SUMMARY
+
+      - name: Upload generated dashboards
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: generated-dashboards-from-catalog
+          path: |
+            reports/generated_dashboards/

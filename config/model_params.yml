@@ -1,0 +1,41 @@
+project: machine_learning_university
+version: v1.3_dashboard_catalog_parameter_control
+riesgo_caida:
+  horizon_days: 30
+  target: caida_30d
+  unit_of_analysis: codigo_proforma + codigo_unidad + fecha_snapshot
+  unit_focus: departamento
+  thresholds:
+    p0: 0.7
+    p1: 0.5
+    p2: 0.35
+  forbidden_columns:
+  - fecha_caida
+  - fecha_firma
+  - fecha_anulacion
+  - motivo_caida
+  - estado_final
+lead_scoring:
+  horizon_days: 90
+  target: convierte_a_separacion_o_minuta
+  status: planned
+absorcion_forecast:
+  horizon_months:
+  - 3
+  - 6
+  - 12
+  granularity: proyecto_mes_tipo_unidad
+  status: planned
+cobranza_riesgo:
+  horizon_days: 30
+  target: atraso_o_saldo_pendiente
+  status: planned
+calibration:
+  bins: 10
+  min_reliability_threshold: 0.05
+lift:
+  deciles: 10
+  top_k:
+  - 20
+  - 50
+  - 100

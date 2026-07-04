@@ -11,3 +11,23 @@
 - [x] El payload público tiene `data_mode = crm`.
 - [x] El payload público no contiene cliente, documento, email, teléfono, nombre completo, dirección ni credenciales.
 - [x] `pytest -q` pasa.
+
+## v1.3 Acceptance Criteria
+
+- Existe `config/dashboard_catalog.yml` con al menos 60 dashboards.
+- Existe `reports/dashboard_control/DASHBOARD_CONTROL_PANEL.md` con columna `Donde cambiar`.
+- Existe `reports/dashboard_control/INPUTS_TO_CONFIRM.md` con inputs críticos y rutas de cambio.
+- Las decisiones recomendadas quedan codificadas en `dashboard_params.yml` y `privacy_policy.yml`.
+- Railway público no expone filas, clientes, documentos, teléfonos, emails, direcciones ni credenciales.
+- Los tests pasan con `pytest -q`.
+
+## v1.4 Acceptance Criteria
+
+- [x] Existe `src/mlu/dashboard_generator.py`.
+- [x] Existen scripts 77-80 para generar, indexar y validar dashboards.
+- [x] Se generan al menos 60 dashboards desde catálogo.
+- [x] Cada dashboard contiene pregunta económica, owner, audiencia, acción recomendada y `Donde cambiar`.
+- [x] Existe índice maestro HTML/Markdown.
+- [x] Existe manifest JSON.
+- [x] Existen tests automatizados.
+- [x] No se requiere `.env` ni credenciales.

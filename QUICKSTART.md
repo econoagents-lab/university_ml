@@ -47,3 +47,25 @@ MLU_DISABLE_SAMPLE_FALLBACK=true
 ```
 
 Con esa configuración, si falta `reports/public/decision_dashboard_payload_public.json`, la API no sirve sample data.
+
+## v1.3 Dashboard Control
+
+```powershell
+python scripts/76_run_v13_dashboard_control.py
+start reports/dashboard_control/DASHBOARD_CONTROL_PANEL.md
+start reports/dashboard_control/INPUTS_TO_CONFIRM.md
+```
+
+## Ejecutar v1.4 Dashboard Generator
+
+```powershell
+python scripts/80_run_v14_dashboard_generator.py
+pytest -q
+.\run_dashboard_generator_from_catalog.ps1 -RunTests -OpenIndex
+```
+
+Abre:
+
+```text
+reports/generated_dashboards/index.html
+```

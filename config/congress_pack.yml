@@ -1,0 +1,15 @@
+figures:
+- problem_funnel
+- target_distribution
+- temporal_split
+- anti_leakage_architecture
+- roc_curve
+- pr_curve
+- confusion_matrix
+- lift_deciles
+- calibration_curve
+- drift_heatmap
+- champion_vs_challenger
+- feature_importance
+- intervention_effect
+- dashboard_catalog_map

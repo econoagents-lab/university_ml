@@ -1,6 +1,6 @@
 {
   "project": "riesgo_caida",
-  "current_champion": "riesgo_caida_random_forest_dataset_riesgo_caida_sperant_2026_07_04_v002_c02",
+  "current_champion": "riesgo_caida_random_forest_dataset_riesgo_caida_crm_2026_07_03_v001_c02",
   "models": [
     {
       "model_id": "riesgo_caida_logistic_regression_dataset_riesgo_caida_crm_2026_07_03_v001_c01",
@@ -37,7 +37,7 @@
       "model_id": "riesgo_caida_random_forest_dataset_riesgo_caida_crm_2026_07_03_v001_c02",
       "project": "riesgo_caida",
       "algorithm": "random_forest",
-      "status": "retired",
+      "status": "champion",
       "dataset_version": "dataset_riesgo_caida_crm_2026_07_03_v001",
       "registered_at": "2026-07-03T16:53:38+00:00",
       "artifact_path": "models/artifacts/riesgo_caida_random_forest_dataset_riesgo_caida_crm_2026_07_03_v001_c02.joblib",
@@ -64,9 +64,7 @@
       },
       "notes": "trained_from_crm_model_ready_dataset",
       "champion_since": "2026-07-03T16:53:52+00:00",
-      "promotion_reason": "v0.8_policy_or_manual_promotion",
-      "retired_at": "2026-07-04T03:00:24+00:00",
-      "retirement_reason": "replaced_by_riesgo_caida_random_forest_dataset_riesgo_caida_sperant_2026_07_04_v002_c02"
+      "promotion_reason": "v0.8_policy_or_manual_promotion"
     },
     {
       "model_id": "riesgo_caida_gradient_boosting_dataset_riesgo_caida_crm_2026_07_03_v001_c03",
@@ -98,102 +96,7 @@
         "data_mode": "crm"
       },
       "notes": "trained_from_crm_model_ready_dataset"
-    },
-    {
-      "model_id": "riesgo_caida_logistic_regression_dataset_riesgo_caida_sperant_2026_07_04_v002_c01",
-      "project": "riesgo_caida",
-      "algorithm": "logistic_regression",
-      "status": "challenger",
-      "dataset_version": "dataset_riesgo_caida_sperant_2026_07_04_v002",
-      "registered_at": "2026-07-04T03:00:13+00:00",
-      "artifact_path": "models\\artifacts\\riesgo_caida_logistic_regression_dataset_riesgo_caida_sperant_2026_07_04_v002_c01.joblib",
-      "artifact_sha256": "606f467e2411500df254ce23773aa07ef5834a5b581d025ba3c2c82b3fd6b971",
-      "model_card_path": "models\\cards\\model_card_riesgo_caida_logistic_regression_dataset_riesgo_caida_sperant_2026_07_04_v002_c01.md",
-      "metrics": {
-        "roc_auc": 0.5176044379033171,
-        "average_precision": 0.09592645392984037,
-        "threshold": 0.4,
-        "precision": 0.09574468085106383,
-        "recall": 0.8181818181818182,
-        "f1": 0.17142857142857143,
-        "tn": 208,
-        "fp": 595,
-        "fn": 14,
-        "tp": 63,
-        "base_event_rate": 0.0875,
-        "top_decile_event_rate": 0.07954545454545454,
-        "top_decile_lift": 0.9090909090909092,
-        "train_rows": 2638,
-        "test_rows": 880,
-        "dataset_version": "dataset_riesgo_caida_sperant_2026_07_04_v002",
-        "data_mode": "sperant"
-      },
-      "notes": "trained_from_sperant_model_ready_dataset"
-    },
-    {
-      "model_id": "riesgo_caida_random_forest_dataset_riesgo_caida_sperant_2026_07_04_v002_c02",
-      "project": "riesgo_caida",
-      "algorithm": "random_forest",
-      "status": "champion",
-      "dataset_version": "dataset_riesgo_caida_sperant_2026_07_04_v002",
-      "registered_at": "2026-07-04T03:00:16+00:00",
-      "artifact_path": "models\\artifacts\\riesgo_caida_random_forest_dataset_riesgo_caida_sperant_2026_07_04_v002_c02.joblib",
-      "artifact_sha256": "5cb056a149dec1e1c4c47c6f8c6136310222d3b879b0ee985eaa8c35d70db766",
-      "model_card_path": "models\\cards\\model_card_riesgo_caida_random_forest_dataset_riesgo_caida_sperant_2026_07_04_v002_c02.md",
-      "metrics": {
-        "roc_auc": 0.5145800650159305,
-        "average_precision": 0.11734507788009163,
-        "threshold": 0.4,
-        "precision": 0.08833922261484099,
-        "recall": 0.974025974025974,
-        "f1": 0.16198704103671707,
-        "tn": 29,
-        "fp": 774,
-        "fn": 2,
-        "tp": 75,
-        "base_event_rate": 0.0875,
-        "top_decile_event_rate": 0.10227272727272728,
-        "top_decile_lift": 1.168831168831169,
-        "train_rows": 2638,
-        "test_rows": 880,
-        "dataset_version": "dataset_riesgo_caida_sperant_2026_07_04_v002",
-        "data_mode": "sperant"
-      },
-      "notes": "trained_from_sperant_model_ready_dataset",
-      "champion_since": "2026-07-04T03:00:24+00:00",
-      "promotion_reason": "v0.8_policy_or_manual_promotion"
-    },
-    {
-      "model_id": "riesgo_caida_gradient_boosting_dataset_riesgo_caida_sperant_2026_07_04_v002_c03",
-      "project": "riesgo_caida",
-      "algorithm": "gradient_boosting",
-      "status": "challenger",
-      "dataset_version": "dataset_riesgo_caida_sperant_2026_07_04_v002",
-      "registered_at": "2026-07-04T03:00:17+00:00",
-      "artifact_path": "models\\artifacts\\riesgo_caida_gradient_boosting_dataset_riesgo_caida_sperant_2026_07_04_v002_c03.joblib",
-      "artifact_sha256": "2d2532634cd6fa1dfd61dfe9d6c66a71586e9e540eeb626253d8a032abdecb6a",
-      "model_card_path": "models\\cards\\model_card_riesgo_caida_gradient_boosting_dataset_riesgo_caida_sperant_2026_07_04_v002_c03.md",
-      "metrics": {
-        "roc_auc": 0.4969837136711358,
-        "average_precision": 0.0943966829429236,
-        "threshold": 0.4,
-        "precision": 0.13333333333333333,
-        "recall": 0.025974025974025976,
-        "f1": 0.043478260869565216,
-        "tn": 790,
-        "fp": 13,
-        "fn": 75,
-        "tp": 2,
-        "base_event_rate": 0.0875,
-        "top_decile_event_rate": 0.07954545454545454,
-        "top_decile_lift": 0.9090909090909092,
-        "train_rows": 2638,
-        "test_rows": 880,
-        "dataset_version": "dataset_riesgo_caida_sperant_2026_07_04_v002",
-        "data_mode": "sperant"
-      },
-      "notes": "trained_from_sperant_model_ready_dataset"
     }
   ],
-  "updated_at": "2026-07-04T03:00:24+00:00"
+  "updated_at": "2026-07-03T16:53:52+00:00"
 }

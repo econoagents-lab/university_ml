@@ -1,0 +1,26 @@
+allowed_tables:
+- mart_project_month
+- mart_unit_month
+- mart_advisor_project_month
+- mart_market_district_month
+- decision_dashboard_payload_public
+forbidden_columns:
+- cliente
+- documento
+- dni
+- ruc_personal
+- email
+- correo
+- telefono
+- teléfono
+- celular
+- nombre_completo
+- direccion
+- dirección
+- password
+- secret
+- token
+- credential
+- credenciales
+- api_key
+policy: Yo solo permito consultas sobre tablas anonimizadas o agregadas.

@@ -1,0 +1,13 @@
+checklist:
+- Notebook Run all
+- Corpus propio
+- FAISS
+- Top-k retrieval
+- Mínimo 2 técnicas avanzadas
+- 15 preguntas de evaluación
+- 2 preguntas trampa
+- RAGAS-like
+- Demo
+- Tabla de trazabilidad
+- Guardrails PII
+- Text-to-SQL controlado

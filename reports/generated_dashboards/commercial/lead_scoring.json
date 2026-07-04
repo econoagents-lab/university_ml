@@ -1,0 +1,185 @@
+{
+  "id": "lead_scoring",
+  "number": 21,
+  "name": "Lead Scoring",
+  "family": "commercial",
+  "owner": "Marketing / Comercial",
+  "audience": "Call Center / Asesores",
+  "economic_question": "¿Qué leads merecen más esfuerzo comercial?",
+  "priority": "professional",
+  "status": "cataloged",
+  "output_path_declared": "reports/dashboard/commercial/LEAD_SCORING.md",
+  "params_ref": "config/model_params.yml#lead_scoring",
+  "where_to_change": "config/model_params.yml#lead_scoring",
+  "params_snapshot": {
+    "horizon_days": 90,
+    "target": "convierte_a_separacion_o_minuta",
+    "status": "planned"
+  },
+  "global_kpis": {
+    "total_operaciones": 763,
+    "valor_total_en_riesgo": 21232580.48,
+    "riesgo_promedio": 0.3982,
+    "p0_p1": {
+      "operaciones": 761,
+      "valor_en_riesgo": 21191194.15
+    },
+    "top_proyectos": [
+      {
+        "proyecto": "Tizón y Bueno",
+        "operaciones": 82,
+        "valor_en_riesgo": 2769922.88,
+        "riesgo_promedio": 0.5073,
+        "p0_p1": 82
+      },
+      {
+        "proyecto": "Edificio Cuba Connect",
+        "operaciones": 83,
+        "valor_en_riesgo": 1986299.7,
+        "riesgo_promedio": 0.2822,
+        "p0_p1": 83
+      },
+      {
+        "proyecto": "Edificio Urbanzen",
+        "operaciones": 45,
+        "valor_en_riesgo": 1783878.84,
+        "riesgo_promedio": 0.4903,
+        "p0_p1": 45
+      },
+      {
+        "proyecto": "Edificio Santa Cruz Infinite",
+        "operaciones": 84,
+        "valor_en_riesgo": 1772295.82,
+        "riesgo_promedio": 0.2639,
+        "p0_p1": 84
+      },
+      {
+        "proyecto": "Modena",
+        "operaciones": 53,
+        "valor_en_riesgo": 1672002.71,
+        "riesgo_promedio": 0.4932,
+        "p0_p1": 53
+      },
+      {
+        "proyecto": "Sialia",
+        "operaciones": 50,
+        "valor_en_riesgo": 1536291.67,
+        "riesgo_promedio": 0.513,
+        "p0_p1": 50
+      },
+      {
+        "proyecto": "Fenix",
+        "operaciones": 45,
+        "valor_en_riesgo": 1383057.25,
+        "riesgo_promedio": 0.4733,
+        "p0_p1": 45
+      },
+      {
+        "proyecto": "Capadocia",
+        "operaciones": 34,
+        "valor_en_riesgo": 1345408.17,
+        "riesgo_promedio": 0.4963,
+        "p0_p1": 34
+      },
+      {
+        "proyecto": "Edificio Mariategui",
+        "operaciones": 37,
+        "valor_en_riesgo": 1239640.95,
+        "riesgo_promedio": 0.4392,
+        "p0_p1": 37
+      },
+      {
+        "proyecto": "Torre Nápoles",
+        "operaciones": 52,
+        "valor_en_riesgo": 1211178.35,
+        "riesgo_promedio": 0.5238,
+        "p0_p1": 52
+      }
+    ],
+    "top_asesores": [
+      {
+        "asesor_anon": "Asesor_26DEBB0E",
+        "operaciones": 130,
+        "valor_en_riesgo": 4395201.77,
+        "riesgo_promedio": 0.4635,
+        "p0_p1": 130
+      },
+      {
+        "asesor_anon": "Asesor_10B2BE3F",
+        "operaciones": 216,
+        "valor_en_riesgo": 3678489.2,
+        "riesgo_promedio": 0.2044,
+        "p0_p1": 216
+      },
+      {
+        "asesor_anon": "Asesor_C931A67B",
+        "operaciones": 66,
+        "valor_en_riesgo": 2219467.94,
+        "riesgo_promedio": 0.4375,
+        "p0_p1": 65
+      },
+      {
+        "asesor_anon": "Asesor_1F3B24E1",
+        "operaciones": 58,
+        "valor_en_riesgo": 1961023.49,
+        "riesgo_promedio": 0.5103,
+        "p0_p1": 58
+      },
+      {
+        "asesor_anon": "Asesor_B56EAA59",
+        "operaciones": 58,
+        "valor_en_riesgo": 1892075.93,
+        "riesgo_promedio": 0.5045,
+        "p0_p1": 58
+      },
+      {
+        "asesor_anon": "Asesor_2660085B",
+        "operaciones": 55,
+        "valor_en_riesgo": 1757867.58,
+        "riesgo_promedio": 0.4969,
+        "p0_p1": 55
+      },
+      {
+        "asesor_anon": "Asesor_1959B8DB",
+        "operaciones": 49,
+        "valor_en_riesgo": 1521403.43,
+        "riesgo_promedio": 0.5225,
+        "p0_p1": 49
+      },
+      {
+        "asesor_anon": "Asesor_D5DBFC78",
+        "operaciones": 32,
+        "valor_en_riesgo": 998116.32,
+        "riesgo_promedio": 0.4827,
+        "p0_p1": 32
+      },
+      {
+        "asesor_anon": "Asesor_1DCEA22A",
+        "operaciones": 23,
+        "valor_en_riesgo": 709357.01,
+        "riesgo_promedio": 0.5001,
+        "p0_p1": 23
+      },
+      {
+        "asesor_anon": "Asesor_BB88CD67",
+        "operaciones": 23,
+        "valor_en_riesgo": 622837.74,
+        "riesgo_promedio": 0.426,
+        "p0_p1": 23
+      }
+    ],
+    "top_canales": [
+      {
+        "canal": "sin_clasificar",
+        "operaciones": 763,
+        "valor_en_riesgo": 21232580.48,
+        "riesgo_promedio": 0.3982,
+        "p0_p1": 761
+      }
+    ],
+    "data_mode": "crm",
+    "fecha_generacion": "2026-07-04T04:23:08"
+  },
+  "recommended_action": "Comparar conversión por etapa, canal y asesor; priorizar los cuellos de botella con mayor valor comercial.",
+  "generated_at": "2026-07-04T01:29:39"
+}

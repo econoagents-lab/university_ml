@@ -1,0 +1,129 @@
+project: machine_learning_university
+version: v1.3_dashboard_catalog_parameter_control
+validated_decisions:
+  project_names_public: true
+  project_names_public_reason: Yo permito proyectos reales agregados para demo comercial,
+    pero sin unidades ni clientes.
+  advisors_public_anonymized: true
+  channels_public_visible: true
+  aggregated_value_at_risk_public: true
+  top_operations_public: false
+  pii_public: false
+  rag_crm_access: anon_aggregated_only
+  railway_data_strategy: aggregated_public_payload_only
+  lenovo_data_strategy: private_full_crm_runner
+  github_artifacts_strategy: aggregated_or_anonymized_only
+ceo_brief:
+  period: current_month
+  top_n_projects: 5
+  top_n_advisors: 5
+  include_rag_summary: true
+  include_model_status: true
+  include_alerts: true
+channel_mapping:
+  traditional:
+  - sala de ventas
+  - referido
+  - asignacion de mayra
+  - seguimiento lead
+  digital:
+  - facebook
+  - fb
+  - nexo
+  - web
+  - urbania
+  - contacto web
+  ferias:
+  - feria urbania
+  - feria inmobiliaria
+  - expourbania
+project_filters:
+  active_only: true
+  exclude_projects: []
+  min_operations_for_ranking: 1
+advisor_filters:
+  active_only: true
+  anonymize_public: true
+  min_operations_for_ranking: 1
+conversion_sep_minuta:
+  conversion_window_days: 30
+  include_same_month: true
+  include_previous_pipeline: true
+lead_to_minuta:
+  conversion_window_days: 90
+  attribution_model: last_touch_with_first_touch_context
+attribution:
+  default_model: last_touch
+  available_models:
+  - first_touch
+  - last_touch
+  - linear
+  - assisted_close
+channel_migration:
+  migration_definition: canal_inicial != canal_cierre
+  show_migration_matrix: true
+media_advisor_matrix:
+  top_n_media: 15
+  top_n_advisors: 15
+project_channel:
+  top_n_projects: 15
+  top_n_channels: 10
+product_mix:
+  unit_focus: departamento
+  dimensions:
+  - dormitorios
+  - tipo_unidad
+  - proyecto
+stock_valuation:
+  price_field: precio_lista
+  include_discount: true
+  currency: PEN
+pricing_unitario:
+  compare_by:
+  - distrito
+  - dormitorios
+  - m2
+  - piso
+  price_gap_warning_pct: 0.1
+  price_gap_critical_pct: 0.15
+discounts:
+  discount_warning_pct: 0.05
+  discount_critical_pct: 0.1
+value_at_risk:
+  currency: PEN
+  formula: probabilidad_caida * precio_departamento
+  show_only_aggregated_public: true
+cuota_inicial_timing:
+  warning_days: 7
+  critical_days: 14
+caidas_asesor:
+  top_n: 10
+  include_motivo: true
+caidas_proyecto:
+  top_n: 10
+  include_estado_previo: true
+cobranza_avance:
+  paid_threshold_pct: 0.95
+  include_overpayment: true
+public_dashboard:
+  data_mode: crm
+  top_n: 5
+  anonymize_advisors: true
+  include_project_names: true
+  include_channel_names: true
+  include_row_level_operations: false
+  disable_sample_fallback_in_production: true
+  forbidden_columns:
+  - cliente
+  - documento
+  - dni
+  - email
+  - telefono
+  - teléfono
+  - nombre_completo
+  - direccion
+  - dirección
+  - credenciales
+  - password
+  - secret
+  - token

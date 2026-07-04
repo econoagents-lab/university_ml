@@ -1,0 +1,13 @@
+riesgo_caida:
+  required_fields:
+  - codigo_proforma
+  - accion_tomada
+  - owner
+  - fecha_accion
+  - resultado
+  outcomes:
+  - contactado
+  - cuota_inicial_pagada
+  - minuta_firmada
+  - caida
+  - sin_respuesta

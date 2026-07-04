@@ -45,7 +45,7 @@ No usar el ranking como prioridad fuerte hasta auditar drift/fuentes o reentrena
     },
     {
       "feature": "precio_departamento",
-      "drift_metric": 0.43669378887585636,
+      "drift_metric": 0.4356558535669853,
       "status": "fail"
     },
     {
@@ -64,11 +64,11 @@ No usar el ranking como prioridad fuerte hasta auditar drift/fuentes o reentrena
 {
   "reference_rows": 2638,
   "current_rows": 880,
-  "reference_mean_score": 0.4302683413020061,
-  "current_mean_score": 0.540699036487509,
-  "reference_p90_score": 0.6105323502979398,
-  "current_p90_score": 0.6194930839198192,
-  "prediction_psi": 3.731872012965562,
+  "reference_mean_score": 0.40793994465529276,
+  "current_mean_score": 0.5137471058310752,
+  "reference_p90_score": 0.5916951290388297,
+  "current_p90_score": 0.5979685637756353,
+  "prediction_psi": 3.712529781554015,
   "status": "fail",
   "threshold_warning": 0.1,
   "threshold_fail": 0.25
@@ -80,9 +80,9 @@ No usar el ranking como prioridad fuerte hasta auditar drift/fuentes o reentrena
 ```json
 {
   "rows": 880,
-  "brier_score": 0.2885424449960907,
-  "mean_abs_calibration_gap": 0.45319903648750903,
-  "max_abs_calibration_gap": 0.5517250154341173,
+  "brier_score": 0.2646625087420126,
+  "mean_abs_calibration_gap": 0.42624710583107517,
+  "max_abs_calibration_gap": 0.5274874046172663,
   "bins": 10
 }
 ```

@@ -1,0 +1,604 @@
+project: machine_learning_university
+version: v1.3_dashboard_catalog_parameter_control
+principle: Yo no cambio código para mover la estrategia; cambio contratos y parámetros.
+dashboards:
+- id: ceo_brief
+  number: 1
+  name: CEO Brief Ejecutivo
+  owner: Gerencia
+  audience: C-level
+  economic_question: ¿Qué debe decidir gerencia esta semana?
+  output_path: reports/dashboard/executive/CEO_BRIEF.md
+  params_ref: config/dashboard_params.yml#ceo_brief
+  status: cataloged
+  priority: mvp
+- id: north_star_comercial
+  number: 2
+  name: North Star Comercial
+  owner: Gerencia Comercial
+  audience: C-level / Comercial
+  economic_question: ¿La operación comercial mejora o se deteriora?
+  output_path: reports/dashboard/executive/NORTH_STAR_COMERCIAL.md
+  params_ref: config/metric_contracts.yml#north_star
+  status: cataloged
+  priority: professional
+- id: funnel_global
+  number: 3
+  name: Funnel Global
+  owner: BI Comercial
+  audience: Gerencia Comercial
+  economic_question: ¿Cuántos leads llegan y cuántos terminan en minuta?
+  output_path: reports/dashboard/commercial/FUNNEL_GLOBAL.md
+  params_ref: config/business_rules.yml#funnel_rules
+  status: cataloged
+  priority: mvp
+- id: funnel_tradicional_vs_digital
+  number: 4
+  name: Funnel Tradicional vs Digital
+  owner: Marketing / Comercial
+  audience: Marketing / Gerencia
+  economic_question: ¿Qué canal convierte mejor?
+  output_path: reports/dashboard/commercial/FUNNEL_CANALES.md
+  params_ref: config/dashboard_params.yml#channel_mapping
+  status: cataloged
+  priority: professional
+- id: funnel_por_proyecto
+  number: 5
+  name: Funnel por Proyecto
+  owner: Jefatura Comercial
+  audience: Gerencia Comercial
+  economic_question: ¿Qué proyecto convierte mejor desde lead a venta?
+  output_path: reports/dashboard/commercial/FUNNEL_PROYECTO.md
+  params_ref: config/dashboard_params.yml#project_filters
+  status: cataloged
+  priority: professional
+- id: funnel_por_asesor
+  number: 6
+  name: Funnel por Asesor
+  owner: Jefatura Comercial
+  audience: Asesores / Gerencia
+  economic_question: ¿Qué asesor convierte mejor y dónde pierde?
+  output_path: reports/dashboard/commercial/FUNNEL_ASESOR.md
+  params_ref: config/dashboard_params.yml#advisor_filters
+  status: cataloged
+  priority: professional
+- id: separaciones_mensuales
+  number: 7
+  name: Separaciones Mensuales
+  owner: BI Comercial
+  audience: Comercial
+  economic_question: ¿Dónde nace la demanda real?
+  output_path: reports/dashboard/commercial/SEPARACIONES_MENSUALES.md
+  params_ref: config/business_rules.yml#separacion_valida
+  status: cataloged
+  priority: professional
+- id: minutas_mensuales
+  number: 8
+  name: Minutas Mensuales
+  owner: BI Comercial
+  audience: Comercial / Finanzas
+  economic_question: ¿Dónde se materializa la venta?
+  output_path: reports/dashboard/commercial/MINUTAS_MENSUALES.md
+  params_ref: config/business_rules.yml#minuta_valida
+  status: cataloged
+  priority: professional
+- id: conversion_sep_minuta
+  number: 9
+  name: Conversión Separación → Minuta
+  owner: Jefatura Comercial
+  audience: Comercial
+  economic_question: ¿Qué separaciones convierten y cuáles quedan en riesgo?
+  output_path: reports/dashboard/commercial/CONVERSION_SEP_MINUTA.md
+  params_ref: config/dashboard_params.yml#conversion_sep_minuta
+  status: cataloged
+  priority: mvp
+- id: tuberia_comercial
+  number: 10
+  name: Tubería Comercial
+  owner: Jefatura Comercial
+  audience: Comercial
+  economic_question: ¿Qué ventas están pendientes de cerrar?
+  output_path: reports/dashboard/commercial/TUBERIA_COMERCIAL.md
+  params_ref: config/business_rules.yml#tuberia_activa
+  status: cataloged
+  priority: mvp
+- id: tuberia_envejecida
+  number: 11
+  name: Tubería Envejecida
+  owner: Jefatura Comercial
+  audience: Comercial
+  economic_question: ¿Qué operaciones llevan demasiado tiempo sin cerrar?
+  output_path: reports/dashboard/risk/TUBERIA_ENVEJECIDA.md
+  params_ref: config/alert_thresholds.yml#tuberia
+  status: cataloged
+  priority: mvp
+- id: riesgo_caida
+  number: 12
+  name: Riesgo de Caída
+  owner: Jefatura Comercial
+  audience: Gerencia Comercial / Asesores
+  economic_question: ¿Qué operaciones activas tienen mayor probabilidad de caer?
+  output_path: reports/dashboard/risk/RIESGO_CAIDA.md
+  params_ref: config/model_params.yml#riesgo_caida
+  status: cataloged
+  priority: mvp
+- id: ranking_riesgo_comercial
+  number: 13
+  name: Ranking Riesgo Comercial
+  owner: Jefatura Comercial
+  audience: Asesores
+  economic_question: ¿A quién llamo hoy primero?
+  output_path: reports/dashboard/risk/RANKING_RIESGO_COMERCIAL.csv
+  params_ref: config/alert_thresholds.yml#riesgo_caida_prioridades
+  status: cataloged
+  priority: mvp
+- id: valor_esperado_en_riesgo
+  number: 14
+  name: Valor Esperado en Riesgo
+  owner: Gerencia Comercial
+  audience: C-level
+  economic_question: ¿Cuánto valor económico está expuesto?
+  output_path: reports/dashboard/risk/VALOR_ESPERADO_RIESGO.md
+  params_ref: config/dashboard_params.yml#value_at_risk
+  status: cataloged
+  priority: mvp
+- id: caidas_por_motivo
+  number: 15
+  name: Caídas por Motivo
+  owner: Jefatura Comercial
+  audience: Comercial
+  economic_question: ¿Por qué se pierden operaciones?
+  output_path: reports/dashboard/risk/CAIDAS_MOTIVO.md
+  params_ref: config/business_rules.yml#caida_motivos
+  status: cataloged
+  priority: professional
+- id: caidas_por_asesor
+  number: 16
+  name: Caídas por Asesor
+  owner: Jefatura Comercial
+  audience: Comercial
+  economic_question: ¿Dónde se concentra pérdida comercial por asesor?
+  output_path: reports/dashboard/risk/CAIDAS_ASESOR.md
+  params_ref: config/dashboard_params.yml#caidas_asesor
+  status: cataloged
+  priority: professional
+- id: caidas_por_proyecto
+  number: 17
+  name: Caídas por Proyecto
+  owner: Gerencia Comercial
+  audience: C-level / Comercial
+  economic_question: ¿Qué proyectos están perdiendo ventas?
+  output_path: reports/dashboard/risk/CAIDAS_PROYECTO.md
+  params_ref: config/dashboard_params.yml#caidas_proyecto
+  status: cataloged
+  priority: professional
+- id: motivos_financieros
+  number: 18
+  name: Motivos Financieros
+  owner: Comercial / Finanzas
+  audience: Finanzas / Comercial
+  economic_question: ¿Cuánto pesa el financiamiento en la caída?
+  output_path: reports/dashboard/risk/MOTIVOS_FINANCIEROS.md
+  params_ref: config/business_rules.yml#motivos_financieros
+  status: cataloged
+  priority: professional
+- id: cuota_inicial
+  number: 19
+  name: Cuota Inicial
+  owner: Finanzas / Comercial
+  audience: Finanzas / Comercial
+  economic_question: ¿La cuota inicial acelera o protege la venta?
+  output_path: reports/dashboard/cobranza/CUOTA_INICIAL.md
+  params_ref: config/business_rules.yml#cuota_inicial
+  status: cataloged
+  priority: professional
+- id: dias_a_cuota_inicial
+  number: 20
+  name: Días a Cuota Inicial
+  owner: Finanzas / Comercial
+  audience: Finanzas / Comercial
+  economic_question: ¿Cuánto demora el cliente en comprometer caja?
+  output_path: reports/dashboard/cobranza/DIAS_CUOTA_INICIAL.md
+  params_ref: config/dashboard_params.yml#cuota_inicial_timing
+  status: cataloged
+  priority: professional
+- id: lead_scoring
+  number: 21
+  name: Lead Scoring
+  owner: Marketing / Comercial
+  audience: Call Center / Asesores
+  economic_question: ¿Qué leads merecen más esfuerzo comercial?
+  output_path: reports/dashboard/commercial/LEAD_SCORING.md
+  params_ref: config/model_params.yml#lead_scoring
+  status: cataloged
+  priority: professional
+- id: conversion_lead_separacion
+  number: 22
+  name: Conversión Lead → Separación
+  owner: Marketing / Comercial
+  audience: Marketing / Comercial
+  economic_question: ¿Qué canal genera oportunidades reales?
+  output_path: reports/dashboard/commercial/CONVERSION_LEAD_SEPARACION.md
+  params_ref: config/business_rules.yml#lead_asignado
+  status: cataloged
+  priority: professional
+- id: conversion_lead_minuta
+  number: 23
+  name: Conversión Lead → Minuta
+  owner: Marketing / Comercial
+  audience: Marketing / Comercial
+  economic_question: ¿Qué fuentes generan ventas, no solo leads?
+  output_path: reports/dashboard/commercial/CONVERSION_LEAD_MINUTA.md
+  params_ref: config/dashboard_params.yml#lead_to_minuta
+  status: cataloged
+  priority: professional
+- id: atribucion_comercial
+  number: 24
+  name: Atribución Comercial
+  owner: Marketing
+  audience: Marketing / Gerencia
+  economic_question: ¿Qué canal merece presupuesto?
+  output_path: reports/dashboard/commercial/ATRIBUCION_COMERCIAL.md
+  params_ref: config/dashboard_params.yml#attribution
+  status: cataloged
+  priority: professional
+- id: migracion_canal
+  number: 25
+  name: Migración de Canal
+  owner: Marketing / Comercial
+  audience: Marketing / Comercial
+  economic_question: ¿Cuántas ventas entran por un canal y cierran por otro?
+  output_path: reports/dashboard/commercial/MIGRACION_CANAL.md
+  params_ref: config/dashboard_params.yml#channel_migration
+  status: cataloged
+  priority: professional
+- id: medios_por_asesor
+  number: 26
+  name: Medios por Asesor
+  owner: Jefatura Comercial
+  audience: Comercial
+  economic_question: ¿Qué asesor convierte mejor en cada canal?
+  output_path: reports/dashboard/commercial/MEDIOS_ASESOR.md
+  params_ref: config/dashboard_params.yml#media_advisor_matrix
+  status: cataloged
+  priority: professional
+- id: proyecto_asesor
+  number: 27
+  name: Proyecto × Asesor
+  owner: Gerencia Comercial
+  audience: Comercial
+  economic_question: ¿Dónde hay dependencia comercial peligrosa?
+  output_path: reports/dashboard/commercial/PROYECTO_ASESOR.md
+  params_ref: config/alert_thresholds.yml#concentration_risk
+  status: cataloged
+  priority: professional
+- id: proyecto_canal
+  number: 28
+  name: Proyecto × Canal
+  owner: Marketing / Comercial
+  audience: Marketing / Comercial
+  economic_question: ¿Qué canal funciona para cada proyecto?
+  output_path: reports/dashboard/commercial/PROYECTO_CANAL.md
+  params_ref: config/dashboard_params.yml#project_channel
+  status: cataloged
+  priority: professional
+- id: product_mix
+  number: 29
+  name: Product Mix
+  owner: Producto / Comercial
+  audience: Producto / Comercial
+  economic_question: ¿Qué dormitorios/tipologías se venden más?
+  output_path: reports/dashboard/stock_pricing/PRODUCT_MIX.md
+  params_ref: config/dashboard_params.yml#product_mix
+  status: cataloged
+  priority: professional
+- id: stock_disponible
+  number: 30
+  name: Stock Disponible
+  owner: Producto / Comercial
+  audience: Producto / Comercial
+  economic_question: ¿Qué unidades quedan para vender?
+  output_path: reports/dashboard/stock_pricing/STOCK_DISPONIBLE.md
+  params_ref: config/business_rules.yml#stock_disponible
+  status: cataloged
+  priority: professional
+- id: stock_lento
+  number: 31
+  name: Stock Lento
+  owner: Producto / Comercial
+  audience: Producto / Comercial
+  economic_question: ¿Qué unidades están envejeciendo sin venta?
+  output_path: reports/dashboard/stock_pricing/STOCK_LENTO.md
+  params_ref: config/alert_thresholds.yml#stock_lento
+  status: cataloged
+  priority: mvp
+- id: stock_valorizado
+  number: 32
+  name: Stock Valorizado
+  owner: Producto / Finanzas
+  audience: Gerencia / Finanzas
+  economic_question: ¿Cuánto valor comercial queda en inventario?
+  output_path: reports/dashboard/stock_pricing/STOCK_VALORIZADO.md
+  params_ref: config/dashboard_params.yml#stock_valuation
+  status: cataloged
+  priority: professional
+- id: pricing_unitario
+  number: 33
+  name: Pricing por Unidad
+  owner: Producto / Chief Economist
+  audience: Producto / Gerencia
+  economic_question: ¿Qué unidades están caras o baratas?
+  output_path: reports/dashboard/stock_pricing/PRICING_UNITARIO.md
+  params_ref: config/dashboard_params.yml#pricing_unitario
+  status: cataloged
+  priority: professional
+- id: brecha_precio_mercado
+  number: 34
+  name: Brecha Precio vs Mercado
+  owner: Chief Economist
+  audience: Gerencia / Producto
+  economic_question: ¿Estoy por encima o debajo del mercado?
+  output_path: reports/dashboard/market/BRECHA_PRECIO_MERCADO.md
+  params_ref: config/market_sources.yml#price_m2_market
+  status: cataloged
+  priority: professional
+- id: elasticidad_comercial
+  number: 35
+  name: Elasticidad Comercial
+  owner: Chief Economist
+  audience: Gerencia / Comercial
+  economic_question: ¿El precio afecta conversión o stock lento?
+  output_path: reports/dashboard/market/ELASTICIDAD_COMERCIAL.md
+  params_ref: config/economic_params.yml#elasticity
+  status: cataloged
+  priority: professional
+- id: descuentos
+  number: 36
+  name: Descuentos
+  owner: Comercial / Finanzas
+  audience: Comercial / Finanzas
+  economic_question: ¿Qué descuentos ayudan y cuáles erosionan margen?
+  output_path: reports/dashboard/stock_pricing/DESCUENTOS.md
+  params_ref: config/dashboard_params.yml#discounts
+  status: cataloged
+  priority: professional
+- id: absorcion_mensual
+  number: 37
+  name: Absorción Mensual
+  owner: Chief Economist
+  audience: Gerencia / Producto
+  economic_question: ¿Qué tan rápido se vende el stock?
+  output_path: reports/dashboard/market/ABSORCION_MENSUAL.md
+  params_ref: config/business_rules.yml#absorcion
+  status: cataloged
+  priority: professional
+- id: forecast_absorcion
+  number: 38
+  name: Forecast Absorción
+  owner: Chief Economist / Data Science
+  audience: Gerencia
+  economic_question: ¿Cuántos meses quedan de stock?
+  output_path: reports/dashboard/market/FORECAST_ABSORCION.md
+  params_ref: config/model_params.yml#absorcion_forecast
+  status: cataloged
+  priority: professional
+- id: cobranza_caja
+  number: 39
+  name: Cobranza y Caja
+  owner: Finanzas
+  audience: Finanzas / Gerencia
+  economic_question: ¿Cuánto dinero realmente entró?
+  output_path: reports/dashboard/cobranza/COBRANZA_CAJA.md
+  params_ref: config/business_rules.yml#cobranza
+  status: cataloged
+  priority: professional
+- id: pagos_no_asignados
+  number: 40
+  name: Pagos no Asignados
+  owner: Finanzas / BI
+  audience: Finanzas
+  economic_question: ¿Qué pagos no están vinculados a unidad/proyecto?
+  output_path: reports/dashboard/cobranza/PAGOS_NO_ASIGNADOS.md
+  params_ref: config/business_rules.yml#pagos_matching
+  status: cataloged
+  priority: professional
+- id: avance_cobranza_venta
+  number: 41
+  name: Avance de Cobranza por Venta
+  owner: Finanzas
+  audience: Finanzas / Comercial
+  economic_question: ¿Qué venta está firmada pero incompleta en caja?
+  output_path: reports/dashboard/cobranza/AVANCE_COBRANZA_VENTA.md
+  params_ref: config/dashboard_params.yml#cobranza_avance
+  status: cataloged
+  priority: professional
+- id: riesgo_cobranza
+  number: 42
+  name: Riesgo de Cobranza
+  owner: Finanzas / Data Science
+  audience: Finanzas
+  economic_question: ¿Qué ventas pueden atrasar caja?
+  output_path: reports/dashboard/cobranza/RIESGO_COBRANZA.md
+  params_ref: config/model_params.yml#cobranza_riesgo
+  status: cataloged
+  priority: professional
+- id: model_registry
+  number: 43
+  name: Model Registry
+  owner: MLOps
+  audience: Data Science / Tecnología
+  economic_question: ¿Qué modelo está vivo y con qué datos aprendió?
+  output_path: reports/registry/REGISTRY_EXECUTIVE_SUMMARY.md
+  params_ref: models/registry/model_registry.json
+  status: cataloged
+  priority: professional
+- id: drift_monitoring
+  number: 44
+  name: Drift Monitoring
+  owner: MLOps
+  audience: Data Science / Gerencia
+  economic_question: ¿El mundo cambió respecto al entrenamiento?
+  output_path: reports/monitoring/WEEKLY_MONITORING_REPORT.md
+  params_ref: config/drift_thresholds.yml#default
+  status: cataloged
+  priority: professional
+- id: calibration_dashboard
+  number: 45
+  name: Calibration Dashboard
+  owner: MLOps / Data Science
+  audience: Data Science
+  economic_question: ¿Las probabilidades son creíbles?
+  output_path: reports/modeling/calibration_report.md
+  params_ref: config/model_params.yml#calibration
+  status: cataloged
+  priority: professional
+- id: lift_deciles
+  number: 46
+  name: Lift Deciles
+  owner: Data Science
+  audience: Data Science / Comercial
+  economic_question: ¿El ranking realmente prioriza mejor que azar?
+  output_path: reports/modeling/lift_report.md
+  params_ref: config/model_params.yml#lift
+  status: cataloged
+  priority: professional
+- id: feedback_loop
+  number: 47
+  name: Feedback Loop
+  owner: Jefatura Comercial / Data Science
+  audience: Comercial
+  economic_question: ¿Qué pasó después de intervenir una alerta?
+  output_path: data/feedback/feedback_outcomes_merged.parquet
+  params_ref: config/feedback_contract.yml#riesgo_caida
+  status: cataloged
+  priority: professional
+- id: experimentos_comerciales
+  number: 48
+  name: Experimentos Comerciales
+  owner: Chief Economist / Data Science
+  audience: Gerencia
+  economic_question: ¿Intervenir P0 reduce caídas?
+  output_path: reports/experiments/intervention_effect_report.md
+  params_ref: config/experiment_params.yml#riesgo_caida
+  status: cataloged
+  priority: professional
+- id: rag_quality
+  number: 49
+  name: RAG Quality
+  owner: RAG Owner
+  audience: UNI / Producto
+  economic_question: ¿El asistente responde con evidencia?
+  output_path: reports/uni_final/RAGAS_LIKE_SUMMARY.md
+  params_ref: config/alert_thresholds.yml#rag_quality
+  status: cataloged
+  priority: mvp
+- id: rag_corpus_coverage
+  number: 50
+  name: RAG Corpus Coverage
+  owner: RAG Owner
+  audience: Data / Producto
+  economic_question: ¿Qué documentos/fuentes están indexados?
+  output_path: reports/uni_final/CORPUS_COVERAGE.md
+  params_ref: config/rag_params.yml#corpus
+  status: cataloged
+  priority: governance
+- id: rag_citations
+  number: 51
+  name: RAG Citations
+  owner: RAG Owner
+  audience: UNI / Producto
+  economic_question: ¿Cada respuesta cita evidencia?
+  output_path: reports/uni_final/CITATION_AUDIT.md
+  params_ref: config/rag_params.yml#citations
+  status: cataloged
+  priority: governance
+- id: text_to_sql_rag
+  number: 52
+  name: Text-to-SQL RAG
+  owner: RAG Owner / BI
+  audience: Analistas / Gerencia
+  economic_question: ¿Qué preguntas puede responder con tablas?
+  output_path: reports/uni_final/TEXT_TO_SQL_AUDIT.md
+  params_ref: config/rag_sql_policy.yml#allowed_tables
+  status: cataloged
+  priority: governance
+- id: uni_readiness
+  number: 53
+  name: UNI Readiness
+  owner: Product Owner
+  audience: UNI
+  economic_question: ¿El trabajo final está completo y defendible?
+  output_path: reports/alerts/UNI_READINESS_ALERT.md
+  params_ref: config/uni_readiness.yml#checklist
+  status: cataloged
+  priority: governance
+- id: github_alerts
+  number: 54
+  name: GitHub Alerts
+  owner: MLOps
+  audience: Product Owner
+  economic_question: ¿Qué alertas se activaron y por qué?
+  output_path: reports/alerts/EXECUTIVE_KPI_DIGEST.md
+  params_ref: config/alert_thresholds.yml#github_actions
+  status: cataloged
+  priority: governance
+- id: railway_public_dashboard
+  number: 55
+  name: Railway Public Dashboard
+  owner: Producto / Demo
+  audience: Externo seguro
+  economic_question: ¿Qué puede ver alguien externo sin PII?
+  output_path: reports/public/decision_dashboard_payload_public.json
+  params_ref: config/privacy_policy.yml#public_dashboard
+  status: cataloged
+  priority: mvp
+- id: privacy_pii_audit
+  number: 56
+  name: Privacy & PII Audit
+  owner: CDO
+  audience: Tecnología / Legal
+  economic_question: ¿Hay datos sensibles filtrados?
+  output_path: reports/public/production_public_payload_validation.json
+  params_ref: config/privacy_policy.yml#privacy_rules
+  status: cataloged
+  priority: mvp
+- id: data_quality
+  number: 57
+  name: Data Quality
+  owner: CDO / Analytics Engineering
+  audience: Data Team
+  economic_question: ¿Qué tablas tienen nulos, duplicados o llaves rotas?
+  output_path: reports/data_quality/DATA_QUALITY_REPORT.md
+  params_ref: contracts/data_contract_riesgo_caida.yml
+  status: cataloged
+  priority: governance
+- id: lineage_dashboard
+  number: 58
+  name: Lineage Dashboard
+  owner: CDO
+  audience: Data Team / Gerencia
+  economic_question: ¿De dónde viene cada métrica?
+  output_path: reports/lineage/LINEAGE_DASHBOARD.md
+  params_ref: contracts/metric_contracts.yml
+  status: cataloged
+  priority: governance
+- id: market_intelligence
+  number: 59
+  name: Market Intelligence
+  owner: Chief Economist
+  audience: Gerencia / Producto
+  economic_question: ¿Qué dice el mercado peruano frente a mi stock?
+  output_path: reports/dashboard/market/MARKET_INTELLIGENCE.md
+  params_ref: config/market_sources.yml#sources
+  status: cataloged
+  priority: governance
+- id: congreso_data_science
+  number: 60
+  name: Congreso Data Science
+  owner: Product Owner
+  audience: Congreso / UNI
+  economic_question: ¿Qué gráficos sustentan el sistema?
+  output_path: reports/congress/MODEL_OVERVIEW_CONGRESS.md
+  params_ref: config/congress_pack.yml#figures
+  status: cataloged
+  priority: governance

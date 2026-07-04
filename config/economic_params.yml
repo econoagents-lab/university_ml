@@ -1,0 +1,11 @@
+elasticity:
+  unit: proyecto_mes_tipo_unidad
+  dependent_variables:
+  - conversion_sep_minuta
+  - dias_stock
+  - stock_lento
+  price_variables:
+  - precio_m2
+  - descuento_pct
+  - brecha_precio_m2_pct
+  recommended_first_method: regression_baseline_with_fixed_effects

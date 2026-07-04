@@ -1,0 +1,29 @@
+{
+  "catalog": {
+    "generated_at": "2026-07-04T01:29:35",
+    "total_dashboards": 60,
+    "errors": [],
+    "warnings": [
+      "params_ref sin sección encontrada: config/alert_thresholds.yml#tuberia",
+      "params_ref sin sección encontrada: config/alert_thresholds.yml#riesgo_caida_prioridades",
+      "params_ref sin sección encontrada: config/alert_thresholds.yml#concentration_risk",
+      "params_ref sin sección encontrada: config/alert_thresholds.yml#stock_lento",
+      "params_ref sin sección encontrada: config/privacy_policy.yml#privacy_rules"
+    ],
+    "status": "ok"
+  },
+  "recommended_decisions": {
+    "checks": {
+      "project_names_public": true,
+      "advisors_public_anonymized": true,
+      "channels_public_visible": true,
+      "aggregated_value_at_risk_public": true,
+      "top_operations_public_blocked": true,
+      "pii_public_blocked": true,
+      "railway_aggregated_only": true,
+      "lenovo_private_crm": true,
+      "github_aggregated_artifacts": true
+    },
+    "status": "ok"
+  }
+}

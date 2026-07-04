@@ -1,12 +1,12 @@
 feature,exists,rows,null_rate,dtype,n_unique,top_value,mean,std,p10,p50,p90
-proyecto,True,880,0.0,str,9,Torre Nápoles,,,,,
-asesor,True,880,0.0,str,11,Nelly Román Villavicencio,,,,,
-medio_captacion,True,880,0.0,str,1,manual,,,,,
-canal_agrupado,True,880,0.0,str,1,sin_clasificar,,,,,
+proyecto,True,880,0.0,object,9,Torre Nápoles,,,,,
+asesor,True,880,0.0,object,11,Nelly Román Villavicencio,,,,,
+medio_captacion,True,880,0.0,object,1,manual,,,,,
+canal_agrupado,True,880,0.0,object,1,sin_clasificar,,,,,
 dormitorios,True,880,0.0,float64,3,,2.221590909090909,0.785092744481294,1.0,2.0,3.0
-precio_departamento,True,880,0.0,float64,323,,406206.919625,126324.1729400703,254960.56,386000.0,579517.7000000001
+precio_departamento,True,880,0.0,float64,323,,406124.3860795455,126224.60025168523,254960.56,386000.0,579517.7000000001
 dias_en_tuberia,True,880,0.0,int64,3,,16.051136363636363,9.389965044177313,7.0,14.0,30.0
 tiene_cuota_inicial,True,880,0.0,bool,2,False,,,,,
 cambios_unidad,True,880,0.0,int64,1,,0.0,0.0,0.0,0.0,0.0
 interacciones_ult_7d,True,880,0.0,int64,1,,0.0,0.0,0.0,0.0,0.0
-descuento_pct,True,880,0.0,float64,333,,0.13114983584036943,0.03501181375012959,0.09565928262304875,0.13470004577365652,0.1728077
+descuento_pct,True,880,0.0,float64,333,,0.13114799349258438,0.035013525897168926,0.09565928262304875,0.13470004577365652,0.1728077

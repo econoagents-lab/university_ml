@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Model Registry</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 32px; background: #f7f8fb; color: #0b2538; }
+    .card { background: white; border: 1px solid #d9e0e8; border-radius: 14px; padding: 20px; margin: 16px 0; box-shadow: 0 2px 8px rgba(0,0,0,.04); }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px; }
+    .kpi { background: #0b2538; color: white; border-radius: 12px; padding: 16px; }
+    .kpi small { color: #bed2df; }
+    table { border-collapse: collapse; width: 100%; background: white; }
+    th, td { border: 1px solid #d9e0e8; padding: 8px; text-align: left; }
+    th { background: #123f63; color: white; }
+    code, pre { background: #eef3f7; padding: 8px; border-radius: 8px; overflow:auto; }
+    a { color: #0a66c2; }
+  </style>
+</head>
+<body>
+  <h1>Model Registry</h1>
+  <p><strong>Familia:</strong> registry · <strong>Owner:</strong> MLOps · <strong>Prioridad:</strong> professional</p>
+  <div class="card"><h2>Pregunta económica</h2><p>¿Qué modelo está vivo y con qué datos aprendió?</p></div>
+  <div class="grid">
+    <div class="kpi"><small>Total operaciones</small><h2>763</h2></div>
+    <div class="kpi"><small>Valor total en riesgo</small><h2>S/ 21,232,580.48</h2></div>
+    <div class="kpi"><small>Riesgo promedio</small><h2>0.398</h2></div>
+    <div class="kpi"><small>P0/P1</small><h2>{'operaciones': 761, 'valor_en_riesgo': 21191194.15}</h2></div>
+  </div>
+  <div class="card"><h2>Acción recomendada</h2><p>Revisar estado del champion, drift, lift y política de retraining antes de confiar en el ranking.</p></div>
+  <div class="card"><h2>Top proyectos agregados</h2><table><thead><tr><th>proyecto</th><th>operaciones</th><th>valor_en_riesgo</th><th>riesgo_promedio</th><th>p0_p1</th></tr></thead><tbody><tr><td>Tizón y Bueno</td><td>82</td><td>2769922.88</td><td>0.5073</td><td>82</td></tr><tr><td>Edificio Cuba Connect</td><td>83</td><td>1986299.7</td><td>0.2822</td><td>83</td></tr><tr><td>Edificio Urbanzen</td><td>45</td><td>1783878.84</td><td>0.4903</td><td>45</td></tr><tr><td>Edificio Santa Cruz Infinite</td><td>84</td><td>1772295.82</td><td>0.2639</td><td>84</td></tr><tr><td>Modena</td><td>53</td><td>1672002.71</td><td>0.4932</td><td>53</td></tr></tbody></table></div>
+  <div class="card"><h2>Top asesores agregados</h2><table><thead><tr><th>asesor_anon</th><th>operaciones</th><th>valor_en_riesgo</th><th>riesgo_promedio</th><th>p0_p1</th></tr></thead><tbody><tr><td>Asesor_26DEBB0E</td><td>130</td><td>4395201.77</td><td>0.4635</td><td>130</td></tr><tr><td>Asesor_10B2BE3F</td><td>216</td><td>3678489.2</td><td>0.2044</td><td>216</td></tr><tr><td>Asesor_C931A67B</td><td>66</td><td>2219467.94</td><td>0.4375</td><td>65</td></tr><tr><td>Asesor_1F3B24E1</td><td>58</td><td>1961023.49</td><td>0.5103</td><td>58</td></tr><tr><td>Asesor_B56EAA59</td><td>58</td><td>1892075.93</td><td>0.5045</td><td>58</td></tr></tbody></table></div>
+  <div class="card"><h2>Top canales agregados</h2><table><thead><tr><th>canal</th><th>operaciones</th><th>valor_en_riesgo</th><th>riesgo_promedio</th><th>p0_p1</th></tr></thead><tbody><tr><td>sin_clasificar</td><td>763</td><td>21232580.48</td><td>0.3982</td><td>761</td></tr></tbody></table></div>
+  <div class="card"><h2>Donde cambiar</h2><p><code>models/registry/model_registry.json</code></p></div>
+  <div class="card"><h2>Parámetros actuales</h2><pre>project: riesgo_caida
+current_champion: riesgo_caida_random_forest_dataset_riesgo_caida_crm_2026_07_03_v001_c02
+models:
+- model_id: riesgo_caida_logistic_regression_dataset_riesgo_caida_crm_2026_07_03_v001_c01
+  project: riesgo_caida
+  algorithm: logistic_regression
+  status: challenger
+  dataset_version: dataset_riesgo_caida_crm_2026_07_03_v001
+  registered_at: &#x27;2026-07-03T16:53:37+00:00&#x27;
+  artifact_path: models/artifacts/riesgo_caida_logistic_regression_dataset_riesgo_caida_crm_2026_07_03_v001_c01.joblib
+  artifact_sha256: 3f5190aa23c79c8b5761f37176c970c4a1047dd55decf74a8ae1bae2f1459708
+  model_card_path: models/cards/model_card_riesgo_caida_logistic_regression_dataset_riesgo_caida_crm_2026_07_03_v001_c01.md
+  metrics:
+    roc_auc: 0.5178793808930795
+    average_precision: 0.09596477580853703
+    threshold: 0.4
+    precision: 0.09574468085106383
+    recall: 0.8181818181818182
+    f1: 0.17142857142857143
+    tn: 208
+    fp: 595
+    fn: 14
+    tp: 63
+    base_event_rate: 0.0875
+    top_decile_event_rate: 0.07954545454545454
+    top_decile_lift: 0.9090909090909092
+    train_rows: 2638
+    test_rows: 880
+    dataset_version: dataset_riesgo_caida_crm_2026_07_03_v001
+    data_mode: crm
+  notes: trained_from_crm_model_ready_dataset
+- model_id: riesgo_caida_random_forest_dataset_riesgo_caida_crm_2026_07_03_v001_c02
+  project: riesgo_caida
+  algorithm: random_forest
+  status: champion
+  dataset_version: dataset_riesgo_caida_crm_2026_07_03_v001
+  registered_at: &#x27;2026-07-03T16:53:38+00:00&#x27;
+  artifact_path: models/artifacts/riesgo_caida_random_forest_dataset_riesgo_caida_crm_2026_07_03_v001_c02.joblib
+  artifact_sha256: 527aec15e99cb1327f519d1389cd8e014abe7add3b84c2b66d613a5ab3018160
+  model_card_path: models/cards/model_card_riesgo_caida_random_forest_dataset_riesgo_caida_crm_2026_07_03_v001_c02.md
+  metrics:
+    roc_auc: 0.5235642315343437
+    average_precision: 0.11622117236398827
+    threshold: 0.4
+    precision: 0.09090909090909091
+    recall: 0.961038961038961
+    f1: 0.16610549943883277
+    tn: 63
+    fp: 740
+    fn: 3
+    tp: 74
+    base_event_rate: 0.0875
+    top_decile_event_rate: 0.06818181818181818
+    top_decile_lift: 0.7792207792207793
+    train_rows: 2638
+    test_rows: 880
+    dataset_version: dataset_riesgo_caida_crm_2026_07_03_v001
+    data_mode: crm
+  notes: trained_from_crm_model_ready_dataset
+  champion_since: &#x27;2026-07-03T16:53:52+00:00&#x27;
+  promotion_reason: v0.8_policy_or_manual_promotion
+- model_id: riesgo_caida_gradient_boosting_dataset_riesgo_caida_crm_2026_07_03_v001_c03
+  project: riesgo_caida
+  algorithm: gradient_boosting
+  status: challenger
+  dataset_version: dataset_riesgo_caida_crm_2026_07_03_v001
+  registered_at: &#x27;2026-07-03T16:53:39+00:00&#x27;
+  artifact_path: models/artifacts/riesgo_caida_gradient_boosting_dataset_riesgo_caida_crm_2026_07_03_v001_c03.joblib
+  artifact_sha256: 227049d7960a6aae04054572aaaf7661e5c9d2c41d62c8b2e5978e349e2050e5
+  model_card_path: models/cards/model_card_riesgo_caida_gradient_boosting_dataset_riesg</pre></div>
+  <p><a href="../index.html">Volver al índice</a></p>
+</body>
+</html>

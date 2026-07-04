@@ -1,0 +1,22 @@
+corpus:
+  paths:
+  - corpus/safe
+  - corpus/generated_stories
+  - docs
+  - reports/uni_final
+  allowed_extensions:
+  - .md
+  - .txt
+  - .csv
+  - .json
+  - .pdf
+retrieval:
+  top_k: 5
+  multi_query: true
+  reranking: lightweight
+chunking:
+  chunk_size: 1000
+  chunk_overlap: 150
+citations:
+  required: true
+  min_context_score: 0.1

@@ -1,0 +1,5 @@
+riesgo_caida:
+  control_group_share: 0.2
+  random_seed: 42
+  primary_outcome: caida_30d
+  secondary_outcome: firma_minuta_30d

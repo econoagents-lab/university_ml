@@ -1,0 +1,48 @@
+project: machine_learning_university
+version: v1.3_dashboard_catalog_parameter_control
+production_decisions:
+  railway_serves_only_aggregated_payload: true
+  lenovo_runs_private_full_crm: true
+  github_artifacts_aggregated_or_anonymized_only: true
+  rag_queries_crm_directly: false
+  rag_uses_anon_aggregated_tables: true
+  public_project_names_allowed: true
+  public_project_names_note: Yo permito nombres de proyecto en agregado para demo
+    comercial; si hay riesgo competitivo, cambio expose_project_names a false.
+  public_advisor_names_allowed: false
+  public_channel_names_allowed: true
+  public_expected_value_at_risk_allowed: true
+  public_top_operations_allowed: false
+public_dashboard:
+  expose_project_names: true
+  anonymize_advisors_public: true
+  expose_channel_names: true
+  max_top_n: 5
+  data_mode_required: crm
+  disable_sample_fallback: true
+forbidden_public_fields:
+- cliente
+- documento
+- dni
+- ruc_personal
+- email
+- correo
+- telefono
+- teléfono
+- celular
+- nombre_completo
+- direccion
+- dirección
+- password
+- secret
+- token
+- credential
+- credenciales
+- api_key
+forbidden_public_patterns:
+- \b\d{8}\b
+- \b9\d{8}\b
+- '@'
+- password
+- secret
+- token
