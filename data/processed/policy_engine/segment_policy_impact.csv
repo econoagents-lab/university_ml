@@ -1,0 +1,39 @@
+dimension,segment,treatment_n,control_n,sample_ready,treatment_negative_rate_30d,control_negative_rate_30d,negative_reduction_pp,positive_uplift_pp,valor_en_riesgo_segmento,valor_salvado_proxy,policy_signal
+proyecto,Tizón y Bueno,25,22,True,0.0,0.0,0.0,0.0,2732990.29,0.0,no_escalar_aun
+proyecto,Modena,15,7,True,0.0,0.0,0.0,0.0,1672002.71,0.0,no_escalar_aun
+proyecto,Torre Nápoles,24,7,True,0.0,0.0,0.0,0.0,1211178.35,0.0,no_escalar_aun
+proyecto,Sialia,24,8,True,0.0,0.0,0.0,0.0,1498594.29,0.0,no_escalar_aun
+proyecto,Fenix,7,2,False,0.0,0.0,0.0,0.0,1367471.29,0.0,recolectar_mas_feedback
+proyecto,Edificio Urbanzen,18,6,True,0.0,0.0,0.0,0.0,1746101.96,0.0,no_escalar_aun
+proyecto,Alicanto,10,5,True,0.0,0.0,0.0,0.0,1168172.77,0.0,no_escalar_aun
+proyecto,Capadocia,13,4,False,0.0,0.0,0.0,0.0,1345408.17,0.0,recolectar_mas_feedback
+proyecto,Matera,2,0,False,0.0,0.0,0.0,0.0,894398.22,0.0,recolectar_mas_feedback
+proyecto,Edificio Mariategui,7,6,True,0.0,0.0,0.0,0.0,1043428.78,0.0,no_escalar_aun
+proyecto,Edificio Cuba Connect,0,0,False,0.0,0.0,0.0,0.0,601486.38,0.0,recolectar_mas_feedback
+proyecto,Edificio Valdizan,5,1,False,0.0,0.0,0.0,0.0,484239.49,0.0,recolectar_mas_feedback
+proyecto,Edificio Santa Cruz Infinite,0,0,False,0.0,0.0,0.0,0.0,278347.91,0.0,recolectar_mas_feedback
+proyecto,Edificio Saenz,0,0,False,0.0,0.0,0.0,0.0,216997.0,0.0,recolectar_mas_feedback
+proyecto,Tradiciones Prime,3,0,False,0.0,0.0,0.0,0.0,281265.15,0.0,recolectar_mas_feedback
+canal,sin_clasificar,153,68,True,0.0,0.0,0.0,0.0,16542082.76,0.0,no_escalar_aun
+asesor_id,ASESOR_7B5A7F5FB0,40,12,True,0.0,0.0,0.0,0.0,4035941.9,0.0,no_escalar_aun
+asesor_id,ASESOR_1265C8A465,8,7,True,0.0,0.0,0.0,0.0,2028556.35,0.0,no_escalar_aun
+asesor_id,ASESOR_9FCF63DC91,20,12,True,0.0,0.0,0.0,0.0,1941977.22,0.0,no_escalar_aun
+asesor_id,ASESOR_950BED165C,18,8,True,0.0,0.0,0.0,0.0,1873391.83,0.0,no_escalar_aun
+asesor_id,ASESOR_E5897908D5,15,10,True,0.0,0.0,0.0,0.0,1757867.58,0.0,no_escalar_aun
+asesor_id,ASESOR_233077BA7F,23,13,True,0.0,0.0,0.0,0.0,1521403.43,0.0,no_escalar_aun
+asesor_id,ASESOR_E05C20E0FE,8,0,False,0.0,0.0,0.0,0.0,998116.32,0.0,recolectar_mas_feedback
+asesor_id,ASESOR_C6B4E60323,5,3,False,0.0,0.0,0.0,0.0,709357.01,0.0,recolectar_mas_feedback
+asesor_id,ASESOR_F59A4378D8,2,2,False,0.0,0.0,0.0,0.0,478246.57,0.0,recolectar_mas_feedback
+asesor_id,ASESOR_DA48A4F817,8,0,False,0.0,0.0,0.0,0.0,426793.43,0.0,recolectar_mas_feedback
+asesor_id,ASESOR_9A684EC3F0,0,0,False,0.0,0.0,0.0,0.0,198659.54,0.0,recolectar_mas_feedback
+asesor_id,ASESOR_D49965A644,0,0,False,0.0,0.0,0.0,0.0,172581.45,0.0,recolectar_mas_feedback
+asesor_id,ASESOR_CF9D39A66F,2,0,False,0.0,0.0,0.0,0.0,121229.22,0.0,recolectar_mas_feedback
+asesor_id,ASESOR_4A5D5CDFC6,1,1,False,0.0,0.0,0.0,0.0,91608.82,0.0,recolectar_mas_feedback
+asesor_id,ASESOR_8618B6BE3A,1,0,False,0.0,0.0,0.0,0.0,84707.49,0.0,recolectar_mas_feedback
+asesor_id,ASESOR_8D1ED284CF,0,0,False,0.0,0.0,0.0,0.0,31089.79,0.0,recolectar_mas_feedback
+asesor_id,ASESOR_3646DCCAA1,1,0,False,0.0,0.0,0.0,0.0,44766.64,0.0,recolectar_mas_feedback
+asesor_id,ASESOR_CA5A1E2E4E,1,0,False,0.0,0.0,0.0,0.0,25788.17,0.0,recolectar_mas_feedback
+prioridad,P2,0,0,False,0.0,0.0,0.0,0.0,7880757.44,0.0,recolectar_mas_feedback
+prioridad,P1,153,68,True,0.0,0.0,0.0,0.0,8661325.32,0.0,no_escalar_aun
+risk_band,medium,0,0,False,0.0,0.0,0.0,0.0,7880757.44,0.0,recolectar_mas_feedback
+risk_band,high,153,68,True,0.0,0.0,0.0,0.0,8661325.32,0.0,no_escalar_aun

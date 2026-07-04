@@ -1,0 +1,55 @@
+name: Experimentation Causal Impact Lab
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - "config/experimentation_causal_impact_lab.yml"
+      - "src/mlu/experimentation_causal_impact_lab.py"
+      - "scripts/9*.py"
+      - "data/processed/action_feedback/**"
+      - "tests/test_experimentation_causal_impact_lab.py"
+
+permissions:
+  contents: read
+
+jobs:
+  experimentation-causal-impact:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install pandas pyyaml tabulate pytest pyarrow
+
+      - name: Run v1.8 experimentation lab
+        run: |
+          python scripts/99_run_v18_experimentation_causal_impact_lab.py
+
+      - name: Run v1.8 tests
+        run: |
+          pytest -q tests/test_experimentation_causal_impact_lab.py
+
+      - name: Publish experiment summary
+        if: always()
+        run: |
+          cat reports/experiments/EXPERIMENTATION_CAUSAL_IMPACT_LAB.md >> $GITHUB_STEP_SUMMARY
+
+      - name: Upload experiment artifacts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: experimentation-causal-impact-lab
+          path: |
+            data/processed/experiments/*.csv
+            data/processed/experiments/*.json
+            reports/experiments/*.md
+            reports/experiments/*.json

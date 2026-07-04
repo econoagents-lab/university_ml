@@ -1,19 +1,9 @@
 # Roadmap
 
-## v0.6 - Feedback & Lift
+## Actual · v1.8
 
-Estado: entregado.
+Medir si las acciones comerciales sobre riesgo de caída producen impacto económico observable.
 
-## v0.7 - Monitoring & Experiments
+## Próximo · v1.9
 
-- Drift semanal de features.
-- Monitoreo de calibración.
-- Comparación intervenidos vs no intervenidos.
-- Experimentos ligeros por cohortes.
-- Feedback store en Supabase/Postgres.
-
-## v0.8 - Decision Automation
-
-- Alertas diarias por email/Slack/Power BI.
-- CEO brief programado.
-- API para registrar resultado de acciones.
+Experimentación avanzada: cohortes semanales, compliance de tratamiento, uplift por segmento, power analysis y recomendaciones de escalamiento.

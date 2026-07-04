@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang='es'>
+<head>
+<meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<title>Commercial Intelligence OS · Demo Cliente</title>
+<style>:root {
+  --bg: #070A12; --surface: #10182A; --surface2: #151F35; --gold: #D6A84F; --blue: #6EA8FE;
+  --text: #F5F7FB; --muted: #AAB4C8; --success: #38D39F; --warning: #FFC857; --danger: #FF5C7A;
+}
+* { box-sizing: border-box; }
+body { margin:0; font-family:Inter, Segoe UI, Arial, sans-serif; background: radial-gradient(circle at top left, #1a2440 0%, var(--bg) 42%); color:var(--text); }
+a { color: var(--blue); text-decoration: none; }
+.hero { max-width:1180px; margin:0 auto; padding:72px 24px 36px; }
+.eyebrow { color:var(--gold); text-transform:uppercase; letter-spacing:.14em; font-size:12px; font-weight:700; }
+h1 { font-size: clamp(38px, 6vw, 74px); line-height:.94; margin:16px 0; letter-spacing:-.05em; }
+p { color:var(--muted); font-size:18px; line-height:1.65; }
+.cta-row { display:flex; gap:14px; flex-wrap:wrap; margin-top:26px; }
+.btn { border:1px solid rgba(214,168,79,.55); padding:13px 18px; border-radius:14px; color:var(--text); background:rgba(214,168,79,.12); font-weight:700; }
+.btn.secondary { border-color:rgba(110,168,254,.45); background:rgba(110,168,254,.10); }
+.grid { max-width:1180px; margin:24px auto; padding:0 24px 56px; display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:18px; }
+.card { background:linear-gradient(180deg, rgba(255,255,255,.055), rgba(255,255,255,.025)); border:1px solid rgba(255,255,255,.10); border-radius:22px; padding:22px; box-shadow: 0 22px 60px rgba(0,0,0,.30); }
+.card h3 { margin:0 0 8px; font-size:20px; }
+.metric { color:var(--gold); font-size:28px; font-weight:800; }
+.badge { display:inline-block; padding:7px 10px; border-radius:999px; background:rgba(56,211,159,.12); color:var(--success); border:1px solid rgba(56,211,159,.25); font-weight:700; font-size:12px; }
+.badge.warning { color:var(--warning); background:rgba(255,200,87,.10); border-color:rgba(255,200,87,.25); }
+.footer { max-width:1180px; margin:0 auto; padding:24px; color:var(--muted); border-top:1px solid rgba(255,255,255,.08); }
+code { background:#050816; padding:2px 6px; border-radius:6px; color:#dbe7ff; }</style>
+</head>
+<body>
+  <main class='hero'>
+    <div class='eyebrow'>EconoAgents Intelligence Factory</div>
+    <h1>Tu primera área de inteligencia comercial inmobiliaria</h1>
+    <p>Un sistema operativo que convierte CRM, modelos, RAG y dashboards en decisiones de venta, caja y stock.</p>
+    <div class='cta-row'>
+      <a class='btn' href='/public/decision-dashboard'>Ver demo segura</a>
+      <a class='btn secondary' href='/product/demo/package'>Revisar paquete ejecutivo</a>
+    </div>
+  </main>
+  <section class='grid'>
+    <div class='card'><h3>Operaciones evaluadas</h3><div class='metric'>763</div><p>Payload público agregado. Sin clientes ni documentos.</p></div>
+    <div class='card'><h3>Valor en riesgo</h3><div class='metric'>S/ 21232580.48</div><p>Lectura comercial agregada para priorización ejecutiva.</p></div>
+    <div class='card'><h3>Riesgo promedio</h3><div class='metric'>0.3982</div><p>Modo de data: <code>crm</code></p></div>
+    <div class='card'><h3>P0 + P1</h3><div class='metric'>{&#x27;operaciones&#x27;: 761, &#x27;valor_en_riesgo&#x27;: 21191194.15}</div><p>Operaciones que requieren política comercial y SLA.</p></div>
+  </section>
+  <section class='grid'>
+    
+        <section class='card'>
+          <span class='badge'>ok</span>
+          <h3>RAG Business Memory</h3>
+          <p>¿Qué evidencia explica una decisión comercial?</p>
+          <p><code>/metadata/uni-final-rag</code></p>
+        </section>
+        
+        <section class='card'>
+          <span class='badge'>ok</span>
+          <h3>GitHub Alerts &amp; Automation Tower</h3>
+          <p>¿Qué alerta se activó y qué debe hacerse?</p>
+          <p><code>/metadata/productized-os</code></p>
+        </section>
+        
+  </section>
+  <section class='grid'>
+    <div class='card' style='grid-column:1/-1'>
+      <h3>Rutas de demo</h3>
+      <p>Yo muestro solo rutas seguras y agregadas para cliente externo.</p>
+      <div class='cta-row'><a class='btn secondary' href='/demo/client-ready'>/demo/client-ready</a><a class='btn secondary' href='/public/decision-dashboard'>/public/decision-dashboard</a><a class='btn secondary' href='/dashboard/productized-os'>/dashboard/productized-os</a><a class='btn secondary' href='/product/demo/package'>/product/demo/package</a></div>
+    </div>
+  </section>
+  <footer class='footer'>
+    De CRM operativo a decisiones comerciales con memoria, evidencia y acción. · generado 2026-07-04T21:17:34+00:00
+  </footer>
+</body>
+</html>

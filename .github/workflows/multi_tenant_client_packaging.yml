@@ -1,0 +1,44 @@
+name: Multi Tenant Client Packaging
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - "config/client_tenants.yml"
+      - "src/mlu/multi_tenant_client_packaging.py"
+      - "scripts/116_run_v22_multi_tenant_client_packaging.py"
+      - "reports/public/decision_dashboard_payload_public.json"
+
+permissions:
+  contents: read
+
+jobs:
+  package-client-tenants:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install pyyaml pandas pytest fastapi pydantic httpx
+      - name: Build tenant packages
+        run: python scripts/116_run_v22_multi_tenant_client_packaging.py
+      - name: Test tenant packaging
+        run: pytest -q tests/test_multi_tenant_client_packaging.py
+      - name: Publish summary
+        if: always()
+        run: |
+          cat reports/client_tenants/TENANT_INDEX.md >> $GITHUB_STEP_SUMMARY
+      - name: Upload tenant artifacts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: multi-tenant-client-packages
+          path: |
+            reports/client_tenants/**
+            config/client_tenants.yml

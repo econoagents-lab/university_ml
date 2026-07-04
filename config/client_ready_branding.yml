@@ -1,0 +1,108 @@
+version: "2.1.0"
+release_name: "v2.1_client_ready_branding_and_deployment"
+product_name: "Commercial Intelligence OS"
+brand_name: "EconoAgents Intelligence Factory"
+tagline: "De CRM operativo a decisiones comerciales con memoria, evidencia y acción."
+positioning: >
+  Sistema operativo de inteligencia comercial inmobiliaria para gerencia: riesgo, stock,
+  pricing, cobranza, RAG, alertas, feedback y experimentación, empaquetado como demo
+  externa segura.
+
+brand:
+  theme: "executive_dark_gold"
+  palette:
+    background: "#070A12"
+    surface: "#10182A"
+    surface_2: "#151F35"
+    gold: "#D6A84F"
+    blue: "#6EA8FE"
+    text: "#F5F7FB"
+    muted: "#AAB4C8"
+    danger: "#FF5C7A"
+    warning: "#FFC857"
+    success: "#38D39F"
+  typography:
+    heading: "Inter, Segoe UI, Arial, sans-serif"
+    body: "Inter, Segoe UI, Arial, sans-serif"
+  tone:
+    - ejecutivo
+    - sobrio
+    - consultivo
+    - trazable
+    - comercial
+
+landing:
+  hero_title: "Tu primera área de inteligencia comercial inmobiliaria"
+  hero_subtitle: "Un sistema operativo que convierte CRM, modelos, RAG y dashboards en decisiones de venta, caja y stock."
+  primary_cta: "Ver demo segura"
+  secondary_cta: "Revisar paquete ejecutivo"
+  public_routes:
+    - "/demo/client-ready"
+    - "/public/decision-dashboard"
+    - "/dashboard/productized-os"
+    - "/product/demo/package"
+  show_modules:
+    - "risk_to_action"
+    - "public_safe_dashboard"
+    - "rag_business_memory"
+    - "experiment_policy"
+    - "github_alerts"
+
+auth:
+  mode: "simple_demo_token"
+  env_enabled_flag: "MLU_DEMO_AUTH_ENABLED"
+  env_token_name: "MLU_DEMO_TOKEN"
+  accepted_header: "X-Demo-Token"
+  accepted_query_param: "demo_token"
+  require_token_in_production: false
+  default_local_open: true
+  note: "Para demo externa, activar MLU_DEMO_AUTH_ENABLED=true y configurar MLU_DEMO_TOKEN en Railway."
+
+railway:
+  required_variables:
+    MLU_ENV: "production"
+    MLU_DISABLE_SAMPLE_FALLBACK: "true"
+    MLU_DEMO_AUTH_ENABLED: "true"
+    MLU_DEMO_TOKEN: "<configurar_en_Railway>"
+  recommended_start_command: "uvicorn api.main:app --host 0.0.0.0 --port $PORT"
+  deployment_checklist:
+    - "Payload público CRM agregado existe."
+    - "No hay clientes, DNI, teléfonos, emails ni direcciones."
+    - "MLU_DISABLE_SAMPLE_FALLBACK=true."
+    - "La landing abre sin exponer filas operativas."
+    - "Los endpoints de demo responden 200."
+    - "GitHub Actions genera artifacts de demo y valida privacidad."
+
+demo:
+  persona: "Gerente General / Gerente Comercial de desarrolladora inmobiliaria"
+  duration_minutes: 12
+  flow:
+    - endpoint: "/demo/client-ready"
+      message: "Abrir la historia del producto y la promesa comercial."
+    - endpoint: "/public/decision-dashboard"
+      message: "Mostrar payload público agregado, sin PII."
+    - endpoint: "/dashboard/catalog"
+      message: "Mostrar catálogo de productos de decisión."
+    - endpoint: "/dashboard/action-feedback"
+      message: "Mostrar que el score termina en acción, responsable y SLA."
+    - endpoint: "/dashboard/experiment-power-policy"
+      message: "Mostrar medición de impacto y política comercial."
+    - endpoint: "/product/demo/package"
+      message: "Cerrar con paquete ejecutivo vendible."
+
+quality_gates:
+  require_public_payload: true
+  require_productized_os_manifest: true
+  require_landing_html: true
+  require_brand_assets: true
+  forbidden_public_tokens:
+    - "dni"
+    - "documento"
+    - "telefono"
+    - "teléfono"
+    - "email"
+    - "cliente"
+    - "direccion"
+    - "dirección"
+    - "password"
+    - "redshift_password"

@@ -1,0 +1,14 @@
+{
+  "version": "v1.8_experimentation_causal_impact_lab",
+  "generated_at": "2026-07-04T21:17:46.963742+00:00",
+  "status": "needs_more_feedback",
+  "treatment_n": 153,
+  "control_n": 68,
+  "positive_uplift_pp": 0.0,
+  "negative_reduction_pp": 0.0,
+  "saved_value_proxy": 0.0,
+  "enough_sample": true,
+  "has_observed_outcomes": false,
+  "confidence_note": "MVP descriptivo; no causal definitivo sin aleatorización operativa y muestra suficiente.",
+  "recommendation": "seguir_recolectando_feedback"
+}

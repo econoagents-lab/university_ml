@@ -1,0 +1,7 @@
+metric,value,target,direction,status,decision_use
+treatment_contact_rate,0.0,0.8,>=,warning,"si falla, no culpo al modelo; primero corrijo ejecución comercial"
+p0_treatment_coverage,0.0,1.0,>=,warning,"si falla, no culpo al modelo; primero corrijo ejecución comercial"
+control_contamination_rate,0.0,0.1,<=,ok,"si falla, no culpo al modelo; primero corrijo ejecución comercial"
+feedback_completion_30d,0.0,0.6,>=,warning,"si falla, no culpo al modelo; primero corrijo ejecución comercial"
+treatment_rows,153.0,1.0,>=,ok,muestra operacional
+control_rows,68.0,1.0,>=,ok,contrafactual operativo

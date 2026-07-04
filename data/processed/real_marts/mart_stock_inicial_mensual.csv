@@ -1,0 +1,135 @@
+periodo_mes,proyecto,tipo_unidad,stock_total,stock_disponible,stock_vendido,stock_en_proceso,stock_valorizado,area_total,absorcion_real_proxy,metric_mode,data_mode
+2022-02,Edificio Valdizan,departamento flat,2,0,2,0,1216800.0,148.5,1.0,current_snapshot_real,real_source:unidades.parquet
+2022-03,Edificio Valdizan,departamento flat,2,0,2,0,1222200.0,148.04,1.0,current_snapshot_real,real_source:unidades.parquet
+2022-03,Edificio Valdizan,estacionamiento simple,2,0,2,0,102500.0,25.5,1.0,current_snapshot_real,real_source:unidades.parquet
+2022-05,Edificio Valdizan,departamento flat,1,0,1,0,553400.0,67.55,1.0,current_snapshot_real,real_source:unidades.parquet
+2022-05,Edificio Valdizan,estacionamiento simple,1,0,1,0,51250.0,13.5,1.0,current_snapshot_real,real_source:unidades.parquet
+2022-06,Edificio Valdizan,departamento flat,1,0,1,0,615800.0,74.02,1.0,current_snapshot_real,real_source:unidades.parquet
+2022-06,Edificio Valdizan,estacionamiento simple,1,0,1,0,51250.0,13.5,1.0,current_snapshot_real,real_source:unidades.parquet
+2022-08,Edificio Valdizan,departamento flat,2,0,2,0,1211000.0,148.96,1.0,current_snapshot_real,real_source:unidades.parquet
+2022-11,Edificio Valdizan,departamento flat,1,0,1,0,606400.0,74.02,1.0,current_snapshot_real,real_source:unidades.parquet
+2022-11,Edificio Valdizan,estacionamiento simple,1,0,1,0,51250.0,13.5,1.0,current_snapshot_real,real_source:unidades.parquet
+2022-12,Edificio Valdizan,departamento duplex,1,0,1,0,987200.0,142.4,1.0,current_snapshot_real,real_source:unidades.parquet
+2022-12,Edificio Valdizan,departamento flat,1,0,1,0,527700.0,67.55,1.0,current_snapshot_real,real_source:unidades.parquet
+2022-12,Edificio Valdizan,estacionamiento simple,1,0,1,0,58630.0,13.25,1.0,current_snapshot_real,real_source:unidades.parquet
+2023-01,Edificio Valdizan,departamento duplex,1,0,1,0,960200.0,136.29,1.0,current_snapshot_real,real_source:unidades.parquet
+2023-03,Edificio Valdizan,departamento flat,2,0,2,0,1064100.0,135.1,1.0,current_snapshot_real,real_source:unidades.parquet
+2023-05,Edificio Unique,departamento duplex,1,1,0,0,982800.0,153.95,0.0,current_snapshot_real,real_source:unidades.parquet
+2023-05,Edificio Unique,departamento flat,10,10,0,0,4699800.0,682.04,0.0,current_snapshot_real,real_source:unidades.parquet
+2023-05,Edificio Unique,depósito,1,1,0,0,7175.0,1.75,0.0,current_snapshot_real,real_source:unidades.parquet
+2023-05,Edificio Unique,estacionamiento simple,5,5,0,0,276604.0,67.49000000000001,0.0,current_snapshot_real,real_source:unidades.parquet
+2023-06,Edificio Unique,departamento flat,2,2,0,0,930000.0,131.93,0.0,current_snapshot_real,real_source:unidades.parquet
+2023-06,Edificio Unique,estacionamiento simple,2,2,0,0,118592.0,28.93,0.0,current_snapshot_real,real_source:unidades.parquet
+2023-06,Edificio Valdizan,departamento flat,1,0,1,0,536300.0,67.55,1.0,current_snapshot_real,real_source:unidades.parquet
+2023-11,Edificio Valdizan,departamento flat,1,0,1,0,562000.0,67.55,1.0,current_snapshot_real,real_source:unidades.parquet
+2024-08,Edificio Valdizan,departamento flat,4,0,4,0,2371100.0,297.46000000000004,1.0,current_snapshot_real,real_source:unidades.parquet
+2024-08,Edificio Valdizan,estacionamiento simple,3,0,3,0,153750.0,39.0,1.0,current_snapshot_real,real_source:unidades.parquet
+2024-10,Tradiciones Prime,departamento duplex,2,2,0,0,3404570.96,519.16,0.0,current_snapshot_real,real_source:unidades.parquet
+2024-10,Tradiciones Prime,departamento flat,2,1,1,0,1826515.0,229.56,0.5,current_snapshot_real,real_source:unidades.parquet
+2024-10,Tradiciones Prime,departamento triplex,1,1,0,0,1022354.12,146.5,0.0,current_snapshot_real,real_source:unidades.parquet
+2024-10,Tradiciones Prime,estacionamiento doble,2,2,0,0,185200.0,48.76,0.0,current_snapshot_real,real_source:unidades.parquet
+2024-10,Tradiciones Prime,estacionamiento simple,3,3,0,0,195700.0,40.769999999999996,0.0,current_snapshot_real,real_source:unidades.parquet
+2025-01,Edificio Cuba Connect,departamento duplex,2,0,2,0,2025492.0,322.72,1.0,current_snapshot_real,real_source:unidades.parquet
+2025-01,Edificio Cuba Connect,departamento flat,114,0,114,0,66121997.2,8758.18,1.0,current_snapshot_real,real_source:unidades.parquet
+2025-01,Edificio Cuba Connect,depósito,18,0,18,0,247049.0,65.31,1.0,current_snapshot_real,real_source:unidades.parquet
+2025-01,Edificio Cuba Connect,estacionamiento simple,90,0,90,0,4069350.0,1315.9,1.0,current_snapshot_real,real_source:unidades.parquet
+2025-01,Edificio Cuba Connect,local comercial,1,1,0,0,1046607.0,102.1,0.0,current_snapshot_real,real_source:unidades.parquet
+2025-01,Edificio Saenz,departamento flat,69,0,55,14,32643181.4,5551.87,0.797101,current_snapshot_real,real_source:unidades.parquet
+2025-01,Edificio Saenz,depósito,6,0,5,1,94787.0,29.7,0.833333,current_snapshot_real,real_source:unidades.parquet
+2025-01,Edificio Saenz,estacionamiento simple,63,1,53,9,2351264.55,833.05,0.84127,current_snapshot_real,real_source:unidades.parquet
+2025-01,Edificio Santa Cruz Infinite,departamento duplex,3,0,3,0,2704300.0,424.48,1.0,current_snapshot_real,real_source:unidades.parquet
+2025-01,Edificio Santa Cruz Infinite,departamento flat,92,0,85,7,48249188.0,6608.73,0.923913,current_snapshot_real,real_source:unidades.parquet
+2025-01,Edificio Santa Cruz Infinite,depósito,13,2,9,2,131522.0,32.94,0.692308,current_snapshot_real,real_source:unidades.parquet
+2025-01,Edificio Santa Cruz Infinite,estacionamiento doble,4,3,1,0,382700.0,96.0,0.25,current_snapshot_real,real_source:unidades.parquet
+2025-01,Edificio Santa Cruz Infinite,estacionamiento simple,71,11,56,4,3332095.0,953.37,0.788732,current_snapshot_real,real_source:unidades.parquet
+2025-01,Edificio Valdizan,estacionamiento simple,4,0,4,0,205000.0,51.25,1.0,current_snapshot_real,real_source:unidades.parquet
+2025-01,Los Jardines de Urteaga,departamento duplex,2,0,2,0,2060650.0,392.15,1.0,current_snapshot_real,real_source:unidades.parquet
+2025-01,Los Jardines de Urteaga,departamento flat,36,0,36,0,23542697.0,3648.65,1.0,current_snapshot_real,real_source:unidades.parquet
+2025-01,Los Jardines de Urteaga,estacionamiento doble,1,0,1,0,68400.0,31.0,1.0,current_snapshot_real,real_source:unidades.parquet
+2025-01,Los Jardines de Urteaga,estacionamiento simple,33,0,33,0,1256408.08,408.75,1.0,current_snapshot_real,real_source:unidades.parquet
+2025-01,Tradiciones Prime,departamento duplex,1,0,1,0,1207784.0,150.94,1.0,current_snapshot_real,real_source:unidades.parquet
+2025-01,Tradiciones Prime,estacionamiento simple,1,0,1,0,72500.0,15.1,1.0,current_snapshot_real,real_source:unidades.parquet
+2025-02,Edificio Mariategui,departamento flat,59,0,59,0,29786739.53,4147.01,1.0,current_snapshot_real,real_source:unidades.parquet
+2025-02,Edificio Mariategui,depósito,7,3,4,0,94546.0,24.47,0.571429,current_snapshot_real,real_source:unidades.parquet
+2025-02,Edificio Mariategui,estacionamiento con depósito,1,0,1,0,60800.0,16.03,1.0,current_snapshot_real,real_source:unidades.parquet
+2025-02,Edificio Mariategui,estacionamiento simple,40,1,39,0,2228800.0,591.35,0.975,current_snapshot_real,real_source:unidades.parquet
+2025-02,Edificio Mariategui,local comercial,1,0,1,0,577500.0,41.81,1.0,current_snapshot_real,real_source:unidades.parquet
+2025-05,Tradiciones Prime,departamento flat,1,1,0,0,1124407.2,130.49,0.0,current_snapshot_real,real_source:unidades.parquet
+2025-07,Tradiciones Prime,estacionamiento doble,2,1,0,1,185200.0,48.76,0.0,current_snapshot_real,real_source:unidades.parquet
+2025-09,Edificio Cuba Connect,estacionamiento simple,1,0,1,0,43050.0,15.0,1.0,current_snapshot_real,real_source:unidades.parquet
+2025-09,Edificio Santa Cruz Infinite,departamento flat,1,0,1,0,525200.0,71.27,1.0,current_snapshot_real,real_source:unidades.parquet
+2025-09,Edificio Unique,departamento flat,1,1,0,0,385600.0,55.32,0.0,current_snapshot_real,real_source:unidades.parquet
+2025-10,Edificio Mariategui,depósito,1,1,0,0,14782.0,3.89,0.0,current_snapshot_real,real_source:unidades.parquet
+2025-10,Edificio Santa Cruz Infinite,departamento flat,1,0,1,0,549000.0,70.85,1.0,current_snapshot_real,real_source:unidades.parquet
+2025-10,Edificio Santa Cruz Infinite,estacionamiento simple,1,0,1,0,45100.0,13.5,1.0,current_snapshot_real,real_source:unidades.parquet
+2025-10,Tradiciones Prime,departamento flat,1,0,1,0,1062819.34,130.39,1.0,current_snapshot_real,real_source:unidades.parquet
+2026-01,Edificio Mariategui,departamento flat,1,0,0,1,650777.17,79.36,0.0,current_snapshot_real,real_source:unidades.parquet
+2026-01,Edificio Mariategui,estacionamiento simple,1,0,0,1,68800.0,19.75,0.0,current_snapshot_real,real_source:unidades.parquet
+2026-01,Edificio Santa Cruz Infinite,departamento flat,1,0,1,0,504600.0,70.52,1.0,current_snapshot_real,real_source:unidades.parquet
+2026-01,Edificio Santa Cruz Infinite,estacionamiento simple,3,1,2,0,143500.0,37.38,0.666667,current_snapshot_real,real_source:unidades.parquet
+2026-02,Edificio Mariategui,depósito,1,0,0,1,16226.0,4.27,0.0,current_snapshot_real,real_source:unidades.parquet
+2026-02,Edificio Valdizan,departamento flat,1,0,0,0,570500.0,67.55,0.0,current_snapshot_real,real_source:unidades.parquet
+2026-02,Tradiciones Prime,departamento flat,1,0,0,0,1064337.83,130.49,0.0,current_snapshot_real,real_source:unidades.parquet
+2026-02,Tradiciones Prime,estacionamiento doble,1,0,0,0,95700.0,25.17,0.0,current_snapshot_real,real_source:unidades.parquet
+2026-05,Campañas,proyecto,1,1,0,0,0.0,0.0,0.0,current_snapshot_real,real_source:unidades.parquet
+2026-05,Tizón y Bueno,departamento duplex,1,0,1,0,888888.89,132.18,1.0,current_snapshot_real,real_source:unidades.parquet
+2026-05,Tizón y Bueno,departamento flat,96,0,79,17,43934952.37,6106.58,0.822917,current_snapshot_real,real_source:unidades.parquet
+2026-05,Tizón y Bueno,depósito,12,9,0,3,136176.0,54.099999999999994,0.0,current_snapshot_real,real_source:unidades.parquet
+2026-05,Tizón y Bueno,estacionamiento con depósito,49,12,13,24,2501332.0,785.6899999999999,0.265306,current_snapshot_real,real_source:unidades.parquet
+2026-05,Tizón y Bueno,estacionamiento simple,19,0,12,8,919499.0,258.59,0.631579,current_snapshot_real,real_source:unidades.parquet
+2026-06,Alicanto,departamento duplex,5,3,1,1,3671627.64,529.64,0.2,current_snapshot_real,real_source:unidades.parquet
+2026-06,Alicanto,departamento flat,81,16,57,12,36640616.72,5050.37,0.703704,current_snapshot_real,real_source:unidades.parquet
+2026-06,Alicanto,depósito,10,1,5,4,162220.0,43.95,0.5,current_snapshot_real,real_source:unidades.parquet
+2026-06,Alicanto,estacionamiento con depósito,5,0,3,3,349338.07999999996,84.22,0.6,current_snapshot_real,real_source:unidades.parquet
+2026-06,Alicanto,estacionamiento simple,40,15,14,12,2170574.0,525.95,0.35,current_snapshot_real,real_source:unidades.parquet
+2026-06,Capadocia,departamento duplex,6,3,2,1,5537049.74,790.11,0.333333,current_snapshot_real,real_source:unidades.parquet
+2026-06,Capadocia,departamento flat,140,94,37,12,82763724.6,8464.4,0.264286,current_snapshot_real,real_source:unidades.parquet
+2026-06,Capadocia,depósito,13,12,0,1,252195.0,59.9,0.0,current_snapshot_real,real_source:unidades.parquet
+2026-06,Capadocia,estacionamiento con depósito,34,22,2,11,2162137.0,598.35,0.058824,current_snapshot_real,real_source:unidades.parquet
+2026-06,Capadocia,estacionamiento simple,66,48,9,10,3288433.0,831.0,0.136364,current_snapshot_real,real_source:unidades.parquet
+2026-06,Edificio Saenz,departamento flat,1,0,1,1,397460.0,74.92,1.0,current_snapshot_real,real_source:unidades.parquet
+2026-06,Edificio Saenz,estacionamiento simple,1,0,1,1,35700.0,12.36,1.0,current_snapshot_real,real_source:unidades.parquet
+2026-06,Edificio Urbanzen,departamento flat,59,7,4,1,36095303.65,4062.48,0.067797,current_snapshot_real,real_source:unidades.parquet
+2026-06,Edificio Urbanzen,depósito,14,0,2,9,217700.0,60.94,0.142857,current_snapshot_real,real_source:unidades.parquet
+2026-06,Edificio Urbanzen,estacionamiento con depósito,3,1,0,0,194400.0,54.1,0.0,current_snapshot_real,real_source:unidades.parquet
+2026-06,Edificio Urbanzen,estacionamiento simple,46,6,5,15,2467500.0,646.54,0.108696,current_snapshot_real,real_source:unidades.parquet
+2026-06,Edificio Urbanzen,local comercial,1,1,0,0,748900.0,122.27,0.0,current_snapshot_real,real_source:unidades.parquet
+2026-06,Fenix,departamento duplex,3,2,1,0,2913887.11,390.33000000000004,0.333333,current_snapshot_real,real_source:unidades.parquet
+2026-06,Fenix,departamento flat,77,9,54,16,36849545.08,4907.08,0.701299,current_snapshot_real,real_source:unidades.parquet
+2026-06,Fenix,estacionamiento con depósito,24,9,9,8,1557100.0,405.38,0.375,current_snapshot_real,real_source:unidades.parquet
+2026-06,Fenix,estacionamiento simple,23,5,13,5,1223600.0,316.32,0.565217,current_snapshot_real,real_source:unidades.parquet
+2026-06,Matera,departamento duplex,10,8,1,2,8770587.4,1087.24,0.1,current_snapshot_real,real_source:unidades.parquet
+2026-06,Matera,departamento flat,178,116,49,14,91480831.87,9915.98,0.275281,current_snapshot_real,real_source:unidades.parquet
+2026-06,Matera,depósito,1,1,0,0,16928.74,4.49,0.0,current_snapshot_real,real_source:unidades.parquet
+2026-06,Matera,estacionamiento con depósito,17,7,6,4,984208.0,277.42,0.352941,current_snapshot_real,real_source:unidades.parquet
+2026-06,Matera,estacionamiento simple,89,70,8,12,4130600.0,1131.0,0.089888,current_snapshot_real,real_source:unidades.parquet
+2026-06,Modena,departamento duplex,3,3,0,0,2812799.3,313.03,0.0,current_snapshot_real,real_source:unidades.parquet
+2026-06,Modena,departamento flat,195,117,67,16,95935532.1,11200.630000000001,0.34359,current_snapshot_real,real_source:unidades.parquet
+2026-06,Modena,estacionamiento con depósito,66,47,8,11,4034843.0,995.9,0.121212,current_snapshot_real,real_source:unidades.parquet
+2026-06,Modena,estacionamiento simple,51,29,15,8,2748649.0,668.2,0.294118,current_snapshot_real,real_source:unidades.parquet
+2026-06,Sialia,departamento duplex,4,4,0,0,3399034.56,445.85,0.0,current_snapshot_real,real_source:unidades.parquet
+2026-06,Sialia,departamento flat,124,46,57,25,61023226.38,7630.87,0.459677,current_snapshot_real,real_source:unidades.parquet
+2026-06,Sialia,estacionamiento con depósito,8,5,3,0,618700.0,159.64000000000001,0.375,current_snapshot_real,real_source:unidades.parquet
+2026-06,Sialia,estacionamiento simple,67,36,16,19,3470100.0,891.19,0.238806,current_snapshot_real,real_source:unidades.parquet
+2026-06,Tizón y Bueno,departamento duplex,2,1,1,0,1791284.34,280.28,0.5,current_snapshot_real,real_source:unidades.parquet
+2026-06,Tizón y Bueno,departamento flat,14,0,12,4,6784827.21,905.44,0.857143,current_snapshot_real,real_source:unidades.parquet
+2026-06,Tizón y Bueno,estacionamiento con depósito,1,0,1,0,45165.0,13.16,1.0,current_snapshot_real,real_source:unidades.parquet
+2026-06,Tizón y Bueno,estacionamiento simple,1,0,1,0,48672.0,13.0,1.0,current_snapshot_real,real_source:unidades.parquet
+2026-06,Torre Nápoles,departamento duplex,5,5,0,0,2908752.04,579.4499999999999,0.0,current_snapshot_real,real_source:unidades.parquet
+2026-06,Torre Nápoles,departamento flat,514,406,64,54,167525722.26,26355.33,0.124514,current_snapshot_real,real_source:unidades.parquet
+2026-06,Torre Nápoles,depósito,46,45,0,1,496690.0,147.9,0.0,current_snapshot_real,real_source:unidades.parquet
+2026-06,Torre Nápoles,estacionamiento con depósito,56,50,1,5,3195959.0,936.89,0.017857,current_snapshot_real,real_source:unidades.parquet
+2026-06,Torre Nápoles,estacionamiento simple,118,94,5,19,5361628.0,1479.54,0.042373,current_snapshot_real,real_source:unidades.parquet
+2026-07,Alicanto,departamento flat,6,0,5,1,2620480.15,376.37,0.833333,current_snapshot_real,real_source:unidades.parquet
+2026-07,Alicanto,estacionamiento simple,1,0,1,0,52700.0,12.5,1.0,current_snapshot_real,real_source:unidades.parquet
+2026-07,Edificio Urbanzen,departamento flat,3,1,0,1,1843389.85,193.48000000000002,0.0,current_snapshot_real,real_source:unidades.parquet
+2026-07,Edificio Urbanzen,estacionamiento simple,1,0,0,0,48000.0,12.0,0.0,current_snapshot_real,real_source:unidades.parquet
+2026-07,Fenix,departamento flat,3,1,1,1,1582391.27,205.39,0.333333,current_snapshot_real,real_source:unidades.parquet
+2026-07,Fenix,estacionamiento con depósito,1,0,0,1,62600.0,16.07,0.0,current_snapshot_real,real_source:unidades.parquet
+2026-07,Matera,departamento flat,1,0,1,0,702130.84,70.88,1.0,current_snapshot_real,real_source:unidades.parquet
+2026-07,Modena,departamento flat,2,0,1,1,655318.94,80.11000000000001,0.5,current_snapshot_real,real_source:unidades.parquet
+2026-07,Sialia,departamento flat,1,0,1,0,431492.11,68.53,1.0,current_snapshot_real,real_source:unidades.parquet
+2026-07,Sialia,estacionamiento simple,1,0,1,0,51800.0,13.3,1.0,current_snapshot_real,real_source:unidades.parquet
+2026-07,Tizón y Bueno,departamento flat,1,0,0,1,511940.0,65.54,0.0,current_snapshot_real,real_source:unidades.parquet
+2026-07,Tizón y Bueno,estacionamiento con depósito,2,0,0,2,93057.0,32.35,0.0,current_snapshot_real,real_source:unidades.parquet
+2026-07,Torre Nápoles,departamento flat,2,0,2,0,629653.78,97.19999999999999,1.0,current_snapshot_real,real_source:unidades.parquet

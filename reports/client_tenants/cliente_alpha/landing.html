@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang='es'>
+<head>
+<meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<title>Cliente Alpha · Desarrollador multifamiliar · Demo</title>
+<style>
+:root { --bg:#070A12; --surface:#10182A; --accent:#D6A84F; --blue:#6EA8FE; --text:#F7F8FC; --muted:#AAB4C8; }
+* { box-sizing:border-box; }
+body { margin:0; font-family:Inter, Segoe UI, Arial, sans-serif; color:var(--text); background:radial-gradient(circle at top left, #1b2540 0, var(--bg) 45%); }
+.hero { max-width:1180px; margin:0 auto; padding:72px 24px 32px; }
+.eyebrow { color:var(--accent); letter-spacing:.14em; text-transform:uppercase; font-size:12px; font-weight:800; }
+h1 { font-size:clamp(36px,6vw,70px); line-height:.95; margin:14px 0; letter-spacing:-.045em; }
+p { color:var(--muted); font-size:18px; line-height:1.62; }
+.grid { max-width:1180px; margin:20px auto; padding:0 24px 46px; display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:16px; }
+.card { background:linear-gradient(180deg,rgba(255,255,255,.06),rgba(255,255,255,.025)); border:1px solid rgba(255,255,255,.10); border-radius:22px; padding:22px; box-shadow:0 18px 50px rgba(0,0,0,.30); }
+.card span { color:var(--accent); font-size:12px; text-transform:uppercase; letter-spacing:.12em; font-weight:800; }
+.metric { font-size:30px; color:var(--accent); font-weight:900; }
+.btn { display:inline-block; margin:6px 8px 6px 0; padding:12px 15px; border-radius:14px; color:var(--text); border:1px solid rgba(255,255,255,.18); text-decoration:none; background:rgba(255,255,255,.06); }
+.secondary { border-color:rgba(110,168,254,.32); }
+code { background:#050816; color:#DFE8FF; border-radius:7px; padding:2px 6px; }
+.footer { max-width:1180px; margin:0 auto; padding:26px 24px; border-top:1px solid rgba(255,255,255,.08); color:var(--muted); }
+</style>
+</head>
+<body>
+  <main class='hero'>
+    <div class='eyebrow'>Cliente Alpha · Desarrollador multifamiliar</div>
+    <h1>Una sala de control para salvar ventas antes de que caigan.</h1>
+    <p>Demo segura con datos agregados: riesgo, proyectos, canales y política comercial sin exponer clientes.</p>
+    <p><strong>Foco comercial:</strong> Riesgo de caída, tubería envejecida y valor esperado en riesgo.</p>
+    <a class='btn' href='/product/client/cliente_alpha/package'>Ver tablero ejecutivo</a>
+  </main>
+  <section class='grid'>
+    <div class='card'><span>KPI</span><h3>Operaciones</h3><div class='metric'>763</div><p>Agregado seguro por cliente.</p></div>
+    <div class='card'><span>KPI</span><h3>Valor en riesgo</h3><div class='metric'>S/ 21232580.48</div><p>Sin operaciones individuales ni clientes.</p></div>
+    <div class='card'><span>KPI</span><h3>Riesgo promedio</h3><div class='metric'>0.3982</div><p>Payload modo <code>crm</code>.</p></div>
+    <div class='card'><span>KPI</span><h3>P0 + P1</h3><div class='metric'>{&#x27;operaciones&#x27;: 761, &#x27;valor_en_riesgo&#x27;: 21191194.15}</div><p>Cola ejecutiva agregada.</p></div>
+  </section>
+  <section class='grid'><section class='card'><span>Módulo</span><h3>ceo_brief</h3><p>Producto habilitado para esta demo.</p></section><section class='card'><span>Módulo</span><h3>railway_public_dashboard</h3><p>Producto habilitado para esta demo.</p></section><section class='card'><span>Módulo</span><h3>risk_to_action_queue</h3><p>Producto habilitado para esta demo.</p></section><section class='card'><span>Módulo</span><h3>stock_pricing</h3><p>Producto habilitado para esta demo.</p></section><section class='card'><span>Módulo</span><h3>rag_business_memory</h3><p>Producto habilitado para esta demo.</p></section><section class='card'><span>Módulo</span><h3>github_alerts</h3><p>Producto habilitado para esta demo.</p></section></section>
+  <section class='grid'><div class='card' style='grid-column:1/-1'><span>Rutas</span><h3>Demo habilitada</h3><p>Yo expongo solo rutas seguras para este cliente.</p><a class='btn secondary' href='/public/decision-dashboard'>/public/decision-dashboard</a><a class='btn secondary' href='/dashboard/catalog'>/dashboard/catalog</a><a class='btn secondary' href='/dashboard/action-feedback'>/dashboard/action-feedback</a><a class='btn secondary' href='/dashboard/experiment-power-policy'>/dashboard/experiment-power-policy</a></div></section>
+  <footer class='footer'>Commercial Intelligence OS · Tenant <code>cliente_alpha</code> · generado 2026-07-04T21:25:52+00:00</footer>
+</body>
+</html>

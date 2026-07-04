@@ -191,6 +191,20 @@
     "data_mode": "crm",
     "fecha_generacion": "2026-07-04T04:23:08"
   },
+  "family_metrics": {
+    "metric_group": "action_feedback",
+    "status": "ok",
+    "queue_rows": 763,
+    "p0_actions": 0,
+    "p1_actions": 221,
+    "feedback_events": 100,
+    "outcome_rows": 3,
+    "value_at_risk_in_queue": 21232580.48,
+    "retraining_recommendation": "continuar_recolectando_feedback",
+    "should_retrain_or_recalibrate": false,
+    "privacy_status": "ok",
+    "decision": "Yo uso esta familia para medir si las alertas realmente se convierten en acciones, resultados y aprendizaje."
+  },
   "recommended_action": "Usar el tablero para convertir datos en decisión, responsable, plazo y métrica de resultado.",
-  "generated_at": "2026-07-04T01:29:39"
+  "generated_at": "2026-07-04T16:17:38"
 }

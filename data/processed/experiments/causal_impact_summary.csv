@@ -1,0 +1,4 @@
+experiment_arm,n,positive_30d,negative_30d,pending_30d,positive_rate_30d,negative_rate_30d,pending_rate_30d,contact_rate,valor_esperado_en_riesgo
+treatment,153,0,0,153,0.0,0.0,1.0,0.0,5977416.52
+control,68,0,0,68,0.0,0.0,1.0,0.0,2683908.8
+impact_delta,221,0,0,221,0.0,0.0,0.0,0.0,0.0

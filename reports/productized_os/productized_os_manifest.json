@@ -1,0 +1,215 @@
+{
+  "version": "2.0.0",
+  "product_name": "Productized Commercial Intelligence OS",
+  "positioning": "Sistema comercial inmobiliario productizado: API + dashboards + RAG + alertas + feedback + experimentos + política comercial.",
+  "release_mode": "demo_safe",
+  "generated_at": "2026-07-04T21:17:47+00:00",
+  "release_status": "ok",
+  "module_summary": {
+    "total_modules": 7,
+    "ok_modules": 7,
+    "warning_modules": 0,
+    "missing_modules": 0,
+    "min_required_modules_ok": 5
+  },
+  "privacy_validation": {
+    "path": "reports/public/decision_dashboard_payload_public.json",
+    "exists": true,
+    "status": "ok",
+    "forbidden_hits": [],
+    "allowed_top_level_fields": [
+      "total_operaciones",
+      "valor_total_en_riesgo",
+      "riesgo_promedio",
+      "p0_p1",
+      "top_proyectos",
+      "top_asesores",
+      "top_canales",
+      "fecha_generacion",
+      "data_mode"
+    ]
+  },
+  "modules": [
+    {
+      "id": "executive_brief",
+      "name": "CEO Brief & Decision Cockpit",
+      "owner": "Gerencia General",
+      "commercial_question": "¿Qué debe decidir gerencia esta semana?",
+      "demo_endpoint": "/dashboard/catalog",
+      "value_claim": "Convierte KPIs dispersos en decisiones semanales priorizadas.",
+      "artifact_status": {
+        "status": "ok",
+        "existing": 2,
+        "total": 2,
+        "items": [
+          {
+            "path": "reports/generated_dashboards/index.html",
+            "exists": true,
+            "size_bytes": 15006
+          },
+          {
+            "path": "reports/dashboard_metrics/DASHBOARD_METRICS_ENGINE.md",
+            "exists": true,
+            "size_bytes": 8663
+          }
+        ]
+      },
+      "module_status": "ok"
+    },
+    {
+      "id": "risk_action_queue",
+      "name": "Risk-to-Action Queue",
+      "owner": "Gerencia Comercial",
+      "commercial_question": "¿Qué operaciones tienen riesgo y quién debe intervenirlas?",
+      "demo_endpoint": "/decision/action-feedback/queue",
+      "value_claim": "Transforma scores en acciones con SLA, prioridad y responsable.",
+      "artifact_status": {
+        "status": "ok",
+        "existing": 2,
+        "total": 2,
+        "items": [
+          {
+            "path": "data/processed/action_feedback/decision_action_queue_safe.csv",
+            "exists": true,
+            "size_bytes": 150424
+          },
+          {
+            "path": "reports/action_feedback/DECISION_ACTION_FEEDBACK_LAB.md",
+            "exists": true,
+            "size_bytes": 1728
+          }
+        ]
+      },
+      "module_status": "ok"
+    },
+    {
+      "id": "public_railway_dashboard",
+      "name": "Railway Public Safe Dashboard",
+      "owner": "Producto / Demo Comercial",
+      "commercial_question": "¿Qué puede ver un cliente externo sin exponer PII?",
+      "demo_endpoint": "/public/decision-dashboard",
+      "value_claim": "Permite demo externa con CRM real agregado y privacidad estricta.",
+      "artifact_status": {
+        "status": "ok",
+        "existing": 1,
+        "total": 1,
+        "items": [
+          {
+            "path": "reports/public/decision_dashboard_payload_public.json",
+            "exists": true,
+            "size_bytes": 3753
+          }
+        ]
+      },
+      "module_status": "ok"
+    },
+    {
+      "id": "rag_business_memory",
+      "name": "RAG Business Memory",
+      "owner": "CDO / Chief Economist",
+      "commercial_question": "¿Qué evidencia explica una decisión comercial?",
+      "demo_endpoint": "/metadata/uni-final-rag",
+      "value_claim": "Responde preguntas con evidencia, citas, guardrails y evaluación.",
+      "artifact_status": {
+        "status": "ok",
+        "existing": 2,
+        "total": 2,
+        "items": [
+          {
+            "path": "reports/uni_final/RAGAS_LIKE_SUMMARY.md",
+            "exists": true,
+            "size_bytes": 277
+          },
+          {
+            "path": "docs/TRACEABILITY_TABLE_UNI.md",
+            "exists": true,
+            "size_bytes": 731
+          }
+        ]
+      },
+      "module_status": "ok"
+    },
+    {
+      "id": "real_marts",
+      "name": "Real Mart Evidence Layer",
+      "owner": "Analytics Engineering",
+      "commercial_question": "¿Qué métricas son oficiales y cuáles siguen siendo proxy?",
+      "demo_endpoint": "/dashboard/real-marts",
+      "value_claim": "Reduce discusión por definiciones y separa evidencia oficial de proxy.",
+      "artifact_status": {
+        "status": "ok",
+        "existing": 2,
+        "total": 2,
+        "items": [
+          {
+            "path": "reports/real_marts/REAL_MART_EXPANSION.md",
+            "exists": true,
+            "size_bytes": 1147
+          },
+          {
+            "path": "data/processed/real_marts/mart_proxy_vs_official_gap.csv",
+            "exists": true,
+            "size_bytes": 780
+          }
+        ]
+      },
+      "module_status": "ok"
+    },
+    {
+      "id": "experimentation_policy",
+      "name": "Experiment & Policy Engine",
+      "owner": "Chief Economist",
+      "commercial_question": "¿La intervención comercial salva valor real y con qué política?",
+      "demo_endpoint": "/dashboard/experiment-power-policy",
+      "value_claim": "Convierte acciones en evidencia causal, capacidad y política comercial.",
+      "artifact_status": {
+        "status": "ok",
+        "existing": 2,
+        "total": 2,
+        "items": [
+          {
+            "path": "reports/experiments/EXPERIMENTATION_CAUSAL_IMPACT_LAB.md",
+            "exists": true,
+            "size_bytes": 2513
+          },
+          {
+            "path": "reports/policy_engine/EXPERIMENT_POWER_AND_POLICY_ENGINE.md",
+            "exists": true,
+            "size_bytes": 6119
+          }
+        ]
+      },
+      "module_status": "ok"
+    },
+    {
+      "id": "github_alerts",
+      "name": "GitHub Alerts & Automation Tower",
+      "owner": "MLOps / DataOps",
+      "commercial_question": "¿Qué alerta se activó y qué debe hacerse?",
+      "demo_endpoint": "/metadata/productized-os",
+      "value_claim": "Automatiza digest, quality gates, artifacts e issues de decisión.",
+      "artifact_status": {
+        "status": "ok",
+        "existing": 1,
+        "total": 1,
+        "items": [
+          {
+            "path": "reports/alerts/EXECUTIVE_KPI_DIGEST.md",
+            "exists": true,
+            "size_bytes": 1951
+          }
+        ]
+      },
+      "module_status": "ok"
+    }
+  ],
+  "recommended_demo_flow": [
+    "/production/health",
+    "/metadata/productized-os",
+    "/public/decision-dashboard",
+    "/dashboard/catalog",
+    "/dashboard/action-feedback",
+    "/dashboard/experiment-power-policy",
+    "/product/demo/package"
+  ]
+}

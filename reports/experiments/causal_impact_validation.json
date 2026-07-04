@@ -1,0 +1,14 @@
+{
+  "version": "v1.8_experimentation_causal_impact_lab",
+  "status": "ok",
+  "errors": [],
+  "checked_files": [
+    "data\\processed\\experiments\\experiment_design.json",
+    "data\\processed\\experiments\\experiment_assignment_safe.csv",
+    "data\\processed\\experiments\\experiment_outcomes_safe.csv",
+    "data\\processed\\experiments\\causal_impact_summary.csv",
+    "data\\processed\\experiments\\causal_impact_summary.json",
+    "reports\\experiments\\EXPERIMENTATION_CAUSAL_IMPACT_LAB.md"
+  ],
+  "generated_at": "2026-07-04T21:17:47.040565+00:00"
+}

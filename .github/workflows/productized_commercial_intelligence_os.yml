@@ -1,0 +1,64 @@
+name: Productized Commercial Intelligence OS
+
+on:
+  workflow_dispatch:
+    inputs:
+      run_tests:
+        description: "Run pytest after building productized OS"
+        required: false
+        default: "true"
+  push:
+    paths:
+      - "config/productized_os.yml"
+      - "src/mlu/productized_commercial_intelligence_os.py"
+      - "scripts/10*.py"
+      - "reports/public/decision_dashboard_payload_public.json"
+      - "docs/PRODUCTIZED_COMMERCIAL_INTELLIGENCE_OS.md"
+
+permissions:
+  contents: read
+  actions: read
+
+jobs:
+  productized-os:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Build productized OS release
+        run: python scripts/108_run_v20_productized_commercial_intelligence_os.py
+
+      - name: Validate productized OS
+        run: python scripts/106_validate_productized_os.py
+
+      - name: Run tests
+        if: ${{ github.event.inputs.run_tests != 'false' }}
+        run: pytest -q
+
+      - name: Publish productized summary
+        if: always()
+        run: |
+          cat reports/productized_os/PRODUCTIZED_COMMERCIAL_INTELLIGENCE_OS.md >> $GITHUB_STEP_SUMMARY
+
+      - name: Upload productized OS artifacts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: productized-commercial-intelligence-os
+          path: |
+            reports/productized_os/**
+            docs/PRODUCTIZED_COMMERCIAL_INTELLIGENCE_OS.md
+            docs/SALES_DEMO_PLAYBOOK.md
+            docs/DEPLOYMENT_RUNBOOK_V2_0.md
+            docs/V2_0_EXECUTIVE_SUMMARY.md

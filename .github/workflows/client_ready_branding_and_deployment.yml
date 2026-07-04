@@ -1,0 +1,52 @@
+name: Client Ready Branding and Deployment
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - "config/client_ready_branding.yml"
+      - "src/mlu/client_ready_branding_and_deployment.py"
+      - "scripts/10*.py"
+      - "scripts/11*.py"
+      - "api/main.py"
+      - "reports/public/decision_dashboard_payload_public.json"
+
+permissions:
+  contents: read
+  actions: read
+
+jobs:
+  client-ready-branding:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Build client-ready demo assets
+        run: |
+          python scripts/112_run_v21_client_ready_branding_and_deployment.py
+
+      - name: Publish summary
+        if: always()
+        run: |
+          cat reports/client_ready_branding/PUBLIC_DEMO_READINESS.md >> $GITHUB_STEP_SUMMARY
+
+      - name: Upload client-ready artifacts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: client-ready-branding-and-deployment
+          path: |
+            reports/client_ready_branding/**
+            docs/V2_1_EXECUTIVE_SUMMARY.md
+            docs/RAILWAY_FINAL_DEPLOYMENT_GUIDE_V2_1.md

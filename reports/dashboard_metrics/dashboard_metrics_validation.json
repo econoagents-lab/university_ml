@@ -1,0 +1,25 @@
+{
+  "generated_at": "2026-07-04T16:17:37",
+  "status": "ok",
+  "errors": [],
+  "warnings": [],
+  "families_available": [
+    "action_feedback",
+    "alerts",
+    "cobranza",
+    "commercial",
+    "executive",
+    "feedback",
+    "funnel",
+    "market",
+    "mlops",
+    "modeling",
+    "monitoring",
+    "public",
+    "rag",
+    "real_marts",
+    "registry",
+    "risk",
+    "stock_pricing"
+  ]
+}

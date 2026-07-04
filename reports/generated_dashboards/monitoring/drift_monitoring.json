@@ -179,6 +179,25 @@
     "data_mode": "crm",
     "fecha_generacion": "2026-07-04T04:23:08"
   },
+  "family_metrics": {
+    "metric_group": "mlops",
+    "status": "retrain_recommended",
+    "champion_model_id": "riesgo_caida_random_forest_dataset_riesgo_caida_crm_2026_07_03_v001_c02",
+    "champion_algorithm": "random_forest",
+    "registered_models": 3,
+    "prediction_psi": 3.7125,
+    "drift_status": "fail",
+    "feature_drift_fail_count": 4,
+    "brier_score": 0.2647,
+    "top_decile_lift": 1.039,
+    "champion_recall": 0.961,
+    "challengers_compared": 3,
+    "retraining_reasons": [
+      "prediction_psi_fail",
+      "low_lift"
+    ],
+    "decision": "Yo reviso drift, lift y challenger antes de confiar ciegamente en el ranking operativo."
+  },
   "recommended_action": "Revisar estado del champion, drift, lift y política de retraining antes de confiar en el ranking.",
-  "generated_at": "2026-07-04T01:29:39"
+  "generated_at": "2026-07-04T16:17:38"
 }

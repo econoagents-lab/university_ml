@@ -1,0 +1,15 @@
+{
+  "landing_html": "reports/client_ready_branding/LANDING_PAGE_CLIENT_DEMO.html",
+  "brand_system": "reports/client_ready_branding/BRAND_SYSTEM.md",
+  "client_ready_report": "reports/client_ready_branding/CLIENT_READY_BRANDING_AND_DEPLOYMENT.md",
+  "demo_script": "reports/client_ready_branding/EXTERNAL_CLIENT_DEMO_SCRIPT.md",
+  "public_demo_readiness": "reports/client_ready_branding/PUBLIC_DEMO_READINESS.md",
+  "railway_checklist": "reports/client_ready_branding/RAILWAY_DEPLOYMENT_ENV_CHECKLIST.md",
+  "manifest": "reports/client_ready_branding/client_ready_manifest.json",
+  "validation": "reports/client_ready_branding/client_ready_validation.json",
+  "routes": [
+    "/demo/client-ready",
+    "/demo/landing",
+    "/metadata/client-ready"
+  ]
+}

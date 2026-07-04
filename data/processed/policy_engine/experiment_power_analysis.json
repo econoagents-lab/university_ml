@@ -1,0 +1,16 @@
+{
+  "version": "v1.9_experiment_power_and_policy_engine",
+  "generated_at": "2026-07-04T21:17:46.159745+00:00",
+  "alpha": 0.05,
+  "target_power": 0.8,
+  "baseline_negative_rate": 0.15,
+  "minimum_detectable_effect_pp": 5.0,
+  "required_n_per_arm": 800,
+  "observed_treatment_n": 153,
+  "observed_control_n": 68,
+  "observed_min_n_per_arm": 68,
+  "detectable_effect_pp_with_current_sample": 0.28,
+  "power_ready": false,
+  "impact_status": "needs_more_feedback",
+  "decision": "seguir_acumulando_muestra_y_feedback"
+}

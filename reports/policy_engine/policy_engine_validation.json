@@ -1,0 +1,15 @@
+{
+  "version": "v1.9_experiment_power_and_policy_engine",
+  "status": "ok",
+  "errors": [],
+  "checked_files": [
+    "data\\processed\\policy_engine\\experiment_power_analysis.json",
+    "data\\processed\\policy_engine\\treatment_compliance_summary.csv",
+    "data\\processed\\policy_engine\\segment_policy_impact.csv",
+    "data\\processed\\policy_engine\\sla_capacity_recommendations.json",
+    "data\\processed\\policy_engine\\escalation_policy.json",
+    "reports\\policy_engine\\policy_engine_manifest.json",
+    "reports\\policy_engine\\EXPERIMENT_POWER_AND_POLICY_ENGINE.md"
+  ],
+  "generated_at": "2026-07-04T21:17:46.413825+00:00"
+}

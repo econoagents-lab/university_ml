@@ -1,0 +1,18 @@
+proyecto,precio_m2_proyecto,unidades_observadas,distrito,precio_m2_mercado,oferta_activa,brecha_precio_m2_pct,periodo_mes,comparable_source,data_mode
+Alicanto,4108.0472972972975,148,Jesús María,3606.3241926427886,,0.139123,2026-07,internal_benchmark_proxy,projects=real_source:proyectos.parquet; market=real_source:mart_market_district_month.csv
+Capadocia,1905.2493822393822,259,Jesús María,3606.3241926427886,,-0.471692,2026-07,internal_benchmark_proxy,projects=real_source:proyectos.parquet; market=real_source:mart_market_district_month.csv
+Edificio Cuba Connect,5104.833407079646,226,Jesús María,3606.3241926427886,,0.415523,2026-07,internal_benchmark_proxy,projects=real_source:proyectos.parquet; market=real_source:mart_market_district_month.csv
+Edificio Mariategui,5189.196875000001,112,Jesús María,3606.3241926427886,,0.438916,2026-07,internal_benchmark_proxy,projects=real_source:proyectos.parquet; market=real_source:mart_market_district_month.csv
+Edificio Saenz,4292.842642857143,140,Jesús María,3606.3241926427886,,0.190365,2026-07,internal_benchmark_proxy,projects=real_source:proyectos.parquet; market=real_source:mart_market_district_month.csv
+Edificio Santa Cruz Infinite,4922.753263157895,190,Jesús María,3606.3241926427886,,0.365033,2026-07,internal_benchmark_proxy,projects=real_source:proyectos.parquet; market=real_source:mart_market_district_month.csv
+Edificio Unique,0.0,22,surquillo,3606.3241926427886,,-1.0,2026-07,internal_benchmark_proxy,projects=real_source:proyectos.parquet; market=real_source:mart_market_district_month.csv
+Edificio Urbanzen,4900.338503937008,127,Jesús María,3606.3241926427886,,0.358818,2026-07,internal_benchmark_proxy,projects=real_source:proyectos.parquet; market=real_source:mart_market_district_month.csv
+Edificio Valdizan,6291.785,34,Jesús María,3606.3241926427886,,0.744653,2026-07,internal_benchmark_proxy,projects=real_source:proyectos.parquet; market=real_source:mart_market_district_month.csv
+Fenix,4469.095496183206,131,Jesús María,3606.3241926427886,,0.239238,2026-07,internal_benchmark_proxy,projects=real_source:proyectos.parquet; market=real_source:mart_market_district_month.csv
+Los Jardines de Urteaga,4783.655138888888,72,Jesús María,3606.3241926427886,,0.326463,2026-07,internal_benchmark_proxy,projects=real_source:proyectos.parquet; market=real_source:mart_market_district_month.csv
+Matera,1970.0754729729729,296,Jesús María,3606.3241926427886,,-0.453716,2026-07,internal_benchmark_proxy,projects=real_source:proyectos.parquet; market=real_source:mart_market_district_month.csv
+Modena,2223.3278233438486,317,Jesús María,3606.3241926427886,,-0.383492,2026-07,internal_benchmark_proxy,projects=real_source:proyectos.parquet; market=real_source:mart_market_district_month.csv
+Sialia,3091.1429756097564,205,Jesús María,3606.3241926427886,,-0.142855,2026-07,internal_benchmark_proxy,projects=real_source:proyectos.parquet; market=real_source:mart_market_district_month.csv
+Tizón y Bueno,4740.996464646465,198,Jesús María,3606.3241926427886,,0.314634,2026-07,internal_benchmark_proxy,projects=real_source:proyectos.parquet; market=real_source:mart_market_district_month.csv
+Torre Nápoles,950.9465317139002,741,Jesús María,3606.3241926427886,,-0.736311,2026-07,internal_benchmark_proxy,projects=real_source:proyectos.parquet; market=real_source:mart_market_district_month.csv
+Tradiciones Prime,2363.2250000000004,18,miraflores,3606.3241926427886,,-0.3447,2026-07,internal_benchmark_proxy,projects=real_source:proyectos.parquet; market=real_source:mart_market_district_month.csv

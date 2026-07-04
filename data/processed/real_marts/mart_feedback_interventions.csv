@@ -1,0 +1,16 @@
+periodo_mes,accion_tomada,resultado_7d,resultado_30d,nivel_riesgo,responsable_id,intervenciones,source_status,data_mode
+sin_periodo,pendiente,pendiente,pendiente,bajo,OWNER_9A684EC3F0,1,ok,real_source:feedback_outcomes_merged.parquet
+sin_periodo,pendiente,pendiente,pendiente,bajo,OWNER_D49965A644,2,ok,real_source:feedback_outcomes_merged.parquet
+sin_periodo,pendiente,pendiente,pendiente,medio,OWNER_1265C8A465,14,ok,real_source:feedback_outcomes_merged.parquet
+sin_periodo,pendiente,pendiente,pendiente,medio,OWNER_233077BA7F,6,ok,real_source:feedback_outcomes_merged.parquet
+sin_periodo,pendiente,pendiente,pendiente,medio,OWNER_3646DCCAA1,1,ok,real_source:feedback_outcomes_merged.parquet
+sin_periodo,pendiente,pendiente,pendiente,medio,OWNER_7B5A7F5FB0,30,ok,real_source:feedback_outcomes_merged.parquet
+sin_periodo,pendiente,pendiente,pendiente,medio,OWNER_8618B6BE3A,1,ok,real_source:feedback_outcomes_merged.parquet
+sin_periodo,pendiente,pendiente,pendiente,medio,OWNER_950BED165C,14,ok,real_source:feedback_outcomes_merged.parquet
+sin_periodo,pendiente,pendiente,pendiente,medio,OWNER_9FCF63DC91,7,ok,real_source:feedback_outcomes_merged.parquet
+sin_periodo,pendiente,pendiente,pendiente,medio,OWNER_C6B4E60323,5,ok,real_source:feedback_outcomes_merged.parquet
+sin_periodo,pendiente,pendiente,pendiente,medio,OWNER_CF9D39A66F,1,ok,real_source:feedback_outcomes_merged.parquet
+sin_periodo,pendiente,pendiente,pendiente,medio,OWNER_DA48A4F817,3,ok,real_source:feedback_outcomes_merged.parquet
+sin_periodo,pendiente,pendiente,pendiente,medio,OWNER_E05C20E0FE,3,ok,real_source:feedback_outcomes_merged.parquet
+sin_periodo,pendiente,pendiente,pendiente,medio,OWNER_E5897908D5,10,ok,real_source:feedback_outcomes_merged.parquet
+sin_periodo,pendiente,pendiente,pendiente,medio,OWNER_F59A4378D8,2,ok,real_source:feedback_outcomes_merged.parquet

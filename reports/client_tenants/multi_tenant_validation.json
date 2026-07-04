@@ -1,0 +1,10 @@
+{
+  "status": "ok",
+  "generated_at": "2026-07-04T21:25:52+00:00",
+  "errors": [],
+  "warnings": [],
+  "tenant_count": 3,
+  "privacy_ok_count": 3,
+  "config_path": "config/client_tenants.yml",
+  "manifest_path": "reports/client_tenants/multi_tenant_manifest.json"
+}

@@ -1,0 +1,29 @@
+{
+  "tenant_id": "cliente_alpha",
+  "display_name": "Cliente Alpha · Desarrollador multifamiliar",
+  "segment": "desarrollador_inmobiliario",
+  "generated_at": "2026-07-04T21:25:52+00:00",
+  "token_env_var": "MLU_DEMO_TOKEN_CLIENTE_ALPHA",
+  "enabled_modules": [
+    "ceo_brief",
+    "railway_public_dashboard",
+    "risk_to_action_queue",
+    "stock_pricing",
+    "rag_business_memory",
+    "github_alerts"
+  ],
+  "public_routes": [
+    "/public/decision-dashboard",
+    "/dashboard/catalog",
+    "/dashboard/action-feedback",
+    "/dashboard/experiment-power-policy"
+  ],
+  "artifact_paths": {
+    "payload": "reports/client_tenants/cliente_alpha/public_payload.json",
+    "landing": "reports/client_tenants/cliente_alpha/landing.html",
+    "one_pager": "reports/client_tenants/cliente_alpha/one_pager.md"
+  },
+  "privacy_status": "ok",
+  "forbidden_hits": [],
+  "data_mode": "crm"
+}

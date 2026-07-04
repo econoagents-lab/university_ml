@@ -1,0 +1,18 @@
+{
+  "generated_at": "2026-07-04T16:17:48",
+  "status": "ok",
+  "errors": [],
+  "warnings": [
+    "Patrón sensible posible en muestra de mart_cobranza_venta.csv: \\b\\d{8}\\b"
+  ],
+  "mart_files": [
+    "data\\processed\\real_marts\\mart_cobranza_venta.csv",
+    "data\\processed\\real_marts\\mart_feedback_interventions.csv",
+    "data\\processed\\real_marts\\mart_funnel_stage_month.csv",
+    "data\\processed\\real_marts\\mart_pagos_no_asignados.csv",
+    "data\\processed\\real_marts\\mart_pricing_unit_m2.csv",
+    "data\\processed\\real_marts\\mart_project_vs_market.csv",
+    "data\\processed\\real_marts\\mart_proxy_vs_official_gap.csv",
+    "data\\processed\\real_marts\\mart_stock_inicial_mensual.csv"
+  ]
+}

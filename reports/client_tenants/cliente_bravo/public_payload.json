@@ -1,0 +1,109 @@
+{
+  "riesgo_promedio": 0.3982,
+  "p0_p1": {
+    "operaciones": 761,
+    "valor_en_riesgo": 21191194.15
+  },
+  "top_canales": [
+    {
+      "canal": "sin_clasificar",
+      "operaciones": 763,
+      "valor_en_riesgo": 21232580.48,
+      "riesgo_promedio": 0.3982,
+      "p0_p1": 761
+    }
+  ],
+  "fecha_generacion": "2026-07-04T04:23:08",
+  "valor_total_en_riesgo": 21232580.48,
+  "total_operaciones": 763,
+  "top_proyectos": [
+    {
+      "proyecto": "Tizón y Bueno",
+      "operaciones": 82,
+      "valor_en_riesgo": 2769922.88,
+      "riesgo_promedio": 0.5073,
+      "p0_p1": 82
+    },
+    {
+      "proyecto": "Edificio Cuba Connect",
+      "operaciones": 83,
+      "valor_en_riesgo": 1986299.7,
+      "riesgo_promedio": 0.2822,
+      "p0_p1": 83
+    },
+    {
+      "proyecto": "Edificio Urbanzen",
+      "operaciones": 45,
+      "valor_en_riesgo": 1783878.84,
+      "riesgo_promedio": 0.4903,
+      "p0_p1": 45
+    },
+    {
+      "proyecto": "Edificio Santa Cruz Infinite",
+      "operaciones": 84,
+      "valor_en_riesgo": 1772295.82,
+      "riesgo_promedio": 0.2639,
+      "p0_p1": 84
+    },
+    {
+      "proyecto": "Modena",
+      "operaciones": 53,
+      "valor_en_riesgo": 1672002.71,
+      "riesgo_promedio": 0.4932,
+      "p0_p1": 53
+    }
+  ],
+  "top_asesores": [
+    {
+      "asesor_anon": "Asesor_26DEBB0E",
+      "operaciones": 130,
+      "valor_en_riesgo": 4395201.77,
+      "riesgo_promedio": 0.4635,
+      "p0_p1": 130,
+      "asesor": "Asesor_B23A6A84"
+    },
+    {
+      "asesor_anon": "Asesor_10B2BE3F",
+      "operaciones": 216,
+      "valor_en_riesgo": 3678489.2,
+      "riesgo_promedio": 0.2044,
+      "p0_p1": 216,
+      "asesor": "Asesor_6B86B273"
+    },
+    {
+      "asesor_anon": "Asesor_C931A67B",
+      "operaciones": 66,
+      "valor_en_riesgo": 2219467.94,
+      "riesgo_promedio": 0.4375,
+      "p0_p1": 65,
+      "asesor": "Asesor_D4735E3A"
+    },
+    {
+      "asesor_anon": "Asesor_1F3B24E1",
+      "operaciones": 58,
+      "valor_en_riesgo": 1961023.49,
+      "riesgo_promedio": 0.5103,
+      "p0_p1": 58,
+      "asesor": "Asesor_4E074085"
+    },
+    {
+      "asesor_anon": "Asesor_B56EAA59",
+      "operaciones": 58,
+      "valor_en_riesgo": 1892075.93,
+      "riesgo_promedio": 0.5045,
+      "p0_p1": 58,
+      "asesor": "Asesor_4B227777"
+    }
+  ],
+  "data_mode": "crm",
+  "tenant_id": "cliente_bravo",
+  "tenant_segment": "gerencia_comercial",
+  "enabled_modules": [
+    "ceo_brief",
+    "funnel_conversion",
+    "advisor_project_matrix",
+    "risk_to_action_queue",
+    "feedback_loop",
+    "experiment_policy"
+  ]
+}

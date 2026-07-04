@@ -1,7 +1,7 @@
 {
   "catalog": {
-    "generated_at": "2026-07-04T01:29:35",
-    "total_dashboards": 60,
+    "generated_at": "2026-07-04T16:17:35",
+    "total_dashboards": 62,
     "errors": [],
     "warnings": [
       "params_ref sin sección encontrada: config/alert_thresholds.yml#tuberia",

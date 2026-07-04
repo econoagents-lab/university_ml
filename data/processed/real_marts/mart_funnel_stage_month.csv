@@ -1,0 +1,2 @@
+periodo_mes,canal,leads,separaciones,minutas,caidas,lead_to_separacion_rate,separacion_to_minuta_rate,separacion_to_caida_rate,data_mode
+,manual,0.0,0.0,0.0,0.0,0,0,0,real_source:riesgo_caida_training_model_ready.parquet

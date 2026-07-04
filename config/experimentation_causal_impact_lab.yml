@@ -1,0 +1,91 @@
+# v1.8 · Experimentation Causal Impact Lab
+# Yo declaro cómo voy a medir si intervenir operaciones P0/P1 realmente cambia resultados económicos.
+
+experiment:
+  id: riesgo_caida_action_impact_v1
+  name: "Intervención comercial sobre riesgo de caída"
+  objective: "Medir si las acciones sobre P0/P1 reducen caídas y aumentan resultados positivos 7d/30d."
+  unit_of_analysis: "operation_id"
+  eligible_priorities: ["P0", "P1"]
+  treatment_share: 0.70
+  random_seed: 42
+  assignment_method: "deterministic_hash_stratified"
+  risk_bands:
+    very_high: 0.70
+    high: 0.50
+    medium: 0.35
+    low: 0.00
+  stratification_columns:
+    - prioridad
+    - proyecto
+    - canal
+    - risk_band
+  min_sample_size_per_arm: 10
+  max_assignment_rows: 500
+  ethical_policy:
+    allow_holdout_for_p0: false
+    p0_policy: "all_treatment"
+    p1_policy: "stratified_holdout"
+
+outcomes:
+  windows_days: [7, 30]
+  positive_outcomes:
+    - minuta
+    - pago_ci
+    - contacto_exitoso
+    - compromiso_pago
+    - reactivado
+  negative_outcomes:
+    - caida
+    - desistimiento
+    - sin_contacto
+    - perdido
+  pending_values:
+    - pendiente
+    - ""
+    - null
+  primary_metric: "negative_rate_30d"
+  secondary_metrics:
+    - positive_rate_30d
+    - saved_value_proxy
+    - treatment_contact_rate
+
+impact:
+  estimator: "difference_in_means"
+  minimum_detectable_effect_pp: 5.0
+  confidence_note: "MVP descriptivo; no causal definitivo sin aleatorización operativa y muestra suficiente."
+  insufficient_sample_status: "needs_more_feedback"
+  saved_value_formula: "treated_value_at_risk * max(0, control_negative_rate - treatment_negative_rate)"
+
+privacy:
+  forbidden_output_columns:
+    - cliente
+    - documento
+    - dni
+    - telefono
+    - teléfono
+    - celular
+    - email
+    - correo
+    - direccion
+    - dirección
+    - nombre_completo
+    - codigo_proforma
+    - codigo_unidad
+    - credencial
+    - password
+    - token
+  forbidden_output_patterns:
+    - "\\b[0-9]{8}\\b"
+    - "[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}"
+    - "(?i)password|token|secret|credential|redshift_password"
+
+sources:
+  action_queue_path: "data/processed/action_feedback/decision_action_queue_safe.csv"
+  feedback_events_path: "data/processed/action_feedback/feedback_events_safe.csv"
+  outcomes_path: "data/processed/action_feedback/action_outcomes_summary.csv"
+  private_data_env_var: "MLU_PRIVATE_DATA_DIR"
+
+outputs:
+  output_dir: "data/processed/experiments"
+  report_dir: "reports/experiments"

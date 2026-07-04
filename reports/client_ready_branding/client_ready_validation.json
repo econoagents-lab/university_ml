@@ -1,0 +1,31 @@
+{
+  "status": "ok",
+  "generated_at": "2026-07-04T21:17:34+00:00",
+  "errors": [],
+  "warnings": [],
+  "checks": [
+    {
+      "path": "reports/client_ready_branding/LANDING_PAGE_CLIENT_DEMO.html",
+      "exists": true,
+      "size_bytes": 4822
+    },
+    {
+      "path": "reports/client_ready_branding/BRAND_SYSTEM.md",
+      "exists": true,
+      "size_bytes": 617
+    },
+    {
+      "path": "reports/public/decision_dashboard_payload_public.json",
+      "exists": true,
+      "size_bytes": 3753
+    },
+    {
+      "path": "reports/productized_os/productized_os_manifest.json",
+      "exists": true,
+      "size_bytes": 6887
+    }
+  ],
+  "forbidden_hits": [],
+  "auth_enabled": false,
+  "manifest_path": "reports/client_ready_branding/client_ready_manifest.json"
+}

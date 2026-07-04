@@ -1,0 +1,29 @@
+{
+  "version": "v1.8_experimentation_causal_impact_lab",
+  "generated_at": "2026-07-04T21:17:46.893534+00:00",
+  "experiment_id": "riesgo_caida_action_impact_v1",
+  "name": "Intervención comercial sobre riesgo de caída",
+  "objective": "Medir si las acciones sobre P0/P1 reducen caídas y aumentan resultados positivos 7d/30d.",
+  "unit_of_analysis": "operation_id",
+  "eligible_priorities": [
+    "P0",
+    "P1"
+  ],
+  "assignment_method": "deterministic_hash_stratified",
+  "treatment_share": 0.7,
+  "ethical_policy": {
+    "allow_holdout_for_p0": false,
+    "p0_policy": "all_treatment",
+    "p1_policy": "stratified_holdout"
+  },
+  "primary_metric": "negative_rate_30d",
+  "secondary_metrics": [
+    "positive_rate_30d",
+    "saved_value_proxy",
+    "treatment_contact_rate"
+  ],
+  "estimator": "difference_in_means",
+  "confidence_note": "MVP descriptivo; no causal definitivo sin aleatorización operativa y muestra suficiente.",
+  "minimum_sample_per_arm": 10,
+  "privacy_mode": "safe_ids_only_no_pii"
+}

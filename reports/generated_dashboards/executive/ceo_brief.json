@@ -183,6 +183,11 @@
     "data_mode": "crm",
     "fecha_generacion": "2026-07-04T04:23:08"
   },
+  "family_metrics": {
+    "metric_group": "executive",
+    "status": "ok",
+    "decision": "Yo combino riesgo, RAG y MLOps para decidir qué debe revisar gerencia."
+  },
   "recommended_action": "Usar el tablero para convertir datos en decisión, responsable, plazo y métrica de resultado.",
-  "generated_at": "2026-07-04T01:29:38"
+  "generated_at": "2026-07-04T16:17:37"
 }

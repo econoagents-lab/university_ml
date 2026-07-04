@@ -1,0 +1,17 @@
+{
+  "version": "v1.9_experiment_power_and_policy_engine",
+  "generated_at": "2026-07-04T21:17:46.379982+00:00",
+  "status": "capacity_warning",
+  "current_team_daily_capacity": 30,
+  "recommended_daily_capacity": 74,
+  "p0_count": 0,
+  "p1_count": 221,
+  "p2_count": 279,
+  "p0_sla_hours": 4,
+  "p1_sla_hours": 24,
+  "p2_sla_hours": 72,
+  "estimated_days_to_clear_p0_p1": 19,
+  "p0_daily_capacity": 18,
+  "p1_daily_capacity": 12,
+  "recommendation": "aumentar_capacidad_o_subir_umbral_p0"
+}

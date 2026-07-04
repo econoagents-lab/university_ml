@@ -1,0 +1,27 @@
+........................................................................ [ 69%]
+...............................                                          [100%]
+=============================== warnings summary ===============================
+tests/test_experiments.py::test_analyze_intervention_effect_insufficient_without_outcomes
+  /mnt/data/machine_learning_university_v1_9_experiment_power_and_policy_engine/src/mlu/experiments.py:39: FutureWarning: Downcasting behavior in `replace` is deprecated and will be removed in a future version. To retain the old behavior, explicitly call `result.infer_objects(copy=False)`. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+    outcome_raw = df["caida_real_30d"].replace({"": np.nan, "True": 1, "False": 0, True: 1, False: 0})
+
+tests/test_real_mart_expansion.py::test_real_marts_are_generated_without_pii_columns
+tests/test_real_mart_expansion.py::test_pricing_mart_uses_hashed_unit_id_not_raw_unit_code
+tests/test_real_mart_expansion.py::test_dashboard_metrics_engine_uses_real_marts_family
+  /mnt/data/machine_learning_university_v1_9_experiment_power_and_policy_engine/src/mlu/real_marts.py:232: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+    grouped["lead_to_separacion_rate"] = (grouped["separaciones"] / grouped["leads"].replace(0, pd.NA)).fillna(0).round(6)
+
+tests/test_real_mart_expansion.py::test_real_marts_are_generated_without_pii_columns
+tests/test_real_mart_expansion.py::test_pricing_mart_uses_hashed_unit_id_not_raw_unit_code
+tests/test_real_mart_expansion.py::test_dashboard_metrics_engine_uses_real_marts_family
+  /mnt/data/machine_learning_university_v1_9_experiment_power_and_policy_engine/src/mlu/real_marts.py:233: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+    grouped["separacion_to_minuta_rate"] = (grouped["minutas"] / grouped["separaciones"].replace(0, pd.NA)).fillna(0).round(6)
+
+tests/test_real_mart_expansion.py::test_real_marts_are_generated_without_pii_columns
+tests/test_real_mart_expansion.py::test_pricing_mart_uses_hashed_unit_id_not_raw_unit_code
+tests/test_real_mart_expansion.py::test_dashboard_metrics_engine_uses_real_marts_family
+  /mnt/data/machine_learning_university_v1_9_experiment_power_and_policy_engine/src/mlu/real_marts.py:234: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+    grouped["separacion_to_caida_rate"] = (grouped["caidas"] / grouped["separaciones"].replace(0, pd.NA)).fillna(0).round(6)
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+103 passed, 10 warnings in 12.92s

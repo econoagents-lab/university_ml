@@ -197,6 +197,20 @@
     "data_mode": "crm",
     "fecha_generacion": "2026-07-04T04:23:08"
   },
+  "family_metrics": {
+    "metric_group": "market",
+    "status": "proxy",
+    "metric_mode": "real_mart_project_vs_market",
+    "proyectos_comparados": 17,
+    "distritos": 3,
+    "precio_m2_proyecto_promedio": 3606.32,
+    "precio_m2_mercado_promedio": 3606.32,
+    "brecha_precio_m2_promedio": 0.0,
+    "comparable_source": [
+      "internal_benchmark_proxy"
+    ],
+    "decision": "Yo uso brecha de precio/m² para distinguir problema de precio, producto o presión de mercado."
+  },
   "recommended_action": "Usar el tablero para convertir datos en decisión, responsable, plazo y métrica de resultado.",
-  "generated_at": "2026-07-04T01:29:39"
+  "generated_at": "2026-07-04T16:17:38"
 }

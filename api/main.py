@@ -1,5 +1,7 @@
 from __future__ import annotations
 
+import html
+
 import json
 from pathlib import Path
 
@@ -292,3 +294,302 @@ def dashboard_catalog_generated_index():
     if not INDEX_HTML_PATH.exists():
         generate_dashboards_from_catalog()
     return HTMLResponse(INDEX_HTML_PATH.read_text(encoding="utf-8"))
+
+
+@app.get("/metadata/dashboard-metrics")
+def dashboard_metrics_metadata_endpoint():
+    """
+    Yo expongo métricas específicas por familia para auditar la inteligencia de cada dashboard.
+    """
+    from src.mlu.dashboard_metrics_engine import dashboard_metrics_metadata
+    return dashboard_metrics_metadata()
+
+
+@app.get("/dashboard/metrics", response_class=HTMLResponse)
+def dashboard_metrics_report():
+    """
+    Yo sirvo el reporte maestro de métricas específicas por familia.
+    """
+    from src.mlu.dashboard_metrics_engine import ENGINE_REPORT_MD, build_family_metrics
+    if not ENGINE_REPORT_MD.exists():
+        build_family_metrics()
+    text = ENGINE_REPORT_MD.read_text(encoding="utf-8")
+    html_text = "<html><body><pre style='white-space:pre-wrap;font-family:Arial'>" + html.escape(text) + "</pre></body></html>"
+    return HTMLResponse(html_text)
+
+
+@app.get("/metadata/real-marts")
+def real_marts_metadata_endpoint():
+    """
+    Yo expongo metadata de marts reales para distinguir evidencia oficial de proxy.
+    """
+    from src.mlu.real_marts import real_mart_metadata
+    return real_mart_metadata()
+
+
+@app.get("/dashboard/real-marts", response_class=HTMLResponse)
+def real_marts_report_endpoint():
+    """
+    Yo sirvo el reporte maestro de expansión de marts reales.
+    """
+    from src.mlu.real_marts import REAL_MART_REPORT_MD, build_all_real_marts
+    if not REAL_MART_REPORT_MD.exists():
+        build_all_real_marts()
+    text = REAL_MART_REPORT_MD.read_text(encoding="utf-8")
+    html_text = "<html><body><pre style='white-space:pre-wrap;font-family:Arial'>" + html.escape(text) + "</pre></body></html>"
+    return HTMLResponse(html_text)
+
+@app.get("/metadata/action-feedback")
+def action_feedback_metadata_endpoint():
+    """
+    Yo expongo metadata del ciclo alerta -> acción -> feedback -> aprendizaje sin revelar datos personales.
+    """
+    from src.mlu.decision_action_feedback_lab import action_feedback_metadata
+    return action_feedback_metadata()
+
+
+@app.get("/dashboard/action-feedback", response_class=HTMLResponse)
+def action_feedback_report_endpoint():
+    """
+    Yo sirvo el reporte ejecutivo del laboratorio de acciones y feedback.
+    """
+    from src.mlu.decision_action_feedback_lab import REPORT_MD, run_decision_action_feedback_lab
+    if not REPORT_MD.exists():
+        run_decision_action_feedback_lab()
+    text = REPORT_MD.read_text(encoding="utf-8")
+    html_text = "<html><body><pre style='white-space:pre-wrap;font-family:Arial'>" + html.escape(text) + "</pre></body></html>"
+    return HTMLResponse(html_text)
+
+
+@app.get("/decision/action-feedback/queue")
+def action_feedback_queue(limit: int = Query(50, ge=1, le=500), prioridad: str | None = None):
+    """
+    Yo devuelvo la cola segura de acciones para operación comercial, sin clientes ni códigos crudos.
+    """
+    import pandas as pd
+    from src.mlu.decision_action_feedback_lab import QUEUE_CSV, run_decision_action_feedback_lab
+    if not QUEUE_CSV.exists():
+        run_decision_action_feedback_lab()
+    df = pd.read_csv(QUEUE_CSV)
+    if prioridad:
+        df = df[df["prioridad"].astype(str).str.upper() == prioridad.upper()]
+    return {"total": int(len(df)), "items": df.head(limit).to_dict(orient="records")}
+
+
+@app.get("/metadata/experimentation-causal-impact")
+def experimentation_causal_impact_metadata_endpoint():
+    """
+    Yo expongo metadata segura del laboratorio causal.
+    """
+    from src.mlu.experimentation_causal_impact_lab import experimentation_metadata
+    return experimentation_metadata()
+
+
+@app.get("/dashboard/experimentation-causal-impact", response_class=HTMLResponse)
+def experimentation_causal_impact_report_endpoint():
+    """
+    Yo sirvo el reporte ejecutivo del laboratorio de impacto causal.
+    """
+    from src.mlu.experimentation_causal_impact_lab import REPORT_MD, run_experimentation_causal_impact_lab
+    if not REPORT_MD.exists():
+        run_experimentation_causal_impact_lab()
+    text = REPORT_MD.read_text(encoding="utf-8")
+    html_text = "<html><body><pre style='white-space:pre-wrap;font-family:Arial'>" + html.escape(text) + "</pre></body></html>"
+    return HTMLResponse(html_text)
+
+
+@app.get("/experiments/causal-impact/assignment")
+def causal_impact_assignment(limit: int = Query(50, ge=1, le=500), arm: str | None = None):
+    """
+    Yo devuelvo asignaciones experimentales seguras, sin datos personales.
+    """
+    import pandas as pd
+    from src.mlu.experimentation_causal_impact_lab import ASSIGNMENT_CSV, run_experimentation_causal_impact_lab
+    if not ASSIGNMENT_CSV.exists():
+        run_experimentation_causal_impact_lab()
+    df = pd.read_csv(ASSIGNMENT_CSV)
+    if arm:
+        df = df[df["experiment_arm"].astype(str).str.lower() == arm.lower()]
+    return {"total": int(len(df)), "items": df.head(limit).to_dict(orient="records")}
+
+
+@app.get("/experiments/causal-impact/summary")
+def causal_impact_summary_endpoint():
+    """
+    Yo devuelvo el resumen de impacto tratamiento vs control.
+    """
+    from src.mlu.experimentation_causal_impact_lab import IMPACT_SUMMARY_JSON, evaluate_causal_impact, read_json
+    if not IMPACT_SUMMARY_JSON.exists():
+        evaluate_causal_impact()
+    return read_json(IMPACT_SUMMARY_JSON)
+
+
+@app.get("/metadata/experiment-power-policy")
+def experiment_power_policy_metadata_endpoint():
+    """
+    Yo expongo metadata segura del motor de poder experimental y política comercial.
+    """
+    from src.mlu.experiment_power_policy_engine import experiment_power_policy_metadata
+    return experiment_power_policy_metadata()
+
+
+@app.get("/dashboard/experiment-power-policy", response_class=HTMLResponse)
+def experiment_power_policy_report_endpoint():
+    """
+    Yo sirvo el reporte ejecutivo del motor de política experimental.
+    """
+    from src.mlu.experiment_power_policy_engine import REPORT_MD, run_experiment_power_policy_engine
+    if not REPORT_MD.exists():
+        run_experiment_power_policy_engine()
+    text = REPORT_MD.read_text(encoding="utf-8")
+    html_text = "<html><body><pre style='white-space:pre-wrap;font-family:Arial'>" + html.escape(text) + "</pre></body></html>"
+    return HTMLResponse(html_text)
+
+
+@app.get("/experiments/policy/segments")
+def experiment_policy_segments(limit: int = Query(50, ge=1, le=500), dimension: str | None = None):
+    """
+    Yo devuelvo impacto por segmento sin datos personales.
+    """
+    import pandas as pd
+    from src.mlu.experiment_power_policy_engine import SEGMENT_IMPACT_CSV, run_experiment_power_policy_engine
+    if not SEGMENT_IMPACT_CSV.exists():
+        run_experiment_power_policy_engine()
+    df = pd.read_csv(SEGMENT_IMPACT_CSV)
+    if dimension and "dimension" in df.columns:
+        df = df[df["dimension"].astype(str).str.lower() == dimension.lower()]
+    return {"total": int(len(df)), "items": df.head(limit).to_dict(orient="records")}
+
+
+@app.get("/experiments/policy/recommendations")
+def experiment_policy_recommendations():
+    """
+    Yo devuelvo SLA, capacidad y política de escalamiento para operación comercial.
+    """
+    from src.mlu.experiment_power_policy_engine import (
+        ESCALATION_POLICY_JSON,
+        SLA_RECOMMENDATIONS_JSON,
+        read_json,
+        run_experiment_power_policy_engine,
+    )
+    if not SLA_RECOMMENDATIONS_JSON.exists() or not ESCALATION_POLICY_JSON.exists():
+        run_experiment_power_policy_engine()
+    return {
+        "sla_capacity": read_json(SLA_RECOMMENDATIONS_JSON),
+        "escalation_policy": read_json(ESCALATION_POLICY_JSON),
+    }
+
+@app.get("/metadata/productized-os")
+def productized_os_metadata_endpoint():
+    """
+    Yo expongo el estado de producto v2.0 para demo, auditoría y venta consultiva.
+    """
+    from src.mlu.productized_commercial_intelligence_os import productized_os_metadata
+    return productized_os_metadata()
+
+
+@app.get("/dashboard/productized-os", response_class=HTMLResponse)
+def productized_os_dashboard_endpoint():
+    """
+    Yo sirvo el índice HTML del producto comercial v2.0.
+    """
+    from src.mlu.productized_commercial_intelligence_os import INDEX_HTML, run_productized_os_release
+    if not INDEX_HTML.exists():
+        run_productized_os_release()
+    return HTMLResponse(INDEX_HTML.read_text(encoding="utf-8"))
+
+
+@app.get("/product/demo/package")
+def productized_os_demo_package_endpoint():
+    """
+    Yo devuelvo el paquete de demo comercial con one-pager, guion y flujo recomendado.
+    """
+    from src.mlu.productized_commercial_intelligence_os import DEMO_PACKAGE_JSON, read_json, run_productized_os_release
+    if not DEMO_PACKAGE_JSON.exists():
+        run_productized_os_release()
+    return read_json(DEMO_PACKAGE_JSON)
+
+
+
+@app.get("/metadata/client-ready")
+def client_ready_metadata_endpoint():
+    """
+    Yo expongo metadata de la demo cliente v2.1: marca, landing, Railway y privacidad.
+    """
+    from src.mlu.client_ready_branding_and_deployment import client_ready_metadata
+    return client_ready_metadata()
+
+
+@app.get("/demo/client-ready", response_class=HTMLResponse)
+def client_ready_demo_endpoint(demo_token: str | None = Query(default=None), x_demo_token: str | None = Header(default=None)):
+    """
+    Yo sirvo la landing cliente con token simple opcional para demos externas.
+    """
+    from src.mlu.client_ready_branding_and_deployment import (
+        LANDING_HTML,
+        run_client_ready_branding_and_deployment,
+        validate_demo_token,
+    )
+    token = x_demo_token or demo_token
+    if not validate_demo_token(token):
+        raise HTTPException(status_code=401, detail="Demo token inválido o ausente")
+    if not LANDING_HTML.exists():
+        run_client_ready_branding_and_deployment()
+    return HTMLResponse(LANDING_HTML.read_text(encoding="utf-8"))
+
+
+@app.get("/demo/landing", response_class=HTMLResponse)
+def client_ready_landing_alias(demo_token: str | None = Query(default=None), x_demo_token: str | None = Header(default=None)):
+    """
+    Yo expongo un alias corto de la landing comercial para compartirla en demo.
+    """
+    return client_ready_demo_endpoint(demo_token=demo_token, x_demo_token=x_demo_token)
+
+
+@app.get("/metadata/client-tenants")
+def client_tenants_metadata_endpoint():
+    """
+    Yo expongo metadata de paquetes multi-tenant para saber qué demos cliente existen y si son seguras.
+    """
+    from src.mlu.multi_tenant_client_packaging import client_tenant_metadata
+    return client_tenant_metadata()
+
+
+@app.get("/demo/tenants", response_class=HTMLResponse)
+def client_tenants_index_endpoint():
+    """
+    Yo sirvo el índice HTML de demos por cliente.
+    """
+    from src.mlu.multi_tenant_client_packaging import TENANT_INDEX_HTML, run_multi_tenant_client_packaging
+    if not TENANT_INDEX_HTML.exists():
+        run_multi_tenant_client_packaging()
+    return HTMLResponse(TENANT_INDEX_HTML.read_text(encoding="utf-8"))
+
+
+@app.get("/demo/client/{tenant_id}", response_class=HTMLResponse)
+def client_tenant_landing_endpoint(tenant_id: str, demo_token: str | None = Query(default=None), x_demo_token: str | None = Header(default=None)):
+    """
+    Yo sirvo una landing específica por tenant con token por cliente en producción.
+    """
+    from src.mlu.multi_tenant_client_packaging import tenant_dir, normalize_tenant_id, run_multi_tenant_client_packaging, validate_tenant_token
+    token = x_demo_token or demo_token
+    if not validate_tenant_token(tenant_id, token):
+        raise HTTPException(status_code=401, detail="Token de tenant inválido o ausente")
+    landing = tenant_dir(normalize_tenant_id(tenant_id)) / "landing.html"
+    if not landing.exists():
+        run_multi_tenant_client_packaging()
+    if not landing.exists():
+        raise HTTPException(status_code=404, detail="Tenant no encontrado")
+    return HTMLResponse(landing.read_text(encoding="utf-8"))
+
+
+@app.get("/product/client/{tenant_id}/package")
+def client_tenant_package_endpoint(tenant_id: str):
+    """
+    Yo devuelvo el paquete comercial de un tenant: módulos, rutas, artifacts y estado de privacidad.
+    """
+    from src.mlu.multi_tenant_client_packaging import get_tenant_package
+    try:
+        return get_tenant_package(tenant_id)
+    except FileNotFoundError:
+        raise HTTPException(status_code=404, detail="Tenant no encontrado")

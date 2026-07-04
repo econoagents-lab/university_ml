@@ -12,6 +12,7 @@ import yaml
 
 from src.mlu.config import PROJECT_ROOT
 from src.mlu.dashboard_control import load_dashboard_catalog, load_dashboard_params, parse_param_ref, load_yaml
+from src.mlu.dashboard_metrics_engine import metrics_for_dashboard, markdown_value_table
 
 GENERATED_DIR = PROJECT_ROOT / "reports" / "generated_dashboards"
 MANIFEST_PATH = GENERATED_DIR / "dashboard_generation_manifest.json"
@@ -63,7 +64,7 @@ def load_generation_config(path: Path = GENERATION_CONFIG_PATH) -> dict[str, Any
         return yaml.safe_load(path.read_text(encoding="utf-8")) or {}
     return {
         "project": "machine_learning_university",
-        "version": "v1.4_dashboard_generator_from_catalog",
+        "version": "v1.5_dashboard_metrics_engine",
         "generate_markdown": True,
         "generate_html": True,
         "generate_json": True,
@@ -268,6 +269,7 @@ def dashboard_payload(dashboard: dict[str, Any], global_kpis: dict[str, Any], pa
         "where_to_change": dashboard.get("params_ref"),
         "params_snapshot": params_snapshot,
         "global_kpis": global_kpis,
+        "family_metrics": metrics_for_dashboard(str(dashboard.get("id", "")), family),
         "recommended_action": action_recommendation(dashboard, family),
         "generated_at": datetime.now().isoformat(timespec="seconds"),
     }
@@ -325,6 +327,10 @@ def render_markdown(payload: dict[str, Any]) -> str:
 ## Top canales agregados
 
 {markdown_table(kpis.get('top_canales', []))}
+
+## Métricas específicas de esta familia
+
+{markdown_value_table(payload.get('family_metrics', {}))}
 
 ## Acción recomendada
 
@@ -454,7 +460,7 @@ def generate_dashboards_from_catalog() -> dict[str, Any]:
 
     manifest = {
         "project": catalog.get("project"),
-        "version": "v1.4_dashboard_generator_from_catalog",
+        "version": "v1.5_dashboard_metrics_engine",
         "generated_at": datetime.now().isoformat(timespec="seconds"),
         "total_generated": len(generated),
         "families": sorted({item.family for item in generated}),
@@ -579,7 +585,7 @@ def dashboard_generator_metadata() -> dict[str, Any]:
     """
     manifest = read_json_if_exists(MANIFEST_PATH)
     return {
-        "version": manifest.get("version", "v1.4_dashboard_generator_from_catalog"),
+        "version": manifest.get("version", "v1.5_dashboard_metrics_engine"),
         "total_generated": manifest.get("total_generated", 0),
         "families": manifest.get("families", []),
         "index_html": str(INDEX_HTML_PATH.relative_to(PROJECT_ROOT)),

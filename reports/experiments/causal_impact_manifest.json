@@ -1,0 +1,34 @@
+{
+  "version": "v1.8_experimentation_causal_impact_lab",
+  "generated_at": "2026-07-04T21:17:46.980152+00:00",
+  "experiment_id": "riesgo_caida_action_impact_v1",
+  "status": "needs_more_feedback",
+  "counts": {
+    "assignment_rows": 500,
+    "outcome_rows": 500,
+    "summary_rows": 3
+  },
+  "impact": {
+    "version": "v1.8_experimentation_causal_impact_lab",
+    "generated_at": "2026-07-04T21:17:46.963742+00:00",
+    "status": "needs_more_feedback",
+    "treatment_n": 153,
+    "control_n": 68,
+    "positive_uplift_pp": 0.0,
+    "negative_reduction_pp": 0.0,
+    "saved_value_proxy": 0.0,
+    "enough_sample": true,
+    "has_observed_outcomes": false,
+    "confidence_note": "MVP descriptivo; no causal definitivo sin aleatorización operativa y muestra suficiente.",
+    "recommendation": "seguir_recolectando_feedback"
+  },
+  "artifacts": {
+    "experiment_design_json": "data\\processed\\experiments\\experiment_design.json",
+    "assignment_csv": "data\\processed\\experiments\\experiment_assignment_safe.csv",
+    "outcomes_safe_csv": "data\\processed\\experiments\\experiment_outcomes_safe.csv",
+    "impact_summary_csv": "data\\processed\\experiments\\causal_impact_summary.csv",
+    "impact_summary_json": "data\\processed\\experiments\\causal_impact_summary.json",
+    "report_md": "reports\\experiments\\EXPERIMENTATION_CAUSAL_IMPACT_LAB.md"
+  },
+  "privacy_mode": "safe_ids_and_aggregates_only"
+}

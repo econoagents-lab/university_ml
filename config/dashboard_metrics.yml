@@ -1,0 +1,99 @@
+project: machine_learning_university
+version: v1.5_dashboard_metrics_engine
+principle: Yo calculo métricas específicas por familia para que cada dashboard produzca
+  inteligencia económica, no solo KPIs heredados.
+thresholds:
+  risk:
+    p0_score: 0.7
+    p1_score: 0.5
+    p2_score: 0.35
+    sla_p0_hours: 0
+    sla_p1_hours: 24
+    sla_p2_hours: 72
+  stock:
+    slow_stock_days_warning: 90
+    slow_stock_days_fail: 180
+  pricing:
+    high_discount_warning: 0.08
+    high_discount_fail: 0.15
+    market_gap_warning: 0.1
+    market_gap_fail: 0.15
+  cobranza:
+    unassigned_payment_warning: 1
+    unassigned_payment_fail: 10
+  rag:
+    faithfulness_min: 0.75
+    answer_relevance_min: 0.75
+    context_relevance_min: 0.6
+    trap_refusal_min: 1.0
+  mlops:
+    prediction_psi_warning: 0.1
+    prediction_psi_fail: 0.25
+    min_top_decile_lift: 1.2
+    min_recall: 0.7
+families:
+  funnel:
+    dashboards_keywords:
+    - funnel
+    - conversion
+    - conversión
+    - lead
+    - separaciones
+    - minutas
+    metric_group: funnel
+  riesgo:
+    dashboards_keywords:
+    - riesgo
+    - caida
+    - caída
+    - tuberia
+    - tubería
+    - valor_esperado
+    metric_group: risk
+  stock_pricing:
+    dashboards_keywords:
+    - stock
+    - pricing
+    - precio
+    - descuentos
+    - absorcion
+    - absorción
+    - product_mix
+    metric_group: stock_pricing
+  cobranza:
+    dashboards_keywords:
+    - cobranza
+    - pago
+    - pagos
+    - caja
+    - cuota
+    metric_group: cobranza
+  rag:
+    dashboards_keywords:
+    - rag
+    - text-to-sql
+    - corpus
+    - citations
+    - quality
+    metric_group: rag
+  mlops:
+    dashboards_keywords:
+    - drift
+    - lift
+    - registry
+    - champion
+    - challenger
+    - calibration
+    - mlops
+    - monitoring
+    - model
+    metric_group: mlops
+  action_feedback:
+    dashboards_keywords:
+    - feedback
+    - accion
+    - acción
+    - intervencion
+    - intervención
+    - decision_action_feedback
+    metric_group: action_feedback

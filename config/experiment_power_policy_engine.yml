@@ -1,0 +1,82 @@
+version: v1.9_experiment_power_and_policy_engine
+
+power_analysis:
+  alpha: 0.05
+  power: 0.80
+  baseline_negative_rate: 0.15
+  minimum_detectable_effect_pp: 5.0
+  recommended_min_n_per_arm: 100
+  z_alpha_over_2: 1.96
+  z_power: 0.84
+
+compliance:
+  min_treatment_contact_rate: 0.80
+  min_p0_treatment_coverage: 1.00
+  max_control_contamination_rate: 0.10
+  min_feedback_completion_30d: 0.60
+
+segments:
+  groupby:
+    - proyecto
+    - canal
+    - asesor_id
+    - prioridad
+    - risk_band
+  min_segment_n_per_arm: 5
+  max_segments_per_dimension: 20
+
+capacity_policy:
+  team_daily_capacity: 30
+  working_days_per_week: 5
+  p0_sla_hours: 4
+  p1_sla_hours: 24
+  p2_sla_hours: 72
+  max_daily_p0_share: 0.60
+  backlog_warning_days: 3
+
+escalation_policy:
+  p0:
+    owner: jefatura_comercial
+    sla_hours: 4
+    holdout_allowed: false
+    first_action: llamada_asesor_mismo_dia
+    second_action: seguimiento_jefatura_24h
+    escalation_action: comite_comercial_48h
+  p1:
+    owner: asesor_comercial
+    sla_hours: 24
+    holdout_allowed: true
+    first_action: contacto_prioritario_24h
+    second_action: seguimiento_48h
+    escalation_action: subir_a_p0_si_valor_alto_o_sin_respuesta
+  p2:
+    owner: asesor_comercial
+    sla_hours: 72
+    holdout_allowed: true
+    first_action: monitoreo_y_recordatorio
+    second_action: contacto_si_aumenta_riesgo
+    escalation_action: revisar_en_reunion_semanal
+
+privacy:
+  forbidden_output_columns:
+    - cliente
+    - documento
+    - dni
+    - telefono
+    - teléfono
+    - celular
+    - email
+    - correo
+    - direccion
+    - dirección
+    - nombre_completo
+    - codigo_proforma
+    - codigo_unidad
+    - password
+    - redshift_password
+    - credential
+    - credenciales
+  forbidden_output_patterns:
+    - "[0-9]{8,}"
+    - "[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}"
+    - "REDSHIFT_PASSWORD"

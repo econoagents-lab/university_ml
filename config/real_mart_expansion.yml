@@ -1,0 +1,78 @@
+project: machine_learning_university
+version: v1.6_real_mart_expansion
+principle: Yo reemplazo proxies por marts reales agregados, auditables y libres de PII.
+
+source_policy:
+  private_data_env_var: MLU_PRIVATE_DATA_DIR
+  allowed_source_dirs:
+    - data/raw/private
+    - data/raw/sperant
+    - data/processed/gold
+    - data/processed/scoring
+  never_export_raw_pii: true
+  output_mode: aggregated_or_hashed_only
+
+outputs:
+  directory: data/processed/real_marts
+  public_reports_directory: reports/real_marts
+  required_marts:
+    - mart_funnel_stage_month.csv
+    - mart_cobranza_venta.csv
+    - mart_stock_inicial_mensual.csv
+    - mart_pricing_unit_m2.csv
+    - mart_project_vs_market.csv
+    - mart_feedback_interventions.csv
+    - mart_proxy_vs_official_gap.csv
+
+privacy:
+  hash_salt_env_var: MLU_HASH_SALT
+  default_hash_salt: local-demo-salt-change-me
+  forbidden_output_columns:
+    - cliente
+    - nombres_cliente
+    - apellidos_cliente
+    - documento_cliente
+    - documento
+    - dni
+    - celular
+    - celulares
+    - telefono
+    - teléfono
+    - email
+    - correo
+    - direccion
+    - dirección
+    - password
+    - secret
+    - token
+    - credential
+    - credenciales
+  forbidden_output_patterns:
+    - "\\b\\d{8}\\b"
+    - "\\b9\\d{8}\\b"
+    - "@"
+
+marts:
+  funnel:
+    preferred_sources: [fact_conversion_leads, riesgo_caida_training_model_ready, ranking_operaciones_riesgo_caida]
+    grain: periodo_mes
+  cobranza:
+    preferred_sources: [fact_separacion_cuota_inicial, procesos, ranking_operaciones_riesgo_caida]
+    grain: periodo_mes_proyecto
+  stock:
+    preferred_sources: [unidades, product_stock_pricing]
+    grain: periodo_mes_proyecto_tipo_unidad
+  pricing:
+    preferred_sources: [unidades, proforma_unidad]
+    grain: unidad_hash
+  market:
+    preferred_sources: [proyectos, mart_market_district_month]
+    grain: periodo_mes_proyecto_distrito
+  feedback:
+    preferred_sources: [feedback_outcomes_merged, feedback_log_template]
+    grain: periodo_mes_accion_resultado
+
+validation:
+  require_no_forbidden_columns: true
+  require_metadata_manifest: true
+  require_gap_report: true

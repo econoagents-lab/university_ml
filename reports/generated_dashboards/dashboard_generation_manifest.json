@@ -1,9 +1,10 @@
 {
   "project": "machine_learning_university",
-  "version": "v1.4_dashboard_generator_from_catalog",
-  "generated_at": "2026-07-04T01:29:39",
-  "total_generated": 60,
+  "version": "v1.5_dashboard_metrics_engine",
+  "generated_at": "2026-07-04T16:17:38",
+  "total_generated": 62,
   "families": [
+    "action_feedback",
     "alerts",
     "cobranza",
     "commercial",
@@ -17,6 +18,7 @@
     "modeling",
     "monitoring",
     "public",
+    "real_marts",
     "registry",
     "risk",
     "stock_pricing",
@@ -688,6 +690,28 @@
       "html_path": "reports\\generated_dashboards\\congress\\congreso_data_science.html",
       "json_path": "reports\\generated_dashboards\\congress\\congreso_data_science.json",
       "params_ref": "config/congress_pack.yml#figures",
+      "status": "generated"
+    },
+    {
+      "id": "proxy_vs_official_gap",
+      "name": "Proxy vs Official Gap",
+      "family": "real_marts",
+      "priority": "P0",
+      "markdown_path": "reports\\generated_dashboards\\real_marts\\proxy_vs_official_gap.md",
+      "html_path": "reports\\generated_dashboards\\real_marts\\proxy_vs_official_gap.html",
+      "json_path": "reports\\generated_dashboards\\real_marts\\proxy_vs_official_gap.json",
+      "params_ref": "config/real_mart_expansion.yml#marts",
+      "status": "generated"
+    },
+    {
+      "id": "decision_action_feedback_lab",
+      "name": "Decision Action Feedback Lab",
+      "family": "action_feedback",
+      "priority": "mvp",
+      "markdown_path": "reports\\generated_dashboards\\action_feedback\\decision_action_feedback_lab.md",
+      "html_path": "reports\\generated_dashboards\\action_feedback\\decision_action_feedback_lab.html",
+      "json_path": "reports\\generated_dashboards\\action_feedback\\decision_action_feedback_lab.json",
+      "params_ref": "config/decision_action_feedback_lab.yml#rules",
       "status": "generated"
     }
   ]

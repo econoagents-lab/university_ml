@@ -1,0 +1,98 @@
+{
+  "version": "2.2.0",
+  "product_name": "Commercial Intelligence OS",
+  "packaging_mode": "multi_tenant_demo_safe",
+  "generated_at": "2026-07-04T21:25:52+00:00",
+  "tenant_count": 3,
+  "privacy_ok_count": 3,
+  "status": "ok",
+  "tenants": [
+    {
+      "tenant_id": "cliente_alpha",
+      "display_name": "Cliente Alpha · Desarrollador multifamiliar",
+      "segment": "desarrollador_inmobiliario",
+      "generated_at": "2026-07-04T21:25:52+00:00",
+      "token_env_var": "MLU_DEMO_TOKEN_CLIENTE_ALPHA",
+      "enabled_modules": [
+        "ceo_brief",
+        "railway_public_dashboard",
+        "risk_to_action_queue",
+        "stock_pricing",
+        "rag_business_memory",
+        "github_alerts"
+      ],
+      "public_routes": [
+        "/public/decision-dashboard",
+        "/dashboard/catalog",
+        "/dashboard/action-feedback",
+        "/dashboard/experiment-power-policy"
+      ],
+      "artifact_paths": {
+        "payload": "reports/client_tenants/cliente_alpha/public_payload.json",
+        "landing": "reports/client_tenants/cliente_alpha/landing.html",
+        "one_pager": "reports/client_tenants/cliente_alpha/one_pager.md"
+      },
+      "privacy_status": "ok",
+      "forbidden_hits": [],
+      "data_mode": "crm"
+    },
+    {
+      "tenant_id": "cliente_bravo",
+      "display_name": "Cliente Bravo · Gerencia comercial",
+      "segment": "gerencia_comercial",
+      "generated_at": "2026-07-04T21:25:52+00:00",
+      "token_env_var": "MLU_DEMO_TOKEN_CLIENTE_BRAVO",
+      "enabled_modules": [
+        "ceo_brief",
+        "funnel_conversion",
+        "advisor_project_matrix",
+        "risk_to_action_queue",
+        "feedback_loop",
+        "experiment_policy"
+      ],
+      "public_routes": [
+        "/dashboard/action-feedback",
+        "/experiments/policy/recommendations",
+        "/experiments/policy/segments",
+        "/product/demo/package"
+      ],
+      "artifact_paths": {
+        "payload": "reports/client_tenants/cliente_bravo/public_payload.json",
+        "landing": "reports/client_tenants/cliente_bravo/landing.html",
+        "one_pager": "reports/client_tenants/cliente_bravo/one_pager.md"
+      },
+      "privacy_status": "ok",
+      "forbidden_hits": [],
+      "data_mode": "crm"
+    },
+    {
+      "tenant_id": "cliente_condor",
+      "display_name": "Cliente Cóndor · Comité de inversión",
+      "segment": "inversion_y_directorio",
+      "generated_at": "2026-07-04T21:25:52+00:00",
+      "token_env_var": "MLU_DEMO_TOKEN_CLIENTE_CONDOR",
+      "enabled_modules": [
+        "ceo_brief",
+        "real_mart_evidence_layer",
+        "market_intelligence",
+        "pricing_gap",
+        "productized_os",
+        "privacy_audit"
+      ],
+      "public_routes": [
+        "/dashboard/real-marts",
+        "/dashboard/productized-os",
+        "/metadata/real-marts",
+        "/metadata/productized-os"
+      ],
+      "artifact_paths": {
+        "payload": "reports/client_tenants/cliente_condor/public_payload.json",
+        "landing": "reports/client_tenants/cliente_condor/landing.html",
+        "one_pager": "reports/client_tenants/cliente_condor/one_pager.md"
+      },
+      "privacy_status": "ok",
+      "forbidden_hits": [],
+      "data_mode": "crm"
+    }
+  ]
+}

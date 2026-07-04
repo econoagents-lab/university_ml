@@ -2,7 +2,7 @@
 
 Yo uso este panel para gobernar dashboards, parámetros y decisiones sin tocar código.
 
-- Total dashboards catalogados: **60**
+- Total dashboards catalogados: **62**
 - Estado catálogo: **ok**
 - Estado decisiones recomendadas: **ok**
 
@@ -80,6 +80,8 @@ Yo uso este panel para gobernar dashboards, parámetros y decisiones sin tocar c
 | 58 | Lineage Dashboard | ¿De dónde viene cada métrica? | CDO | governance | `contracts/metric_contracts.yml` |
 | 59 | Market Intelligence | ¿Qué dice el mercado peruano frente a mi stock? | Chief Economist | governance | `config/market_sources.yml#sources` |
 | 60 | Congreso Data Science | ¿Qué gráficos sustentan el sistema? | Product Owner | governance | `config/congress_pack.yml#figures` |
+| None | Proxy vs Official Gap | ¿Qué métricas ya tienen mart real y cuáles siguen siendo proxy? | CDO / Chief Economist | P0 | `config/real_mart_expansion.yml#marts` |
+| 61 | Decision Action Feedback Lab | ¿Qué acción se tomó sobre cada alerta y qué resultado produjo a 7d/30d? | Jefatura Comercial / BI | mvp | `config/decision_action_feedback_lab.yml#rules` |
 
 ## Warnings de configuración
 

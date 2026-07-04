@@ -602,3 +602,24 @@ dashboards:
   params_ref: config/congress_pack.yml#figures
   status: cataloged
   priority: governance
+- id: proxy_vs_official_gap
+  name: Proxy vs Official Gap
+  owner: CDO / Chief Economist
+  audience: Gerencia / Data Team
+  priority: P0
+  question: ¿Qué métricas ya tienen mart real y cuáles siguen siendo proxy?
+  output_path: reports/dashboard/real_marts/proxy_vs_official_gap.md
+  params_ref: config/real_mart_expansion.yml#marts
+  decision: Priorizar conexión de fuentes oficiales donde aún hay proxy.
+  economic_question: ¿Qué métricas ya tienen mart real y cuáles siguen siendo proxy?
+- id: decision_action_feedback_lab
+  number: 61
+  name: Decision Action Feedback Lab
+  owner: Jefatura Comercial / BI
+  audience: Gerencia Comercial / Asesores / Data Science
+  economic_question: ¿Qué acción se tomó sobre cada alerta y qué resultado produjo
+    a 7d/30d?
+  output_path: reports/action_feedback/DECISION_ACTION_FEEDBACK_LAB.md
+  params_ref: config/decision_action_feedback_lab.yml#rules
+  status: cataloged
+  priority: mvp

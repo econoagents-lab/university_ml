@@ -1,0 +1,17 @@
+{
+  "one_pager": "reports/productized_os/CLIENT_DEMO_ONE_PAGER.md",
+  "sales_script": "reports/productized_os/EXECUTIVE_SALES_SCRIPT.md",
+  "module_catalog": "reports/productized_os/PRODUCT_MODULE_CATALOG.md",
+  "deployment_checklist": "reports/productized_os/RAILWAY_PUBLIC_DEMO_CHECKLIST.md",
+  "manifest": "reports/productized_os/productized_os_manifest.json",
+  "validation": "reports/productized_os/productized_os_validation.json",
+  "recommended_demo_flow": [
+    "/production/health",
+    "/metadata/productized-os",
+    "/public/decision-dashboard",
+    "/dashboard/catalog",
+    "/dashboard/action-feedback",
+    "/dashboard/experiment-power-policy",
+    "/product/demo/package"
+  ]
+}

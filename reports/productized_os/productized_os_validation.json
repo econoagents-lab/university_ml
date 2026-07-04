@@ -1,0 +1,55 @@
+{
+  "status": "ok",
+  "generated_at": "2026-07-04T21:17:47+00:00",
+  "errors": [],
+  "warnings": [],
+  "doc_checks": [
+    {
+      "path": "docs/PRODUCTIZED_COMMERCIAL_INTELLIGENCE_OS.md",
+      "exists": true
+    },
+    {
+      "path": "docs/SALES_DEMO_PLAYBOOK.md",
+      "exists": true
+    },
+    {
+      "path": "docs/DEPLOYMENT_RUNBOOK_V2_0.md",
+      "exists": true
+    },
+    {
+      "path": "docs/V2_0_EXECUTIVE_SUMMARY.md",
+      "exists": true
+    }
+  ],
+  "endpoint_checks": [
+    {
+      "endpoint": "/production/health",
+      "declared": true
+    },
+    {
+      "endpoint": "/metadata/productized-os",
+      "declared": true
+    },
+    {
+      "endpoint": "/public/decision-dashboard",
+      "declared": true
+    },
+    {
+      "endpoint": "/dashboard/catalog",
+      "declared": true
+    },
+    {
+      "endpoint": "/dashboard/action-feedback",
+      "declared": true
+    },
+    {
+      "endpoint": "/dashboard/experiment-power-policy",
+      "declared": true
+    },
+    {
+      "endpoint": "/product/demo/package",
+      "declared": true
+    }
+  ],
+  "manifest_path": "reports/productized_os/productized_os_manifest.json"
+}

@@ -1,10 +1,15 @@
 # Dashboard Generator From Catalog
 
-**Versión:** v1.4_dashboard_generator_from_catalog  
-**Generados:** 60  
-**Fecha:** 2026-07-04T01:29:39
+**Versión:** v1.5_dashboard_metrics_engine  
+**Generados:** 62  
+**Fecha:** 2026-07-04T16:17:38
 
 Yo genero estos dashboards desde `config/dashboard_catalog.yml`. Si cambia una pregunta económica, owner o parámetro, cambio configuración y regenero.
+
+## action_feedback
+| Dashboard | Prioridad | Donde cambiar | HTML | Markdown |
+|---|---|---|---|---|
+| Decision Action Feedback Lab | mvp | `config/decision_action_feedback_lab.yml#rules` | [decision_action_feedback_lab](reports\generated_dashboards\action_feedback\decision_action_feedback_lab.html) | [decision_action_feedback_lab](reports\generated_dashboards\action_feedback\decision_action_feedback_lab.md) |
 
 ## alerts
 | Dashboard | Prioridad | Donde cambiar | HTML | Markdown |
@@ -98,6 +103,11 @@ Yo genero estos dashboards desde `config/dashboard_catalog.yml`. Si cambia una p
 |---|---|---|---|---|
 | Privacy & PII Audit | mvp | `config/privacy_policy.yml#privacy_rules` | [privacy_pii_audit](reports\generated_dashboards\public\privacy_pii_audit.html) | [privacy_pii_audit](reports\generated_dashboards\public\privacy_pii_audit.md) |
 | Railway Public Dashboard | mvp | `config/privacy_policy.yml#public_dashboard` | [railway_public_dashboard](reports\generated_dashboards\public\railway_public_dashboard.html) | [railway_public_dashboard](reports\generated_dashboards\public\railway_public_dashboard.md) |
+
+## real_marts
+| Dashboard | Prioridad | Donde cambiar | HTML | Markdown |
+|---|---|---|---|---|
+| Proxy vs Official Gap | P0 | `config/real_mart_expansion.yml#marts` | [proxy_vs_official_gap](reports\generated_dashboards\real_marts\proxy_vs_official_gap.html) | [proxy_vs_official_gap](reports\generated_dashboards\real_marts\proxy_vs_official_gap.md) |
 
 ## registry
 | Dashboard | Prioridad | Donde cambiar | HTML | Markdown |

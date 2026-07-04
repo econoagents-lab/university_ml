@@ -1,0 +1,36 @@
+{
+  "version": "v1.9_experiment_power_and_policy_engine",
+  "generated_at": "2026-07-04T21:17:46.392581+00:00",
+  "policy_mode": "mvp_operational_policy",
+  "power_decision": "seguir_acumulando_muestra_y_feedback",
+  "capacity_status": "capacity_warning",
+  "compliance_warnings": 3,
+  "rules": {
+    "p0": {
+      "owner": "jefatura_comercial",
+      "sla_hours": 4,
+      "holdout_allowed": false,
+      "first_action": "llamada_asesor_mismo_dia",
+      "second_action": "seguimiento_jefatura_24h",
+      "escalation_action": "comite_comercial_48h"
+    },
+    "p1": {
+      "owner": "asesor_comercial",
+      "sla_hours": 24,
+      "holdout_allowed": true,
+      "first_action": "contacto_prioritario_24h",
+      "second_action": "seguimiento_48h",
+      "escalation_action": "subir_a_p0_si_valor_alto_o_sin_respuesta"
+    },
+    "p2": {
+      "owner": "asesor_comercial",
+      "sla_hours": 72,
+      "holdout_allowed": true,
+      "first_action": "monitoreo_y_recordatorio",
+      "second_action": "contacto_si_aumenta_riesgo",
+      "escalation_action": "revisar_en_reunion_semanal"
+    }
+  },
+  "executive_decision": "corregir_cumplimiento_antes_de_escalar",
+  "privacy_mode": "safe_ids_and_aggregates_only"
+}

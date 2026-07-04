@@ -1,0 +1,501 @@
+experiment_id,operation_id,proyecto,asesor_id,canal,prioridad,riesgo_caida,risk_band,valor_esperado_en_riesgo,experiment_arm,eligible,accion_tomada,resultado_7d,resultado_30d,outcome_class_7d,outcome_class_30d,is_positive_30d,is_negative_30d,is_pending_30d,treatment_contacted
+riesgo_caida_action_impact_v1,OP_0DF523E128,Torre Nápoles,ASESOR_233077BA7F,sin_clasificar,P1,0.673588,high,17782.73,treatment,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_FC97E54B70,Edificio Mariategui,ASESOR_9FCF63DC91,sin_clasificar,P1,0.663772,high,62557.15,control,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_36D3972FAB,Torre Nápoles,ASESOR_233077BA7F,sin_clasificar,P1,0.6484,high,20327.34,treatment,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_E8DDFEA8D8,Tizón y Bueno,ASESOR_7B5A7F5FB0,sin_clasificar,P1,0.647325,high,83516.62,control,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_5AEB7D7EDD,Edificio Mariategui,ASESOR_950BED165C,sin_clasificar,P1,0.634461,high,60432.4,control,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_117AFDD23F,Tizón y Bueno,ASESOR_7B5A7F5FB0,sin_clasificar,P1,0.633747,high,80980.05,treatment,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_DDB7EC200E,Tizón y Bueno,ASESOR_C6B4E60323,sin_clasificar,P1,0.632871,high,50980.16,control,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_B68FE0C2B9,Tizón y Bueno,ASESOR_950BED165C,sin_clasificar,P1,0.632729,high,63968.9,treatment,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_1507DC4B18,Tradiciones Prime,ASESOR_9FCF63DC91,sin_clasificar,P1,0.632289,high,111842.97,treatment,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_0D8471BF1F,Torre Nápoles,ASESOR_233077BA7F,sin_clasificar,P1,0.631147,high,20051.54,treatment,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_CBB58858C0,Sialia,ASESOR_9FCF63DC91,sin_clasificar,P1,0.630866,high,57311.32,treatment,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_F0479D1991,Modena,ASESOR_E5897908D5,sin_clasificar,P1,0.629682,high,24085.34,treatment,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_3BFCF51AF3,Sialia,ASESOR_1265C8A465,sin_clasificar,P1,0.628892,high,74721.85,control,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_23E0210ACE,Torre Nápoles,ASESOR_C6B4E60323,sin_clasificar,P1,0.627211,high,16525.92,treatment,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_FFB5E8B1BF,Tradiciones Prime,ASESOR_9FCF63DC91,sin_clasificar,P1,0.626983,high,93577.18,treatment,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_2D6D8726D2,Torre Nápoles,ASESOR_950BED165C,sin_clasificar,P1,0.625434,high,18763.03,treatment,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_85D626EEE5,Torre Nápoles,ASESOR_950BED165C,sin_clasificar,P1,0.625434,high,18293.96,control,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_ECE239F814,Tizón y Bueno,ASESOR_950BED165C,sin_clasificar,P1,0.624462,high,47998.04,treatment,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_17A2083F16,Edificio Mariategui,ASESOR_9FCF63DC91,sin_clasificar,P1,0.62442,high,53594.52,control,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_AF5BD5B2DB,Fenix,ASESOR_7B5A7F5FB0,sin_clasificar,P1,0.624305,high,67068.74,treatment,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_4A9C11399A,Sialia,ASESOR_233077BA7F,sin_clasificar,P1,0.622671,high,22042.54,treatment,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_4B5069507B,Fenix,ASESOR_E05C20E0FE,sin_clasificar,P1,0.621939,high,70630.45,treatment,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_55C17E6036,Tizón y Bueno,ASESOR_9FCF63DC91,sin_clasificar,P1,0.618214,high,56972.73,treatment,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_BBB80946E0,Edificio Mariategui,ASESOR_950BED165C,sin_clasificar,P1,0.617538,high,52737.83,control,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_8A5B405982,Sialia,ASESOR_950BED165C,sin_clasificar,P1,0.617486,high,54435.52,control,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_A5B24DFB71,Capadocia,ASESOR_E5897908D5,sin_clasificar,P1,0.616564,high,69363.5,treatment,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_09354A32FF,Alicanto,ASESOR_950BED165C,sin_clasificar,P1,0.615247,high,56970.86,treatment,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_B9CA6C83C4,Tradiciones Prime,ASESOR_950BED165C,sin_clasificar,P1,0.615231,high,75845.0,treatment,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_9ECA90CCDD,Sialia,ASESOR_9FCF63DC91,sin_clasificar,P1,0.615124,high,22720.21,control,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_679136536C,Tizón y Bueno,ASESOR_233077BA7F,sin_clasificar,P1,0.614582,high,55128.03,control,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_FB49869900,Edificio Mariategui,ASESOR_1265C8A465,sin_clasificar,P1,0.613096,high,59155.19,treatment,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_FE6B6F5197,Tizón y Bueno,ASESOR_E5897908D5,sin_clasificar,P1,0.609551,high,54139.93,control,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_87FFD2B963,Capadocia,ASESOR_E5897908D5,sin_clasificar,P1,0.609292,high,78141.68,treatment,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_BCEFB0FE03,Edificio Mariategui,ASESOR_1265C8A465,sin_clasificar,P1,0.606134,high,53184.77,control,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_C737755DF3,Edificio Valdizan,ASESOR_7B5A7F5FB0,sin_clasificar,P1,0.602727,high,47455.73,treatment,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_6827351FF8,Torre Nápoles,ASESOR_9FCF63DC91,sin_clasificar,P1,0.599748,high,21535.32,treatment,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_09E99E9638,Torre Nápoles,ASESOR_9FCF63DC91,sin_clasificar,P1,0.599748,high,19783.43,treatment,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_FB774326D4,Sialia,ASESOR_E5897908D5,sin_clasificar,P1,0.598869,high,22008.44,control,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_8FC2612D8D,Sialia,ASESOR_950BED165C,sin_clasificar,P1,0.597807,high,23447.19,control,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_AE51023B0C,Alicanto,ASESOR_233077BA7F,sin_clasificar,P1,0.596297,high,47960.18,treatment,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_3ECF71FAC4,Tizón y Bueno,ASESOR_C6B4E60323,sin_clasificar,P1,0.596205,high,48203.17,control,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_1EB3A6F13A,Tizón y Bueno,ASESOR_1265C8A465,sin_clasificar,P1,0.592285,high,45567.02,treatment,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_709AB61855,Modena,ASESOR_E5897908D5,sin_clasificar,P1,0.591933,high,22197.48,treatment,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_C758B19EEC,Edificio Valdizan,ASESOR_1265C8A465,sin_clasificar,P1,0.589331,high,54122.65,control,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_5AA8050BB5,Torre Nápoles,ASESOR_E5897908D5,sin_clasificar,P1,0.588824,high,19872.82,treatment,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_8A2CA303BF,Sialia,ASESOR_7B5A7F5FB0,sin_clasificar,P1,0.588774,high,44806.02,treatment,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_C05595CD26,Edificio Valdizan,ASESOR_7B5A7F5FB0,sin_clasificar,P1,0.588358,high,44126.81,treatment,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_9E2ECB1AC5,Alicanto,ASESOR_7B5A7F5FB0,sin_clasificar,P1,0.588203,high,45210.63,control,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_F5A9EB3521,Torre Nápoles,ASESOR_E5897908D5,sin_clasificar,P1,0.587668,high,16572.23,treatment,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_3F8D96FFBF,Sialia,ASESOR_7B5A7F5FB0,sin_clasificar,P1,0.587456,high,23424.01,treatment,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_AC1930B795,Sialia,ASESOR_950BED165C,sin_clasificar,P1,0.587446,high,21123.38,treatment,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_76D2A9D606,Edificio Mariategui,ASESOR_7B5A7F5FB0,sin_clasificar,P1,0.587383,high,54363.92,treatment,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_FC8EC50993,Torre Nápoles,ASESOR_C6B4E60323,sin_clasificar,P1,0.586452,high,20785.05,treatment,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_4D054A6F1F,Tizón y Bueno,ASESOR_F59A4378D8,sin_clasificar,P1,0.584755,high,48740.99,treatment,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_B60346AD96,Fenix,ASESOR_7B5A7F5FB0,sin_clasificar,P1,0.58468,high,47905.56,treatment,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_14688E949B,Torre Nápoles,ASESOR_F59A4378D8,sin_clasificar,P1,0.584224,high,17964.87,control,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_C258C88379,Alicanto,ASESOR_9FCF63DC91,sin_clasificar,P1,0.583324,high,22308.68,treatment,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_A9977185F0,Torre Nápoles,ASESOR_DA48A4F817,sin_clasificar,P1,0.582543,high,17781.04,treatment,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_C889EAA3D7,Edificio Valdizan,ASESOR_1265C8A465,sin_clasificar,P1,0.582534,high,50116.88,treatment,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_1EB8C654B0,Capadocia,ASESOR_C6B4E60323,sin_clasificar,P1,0.580165,high,57488.5,treatment,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_C0FDDD0D09,Fenix,ASESOR_7B5A7F5FB0,sin_clasificar,P1,0.579692,high,54341.07,treatment,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_1B6E4BF153,Fenix,ASESOR_950BED165C,sin_clasificar,P1,0.579213,high,46047.44,treatment,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_564BEC7E7D,Torre Nápoles,ASESOR_DA48A4F817,sin_clasificar,P1,0.579039,high,22164.89,treatment,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_F7CFE0334C,Modena,ASESOR_233077BA7F,sin_clasificar,P1,0.57712,high,55516.02,treatment,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_0CFE894900,Torre Nápoles,ASESOR_233077BA7F,sin_clasificar,P1,0.576425,high,24953.72,treatment,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_92E3DE0EB6,Torre Nápoles,ASESOR_7B5A7F5FB0,sin_clasificar,P1,0.576008,high,19872.29,treatment,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_CBE53D06E6,Alicanto,ASESOR_E5897908D5,sin_clasificar,P1,0.575545,high,43942.87,treatment,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_7470459E1D,Alicanto,ASESOR_950BED165C,sin_clasificar,P1,0.574343,high,21489.9,control,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_2E2096824F,Torre Nápoles,ASESOR_7B5A7F5FB0,sin_clasificar,P1,0.57403,high,19669.36,treatment,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_21DB6B88EA,Edificio Mariategui,ASESOR_1265C8A465,sin_clasificar,P1,0.572706,high,50157.85,treatment,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_B453623583,Alicanto,ASESOR_7B5A7F5FB0,sin_clasificar,P1,0.571085,high,48085.62,treatment,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_01B558E5E9,Edificio Urbanzen,ASESOR_950BED165C,sin_clasificar,P1,0.571034,high,59958.58,treatment,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_B2B32E0AE3,Modena,ASESOR_9FCF63DC91,sin_clasificar,P1,0.570184,high,49948.84,control,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_032FA878F6,Alicanto,ASESOR_E5897908D5,sin_clasificar,P1,0.564971,high,44358.07,control,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_EF2CCA85D4,Tizón y Bueno,ASESOR_E5897908D5,sin_clasificar,P1,0.564583,high,38109.33,treatment,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_FE727ACC29,Torre Nápoles,ASESOR_DA48A4F817,sin_clasificar,P1,0.563962,high,19119.37,treatment,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_E58CCEBB9C,Edificio Mariategui,ASESOR_1265C8A465,sin_clasificar,P1,0.563334,high,51401.38,treatment,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_B22BFAB2D3,Capadocia,ASESOR_233077BA7F,sin_clasificar,P1,0.561924,high,52196.71,control,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_884FD4A870,Modena,ASESOR_7B5A7F5FB0,sin_clasificar,P1,0.561108,high,45709.28,control,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_F1E04B5623,Alicanto,ASESOR_E5897908D5,sin_clasificar,P1,0.561072,high,24406.62,treatment,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_2584CF737D,Sialia,ASESOR_DA48A4F817,sin_clasificar,P1,0.560033,high,44482.97,treatment,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_B84F4F8F5B,Torre Nápoles,ASESOR_1265C8A465,sin_clasificar,P1,0.559626,high,53643.76,treatment,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_63739842E9,Edificio Urbanzen,ASESOR_E5897908D5,sin_clasificar,P1,0.55739,high,54562.89,control,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_72AA546B39,Edificio Urbanzen,ASESOR_950BED165C,sin_clasificar,P1,0.557238,high,53876.06,treatment,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_0F34610CF5,Edificio Urbanzen,ASESOR_CF9D39A66F,sin_clasificar,P1,0.55696,high,50349.91,treatment,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_C0BA29CAE8,Edificio Urbanzen,ASESOR_950BED165C,sin_clasificar,P1,0.556764,high,48909.9,treatment,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_66C78BE34A,Capadocia,ASESOR_7B5A7F5FB0,sin_clasificar,P1,0.5565,high,53582.57,treatment,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_72F9F254EF,Tizón y Bueno,ASESOR_233077BA7F,sin_clasificar,P1,0.555031,high,36994.62,treatment,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_D29B8F2BB3,Modena,ASESOR_233077BA7F,sin_clasificar,P1,0.553879,high,23678.34,control,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_1B023CBF7E,Modena,ASESOR_E05C20E0FE,sin_clasificar,P1,0.553028,high,47283.92,treatment,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_081DD41E60,Capadocia,ASESOR_7B5A7F5FB0,sin_clasificar,P1,0.552801,high,43755.93,treatment,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_DEABCEF19C,Torre Nápoles,ASESOR_F59A4378D8,sin_clasificar,P1,0.552649,high,18188.27,treatment,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_4FDC41FAFB,Edificio Urbanzen,ASESOR_C6B4E60323,sin_clasificar,P1,0.552478,high,48875.36,treatment,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_2D72F6E1AD,Capadocia,ASESOR_7B5A7F5FB0,sin_clasificar,P1,0.552474,high,52163.57,treatment,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_9ED30AEC5F,Modena,ASESOR_E05C20E0FE,sin_clasificar,P1,0.552433,high,48890.3,treatment,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_78583102FF,Alicanto,ASESOR_CF9D39A66F,sin_clasificar,P1,0.551645,high,21754.1,treatment,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_F60717332F,Modena,ASESOR_7B5A7F5FB0,sin_clasificar,P1,0.550766,high,23844.96,treatment,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_8B515C529C,Modena,ASESOR_E5897908D5,sin_clasificar,P1,0.549489,high,54316.95,treatment,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_F6D4FF0E86,Tizón y Bueno,ASESOR_7B5A7F5FB0,sin_clasificar,P1,0.549094,high,39355.53,control,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_3AB3A2317E,Tizón y Bueno,ASESOR_9FCF63DC91,sin_clasificar,P1,0.548901,high,33157.19,control,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_92977BE029,Alicanto,ASESOR_9FCF63DC91,sin_clasificar,P1,0.548609,high,21272.15,treatment,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_D33D3526F1,Capadocia,ASESOR_E5897908D5,sin_clasificar,P1,0.548602,high,53050.69,treatment,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_99E7EFF06E,Capadocia,ASESOR_E5897908D5,sin_clasificar,P1,0.548096,high,52123.89,treatment,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_D378D379DD,Tizón y Bueno,ASESOR_9FCF63DC91,sin_clasificar,P1,0.548007,high,34288.89,treatment,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_2EACE88E0D,Capadocia,ASESOR_1265C8A465,sin_clasificar,P1,0.546627,high,53050.15,control,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_79F694258C,Matera,ASESOR_950BED165C,sin_clasificar,P1,0.545589,high,76219.75,treatment,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_3FFC11E754,Torre Nápoles,ASESOR_E5897908D5,sin_clasificar,P1,0.544986,high,24033.88,treatment,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_9D3BBD6DB9,Tizón y Bueno,ASESOR_C6B4E60323,sin_clasificar,P1,0.544408,high,39319.9,control,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_CFD03D3E0B,Sialia,ASESOR_233077BA7F,sin_clasificar,P1,0.544365,high,33070.17,treatment,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_CEEA3B5AEF,Capadocia,ASESOR_7B5A7F5FB0,sin_clasificar,P1,0.544168,high,48566.89,treatment,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_09F493191B,Edificio Urbanzen,ASESOR_C6B4E60323,sin_clasificar,P1,0.543457,high,45780.84,treatment,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_51DBAD0494,Capadocia,ASESOR_950BED165C,sin_clasificar,P1,0.542917,high,44017.59,treatment,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_24395CB4B5,Edificio Urbanzen,ASESOR_233077BA7F,sin_clasificar,P1,0.542569,high,51679.7,control,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_D255F416AA,Sialia,ASESOR_233077BA7F,sin_clasificar,P1,0.54253,high,31819.4,treatment,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_089436D81C,Tizón y Bueno,ASESOR_E05C20E0FE,sin_clasificar,P1,0.541755,high,32674.58,treatment,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_7AD73554C7,Tizón y Bueno,ASESOR_1265C8A465,sin_clasificar,P1,0.541107,high,43802.12,control,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_B87CB710E2,Tizón y Bueno,ASESOR_1265C8A465,sin_clasificar,P1,0.540988,high,41953.63,control,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_C87598B86B,Sialia,ASESOR_233077BA7F,sin_clasificar,P1,0.540439,high,33593.67,treatment,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_2EF88ABD0B,Sialia,ASESOR_7B5A7F5FB0,sin_clasificar,P1,0.540174,high,37624.27,treatment,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_35B63EF665,Tizón y Bueno,ASESOR_9FCF63DC91,sin_clasificar,P1,0.539624,high,36408.26,control,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_D2CB056E7D,Edificio Urbanzen,ASESOR_4A5D5CDFC6,sin_clasificar,P1,0.539477,high,24276.48,treatment,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_16B4D17600,Edificio Urbanzen,ASESOR_7B5A7F5FB0,sin_clasificar,P1,0.53826,high,48233.51,treatment,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_A48AF23367,Sialia,ASESOR_7B5A7F5FB0,sin_clasificar,P1,0.538229,high,39659.16,control,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_4B09E9F2B1,Sialia,ASESOR_233077BA7F,sin_clasificar,P1,0.538078,high,30026.44,treatment,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_03462BB7AE,Modena,ASESOR_7B5A7F5FB0,sin_clasificar,P1,0.537358,high,22686.18,treatment,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_1B2C988B38,Edificio Urbanzen,ASESOR_DA48A4F817,sin_clasificar,P1,0.536889,high,54521.12,treatment,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_FAA6850277,Sialia,ASESOR_233077BA7F,sin_clasificar,P1,0.536864,high,26091.57,treatment,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_C13F7D41B6,Edificio Urbanzen,ASESOR_7B5A7F5FB0,sin_clasificar,P1,0.536238,high,51719.73,treatment,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_1D079D8CC5,Tizón y Bueno,ASESOR_7B5A7F5FB0,sin_clasificar,P1,0.534494,high,34571.07,control,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_54A61E6C35,Tizón y Bueno,ASESOR_233077BA7F,sin_clasificar,P1,0.534261,high,34988.73,treatment,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_0450F8D5CA,Modena,ASESOR_7B5A7F5FB0,sin_clasificar,P1,0.534091,high,21701.92,treatment,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_7F56B0356E,Edificio Valdizan,ASESOR_8618B6BE3A,sin_clasificar,P1,0.53378,high,40369.81,treatment,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_D731B8B255,Sialia,ASESOR_E5897908D5,sin_clasificar,P1,0.533717,high,38039.6,treatment,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_D3CDD9FAA5,Sialia,ASESOR_7B5A7F5FB0,sin_clasificar,P1,0.533682,high,35233.38,treatment,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_79667A3C1D,Torre Nápoles,ASESOR_233077BA7F,sin_clasificar,P1,0.533032,high,27184.64,treatment,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_68EB423A2F,Capadocia,ASESOR_7B5A7F5FB0,sin_clasificar,P1,0.532992,high,47266.66,control,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_5AA7DFEEFE,Tizón y Bueno,ASESOR_E05C20E0FE,sin_clasificar,P1,0.531498,high,31148.76,treatment,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_4C8BD3787F,Tizón y Bueno,ASESOR_7B5A7F5FB0,sin_clasificar,P1,0.531027,high,34106.59,treatment,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_E2B08FC308,Modena,ASESOR_7B5A7F5FB0,sin_clasificar,P1,0.530747,high,42361.3,treatment,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_EB85B49182,Tizón y Bueno,ASESOR_950BED165C,sin_clasificar,P1,0.529674,high,37269.59,treatment,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_CDB0D51AF7,Tizón y Bueno,ASESOR_950BED165C,sin_clasificar,P1,0.52947,high,35993.35,control,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_EB78FDABB5,Edificio Valdizan,ASESOR_1265C8A465,sin_clasificar,P1,0.528891,high,39666.85,treatment,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_A2C58AC1A8,Alicanto,ASESOR_1265C8A465,sin_clasificar,P1,0.528832,high,41985.66,control,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_3E69FD5F7A,Alicanto,ASESOR_E5897908D5,sin_clasificar,P1,0.528707,high,39764.06,treatment,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_CA17668DD9,Edificio Urbanzen,ASESOR_7B5A7F5FB0,sin_clasificar,P1,0.528048,high,48316.36,control,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_A4FCAF976A,Edificio Urbanzen,ASESOR_233077BA7F,sin_clasificar,P1,0.527206,high,43099.08,treatment,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_2B12120F0A,Edificio Urbanzen,ASESOR_7B5A7F5FB0,sin_clasificar,P1,0.527035,high,43862.5,control,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_620550A5AC,Edificio Urbanzen,ASESOR_950BED165C,sin_clasificar,P1,0.526197,high,47902.35,treatment,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_2DD88BC53F,Sialia,ASESOR_233077BA7F,sin_clasificar,P1,0.525872,high,33942.43,treatment,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_B9CFC1704D,Edificio Mariategui,ASESOR_7B5A7F5FB0,sin_clasificar,P1,0.525591,high,40702.43,treatment,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_107A664595,Tizón y Bueno,ASESOR_7B5A7F5FB0,sin_clasificar,P1,0.525585,high,37201.15,treatment,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_B6F3D67436,Tizón y Bueno,ASESOR_233077BA7F,sin_clasificar,P1,0.525571,high,24833.25,treatment,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_B4234B73AA,Edificio Urbanzen,ASESOR_3646DCCAA1,sin_clasificar,P1,0.524776,high,44766.64,treatment,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_D488795671,Edificio Mariategui,ASESOR_7B5A7F5FB0,sin_clasificar,P1,0.524198,high,41314.84,treatment,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_B113934D9C,Modena,ASESOR_7B5A7F5FB0,sin_clasificar,P1,0.524041,high,44019.43,treatment,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_CE03659638,Sialia,ASESOR_9FCF63DC91,sin_clasificar,P1,0.523828,high,37047.68,treatment,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_27D7FBFDD7,Tizón y Bueno,ASESOR_233077BA7F,sin_clasificar,P1,0.52332,high,27866.81,control,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_69CE3A582A,Tizón y Bueno,ASESOR_233077BA7F,sin_clasificar,P1,0.522807,high,29800.01,control,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_191D926E75,Edificio Urbanzen,ASESOR_233077BA7F,sin_clasificar,P1,0.522375,high,25544.13,treatment,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_8ECEF72401,Sialia,ASESOR_7B5A7F5FB0,sin_clasificar,P1,0.522344,high,25594.88,control,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_A8DD9508FC,Sialia,ASESOR_233077BA7F,sin_clasificar,P1,0.521441,high,36475.87,treatment,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_BBCEB95195,Modena,ASESOR_E5897908D5,sin_clasificar,P1,0.521317,high,41862.17,control,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_5345E7F98A,Sialia,ASESOR_7B5A7F5FB0,sin_clasificar,P1,0.520696,high,31241.77,treatment,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_1AFB5AC111,Alicanto,ASESOR_233077BA7F,sin_clasificar,P1,0.520528,high,38961.5,treatment,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_A9AF4B782D,Tizón y Bueno,ASESOR_E05C20E0FE,sin_clasificar,P1,0.52025,high,37857.28,treatment,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_EC636377A9,Edificio Mariategui,ASESOR_7B5A7F5FB0,sin_clasificar,P1,0.520134,high,42809.91,treatment,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_86C8A46E3A,Edificio Urbanzen,ASESOR_7B5A7F5FB0,sin_clasificar,P1,0.519842,high,48988.94,treatment,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_CFBE825681,Fenix,ASESOR_9FCF63DC91,sin_clasificar,P1,0.519421,high,38956.6,control,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_75B2346037,Sialia,ASESOR_9FCF63DC91,sin_clasificar,P1,0.519131,high,32206.64,control,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_55D8F118A6,Tizón y Bueno,ASESOR_7B5A7F5FB0,sin_clasificar,P1,0.518732,high,22492.92,treatment,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_0D4CAF3EF9,Modena,ASESOR_9FCF63DC91,sin_clasificar,P1,0.518726,high,30112.88,treatment,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_ED88C9D01E,Tizón y Bueno,ASESOR_9FCF63DC91,sin_clasificar,P1,0.518476,high,32251.78,treatment,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_EEF776CDA5,Sialia,ASESOR_9FCF63DC91,sin_clasificar,P1,0.518324,high,33131.18,treatment,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_C418FB2F6E,Edificio Urbanzen,ASESOR_7B5A7F5FB0,sin_clasificar,P1,0.518252,high,22932.67,treatment,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_7901FBB760,Tizón y Bueno,ASESOR_4A5D5CDFC6,sin_clasificar,P1,0.518115,high,35422.91,control,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_AD7F6D18C4,Sialia,ASESOR_7B5A7F5FB0,sin_clasificar,P1,0.518047,high,31771.0,treatment,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_A382D19A92,Capadocia,ASESOR_233077BA7F,sin_clasificar,P1,0.517333,high,39106.48,control,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_BE6401AB7F,Capadocia,ASESOR_950BED165C,sin_clasificar,P1,0.51613,high,25836.2,treatment,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_CB9D6296E3,Tizón y Bueno,ASESOR_950BED165C,sin_clasificar,P1,0.515913,high,24658.74,treatment,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_631326DC3B,Tizón y Bueno,ASESOR_950BED165C,sin_clasificar,P1,0.515842,high,31700.2,treatment,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_65E72C441D,Modena,ASESOR_9FCF63DC91,sin_clasificar,P1,0.515795,high,32260.67,treatment,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_283E92744D,Modena,ASESOR_233077BA7F,sin_clasificar,P1,0.515725,high,30309.16,control,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_BB035FFF05,Modena,ASESOR_233077BA7F,sin_clasificar,P1,0.515725,high,30169.92,treatment,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_2D642DD8E4,Torre Nápoles,ASESOR_950BED165C,sin_clasificar,P1,0.515473,high,22943.25,control,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_636E12CE16,Tizón y Bueno,ASESOR_9FCF63DC91,sin_clasificar,P1,0.514528,high,31573.15,treatment,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_24A6B51C76,Edificio Urbanzen,ASESOR_7B5A7F5FB0,sin_clasificar,P1,0.51415,high,45641.29,treatment,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_509DC418E1,Tizón y Bueno,ASESOR_9FCF63DC91,sin_clasificar,P1,0.513955,high,37207.54,control,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_5520347C84,Sialia,ASESOR_DA48A4F817,sin_clasificar,P1,0.513863,high,29395.0,treatment,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_1DB0BB88AC,Sialia,ASESOR_950BED165C,sin_clasificar,P1,0.5138,high,30851.18,treatment,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_0CDA497E63,Tizón y Bueno,ASESOR_233077BA7F,sin_clasificar,P1,0.512563,high,24690.53,control,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_E0FCD09E81,Capadocia,ASESOR_1265C8A465,sin_clasificar,P1,0.512517,high,55445.76,treatment,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_2909E361A7,Tizón y Bueno,ASESOR_9FCF63DC91,sin_clasificar,P1,0.510135,high,34382.84,treatment,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_95B8A3AB74,Tizón y Bueno,ASESOR_9FCF63DC91,sin_clasificar,P1,0.510135,high,33350.66,control,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_9898E496BE,Torre Nápoles,ASESOR_DA48A4F817,sin_clasificar,P1,0.509681,high,23088.52,treatment,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_EC5B9C831A,Edificio Urbanzen,ASESOR_E5897908D5,sin_clasificar,P1,0.509573,high,43121.32,control,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_E0C7A9664C,Tizón y Bueno,ASESOR_9FCF63DC91,sin_clasificar,P1,0.508664,high,31213.3,control,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_7F3B42473C,Fenix,ASESOR_E05C20E0FE,sin_clasificar,P1,0.508514,high,22501.76,treatment,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_F553232B63,Edificio Mariategui,ASESOR_7B5A7F5FB0,sin_clasificar,P1,0.508455,high,40557.28,control,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_A286602016,Torre Nápoles,ASESOR_E5897908D5,sin_clasificar,P1,0.508196,high,23783.59,control,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_DBD976B586,Torre Nápoles,ASESOR_E5897908D5,sin_clasificar,P1,0.508196,high,23631.14,control,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_D342989E2A,Sialia,ASESOR_9FCF63DC91,sin_clasificar,P1,0.507759,high,33318.46,treatment,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_42DC9F5AC8,Alicanto,ASESOR_233077BA7F,sin_clasificar,P1,0.507614,high,34492.38,control,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_5D66F3D9F6,Tizón y Bueno,ASESOR_9FCF63DC91,sin_clasificar,P1,0.507536,high,35354.38,control,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_94C634AD64,Edificio Urbanzen,ASESOR_7B5A7F5FB0,sin_clasificar,P1,0.507341,high,44653.5,treatment,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_3D762BCC1B,Torre Nápoles,ASESOR_9FCF63DC91,sin_clasificar,P1,0.506442,high,23771.93,treatment,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_DD1436CAC7,Torre Nápoles,ASESOR_E5897908D5,sin_clasificar,P1,0.506331,high,23924.15,control,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_6EDF1238BF,Modena,ASESOR_233077BA7F,sin_clasificar,P1,0.505913,high,32631.39,control,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_38012BFBD6,Matera,ASESOR_7B5A7F5FB0,sin_clasificar,P1,0.505531,high,43516.63,treatment,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_09E35D8212,Sialia,ASESOR_9FCF63DC91,sin_clasificar,P1,0.505357,high,31610.07,treatment,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_B4E7FD7ABA,Modena,ASESOR_E05C20E0FE,sin_clasificar,P1,0.505014,high,23744.58,treatment,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_C9508289D7,Tizón y Bueno,ASESOR_7B5A7F5FB0,sin_clasificar,P1,0.505001,high,35191.64,treatment,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_4CB073CA83,Fenix,ASESOR_233077BA7F,sin_clasificar,P1,0.504457,high,31016.54,control,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_732038CA42,Torre Nápoles,ASESOR_9FCF63DC91,sin_clasificar,P1,0.50438,high,29931.4,treatment,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_C302662E13,Modena,ASESOR_F59A4378D8,sin_clasificar,P1,0.503506,high,39500.03,control,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_E631EDE32C,Fenix,ASESOR_233077BA7F,sin_clasificar,P1,0.502488,high,30119.14,treatment,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_E01F054C44,Tizón y Bueno,ASESOR_CA5A1E2E4E,sin_clasificar,P1,0.502476,high,25788.17,treatment,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_29E81F1DB0,Tizón y Bueno,ASESOR_233077BA7F,sin_clasificar,P1,0.502433,high,24116.78,control,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_F5B0B41111,Edificio Urbanzen,ASESOR_7B5A7F5FB0,sin_clasificar,P1,0.502285,high,23763.54,control,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_4026068223,Torre Nápoles,ASESOR_DA48A4F817,sin_clasificar,P1,0.501574,high,21442.27,treatment,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_DAE4FDE2D5,Capadocia,ASESOR_7B5A7F5FB0,sin_clasificar,P1,0.500846,high,37915.81,treatment,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_4D3AD9049E,Torre Nápoles,ASESOR_E5897908D5,sin_clasificar,P1,0.500183,high,27760.17,control,True,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_52727DF709,Torre Nápoles,ASESOR_DA48A4F817,sin_clasificar,P2,0.49978,medium,20602.11,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_40C8506FDD,Alicanto,ASESOR_233077BA7F,sin_clasificar,P2,0.499101,medium,27101.16,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_81FD980005,Modena,ASESOR_9FCF63DC91,sin_clasificar,P2,0.498151,medium,25513.62,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_7BCDCF55F6,Edificio Urbanzen,ASESOR_9FCF63DC91,sin_clasificar,P2,0.497278,medium,25314.96,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_92EB2BA669,Edificio Urbanzen,ASESOR_9FCF63DC91,sin_clasificar,P2,0.497278,medium,24988.24,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_4588246761,Fenix,ASESOR_9FCF63DC91,sin_clasificar,P2,0.497048,medium,29936.76,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_F47BC4CAF0,Modena,ASESOR_233077BA7F,sin_clasificar,P2,0.496976,medium,31294.57,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_F8133E1188,Edificio Urbanzen,ASESOR_E5897908D5,sin_clasificar,P2,0.496174,medium,40934.37,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_41477A2210,Sialia,ASESOR_DA48A4F817,sin_clasificar,P2,0.496165,medium,24960.45,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_A195EE7D59,Modena,ASESOR_E05C20E0FE,sin_clasificar,P2,0.495906,medium,30298.84,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_F52FCCEEDE,Torre Nápoles,ASESOR_7B5A7F5FB0,sin_clasificar,P2,0.495676,medium,22954.18,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_366D0D3DBE,Sialia,ASESOR_C6B4E60323,sin_clasificar,P2,0.495517,medium,23948.35,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_F2D4EA85E9,Tizón y Bueno,ASESOR_950BED165C,sin_clasificar,P2,0.494916,medium,29101.06,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_70FBB348BF,Fenix,ASESOR_233077BA7F,sin_clasificar,P2,0.494288,medium,25579.43,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_33ABA3E4B9,Tizón y Bueno,ASESOR_E05C20E0FE,sin_clasificar,P2,0.494008,medium,34901.63,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_957C43D168,Edificio Urbanzen,ASESOR_9FCF63DC91,sin_clasificar,P2,0.493641,medium,37198.21,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_FFE9B3FED4,Tizón y Bueno,ASESOR_950BED165C,sin_clasificar,P2,0.493424,medium,34046.26,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_13E285AA8B,Fenix,ASESOR_7B5A7F5FB0,sin_clasificar,P2,0.492585,medium,31929.38,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_56CD112657,Edificio Urbanzen,ASESOR_7B5A7F5FB0,sin_clasificar,P2,0.492575,medium,26083.28,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_17EE13F2AE,Edificio Urbanzen,ASESOR_DA48A4F817,sin_clasificar,P2,0.491705,medium,45175.38,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_45B93E8CEE,Alicanto,ASESOR_E05C20E0FE,sin_clasificar,P2,0.491674,medium,36657.92,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_F7B1CCD39E,Sialia,ASESOR_C6B4E60323,sin_clasificar,P2,0.491659,medium,24093.75,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_B9C197D792,Tizón y Bueno,ASESOR_950BED165C,sin_clasificar,P2,0.49164,medium,33677.6,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_187F2EA101,Tizón y Bueno,ASESOR_233077BA7F,sin_clasificar,P2,0.491559,medium,25636.68,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_B7D068D30D,Tizón y Bueno,ASESOR_9FCF63DC91,sin_clasificar,P2,0.490731,medium,30916.04,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_1182DBBE38,Matera,ASESOR_F59A4378D8,sin_clasificar,P2,0.489627,medium,47618.57,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_04CB816228,Tizón y Bueno,ASESOR_9FCF63DC91,sin_clasificar,P2,0.489531,medium,32309.04,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_3E9BC98FB4,Sialia,ASESOR_C6B4E60323,sin_clasificar,P2,0.489452,medium,27190.29,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_051F24C2D1,Modena,ASESOR_E05C20E0FE,sin_clasificar,P2,0.489241,medium,36693.06,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_AABC294093,Sialia,ASESOR_7B5A7F5FB0,sin_clasificar,P2,0.489038,medium,24427.47,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_FBF707F689,Sialia,ASESOR_E5897908D5,sin_clasificar,P2,0.488425,medium,27473.91,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_5BB7FF064C,Sialia,ASESOR_E5897908D5,sin_clasificar,P2,0.487569,medium,25597.39,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_2F19B2DB34,Sialia,ASESOR_C6B4E60323,sin_clasificar,P2,0.486797,medium,24808.41,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_D171317A17,Tizón y Bueno,ASESOR_7B5A7F5FB0,sin_clasificar,P2,0.486685,medium,26103.61,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_7711C622FA,Tizón y Bueno,ASESOR_950BED165C,sin_clasificar,P2,0.486611,medium,24091.49,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_396B7AA030,Tizón y Bueno,ASESOR_7B5A7F5FB0,sin_clasificar,P2,0.485853,medium,23504.18,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_A6ED3E1D93,Fenix,ASESOR_E05C20E0FE,sin_clasificar,P2,0.485802,medium,21861.07,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_95728EABF3,Fenix,ASESOR_E05C20E0FE,sin_clasificar,P2,0.485287,medium,21837.93,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_51503058D5,Matera,ASESOR_1265C8A465,sin_clasificar,P2,0.484324,medium,37777.28,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_BD7D02DF74,Fenix,ASESOR_4A5D5CDFC6,sin_clasificar,P2,0.484117,medium,31909.43,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_56F8BD64B9,Tizón y Bueno,ASESOR_9FCF63DC91,sin_clasificar,P2,0.483824,medium,33819.29,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_957C00E44B,Matera,ASESOR_7B5A7F5FB0,sin_clasificar,P2,0.483587,medium,46189.01,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_65FD3CE15A,Modena,ASESOR_7B5A7F5FB0,sin_clasificar,P2,0.483361,medium,27497.66,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_F55B7B6301,Capadocia,ASESOR_950BED165C,sin_clasificar,P2,0.483092,medium,24224.08,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_8710F5883A,Tizón y Bueno,ASESOR_7B5A7F5FB0,sin_clasificar,P2,0.482705,medium,23839.63,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_6F7FCDC174,Modena,ASESOR_233077BA7F,sin_clasificar,P2,0.481916,medium,35488.95,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_5255583249,Sialia,ASESOR_DA48A4F817,sin_clasificar,P2,0.481691,medium,28440.77,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_2BD43A3853,Tizón y Bueno,ASESOR_7B5A7F5FB0,sin_clasificar,P2,0.481284,medium,25383.38,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_89B5FF0784,Tizón y Bueno,ASESOR_950BED165C,sin_clasificar,P2,0.48126,medium,25634.33,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_A060DB3360,Edificio Saenz,ASESOR_1265C8A465,sin_clasificar,P2,0.480795,medium,44119.99,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_6184053C4A,Edificio Urbanzen,ASESOR_F59A4378D8,sin_clasificar,P2,0.480359,medium,41745.13,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_4CB0723BA4,Edificio Urbanzen,ASESOR_7B5A7F5FB0,sin_clasificar,P2,0.479961,medium,23398.1,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_73DF8B0CF6,Tizón y Bueno,ASESOR_9FCF63DC91,sin_clasificar,P2,0.47907,medium,23077.13,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_7ADC756C54,Modena,ASESOR_950BED165C,sin_clasificar,P2,0.478128,medium,30230.53,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_9891E12C42,Capadocia,ASESOR_7B5A7F5FB0,sin_clasificar,P2,0.477777,medium,35833.29,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_E0598381F1,Fenix,ASESOR_950BED165C,sin_clasificar,P2,0.477758,medium,27991.82,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_6A4B653473,Tizón y Bueno,ASESOR_9FCF63DC91,sin_clasificar,P2,0.476996,medium,22802.47,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_179BF10FAF,Torre Nápoles,ASESOR_E5897908D5,sin_clasificar,P2,0.476666,medium,25382.49,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_A643F1EFFE,Torre Nápoles,ASESOR_E5897908D5,sin_clasificar,P2,0.476568,medium,25663.17,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_6B1AAB63FD,Modena,ASESOR_C6B4E60323,sin_clasificar,P2,0.474582,medium,25342.67,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_B6C702B463,Fenix,ASESOR_9FCF63DC91,sin_clasificar,P2,0.474537,medium,30164.63,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_C484112CF5,Modena,ASESOR_E05C20E0FE,sin_clasificar,P2,0.474118,medium,34117.21,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_CA6249CF4D,Tizón y Bueno,ASESOR_E05C20E0FE,sin_clasificar,P2,0.474093,medium,25979.87,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_547F4CF93E,Fenix,ASESOR_E5897908D5,sin_clasificar,P2,0.474061,medium,32496.85,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_3E04CC4787,Modena,ASESOR_E5897908D5,sin_clasificar,P2,0.473766,medium,24162.05,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_0A73398294,Modena,ASESOR_950BED165C,sin_clasificar,P2,0.473619,medium,23508.6,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_D26B0BD59B,Fenix,ASESOR_9FCF63DC91,sin_clasificar,P2,0.473047,medium,30405.69,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_D63FDCB06D,Capadocia,ASESOR_9FCF63DC91,sin_clasificar,P2,0.473022,medium,32254.16,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_376BBEAE75,Modena,ASESOR_C6B4E60323,sin_clasificar,P2,0.472939,medium,26248.14,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_CD076CB063,Edificio Urbanzen,ASESOR_1265C8A465,sin_clasificar,P2,0.472791,medium,42380.97,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_B21994DFAC,Torre Nápoles,ASESOR_CF9D39A66F,sin_clasificar,P2,0.472479,medium,25652.58,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_96136E2247,Fenix,ASESOR_E5897908D5,sin_clasificar,P2,0.471855,medium,33195.01,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_2F54F924BD,Fenix,ASESOR_E05C20E0FE,sin_clasificar,P2,0.471689,medium,33259.38,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_38661B0307,Fenix,ASESOR_E05C20E0FE,sin_clasificar,P2,0.471034,medium,27555.51,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_BC0A48A213,Matera,ASESOR_7B5A7F5FB0,sin_clasificar,P2,0.47099,medium,43095.63,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_5D059C1FAC,Torre Nápoles,ASESOR_E5897908D5,sin_clasificar,P2,0.470723,medium,27396.08,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_35D811B233,Edificio Santa Cruz Infinite,ASESOR_7B5A7F5FB0,sin_clasificar,P2,0.470344,medium,37359.88,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_5E96F5F548,Edificio Santa Cruz Infinite,ASESOR_7B5A7F5FB0,sin_clasificar,P2,0.470344,medium,37200.72,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_0BC1F940FA,Fenix,ASESOR_9FCF63DC91,sin_clasificar,P2,0.469782,medium,32162.68,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_B316342305,Edificio Urbanzen,ASESOR_1265C8A465,sin_clasificar,P2,0.46896,medium,38841.15,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_0E311E3131,Edificio Urbanzen,ASESOR_1265C8A465,sin_clasificar,P2,0.468682,medium,43942.35,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_D207CCBDC0,Modena,ASESOR_950BED165C,sin_clasificar,P2,0.468596,medium,24295.25,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_13AE898CCC,Fenix,ASESOR_E05C20E0FE,sin_clasificar,P2,0.468476,medium,21960.31,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_ECAC634815,Tizón y Bueno,ASESOR_E05C20E0FE,sin_clasificar,P2,0.468325,medium,24040.72,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_B7C135C5AE,Torre Nápoles,ASESOR_7B5A7F5FB0,sin_clasificar,P2,0.467488,medium,25454.72,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_88F4A3F4EA,Modena,ASESOR_1265C8A465,sin_clasificar,P2,0.467196,medium,35740.53,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_10DBFAD245,Torre Nápoles,ASESOR_7B5A7F5FB0,sin_clasificar,P2,0.467191,medium,24022.41,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_4C1E9160BE,Alicanto,ASESOR_9FCF63DC91,sin_clasificar,P2,0.467154,medium,33548.83,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_22ADCA0F22,Fenix,ASESOR_E05C20E0FE,sin_clasificar,P2,0.466422,medium,26500.1,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_02905C10C4,Torre Nápoles,ASESOR_950BED165C,sin_clasificar,P2,0.466198,medium,23969.29,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_8CABBA0AC3,Fenix,ASESOR_7B5A7F5FB0,sin_clasificar,P2,0.46595,medium,30648.49,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_B75B0F324B,Capadocia,ASESOR_E5897908D5,sin_clasificar,P2,0.465387,medium,34904.03,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_177368C3BF,Fenix,ASESOR_7B5A7F5FB0,sin_clasificar,P2,0.465343,medium,32248.3,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_2A8A376DB8,Torre Nápoles,ASESOR_E05C20E0FE,sin_clasificar,P2,0.464817,medium,25795.86,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_CF02092142,Matera,ASESOR_7B5A7F5FB0,sin_clasificar,P2,0.464703,medium,39316.61,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_DB9265E50A,Edificio Urbanzen,ASESOR_233077BA7F,sin_clasificar,P2,0.46451,medium,22993.27,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_6AA604D14F,Modena,ASESOR_C6B4E60323,sin_clasificar,P2,0.4637,medium,29469.04,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_0CF5C1B193,Modena,ASESOR_950BED165C,sin_clasificar,P2,0.463501,medium,27978.28,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_2B7AEAB657,Edificio Valdizan,ASESOR_7B5A7F5FB0,sin_clasificar,P2,0.46315,medium,45035.53,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_B6AAAA525B,Modena,ASESOR_1265C8A465,sin_clasificar,P2,0.463136,medium,35313.95,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_81DD04B6C2,Torre Nápoles,ASESOR_9FCF63DC91,sin_clasificar,P2,0.463113,medium,25456.87,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_94FE69ECAD,Modena,ASESOR_950BED165C,sin_clasificar,P2,0.463062,medium,28079.87,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_60EDA12A8E,Fenix,ASESOR_E5897908D5,sin_clasificar,P2,0.46235,medium,24273.38,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_40C23D1E8F,Fenix,ASESOR_7B5A7F5FB0,sin_clasificar,P2,0.461731,medium,32706.2,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_B8F14C9C1B,Capadocia,ASESOR_E05C20E0FE,sin_clasificar,P2,0.461381,medium,30174.3,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_5C59AAF0B0,Torre Nápoles,ASESOR_7B5A7F5FB0,sin_clasificar,P2,0.461221,medium,27916.0,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_7AE0E56611,Modena,ASESOR_7B5A7F5FB0,sin_clasificar,P2,0.460869,medium,34027.78,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_7C52254F64,Fenix,ASESOR_7B5A7F5FB0,sin_clasificar,P2,0.460659,medium,31094.47,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_7A4E96D7E5,Tizón y Bueno,ASESOR_950BED165C,sin_clasificar,P2,0.460131,medium,23466.02,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_4B67CBDAAA,Edificio Valdizan,ASESOR_8618B6BE3A,sin_clasificar,P2,0.459946,medium,44337.68,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_90D30F280F,Edificio Urbanzen,ASESOR_1265C8A465,sin_clasificar,P2,0.459759,medium,41187.56,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_8AC5ABA6A3,Modena,ASESOR_C6B4E60323,sin_clasificar,P2,0.459634,medium,22682.93,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_F86FBF212B,Torre Nápoles,ASESOR_E5897908D5,sin_clasificar,P2,0.45957,medium,25499.23,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_0E8F48EC57,Fenix,ASESOR_E05C20E0FE,sin_clasificar,P2,0.459504,medium,30485.78,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_A4911EA0F1,Alicanto,ASESOR_7B5A7F5FB0,sin_clasificar,P2,0.459368,medium,22407.13,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_79012A39D1,Torre Nápoles,ASESOR_E5897908D5,sin_clasificar,P2,0.459199,medium,25829.94,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_C435352640,Alicanto,ASESOR_7B5A7F5FB0,sin_clasificar,P2,0.457573,medium,31572.56,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_47BD82D03C,Tizón y Bueno,ASESOR_9FCF63DC91,sin_clasificar,P2,0.457304,medium,24351.43,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_060C32BB91,Fenix,ASESOR_950BED165C,sin_clasificar,P2,0.45713,medium,24066.33,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_53DB27B083,Tizón y Bueno,ASESOR_9FCF63DC91,sin_clasificar,P2,0.457087,medium,25784.41,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_4DB7E01CB4,Edificio Mariategui,ASESOR_1265C8A465,sin_clasificar,P2,0.456982,medium,18963.19,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_327E5856F2,Torre Nápoles,ASESOR_C6B4E60323,sin_clasificar,P2,0.456521,medium,23422.79,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_53EB969C2F,Modena,ASESOR_C6B4E60323,sin_clasificar,P2,0.456372,medium,25549.76,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_EC8097D503,Alicanto,ASESOR_950BED165C,sin_clasificar,P2,0.455524,medium,22035.97,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_B00D9169A1,Edificio Urbanzen,ASESOR_950BED165C,sin_clasificar,P2,0.455008,medium,34108.62,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_F7A00BAE88,Capadocia,ASESOR_7B5A7F5FB0,sin_clasificar,P2,0.454741,medium,33154.81,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_035360786C,Tizón y Bueno,ASESOR_E05C20E0FE,sin_clasificar,P2,0.454526,medium,37498.42,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_F945C5B5CF,Modena,ASESOR_7B5A7F5FB0,sin_clasificar,P2,0.454034,medium,24450.97,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_95E9EF6B36,Tizón y Bueno,ASESOR_1265C8A465,sin_clasificar,P2,0.45348,medium,23171.29,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_34E27E582A,Capadocia,ASESOR_9FCF63DC91,sin_clasificar,P2,0.453367,medium,31486.37,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_033848E6B1,Modena,ASESOR_E5897908D5,sin_clasificar,P2,0.453121,medium,29403.01,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_2210B54A9B,Tizón y Bueno,ASESOR_E05C20E0FE,sin_clasificar,P2,0.452349,medium,24793.46,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_B433A1F9F3,Capadocia,ASESOR_7B5A7F5FB0,sin_clasificar,P2,0.452193,medium,30398.65,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_DE26CA7819,Tizón y Bueno,ASESOR_9FCF63DC91,sin_clasificar,P2,0.452072,medium,24002.58,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_DD591B0804,Alicanto,ASESOR_9FCF63DC91,sin_clasificar,P2,0.451865,medium,23911.58,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_6F5A872BC8,Alicanto,ASESOR_E05C20E0FE,sin_clasificar,P2,0.451465,medium,25259.49,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_EDF45731C1,Fenix,ASESOR_C6B4E60323,sin_clasificar,P2,0.451129,medium,25579.04,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_9AEC306A55,Matera,ASESOR_E5897908D5,sin_clasificar,P2,0.451056,medium,17523.54,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_DC98AFBBA5,Fenix,ASESOR_E5897908D5,sin_clasificar,P2,0.450264,medium,28447.7,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_82E05EC618,Alicanto,ASESOR_950BED165C,sin_clasificar,P2,0.449855,medium,26451.49,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_0AE8F208B8,Edificio Mariategui,ASESOR_7B5A7F5FB0,sin_clasificar,P2,0.449396,medium,19079.94,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_468E10C4D9,Torre Nápoles,ASESOR_950BED165C,sin_clasificar,P2,0.449375,medium,25011.67,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_58CB919275,Torre Nápoles,ASESOR_E5897908D5,sin_clasificar,P2,0.449167,medium,23763.71,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_AC8606524C,Torre Nápoles,ASESOR_E5897908D5,sin_clasificar,P2,0.449068,medium,24377.66,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_22E7A8D071,Sialia,ASESOR_F59A4378D8,sin_clasificar,P2,0.448941,medium,23465.02,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_816EE1923F,Sialia,ASESOR_F59A4378D8,sin_clasificar,P2,0.448941,medium,22421.91,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_AD7FCA509E,Alicanto,ASESOR_950BED165C,sin_clasificar,P2,0.448742,medium,27142.74,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_1E4F84D9BF,Alicanto,ASESOR_950BED165C,sin_clasificar,P2,0.448742,medium,26480.5,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_5BC7421903,Torre Nápoles,ASESOR_DA48A4F817,sin_clasificar,P2,0.44854,medium,24055.89,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_BCDB7C086F,Tizón y Bueno,ASESOR_E05C20E0FE,sin_clasificar,P2,0.448074,medium,23368.76,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_525C1B556A,Matera,ASESOR_233077BA7F,sin_clasificar,P2,0.447716,medium,18166.07,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_3D732A8E4B,Alicanto,ASESOR_950BED165C,sin_clasificar,P2,0.447367,medium,26325.56,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_DA15DAFACD,Edificio Mariategui,ASESOR_1265C8A465,sin_clasificar,P2,0.446884,medium,33522.99,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_CC7AB885B4,Capadocia,ASESOR_E05C20E0FE,sin_clasificar,P2,0.446116,medium,29711.33,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_1AE908E5CE,Fenix,ASESOR_C6B4E60323,sin_clasificar,P2,0.445901,medium,21643.35,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_1C93F8B78A,Alicanto,ASESOR_E05C20E0FE,sin_clasificar,P2,0.445711,medium,22107.01,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_FE9E82E1C6,Edificio Mariategui,ASESOR_1265C8A465,sin_clasificar,P2,0.445082,medium,19554.39,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_BAB35E9692,Modena,ASESOR_1265C8A465,sin_clasificar,P2,0.443797,medium,34420.68,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_D35C3410C8,Fenix,ASESOR_DA48A4F817,sin_clasificar,P2,0.443767,medium,30370.18,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_021945A1E5,Tizón y Bueno,ASESOR_1265C8A465,sin_clasificar,P2,0.442805,medium,27166.08,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_3FB0706BFC,Matera,ASESOR_233077BA7F,sin_clasificar,P2,0.442366,medium,17925.99,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_2DEDE1B28F,Fenix,ASESOR_7B5A7F5FB0,sin_clasificar,P2,0.44196,medium,24528.8,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_74BD80FD44,Fenix,ASESOR_7B5A7F5FB0,sin_clasificar,P2,0.44196,medium,23983.93,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_FB1550918D,Capadocia,ASESOR_E5897908D5,sin_clasificar,P2,0.44156,medium,30798.8,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_C5E64FEF72,Torre Nápoles,ASESOR_F59A4378D8,sin_clasificar,P2,0.441515,medium,23643.12,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_78F7BCAEFE,Fenix,ASESOR_950BED165C,sin_clasificar,P2,0.440656,medium,23664.8,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_94491972D6,Capadocia,ASESOR_CF9D39A66F,sin_clasificar,P2,0.440368,medium,23472.63,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_319981A5DD,Capadocia,ASESOR_9FCF63DC91,sin_clasificar,P2,0.439798,medium,23566.16,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_8B70A2EAAE,Alicanto,ASESOR_950BED165C,sin_clasificar,P2,0.439754,medium,21417.92,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_487875C538,Modena,ASESOR_F59A4378D8,sin_clasificar,P2,0.439349,medium,25855.54,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_624CE0B43D,Edificio Saenz,ASESOR_1265C8A465,sin_clasificar,P2,0.43905,medium,34825.34,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_60CD6EAD89,Alicanto,ASESOR_E5897908D5,sin_clasificar,P2,0.438528,medium,22364.9,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_8B89CADEED,Alicanto,ASESOR_7B5A7F5FB0,sin_clasificar,P2,0.4379,medium,24608.2,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_0FC031AB38,Alicanto,ASESOR_E5897908D5,sin_clasificar,P2,0.43717,medium,21712.07,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_CB0E64045F,Alicanto,ASESOR_7B5A7F5FB0,sin_clasificar,P2,0.435215,medium,22195.97,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_2ECAA0A8EF,Alicanto,ASESOR_950BED165C,sin_clasificar,P2,0.43487,medium,21617.82,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_D60D1A66C2,Edificio Mariategui,ASESOR_D49965A644,sin_clasificar,P2,0.434621,medium,34307.25,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_542FC517BB,Edificio Cuba Connect,ASESOR_E05C20E0FE,sin_clasificar,P2,0.433258,medium,34797.76,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_DD9715415F,Edificio Mariategui,ASESOR_9A684EC3F0,sin_clasificar,P2,0.43316,medium,35419.94,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_3120F30DB2,Fenix,ASESOR_E5897908D5,sin_clasificar,P2,0.432894,medium,24350.31,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_16CEC37BE6,Edificio Cuba Connect,ASESOR_7B5A7F5FB0,sin_clasificar,P2,0.432823,medium,39652.9,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_2E4FB8AD14,Modena,ASESOR_1265C8A465,sin_clasificar,P2,0.432085,medium,25854.38,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_AA3F27355C,Capadocia,ASESOR_F59A4378D8,sin_clasificar,P2,0.432036,medium,30293.57,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_8AB83E4DCA,Edificio Valdizan,ASESOR_9A684EC3F0,sin_clasificar,P2,0.431918,medium,39533.5,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_B783956D21,Edificio Valdizan,ASESOR_9A684EC3F0,sin_clasificar,P2,0.431669,medium,37445.09,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_7789B9F066,Tizón y Bueno,ASESOR_1265C8A465,sin_clasificar,P2,0.431596,medium,30994.36,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_A4493361AE,Alicanto,ASESOR_950BED165C,sin_clasificar,P2,0.431227,medium,22203.76,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_0DC3BA349B,Modena,ASESOR_F59A4378D8,sin_clasificar,P2,0.430406,medium,25123.67,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_DB2BE655AC,Edificio Valdizan,ASESOR_9A684EC3F0,sin_clasificar,P2,0.429711,medium,42028.96,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_3117D1E2E4,Alicanto,ASESOR_E5897908D5,sin_clasificar,P2,0.429427,medium,24179.68,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_9109FB8819,Matera,ASESOR_233077BA7F,sin_clasificar,P2,0.426219,medium,17271.66,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_49B7DBEFA8,Matera,ASESOR_233077BA7F,sin_clasificar,P2,0.426063,medium,23422.82,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_45BC839E59,Matera,ASESOR_C6B4E60323,sin_clasificar,P2,0.425232,medium,28830.74,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_E55955923B,Alicanto,ASESOR_233077BA7F,sin_clasificar,P2,0.424145,medium,32466.19,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_A66FDAA085,Matera,ASESOR_950BED165C,sin_clasificar,P2,0.424111,medium,19721.17,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_C2298E2AEA,Capadocia,ASESOR_E5897908D5,sin_clasificar,P2,0.42391,medium,22763.96,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_D1B37F3536,Capadocia,ASESOR_950BED165C,sin_clasificar,P2,0.423879,medium,22826.17,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_A19DCABE2E,Edificio Mariategui,ASESOR_1265C8A465,sin_clasificar,P2,0.423767,medium,39035.27,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_A4D2A15D5D,Matera,ASESOR_F59A4378D8,sin_clasificar,P2,0.423161,medium,32207.1,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_50D724227F,Edificio Mariategui,ASESOR_D49965A644,sin_clasificar,P2,0.421711,medium,35233.92,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_69931B86A0,Edificio Cuba Connect,ASESOR_7B5A7F5FB0,sin_clasificar,P2,0.421037,medium,34103.97,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_D6BEA11F24,Edificio Santa Cruz Infinite,ASESOR_7B5A7F5FB0,sin_clasificar,P2,0.418786,medium,31706.38,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_51308C7246,Edificio Cuba Connect,ASESOR_7B5A7F5FB0,sin_clasificar,P2,0.417199,medium,33892.83,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_9EE3F55A02,Tizón y Bueno,ASESOR_1265C8A465,sin_clasificar,P2,0.417163,medium,29008.2,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_F9DC758516,Matera,ASESOR_E5897908D5,sin_clasificar,P2,0.417139,medium,16258.86,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_469379AF0D,Edificio Mariategui,ASESOR_D49965A644,sin_clasificar,P2,0.416809,medium,35049.47,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_32893D227B,Matera,ASESOR_7B5A7F5FB0,sin_clasificar,P2,0.416414,medium,31474.19,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_590E76C3F1,Matera,ASESOR_F59A4378D8,sin_clasificar,P2,0.416172,medium,31837.16,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_E56007D25D,Edificio Santa Cruz Infinite,ASESOR_7B5A7F5FB0,sin_clasificar,P2,0.415999,medium,32582.71,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_6180B74299,Edificio Cuba Connect,ASESOR_7B5A7F5FB0,sin_clasificar,P2,0.415203,medium,34748.36,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_D0C59E16E8,Modena,ASESOR_F59A4378D8,sin_clasificar,P2,0.414951,medium,27029.74,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_20FCA1FB2E,Edificio Cuba Connect,ASESOR_7B5A7F5FB0,sin_clasificar,P2,0.413309,medium,36825.87,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_25A2602073,Edificio Mariategui,ASESOR_1265C8A465,sin_clasificar,P2,0.411837,medium,34971.11,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_D7ADD378C2,Tizón y Bueno,ASESOR_E5897908D5,sin_clasificar,P2,0.411087,medium,28673.35,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_2A2064905C,Modena,ASESOR_F59A4378D8,sin_clasificar,P2,0.409727,medium,22611.88,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_85CD809E9A,Edificio Mariategui,ASESOR_9A684EC3F0,sin_clasificar,P2,0.409571,medium,16983.88,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_31F4BF12BB,Matera,ASESOR_7B5A7F5FB0,sin_clasificar,P2,0.409563,medium,29168.19,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_87D9F371E7,Sialia,ASESOR_1265C8A465,sin_clasificar,P2,0.408443,medium,31346.52,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_9382B8D0F0,Sialia,ASESOR_233077BA7F,sin_clasificar,P2,0.405553,medium,23116.55,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_F6FAC49376,Edificio Urbanzen,ASESOR_233077BA7F,sin_clasificar,P2,0.404165,medium,38678.6,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_CE0D3D1780,Capadocia,ASESOR_1265C8A465,sin_clasificar,P2,0.40401,medium,27224.02,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_FC7453CC14,Edificio Cuba Connect,ASESOR_1265C8A465,sin_clasificar,P2,0.403311,medium,36843.11,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_826AADF6E9,Matera,ASESOR_1265C8A465,sin_clasificar,P2,0.403139,medium,16252.64,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_9907A9B01D,Edificio Saenz,ASESOR_1265C8A465,sin_clasificar,P2,0.403022,medium,41398.38,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_A0306F329D,Sialia,ASESOR_1265C8A465,sin_clasificar,P2,0.401897,medium,19291.06,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_7E174780CA,Sialia,ASESOR_1265C8A465,sin_clasificar,P2,0.401287,medium,19683.16,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_8E616C35B6,Matera,ASESOR_950BED165C,sin_clasificar,P2,0.401181,medium,16158.57,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_4C66A09FF1,Tizón y Bueno,ASESOR_D49965A644,sin_clasificar,P2,0.400688,medium,35549.17,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_6841D9AB4A,Edificio Mariategui,ASESOR_9A684EC3F0,sin_clasificar,P2,0.400672,medium,27248.17,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_F8FE642DCE,Matera,ASESOR_950BED165C,sin_clasificar,P2,0.400017,medium,16127.97,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_9581BBFE8F,Matera,ASESOR_950BED165C,sin_clasificar,P2,0.400017,medium,16046.1,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_FE6024554F,Matera,ASESOR_9FCF63DC91,sin_clasificar,P2,0.399312,medium,18568.01,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_5D1DFD27C4,Tizón y Bueno,ASESOR_1265C8A465,sin_clasificar,P2,0.399118,medium,20534.64,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_19B4665FE3,Edificio Santa Cruz Infinite,ASESOR_1265C8A465,sin_clasificar,P2,0.397928,medium,30195.3,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_57C4A74DBE,Matera,ASESOR_7B5A7F5FB0,sin_clasificar,P2,0.397149,medium,15488.83,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_4B789CDB0A,Modena,ASESOR_E5897908D5,sin_clasificar,P2,0.396745,medium,30350.96,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_4B7F9AD9F7,Fenix,ASESOR_1265C8A465,sin_clasificar,P2,0.394782,medium,22739.45,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_ED0E10721B,Alicanto,ASESOR_D49965A644,sin_clasificar,P2,0.394743,medium,32441.64,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_415595E77F,Edificio Cuba Connect,ASESOR_1265C8A465,sin_clasificar,P2,0.393044,medium,32432.08,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_CF19042B49,Edificio Saenz,ASESOR_1265C8A465,sin_clasificar,P2,0.392845,medium,29946.56,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_DED10144AE,Modena,ASESOR_1265C8A465,sin_clasificar,P2,0.390157,medium,26537.53,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_150B3892E3,Matera,ASESOR_C6B4E60323,sin_clasificar,P2,0.389082,medium,26526.84,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_B447147009,Edificio Urbanzen,ASESOR_7B5A7F5FB0,sin_clasificar,P2,0.3878,medium,37015.37,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_42210D0A7C,Edificio Urbanzen,ASESOR_7B5A7F5FB0,sin_clasificar,P2,0.387022,medium,37308.64,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_0C63F395AB,Fenix,ASESOR_1265C8A465,sin_clasificar,P2,0.386449,medium,20000.9,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_5EB10A503E,Edificio Cuba Connect,ASESOR_7B5A7F5FB0,sin_clasificar,P2,0.385284,medium,17730.89,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_512CC4D2B3,Fenix,ASESOR_1265C8A465,sin_clasificar,P2,0.384306,medium,20336.67,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_3E94AE0FE4,Edificio Saenz,ASESOR_1265C8A465,sin_clasificar,P2,0.38271,medium,38527.2,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_D70B5793CB,Fenix,ASESOR_E5897908D5,sin_clasificar,P2,0.382441,medium,28969.93,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_D976A6EA41,Edificio Urbanzen,ASESOR_E5897908D5,sin_clasificar,P2,0.38176,medium,33785.73,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_5F5CC2D603,Sialia,ASESOR_C6B4E60323,sin_clasificar,P2,0.380356,medium,26062.01,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_6AAD2460C5,Edificio Santa Cruz Infinite,ASESOR_7B5A7F5FB0,sin_clasificar,P2,0.379061,medium,27428.3,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_010E9A3E9F,Alicanto,ASESOR_1265C8A465,sin_clasificar,P2,0.37903,medium,18999.4,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_1105A71915,Edificio Santa Cruz Infinite,ASESOR_7B5A7F5FB0,sin_clasificar,P2,0.376981,medium,27470.14,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_1E49EDF4A6,Edificio Santa Cruz Infinite,ASESOR_7B5A7F5FB0,sin_clasificar,P2,0.375896,medium,27644.97,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_1D6C2B78D1,Matera,ASESOR_7B5A7F5FB0,sin_clasificar,P2,0.375896,medium,25372.95,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_1CA5FC2971,Matera,ASESOR_9FCF63DC91,sin_clasificar,P2,0.375356,medium,25871.6,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_DEB6CBEBF1,Matera,ASESOR_1265C8A465,sin_clasificar,P2,0.375021,medium,21573.84,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_D565C5F37F,Edificio Cuba Connect,ASESOR_7B5A7F5FB0,sin_clasificar,P2,0.372599,medium,36236.41,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_1C1DAAF085,Edificio Cuba Connect,ASESOR_7B5A7F5FB0,sin_clasificar,P2,0.372599,medium,36236.41,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_6A4E1B1ED7,Edificio Saenz,ASESOR_1265C8A465,sin_clasificar,P2,0.372376,medium,28179.53,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_436FF93D62,Matera,ASESOR_1265C8A465,sin_clasificar,P2,0.371689,medium,14341.0,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_EB532648BD,Matera,ASESOR_9FCF63DC91,sin_clasificar,P2,0.371459,medium,19606.46,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_EE46CEFEC8,Edificio Cuba Connect,ASESOR_7B5A7F5FB0,sin_clasificar,P2,0.370422,medium,37688.39,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_092FD7CF58,Edificio Cuba Connect,ASESOR_7B5A7F5FB0,sin_clasificar,P2,0.370384,medium,35756.03,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_84EA5EE447,Edificio Santa Cruz Infinite,ASESOR_7B5A7F5FB0,sin_clasificar,P2,0.368512,medium,26759.51,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_541E0F4E7F,Tizón y Bueno,ASESOR_1265C8A465,sin_clasificar,P2,0.3676,medium,18471.89,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_ADE73B0C5F,Edificio Urbanzen,ASESOR_1265C8A465,sin_clasificar,P2,0.366947,medium,35685.63,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_9F4CBE930D,Capadocia,ASESOR_1265C8A465,sin_clasificar,P2,0.362887,medium,19249.26,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_5FCBCDE7FA,Edificio Mariategui,ASESOR_8D1ED284CF,sin_clasificar,P2,0.362375,medium,15323.03,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_74ECAD0C11,Torre Nápoles,ASESOR_E5897908D5,sin_clasificar,P2,0.36037,medium,20162.7,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_840D3DCB7A,Edificio Cuba Connect,ASESOR_7B5A7F5FB0,sin_clasificar,P2,0.359424,medium,33586.21,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_610B5EADCF,Matera,ASESOR_E05C20E0FE,sin_clasificar,P2,0.358524,medium,23728.97,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_17AE32B439,Edificio Cuba Connect,ASESOR_7B5A7F5FB0,sin_clasificar,P2,0.357729,medium,21789.83,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_B01DCCA5AE,Edificio Mariategui,ASESOR_8D1ED284CF,sin_clasificar,P2,0.35619,medium,15766.76,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_626D70616E,Edificio Cuba Connect,ASESOR_7B5A7F5FB0,sin_clasificar,P2,0.356116,medium,32933.14,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_21D1A97C83,Edificio Cuba Connect,ASESOR_7B5A7F5FB0,sin_clasificar,P2,0.354115,medium,33042.76,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_7408FC1C68,Matera,ASESOR_DA48A4F817,sin_clasificar,P2,0.353225,medium,21193.47,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0
+riesgo_caida_action_impact_v1,OP_85BE73E148,Edificio Cuba Connect,ASESOR_7B5A7F5FB0,sin_clasificar,P2,0.353156,medium,33189.43,not_eligible,False,pendiente,pendiente,pendiente,pending,pending,0,0,1,0

@@ -1,0 +1,51 @@
+{
+  "generated_at": "2026-07-04T16:17:48",
+  "version": "v1.6_real_mart_expansion",
+  "safe_aggregate_only": true,
+  "private_data_copied_to_repo": false,
+  "marts": [
+    {
+      "mart": "funnel",
+      "status": "ok",
+      "rows": 1,
+      "mode": "real_source:riesgo_caida_training_model_ready.parquet"
+    },
+    {
+      "mart": "cobranza",
+      "status": "ok",
+      "rows": 17,
+      "mode": "real_source:procesos.parquet"
+    },
+    {
+      "mart": "stock",
+      "status": "ok",
+      "rows": 134,
+      "mode": "real_source:unidades.parquet"
+    },
+    {
+      "mart": "pricing",
+      "status": "ok",
+      "rows": 3236,
+      "mode": "real_source:unidades.parquet"
+    },
+    {
+      "mart": "market",
+      "status": "proxy",
+      "rows": 17,
+      "mode": "internal_benchmark_proxy"
+    },
+    {
+      "mart": "feedback",
+      "status": "ok",
+      "rows": 15,
+      "mode": "real_source:feedback_outcomes_merged.parquet"
+    },
+    {
+      "mart": "proxy_vs_official_gap",
+      "status": "ok",
+      "rows": 6,
+      "mode": "control"
+    }
+  ],
+  "output_dir": "data\\processed\\real_marts"
+}

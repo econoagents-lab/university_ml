@@ -45,6 +45,14 @@
 | --- | --- | --- | --- | --- |
 | sin_clasificar | 763 | 21232580.48 | 0.3982 | 761 |
 
+## Métricas específicas de esta familia
+
+| Métrica | Valor |
+|---|---|
+| `metric_group` | executive |
+| `status` | ok |
+| `decision` | Yo combino riesgo, RAG y MLOps para decidir qué debe revisar gerencia. |
+
 ## Acción recomendada
 
 Validar citas, guardrails y métricas de evaluación antes de presentar o publicar el asistente.

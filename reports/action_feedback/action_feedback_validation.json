@@ -1,0 +1,13 @@
+{
+  "version": "v1.7_decision_action_feedback_lab",
+  "status": "ok",
+  "errors": [],
+  "checked_files": [
+    "data\\processed\\action_feedback\\decision_action_queue_safe.csv",
+    "data\\processed\\action_feedback\\action_assignment_template.csv",
+    "data\\processed\\action_feedback\\feedback_events_safe.csv",
+    "data\\processed\\action_feedback\\action_outcomes_summary.csv",
+    "reports\\action_feedback\\DECISION_ACTION_FEEDBACK_LAB.md"
+  ],
+  "generated_at": "2026-07-04T21:17:45.930328+00:00"
+}

@@ -45,6 +45,15 @@
 | --- | --- | --- | --- | --- |
 | sin_clasificar | 763 | 21232580.48 | 0.3982 | 761 |
 
+## Métricas específicas de esta familia
+
+| Métrica | Valor |
+|---|---|
+| `metric_group` | alerts |
+| `status` | ok |
+| `alerts_manifest_available` | True |
+| `decision` | Yo convierto métricas en alerta ejecutiva, issue o artifact. |
+
 ## Acción recomendada
 
 Usar el tablero para convertir datos en decisión, responsable, plazo y métrica de resultado.

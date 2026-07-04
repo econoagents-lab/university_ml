@@ -1,0 +1,74 @@
+name: Decision Action Feedback Lab
+
+on:
+  workflow_dispatch:
+    inputs:
+      fail_on_privacy_alert:
+        description: "Fail workflow if privacy validation fails"
+        required: false
+        default: "true"
+  push:
+    paths:
+      - "src/mlu/decision_action_feedback_lab.py"
+      - "scripts/89_build_decision_action_queue.py"
+      - "scripts/90_generate_action_assignment_template.py"
+      - "scripts/91_ingest_feedback_actions.py"
+      - "scripts/92_evaluate_action_outcomes.py"
+      - "scripts/93_update_retraining_policy_from_feedback.py"
+      - "scripts/94_run_v17_decision_action_feedback_lab.py"
+      - "config/decision_action_feedback_lab.yml"
+      - "data/feedback/**"
+      - "data/processed/scoring/ranking_operaciones_riesgo_caida.csv"
+
+permissions:
+  contents: read
+  actions: read
+
+jobs:
+  decision-action-feedback-lab:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Run Decision Action Feedback Lab
+        run: |
+          python scripts/94_run_v17_decision_action_feedback_lab.py
+
+      - name: Publish action feedback summary
+        if: always()
+        run: |
+          cat reports/action_feedback/DECISION_ACTION_FEEDBACK_LAB.md >> $GITHUB_STEP_SUMMARY
+
+      - name: Upload action feedback artifacts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: decision-action-feedback-lab
+          path: |
+            data/processed/action_feedback/*.csv
+            data/processed/action_feedback/*.json
+            reports/action_feedback/*.md
+            reports/action_feedback/*.json
+
+      - name: Fail on privacy validation alert
+        if: ${{ always() && github.event.inputs.fail_on_privacy_alert == 'true' }}
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          path = Path('reports/action_feedback/action_feedback_validation.json')
+          payload = json.loads(path.read_text(encoding='utf-8'))
+          if payload.get('status') != 'ok':
+              raise SystemExit(f"Privacy validation failed: {payload}")
+          PY

@@ -1,0 +1,277 @@
+{
+  "generated_at": "2026-07-04T16:17:48",
+  "version": "v1.6_real_mart_expansion",
+  "safe_aggregate_only": true,
+  "families": {
+    "executive": {
+      "metric_group": "executive",
+      "status": "ok",
+      "decision": "Yo combino riesgo, RAG y MLOps para decidir qué debe revisar gerencia."
+    },
+    "commercial": {
+      "metric_group": "funnel",
+      "status": "ok",
+      "metric_mode": "official_or_real_mart",
+      "leads": 0,
+      "separaciones": 0,
+      "minutas": 0,
+      "caidas": 0,
+      "lead_to_separacion_rate": 0.0,
+      "separacion_to_minuta_rate": 0.0,
+      "separacion_to_caida_rate": 0.0,
+      "canales_observados": 1,
+      "periodos_observados": 0,
+      "decision": "Yo uso tasas reales por etapa para decidir dónde está el cuello de botella comercial."
+    },
+    "funnel": {
+      "metric_group": "funnel",
+      "status": "ok",
+      "metric_mode": "official_or_real_mart",
+      "leads": 0,
+      "separaciones": 0,
+      "minutas": 0,
+      "caidas": 0,
+      "lead_to_separacion_rate": 0.0,
+      "separacion_to_minuta_rate": 0.0,
+      "separacion_to_caida_rate": 0.0,
+      "canales_observados": 1,
+      "periodos_observados": 0,
+      "decision": "Yo uso tasas reales por etapa para decidir dónde está el cuello de botella comercial."
+    },
+    "risk": {
+      "metric_group": "risk",
+      "status": "ok",
+      "total_operaciones": 763,
+      "p0_intervenir_hoy": 0,
+      "p1_24h": 221,
+      "p2_72h": 288,
+      "p0_p1_total": 221,
+      "valor_total_en_riesgo": 21232580.48,
+      "riesgo_promedio": 0.3982,
+      "riesgo_p90": 0.5631,
+      "sla": {
+        "p0_hours": 0,
+        "p1_hours": 24,
+        "p2_hours": 72
+      },
+      "decision": "Yo priorizo P0/P1 por valor esperado en riesgo y obligo feedback de intervención."
+    },
+    "stock_pricing": {
+      "metric_group": "stock_pricing",
+      "status": "ok",
+      "metric_mode": "official_or_real_mart",
+      "stock_total": 3237,
+      "stock_disponible": 1425,
+      "stock_vendido": 1364,
+      "stock_valorizado": 1003112652.4,
+      "absorcion_real_proxy": 0.421378,
+      "unidades_con_precio_m2": 3236,
+      "precio_m2_promedio_interno": 3011.84,
+      "brecha_precio_m2_promedio": 0.0,
+      "market_comparable_source": [
+        "internal_benchmark_proxy"
+      ],
+      "decision": "Yo uso stock real, precio/m² y brecha de mercado para decidir pricing, campaña o foco de venta."
+    },
+    "cobranza": {
+      "metric_group": "cobranza",
+      "status": "ok",
+      "metric_mode": "official_or_real_mart",
+      "operaciones_cobranza": 4784,
+      "valor_venta_total": 1835649695.74,
+      "monto_pagado_total": 29843527.61,
+      "saldo_pendiente_total": 173084323.73,
+      "avance_cobranza": 0.016258,
+      "source_status": [
+        "ok"
+      ],
+      "decision": "Yo priorizo caja real: ventas con saldo pendiente y bajo avance de cobranza."
+    },
+    "rag": {
+      "metric_group": "rag",
+      "status": "warning",
+      "faithfulness_proxy_mean": 0.8444,
+      "answer_relevance_proxy_mean": 0.2045,
+      "context_relevance_proxy_mean": 0.6,
+      "trap_refusal_rate": 0.6667,
+      "failed_gates": [
+        "answer_relevance",
+        "trap_refusal"
+      ],
+      "decision": "Yo no presento el asistente como confiable si falla citas, relevancia o preguntas trampa."
+    },
+    "modeling": {
+      "metric_group": "mlops",
+      "status": "retrain_recommended",
+      "champion_model_id": "riesgo_caida_random_forest_dataset_riesgo_caida_crm_2026_07_03_v001_c02",
+      "champion_algorithm": "random_forest",
+      "registered_models": 3,
+      "prediction_psi": 3.7125,
+      "drift_status": "fail",
+      "feature_drift_fail_count": 4,
+      "brier_score": 0.2647,
+      "top_decile_lift": 1.039,
+      "champion_recall": 0.961,
+      "challengers_compared": 3,
+      "retraining_reasons": [
+        "prediction_psi_fail",
+        "low_lift"
+      ],
+      "decision": "Yo reviso drift, lift y challenger antes de confiar ciegamente en el ranking operativo."
+    },
+    "monitoring": {
+      "metric_group": "mlops",
+      "status": "retrain_recommended",
+      "champion_model_id": "riesgo_caida_random_forest_dataset_riesgo_caida_crm_2026_07_03_v001_c02",
+      "champion_algorithm": "random_forest",
+      "registered_models": 3,
+      "prediction_psi": 3.7125,
+      "drift_status": "fail",
+      "feature_drift_fail_count": 4,
+      "brier_score": 0.2647,
+      "top_decile_lift": 1.039,
+      "champion_recall": 0.961,
+      "challengers_compared": 3,
+      "retraining_reasons": [
+        "prediction_psi_fail",
+        "low_lift"
+      ],
+      "decision": "Yo reviso drift, lift y challenger antes de confiar ciegamente en el ranking operativo."
+    },
+    "registry": {
+      "metric_group": "mlops",
+      "status": "retrain_recommended",
+      "champion_model_id": "riesgo_caida_random_forest_dataset_riesgo_caida_crm_2026_07_03_v001_c02",
+      "champion_algorithm": "random_forest",
+      "registered_models": 3,
+      "prediction_psi": 3.7125,
+      "drift_status": "fail",
+      "feature_drift_fail_count": 4,
+      "brier_score": 0.2647,
+      "top_decile_lift": 1.039,
+      "champion_recall": 0.961,
+      "challengers_compared": 3,
+      "retraining_reasons": [
+        "prediction_psi_fail",
+        "low_lift"
+      ],
+      "decision": "Yo reviso drift, lift y challenger antes de confiar ciegamente en el ranking operativo."
+    },
+    "mlops": {
+      "metric_group": "mlops",
+      "status": "retrain_recommended",
+      "champion_model_id": "riesgo_caida_random_forest_dataset_riesgo_caida_crm_2026_07_03_v001_c02",
+      "champion_algorithm": "random_forest",
+      "registered_models": 3,
+      "prediction_psi": 3.7125,
+      "drift_status": "fail",
+      "feature_drift_fail_count": 4,
+      "brier_score": 0.2647,
+      "top_decile_lift": 1.039,
+      "champion_recall": 0.961,
+      "challengers_compared": 3,
+      "retraining_reasons": [
+        "prediction_psi_fail",
+        "low_lift"
+      ],
+      "decision": "Yo reviso drift, lift y challenger antes de confiar ciegamente en el ranking operativo."
+    },
+    "market": {
+      "metric_group": "market",
+      "status": "proxy",
+      "metric_mode": "real_mart_project_vs_market",
+      "proyectos_comparados": 17,
+      "distritos": 3,
+      "precio_m2_proyecto_promedio": 3606.32,
+      "precio_m2_mercado_promedio": 3606.32,
+      "brecha_precio_m2_promedio": 0.0,
+      "comparable_source": [
+        "internal_benchmark_proxy"
+      ],
+      "decision": "Yo uso brecha de precio/m² para distinguir problema de precio, producto o presión de mercado."
+    },
+    "real_marts": {
+      "metric_group": "real_marts",
+      "status": "ok",
+      "marts_generados": 7,
+      "validation_status": "ok",
+      "gaps_cerrados": 2,
+      "familias_con_mart": [
+        "cobranza",
+        "feedback",
+        "funnel",
+        "market",
+        "pricing",
+        "proxy_vs_official_gap",
+        "stock"
+      ],
+      "safe_aggregate_only": true,
+      "decision": "Yo uso este control para saber qué dashboard se defiende con mart real y cuál sigue requiriendo fuente oficial."
+    },
+    "feedback": {
+      "metric_group": "feedback",
+      "status": "ok",
+      "marts_generados": 7,
+      "validation_status": "ok",
+      "gaps_cerrados": 2,
+      "familias_con_mart": [
+        "cobranza",
+        "feedback",
+        "funnel",
+        "market",
+        "pricing",
+        "proxy_vs_official_gap",
+        "stock"
+      ],
+      "safe_aggregate_only": true,
+      "decision": "Yo uso feedback real agregado para cerrar el loop acción-resultado."
+    },
+    "action_feedback": {
+      "metric_group": "action_feedback",
+      "status": "ok",
+      "queue_rows": 763,
+      "p0_actions": 0,
+      "p1_actions": 221,
+      "feedback_events": 100,
+      "outcome_rows": 3,
+      "value_at_risk_in_queue": 21232580.48,
+      "retraining_recommendation": "continuar_recolectando_feedback",
+      "should_retrain_or_recalibrate": false,
+      "privacy_status": "ok",
+      "decision": "Yo uso esta familia para medir si las alertas realmente se convierten en acciones, resultados y aprendizaje."
+    },
+    "public": {
+      "metric_group": "public_privacy",
+      "status": "ok",
+      "data_mode": "crm",
+      "total_operaciones_publicas": 763,
+      "campos_publicos": [
+        "data_mode",
+        "fecha_generacion",
+        "p0_p1",
+        "riesgo_promedio",
+        "top_asesores",
+        "top_canales",
+        "top_proyectos",
+        "total_operaciones",
+        "valor_total_en_riesgo"
+      ],
+      "privacy_errors": [],
+      "decision": "Yo sirvo solo payload público agregado en Railway y bloqueo fallback demo en producción."
+    },
+    "alerts": {
+      "metric_group": "alerts",
+      "status": "ok",
+      "alerts_manifest_available": true,
+      "decision": "Yo convierto métricas en alerta ejecutiva, issue o artifact."
+    }
+  },
+  "source_paths": {
+    "ranking_csv": "data\\processed\\scoring\\ranking_operaciones_riesgo_caida.csv",
+    "training_csv": "data\\processed\\gold\\riesgo_caida_training_model_ready.csv",
+    "ragas_summary": "reports\\uni_final\\RAGAS_LIKE_SUMMARY.md",
+    "model_registry": "reports\\registry\\model_registry_metadata.json",
+    "public_payload": "reports\\public\\decision_dashboard_payload_public.json",
+    "real_mart_manifest": "reports\\real_marts\\real_mart_manifest.json"
+  }
+}

@@ -179,6 +179,21 @@
     "data_mode": "crm",
     "fecha_generacion": "2026-07-04T04:23:08"
   },
+  "family_metrics": {
+    "metric_group": "funnel",
+    "status": "ok",
+    "metric_mode": "official_or_real_mart",
+    "leads": 0,
+    "separaciones": 0,
+    "minutas": 0,
+    "caidas": 0,
+    "lead_to_separacion_rate": 0.0,
+    "separacion_to_minuta_rate": 0.0,
+    "separacion_to_caida_rate": 0.0,
+    "canales_observados": 1,
+    "periodos_observados": 0,
+    "decision": "Yo uso tasas reales por etapa para decidir dónde está el cuello de botella comercial."
+  },
   "recommended_action": "Usar el tablero para convertir datos en decisión, responsable, plazo y métrica de resultado.",
-  "generated_at": "2026-07-04T01:29:39"
+  "generated_at": "2026-07-04T16:17:38"
 }

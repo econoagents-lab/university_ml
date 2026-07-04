@@ -1,0 +1,64 @@
+name: Real Mart Expansion
+
+on:
+  workflow_dispatch:
+    inputs:
+      run_tests:
+        description: "Run pytest after building real marts"
+        required: false
+        default: "true"
+  push:
+    paths:
+      - "src/mlu/real_marts.py"
+      - "src/mlu/dashboard_metrics_engine.py"
+      - "config/real_mart_expansion.yml"
+      - "scripts/85_build_real_marts.py"
+      - "scripts/86_validate_real_marts.py"
+      - "scripts/87_build_proxy_vs_official_gap_report.py"
+      - "scripts/88_run_v16_real_mart_expansion.py"
+      - "tests/test_real_mart_expansion.py"
+
+permissions:
+  contents: read
+  actions: read
+
+jobs:
+  real-mart-expansion:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install pandas pyyaml pytest pyarrow tabulate
+
+      - name: Build real marts
+        run: python scripts/88_run_v16_real_mart_expansion.py
+
+      - name: Publish real mart summary
+        if: always()
+        run: |
+          cat reports/real_marts/REAL_MART_EXPANSION.md >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          cat reports/real_marts/PROXY_VS_OFFICIAL_GAP.md >> $GITHUB_STEP_SUMMARY
+
+      - name: Run tests
+        if: ${{ github.event.inputs.run_tests != 'false' }}
+        run: pytest -q
+
+      - name: Upload real mart artifacts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: real-mart-expansion
+          path: |
+            data/processed/real_marts/*.csv
+            reports/real_marts/*.md
+            reports/real_marts/*.json

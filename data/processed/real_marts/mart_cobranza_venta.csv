@@ -1,0 +1,18 @@
+periodo_mes,proyecto,operaciones,valor_venta_total,monto_pagado_total,saldo_pendiente_total,avance_cobranza,data_mode,source_status
+sin_periodo,Alicanto,293,103460308.35,682809.0,19753357.29,0.0066,real_source:procesos.parquet,ok
+sin_periodo,Capadocia,204,88946765.59,83166.0,9987202.9,0.000935,real_source:procesos.parquet,ok
+sin_periodo,Edificio Cuba Connect,582,227914800.19,4577306.35,4322574.6,0.020083,real_source:procesos.parquet,ok
+sin_periodo,Edificio Mariategui,336,148313112.56,2643186.52,8557771.0,0.017822,real_source:procesos.parquet,ok
+sin_periodo,Edificio Saenz,376,100884731.85,2787830.0,4729059.0,0.027634,real_source:procesos.parquet,ok
+sin_periodo,Edificio Santa Cruz Infinite,400,168066783.0,360125.0,4757944.0,0.002143,real_source:procesos.parquet,ok
+sin_periodo,Edificio Unique,4,1455280.0,0.0,0.0,0.0,real_source:procesos.parquet,ok
+sin_periodo,Edificio Urbanzen,313,145492680.1,10304195.120000001,15633773.08,0.070823,real_source:procesos.parquet,ok
+sin_periodo,Edificio Valdizan,91,49831640.0,1862020.0,4180490.0,0.037366,real_source:procesos.parquet,ok
+sin_periodo,Fenix,283,114358285.1,941727.63,15165758.14,0.008235,real_source:procesos.parquet,ok
+sin_periodo,Los Jardines de Urteaga,185,70348283.24,15000.0,2555628.0,0.000213,real_source:procesos.parquet,ok
+sin_periodo,Matera,224,89833351.52,345148.23,17933970.93,0.003842,real_source:procesos.parquet,ok
+sin_periodo,Modena,310,115510911.75,163563.0,18714375.15,0.001416,real_source:procesos.parquet,ok
+sin_periodo,Sialia,286,104240177.47,429474.37,10849804.74,0.00412,real_source:procesos.parquet,ok
+sin_periodo,Tizón y Bueno,531,196211176.81,88456.0,5388771.6,0.000451,real_source:procesos.parquet,ok
+sin_periodo,Torre Nápoles,354,99042257.64,1079406.9,30553843.3,0.010898,real_source:procesos.parquet,ok
+sin_periodo,Tradiciones Prime,12,11739150.57,3480113.49,0.0,0.296454,real_source:procesos.parquet,ok

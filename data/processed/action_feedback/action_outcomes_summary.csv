@@ -1,0 +1,4 @@
+prioridad,feedback_events,positive_30d,negative_30d,pending_30d,avg_risk,value_at_risk,positive_rate_30d,negative_rate_30d
+P1,89,0,0,89,0.574525,4803857.62,0.0,0.0
+P2,8,0,0,8,0.47606025,359514.14,0.0,0.0
+P3,3,0,0,3,0.315623,133876.16999999998,0.0,0.0

@@ -1,0 +1,123 @@
+project: machine_learning_university
+version: v1.7_decision_action_feedback_lab
+principle: Yo cierro el ciclo alerta -> acción -> responsable -> resultado -> aprendizaje sin exponer PII.
+
+source_policy:
+  private_data_env_var: MLU_PRIVATE_DATA_DIR
+  recommended_private_data_dir_example: C:/Repos/freelance/ml_university_ready/data/raw/sperant
+  allowed_source_dirs:
+    - data/raw/private
+    - data/raw/sperant
+    - data/processed/scoring
+    - data/processed/real_marts
+    - data/feedback
+  never_export_raw_pii: true
+  output_mode: aggregated_or_hashed_only
+
+inputs:
+  ranking_csv: data/processed/scoring/ranking_operaciones_riesgo_caida.csv
+  ranking_parquet: data/processed/scoring/ranking_operaciones_riesgo_caida.parquet
+  feedback_log: data/feedback/action_feedback_log.csv
+  fallback_feedback_template: data/feedback/feedback_log_template.csv
+  real_feedback_mart: data/processed/real_marts/mart_feedback_interventions.csv
+  public_payload: reports/public/decision_dashboard_payload_public.json
+
+outputs:
+  directory: data/processed/action_feedback
+  reports_directory: reports/action_feedback
+  queue_csv: data/processed/action_feedback/decision_action_queue_safe.csv
+  assignment_template_csv: data/processed/action_feedback/action_assignment_template.csv
+  feedback_events_safe_csv: data/processed/action_feedback/feedback_events_safe.csv
+  outcomes_csv: data/processed/action_feedback/action_outcomes_summary.csv
+  retraining_signal_json: data/processed/action_feedback/retraining_signal.json
+  manifest_json: reports/action_feedback/action_feedback_manifest.json
+  report_md: reports/action_feedback/DECISION_ACTION_FEEDBACK_LAB.md
+  validation_json: reports/action_feedback/action_feedback_validation.json
+
+rules:
+  priority_thresholds:
+    p0: 0.70
+    p1: 0.50
+    p2: 0.35
+  sla_hours:
+    p0: 0
+    p1: 24
+    p2: 72
+    p3: 168
+  daily_capacity:
+    max_p0_actions: 25
+    max_total_actions: 80
+  default_owner_when_missing: OWNER_SIN_ASIGNAR
+  action_catalog:
+    p0: Contactar hoy, validar financiamiento/cuota inicial y registrar resultado.
+    p1: Contactar en 24h y confirmar siguiente hito de cierre.
+    p2: Monitorear en 72h y actualizar estado comercial.
+    p3: Seguimiento regular.
+  accepted_actions:
+    - pendiente
+    - llamado_realizado
+    - whatsapp_enviado
+    - cita_agendada
+    - financiamiento_validado
+    - cuota_inicial_pagada
+    - cambio_unidad_gestionado
+    - descuento_evaluado
+    - no_contactado
+  positive_outcomes:
+    - minuta
+    - sigue_activo
+    - cuota_inicial_pagada
+    - cita_agendada
+    - financiamiento_validado
+  negative_outcomes:
+    - caida
+    - no_contactado
+    - sin_respuesta
+    - desistio
+
+learning:
+  min_feedback_events_for_signal: 10
+  min_outcome_rate_gap_for_retraining: 0.05
+  high_caida_rate_threshold: 0.18
+  max_days_without_feedback_warning: 7
+  retraining_policy_path: contracts/retraining_policy.yml
+
+privacy:
+  hash_salt_env_var: MLU_HASH_SALT
+  default_hash_salt: local-demo-salt-change-me
+  public_advisor_mode: hash
+  forbidden_output_columns:
+    - cliente
+    - nombres_cliente
+    - apellidos_cliente
+    - documento_cliente
+    - documento
+    - dni
+    - celular
+    - celulares
+    - telefono
+    - teléfono
+    - email
+    - correo
+    - direccion
+    - dirección
+    - codigo_proforma
+    - codigo_unidad
+    - nombre_completo
+    - password
+    - secret
+    - token
+    - credential
+    - credenciales
+  forbidden_output_patterns:
+    - "\\b\\d{8}\\b"
+    - "\\b9\\d{8}\\b"
+    - "@"
+
+validation:
+  require_queue: true
+  require_assignment_template: true
+  require_feedback_events_safe: true
+  require_no_forbidden_columns: true
+  require_manifest: true
+  require_report: true

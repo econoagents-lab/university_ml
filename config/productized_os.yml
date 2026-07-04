@@ -1,0 +1,106 @@
+version: "2.0.0"
+product_name: "Productized Commercial Intelligence OS"
+positioning: "Sistema comercial inmobiliario productizado: API + dashboards + RAG + alertas + feedback + experimentos + política comercial."
+release_mode: "demo_safe"
+
+# Yo declaro el producto como módulos vendibles, no como scripts sueltos.
+modules:
+  - id: executive_brief
+    name: "CEO Brief & Decision Cockpit"
+    owner: "Gerencia General"
+    commercial_question: "¿Qué debe decidir gerencia esta semana?"
+    required_artifacts:
+      - "reports/generated_dashboards/index.html"
+      - "reports/dashboard_metrics/DASHBOARD_METRICS_ENGINE.md"
+    demo_endpoint: "/dashboard/catalog"
+    value_claim: "Convierte KPIs dispersos en decisiones semanales priorizadas."
+
+  - id: risk_action_queue
+    name: "Risk-to-Action Queue"
+    owner: "Gerencia Comercial"
+    commercial_question: "¿Qué operaciones tienen riesgo y quién debe intervenirlas?"
+    required_artifacts:
+      - "data/processed/action_feedback/decision_action_queue_safe.csv"
+      - "reports/action_feedback/DECISION_ACTION_FEEDBACK_LAB.md"
+    demo_endpoint: "/decision/action-feedback/queue"
+    value_claim: "Transforma scores en acciones con SLA, prioridad y responsable."
+
+  - id: public_railway_dashboard
+    name: "Railway Public Safe Dashboard"
+    owner: "Producto / Demo Comercial"
+    commercial_question: "¿Qué puede ver un cliente externo sin exponer PII?"
+    required_artifacts:
+      - "reports/public/decision_dashboard_payload_public.json"
+    demo_endpoint: "/public/decision-dashboard"
+    value_claim: "Permite demo externa con CRM real agregado y privacidad estricta."
+
+  - id: rag_business_memory
+    name: "RAG Business Memory"
+    owner: "CDO / Chief Economist"
+    commercial_question: "¿Qué evidencia explica una decisión comercial?"
+    required_artifacts:
+      - "reports/uni_final/RAGAS_LIKE_SUMMARY.md"
+      - "docs/TRACEABILITY_TABLE_UNI.md"
+    demo_endpoint: "/metadata/uni-final-rag"
+    value_claim: "Responde preguntas con evidencia, citas, guardrails y evaluación."
+
+  - id: real_marts
+    name: "Real Mart Evidence Layer"
+    owner: "Analytics Engineering"
+    commercial_question: "¿Qué métricas son oficiales y cuáles siguen siendo proxy?"
+    required_artifacts:
+      - "reports/real_marts/REAL_MART_EXPANSION.md"
+      - "data/processed/real_marts/mart_proxy_vs_official_gap.csv"
+    demo_endpoint: "/dashboard/real-marts"
+    value_claim: "Reduce discusión por definiciones y separa evidencia oficial de proxy."
+
+  - id: experimentation_policy
+    name: "Experiment & Policy Engine"
+    owner: "Chief Economist"
+    commercial_question: "¿La intervención comercial salva valor real y con qué política?"
+    required_artifacts:
+      - "reports/experiments/EXPERIMENTATION_CAUSAL_IMPACT_LAB.md"
+      - "reports/policy_engine/EXPERIMENT_POWER_AND_POLICY_ENGINE.md"
+    demo_endpoint: "/dashboard/experiment-power-policy"
+    value_claim: "Convierte acciones en evidencia causal, capacidad y política comercial."
+
+  - id: github_alerts
+    name: "GitHub Alerts & Automation Tower"
+    owner: "MLOps / DataOps"
+    commercial_question: "¿Qué alerta se activó y qué debe hacerse?"
+    required_artifacts:
+      - "reports/alerts/EXECUTIVE_KPI_DIGEST.md"
+    demo_endpoint: "/metadata/productized-os"
+    value_claim: "Automatiza digest, quality gates, artifacts e issues de decisión."
+
+privacy:
+  public_mode: true
+  railway_serves_only_aggregates: true
+  block_demo_fallback_in_production: true
+  forbidden_public_fields:
+    - cliente
+    - documento
+    - dni
+    - email
+    - telefono
+    - teléfono
+    - celular
+    - nombre_completo
+    - direccion
+    - dirección
+    - codigo_proforma
+    - codigo_unidad
+    - credenciales
+
+commercial_pack:
+  output_dir: "reports/productized_os"
+  one_pager: "reports/productized_os/CLIENT_DEMO_ONE_PAGER.md"
+  sales_script: "reports/productized_os/EXECUTIVE_SALES_SCRIPT.md"
+  product_manifest: "reports/productized_os/productized_os_manifest.json"
+  html_index: "reports/productized_os/productized_os_index.html"
+
+quality_gates:
+  min_required_modules_ok: 5
+  require_public_privacy_validation: true
+  require_railway_payload_if_production: true
+  allow_warnings_for_incomplete_feedback: true

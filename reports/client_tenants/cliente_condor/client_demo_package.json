@@ -1,0 +1,29 @@
+{
+  "tenant_id": "cliente_condor",
+  "display_name": "Cliente Cóndor · Comité de inversión",
+  "segment": "inversion_y_directorio",
+  "generated_at": "2026-07-04T21:25:52+00:00",
+  "token_env_var": "MLU_DEMO_TOKEN_CLIENTE_CONDOR",
+  "enabled_modules": [
+    "ceo_brief",
+    "real_mart_evidence_layer",
+    "market_intelligence",
+    "pricing_gap",
+    "productized_os",
+    "privacy_audit"
+  ],
+  "public_routes": [
+    "/dashboard/real-marts",
+    "/dashboard/productized-os",
+    "/metadata/real-marts",
+    "/metadata/productized-os"
+  ],
+  "artifact_paths": {
+    "payload": "reports/client_tenants/cliente_condor/public_payload.json",
+    "landing": "reports/client_tenants/cliente_condor/landing.html",
+    "one_pager": "reports/client_tenants/cliente_condor/one_pager.md"
+  },
+  "privacy_status": "ok",
+  "forbidden_hits": [],
+  "data_mode": "crm"
+}
