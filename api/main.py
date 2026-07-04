@@ -220,3 +220,29 @@ def get_uni_final_rag_metadata():
         "notebook": "notebooks/UNI_Final_RAG_Asistente_Economico_Inmobiliario.ipynb",
         "safe_mode": True,
     }
+
+
+@app.get("/public/decision-dashboard/payload")
+def public_decision_dashboard_payload():
+    """
+    Yo sirvo a Railway solo un payload agregado y público, nunca filas con clientes.
+    """
+    from src.mlu.decision_dashboard import load_public_dashboard_payload
+    try:
+        return load_public_dashboard_payload()
+    except RuntimeError as exc:
+        raise HTTPException(status_code=503, detail=str(exc)) from exc
+
+
+@app.get("/public/decision-dashboard", response_class=HTMLResponse)
+def public_decision_dashboard_html():
+    """
+    Yo sirvo un dashboard público agregado para demo comercial en Railway.
+    """
+    from src.mlu.decision_dashboard import generate_public_dashboard_html, load_public_dashboard_payload
+    try:
+        payload = load_public_dashboard_payload()
+    except RuntimeError as exc:
+        raise HTTPException(status_code=503, detail=str(exc)) from exc
+    path = generate_public_dashboard_html(payload)
+    return HTMLResponse(path.read_text(encoding="utf-8"))

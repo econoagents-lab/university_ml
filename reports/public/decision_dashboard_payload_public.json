@@ -1,0 +1,164 @@
+{
+  "total_operaciones": 763,
+  "valor_total_en_riesgo": 22542416.42,
+  "riesgo_promedio": 0.4231,
+  "p0_p1": {
+    "operaciones": 761,
+    "valor_en_riesgo": 22495994.24
+  },
+  "top_proyectos": [
+    {
+      "proyecto": "Tizón y Bueno",
+      "operaciones": 82,
+      "valor_en_riesgo": 2844867.87,
+      "riesgo_promedio": 0.5215,
+      "p0_p1": 82
+    },
+    {
+      "proyecto": "Edificio Cuba Connect",
+      "operaciones": 83,
+      "valor_en_riesgo": 2135300.72,
+      "riesgo_promedio": 0.3042,
+      "p0_p1": 83
+    },
+    {
+      "proyecto": "Edificio Santa Cruz Infinite",
+      "operaciones": 84,
+      "valor_en_riesgo": 1959208.85,
+      "riesgo_promedio": 0.292,
+      "p0_p1": 84
+    },
+    {
+      "proyecto": "Edificio Urbanzen",
+      "operaciones": 45,
+      "valor_en_riesgo": 1910254.74,
+      "riesgo_promedio": 0.5252,
+      "p0_p1": 45
+    },
+    {
+      "proyecto": "Modena",
+      "operaciones": 53,
+      "valor_en_riesgo": 1753218.35,
+      "riesgo_promedio": 0.5165,
+      "p0_p1": 53
+    },
+    {
+      "proyecto": "Sialia",
+      "operaciones": 50,
+      "valor_en_riesgo": 1613827.33,
+      "riesgo_promedio": 0.5399,
+      "p0_p1": 50
+    },
+    {
+      "proyecto": "Fenix",
+      "operaciones": 45,
+      "valor_en_riesgo": 1450781.8,
+      "riesgo_promedio": 0.4973,
+      "p0_p1": 45
+    },
+    {
+      "proyecto": "Capadocia",
+      "operaciones": 34,
+      "valor_en_riesgo": 1420258.11,
+      "riesgo_promedio": 0.5264,
+      "p0_p1": 34
+    },
+    {
+      "proyecto": "Edificio Mariategui",
+      "operaciones": 37,
+      "valor_en_riesgo": 1324129.54,
+      "riesgo_promedio": 0.4736,
+      "p0_p1": 37
+    },
+    {
+      "proyecto": "Torre Nápoles",
+      "operaciones": 52,
+      "valor_en_riesgo": 1268311.49,
+      "riesgo_promedio": 0.5469,
+      "p0_p1": 52
+    }
+  ],
+  "top_asesores": [
+    {
+      "asesor_anon": "Asesor_26DEBB0E",
+      "operaciones": 130,
+      "valor_en_riesgo": 4592732.9,
+      "riesgo_promedio": 0.4849,
+      "p0_p1": 130
+    },
+    {
+      "asesor_anon": "Asesor_10B2BE3F",
+      "operaciones": 216,
+      "valor_en_riesgo": 4000887.59,
+      "riesgo_promedio": 0.2237,
+      "p0_p1": 216
+    },
+    {
+      "asesor_anon": "Asesor_C931A67B",
+      "operaciones": 66,
+      "valor_en_riesgo": 2383498.2,
+      "riesgo_promedio": 0.4703,
+      "p0_p1": 65
+    },
+    {
+      "asesor_anon": "Asesor_1F3B24E1",
+      "operaciones": 58,
+      "valor_en_riesgo": 2019421.11,
+      "riesgo_promedio": 0.5268,
+      "p0_p1": 58
+    },
+    {
+      "asesor_anon": "Asesor_B56EAA59",
+      "operaciones": 58,
+      "valor_en_riesgo": 1974745.33,
+      "riesgo_promedio": 0.5282,
+      "p0_p1": 58
+    },
+    {
+      "asesor_anon": "Asesor_2660085B",
+      "operaciones": 55,
+      "valor_en_riesgo": 1857571.48,
+      "riesgo_promedio": 0.5248,
+      "p0_p1": 55
+    },
+    {
+      "asesor_anon": "Asesor_1959B8DB",
+      "operaciones": 49,
+      "valor_en_riesgo": 1609805.49,
+      "riesgo_promedio": 0.5532,
+      "p0_p1": 49
+    },
+    {
+      "asesor_anon": "Asesor_D5DBFC78",
+      "operaciones": 32,
+      "valor_en_riesgo": 1040537.59,
+      "riesgo_promedio": 0.5042,
+      "p0_p1": 32
+    },
+    {
+      "asesor_anon": "Asesor_1DCEA22A",
+      "operaciones": 23,
+      "valor_en_riesgo": 745807.36,
+      "riesgo_promedio": 0.5262,
+      "p0_p1": 23
+    },
+    {
+      "asesor_anon": "Asesor_BB88CD67",
+      "operaciones": 23,
+      "valor_en_riesgo": 686612.91,
+      "riesgo_promedio": 0.4692,
+      "p0_p1": 23
+    }
+  ],
+  "top_canales": [
+    {
+      "canal": "sin_clasificar",
+      "operaciones": 763,
+      "valor_en_riesgo": 22542416.42,
+      "riesgo_promedio": 0.4231,
+      "p0_p1": 761
+    }
+  ],
+  "fecha_generacion": "2026-07-03T23:36:59",
+  "data_mode": "crm"
+}

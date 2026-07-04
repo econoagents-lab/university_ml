@@ -1,32 +1,18 @@
-# Changelog
+# CHANGELOG
 
-## v1.2.2 · Colab import fix + GitHub Actions soft gate hardening
+## v1.2.2_railway_real_data_bridge
 
-- Yo corregí el bootstrap de Colab para detectar la raíz del proyecto antes de importar `rag.pipeline`.
-- Yo agregué descompresión automática si el ZIP completo del proyecto está en `/content`.
-- Yo agregué `scripts/00_colab_bootstrap.py` como celda reusable de emergencia.
-- Yo mantuve los gates de GitHub Actions en modo alerta por defecto y bloqueo solo cuando se solicita explícitamente.
+- Agrego bridge CRM real → Railway con payload público agregado.
+- Agrego `scripts/69_export_public_dashboard_payload.py`.
+- Agrego `scripts/70_validate_no_demo_data_in_production.py`.
+- Agrego `scripts/71_sync_public_payload_to_railway.py`.
+- Agrego `reports/public/decision_dashboard_payload_public.json`.
+- Agrego `docs/RAILWAY_REAL_DATA_BRIDGE.md`.
+- Agrego `docs/PRODUCTION_DATA_PRIVACY_POLICY.md`.
+- Agrego `tests/test_no_demo_data_in_production.py`.
+- Agrego endpoint público `/public/decision-dashboard/payload`.
+- Agrego endpoint público `/public/decision-dashboard`.
+- Endurezco producción: si `MLU_ENV=production` y `MLU_DISABLE_SAMPLE_FALLBACK=true`, la API no sirve datos demo cuando falta el payload CRM público.
+- Hago fallback CSV para la cola de decisión si no existe `pyarrow` en entornos livianos.
 
-
-## v1.2.0 - GitHub Actions Commercial Alerts
-
-- Agregué workflows para Commercial KPI Digest, RAG Quality Gate y UNI Delivery Readiness.
-- Agregué workflow global `intelligence_factory_alerts_all.yml`.
-- Agregué workflow self-hosted para correr CRM real desde Lenovo.
-- Agregué workflow Railway smoke para validar API desplegada.
-- Agregué workflow opcional para publicar alertas en GitHub Pages.
-- Agregué scripts 61-68 para alertas, quality gates, issue body, webhooks y sitio estático.
-- Agregué `config/alert_thresholds.yml` para separar KPIs normales de alertas reales.
-- Agregué documentación de seguridad, operación y decisión Lenovo vs Railway.
-- Mantengo comentarios y docstrings nuevos en primera persona.
-
-## v1.1.0 - UNI Final RAG Economic Hypothesis Pack
-
-- Paquete RAG económico con hipótesis, corpus seguro, Text-to-SQL, guardrails y RAGAS-like.
-
-## v1.2.1 - Colab notebook + soft GitHub gates
-
-- Corrijo celda del notebook final que generaba `SyntaxError: unterminated string literal` en Colab.
-- Cambio `rag_quality_gate.yml` para no fallar por defecto ante alertas `warning`.
-- Mantengo modo estricto con `fail_on_alert=true`.
-- Agrego `tests/test_notebook_syntax.py` para compilar celdas del notebook final.
+Validación: `71 passed, 1 warning`.

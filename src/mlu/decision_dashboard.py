@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import json
+import os
 from datetime import datetime, timedelta
 from pathlib import Path
 from typing import Any
@@ -17,6 +18,12 @@ DECISION_QUEUE_CSV_PATH = DASHBOARD_DIR / "decision_queue_riesgo_caida.csv"
 DASHBOARD_PAYLOAD_PATH = DASHBOARD_DIR / "decision_dashboard_payload.json"
 DASHBOARD_HTML_PATH = DASHBOARD_DIR / "DECISION_DASHBOARD_RIESGO_CAIDA.html"
 EXECUTIVE_BRIEF_PATH = DASHBOARD_DIR / "EXECUTIVE_DECISION_BRIEF_RIESGO_CAIDA.md"
+
+
+# Payload público agregado para Railway.
+# Yo mantengo este archivo separado del dashboard interno para no exponer filas operativas.
+PUBLIC_DIR = PROJECT_ROOT / "reports" / "public"
+PUBLIC_DASHBOARD_PAYLOAD_PATH = PUBLIC_DIR / "decision_dashboard_payload_public.json"
 
 QUEUE_REQUIRED_COLUMNS = [
     "codigo_proforma",
@@ -213,11 +220,17 @@ def build_dashboard_payload(queue_df: pd.DataFrame) -> dict[str, Any]:
 
 def save_decision_artifacts(queue_df: pd.DataFrame, payload: dict[str, Any]) -> dict[str, str]:
     DASHBOARD_DIR.mkdir(parents=True, exist_ok=True)
-    queue_df.to_parquet(DECISION_QUEUE_PATH, index=False)
+    parquet_status = "ok"
+    try:
+        queue_df.to_parquet(DECISION_QUEUE_PATH, index=False)
+    except ImportError:
+        # Yo permito que el dashboard funcione en entornos livianos sin pyarrow.
+        parquet_status = "skipped_missing_parquet_engine"
     queue_df.to_csv(DECISION_QUEUE_CSV_PATH, index=False, encoding="utf-8-sig")
     DASHBOARD_PAYLOAD_PATH.write_text(json.dumps(payload, indent=2, ensure_ascii=False, default=str), encoding="utf-8")
     return {
         "decision_queue_parquet": str(DECISION_QUEUE_PATH),
+        "decision_queue_parquet_status": parquet_status,
         "decision_queue_csv": str(DECISION_QUEUE_CSV_PATH),
         "dashboard_payload": str(DASHBOARD_PAYLOAD_PATH),
     }
@@ -234,7 +247,17 @@ def load_dashboard_payload() -> dict[str, Any]:
 
 def load_decision_queue(limit: int | None = None, prioridad: str | None = None) -> pd.DataFrame:
     if DECISION_QUEUE_PATH.exists():
-        df = pd.read_parquet(DECISION_QUEUE_PATH)
+        try:
+            df = pd.read_parquet(DECISION_QUEUE_PATH)
+        except ImportError:
+            # Yo uso CSV como fallback para Railway/GitHub Actions cuando pyarrow no está instalado.
+            if DECISION_QUEUE_CSV_PATH.exists():
+                df = pd.read_csv(DECISION_QUEUE_CSV_PATH, encoding="utf-8-sig")
+            else:
+                df = build_decision_queue()
+                save_decision_artifacts(df, build_dashboard_payload(df))
+    elif DECISION_QUEUE_CSV_PATH.exists():
+        df = pd.read_csv(DECISION_QUEUE_CSV_PATH, encoding="utf-8-sig")
     else:
         df = build_decision_queue()
         save_decision_artifacts(df, build_dashboard_payload(df))
@@ -396,3 +419,106 @@ def generate_dashboard_figures(queue_df: pd.DataFrame | None = None) -> dict[str
     outputs["top20_operations_value_at_risk"] = str(p)
 
     return outputs
+
+
+def _truthy_env(value: str | None, default: bool = False) -> bool:
+    """
+    Yo interpreto variables de entorno booleanas para endurecer producción sin romper local.
+    """
+    if value is None or str(value).strip() == "":
+        return default
+    return str(value).strip().lower() in {"1", "true", "yes", "y", "on", "si", "sí"}
+
+
+def load_public_dashboard_payload(
+    public_payload: Path = PUBLIC_DASHBOARD_PAYLOAD_PATH,
+    environment: str | None = None,
+    disable_sample_fallback: bool | None = None,
+) -> dict[str, Any]:
+    """
+    Yo cargo el payload público agregado que Railway puede servir.
+    En producción bloqueo el fallback demo cuando se exige data CRM pública real.
+    """
+    environment = environment or os.getenv("MLU_ENV", "local").strip().lower()
+    if disable_sample_fallback is None:
+        disable_sample_fallback = _truthy_env(os.getenv("MLU_DISABLE_SAMPLE_FALLBACK"), default=False)
+
+    # Yo bloqueo datos demo cuando estoy en producción.
+    if environment == "production" and disable_sample_fallback and not public_payload.exists():
+        raise RuntimeError("No hay payload CRM público disponible. No sirvo data demo en producción.")
+
+    if public_payload.exists():
+        return json.loads(public_payload.read_text(encoding="utf-8"))
+
+    queue = build_decision_queue(max_rows=None)
+    internal_payload = build_dashboard_payload(queue)
+    return {
+        "total_operaciones": internal_payload["kpis"]["total_operaciones"],
+        "valor_total_en_riesgo": internal_payload["kpis"]["valor_total_en_riesgo"],
+        "riesgo_promedio": internal_payload["kpis"]["riesgo_promedio"],
+        "p0_p1": {
+            "operaciones": internal_payload["kpis"].get("p0_operaciones", 0) + internal_payload["kpis"].get("p1_operaciones", 0),
+            "valor_en_riesgo": internal_payload["kpis"].get("p0_p1_valor_en_riesgo", 0.0),
+        },
+        "top_proyectos": internal_payload.get("by_project", [])[:10],
+        "top_asesores": [],
+        "top_canales": [],
+        "fecha_generacion": datetime.now().isoformat(timespec="seconds"),
+        "data_mode": "fallback_internal_not_public",
+    }
+
+
+def generate_public_dashboard_html(payload: dict[str, Any] | None = None) -> Path:
+    """
+    Yo genero una vista HTML pública usando solo agregados y sin filas con clientes.
+    """
+    payload = payload or load_public_dashboard_payload()
+    PUBLIC_DIR.mkdir(parents=True, exist_ok=True)
+    project_rows = "".join(
+        f"<tr><td>{r.get('proyecto')}</td><td>{r.get('operaciones')}</td><td>{float(r.get('riesgo_promedio', 0)):.3f}</td><td>S/ {float(r.get('valor_en_riesgo', 0)):,.0f}</td><td>{r.get('p0_p1')}</td></tr>"
+        for r in payload.get("top_proyectos", [])
+    )
+    advisor_rows = "".join(
+        f"<tr><td>{r.get('asesor_anon')}</td><td>{r.get('operaciones')}</td><td>{float(r.get('riesgo_promedio', 0)):.3f}</td><td>S/ {float(r.get('valor_en_riesgo', 0)):,.0f}</td><td>{r.get('p0_p1')}</td></tr>"
+        for r in payload.get("top_asesores", [])
+    )
+    channel_rows = "".join(
+        f"<tr><td>{r.get('canal')}</td><td>{r.get('operaciones')}</td><td>{float(r.get('riesgo_promedio', 0)):.3f}</td><td>S/ {float(r.get('valor_en_riesgo', 0)):,.0f}</td><td>{r.get('p0_p1')}</td></tr>"
+        for r in payload.get("top_canales", [])
+    )
+    html = f"""
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>Public Decision Dashboard - Riesgo de Caída</title>
+<style>
+body {{ font-family: Arial, sans-serif; margin: 32px; background: #0f172a; color: #e5e7eb; }}
+.card {{ background: #111827; border: 1px solid #334155; border-radius: 14px; padding: 18px; margin: 14px 0; }}
+.grid {{ display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; }}
+.kpi {{ font-size: 26px; font-weight: 700; color: #fbbf24; }}
+.label {{ color: #94a3b8; font-size: 12px; text-transform: uppercase; }}
+table {{ width: 100%; border-collapse: collapse; margin-top: 12px; }}
+th, td {{ border-bottom: 1px solid #334155; padding: 8px; text-align: left; font-size: 13px; }}
+th {{ color: #fbbf24; }}
+small {{ color: #94a3b8; }}
+</style>
+</head>
+<body>
+<h1>Public Decision Dashboard - Riesgo de Caída</h1>
+<p><small>Solo agregados · data_mode: {payload.get('data_mode')} · generado: {payload.get('fecha_generacion')}</small></p>
+<div class="grid">
+  <div class="card"><div class="label">Operaciones</div><div class="kpi">{payload.get('total_operaciones', 0)}</div></div>
+  <div class="card"><div class="label">Valor total en riesgo</div><div class="kpi">S/ {float(payload.get('valor_total_en_riesgo', 0)):,.0f}</div></div>
+  <div class="card"><div class="label">P0 + P1</div><div class="kpi">{payload.get('p0_p1', {}).get('operaciones', 0)}</div></div>
+  <div class="card"><div class="label">Riesgo promedio</div><div class="kpi">{float(payload.get('riesgo_promedio', 0)):.3f}</div></div>
+</div>
+<div class="card"><h2>Top proyectos</h2><table><thead><tr><th>Proyecto</th><th>Ops</th><th>Riesgo prom.</th><th>Valor riesgo</th><th>P0/P1</th></tr></thead><tbody>{project_rows}</tbody></table></div>
+<div class="card"><h2>Top asesores anonimizados</h2><table><thead><tr><th>Asesor anónimo</th><th>Ops</th><th>Riesgo prom.</th><th>Valor riesgo</th><th>P0/P1</th></tr></thead><tbody>{advisor_rows}</tbody></table></div>
+<div class="card"><h2>Top canales</h2><table><thead><tr><th>Canal</th><th>Ops</th><th>Riesgo prom.</th><th>Valor riesgo</th><th>P0/P1</th></tr></thead><tbody>{channel_rows}</tbody></table></div>
+</body>
+</html>
+"""
+    path = PUBLIC_DIR / "DECISION_DASHBOARD_PUBLIC.html"
+    path.write_text(html, encoding="utf-8")
+    return path

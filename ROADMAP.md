@@ -1,27 +1,16 @@
-# Roadmap
+# ROADMAP
 
-## v1.2 - GitHub Actions Commercial Alerts
+## v1.2.2 Railway Real Data Bridge
 
-Estado: generado.
+- Payload público agregado para Railway.
+- Bloqueo de sample fallback en producción.
+- Validación anti-PII del payload.
+- Endpoint público seguro.
+- GitHub Action para validar/generar artifact.
 
-Objetivo: que outputs del sistema se conviertan en alertas amigables, artifacts, issues y checks de entrega.
+## Próximo paso sugerido: v1.3_public_demo_release
 
-## v1.3 - Multi-model Commercial Intelligence
-
-Objetivo recomendado:
-
-- riesgo de caída;
-- lead scoring;
-- stock lento;
-- cobranza en riesgo;
-- alertas por producto analítico;
-- dashboard ejecutivo multi-modelo.
-
-## v1.4 - Feedback Store Productivo
-
-Objetivo recomendado:
-
-- Supabase/Postgres feedback store;
-- acciones comerciales reales;
-- medición de intervención;
-- experimentos controlados.
+- Railway deploy documentado de punta a punta.
+- GitHub Pages/Static dashboard opcional.
+- Demo ejecutiva pública con datos agregados.
+- Autenticación opcional para endpoints privados.

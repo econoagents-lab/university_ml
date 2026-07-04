@@ -1,39 +1,59 @@
-# Machine Learning University v1.2 · GitHub Actions Commercial Alerts
+# Machine Learning University v1.2.2 · Railway Real Data Bridge
 
-## Propósito
+Esta versión agrega un puente seguro entre el scoring real del CRM y una demo/API pública en Railway.
 
-Yo convierto los outputs de la Intelligence Factory en alertas comerciales, quality gates y evidencia descargable para operación, UNI y demo ejecutiva.
+La regla central es simple:
 
-## Outputs vigilados
+> Yo puedo publicar agregados comerciales. No publico clientes, documentos, teléfonos, emails, nombres completos, direcciones ni credenciales.
+
+## Payload público autorizado
 
 ```text
-data/processed/scoring/ranking_operaciones_riesgo_caida.csv
-reports/uni_final/RAGAS_LIKE_SUMMARY.md
-reports/uni_final/FINAL_TECHNICAL_REPORT.md
-docs/TRACEABILITY_TABLE_UNI.md
+reports/public/decision_dashboard_payload_public.json
 ```
 
-## Ejecutar local
+Contiene solo:
 
-```powershell
-python scripts/66_build_all_alerts.py
-python scripts/68_export_alerts_static_site.py
-pytest -q
+```text
+total_operaciones
+valor_total_en_riesgo
+riesgo_promedio
+p0_p1
+top_proyectos
+top_asesores
+top_canales
+fecha_generacion
+data_mode = crm
 ```
 
-## Ejecutar GitHub Actions
+## Scripts nuevos
 
-- `Commercial KPI Digest`: alerta comercial diaria.
-- `RAG Quality Gate`: calidad del asistente RAG.
-- `UNI Delivery Readiness`: checklist de entrega final.
-- `CRM Full Runner Self-Hosted Lenovo`: corrida real con Lenovo.
-- `Railway API Smoke and Alert`: salud de API desplegada.
-- `Publish Alerts Static Site`: HTML simple para GitHub Pages.
+```text
+scripts/69_export_public_dashboard_payload.py
+scripts/70_validate_no_demo_data_in_production.py
+scripts/71_sync_public_payload_to_railway.py
+```
 
-## Lenovo vs Railway
+## API nueva
 
-Yo uso Lenovo para correr CRM real y Railway para exponer API/dashboard. GitHub Actions se convierte en el centro de alertas y evidencia.
+```text
+GET /public/decision-dashboard/payload
+GET /public/decision-dashboard
+```
 
 ## Seguridad
 
-No incluyo `.env`, credenciales ni datos personales sensibles. Usa GitHub Secrets para tokens/webhooks y self-hosted runner para data privada.
+En producción:
+
+```text
+MLU_ENV=production
+MLU_DISABLE_SAMPLE_FALLBACK=true
+```
+
+Si el payload público CRM no existe, la API falla de forma explícita en vez de servir demo data.
+
+## Validación
+
+```text
+71 passed, 1 warning
+```

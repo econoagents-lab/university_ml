@@ -1,0 +1,75 @@
+name: Railway Public Payload Bridge
+
+on:
+  workflow_dispatch:
+    inputs:
+      sync_to_railway:
+        description: "POST payload to Railway sync endpoint if secrets exist"
+        required: false
+        default: "false"
+  push:
+    paths:
+      - "data/processed/scoring/ranking_operaciones_riesgo_caida.csv"
+      - "data/processed/scoring/ranking_operaciones_riesgo_caida.parquet"
+      - "scripts/69_export_public_dashboard_payload.py"
+      - "scripts/70_validate_no_demo_data_in_production.py"
+      - "scripts/71_sync_public_payload_to_railway.py"
+      - "docs/RAILWAY_REAL_DATA_BRIDGE.md"
+      - "docs/PRODUCTION_DATA_PRIVACY_POLICY.md"
+
+permissions:
+  contents: read
+  actions: read
+
+jobs:
+  build-public-payload:
+    runs-on: ubuntu-latest
+    env:
+      MLU_ENV: production
+      MLU_DISABLE_SAMPLE_FALLBACK: "true"
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install pandas pyarrow fastapi uvicorn pyyaml scikit-learn joblib matplotlib
+
+      - name: Export public CRM payload
+        run: |
+          python scripts/69_export_public_dashboard_payload.py
+
+      - name: Validate no demo or PII in production payload
+        run: |
+          python scripts/70_validate_no_demo_data_in_production.py --environment production
+
+      - name: Optional sync to Railway
+        if: ${{ github.event.inputs.sync_to_railway == 'true' }}
+        env:
+          RAILWAY_PUBLIC_PAYLOAD_SYNC_URL: ${{ secrets.RAILWAY_PUBLIC_PAYLOAD_SYNC_URL }}
+          RAILWAY_PUBLIC_PAYLOAD_SYNC_TOKEN: ${{ secrets.RAILWAY_PUBLIC_PAYLOAD_SYNC_TOKEN }}
+        run: |
+          python scripts/71_sync_public_payload_to_railway.py
+
+      - name: Publish summary
+        run: |
+          echo "# Railway Public Payload Bridge" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "Payload generado: reports/public/decision_dashboard_payload_public.json" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          cat reports/public/production_public_payload_validation.json >> $GITHUB_STEP_SUMMARY
+
+      - name: Upload public payload artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: railway-public-dashboard-payload
+          path: |
+            reports/public/decision_dashboard_payload_public.json
+            reports/public/production_public_payload_validation.json

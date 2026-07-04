@@ -1,62 +1,49 @@
-# Quickstart · v1.2.2
+# QUICKSTART v1.2.2
 
-## Colab
-
-1. Sube el ZIP completo del proyecto a `/content`.
-2. Abre `notebooks/UNI_Final_RAG_Asistente_Economico_Inmobiliario.ipynb`.
-3. Ejecuta primero la celda “Yo preparo el entorno...”.
-4. Confirma que imprime `Import path listo: True`.
-5. Ejecuta el resto del notebook.
-
-Si aparece `ModuleNotFoundError: No module named 'rag'`, significa que Colab no está en la raíz del proyecto o que subiste solo el notebook.
-
-## Local
+## 1. Generar payload público CRM para Railway
 
 ```powershell
-python scripts/66_build_all_alerts.py
-python scripts/68_export_alerts_static_site.py
-pytest -q
+python scripts/69_export_public_dashboard_payload.py
+python scripts/70_validate_no_demo_data_in_production.py --environment production
 ```
 
-# Quickstart v1.2
-
-```powershell
-python scripts/66_build_all_alerts.py
-python scripts/61_build_commercial_alert_digest.py
-python scripts/63_validate_ragas_quality_gate.py
-python scripts/62_validate_uni_readiness.py
-python scripts/68_export_alerts_static_site.py
-pytest -q
-```
-
-## Workflows principales
+Output:
 
 ```text
-.github/workflows/commercial_kpi_digest.yml
-.github/workflows/rag_quality_gate.yml
-.github/workflows/uni_delivery_readiness.yml
-.github/workflows/intelligence_factory_alerts_all.yml
-.github/workflows/crm_full_runner_self_hosted.yml
-.github/workflows/railway_api_smoke_and_alert.yml
-.github/workflows/publish_alerts_static_site.yml
+reports/public/decision_dashboard_payload_public.json
+reports/public/production_public_payload_validation.json
 ```
 
-## Salidas
-
-```text
-reports/alerts/EXECUTIVE_KPI_DIGEST.md
-reports/alerts/RAGAS_ALERT.md
-reports/alerts/UNI_READINESS_ALERT.md
-reports/alerts/ALERTS_MANIFEST.md
-site/alerts/index.html
-```
-
-## Validación v1.2.1
+## 2. Correr tests
 
 ```powershell
-python scripts/66_build_all_alerts.py
-python scripts/68_export_alerts_static_site.py
 pytest -q
 ```
 
-En GitHub Actions, `RAG Quality Gate` ahora es amigable por defecto: publica alertas y artifacts sin fallar, salvo que ejecutes manualmente con `fail_on_alert=true`.
+Resultado esperado:
+
+```text
+71 passed, 1 warning
+```
+
+## 3. Levantar API local
+
+```powershell
+uvicorn api.main:app --reload
+```
+
+Endpoints públicos:
+
+```text
+http://127.0.0.1:8000/public/decision-dashboard/payload
+http://127.0.0.1:8000/public/decision-dashboard
+```
+
+## 4. Configuración Railway recomendada
+
+```text
+MLU_ENV=production
+MLU_DISABLE_SAMPLE_FALLBACK=true
+```
+
+Con esa configuración, si falta `reports/public/decision_dashboard_payload_public.json`, la API no sirve sample data.

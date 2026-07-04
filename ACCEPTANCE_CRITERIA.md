@@ -1,13 +1,13 @@
-# Acceptance Criteria v1.2
+# Acceptance Criteria v1.2.2
 
-La versión v1.2 queda aceptada si:
-
-- [ ] `python scripts/66_build_all_alerts.py` genera todos los reportes en `reports/alerts/`.
-- [ ] `commercial_kpi_digest.yml` puede leer el ranking de riesgo y publicar summary.
-- [ ] `rag_quality_gate.yml` detecta métricas RAGAS-like bajo umbral.
-- [ ] `uni_delivery_readiness.yml` valida trazabilidad y reporte final.
-- [ ] `crm_full_runner_self_hosted.yml` está listo para Lenovo self-hosted.
-- [ ] `railway_api_smoke_and_alert.yml` está listo para API desplegada.
-- [ ] Los scripts no requieren `.env` para funcionar en modo alerta local.
-- [ ] Los comentarios/docstrings nuevos están escritos en primera persona.
-- [ ] `pytest -q` pasa.
+- [x] Existe `scripts/69_export_public_dashboard_payload.py`.
+- [x] Existe `scripts/70_validate_no_demo_data_in_production.py`.
+- [x] Existe `scripts/71_sync_public_payload_to_railway.py`.
+- [x] Existe `reports/public/decision_dashboard_payload_public.json`.
+- [x] Existe `docs/RAILWAY_REAL_DATA_BRIDGE.md`.
+- [x] Existe `docs/PRODUCTION_DATA_PRIVACY_POLICY.md`.
+- [x] Existe `tests/test_no_demo_data_in_production.py`.
+- [x] La API bloquea fallback demo en producción si falta el payload CRM público.
+- [x] El payload público tiene `data_mode = crm`.
+- [x] El payload público no contiene cliente, documento, email, teléfono, nombre completo, dirección ni credenciales.
+- [x] `pytest -q` pasa.
