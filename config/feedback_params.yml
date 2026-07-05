@@ -1,0 +1,30 @@
+feedback:
+  template_output: "data/processed/action_feedback/action_assignment_template.csv"
+  min_feedback_rows_for_policy: 100
+  required_fields:
+    - operation_id
+    - asesor_id
+    - accion_tomada
+    - fecha_accion
+    - resultado_7d
+    - resultado_30d
+    - caida_real_30d
+  allowed_actions:
+    - llamada
+    - whatsapp
+    - cita
+    - revision_credito
+    - renegociacion
+    - seguimiento_operaciones
+  allowed_result_7d:
+    - sin_contacto
+    - contactado
+    - cita_agendada
+    - cuota_inicial_pagada
+    - minuta
+    - caida
+  allowed_result_30d:
+    - minuta
+    - sigue_tuberia
+    - caida
+    - desistio

@@ -1,0 +1,12 @@
+contract_name: "Minuta válida"
+business_question: "conversión a venta"
+source: "procesos / fact_firmas_minutas"
+primary_key: "codigo_proforma"
+grain: "minuta"
+official_date: "fecha_minuta"
+exclusions: "excluir minutas reversadas o sin fecha oficial"
+derived_kpis: "minutas_30d, days_to_minuta"
+owner_to_confirm: "CDO + Chief Economist"
+status: "draft_to_confirm"
+privacy:
+  public_export_allowed: false

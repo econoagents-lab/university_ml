@@ -1,0 +1,13 @@
+stock:
+  focus_unit_type: "departamento"
+  include_unit_types:
+    - departamento
+  slow_stock_days_warning: 90
+  slow_stock_days_critical: 180
+  outputs:
+    - data/processed/core_marts/mart_stock_movement_month.csv
+    - data/processed/core_marts/mart_absorption_project_month.csv
+pricing:
+  use_market_benchmark: true
+  market_source_mode: "proxy_until_external_source_confirmed"
+  critical_price_gap_pct: 0.15

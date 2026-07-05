@@ -1,0 +1,21 @@
+dia,semana,entregable,output,valor,input_a_confirmar,donde_cambiar,prioridad
+1,Semana 1,Inventario raw + columnas críticas,"Tabla de fuentes, llaves, granularidad y owner",Evita construir sobre campos dudosos,Oficializar input CRM,contracts/source_inventory.yml,Alta
+2,Semana 1,Contrato de separación,separacion_contract.yml,Define inicio del riesgo comercial,Confirmar fecha oficial y exclusiones,contracts/separacion_contract.yml,Alta
+3,Semana 1,Contrato de minuta/venta,minuta_contract.yml,Define conversión real a venta,Confirmar fecha firma/minuta,contracts/minuta_contract.yml,Alta
+4,Semana 1,Contrato de caída,caida_contract.yml,Define target del modelo,Confirmar fecha y motivos válidos,contracts/caida_contract.yml,Alta
+5,Semana 1,Data quality scorecard,mart_data_quality_scorecard.csv,Hace defendible la base,Confirmar umbrales de nulos/duplicados,config/core_analytics_params.yml > data_quality,Alta
+6,Semana 2,Cohorte lead → separación,mart_cohort_lead_to_sep.csv,Mide eficiencia de captación,Confirmar ventana y lead válido,config/cohort_params.yml,Alta
+7,Semana 2,Cohorte separación → minuta/caída,mart_cohort_sep_to_minuta_caida.csv,Mide cierre y pérdida,Confirmar horizonte 30/60 días,config/cohort_params.yml,Alta
+8,Semana 2,Stock movement mensual,mart_stock_movement_month.csv,Mide absorción real por proyecto/tipología,Confirmar stock inicial/final y estado libre,config/stock_params.yml,Alta
+9,Semana 2,Cobranza por venta,mart_cobranza_by_sale.csv,Conecta venta con caja,Confirmar matching pago→proforma/unidad,config/cobranza_params.yml,Alta
+10,Semana 2,Cash conversion cycle,mart_cash_conversion_cycle.csv,Mide velocidad venta→caja,Confirmar fecha pago y monto válido,config/cobranza_params.yml,Media
+11,Semana 3,Anti-leakage audit,NO_LEAKAGE_REPORT.md,Evita modelo tramposo,Confirmar columnas prohibidas,contracts/model_ready_contract.yml,Alta
+12,Semana 3,Baseline vs ML,MODEL_BASELINE_COMPARISON.md,Prueba si ML supera reglas simples,Confirmar baseline comercial,config/model_recalibration_params.yml,Alta
+13,Semana 3,Lift/Precision@K/Recall@Capacity,MODEL_RECALIBRATION_REPORT.md,Evalúa utilidad operativa,Confirmar capacidad diaria,config/model_recalibration_params.yml,Alta
+14,Semana 3,Calibración,calibration_report.csv/png,Hace creíble la probabilidad,Confirmar bandas de riesgo,config/model_recalibration_params.yml,Media
+15,Semana 3,Ranking P0/P1 por capacidad,ranking_operaciones_riesgo_caida_calibrado.csv,Convierte score en lista de trabajo,Confirmar P0/P1 por SLA,config/model_recalibration_params.yml,Alta
+16,Semana 4,Plantilla intervención,action_assignment_template.csv,Captura acción real,Confirmar campos obligatorios,config/feedback_params.yml,Alta
+17,Semana 4,Feedback 7d/30d,feedback_events_safe.csv,Mide aprendizaje,Confirmar resultados válidos,config/feedback_params.yml,Alta
+18,Semana 4,Outcome económico,action_outcomes_summary.csv,Mide ventas salvadas/proxy,Confirmar definición salvada,config/feedback_params.yml,Alta
+19,Semana 4,Scorecard real/proxy/demo,VALUE_DEFENSIBILITY_SCORECARD.md,Separa evidencia dura de demo,Confirmar criterio oficial/proxy/demo,config/core_analytics_params.yml > evidence_status,Alta
+20,Semana 4,CEO Brief core analytics,CORE_ANALYTICS_30D_EXECUTIVE_BRIEF.md,Lleva decisión a gerencia,Confirmar audiencia y formato,templates/CEO_BRIEF_TEMPLATE.md,Alta

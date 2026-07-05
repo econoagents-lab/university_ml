@@ -1,0 +1,12 @@
+cohorts:
+  lead_to_sep_window_days: [7, 15, 30]
+  sep_to_minuta_window_days: [7, 15, 30, 60]
+  sep_to_caida_window_days: [7, 15, 30, 60]
+  cohort_grain:
+    - periodo_mes
+    - proyecto
+    - canal
+    - asesor_id
+  outputs:
+    - data/processed/core_marts/mart_cohort_lead_to_sep.csv
+    - data/processed/core_marts/mart_cohort_sep_to_minuta_caida.csv

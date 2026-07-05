@@ -1,0 +1,23 @@
+model_recalibration:
+  target: "caida_30d"
+  horizon_days: 30
+  ranking_capacity_daily: 30
+  p0_sla_hours: 24
+  p1_sla_hours: 48
+  compare_against_baseline: true
+  recalibrate_probabilities: true
+  metrics:
+    - roc_auc
+    - average_precision
+    - lift_top_decile
+    - precision_at_20
+    - recall_at_50
+    - recall_at_capacity
+    - brier_score
+    - calibration_gap
+  forbidden_features:
+    - fecha_caida
+    - fecha_minuta
+    - fecha_firma
+    - estado_final
+    - caida_real_30d

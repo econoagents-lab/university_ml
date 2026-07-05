@@ -1,0 +1,12 @@
+contract_name: "Stock disponible"
+business_question: "inventario vendible"
+source: "unidades / product_stock_pricing"
+primary_key: "codigo_unidad"
+grain: "unidad_mes"
+official_date: "periodo_mes"
+exclusions: "solo departamentos para core"
+derived_kpis: "stock_inicial, stock_final, meses_stock"
+owner_to_confirm: "CDO + Chief Economist"
+status: "draft_to_confirm"
+privacy:
+  public_export_allowed: false

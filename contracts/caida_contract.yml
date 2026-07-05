@@ -1,0 +1,12 @@
+contract_name: "Caída válida"
+business_question: "target de pérdida comercial"
+source: "fact_caidas / procesos anulación"
+primary_key: "codigo_proforma"
+grain: "caída"
+official_date: "fecha_caida"
+exclusions: "excluir caídas sin separación válida"
+derived_kpis: "caida_30d, days_to_caida"
+owner_to_confirm: "CDO + Chief Economist"
+status: "draft_to_confirm"
+privacy:
+  public_export_allowed: false

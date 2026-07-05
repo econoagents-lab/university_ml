@@ -1,0 +1,11 @@
+mejora,prioridad,por_que_importa,input_datos,metrica_resultado,donde_cambiar
+Cohortes reales,Alta,KPI mensual mezcla meses; cohorte separa generación y maduración,mart_cohort_sep_to_minuta_caida.csv,Conversión 30/60d por cohorte,config/cohort_params.yml
+Survival/hazard de caída,Alta,"La caída es evento en el tiempo, no solo clasificación estática",mart_sales_events.csv,"hazard_by_day, survival_curve",config/model_recalibration_params.yml
+Precision@Capacity,Alta,El equipo no atiende infinitas operaciones,ranking_operaciones_riesgo_caida.csv,"precision@20, recall@50",config/model_recalibration_params.yml
+Stock movement oficial,Alta,Stock inicial mal definido distorsiona absorción,mart_stock_movement_month.csv,"stock_inicial/final, absorción",config/stock_params.yml
+Cobranza por venta,Alta,Venta sin caja no es victoria total,mart_cobranza_by_sale.csv,"avance, saldo, pagos no asignados",config/cobranza_params.yml
+Motivos de caída NLP,Media,Texto de motivos puede revelar causas accionables,fact_caidas.parquet,motivo_cluster,config/feedback_params.yml
+Unit economics por canal,Media,No todo canal rentable es canal con volumen,mart_channel_unit_economics.csv,"ticket, costo proxy, valor riesgo",config/core_analytics_params.yml
+Pricing gap mercado,Alta,Precio sin benchmark externo es incompleto,mart_project_vs_market.csv,"brecha_m2, ranking pricing",config/market_sources.yml
+ROI neto sistema,Alta,Debe defender impacto contra costo operativo,mart_action_roi.csv,valor salvado - costo,config/core_analytics_params.yml
+Data quality por tabla,Alta,No hay valor económico sin confianza,mart_data_quality_scorecard.csv,"completeness, uniqueness, freshness",config/core_analytics_params.yml

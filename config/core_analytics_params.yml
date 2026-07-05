@@ -1,0 +1,44 @@
+project:
+  name: "CORE_ANALYTICS_30D_PLAN_v1"
+  data_mode: "crm"
+  currency: "PEN"
+  private_data_dir_env: "MLU_PRIVATE_DATA_DIR"
+  default_private_data_dir_example: "C:\\Repos\\freelance\\ml_university_ready\\data\\raw\\sperant"
+
+official_dates:
+  separacion_date: "fecha_separacion"
+  minuta_date: "fecha_minuta"
+  caida_date: "fecha_caida"
+  cuota_inicial_date: "fecha_cuota_inicial"
+
+evidence_status:
+  allowed:
+    - oficial
+    - proxy
+    - demo
+    - bloqueado
+    - retirar
+  target_mix_30d:
+    oficial_pct: 70
+    proxy_pct: 20
+    demo_or_blocked_pct: 10
+
+data_quality:
+  max_null_rate_key_fields: 0.02
+  max_duplicate_rate_key_fields: 0.01
+  freshness_days_warning: 3
+  freshness_days_critical: 7
+
+privacy:
+  forbidden_public_fields:
+    - cliente
+    - documento
+    - dni
+    - email
+    - telefono
+    - celular
+    - direccion
+    - nombre_completo
+    - codigo_proforma
+    - codigo_unidad
+    - credenciales

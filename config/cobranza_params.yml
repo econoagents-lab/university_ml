@@ -1,0 +1,8 @@
+cobranza:
+  min_payment_match_confidence: 0.85
+  overdue_days_warning: 15
+  overdue_days_critical: 30
+  outputs:
+    - data/processed/core_marts/mart_cobranza_by_sale.csv
+    - data/processed/core_marts/mart_cash_conversion_cycle.csv
+    - data/processed/core_marts/mart_pagos_no_asignados.csv

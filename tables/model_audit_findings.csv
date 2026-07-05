@@ -1,0 +1,7 @@
+area_modelo,input_o_riesgo,decision_recomendada,donde_cambiar,prioridad
+Target,caida_30d,Confirmar horizonte y evento,contracts/caida_contract.yml,Alta
+Leakage,"fecha_caida, fecha_minuta, estado final",Deben estar fuera de X/model-ready,contracts/model_ready_contract.yml,Crítico
+Baseline,"reglas simples: días tubería, cuota inicial, proyecto",ML debe superar ranking simple,config/model_recalibration_params.yml,Alta
+Ranking,precision@capacity,Más importante que accuracy,reports/model_recalibration,Alta
+Calibration,Brier / ECE / risk bands,Score como probabilidad solo si calibra,reports/model_recalibration,Media
+Policy,P0/P1 por capacidad,Threshold no sale solo de ROC; sale de capacidad comercial,config/model_recalibration_params.yml,Alta

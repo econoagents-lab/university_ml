@@ -1,0 +1,6 @@
+contrato,pregunta_economica,fuente,llave,grano,fecha_oficial,exclusiones,kpi_derivado,donde_cambiar
+Separación válida,inicio del riesgo comercial,procesos / fact_separaciones,codigo_proforma,separación,fecha_separacion,excluir anulaciones previas y duplicados,"separaciones, conversion_minuta, caida_30d",contracts/separacion_contract.yml
+Minuta válida,conversión a venta,procesos / fact_firmas_minutas,codigo_proforma,minuta,fecha_minuta,excluir minutas reversadas o sin fecha oficial,"minutas_30d, days_to_minuta",contracts/minuta_contract.yml
+Caída válida,target de pérdida comercial,fact_caidas / procesos anulación,codigo_proforma,caída,fecha_caida,excluir caídas sin separación válida,"caida_30d, days_to_caida",contracts/caida_contract.yml
+Stock disponible,inventario vendible,unidades / product_stock_pricing,codigo_unidad,unidad_mes,periodo_mes,solo departamentos para core,"stock_inicial, stock_final, meses_stock",contracts/stock_contract.yml
+Cobranza oficial,venta convertida en caja,pagos / cuota inicial / procesos,codigo_proforma + unidad,venta_pago,fecha_pago,pagos no asignados quedan como excepción,"avance_cobranza_pct, saldo",contracts/cobranza_contract.yml

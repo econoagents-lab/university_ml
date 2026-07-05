@@ -1,0 +1,11 @@
+input,decision_que_afecta,valor_recomendado,donde_cambiar,estado
+MLU_PRIVATE_DATA_DIR,Ruta de parquets CRM privados,C:\Repos\freelance\ml_university_ready\data\raw\sperant,Variable de entorno / runner PS1,Confirmado por usuario
+separacion_date,Fecha oficial de separación,fecha_separacion,config/core_analytics_params.yml > official_dates,Confirmar
+minuta_date,Fecha oficial de minuta,fecha_minuta,config/core_analytics_params.yml > official_dates,Confirmar
+caida_date,Fecha oficial de caída,fecha_caida,config/core_analytics_params.yml > official_dates,Confirmar
+cohort_window_days,Ventana para outcome 30/60d,30 y 60,config/cohort_params.yml,Confirmar
+focus_unit_type,Unidad core de stock,departamento,config/stock_params.yml,Tomar recomendado
+ranking_capacity_daily,Acciones comerciales por día,30,config/model_recalibration_params.yml,Ajustar con equipo
+p0_sla_hours,SLA P0,24,config/feedback_params.yml,Tomar recomendado
+p1_sla_hours,SLA P1,48,config/feedback_params.yml,Tomar recomendado
+public_forbidden_fields,Campos prohibidos públicos,"cliente, documento, email, teléfono, dirección",config/core_analytics_params.yml > privacy,No negociar

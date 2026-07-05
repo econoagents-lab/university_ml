@@ -1,0 +1,12 @@
+contract_name: "Separación válida"
+business_question: "inicio del riesgo comercial"
+source: "procesos / fact_separaciones"
+primary_key: "codigo_proforma"
+grain: "separación"
+official_date: "fecha_separacion"
+exclusions: "excluir anulaciones previas y duplicados"
+derived_kpis: "separaciones, conversion_minuta, caida_30d"
+owner_to_confirm: "CDO + Chief Economist"
+status: "draft_to_confirm"
+privacy:
+  public_export_allowed: false

@@ -1,0 +1,9 @@
+semana,criterio,definicion_done,prioridad
+Semana 1,Contratos oficiales escritos,5 contratos base existen y tienen owner/fuente/grano/fecha,Alta
+Semana 1,DQ scorecard,Scorecard ejecuta sobre raw/silver sin PII pública,Alta
+Semana 2,Cohortes,lead→sep y sep→minuta/caída con ventana 30/60d,Alta
+Semana 2,Stock/cobranza,stock movement y cobranza por venta existen o declaran bloqueo,Alta
+Semana 3,Modelo recalibrado,"reporte con baseline, lift, precision@k, calibration",Alta
+Semana 3,Ranking accionable,P0/P1 limitado por capacidad y valor en riesgo,Alta
+Semana 4,Feedback real,plantilla de acciones y resultados 7d/30d,Alta
+Semana 4,CEO Brief,brief de valor con estado oficial/proxy/demo,Alta

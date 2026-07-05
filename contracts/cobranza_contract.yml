@@ -1,0 +1,12 @@
+contract_name: "Cobranza oficial"
+business_question: "venta convertida en caja"
+source: "pagos / cuota inicial / procesos"
+primary_key: "codigo_proforma + unidad"
+grain: "venta_pago"
+official_date: "fecha_pago"
+exclusions: "pagos no asignados quedan como excepción"
+derived_kpis: "avance_cobranza_pct, saldo"
+owner_to_confirm: "CDO + Chief Economist"
+status: "draft_to_confirm"
+privacy:
+  public_export_allowed: false
