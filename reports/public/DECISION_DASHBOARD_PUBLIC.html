@@ -1,32 +1,19 @@
 
-<!doctype html>
-<html lang="es">
-<head>
-<meta charset="utf-8">
-<title>Public Decision Dashboard - Riesgo de Caída</title>
+<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Public Decision Dashboard · Core Value Hardened</title>
 <style>
-body { font-family: Arial, sans-serif; margin: 32px; background: #0f172a; color: #e5e7eb; }
-.card { background: #111827; border: 1px solid #334155; border-radius: 14px; padding: 18px; margin: 14px 0; }
-.grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; }
-.kpi { font-size: 26px; font-weight: 700; color: #fbbf24; }
-.label { color: #94a3b8; font-size: 12px; text-transform: uppercase; }
-table { width: 100%; border-collapse: collapse; margin-top: 12px; }
-th, td { border-bottom: 1px solid #334155; padding: 8px; text-align: left; font-size: 13px; }
-th { color: #fbbf24; }
-small { color: #94a3b8; }
-</style>
-</head>
-<body>
-<h1>Public Decision Dashboard - Riesgo de Caída</h1>
-<p><small>Solo agregados · data_mode: crm · generado: 2026-07-04T04:23:08</small></p>
+body{font-family:Arial,sans-serif;background:#0b1220;color:#e5e7eb;margin:32px}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:14px}.card{background:#111827;border:1px solid #334155;border-radius:14px;padding:18px;margin:14px 0}.kpi{font-size:28px;font-weight:800;color:#fbbf24}.label{color:#93a4bd;font-size:12px;text-transform:uppercase}table{width:100%;border-collapse:collapse}td,th{border-bottom:1px solid #334155;padding:8px;text-align:left}th{color:#fbbf24}.warn{background:rgba(251,191,36,.08);border-color:rgba(251,191,36,.4)}
+</style></head><body>
+<h1>Public Decision Dashboard · Riesgo de Caída</h1>
+<p>Solo agregados · data_mode: <b>crm</b> · priorización: <b>capacity_based_top_n</b> · generado: 2026-07-04T23:05:18</p>
+<div class="card warn"><b>Corrección ejecutiva:</b> P0/P1 ahora se calcula por capacidad comercial. La pregunta ya no es “¿qué parece riesgoso?”, sino “¿qué puede atender el equipo hoy y en las próximas 48h?”.</div>
 <div class="grid">
-  <div class="card"><div class="label">Operaciones</div><div class="kpi">763</div></div>
-  <div class="card"><div class="label">Valor total en riesgo</div><div class="kpi">S/ 21,232,580</div></div>
-  <div class="card"><div class="label">P0 + P1</div><div class="kpi">761</div></div>
-  <div class="card"><div class="label">Riesgo promedio</div><div class="kpi">0.398</div></div>
+<div class="card"><div class="label">Operaciones</div><div class="kpi">763</div></div>
+<div class="card"><div class="label">Valor total en riesgo</div><div class="kpi">S/ 21,232,580</div></div>
+<div class="card"><div class="label">P0 + P1 accionable</div><div class="kpi">100</div></div>
+<div class="card"><div class="label">Riesgo promedio</div><div class="kpi">0.398</div></div>
 </div>
-<div class="card"><h2>Top proyectos</h2><table><thead><tr><th>Proyecto</th><th>Ops</th><th>Riesgo prom.</th><th>Valor riesgo</th><th>P0/P1</th></tr></thead><tbody><tr><td>Tizón y Bueno</td><td>82</td><td>0.507</td><td>S/ 2,769,923</td><td>82</td></tr><tr><td>Edificio Cuba Connect</td><td>83</td><td>0.282</td><td>S/ 1,986,300</td><td>83</td></tr><tr><td>Edificio Urbanzen</td><td>45</td><td>0.490</td><td>S/ 1,783,879</td><td>45</td></tr><tr><td>Edificio Santa Cruz Infinite</td><td>84</td><td>0.264</td><td>S/ 1,772,296</td><td>84</td></tr><tr><td>Modena</td><td>53</td><td>0.493</td><td>S/ 1,672,003</td><td>53</td></tr><tr><td>Sialia</td><td>50</td><td>0.513</td><td>S/ 1,536,292</td><td>50</td></tr><tr><td>Fenix</td><td>45</td><td>0.473</td><td>S/ 1,383,057</td><td>45</td></tr><tr><td>Capadocia</td><td>34</td><td>0.496</td><td>S/ 1,345,408</td><td>34</td></tr><tr><td>Edificio Mariategui</td><td>37</td><td>0.439</td><td>S/ 1,239,641</td><td>37</td></tr><tr><td>Torre Nápoles</td><td>52</td><td>0.524</td><td>S/ 1,211,178</td><td>52</td></tr></tbody></table></div>
-<div class="card"><h2>Top asesores anonimizados</h2><table><thead><tr><th>Asesor anónimo</th><th>Ops</th><th>Riesgo prom.</th><th>Valor riesgo</th><th>P0/P1</th></tr></thead><tbody><tr><td>Asesor_26DEBB0E</td><td>130</td><td>0.464</td><td>S/ 4,395,202</td><td>130</td></tr><tr><td>Asesor_10B2BE3F</td><td>216</td><td>0.204</td><td>S/ 3,678,489</td><td>216</td></tr><tr><td>Asesor_C931A67B</td><td>66</td><td>0.438</td><td>S/ 2,219,468</td><td>65</td></tr><tr><td>Asesor_1F3B24E1</td><td>58</td><td>0.510</td><td>S/ 1,961,023</td><td>58</td></tr><tr><td>Asesor_B56EAA59</td><td>58</td><td>0.504</td><td>S/ 1,892,076</td><td>58</td></tr><tr><td>Asesor_2660085B</td><td>55</td><td>0.497</td><td>S/ 1,757,868</td><td>55</td></tr><tr><td>Asesor_1959B8DB</td><td>49</td><td>0.522</td><td>S/ 1,521,403</td><td>49</td></tr><tr><td>Asesor_D5DBFC78</td><td>32</td><td>0.483</td><td>S/ 998,116</td><td>32</td></tr><tr><td>Asesor_1DCEA22A</td><td>23</td><td>0.500</td><td>S/ 709,357</td><td>23</td></tr><tr><td>Asesor_BB88CD67</td><td>23</td><td>0.426</td><td>S/ 622,838</td><td>23</td></tr></tbody></table></div>
-<div class="card"><h2>Top canales</h2><table><thead><tr><th>Canal</th><th>Ops</th><th>Riesgo prom.</th><th>Valor riesgo</th><th>P0/P1</th></tr></thead><tbody><tr><td>sin_clasificar</td><td>763</td><td>0.398</td><td>S/ 21,232,580</td><td>761</td></tr></tbody></table></div>
-</body>
-</html>
+<div class="card"><h2>Top proyectos públicos</h2><p>Por defecto se anonimizan para evitar exposición competitiva.</p><table><thead><tr><th>Proyecto</th><th>Ops</th><th>Riesgo prom.</th><th>Valor riesgo</th><th>P0/P1</th></tr></thead><tbody><tr><td>Proyecto_E69D8A8F</td><td>82</td><td>0.507</td><td>S/ 2,769,923</td><td>12</td></tr><tr><td>Proyecto_7AB4D991</td><td>83</td><td>0.282</td><td>S/ 1,986,300</td><td>1</td></tr><tr><td>Proyecto_9E7EF58B</td><td>45</td><td>0.490</td><td>S/ 1,783,879</td><td>22</td></tr><tr><td>Proyecto_EB4F819B</td><td>84</td><td>0.264</td><td>S/ 1,772,296</td><td>1</td></tr><tr><td>Proyecto_8EE4E2A7</td><td>53</td><td>0.493</td><td>S/ 1,672,003</td><td>7</td></tr><tr><td>Proyecto_6DCBD067</td><td>50</td><td>0.513</td><td>S/ 1,536,292</td><td>5</td></tr><tr><td>Proyecto_A3603F55</td><td>45</td><td>0.473</td><td>S/ 1,383,057</td><td>5</td></tr><tr><td>Proyecto_C63A624A</td><td>34</td><td>0.496</td><td>S/ 1,345,408</td><td>14</td></tr><tr><td>Proyecto_B19F067A</td><td>37</td><td>0.439</td><td>S/ 1,239,641</td><td>10</td></tr><tr><td>Proyecto_6C3D163D</td><td>52</td><td>0.524</td><td>S/ 1,211,178</td><td>1</td></tr></tbody></table></div>
+<div class="card"><h2>Top asesores anonimizados</h2><table><thead><tr><th>Asesor</th><th>Ops</th><th>Riesgo prom.</th><th>Valor riesgo</th><th>P0/P1</th></tr></thead><tbody><tr><td>Asesor_26DEBB0E</td><td>130</td><td>0.464</td><td>S/ 4,395,202</td><td>30</td></tr><tr><td>Asesor_10B2BE3F</td><td>216</td><td>0.204</td><td>S/ 3,678,489</td><td>2</td></tr><tr><td>Asesor_C931A67B</td><td>66</td><td>0.438</td><td>S/ 2,219,468</td><td>14</td></tr><tr><td>Asesor_1F3B24E1</td><td>58</td><td>0.510</td><td>S/ 1,961,023</td><td>7</td></tr><tr><td>Asesor_B56EAA59</td><td>58</td><td>0.504</td><td>S/ 1,892,076</td><td>14</td></tr><tr><td>Asesor_2660085B</td><td>55</td><td>0.497</td><td>S/ 1,757,868</td><td>10</td></tr><tr><td>Asesor_1959B8DB</td><td>49</td><td>0.522</td><td>S/ 1,521,403</td><td>6</td></tr><tr><td>Asesor_D5DBFC78</td><td>32</td><td>0.483</td><td>S/ 998,116</td><td>3</td></tr><tr><td>Asesor_1DCEA22A</td><td>23</td><td>0.500</td><td>S/ 709,357</td><td>5</td></tr><tr><td>Asesor_BB88CD67</td><td>23</td><td>0.426</td><td>S/ 622,838</td><td>2</td></tr></tbody></table></div>
+<div class="card"><h2>Top canales</h2><table><thead><tr><th>Canal</th><th>Ops</th><th>Riesgo prom.</th><th>Valor riesgo</th><th>P0/P1</th></tr></thead><tbody><tr><td>sin_clasificar</td><td>763</td><td>0.398</td><td>S/ 21,232,580</td><td>100</td></tr></tbody></table></div>
+</body></html>

@@ -1,0 +1,38 @@
+name: Core Value Hardening
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - "config/core_value_hardening.yml"
+      - "src/mlu/core_value_hardening.py"
+      - "scripts/136_run_v27_core_value_hardening.py"
+      - "tests/test_core_value_hardening.py"
+
+permissions:
+  contents: read
+
+jobs:
+  core-value-hardening:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+      - name: Run core value hardening
+        run: python scripts/136_run_v27_core_value_hardening.py
+      - name: Test core value hardening
+        run: pytest -q tests/test_core_value_hardening.py
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: core-value-hardening
+          path: |
+            reports/core_value_hardening/
+            reports/public/decision_dashboard_payload_public.json
+            reports/public/DECISION_DASHBOARD_PUBLIC.html

@@ -769,6 +769,52 @@ def client_success_package_endpoint(tenant_id: str):
     except FileNotFoundError:
         raise HTTPException(status_code=404, detail="Client success package no encontrado")
 
+
+# --- v2.7 core value hardening routes ---
+@app.get("/metadata/core-value-hardening")
+def core_value_hardening_metadata_endpoint():
+    """
+    Yo expongo el manifiesto de hardening del core analítico y la demo ejecutiva reducida.
+    """
+    from src.mlu.core_value_hardening import load_manifest
+    return load_manifest()
+
+
+@app.get("/dashboard/executive-value-brief", response_class=HTMLResponse)
+def executive_value_brief_endpoint():
+    """
+    Yo sirvo la página ejecutiva única que corrige la demo dispersa.
+    """
+    from src.mlu.core_value_hardening import EXECUTIVE_BRIEF_HTML_PATH, run_core_value_hardening
+    if not EXECUTIVE_BRIEF_HTML_PATH.exists():
+        run_core_value_hardening()
+    return HTMLResponse(EXECUTIVE_BRIEF_HTML_PATH.read_text(encoding="utf-8"))
+
+
+@app.get("/decision/riesgo-caida/capacity-queue")
+def capacity_risk_queue_endpoint(limit: int = Query(50, ge=1, le=500), prioridad: str | None = None):
+    """
+    Yo devuelvo una cola segura con P0/P1 calculado por capacidad comercial.
+    """
+    from src.mlu.core_value_hardening import build_capacity_based_queue
+    df = build_capacity_based_queue()
+    if prioridad:
+        df = df[df["prioridad_capacity"] == prioridad].copy()
+    cols = ["ranking_capacity", "proyecto", "canal", "riesgo_caida", "valor_esperado_en_riesgo", "dias_en_tuberia", "prioridad_capacity", "sla_horas_capacity", "accion_capacity"]
+    items = df[[c for c in cols if c in df.columns]].head(limit).to_dict(orient="records")
+    return {"total": len(items), "items": items, "prioritization_mode": "capacity_based_top_n"}
+
+
+@app.get("/public/executive-decision-brief", response_class=HTMLResponse)
+def public_executive_decision_brief_endpoint():
+    """
+    Yo doy una puerta pública ejecutiva más clara que Swagger o el catálogo completo.
+    """
+    from src.mlu.core_value_hardening import EXECUTIVE_BRIEF_HTML_PATH, run_core_value_hardening
+    if not EXECUTIVE_BRIEF_HTML_PATH.exists():
+        run_core_value_hardening()
+    return HTMLResponse(EXECUTIVE_BRIEF_HTML_PATH.read_text(encoding="utf-8"))
+
 # --- v2.6 dashboard generated files route fix ---
 def _serve_generated_dashboard_artifact(file_path: str):
     """

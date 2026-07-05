@@ -1,0 +1,82 @@
+project:
+  version: "v2.7_core_value_hardening"
+  objective: "Reducir superficie demo, endurecer core analítico y convertir riesgo en decisión defendible."
+  public_data_mode: "crm_aggregated"
+
+risk_capacity_policy:
+  # Yo dejo de clasificar P0/P1 por umbral bruto porque eso volvió urgente casi todo.
+  # Yo priorizo según capacidad comercial: lo que el equipo realmente puede atender.
+  daily_action_capacity: 30
+  p0_count: 30
+  p1_count: 70
+  p2_count: 200
+  sort_by:
+    - valor_esperado_en_riesgo
+    - riesgo_caida
+    - dias_en_tuberia
+  sort_descending: true
+  sla_hours:
+    P0_top_capacity_today: 8
+    P1_next_48h: 48
+    P2_monitor_72h: 72
+    P3_backlog: 168
+
+public_privacy:
+  # Yo no expongo proyectos reales por defecto en demo pública.
+  anonymize_projects_public: true
+  anonymize_advisors_public: true
+  max_top_projects: 10
+  max_top_advisors: 10
+  max_top_channels: 10
+  forbidden_public_fields:
+    - cliente
+    - documento
+    - dni
+    - email
+    - telefono
+    - teléfono
+    - celular
+    - direccion
+    - dirección
+    - nombre_completo
+    - codigo_proforma
+    - codigo_unidad
+    - password
+    - secret
+    - credencial
+
+executive_demo:
+  show_only_master_doors: true
+  master_doors:
+    - executive_value_brief
+    - public_decision_dashboard
+    - risk_action_queue
+    - cohort_conversion
+    - stock_cobranza
+    - feedback_value
+  disclaimer_public_peru_examples: "Ejemplos públicos de mercado; no son clientes ni casos implementados."
+
+model_review:
+  top_k:
+    - 10
+    - 20
+    - 30
+    - 50
+    - 100
+    - 200
+  capacity_k: 30
+  minimum_lift_for_strong_claim: 1.5
+  weak_model_message: "Vender como sistema de priorización y aprendizaje, no como predicción de alta precisión."
+
+core_analytics:
+  required_reports:
+    - reports/real_marts/REAL_MART_EXPANSION.md
+    - reports/dashboard_metrics/DASHBOARD_METRICS_ENGINE.md
+    - reports/action_feedback/DECISION_ACTION_FEEDBACK_LAB.md
+    - reports/experiments/EXPERIMENTATION_CAUSAL_IMPACT_LAB.md
+    - reports/policy_engine/EXPERIMENT_POWER_AND_POLICY_ENGINE.md
+  outputs:
+    - reports/core_value_hardening/EXECUTIVE_VALUE_BRIEF.html
+    - reports/core_value_hardening/EXECUTIVE_VALUE_BRIEF.md
+    - reports/core_value_hardening/MODEL_BASELINE_LIFT_REVIEW.md
+    - reports/core_value_hardening/CAPACITY_PRIORITIZATION_REVIEW.md

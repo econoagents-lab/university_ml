@@ -1,0 +1,764 @@
+﻿operation_id,ranking_capacity,proyecto,asesor_id,canal,riesgo_caida,valor_esperado_en_riesgo,dias_en_tuberia,prioridad,sla_horas,accion_recomendada,data_mode
+OP_5FECEB66,1,Tradiciones Prime,ASESOR_1F3B24E1,sin_clasificar,0.6323,111842.97,906,P0_top_capacity_today,8,Actuar hoy: llamada asesor/gerencia y registrar resultado.,crm_aggregated_safe
+OP_6B86B273,2,Tradiciones Prime,ASESOR_1F3B24E1,sin_clasificar,0.627,93577.18,372,P0_top_capacity_today,8,Actuar hoy: llamada asesor/gerencia y registrar resultado.,crm_aggregated_safe
+OP_D4735E3A,3,Tizón y Bueno,ASESOR_26DEBB0E,sin_clasificar,0.6473,83516.62,665,P0_top_capacity_today,8,Actuar hoy: llamada asesor/gerencia y registrar resultado.,crm_aggregated_safe
+OP_4E074085,4,Tizón y Bueno,ASESOR_26DEBB0E,sin_clasificar,0.6337,80980.05,610,P0_top_capacity_today,8,Actuar hoy: llamada asesor/gerencia y registrar resultado.,crm_aggregated_safe
+OP_4B227777,5,Capadocia,ASESOR_2660085B,sin_clasificar,0.6093,78141.68,96,P0_top_capacity_today,8,Actuar hoy: llamada asesor/gerencia y registrar resultado.,crm_aggregated_safe
+OP_EF2D127D,6,Matera,ASESOR_B56EAA59,sin_clasificar,0.5456,76219.75,315,P0_top_capacity_today,8,Actuar hoy: llamada asesor/gerencia y registrar resultado.,crm_aggregated_safe
+OP_E7F6C011,7,Tradiciones Prime,ASESOR_B56EAA59,sin_clasificar,0.6152,75845.0,830,P0_top_capacity_today,8,Actuar hoy: llamada asesor/gerencia y registrar resultado.,crm_aggregated_safe
+OP_7902699B,8,Sialia,ASESOR_C931A67B,sin_clasificar,0.6289,74721.85,501,P0_top_capacity_today,8,Actuar hoy: llamada asesor/gerencia y registrar resultado.,crm_aggregated_safe
+OP_2C624232,9,Fenix,ASESOR_D5DBFC78,sin_clasificar,0.6219,70630.45,334,P0_top_capacity_today,8,Actuar hoy: llamada asesor/gerencia y registrar resultado.,crm_aggregated_safe
+OP_19581E27,10,Capadocia,ASESOR_2660085B,sin_clasificar,0.6166,69363.5,340,P0_top_capacity_today,8,Actuar hoy: llamada asesor/gerencia y registrar resultado.,crm_aggregated_safe
+OP_4A44DC15,11,Fenix,ASESOR_26DEBB0E,sin_clasificar,0.6243,67068.74,416,P0_top_capacity_today,8,Actuar hoy: llamada asesor/gerencia y registrar resultado.,crm_aggregated_safe
+OP_4FC82B26,12,Tizón y Bueno,ASESOR_B56EAA59,sin_clasificar,0.6327,63968.9,520,P0_top_capacity_today,8,Actuar hoy: llamada asesor/gerencia y registrar resultado.,crm_aggregated_safe
+OP_6B51D431,13,Edificio Mariategui,ASESOR_1F3B24E1,sin_clasificar,0.6638,62557.15,594,P0_top_capacity_today,8,Actuar hoy: llamada asesor/gerencia y registrar resultado.,crm_aggregated_safe
+OP_3FDBA35F,14,Edificio Mariategui,ASESOR_B56EAA59,sin_clasificar,0.6345,60432.4,366,P0_top_capacity_today,8,Actuar hoy: llamada asesor/gerencia y registrar resultado.,crm_aggregated_safe
+OP_8527A891,15,Edificio Urbanzen,ASESOR_B56EAA59,sin_clasificar,0.571,59958.58,228,P0_top_capacity_today,8,Actuar hoy: llamada asesor/gerencia y registrar resultado.,crm_aggregated_safe
+OP_E629FA65,16,Edificio Mariategui,ASESOR_C931A67B,sin_clasificar,0.6131,59155.19,662,P0_top_capacity_today,8,Actuar hoy: llamada asesor/gerencia y registrar resultado.,crm_aggregated_safe
+OP_B17EF6D1,17,Capadocia,ASESOR_1DCEA22A,sin_clasificar,0.5802,57488.5,308,P0_top_capacity_today,8,Actuar hoy: llamada asesor/gerencia y registrar resultado.,crm_aggregated_safe
+OP_4523540F,18,Sialia,ASESOR_1F3B24E1,sin_clasificar,0.6309,57311.32,75,P0_top_capacity_today,8,Actuar hoy: llamada asesor/gerencia y registrar resultado.,crm_aggregated_safe
+OP_4EC9599F,19,Tizón y Bueno,ASESOR_1F3B24E1,sin_clasificar,0.6182,56972.73,222,P0_top_capacity_today,8,Actuar hoy: llamada asesor/gerencia y registrar resultado.,crm_aggregated_safe
+OP_9400F1B2,20,Alicanto,ASESOR_B56EAA59,sin_clasificar,0.6152,56970.86,9,P0_top_capacity_today,8,Actuar hoy: llamada asesor/gerencia y registrar resultado.,crm_aggregated_safe
+OP_F5CA38F7,21,Modena,ASESOR_1959B8DB,sin_clasificar,0.5771,55516.02,347,P0_top_capacity_today,8,Actuar hoy: llamada asesor/gerencia y registrar resultado.,crm_aggregated_safe
+OP_6F4B6612,22,Capadocia,ASESOR_C931A67B,sin_clasificar,0.5125,55445.76,262,P0_top_capacity_today,8,Actuar hoy: llamada asesor/gerencia y registrar resultado.,crm_aggregated_safe
+OP_785F3EC7,23,Tizón y Bueno,ASESOR_1959B8DB,sin_clasificar,0.6146,55128.03,473,P0_top_capacity_today,8,Actuar hoy: llamada asesor/gerencia y registrar resultado.,crm_aggregated_safe
+OP_535FA30D,24,Edificio Urbanzen,ASESOR_2660085B,sin_clasificar,0.5574,54562.89,228,P0_top_capacity_today,8,Actuar hoy: llamada asesor/gerencia y registrar resultado.,crm_aggregated_safe
+OP_C2356069,25,Edificio Urbanzen,ASESOR_59C3D8E4,sin_clasificar,0.5369,54521.12,230,P0_top_capacity_today,8,Actuar hoy: llamada asesor/gerencia y registrar resultado.,crm_aggregated_safe
+OP_B7A56873,26,Sialia,ASESOR_B56EAA59,sin_clasificar,0.6175,54435.52,24,P0_top_capacity_today,8,Actuar hoy: llamada asesor/gerencia y registrar resultado.,crm_aggregated_safe
+OP_5F9C4AB0,27,Edificio Mariategui,ASESOR_26DEBB0E,sin_clasificar,0.5874,54363.92,615,P0_top_capacity_today,8,Actuar hoy: llamada asesor/gerencia y registrar resultado.,crm_aggregated_safe
+OP_670671CD,28,Fenix,ASESOR_26DEBB0E,sin_clasificar,0.5797,54341.07,416,P0_top_capacity_today,8,Actuar hoy: llamada asesor/gerencia y registrar resultado.,crm_aggregated_safe
+OP_59E19706,29,Modena,ASESOR_2660085B,sin_clasificar,0.5495,54316.95,18,P0_top_capacity_today,8,Actuar hoy: llamada asesor/gerencia y registrar resultado.,crm_aggregated_safe
+OP_35135AAA,30,Tizón y Bueno,ASESOR_2660085B,sin_clasificar,0.6096,54139.93,430,P0_top_capacity_today,8,Actuar hoy: llamada asesor/gerencia y registrar resultado.,crm_aggregated_safe
+OP_624B60C5,31,Edificio Valdizan,ASESOR_C931A67B,sin_clasificar,0.5893,54122.65,1575,P1_next_48h,48,Actuar en 48h: seguimiento con compromiso y próxima acción.,crm_aggregated_safe
+OP_EB1E33E8,32,Edificio Urbanzen,ASESOR_B56EAA59,sin_clasificar,0.5572,53876.06,347,P1_next_48h,48,Actuar en 48h: seguimiento con compromiso y próxima acción.,crm_aggregated_safe
+OP_E29C9C18,33,Torre Nápoles,ASESOR_C931A67B,sin_clasificar,0.5596,53643.76,21,P1_next_48h,48,Actuar en 48h: seguimiento con compromiso y próxima acción.,crm_aggregated_safe
+OP_C6F3AC57,34,Edificio Mariategui,ASESOR_1F3B24E1,sin_clasificar,0.6244,53594.52,627,P1_next_48h,48,Actuar en 48h: seguimiento con compromiso y próxima acción.,crm_aggregated_safe
+OP_86E50149,35,Capadocia,ASESOR_26DEBB0E,sin_clasificar,0.5565,53582.57,302,P1_next_48h,48,Actuar en 48h: seguimiento con compromiso y próxima acción.,crm_aggregated_safe
+OP_9F14025A,36,Edificio Mariategui,ASESOR_C931A67B,sin_clasificar,0.6061,53184.77,822,P1_next_48h,48,Actuar en 48h: seguimiento con compromiso y próxima acción.,crm_aggregated_safe
+OP_76A50887,37,Capadocia,ASESOR_2660085B,sin_clasificar,0.5486,53050.69,390,P1_next_48h,48,Actuar en 48h: seguimiento con compromiso y próxima acción.,crm_aggregated_safe
+OP_7A61B537,38,Capadocia,ASESOR_C931A67B,sin_clasificar,0.5466,53050.15,354,P1_next_48h,48,Actuar en 48h: seguimiento con compromiso y próxima acción.,crm_aggregated_safe
+OP_AEA92132,39,Edificio Mariategui,ASESOR_B56EAA59,sin_clasificar,0.6175,52737.83,630,P1_next_48h,48,Actuar en 48h: seguimiento con compromiso y próxima acción.,crm_aggregated_safe
+OP_0B918943,40,Capadocia,ASESOR_1959B8DB,sin_clasificar,0.5619,52196.71,292,P1_next_48h,48,Actuar en 48h: seguimiento con compromiso y próxima acción.,crm_aggregated_safe
+OP_D59ECED1,41,Capadocia,ASESOR_26DEBB0E,sin_clasificar,0.5525,52163.57,464,P1_next_48h,48,Actuar en 48h: seguimiento con compromiso y próxima acción.,crm_aggregated_safe
+OP_3D914F93,42,Capadocia,ASESOR_2660085B,sin_clasificar,0.5481,52123.89,467,P1_next_48h,48,Actuar en 48h: seguimiento con compromiso y próxima acción.,crm_aggregated_safe
+OP_73475CB4,43,Edificio Urbanzen,ASESOR_26DEBB0E,sin_clasificar,0.5362,51719.73,763,P1_next_48h,48,Actuar en 48h: seguimiento con compromiso y próxima acción.,crm_aggregated_safe
+OP_44CB730C,44,Edificio Urbanzen,ASESOR_1959B8DB,sin_clasificar,0.5426,51679.7,289,P1_next_48h,48,Actuar en 48h: seguimiento con compromiso y próxima acción.,crm_aggregated_safe
+OP_71EE45A3,45,Edificio Mariategui,ASESOR_C931A67B,sin_clasificar,0.5633,51401.38,971,P1_next_48h,48,Actuar en 48h: seguimiento con compromiso y próxima acción.,crm_aggregated_safe
+OP_811786AD,46,Tizón y Bueno,ASESOR_1DCEA22A,sin_clasificar,0.6329,50980.16,323,P1_next_48h,48,Actuar en 48h: seguimiento con compromiso y próxima acción.,crm_aggregated_safe
+OP_25FC0E70,47,Edificio Urbanzen,ASESOR_984C1E02,sin_clasificar,0.557,50349.91,209,P1_next_48h,48,Actuar en 48h: seguimiento con compromiso y próxima acción.,crm_aggregated_safe
+OP_31489056,48,Edificio Mariategui,ASESOR_C931A67B,sin_clasificar,0.5727,50157.85,629,P1_next_48h,48,Actuar en 48h: seguimiento con compromiso y próxima acción.,crm_aggregated_safe
+OP_98010BD9,49,Edificio Valdizan,ASESOR_C931A67B,sin_clasificar,0.5825,50116.88,1675,P1_next_48h,48,Actuar en 48h: seguimiento con compromiso y próxima acción.,crm_aggregated_safe
+OP_0E17DACA,50,Modena,ASESOR_1F3B24E1,sin_clasificar,0.5702,49948.84,270,P1_next_48h,48,Actuar en 48h: seguimiento con compromiso y próxima acción.,crm_aggregated_safe
+OP_1A656259,51,Edificio Urbanzen,ASESOR_26DEBB0E,sin_clasificar,0.5198,48988.94,745,P1_next_48h,48,Actuar en 48h: seguimiento con compromiso y próxima acción.,crm_aggregated_safe
+OP_031B4AF5,52,Edificio Urbanzen,ASESOR_B56EAA59,sin_clasificar,0.5568,48909.9,793,P1_next_48h,48,Actuar en 48h: seguimiento con compromiso y próxima acción.,crm_aggregated_safe
+OP_41CFC0D1,53,Modena,ASESOR_D5DBFC78,sin_clasificar,0.5524,48890.3,395,P1_next_48h,48,Actuar en 48h: seguimiento con compromiso y próxima acción.,crm_aggregated_safe
+OP_2858DCD1,54,Edificio Urbanzen,ASESOR_1DCEA22A,sin_clasificar,0.5525,48875.36,269,P1_next_48h,48,Actuar en 48h: seguimiento con compromiso y próxima acción.,crm_aggregated_safe
+OP_2FCA346D,55,Tizón y Bueno,ASESOR_BB88CD67,sin_clasificar,0.5848,48740.99,250,P1_next_48h,48,Actuar en 48h: seguimiento con compromiso y próxima acción.,crm_aggregated_safe
+OP_02D20BBD,56,Capadocia,ASESOR_26DEBB0E,sin_clasificar,0.5442,48566.89,445,P1_next_48h,48,Actuar en 48h: seguimiento con compromiso y próxima acción.,crm_aggregated_safe
+OP_7688B6EF,57,Edificio Urbanzen,ASESOR_26DEBB0E,sin_clasificar,0.528,48316.36,245,P1_next_48h,48,Actuar en 48h: seguimiento con compromiso y próxima acción.,crm_aggregated_safe
+OP_C837649C,58,Edificio Urbanzen,ASESOR_26DEBB0E,sin_clasificar,0.5383,48233.51,803,P1_next_48h,48,Actuar en 48h: seguimiento con compromiso y próxima acción.,crm_aggregated_safe
+OP_6208EF0F,59,Tizón y Bueno,ASESOR_1DCEA22A,sin_clasificar,0.5962,48203.17,429,P1_next_48h,48,Actuar en 48h: seguimiento con compromiso y próxima acción.,crm_aggregated_safe
+OP_3E1E967E,60,Alicanto,ASESOR_26DEBB0E,sin_clasificar,0.5711,48085.62,463,P1_next_48h,48,Actuar en 48h: seguimiento con compromiso y próxima acción.,crm_aggregated_safe
+OP_39FA9EC1,61,Tizón y Bueno,ASESOR_B56EAA59,sin_clasificar,0.6245,47998.04,617,P1_next_48h,48,Actuar en 48h: seguimiento con compromiso y próxima acción.,crm_aggregated_safe
+OP_D029FA3A,62,Alicanto,ASESOR_1959B8DB,sin_clasificar,0.5963,47960.18,672,P1_next_48h,48,Actuar en 48h: seguimiento con compromiso y próxima acción.,crm_aggregated_safe
+OP_81B8A03F,63,Fenix,ASESOR_26DEBB0E,sin_clasificar,0.5847,47905.56,1,P1_next_48h,48,Actuar en 48h: seguimiento con compromiso y próxima acción.,crm_aggregated_safe
+OP_DA4EA2A5,64,Edificio Urbanzen,ASESOR_B56EAA59,sin_clasificar,0.5262,47902.35,226,P1_next_48h,48,Actuar en 48h: seguimiento con compromiso y próxima acción.,crm_aggregated_safe
+OP_A68B412C,65,Matera,ASESOR_BB88CD67,sin_clasificar,0.4896,47618.57,296,P1_next_48h,48,Actuar en 48h: seguimiento con compromiso y próxima acción.,crm_aggregated_safe
+OP_108C995B,66,Edificio Valdizan,ASESOR_26DEBB0E,sin_clasificar,0.6027,47455.73,1321,P1_next_48h,48,Actuar en 48h: seguimiento con compromiso y próxima acción.,crm_aggregated_safe
+OP_3ADA92F2,67,Modena,ASESOR_D5DBFC78,sin_clasificar,0.553,47283.92,283,P1_next_48h,48,Actuar en 48h: seguimiento con compromiso y próxima acción.,crm_aggregated_safe
+OP_49D180EC,68,Capadocia,ASESOR_26DEBB0E,sin_clasificar,0.533,47266.66,154,P1_next_48h,48,Actuar en 48h: seguimiento con compromiso y próxima acción.,crm_aggregated_safe
+OP_A21855DA,69,Matera,ASESOR_26DEBB0E,sin_clasificar,0.4836,46189.01,164,P1_next_48h,48,Actuar en 48h: seguimiento con compromiso y próxima acción.,crm_aggregated_safe
+OP_C75CB66A,70,Edificio Valdizan,ASESOR_10B2BE3F,sin_clasificar,0.3199,46070.21,1331,P1_next_48h,48,Actuar en 48h: seguimiento con compromiso y próxima acción.,crm_aggregated_safe
+OP_FF5A1AE0,71,Fenix,ASESOR_B56EAA59,sin_clasificar,0.5792,46047.44,17,P1_next_48h,48,Actuar en 48h: seguimiento con compromiso y próxima acción.,crm_aggregated_safe
+OP_7F2253D7,72,Edificio Urbanzen,ASESOR_1DCEA22A,sin_clasificar,0.5435,45780.84,372,P1_next_48h,48,Actuar en 48h: seguimiento con compromiso y próxima acción.,crm_aggregated_safe
+OP_87226162,73,Modena,ASESOR_26DEBB0E,sin_clasificar,0.5611,45709.28,160,P1_next_48h,48,Actuar en 48h: seguimiento con compromiso y próxima acción.,crm_aggregated_safe
+OP_96061E92,74,Edificio Urbanzen,ASESOR_26DEBB0E,sin_clasificar,0.5142,45641.29,843,P1_next_48h,48,Actuar en 48h: seguimiento con compromiso y próxima acción.,crm_aggregated_safe
+OP_EB624DBE,75,Tizón y Bueno,ASESOR_C931A67B,sin_clasificar,0.5923,45567.02,358,P1_next_48h,48,Actuar en 48h: seguimiento con compromiso y próxima acción.,crm_aggregated_safe
+OP_F369CB89,76,Alicanto,ASESOR_26DEBB0E,sin_clasificar,0.5882,45210.63,158,P1_next_48h,48,Actuar en 48h: seguimiento con compromiso y próxima acción.,crm_aggregated_safe
+OP_F74EFABE,77,Edificio Urbanzen,ASESOR_59C3D8E4,sin_clasificar,0.4917,45175.38,135,P1_next_48h,48,Actuar en 48h: seguimiento con compromiso y próxima acción.,crm_aggregated_safe
+OP_A88A7902,78,Edificio Valdizan,ASESOR_26DEBB0E,sin_clasificar,0.4631,45035.53,1603,P1_next_48h,48,Actuar en 48h: seguimiento con compromiso y próxima acción.,crm_aggregated_safe
+OP_349C4120,79,Edificio Santa Cruz Infinite,ASESOR_7178B923,sin_clasificar,0.3417,44950.42,1680,P1_next_48h,48,Actuar en 48h: seguimiento con compromiso y próxima acción.,crm_aggregated_safe
+OP_98A3AB7C,80,Sialia,ASESOR_26DEBB0E,sin_clasificar,0.5888,44806.02,98,P1_next_48h,48,Actuar en 48h: seguimiento con compromiso y próxima acción.,crm_aggregated_safe
+OP_48449A14,81,Edificio Urbanzen,ASESOR_05B30E98,sin_clasificar,0.5248,44766.64,868,P1_next_48h,48,Actuar en 48h: seguimiento con compromiso y próxima acción.,crm_aggregated_safe
+OP_5316CA1C,82,Edificio Urbanzen,ASESOR_26DEBB0E,sin_clasificar,0.5073,44653.5,834,P1_next_48h,48,Actuar en 48h: seguimiento con compromiso y próxima acción.,crm_aggregated_safe
+OP_A46E3763,83,Sialia,ASESOR_59C3D8E4,sin_clasificar,0.56,44482.97,124,P1_next_48h,48,Actuar en 48h: seguimiento con compromiso y próxima acción.,crm_aggregated_safe
+OP_BBB965AB,84,Alicanto,ASESOR_2660085B,sin_clasificar,0.565,44358.07,430,P1_next_48h,48,Actuar en 48h: seguimiento con compromiso y próxima acción.,crm_aggregated_safe
+OP_44C8031C,85,Edificio Valdizan,ASESOR_81EF4E05,sin_clasificar,0.4599,44337.68,1357,P1_next_48h,48,Actuar en 48h: seguimiento con compromiso y próxima acción.,crm_aggregated_safe
+OP_B4944C6F,86,Edificio Valdizan,ASESOR_26DEBB0E,sin_clasificar,0.5884,44126.81,1225,P1_next_48h,48,Actuar en 48h: seguimiento con compromiso y próxima acción.,crm_aggregated_safe
+OP_434C9B5A,87,Edificio Saenz,ASESOR_C931A67B,sin_clasificar,0.4808,44119.99,1189,P1_next_48h,48,Actuar en 48h: seguimiento con compromiso y próxima acción.,crm_aggregated_safe
+OP_BDD2D3AF,88,Modena,ASESOR_26DEBB0E,sin_clasificar,0.524,44019.43,30,P1_next_48h,48,Actuar en 48h: seguimiento con compromiso y próxima acción.,crm_aggregated_safe
+OP_8B940BE7,89,Capadocia,ASESOR_B56EAA59,sin_clasificar,0.5429,44017.59,297,P1_next_48h,48,Actuar en 48h: seguimiento con compromiso y próxima acción.,crm_aggregated_safe
+OP_CD70BEA0,90,Alicanto,ASESOR_2660085B,sin_clasificar,0.5755,43942.87,313,P1_next_48h,48,Actuar en 48h: seguimiento con compromiso y próxima acción.,crm_aggregated_safe
+OP_69F59C27,91,Edificio Urbanzen,ASESOR_C931A67B,sin_clasificar,0.4687,43942.35,426,P1_next_48h,48,Actuar en 48h: seguimiento con compromiso y próxima acción.,crm_aggregated_safe
+OP_1DA51B8D,92,Edificio Urbanzen,ASESOR_26DEBB0E,sin_clasificar,0.527,43862.5,716,P1_next_48h,48,Actuar en 48h: seguimiento con compromiso y próxima acción.,crm_aggregated_safe
+OP_82416496,93,Tizón y Bueno,ASESOR_C931A67B,sin_clasificar,0.5411,43802.12,319,P1_next_48h,48,Actuar en 48h: seguimiento con compromiso y próxima acción.,crm_aggregated_safe
+OP_6E400187,94,Capadocia,ASESOR_26DEBB0E,sin_clasificar,0.5528,43755.93,283,P1_next_48h,48,Actuar en 48h: seguimiento con compromiso y próxima acción.,crm_aggregated_safe
+OP_E3D6C4D4,95,Matera,ASESOR_26DEBB0E,sin_clasificar,0.5055,43516.63,312,P1_next_48h,48,Actuar en 48h: seguimiento con compromiso y próxima acción.,crm_aggregated_safe
+OP_AD48FF99,96,Edificio Urbanzen,ASESOR_2660085B,sin_clasificar,0.5096,43121.32,405,P1_next_48h,48,Actuar en 48h: seguimiento con compromiso y próxima acción.,crm_aggregated_safe
+OP_7B1A278F,97,Edificio Urbanzen,ASESOR_1959B8DB,sin_clasificar,0.5272,43099.08,389,P1_next_48h,48,Actuar en 48h: seguimiento con compromiso y próxima acción.,crm_aggregated_safe
+OP_D6D824AB,98,Matera,ASESOR_26DEBB0E,sin_clasificar,0.471,43095.63,287,P1_next_48h,48,Actuar en 48h: seguimiento con compromiso y próxima acción.,crm_aggregated_safe
+OP_29DB0C67,99,Edificio Cuba Connect,ASESOR_10B2BE3F,sin_clasificar,0.2853,42855.54,1067,P1_next_48h,48,Actuar en 48h: seguimiento con compromiso y próxima acción.,crm_aggregated_safe
+OP_8C1F1046,100,Edificio Mariategui,ASESOR_26DEBB0E,sin_clasificar,0.5201,42809.91,1388,P1_next_48h,48,Actuar en 48h: seguimiento con compromiso y próxima acción.,crm_aggregated_safe
+OP_AD573668,101,Edificio Urbanzen,ASESOR_C931A67B,sin_clasificar,0.4728,42380.97,558,P2_monitor_72h,72,Monitorear 72h: revisar señales y objeciones.,crm_aggregated_safe
+OP_16DC368A,102,Modena,ASESOR_26DEBB0E,sin_clasificar,0.5307,42361.3,203,P2_monitor_72h,72,Monitorear 72h: revisar señales y objeciones.,crm_aggregated_safe
+OP_37834F2F,103,Edificio Cuba Connect,ASESOR_10B2BE3F,sin_clasificar,0.2853,42337.0,1806,P2_monitor_72h,72,Monitorear 72h: revisar señales y objeciones.,crm_aggregated_safe
+OP_454F63AC,104,Edificio Valdizan,ASESOR_7178B923,sin_clasificar,0.4297,42028.96,1518,P2_monitor_72h,72,Monitorear 72h: revisar señales y objeciones.,crm_aggregated_safe
+OP_5EF6FDF3,105,Alicanto,ASESOR_C931A67B,sin_clasificar,0.5288,41985.66,416,P2_monitor_72h,72,Monitorear 72h: revisar señales y objeciones.,crm_aggregated_safe
+OP_1253E937,106,Tizón y Bueno,ASESOR_C931A67B,sin_clasificar,0.541,41953.63,630,P2_monitor_72h,72,Monitorear 72h: revisar señales y objeciones.,crm_aggregated_safe
+OP_482D9673,107,Modena,ASESOR_2660085B,sin_clasificar,0.5213,41862.17,369,P2_monitor_72h,72,Monitorear 72h: revisar señales y objeciones.,crm_aggregated_safe
+OP_3346F2BB,108,Edificio Urbanzen,ASESOR_BB88CD67,sin_clasificar,0.4804,41745.13,228,P2_monitor_72h,72,Monitorear 72h: revisar señales y objeciones.,crm_aggregated_safe
+OP_9537F32E,109,Edificio Saenz,ASESOR_C931A67B,sin_clasificar,0.403,41398.38,2107,P2_monitor_72h,72,Monitorear 72h: revisar señales y objeciones.,crm_aggregated_safe
+OP_0FD42B3F,110,Edificio Mariategui,ASESOR_26DEBB0E,sin_clasificar,0.5242,41314.84,1553,P2_monitor_72h,72,Monitorear 72h: revisar señales y objeciones.,crm_aggregated_safe
+OP_9BDB2AF6,111,Edificio Urbanzen,ASESOR_C931A67B,sin_clasificar,0.4598,41187.56,644,P2_monitor_72h,72,Monitorear 72h: revisar señales y objeciones.,crm_aggregated_safe
+OP_F6E0A1E2,112,Edificio Urbanzen,ASESOR_2660085B,sin_clasificar,0.4962,40934.37,347,P2_monitor_72h,72,Monitorear 72h: revisar señales y objeciones.,crm_aggregated_safe
+OP_B1556DEA,113,Edificio Mariategui,ASESOR_26DEBB0E,sin_clasificar,0.5256,40702.43,1365,P2_monitor_72h,72,Monitorear 72h: revisar señales y objeciones.,crm_aggregated_safe
+OP_6C658EE8,114,Edificio Mariategui,ASESOR_26DEBB0E,sin_clasificar,0.5085,40557.28,1530,P2_monitor_72h,72,Monitorear 72h: revisar señales y objeciones.,crm_aggregated_safe
+OP_9F1F9DCE,115,Edificio Valdizan,ASESOR_81EF4E05,sin_clasificar,0.5338,40369.81,1239,P2_monitor_72h,72,Monitorear 72h: revisar señales y objeciones.,crm_aggregated_safe
+OP_28DAE7C8,116,Alicanto,ASESOR_2660085B,sin_clasificar,0.5287,39764.06,12,P2_monitor_72h,72,Monitorear 72h: revisar señales y objeciones.,crm_aggregated_safe
+OP_E5B861A6,117,Edificio Valdizan,ASESOR_C931A67B,sin_clasificar,0.5289,39666.85,1347,P2_monitor_72h,72,Monitorear 72h: revisar señales y objeciones.,crm_aggregated_safe
+OP_2AC878B0,118,Sialia,ASESOR_26DEBB0E,sin_clasificar,0.5382,39659.16,228,P2_monitor_72h,72,Monitorear 72h: revisar señales y objeciones.,crm_aggregated_safe
+OP_85DAAF6F,119,Edificio Cuba Connect,ASESOR_26DEBB0E,sin_clasificar,0.4328,39652.9,1655,P2_monitor_72h,72,Monitorear 72h: revisar señales y objeciones.,crm_aggregated_safe
+OP_3038BFB5,120,Edificio Valdizan,ASESOR_7178B923,sin_clasificar,0.4319,39533.5,1441,P2_monitor_72h,72,Monitorear 72h: revisar señales y objeciones.,crm_aggregated_safe
+OP_2ABACA49,121,Modena,ASESOR_BB88CD67,sin_clasificar,0.5035,39500.03,281,P2_monitor_72h,72,Monitorear 72h: revisar señales y objeciones.,crm_aggregated_safe
+OP_89AA1E58,122,Tizón y Bueno,ASESOR_26DEBB0E,sin_clasificar,0.5491,39355.53,453,P2_monitor_72h,72,Monitorear 72h: revisar señales y objeciones.,crm_aggregated_safe
+OP_1BE00341,123,Tizón y Bueno,ASESOR_1DCEA22A,sin_clasificar,0.5444,39319.9,344,P2_monitor_72h,72,Monitorear 72h: revisar señales y objeciones.,crm_aggregated_safe
+OP_A665A459,124,Matera,ASESOR_26DEBB0E,sin_clasificar,0.4647,39316.61,225,P2_monitor_72h,72,Monitorear 72h: revisar señales y objeciones.,crm_aggregated_safe
+OP_6AFFDAE3,125,Capadocia,ASESOR_1959B8DB,sin_clasificar,0.5173,39106.48,15,P2_monitor_72h,72,Monitorear 72h: revisar señales y objeciones.,crm_aggregated_safe
+OP_0F8EF337,126,Edificio Cuba Connect,ASESOR_10B2BE3F,sin_clasificar,0.2853,39053.47,1806,P2_monitor_72h,72,Monitorear 72h: revisar señales y objeciones.,crm_aggregated_safe
+OP_65A69990,127,Edificio Mariategui,ASESOR_C931A67B,sin_clasificar,0.4238,39035.27,629,P2_monitor_72h,72,Monitorear 72h: revisar señales y objeciones.,crm_aggregated_safe
+OP_922C7954,128,Alicanto,ASESOR_1959B8DB,sin_clasificar,0.5205,38961.5,334,P2_monitor_72h,72,Monitorear 72h: revisar señales y objeciones.,crm_aggregated_safe
+OP_2747B7C7,129,Fenix,ASESOR_1F3B24E1,sin_clasificar,0.5194,38956.6,15,P2_monitor_72h,72,Monitorear 72h: revisar señales y objeciones.,crm_aggregated_safe
+OP_6566230E,130,Edificio Urbanzen,ASESOR_C931A67B,sin_clasificar,0.469,38841.15,798,P2_monitor_72h,72,Monitorear 72h: revisar señales y objeciones.,crm_aggregated_safe
+OP_38D66D96,131,Edificio Urbanzen,ASESOR_1959B8DB,sin_clasificar,0.4042,38678.6,661,P2_monitor_72h,72,Monitorear 72h: revisar señales y objeciones.,crm_aggregated_safe
+OP_EECA91FD,132,Edificio Saenz,ASESOR_C931A67B,sin_clasificar,0.3827,38527.2,2114,P2_monitor_72h,72,Monitorear 72h: revisar señales y objeciones.,crm_aggregated_safe
+OP_DBB1DED6,133,Tizón y Bueno,ASESOR_2660085B,sin_clasificar,0.5646,38109.33,256,P2_monitor_72h,72,Monitorear 72h: revisar señales y objeciones.,crm_aggregated_safe
+OP_D2F48367,134,Sialia,ASESOR_2660085B,sin_clasificar,0.5337,38039.6,462,P2_monitor_72h,72,Monitorear 72h: revisar señales y objeciones.,crm_aggregated_safe
+OP_5D389F5E,135,Capadocia,ASESOR_26DEBB0E,sin_clasificar,0.5008,37915.81,346,P2_monitor_72h,72,Monitorear 72h: revisar señales y objeciones.,crm_aggregated_safe
+OP_13671077,136,Tizón y Bueno,ASESOR_D5DBFC78,sin_clasificar,0.5203,37857.28,673,P2_monitor_72h,72,Monitorear 72h: revisar señales y objeciones.,crm_aggregated_safe
+OP_36EBE205,137,Edificio Santa Cruz Infinite,ASESOR_10B2BE3F,sin_clasificar,0.256,37824.47,2566,P2_monitor_72h,72,Monitorear 72h: revisar señales y objeciones.,crm_aggregated_safe
+OP_D80EAE6E,138,Matera,ASESOR_C931A67B,sin_clasificar,0.4843,37777.28,345,P2_monitor_72h,72,Monitorear 72h: revisar señales y objeciones.,crm_aggregated_safe
+OP_D6A40317,139,Edificio Cuba Connect,ASESOR_26DEBB0E,sin_clasificar,0.3704,37688.39,1513,P2_monitor_72h,72,Monitorear 72h: revisar señales y objeciones.,crm_aggregated_safe
+OP_8D27BA37,140,Sialia,ASESOR_26DEBB0E,sin_clasificar,0.5402,37624.27,471,P2_monitor_72h,72,Monitorear 72h: revisar señales y objeciones.,crm_aggregated_safe
+OP_DBAE772D,141,Tizón y Bueno,ASESOR_D5DBFC78,sin_clasificar,0.4545,37498.42,863,P2_monitor_72h,72,Monitorear 72h: revisar señales y objeciones.,crm_aggregated_safe
+OP_2C7D5490,142,Edificio Valdizan,ASESOR_7178B923,sin_clasificar,0.4317,37445.09,1468,P2_monitor_72h,72,Monitorear 72h: revisar señales y objeciones.,crm_aggregated_safe
+OP_D4EE9F58,143,Edificio Santa Cruz Infinite,ASESOR_26DEBB0E,sin_clasificar,0.4703,37359.88,1390,P2_monitor_72h,72,Monitorear 72h: revisar señales y objeciones.,crm_aggregated_safe
+OP_D6F0C71E,144,Edificio Urbanzen,ASESOR_26DEBB0E,sin_clasificar,0.387,37308.64,257,P2_monitor_72h,72,Monitorear 72h: revisar señales y objeciones.,crm_aggregated_safe
+OP_5EC1A0C9,145,Tizón y Bueno,ASESOR_B56EAA59,sin_clasificar,0.5297,37269.59,263,P2_monitor_72h,72,Monitorear 72h: revisar señales y objeciones.,crm_aggregated_safe
+OP_BE47ADDB,146,Tizón y Bueno,ASESOR_1F3B24E1,sin_clasificar,0.514,37207.54,592,P2_monitor_72h,72,Monitorear 72h: revisar señales y objeciones.,crm_aggregated_safe
+OP_0A5B046D,147,Tizón y Bueno,ASESOR_26DEBB0E,sin_clasificar,0.5256,37201.15,791,P2_monitor_72h,72,Monitorear 72h: revisar señales y objeciones.,crm_aggregated_safe
+OP_1D28C120,148,Edificio Santa Cruz Infinite,ASESOR_26DEBB0E,sin_clasificar,0.4703,37200.72,1451,P2_monitor_72h,72,Monitorear 72h: revisar señales y objeciones.,crm_aggregated_safe
+OP_EC2E990B,149,Edificio Urbanzen,ASESOR_1F3B24E1,sin_clasificar,0.4936,37198.21,635,P2_monitor_72h,72,Monitorear 72h: revisar señales y objeciones.,crm_aggregated_safe
+OP_05ADA863,150,Sialia,ASESOR_1F3B24E1,sin_clasificar,0.5238,37047.68,533,P2_monitor_72h,72,Monitorear 72h: revisar señales y objeciones.,crm_aggregated_safe
+OP_9AE2BDD7,151,Edificio Urbanzen,ASESOR_26DEBB0E,sin_clasificar,0.3878,37015.37,292,P2_monitor_72h,72,Monitorear 72h: revisar señales y objeciones.,crm_aggregated_safe
+OP_8E612BD1,152,Tizón y Bueno,ASESOR_1959B8DB,sin_clasificar,0.555,36994.62,502,P2_monitor_72h,72,Monitorear 72h: revisar señales y objeciones.,crm_aggregated_safe
+OP_043066DA,153,Edificio Cuba Connect,ASESOR_C931A67B,sin_clasificar,0.4033,36843.11,1396,P2_monitor_72h,72,Monitorear 72h: revisar señales y objeciones.,crm_aggregated_safe
+OP_620C9C33,154,Edificio Cuba Connect,ASESOR_26DEBB0E,sin_clasificar,0.4133,36825.87,1725,P2_monitor_72h,72,Monitorear 72h: revisar señales y objeciones.,crm_aggregated_safe
+OP_1D0EBEA5,155,Modena,ASESOR_D5DBFC78,sin_clasificar,0.4892,36693.06,389,P2_monitor_72h,72,Monitorear 72h: revisar señales y objeciones.,crm_aggregated_safe
+OP_210E3B16,156,Alicanto,ASESOR_D5DBFC78,sin_clasificar,0.4917,36657.92,634,P2_monitor_72h,72,Monitorear 72h: revisar señales y objeciones.,crm_aggregated_safe
+OP_0FECF924,157,Sialia,ASESOR_1959B8DB,sin_clasificar,0.5214,36475.87,594,P2_monitor_72h,72,Monitorear 72h: revisar señales y objeciones.,crm_aggregated_safe
+OP_C75DE23D,158,Tizón y Bueno,ASESOR_1F3B24E1,sin_clasificar,0.5396,36408.26,506,P2_monitor_72h,72,Monitorear 72h: revisar señales y objeciones.,crm_aggregated_safe
+OP_7ED8F0F3,159,Edificio Cuba Connect,ASESOR_26DEBB0E,sin_clasificar,0.3726,36236.41,1603,P2_monitor_72h,72,Monitorear 72h: revisar señales y objeciones.,crm_aggregated_safe
+OP_FF2CCB6B,160,Edificio Cuba Connect,ASESOR_26DEBB0E,sin_clasificar,0.3726,36236.41,1603,P2_monitor_72h,72,Monitorear 72h: revisar señales y objeciones.,crm_aggregated_safe
+OP_A512DB27,161,Tizón y Bueno,ASESOR_B56EAA59,sin_clasificar,0.5295,35993.35,410,P2_monitor_72h,72,Monitorear 72h: revisar señales y objeciones.,crm_aggregated_safe
+OP_BB668CA9,162,Capadocia,ASESOR_26DEBB0E,sin_clasificar,0.4778,35833.29,401,P2_monitor_72h,72,Monitorear 72h: revisar señales y objeciones.,crm_aggregated_safe
+OP_79D6EAA2,163,Edificio Cuba Connect,ASESOR_26DEBB0E,sin_clasificar,0.3704,35756.03,1603,P2_monitor_72h,72,Monitorear 72h: revisar señales y objeciones.,crm_aggregated_safe
+OP_3D3286F7,164,Modena,ASESOR_C931A67B,sin_clasificar,0.4672,35740.53,273,P2_monitor_72h,72,Monitorear 72h: revisar señales y objeciones.,crm_aggregated_safe
+OP_3F9807CB,165,Edificio Urbanzen,ASESOR_C931A67B,sin_clasificar,0.3669,35685.63,903,P2_monitor_72h,72,Monitorear 72h: revisar señales y objeciones.,crm_aggregated_safe
+OP_BC52DD63,166,Tizón y Bueno,ASESOR_10B2BE3F,sin_clasificar,0.4007,35549.17,1036,P2_monitor_72h,72,Monitorear 72h: revisar señales y objeciones.,crm_aggregated_safe
+OP_E0F05DA9,167,Modena,ASESOR_1959B8DB,sin_clasificar,0.4819,35488.95,474,P2_monitor_72h,72,Monitorear 72h: revisar señales y objeciones.,crm_aggregated_safe
+OP_73D3F1BA,168,Tizón y Bueno,ASESOR_74F82F8A,sin_clasificar,0.5181,35422.91,610,P2_monitor_72h,72,Monitorear 72h: revisar señales y objeciones.,crm_aggregated_safe
+OP_80C3CD40,169,Edificio Mariategui,ASESOR_7178B923,sin_clasificar,0.4332,35419.94,1388,P2_monitor_72h,72,Monitorear 72h: revisar señales y objeciones.,crm_aggregated_safe
+OP_F57E5CB1,170,Tizón y Bueno,ASESOR_1F3B24E1,sin_clasificar,0.5075,35354.38,587,P2_monitor_72h,72,Monitorear 72h: revisar señales y objeciones.,crm_aggregated_safe
+OP_734D0759,171,Modena,ASESOR_C931A67B,sin_clasificar,0.4631,35313.95,387,P2_monitor_72h,72,Monitorear 72h: revisar señales y objeciones.,crm_aggregated_safe
+OP_284DE502,172,Edificio Mariategui,ASESOR_10B2BE3F,sin_clasificar,0.4217,35233.92,589,P2_monitor_72h,72,Monitorear 72h: revisar señales y objeciones.,crm_aggregated_safe
+OP_68519A9E,173,Sialia,ASESOR_26DEBB0E,sin_clasificar,0.5337,35233.38,255,P2_monitor_72h,72,Monitorear 72h: revisar señales y objeciones.,crm_aggregated_safe
+OP_4A8596A7,174,Tizón y Bueno,ASESOR_26DEBB0E,sin_clasificar,0.505,35191.64,465,P2_monitor_72h,72,Monitorear 72h: revisar señales y objeciones.,crm_aggregated_safe
+OP_41E521AD,175,Edificio Mariategui,ASESOR_10B2BE3F,sin_clasificar,0.4168,35049.47,589,P2_monitor_72h,72,Monitorear 72h: revisar señales y objeciones.,crm_aggregated_safe
+OP_DAC53C17,176,Tizón y Bueno,ASESOR_1959B8DB,sin_clasificar,0.5343,34988.73,456,P2_monitor_72h,72,Monitorear 72h: revisar señales y objeciones.,crm_aggregated_safe
+OP_CBA28B89,177,Edificio Mariategui,ASESOR_C931A67B,sin_clasificar,0.4118,34971.11,1648,P2_monitor_72h,72,Monitorear 72h: revisar señales y objeciones.,crm_aggregated_safe
+OP_8CD25102,178,Capadocia,ASESOR_2660085B,sin_clasificar,0.4654,34904.03,106,P2_monitor_72h,72,Monitorear 72h: revisar señales y objeciones.,crm_aggregated_safe
+OP_01D54579,179,Tizón y Bueno,ASESOR_D5DBFC78,sin_clasificar,0.494,34901.63,332,P2_monitor_72h,72,Monitorear 72h: revisar señales y objeciones.,crm_aggregated_safe
+OP_3068430D,180,Edificio Saenz,ASESOR_C931A67B,sin_clasificar,0.4391,34825.34,1358,P2_monitor_72h,72,Monitorear 72h: revisar señales y objeciones.,crm_aggregated_safe
+OP_7B697596,181,Edificio Cuba Connect,ASESOR_D5DBFC78,sin_clasificar,0.4333,34797.76,677,P2_monitor_72h,72,Monitorear 72h: revisar señales y objeciones.,crm_aggregated_safe
+OP_580811FA,182,Edificio Cuba Connect,ASESOR_26DEBB0E,sin_clasificar,0.4152,34748.36,1420,P2_monitor_72h,72,Monitorear 72h: revisar señales y objeciones.,crm_aggregated_safe
+OP_BFA76346,183,Edificio Santa Cruz Infinite,ASESOR_10B2BE3F,sin_clasificar,0.256,34607.87,1529,P2_monitor_72h,72,Monitorear 72h: revisar señales y objeciones.,crm_aggregated_safe
+OP_B8AED072,184,Tizón y Bueno,ASESOR_26DEBB0E,sin_clasificar,0.5345,34571.07,391,P2_monitor_72h,72,Monitorear 72h: revisar señales y objeciones.,crm_aggregated_safe
+OP_52F11620,185,Alicanto,ASESOR_1959B8DB,sin_clasificar,0.5076,34492.38,383,P2_monitor_72h,72,Monitorear 72h: revisar señales y objeciones.,crm_aggregated_safe
+OP_61A229BA,186,Modena,ASESOR_C931A67B,sin_clasificar,0.4438,34420.68,367,P2_monitor_72h,72,Monitorear 72h: revisar señales y objeciones.,crm_aggregated_safe
+OP_2811745D,187,Tizón y Bueno,ASESOR_1F3B24E1,sin_clasificar,0.5101,34382.84,608,P2_monitor_72h,72,Monitorear 72h: revisar señales y objeciones.,crm_aggregated_safe
+OP_38B2D03F,188,Edificio Mariategui,ASESOR_10B2BE3F,sin_clasificar,0.4346,34307.25,589,P2_monitor_72h,72,Monitorear 72h: revisar señales y objeciones.,crm_aggregated_safe
+OP_D6061BBE,189,Tizón y Bueno,ASESOR_1F3B24E1,sin_clasificar,0.548,34288.89,495,P2_monitor_72h,72,Monitorear 72h: revisar señales y objeciones.,crm_aggregated_safe
+OP_7045D16A,190,Modena,ASESOR_D5DBFC78,sin_clasificar,0.4741,34117.21,228,P2_monitor_72h,72,Monitorear 72h: revisar señales y objeciones.,crm_aggregated_safe
+OP_2397346B,191,Edificio Urbanzen,ASESOR_B56EAA59,sin_clasificar,0.455,34108.62,602,P2_monitor_72h,72,Monitorear 72h: revisar señales y objeciones.,crm_aggregated_safe
+OP_70260742,192,Tizón y Bueno,ASESOR_26DEBB0E,sin_clasificar,0.531,34106.59,259,P2_monitor_72h,72,Monitorear 72h: revisar señales y objeciones.,crm_aggregated_safe
+OP_EB3BE230,193,Edificio Cuba Connect,ASESOR_26DEBB0E,sin_clasificar,0.421,34103.97,1388,P2_monitor_72h,72,Monitorear 72h: revisar señales y objeciones.,crm_aggregated_safe
+OP_684FE39F,194,Tizón y Bueno,ASESOR_B56EAA59,sin_clasificar,0.4934,34046.26,335,P2_monitor_72h,72,Monitorear 72h: revisar señales y objeciones.,crm_aggregated_safe
+OP_7559CA4A,195,Modena,ASESOR_26DEBB0E,sin_clasificar,0.4609,34027.78,340,P2_monitor_72h,72,Monitorear 72h: revisar señales y objeciones.,crm_aggregated_safe
+OP_1DFACB2E,196,Sialia,ASESOR_1959B8DB,sin_clasificar,0.5259,33942.43,586,P2_monitor_72h,72,Monitorear 72h: revisar señales y objeciones.,crm_aggregated_safe
+OP_B4BBE448,197,Edificio Cuba Connect,ASESOR_26DEBB0E,sin_clasificar,0.4172,33892.83,1744,P2_monitor_72h,72,Monitorear 72h: revisar señales y objeciones.,crm_aggregated_safe
+OP_8BCBB4C1,198,Tizón y Bueno,ASESOR_1F3B24E1,sin_clasificar,0.4838,33819.29,373,P2_monitor_72h,72,Monitorear 72h: revisar señales y objeciones.,crm_aggregated_safe
+OP_A4E00D7E,199,Edificio Urbanzen,ASESOR_2660085B,sin_clasificar,0.3818,33785.73,389,P2_monitor_72h,72,Monitorear 72h: revisar señales y objeciones.,crm_aggregated_safe
+OP_5A39CADD,200,Tizón y Bueno,ASESOR_B56EAA59,sin_clasificar,0.4916,33677.6,752,P2_monitor_72h,72,Monitorear 72h: revisar señales y objeciones.,crm_aggregated_safe
+OP_27BADC98,201,Sialia,ASESOR_1959B8DB,sin_clasificar,0.5404,33593.67,46,P2_monitor_72h,72,Monitorear 72h: revisar señales y objeciones.,crm_aggregated_safe
+OP_43974ED7,202,Edificio Cuba Connect,ASESOR_26DEBB0E,sin_clasificar,0.3594,33586.21,1451,P2_monitor_72h,72,Monitorear 72h: revisar señales y objeciones.,crm_aggregated_safe
+OP_C17EDAAE,203,Alicanto,ASESOR_1F3B24E1,sin_clasificar,0.4672,33548.83,667,P2_monitor_72h,72,Monitorear 72h: revisar señales y objeciones.,crm_aggregated_safe
+OP_4621C1D5,204,Edificio Mariategui,ASESOR_C931A67B,sin_clasificar,0.4469,33522.99,1372,P2_monitor_72h,72,Monitorear 72h: revisar señales y objeciones.,crm_aggregated_safe
+OP_FC56DBC6,205,Tizón y Bueno,ASESOR_1F3B24E1,sin_clasificar,0.5101,33350.66,325,P2_monitor_72h,72,Monitorear 72h: revisar señales y objeciones.,crm_aggregated_safe
+OP_F8809AFF,206,Sialia,ASESOR_1F3B24E1,sin_clasificar,0.5078,33318.46,443,P2_monitor_72h,72,Monitorear 72h: revisar señales y objeciones.,crm_aggregated_safe
+OP_5CF4E26B,207,Fenix,ASESOR_D5DBFC78,sin_clasificar,0.4717,33259.38,472,P2_monitor_72h,72,Monitorear 72h: revisar señales y objeciones.,crm_aggregated_safe
+OP_968076BE,208,Fenix,ASESOR_2660085B,sin_clasificar,0.4719,33195.01,145,P2_monitor_72h,72,Monitorear 72h: revisar señales y objeciones.,crm_aggregated_safe
+OP_8DF66F64,209,Edificio Cuba Connect,ASESOR_26DEBB0E,sin_clasificar,0.3532,33189.43,1666,P2_monitor_72h,72,Monitorear 72h: revisar señales y objeciones.,crm_aggregated_safe
+OP_83F814F7,210,Tizón y Bueno,ASESOR_1F3B24E1,sin_clasificar,0.5489,33157.19,777,P2_monitor_72h,72,Monitorear 72h: revisar señales y objeciones.,crm_aggregated_safe
+OP_D29D5370,211,Capadocia,ASESOR_26DEBB0E,sin_clasificar,0.4547,33154.81,337,P2_monitor_72h,72,Monitorear 72h: revisar señales y objeciones.,crm_aggregated_safe
+OP_093434A3,212,Sialia,ASESOR_1F3B24E1,sin_clasificar,0.5183,33131.18,123,P2_monitor_72h,72,Monitorear 72h: revisar señales y objeciones.,crm_aggregated_safe
+OP_FA2B7AF0,213,Sialia,ASESOR_1959B8DB,sin_clasificar,0.5444,33070.17,46,P2_monitor_72h,72,Monitorear 72h: revisar señales y objeciones.,crm_aggregated_safe
+OP_D48FF4B2,214,Edificio Cuba Connect,ASESOR_26DEBB0E,sin_clasificar,0.3541,33042.76,1597,P2_monitor_72h,72,Monitorear 72h: revisar señales y objeciones.,crm_aggregated_safe
+OP_802B906A,215,Edificio Cuba Connect,ASESOR_26DEBB0E,sin_clasificar,0.3561,32933.14,1666,P2_monitor_72h,72,Monitorear 72h: revisar señales y objeciones.,crm_aggregated_safe
+OP_D86580A5,216,Fenix,ASESOR_26DEBB0E,sin_clasificar,0.4617,32706.2,575,P2_monitor_72h,72,Monitorear 72h: revisar señales y objeciones.,crm_aggregated_safe
+OP_0F4121D0,217,Tizón y Bueno,ASESOR_D5DBFC78,sin_clasificar,0.5418,32674.58,769,P2_monitor_72h,72,Monitorear 72h: revisar señales y objeciones.,crm_aggregated_safe
+OP_16BADFC6,218,Modena,ASESOR_1959B8DB,sin_clasificar,0.5059,32631.39,230,P2_monitor_72h,72,Monitorear 72h: revisar señales y objeciones.,crm_aggregated_safe
+OP_5966ABD0,219,Edificio Santa Cruz Infinite,ASESOR_26DEBB0E,sin_clasificar,0.416,32582.71,1680,P2_monitor_72h,72,Monitorear 72h: revisar señales y objeciones.,crm_aggregated_safe
+OP_314F04B3,220,Fenix,ASESOR_2660085B,sin_clasificar,0.4741,32496.85,228,P2_monitor_72h,72,Monitorear 72h: revisar señales y objeciones.,crm_aggregated_safe
+OP_36790ECD,221,Alicanto,ASESOR_1959B8DB,sin_clasificar,0.4241,32466.19,580,P2_monitor_72h,72,Monitorear 72h: revisar señales y objeciones.,crm_aggregated_safe
+OP_67E9C3AC,222,Alicanto,ASESOR_10B2BE3F,sin_clasificar,0.3947,32441.64,590,P2_monitor_72h,72,Monitorear 72h: revisar señales y objeciones.,crm_aggregated_safe
+OP_9B871512,223,Edificio Cuba Connect,ASESOR_C931A67B,sin_clasificar,0.393,32432.08,1396,P2_monitor_72h,72,Monitorear 72h: revisar señales y objeciones.,crm_aggregated_safe
+OP_56F4DA26,224,Tizón y Bueno,ASESOR_1F3B24E1,sin_clasificar,0.4895,32309.04,257,P2_monitor_72h,72,Monitorear 72h: revisar señales y objeciones.,crm_aggregated_safe
+OP_84A5092E,225,Modena,ASESOR_1F3B24E1,sin_clasificar,0.5158,32260.67,256,P2_monitor_72h,72,Monitorear 72h: revisar señales y objeciones.,crm_aggregated_safe
+OP_0E652381,226,Capadocia,ASESOR_1F3B24E1,sin_clasificar,0.473,32254.16,235,P2_monitor_72h,72,Monitorear 72h: revisar señales y objeciones.,crm_aggregated_safe
+OP_8F1F64DB,227,Tizón y Bueno,ASESOR_1F3B24E1,sin_clasificar,0.5185,32251.78,406,P2_monitor_72h,72,Monitorear 72h: revisar señales y objeciones.,crm_aggregated_safe
+OP_DFE62E83,228,Fenix,ASESOR_26DEBB0E,sin_clasificar,0.4653,32248.3,244,P2_monitor_72h,72,Monitorear 72h: revisar señales y objeciones.,crm_aggregated_safe
+OP_9D693EEE,229,Matera,ASESOR_BB88CD67,sin_clasificar,0.4232,32207.1,301,P2_monitor_72h,72,Monitorear 72h: revisar señales y objeciones.,crm_aggregated_safe
+OP_08490295,230,Sialia,ASESOR_1F3B24E1,sin_clasificar,0.5191,32206.64,496,P2_monitor_72h,72,Monitorear 72h: revisar señales y objeciones.,crm_aggregated_safe
+OP_A0EAEC5A,231,Edificio Cuba Connect,ASESOR_26DEBB0E,sin_clasificar,0.3521,32188.25,1744,P2_monitor_72h,72,Monitorear 72h: revisar señales y objeciones.,crm_aggregated_safe
+OP_138D9E80,232,Edificio Saenz,ASESOR_C931A67B,sin_clasificar,0.3094,32181.7,2107,P2_monitor_72h,72,Monitorear 72h: revisar señales y objeciones.,crm_aggregated_safe
+OP_835D5E83,233,Fenix,ASESOR_1F3B24E1,sin_clasificar,0.4698,32162.68,358,P2_monitor_72h,72,Monitorear 72h: revisar señales y objeciones.,crm_aggregated_safe
+OP_C0509A48,234,Edificio Cuba Connect,ASESOR_26DEBB0E,sin_clasificar,0.3227,32154.22,1456,P2_monitor_72h,72,Monitorear 72h: revisar señales y objeciones.,crm_aggregated_safe
+OP_114BD151,235,Fenix,ASESOR_26DEBB0E,sin_clasificar,0.4926,31929.38,154,P2_monitor_72h,72,Monitorear 72h: revisar señales y objeciones.,crm_aggregated_safe
+OP_0A2D643B,236,Fenix,ASESOR_74F82F8A,sin_clasificar,0.4841,31909.43,609,P2_monitor_72h,72,Monitorear 72h: revisar señales y objeciones.,crm_aggregated_safe
+OP_9A049B03,237,Matera,ASESOR_BB88CD67,sin_clasificar,0.4162,31837.16,328,P2_monitor_72h,72,Monitorear 72h: revisar señales y objeciones.,crm_aggregated_safe
+OP_F0BC318F,238,Sialia,ASESOR_1959B8DB,sin_clasificar,0.5425,31819.4,46,P2_monitor_72h,72,Monitorear 72h: revisar señales y objeciones.,crm_aggregated_safe
+OP_8AE4C23B,239,Sialia,ASESOR_26DEBB0E,sin_clasificar,0.518,31771.0,401,P2_monitor_72h,72,Monitorear 72h: revisar señales y objeciones.,crm_aggregated_safe
+OP_79BF0868,240,Edificio Santa Cruz Infinite,ASESOR_26DEBB0E,sin_clasificar,0.4188,31706.38,1401,P2_monitor_72h,72,Monitorear 72h: revisar señales y objeciones.,crm_aggregated_safe
+OP_6AF1F692,241,Tizón y Bueno,ASESOR_B56EAA59,sin_clasificar,0.5158,31700.2,465,P2_monitor_72h,72,Monitorear 72h: revisar señales y objeciones.,crm_aggregated_safe
+OP_749FC650,242,Sialia,ASESOR_1F3B24E1,sin_clasificar,0.5054,31610.07,475,P2_monitor_72h,72,Monitorear 72h: revisar señales y objeciones.,crm_aggregated_safe
+OP_14063697,243,Tizón y Bueno,ASESOR_1F3B24E1,sin_clasificar,0.5145,31573.15,468,P2_monitor_72h,72,Monitorear 72h: revisar señales y objeciones.,crm_aggregated_safe
+OP_72440A20,244,Alicanto,ASESOR_26DEBB0E,sin_clasificar,0.4576,31572.56,419,P2_monitor_72h,72,Monitorear 72h: revisar señales y objeciones.,crm_aggregated_safe
+OP_82C01CE1,245,Edificio Cuba Connect,ASESOR_26DEBB0E,sin_clasificar,0.3509,31534.43,1553,P2_monitor_72h,72,Monitorear 72h: revisar señales y objeciones.,crm_aggregated_safe
+OP_011AF72A,246,Capadocia,ASESOR_1F3B24E1,sin_clasificar,0.4534,31486.37,333,P2_monitor_72h,72,Monitorear 72h: revisar señales y objeciones.,crm_aggregated_safe
+OP_37C20F19,247,Matera,ASESOR_26DEBB0E,sin_clasificar,0.4164,31474.19,293,P2_monitor_72h,72,Monitorear 72h: revisar señales y objeciones.,crm_aggregated_safe
+OP_396F8044,248,Edificio Valdizan,ASESOR_10B2BE3F,sin_clasificar,0.3125,31444.99,1555,P2_monitor_72h,72,Monitorear 72h: revisar señales y objeciones.,crm_aggregated_safe
+OP_766CB53C,249,Sialia,ASESOR_C931A67B,sin_clasificar,0.4084,31346.52,614,P2_monitor_72h,72,Monitorear 72h: revisar señales y objeciones.,crm_aggregated_safe
+OP_9F484139,250,Modena,ASESOR_1959B8DB,sin_clasificar,0.497,31294.57,434,P2_monitor_72h,72,Monitorear 72h: revisar señales y objeciones.,crm_aggregated_safe
+OP_1E472B39,251,Sialia,ASESOR_26DEBB0E,sin_clasificar,0.5207,31241.77,483,P2_monitor_72h,72,Monitorear 72h: revisar señales y objeciones.,crm_aggregated_safe
+OP_C75D3F1F,252,Tizón y Bueno,ASESOR_1F3B24E1,sin_clasificar,0.5087,31213.3,400,P2_monitor_72h,72,Monitorear 72h: revisar señales y objeciones.,crm_aggregated_safe
+OP_D6E5A20B,253,Tizón y Bueno,ASESOR_D5DBFC78,sin_clasificar,0.5315,31148.76,591,P2_monitor_72h,72,Monitorear 72h: revisar señales y objeciones.,crm_aggregated_safe
+OP_E7866FDC,254,Fenix,ASESOR_26DEBB0E,sin_clasificar,0.4607,31094.47,549,P2_monitor_72h,72,Monitorear 72h: revisar señales y objeciones.,crm_aggregated_safe
+OP_9512D95D,255,Fenix,ASESOR_1959B8DB,sin_clasificar,0.5045,31016.54,497,P2_monitor_72h,72,Monitorear 72h: revisar señales y objeciones.,crm_aggregated_safe
+OP_9556B824,256,Tizón y Bueno,ASESOR_C931A67B,sin_clasificar,0.4316,30994.36,345,P2_monitor_72h,72,Monitorear 72h: revisar señales y objeciones.,crm_aggregated_safe
+OP_51E8EA28,257,Tizón y Bueno,ASESOR_1F3B24E1,sin_clasificar,0.4907,30916.04,444,P2_monitor_72h,72,Monitorear 72h: revisar señales y objeciones.,crm_aggregated_safe
+OP_4C970004,258,Sialia,ASESOR_B56EAA59,sin_clasificar,0.5138,30851.18,221,P2_monitor_72h,72,Monitorear 72h: revisar señales y objeciones.,crm_aggregated_safe
+OP_A30F4EF4,259,Capadocia,ASESOR_2660085B,sin_clasificar,0.4416,30798.8,41,P2_monitor_72h,72,Monitorear 72h: revisar señales y objeciones.,crm_aggregated_safe
+OP_7C252AB3,260,Fenix,ASESOR_26DEBB0E,sin_clasificar,0.466,30648.49,26,P2_monitor_72h,72,Monitorear 72h: revisar señales y objeciones.,crm_aggregated_safe
+OP_39BB88F4,261,Edificio Cuba Connect,ASESOR_81EF4E05,sin_clasificar,0.3147,30512.27,1638,P2_monitor_72h,72,Monitorear 72h: revisar señales y objeciones.,crm_aggregated_safe
+OP_E888A676,262,Fenix,ASESOR_D5DBFC78,sin_clasificar,0.4595,30485.78,473,P2_monitor_72h,72,Monitorear 72h: revisar señales y objeciones.,crm_aggregated_safe
+OP_9E6A7255,263,Edificio Valdizan,ASESOR_10B2BE3F,sin_clasificar,0.3134,30472.55,1555,P2_monitor_72h,72,Monitorear 72h: revisar señales y objeciones.,crm_aggregated_safe
+OP_4BE84111,264,Fenix,ASESOR_1F3B24E1,sin_clasificar,0.473,30405.69,71,P2_monitor_72h,72,Monitorear 72h: revisar señales y objeciones.,crm_aggregated_safe
+OP_BBA58959,265,Capadocia,ASESOR_26DEBB0E,sin_clasificar,0.4522,30398.65,28,P2_monitor_72h,72,Monitorear 72h: revisar señales y objeciones.,crm_aggregated_safe
+OP_768B84EF,266,Fenix,ASESOR_59C3D8E4,sin_clasificar,0.4438,30370.18,15,P2_monitor_72h,72,Monitorear 72h: revisar señales y objeciones.,crm_aggregated_safe
+OP_EA5B2755,267,Modena,ASESOR_2660085B,sin_clasificar,0.3967,30350.96,398,P2_monitor_72h,72,Monitorear 72h: revisar señales y objeciones.,crm_aggregated_safe
+OP_8ACC2398,268,Modena,ASESOR_1959B8DB,sin_clasificar,0.5157,30309.16,218,P2_monitor_72h,72,Monitorear 72h: revisar señales y objeciones.,crm_aggregated_safe
+OP_8B496BF9,269,Modena,ASESOR_D5DBFC78,sin_clasificar,0.4959,30298.84,229,P2_monitor_72h,72,Monitorear 72h: revisar señales y objeciones.,crm_aggregated_safe
+OP_F747870A,270,Capadocia,ASESOR_BB88CD67,sin_clasificar,0.432,30293.57,305,P2_monitor_72h,72,Monitorear 72h: revisar señales y objeciones.,crm_aggregated_safe
+OP_D8D17907,271,Modena,ASESOR_B56EAA59,sin_clasificar,0.4781,30230.53,473,P2_monitor_72h,72,Monitorear 72h: revisar señales y objeciones.,crm_aggregated_safe
+OP_3635A91E,272,Edificio Santa Cruz Infinite,ASESOR_C931A67B,sin_clasificar,0.3979,30195.3,1512,P2_monitor_72h,72,Monitorear 72h: revisar señales y objeciones.,crm_aggregated_safe
+OP_1C6C0BB2,273,Capadocia,ASESOR_D5DBFC78,sin_clasificar,0.4614,30174.3,473,P2_monitor_72h,72,Monitorear 72h: revisar señales y objeciones.,crm_aggregated_safe
+OP_303C8BD5,274,Modena,ASESOR_1959B8DB,sin_clasificar,0.5157,30169.92,219,P2_monitor_72h,72,Monitorear 72h: revisar señales y objeciones.,crm_aggregated_safe
+OP_71812781,275,Fenix,ASESOR_1F3B24E1,sin_clasificar,0.4745,30164.63,71,P2_monitor_72h,72,Monitorear 72h: revisar señales y objeciones.,crm_aggregated_safe
+OP_3A1DFB05,276,Fenix,ASESOR_1959B8DB,sin_clasificar,0.5025,30119.14,494,P2_monitor_72h,72,Monitorear 72h: revisar señales y objeciones.,crm_aggregated_safe
+OP_C76B4057,277,Modena,ASESOR_1F3B24E1,sin_clasificar,0.5187,30112.88,244,P2_monitor_72h,72,Monitorear 72h: revisar señales y objeciones.,crm_aggregated_safe
+OP_27D719C7,278,Los Jardines de Urteaga,ASESOR_81EF4E05,sin_clasificar,0.3512,30084.74,2464,P2_monitor_72h,72,Monitorear 72h: revisar señales y objeciones.,crm_aggregated_safe
+OP_EE62DE25,279,Sialia,ASESOR_1959B8DB,sin_clasificar,0.5381,30026.44,15,P2_monitor_72h,72,Monitorear 72h: revisar señales y objeciones.,crm_aggregated_safe
+OP_EFD96AED,280,Edificio Saenz,ASESOR_C931A67B,sin_clasificar,0.3928,29946.56,2386,P2_monitor_72h,72,Monitorear 72h: revisar señales y objeciones.,crm_aggregated_safe
+OP_7F0A2211,281,Fenix,ASESOR_1F3B24E1,sin_clasificar,0.497,29936.76,504,P2_monitor_72h,72,Monitorear 72h: revisar señales y objeciones.,crm_aggregated_safe
+OP_71A1C003,282,Torre Nápoles,ASESOR_1F3B24E1,sin_clasificar,0.5044,29931.4,288,P2_monitor_72h,72,Monitorear 72h: revisar señales y objeciones.,crm_aggregated_safe
+OP_27E16152,283,Tizón y Bueno,ASESOR_1959B8DB,sin_clasificar,0.5228,29800.01,462,P2_monitor_72h,72,Monitorear 72h: revisar señales y objeciones.,crm_aggregated_safe
+OP_E0850A77,284,Capadocia,ASESOR_D5DBFC78,sin_clasificar,0.4461,29711.33,430,P2_monitor_72h,72,Monitorear 72h: revisar señales y objeciones.,crm_aggregated_safe
+OP_1E68ED4E,285,Modena,ASESOR_1DCEA22A,sin_clasificar,0.4637,29469.04,397,P2_monitor_72h,72,Monitorear 72h: revisar señales y objeciones.,crm_aggregated_safe
+OP_A0D177B4,286,Modena,ASESOR_2660085B,sin_clasificar,0.4531,29403.01,397,P2_monitor_72h,72,Monitorear 72h: revisar señales y objeciones.,crm_aggregated_safe
+OP_00328CE5,287,Sialia,ASESOR_59C3D8E4,sin_clasificar,0.5139,29395.0,216,P2_monitor_72h,72,Monitorear 72h: revisar señales y objeciones.,crm_aggregated_safe
+OP_D7CDAA5C,288,Matera,ASESOR_26DEBB0E,sin_clasificar,0.4096,29168.19,298,P2_monitor_72h,72,Monitorear 72h: revisar señales y objeciones.,crm_aggregated_safe
+OP_23C657F2,289,Tizón y Bueno,ASESOR_B56EAA59,sin_clasificar,0.4949,29101.06,643,P2_monitor_72h,72,Monitorear 72h: revisar señales y objeciones.,crm_aggregated_safe
+OP_AF180E43,290,Tizón y Bueno,ASESOR_C931A67B,sin_clasificar,0.4172,29008.2,1027,P2_monitor_72h,72,Monitorear 72h: revisar señales y objeciones.,crm_aggregated_safe
+OP_09895DE0,291,Fenix,ASESOR_2660085B,sin_clasificar,0.3824,28969.93,337,P2_monitor_72h,72,Monitorear 72h: revisar señales y objeciones.,crm_aggregated_safe
+OP_33512007,292,Edificio Valdizan,ASESOR_10B2BE3F,sin_clasificar,0.315,28854.64,1640,P2_monitor_72h,72,Monitorear 72h: revisar señales y objeciones.,crm_aggregated_safe
+OP_6DB6EB4A,293,Matera,ASESOR_1DCEA22A,sin_clasificar,0.4252,28830.74,291,P2_monitor_72h,72,Monitorear 72h: revisar señales y objeciones.,crm_aggregated_safe
+OP_7CB676D5,294,Tizón y Bueno,ASESOR_2660085B,sin_clasificar,0.4111,28673.35,346,P2_monitor_72h,72,Monitorear 72h: revisar señales y objeciones.,crm_aggregated_safe
+OP_2CFC8CCB,295,Matera,ASESOR_BB88CD67,sin_clasificar,0.3491,28621.37,219,P2_monitor_72h,72,Monitorear 72h: revisar señales y objeciones.,crm_aggregated_safe
+OP_9CFD3C75,296,Edificio Valdizan,ASESOR_10B2BE3F,sin_clasificar,0.3174,28601.11,1456,P2_monitor_72h,72,Monitorear 72h: revisar señales y objeciones.,crm_aggregated_safe
+OP_A0F8B2C4,297,Fenix,ASESOR_2660085B,sin_clasificar,0.4503,28447.7,332,P2_monitor_72h,72,Monitorear 72h: revisar señales y objeciones.,crm_aggregated_safe
+OP_4C15F47A,298,Sialia,ASESOR_59C3D8E4,sin_clasificar,0.4817,28440.77,52,P2_monitor_72h,72,Monitorear 72h: revisar señales y objeciones.,crm_aggregated_safe
+OP_76EBDB6D,299,Edificio Cuba Connect,ASESOR_C931A67B,sin_clasificar,0.3255,28271.18,1512,P2_monitor_72h,72,Monitorear 72h: revisar señales y objeciones.,crm_aggregated_safe
+OP_30883104,300,Edificio Saenz,ASESOR_C931A67B,sin_clasificar,0.3724,28179.53,2106,P2_monitor_72h,72,Monitorear 72h: revisar señales y objeciones.,crm_aggregated_safe
+OP_983BD614,301,Edificio Santa Cruz Infinite,ASESOR_7178B923,sin_clasificar,0.3393,28147.33,1404,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_C3EA99F8,302,Modena,ASESOR_B56EAA59,sin_clasificar,0.4631,28079.87,423,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_F32828AC,303,Fenix,ASESOR_B56EAA59,sin_clasificar,0.4778,27991.82,263,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_8BD9C0D4,304,Modena,ASESOR_B56EAA59,sin_clasificar,0.4635,27978.28,372,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_D874E4E4,305,Torre Nápoles,ASESOR_26DEBB0E,sin_clasificar,0.4612,27916.0,136,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_090D3859,306,Tizón y Bueno,ASESOR_1959B8DB,sin_clasificar,0.5233,27866.81,570,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_38B83CAE,307,Edificio Mariategui,ASESOR_10B2BE3F,sin_clasificar,0.347,27781.85,832,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_6D976934,308,Torre Nápoles,ASESOR_2660085B,sin_clasificar,0.5002,27760.17,109,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_48A1706E,309,Edificio Cuba Connect,ASESOR_10B2BE3F,sin_clasificar,0.2744,27680.34,1584,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_43C727EE,310,Edificio Santa Cruz Infinite,ASESOR_26DEBB0E,sin_clasificar,0.3759,27644.97,1485,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_226F76B5,311,Edificio Santa Cruz Infinite,ASESOR_7178B923,sin_clasificar,0.3424,27568.65,1779,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_20E9C64C,312,Fenix,ASESOR_D5DBFC78,sin_clasificar,0.471,27555.51,266,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_865736A1,313,Edificio Cuba Connect,ASESOR_10B2BE3F,sin_clasificar,0.2744,27549.67,2568,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_8EFBBE9B,314,Edificio Cuba Connect,ASESOR_10B2BE3F,sin_clasificar,0.2744,27549.67,2482,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_748064BE,315,Modena,ASESOR_26DEBB0E,sin_clasificar,0.4834,27497.66,226,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_377ADEB4,316,Sialia,ASESOR_2660085B,sin_clasificar,0.4884,27473.91,178,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_7A20311C,317,Edificio Santa Cruz Infinite,ASESOR_26DEBB0E,sin_clasificar,0.377,27470.14,1451,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_8D1EDE4F,318,Edificio Santa Cruz Infinite,ASESOR_26DEBB0E,sin_clasificar,0.3791,27428.3,1375,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_AAE02129,319,Torre Nápoles,ASESOR_2660085B,sin_clasificar,0.4707,27396.08,47,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_156091EE,320,Edificio Cuba Connect,ASESOR_10B2BE3F,sin_clasificar,0.2744,27339.9,2540,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_88820462,321,Edificio Cuba Connect,ASESOR_10B2BE3F,sin_clasificar,0.2744,27339.9,1867,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_8D23CF6C,322,Edificio Mariategui,ASESOR_7178B923,sin_clasificar,0.4007,27248.17,1330,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_F10D91A7,323,Capadocia,ASESOR_C931A67B,sin_clasificar,0.404,27224.02,226,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_3949AC15,324,Sialia,ASESOR_1DCEA22A,sin_clasificar,0.4895,27190.29,385,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_1038E0B7,325,Torre Nápoles,ASESOR_1959B8DB,sin_clasificar,0.533,27184.64,4,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_9E11C362,326,Tizón y Bueno,ASESOR_C931A67B,sin_clasificar,0.4428,27166.08,448,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_A4E987D1,327,Edificio Santa Cruz Infinite,ASESOR_10B2BE3F,sin_clasificar,0.3408,27163.55,1496,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_02CCA380,328,Alicanto,ASESOR_B56EAA59,sin_clasificar,0.4487,27142.74,647,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_2452984F,329,Alicanto,ASESOR_1959B8DB,sin_clasificar,0.4991,27101.16,183,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_0791963C,330,Los Jardines de Urteaga,ASESOR_81EF4E05,sin_clasificar,0.2794,27076.87,2292,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_5426D2CA,331,Modena,ASESOR_BB88CD67,sin_clasificar,0.415,27029.74,258,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_0BBA869D,332,Edificio Cuba Connect,ASESOR_26DEBB0E,sin_clasificar,0.3238,27018.56,1743,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_7104741A,333,Edificio Santa Cruz Infinite,ASESOR_10B2BE3F,sin_clasificar,0.3431,26840.3,1849,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_556D7DC3,334,Edificio Santa Cruz Infinite,ASESOR_10B2BE3F,sin_clasificar,0.3431,26799.14,1585,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_058D5D43,335,Edificio Santa Cruz Infinite,ASESOR_26DEBB0E,sin_clasificar,0.3685,26759.51,1703,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_7ACC684A,336,Edificio Cuba Connect,ASESOR_26DEBB0E,sin_clasificar,0.3229,26557.08,1671,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_EAA0689A,337,Modena,ASESOR_C931A67B,sin_clasificar,0.3902,26537.53,297,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_8EDE6B26,338,Matera,ASESOR_1DCEA22A,sin_clasificar,0.3891,26526.84,336,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_5D8F6CCE,339,Edificio Valdizan,ASESOR_10B2BE3F,sin_clasificar,0.3097,26504.58,1713,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_FC95CE17,340,Fenix,ASESOR_D5DBFC78,sin_clasificar,0.4664,26500.1,600,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_9644294A,341,Alicanto,ASESOR_B56EAA59,sin_clasificar,0.4487,26480.5,445,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_524B2D27,342,Alicanto,ASESOR_B56EAA59,sin_clasificar,0.4499,26451.49,316,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_023849C3,343,Edificio Mariategui,ASESOR_10B2BE3F,sin_clasificar,0.3061,26434.96,999,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_3C15285C,344,Edificio Saenz,ASESOR_7178B923,sin_clasificar,0.3501,26396.17,1383,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_02E6295D,345,Edificio Mariategui,ASESOR_10B2BE3F,sin_clasificar,0.3295,26365.19,1506,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_DA70DFA4,346,Edificio Mariategui,ASESOR_10B2BE3F,sin_clasificar,0.3394,26352.82,860,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_6AAC0CF8,347,Alicanto,ASESOR_B56EAA59,sin_clasificar,0.4474,26325.56,435,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_2289B221,348,Edificio Cuba Connect,ASESOR_C931A67B,sin_clasificar,0.2952,26282.48,1188,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_06B2D828,349,Modena,ASESOR_1DCEA22A,sin_clasificar,0.4729,26248.14,228,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_72BA187B,350,Edificio Valdizan,ASESOR_10B2BE3F,sin_clasificar,0.3106,26180.2,1193,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_DEEEB5DF,351,Tizón y Bueno,ASESOR_26DEBB0E,sin_clasificar,0.4867,26103.61,770,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_04A8708C,352,Sialia,ASESOR_1959B8DB,sin_clasificar,0.5369,26091.57,530,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_9A72C24F,353,Edificio Urbanzen,ASESOR_26DEBB0E,sin_clasificar,0.4926,26083.28,935,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_459535FA,354,Sialia,ASESOR_1DCEA22A,sin_clasificar,0.3804,26062.01,404,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_09A1B036,355,Tizón y Bueno,ASESOR_D5DBFC78,sin_clasificar,0.4741,25979.87,729,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_355D8C0E,356,Matera,ASESOR_1F3B24E1,sin_clasificar,0.3754,25871.6,337,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_03A3D955,357,Modena,ASESOR_BB88CD67,sin_clasificar,0.4393,25855.54,258,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_2AB0CE76,358,Modena,ASESOR_C931A67B,sin_clasificar,0.4321,25854.38,226,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_62A0EAE9,359,Capadocia,ASESOR_B56EAA59,sin_clasificar,0.5161,25836.2,13,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_9197E484,360,Torre Nápoles,ASESOR_2660085B,sin_clasificar,0.4592,25829.94,31,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_838F461C,361,Torre Nápoles,ASESOR_D5DBFC78,sin_clasificar,0.4648,25795.86,185,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_73DAA928,362,Tizón y Bueno,ASESOR_955CF27B,sin_clasificar,0.5025,25788.17,928,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_3963317A,363,Tizón y Bueno,ASESOR_1F3B24E1,sin_clasificar,0.4571,25784.41,536,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_A43231C2,364,Edificio Cuba Connect,ASESOR_10B2BE3F,sin_clasificar,0.2729,25773.7,1381,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_B3DFDC6E,365,Torre Nápoles,ASESOR_2660085B,sin_clasificar,0.4766,25663.17,298,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_4E47EB55,366,Torre Nápoles,ASESOR_984C1E02,sin_clasificar,0.4725,25652.58,18,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_600B4CDF,367,Tizón y Bueno,ASESOR_1959B8DB,sin_clasificar,0.4916,25636.68,738,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_0788979F,368,Tizón y Bueno,ASESOR_B56EAA59,sin_clasificar,0.4813,25634.33,564,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_8E6AEE9E,369,Sialia,ASESOR_2660085B,sin_clasificar,0.4876,25597.39,46,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_5F193B35,370,Sialia,ASESOR_26DEBB0E,sin_clasificar,0.5223,25594.88,226,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_F1607C19,371,Fenix,ASESOR_1959B8DB,sin_clasificar,0.4943,25579.43,518,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_9B15FED6,372,Fenix,ASESOR_1DCEA22A,sin_clasificar,0.4511,25579.04,361,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_62F77E7D,373,Modena,ASESOR_1DCEA22A,sin_clasificar,0.4564,25549.76,289,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_E52D0874,374,Edificio Urbanzen,ASESOR_1959B8DB,sin_clasificar,0.5224,25544.13,355,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_01299AC6,375,Modena,ASESOR_1F3B24E1,sin_clasificar,0.4982,25513.62,231,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_DE5872C6,376,Torre Nápoles,ASESOR_2660085B,sin_clasificar,0.4596,25499.23,71,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_12E2C8DF,377,Torre Nápoles,ASESOR_1F3B24E1,sin_clasificar,0.4631,25456.87,312,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_2C4CF657,378,Torre Nápoles,ASESOR_26DEBB0E,sin_clasificar,0.4675,25454.72,12,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_21EF7793,379,Tizón y Bueno,ASESOR_26DEBB0E,sin_clasificar,0.4813,25383.38,738,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_64C212DF,380,Torre Nápoles,ASESOR_2660085B,sin_clasificar,0.4767,25382.49,263,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_2AF4DD48,381,Matera,ASESOR_26DEBB0E,sin_clasificar,0.3759,25372.95,293,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_392A52E4,382,Modena,ASESOR_1DCEA22A,sin_clasificar,0.4746,25342.67,336,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_F65CCFBF,383,Edificio Urbanzen,ASESOR_1F3B24E1,sin_clasificar,0.4973,25314.96,173,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_48B361D4,384,Alicanto,ASESOR_D5DBFC78,sin_clasificar,0.4515,25259.49,643,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_37B73510,385,Edificio Cuba Connect,ASESOR_10B2BE3F,sin_clasificar,0.2705,25239.59,1797,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_131B0C35,386,Modena,ASESOR_BB88CD67,sin_clasificar,0.4304,25123.67,266,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_15A26C6F,387,Alicanto,ASESOR_C931A67B,sin_clasificar,0.3509,25041.36,464,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_25DAC95B,388,Torre Nápoles,ASESOR_B56EAA59,sin_clasificar,0.4494,25011.67,316,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_AB5E292D,389,Edificio Urbanzen,ASESOR_1F3B24E1,sin_clasificar,0.4973,24988.24,295,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_B9888088,390,Sialia,ASESOR_59C3D8E4,sin_clasificar,0.4962,24960.45,206,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_48A1A756,391,Torre Nápoles,ASESOR_1959B8DB,sin_clasificar,0.5764,24953.72,4,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_A934C244,392,Edificio Santa Cruz Infinite,ASESOR_7178B923,sin_clasificar,0.311,24842.03,1358,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_6EA2FDB3,393,Tizón y Bueno,ASESOR_1959B8DB,sin_clasificar,0.5256,24833.25,715,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_99A0B871,394,Edificio Cuba Connect,ASESOR_10B2BE3F,sin_clasificar,0.2753,24820.25,1496,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_04D19FDE,395,Edificio Cuba Connect,ASESOR_10B2BE3F,sin_clasificar,0.2753,24820.25,1475,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_A3AF7B38,396,Los Jardines de Urteaga,ASESOR_10B2BE3F,sin_clasificar,0.1557,24818.3,2862,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_3C1B7053,397,Edificio Cuba Connect,ASESOR_26DEBB0E,sin_clasificar,0.3443,24813.6,2089,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_1D2028DD,398,Sialia,ASESOR_1DCEA22A,sin_clasificar,0.4868,24808.41,458,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_188C1FDC,399,Tizón y Bueno,ASESOR_D5DBFC78,sin_clasificar,0.4523,24793.46,698,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_0F785409,400,Edificio Mariategui,ASESOR_10B2BE3F,sin_clasificar,0.3413,24710.9,589,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_26D22866,401,Edificio Cuba Connect,ASESOR_10B2BE3F,sin_clasificar,0.2677,24695.72,2483,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_DCAADAD1,402,Tizón y Bueno,ASESOR_1959B8DB,sin_clasificar,0.5126,24690.53,773,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_B7C7470E,403,Tizón y Bueno,ASESOR_B56EAA59,sin_clasificar,0.5159,24658.74,774,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_D26EAE87,404,Alicanto,ASESOR_26DEBB0E,sin_clasificar,0.4379,24608.2,655,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_6B3C238E,405,Edificio Cuba Connect,ASESOR_10B2BE3F,sin_clasificar,0.2677,24551.75,1310,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_A73B320D,406,Edificio Cuba Connect,ASESOR_10B2BE3F,sin_clasificar,0.2677,24551.75,1057,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_F64F4107,407,Fenix,ASESOR_26DEBB0E,sin_clasificar,0.442,24528.8,402,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_A5ABB150,408,Edificio Cuba Connect,ASESOR_10B2BE3F,sin_clasificar,0.2677,24507.71,2680,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_E6F47E00,409,Edificio Cuba Connect,ASESOR_10B2BE3F,sin_clasificar,0.2677,24507.71,1663,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_480F5A49,410,Modena,ASESOR_26DEBB0E,sin_clasificar,0.454,24450.97,389,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_612111A3,411,Sialia,ASESOR_26DEBB0E,sin_clasificar,0.489,24427.47,588,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_52F14FC3,412,Edificio Cuba Connect,ASESOR_26DEBB0E,sin_clasificar,0.2789,24414.68,1810,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_FABF5B7F,413,Alicanto,ASESOR_2660085B,sin_clasificar,0.5611,24406.62,103,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_1C49F22F,414,Edificio Cuba Connect,ASESOR_10B2BE3F,sin_clasificar,0.2702,24387.7,1919,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_8111EB15,415,Torre Nápoles,ASESOR_2660085B,sin_clasificar,0.4491,24377.66,33,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_FC72C98A,416,Tizón y Bueno,ASESOR_1F3B24E1,sin_clasificar,0.4573,24351.43,701,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_67E0BDB7,417,Fenix,ASESOR_2660085B,sin_clasificar,0.4329,24350.31,278,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_AFCF8BC0,418,Modena,ASESOR_B56EAA59,sin_clasificar,0.4686,24295.25,296,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_4C8D5B6C,419,Edificio Urbanzen,ASESOR_74F82F8A,sin_clasificar,0.5395,24276.48,695,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_CC6AED27,420,Fenix,ASESOR_2660085B,sin_clasificar,0.4624,24273.38,297,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_DB55DA3F,421,Capadocia,ASESOR_B56EAA59,sin_clasificar,0.4831,24224.08,407,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_5092C37B,422,Edificio Santa Cruz Infinite,ASESOR_7178B923,sin_clasificar,0.3034,24184.77,1680,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_5658B888,423,Alicanto,ASESOR_2660085B,sin_clasificar,0.4294,24179.68,368,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_814BB6B8,424,Modena,ASESOR_2660085B,sin_clasificar,0.4738,24162.05,153,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_814FD2E8,425,Tizón y Bueno,ASESOR_1959B8DB,sin_clasificar,0.5024,24116.78,715,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_0DFCDDB0,426,Edificio Santa Cruz Infinite,ASESOR_10B2BE3F,sin_clasificar,0.2463,24103.08,2151,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_9BE3DA43,427,Sialia,ASESOR_1DCEA22A,sin_clasificar,0.4917,24093.75,388,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_42F25ADE,428,Tizón y Bueno,ASESOR_B56EAA59,sin_clasificar,0.4866,24091.49,714,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_CBF2F786,429,Modena,ASESOR_2660085B,sin_clasificar,0.6297,24085.34,21,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_2D100798,430,Fenix,ASESOR_B56EAA59,sin_clasificar,0.4571,24066.33,542,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_FED88B40,431,Torre Nápoles,ASESOR_59C3D8E4,sin_clasificar,0.4485,24055.89,258,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_0A1F1256,432,Tizón y Bueno,ASESOR_D5DBFC78,sin_clasificar,0.4683,24040.72,669,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_98F1F17F,433,Edificio Santa Cruz Infinite,ASESOR_7178B923,sin_clasificar,0.3082,24040.03,1672,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_AAF01D71,434,Torre Nápoles,ASESOR_2660085B,sin_clasificar,0.545,24033.88,2,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_EA415BF5,435,Torre Nápoles,ASESOR_26DEBB0E,sin_clasificar,0.4672,24022.41,275,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_5F2703A5,436,Tizón y Bueno,ASESOR_1F3B24E1,sin_clasificar,0.4521,24002.58,719,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_155D1CF6,437,Fenix,ASESOR_26DEBB0E,sin_clasificar,0.442,23983.93,362,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_0EF96221,438,Torre Nápoles,ASESOR_B56EAA59,sin_clasificar,0.4662,23969.29,245,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_18D37C95,439,Sialia,ASESOR_1DCEA22A,sin_clasificar,0.4955,23948.35,453,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_050A010C,440,Torre Nápoles,ASESOR_2660085B,sin_clasificar,0.5063,23924.15,49,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_E3F69597,441,Alicanto,ASESOR_1F3B24E1,sin_clasificar,0.4519,23911.58,493,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_2DFE70C4,442,Modena,ASESOR_26DEBB0E,sin_clasificar,0.5508,23844.96,224,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_5627B4A8,443,Tizón y Bueno,ASESOR_26DEBB0E,sin_clasificar,0.4827,23839.63,1033,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_6D05621A,444,Edificio Santa Cruz Infinite,ASESOR_7178B923,sin_clasificar,0.2984,23833.78,1469,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_3538A1EF,445,Torre Nápoles,ASESOR_2660085B,sin_clasificar,0.5082,23783.59,149,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_0E12831A,446,Torre Nápoles,ASESOR_1F3B24E1,sin_clasificar,0.5064,23771.93,110,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_75C3E223,447,Torre Nápoles,ASESOR_2660085B,sin_clasificar,0.4492,23763.71,161,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_C498F3FE,448,Edificio Urbanzen,ASESOR_26DEBB0E,sin_clasificar,0.5023,23763.54,753,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_A4ECDD70,449,Modena,ASESOR_D5DBFC78,sin_clasificar,0.505,23744.58,230,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_4A30A219,450,Matera,ASESOR_D5DBFC78,sin_clasificar,0.3585,23728.97,221,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_83151157,451,Modena,ASESOR_1959B8DB,sin_clasificar,0.5539,23678.34,184,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_CAA1AEDB,452,Fenix,ASESOR_B56EAA59,sin_clasificar,0.4407,23664.8,579,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_549A2FAC,453,Torre Nápoles,ASESOR_BB88CD67,sin_clasificar,0.4415,23643.12,94,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_D83C7EE7,454,Torre Nápoles,ASESOR_2660085B,sin_clasificar,0.5082,23631.14,152,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_48F89B63,455,Capadocia,ASESOR_1F3B24E1,sin_clasificar,0.4398,23566.16,299,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_F626051B,456,Modena,ASESOR_B56EAA59,sin_clasificar,0.4736,23508.6,198,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_B3A8E0E1,457,Tizón y Bueno,ASESOR_26DEBB0E,sin_clasificar,0.4859,23504.18,718,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_353767B2,458,Capadocia,ASESOR_984C1E02,sin_clasificar,0.4404,23472.63,183,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_AD21A2B8,459,Tizón y Bueno,ASESOR_B56EAA59,sin_clasificar,0.4601,23466.02,753,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_42F0BEC3,460,Sialia,ASESOR_BB88CD67,sin_clasificar,0.4489,23465.02,280,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_841A05FD,461,Sialia,ASESOR_B56EAA59,sin_clasificar,0.5978,23447.19,18,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_DE482C7E,462,Edificio Cuba Connect,ASESOR_7178B923,sin_clasificar,0.2633,23446.3,1477,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_DA4D43F2,463,Edificio Santa Cruz Infinite,ASESOR_10B2BE3F,sin_clasificar,0.2926,23427.09,855,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_06DE973B,464,Sialia,ASESOR_26DEBB0E,sin_clasificar,0.5875,23424.01,679,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_88B54564,465,Matera,ASESOR_1959B8DB,sin_clasificar,0.4261,23422.82,275,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_AD3B8357,466,Torre Nápoles,ASESOR_1DCEA22A,sin_clasificar,0.4565,23422.79,229,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_826E2728,467,Edificio Urbanzen,ASESOR_26DEBB0E,sin_clasificar,0.48,23398.1,350,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_E078AF30,468,Edificio Santa Cruz Infinite,ASESOR_10B2BE3F,sin_clasificar,0.2905,23395.42,1655,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_1E5EE5E5,469,Tizón y Bueno,ASESOR_D5DBFC78,sin_clasificar,0.4481,23368.76,738,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_C6BD343A,470,Los Jardines de Urteaga,ASESOR_10B2BE3F,sin_clasificar,0.1557,23305.22,2483,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_30EEC89D,471,Edificio Santa Cruz Infinite,ASESOR_10B2BE3F,sin_clasificar,0.2885,23304.37,2194,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_064C3E31,472,Tizón y Bueno,ASESOR_C931A67B,sin_clasificar,0.4535,23171.29,964,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_B6CB2938,473,Sialia,ASESOR_1959B8DB,sin_clasificar,0.4056,23116.55,336,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_3A8F6D79,474,Sialia,ASESOR_BB88CD67,sin_clasificar,0.3529,23115.64,323,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_98144D79,475,Edificio Cuba Connect,ASESOR_26DEBB0E,sin_clasificar,0.2923,23093.44,1806,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_B1585FDB,476,Torre Nápoles,ASESOR_59C3D8E4,sin_clasificar,0.5097,23088.52,256,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_E73CB135,477,Tizón y Bueno,ASESOR_1F3B24E1,sin_clasificar,0.4791,23077.13,767,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_6E82B819,478,Edificio Cuba Connect,ASESOR_26DEBB0E,sin_clasificar,0.28,23051.65,1938,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_200DD69B,479,Edificio Urbanzen,ASESOR_1959B8DB,sin_clasificar,0.4645,22993.27,355,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_9869A8A3,480,Torre Nápoles,ASESOR_26DEBB0E,sin_clasificar,0.4957,22954.18,299,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_DDFE0E8D,481,Torre Nápoles,ASESOR_B56EAA59,sin_clasificar,0.5155,22943.25,228,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_51D089CD,482,Edificio Urbanzen,ASESOR_26DEBB0E,sin_clasificar,0.5183,22932.67,812,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_D4679C61,483,Capadocia,ASESOR_B56EAA59,sin_clasificar,0.4239,22826.17,350,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_48CE32E8,484,Tizón y Bueno,ASESOR_1F3B24E1,sin_clasificar,0.477,22802.47,698,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_A42E815C,485,Edificio Saenz,ASESOR_C931A67B,sin_clasificar,0.2933,22801.84,2369,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_5844A72A,486,Matera,ASESOR_BB88CD67,sin_clasificar,0.3286,22772.17,329,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_86B700FA,487,Capadocia,ASESOR_2660085B,sin_clasificar,0.4239,22763.96,350,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_9B19F9AB,488,Fenix,ASESOR_C931A67B,sin_clasificar,0.3948,22739.45,367,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_A77B6CBD,489,Sialia,ASESOR_1F3B24E1,sin_clasificar,0.6151,22720.21,362,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_E4BE97CE,490,Modena,ASESOR_26DEBB0E,sin_clasificar,0.5374,22686.18,238,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_CBD02D97,491,Modena,ASESOR_1DCEA22A,sin_clasificar,0.4596,22682.93,258,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_227445A9,492,Edificio Santa Cruz Infinite,ASESOR_10B2BE3F,sin_clasificar,0.244,22615.37,2413,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_23E8B017,493,Modena,ASESOR_BB88CD67,sin_clasificar,0.4097,22611.88,297,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_560AA3E6,494,Fenix,ASESOR_D5DBFC78,sin_clasificar,0.5085,22501.76,517,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_D18B29D8,495,Tizón y Bueno,ASESOR_26DEBB0E,sin_clasificar,0.5187,22492.92,950,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_AC1270C5,496,Edificio Urbanzen,ASESOR_10B2BE3F,sin_clasificar,0.2621,22427.53,1007,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_35BBCE40,497,Sialia,ASESOR_BB88CD67,sin_clasificar,0.4489,22421.91,280,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_DCB5D6E6,498,Alicanto,ASESOR_26DEBB0E,sin_clasificar,0.4594,22407.13,471,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_F138665C,499,Alicanto,ASESOR_2660085B,sin_clasificar,0.4385,22364.9,364,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_DB3DEFDA,500,Alicanto,ASESOR_1F3B24E1,sin_clasificar,0.5833,22308.68,168,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_0604CD31,501,Alicanto,ASESOR_B56EAA59,sin_clasificar,0.4312,22203.76,644,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_1158E7E1,502,Modena,ASESOR_2660085B,sin_clasificar,0.5919,22197.48,262,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_5344C411,503,Alicanto,ASESOR_26DEBB0E,sin_clasificar,0.4352,22195.97,674,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_7182DD43,504,Torre Nápoles,ASESOR_59C3D8E4,sin_clasificar,0.579,22164.89,13,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_BA689ABD,505,Edificio Santa Cruz Infinite,ASESOR_10B2BE3F,sin_clasificar,0.2824,22141.97,2521,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_E13B778A,506,Edificio Santa Cruz Infinite,ASESOR_10B2BE3F,sin_clasificar,0.2824,22141.97,2451,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_A2075145,507,Alicanto,ASESOR_D5DBFC78,sin_clasificar,0.4457,22107.01,612,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_A435270B,508,Edificio Santa Cruz Infinite,ASESOR_10B2BE3F,sin_clasificar,0.244,22072.77,2173,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_ECAC903E,509,Sialia,ASESOR_1959B8DB,sin_clasificar,0.6227,22042.54,475,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_A0519893,510,Alicanto,ASESOR_B56EAA59,sin_clasificar,0.4555,22035.97,410,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_5E5C743A,511,Sialia,ASESOR_2660085B,sin_clasificar,0.5989,22008.44,199,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_2C69BC9B,512,Fenix,ASESOR_D5DBFC78,sin_clasificar,0.4685,21960.31,576,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_94F86079,513,Edificio Cuba Connect,ASESOR_26DEBB0E,sin_clasificar,0.3488,21945.29,1972,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_39700D45,514,Fenix,ASESOR_D5DBFC78,sin_clasificar,0.4858,21861.07,590,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_B027FEEB,515,Fenix,ASESOR_D5DBFC78,sin_clasificar,0.4853,21837.93,585,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_D4B9AEAD,516,Edificio Cuba Connect,ASESOR_26DEBB0E,sin_clasificar,0.3577,21789.83,2089,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_4771BEF2,517,Alicanto,ASESOR_984C1E02,sin_clasificar,0.5516,21754.1,256,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_5088C1BC,518,Alicanto,ASESOR_2660085B,sin_clasificar,0.4372,21712.07,459,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_89521154,519,Modena,ASESOR_26DEBB0E,sin_clasificar,0.5341,21701.92,388,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_0CCE0BD3,520,Fenix,ASESOR_1DCEA22A,sin_clasificar,0.4459,21643.35,473,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_0B35B06A,521,Alicanto,ASESOR_B56EAA59,sin_clasificar,0.4349,21617.82,606,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_72933E3B,522,Tizón y Bueno,ASESOR_10B2BE3F,sin_clasificar,0.3106,21597.97,1000,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_A9346B00,523,Matera,ASESOR_C931A67B,sin_clasificar,0.375,21573.84,312,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_A1E8154B,524,Edificio Santa Cruz Infinite,ASESOR_10B2BE3F,sin_clasificar,0.2452,21543.57,2413,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_388C2EAF,525,Torre Nápoles,ASESOR_1F3B24E1,sin_clasificar,0.5997,21535.32,28,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_C32FFEF1,526,Alicanto,ASESOR_B56EAA59,sin_clasificar,0.5743,21489.9,585,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_F7C25996,527,Edificio Santa Cruz Infinite,ASESOR_10B2BE3F,sin_clasificar,0.2452,21453.01,2479,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_E1BB74A7,528,Torre Nápoles,ASESOR_59C3D8E4,sin_clasificar,0.5016,21442.27,32,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_BD3A797B,529,Alicanto,ASESOR_B56EAA59,sin_clasificar,0.4398,21417.92,401,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_8920A14A,530,Edificio Santa Cruz Infinite,ASESOR_10B2BE3F,sin_clasificar,0.2442,21304.26,1574,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_87E29676,531,Edificio Santa Cruz Infinite,ASESOR_10B2BE3F,sin_clasificar,0.2749,21277.77,1640,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_891D4699,532,Alicanto,ASESOR_1F3B24E1,sin_clasificar,0.5486,21272.15,357,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_68F10BF0,533,Matera,ASESOR_59C3D8E4,sin_clasificar,0.3532,21193.47,30,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_FB8A0D2D,534,Edificio Santa Cruz Infinite,ASESOR_10B2BE3F,sin_clasificar,0.2749,21182.95,2302,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_5EF6514E,535,Sialia,ASESOR_B56EAA59,sin_clasificar,0.5874,21123.38,466,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_20CA9816,536,Edificio Santa Cruz Infinite,ASESOR_10B2BE3F,sin_clasificar,0.2442,21111.95,2637,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_D11501B0,537,Edificio Santa Cruz Infinite,ASESOR_10B2BE3F,sin_clasificar,0.2442,21111.95,2418,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_DA6813D1,538,Torre Nápoles,ASESOR_1DCEA22A,sin_clasificar,0.5865,20785.05,231,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_8DEF3488,539,Edificio Santa Cruz Infinite,ASESOR_10B2BE3F,sin_clasificar,0.2421,20667.51,2301,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_5109A4E1,540,Edificio Cuba Connect,ASESOR_10B2BE3F,sin_clasificar,0.232,20656.07,1327,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_84F01DD9,541,Edificio Cuba Connect,ASESOR_10B2BE3F,sin_clasificar,0.232,20656.07,1134,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_5DE664EF,542,Torre Nápoles,ASESOR_59C3D8E4,sin_clasificar,0.4998,20602.11,36,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_2D86377D,543,Edificio Santa Cruz Infinite,ASESOR_10B2BE3F,sin_clasificar,0.2421,20547.69,1976,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_18BEB481,544,Tizón y Bueno,ASESOR_C931A67B,sin_clasificar,0.3991,20534.64,872,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_D359F8B5,545,Edificio Santa Cruz Infinite,ASESOR_10B2BE3F,sin_clasificar,0.2421,20471.44,1593,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_68E476B5,546,Edificio Santa Cruz Infinite,ASESOR_10B2BE3F,sin_clasificar,0.2421,20471.44,1496,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_6FC8F95B,547,Edificio Cuba Connect,ASESOR_10B2BE3F,sin_clasificar,0.2547,20436.35,1704,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_FADB19BF,548,Edificio Santa Cruz Infinite,ASESOR_10B2BE3F,sin_clasificar,0.25,20423.27,2024,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_6E2D4D3A,549,Edificio Cuba Connect,ASESOR_10B2BE3F,sin_clasificar,0.2578,20396.25,1868,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_06881487,550,Edificio Santa Cruz Infinite,ASESOR_10B2BE3F,sin_clasificar,0.25,20374.52,2446,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_F89F8D0E,551,Edificio Santa Cruz Infinite,ASESOR_10B2BE3F,sin_clasificar,0.2421,20371.59,2488,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_1F09802C,552,Fenix,ASESOR_C931A67B,sin_clasificar,0.3843,20336.67,572,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_CC6BB91D,553,Torre Nápoles,ASESOR_1959B8DB,sin_clasificar,0.6484,20327.34,184,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_D40FBD13,554,Edificio Santa Cruz Infinite,ASESOR_10B2BE3F,sin_clasificar,0.2655,20302.3,906,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_833CD8C0,555,Edificio Santa Cruz Infinite,ASESOR_10B2BE3F,sin_clasificar,0.2421,20297.15,2505,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_91A73FD8,556,Edificio Santa Cruz Infinite,ASESOR_10B2BE3F,sin_clasificar,0.2463,20251.99,1506,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_9D6AA3D8,557,Matera,ASESOR_C931A67B,sin_clasificar,0.3508,20192.86,5,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_5FBC314F,558,Edificio Santa Cruz Infinite,ASESOR_10B2BE3F,sin_clasificar,0.2437,20189.58,1371,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_DD8E8C8C,559,Edificio Santa Cruz Infinite,ASESOR_10B2BE3F,sin_clasificar,0.2463,20189.19,1632,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_0D6F9709,560,Edificio Santa Cruz Infinite,ASESOR_10B2BE3F,sin_clasificar,0.2463,20189.19,994,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_6BCAEA98,561,Torre Nápoles,ASESOR_2660085B,sin_clasificar,0.3604,20162.7,312,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_04EDD1D7,562,Edificio Santa Cruz Infinite,ASESOR_10B2BE3F,sin_clasificar,0.2437,20068.95,1602,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_4EEF24C6,563,Torre Nápoles,ASESOR_1959B8DB,sin_clasificar,0.6311,20051.54,245,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_FA4DDF29,564,Fenix,ASESOR_C931A67B,sin_clasificar,0.3864,20000.9,586,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_621CB5D0,565,Torre Nápoles,ASESOR_2660085B,sin_clasificar,0.5888,19872.82,124,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_236B565A,566,Torre Nápoles,ASESOR_26DEBB0E,sin_clasificar,0.576,19872.29,103,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_C57727D6,567,Torre Nápoles,ASESOR_1F3B24E1,sin_clasificar,0.5997,19783.43,89,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_97A6D21D,568,Matera,ASESOR_B56EAA59,sin_clasificar,0.4241,19721.17,10,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_F8818B67,569,Edificio Santa Cruz Infinite,ASESOR_7178B923,sin_clasificar,0.2989,19705.18,2309,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_C7CE483F,570,Sialia,ASESOR_C931A67B,sin_clasificar,0.4013,19683.16,466,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_085B2A38,571,Torre Nápoles,ASESOR_26DEBB0E,sin_clasificar,0.574,19669.36,292,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_F292C8C5,572,Matera,ASESOR_1F3B24E1,sin_clasificar,0.3715,19606.46,228,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_5E74CB2A,573,Edificio Mariategui,ASESOR_C931A67B,sin_clasificar,0.4451,19554.39,980,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_5B4AFB8D,574,Edificio Cuba Connect,ASESOR_10B2BE3F,sin_clasificar,0.2226,19529.85,1828,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_8E28C5EB,575,Edificio Cuba Connect,ASESOR_10B2BE3F,sin_clasificar,0.2226,19494.79,1989,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_FB84A973,576,Los Jardines de Urteaga,ASESOR_10B2BE3F,sin_clasificar,0.1604,19328.07,3025,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_F3457DAB,577,Sialia,ASESOR_C931A67B,sin_clasificar,0.4019,19291.06,411,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_1086D355,578,Capadocia,ASESOR_C931A67B,sin_clasificar,0.3629,19249.26,222,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_B2CC86AE,579,Edificio Cuba Connect,ASESOR_10B2BE3F,sin_clasificar,0.2216,19135.92,2572,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_59B524F8,580,Edificio Cuba Connect,ASESOR_10B2BE3F,sin_clasificar,0.2216,19135.92,2035,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_DE0023E3,581,Torre Nápoles,ASESOR_59C3D8E4,sin_clasificar,0.564,19119.37,58,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_4299DA74,582,Edificio Mariategui,ASESOR_26DEBB0E,sin_clasificar,0.4494,19079.94,1132,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_421C0A7B,583,Edificio Cuba Connect,ASESOR_10B2BE3F,sin_clasificar,0.2216,19076.03,1690,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_62BFA285,584,Matera,ASESOR_1F3B24E1,sin_clasificar,0.3448,19046.27,300,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_085BCB59,585,Los Jardines de Urteaga,ASESOR_10B2BE3F,sin_clasificar,0.1604,19018.95,1529,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_C403741C,586,Matera,ASESOR_BB88CD67,sin_clasificar,0.3285,19018.87,307,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_219DE138,587,Alicanto,ASESOR_C931A67B,sin_clasificar,0.379,18999.4,585,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_82A93B15,588,Edificio Mariategui,ASESOR_C931A67B,sin_clasificar,0.457,18963.19,1123,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_A917CA75,589,Edificio Cuba Connect,ASESOR_10B2BE3F,sin_clasificar,0.2204,18895.1,1959,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_FBE69742,590,Edificio Cuba Connect,ASESOR_10B2BE3F,sin_clasificar,0.2204,18895.1,1833,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_E6FCC025,591,Torre Nápoles,ASESOR_B56EAA59,sin_clasificar,0.6254,18763.03,254,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_60F070E3,592,Edificio Cuba Connect,ASESOR_10B2BE3F,sin_clasificar,0.2212,18749.79,906,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_79373357,593,Edificio Cuba Connect,ASESOR_10B2BE3F,sin_clasificar,0.225,18731.1,906,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_D4E33E29,594,Edificio Cuba Connect,ASESOR_10B2BE3F,sin_clasificar,0.2204,18725.97,1858,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_E2FA8F5B,595,Edificio Santa Cruz Infinite,ASESOR_B56EAA59,sin_clasificar,0.2901,18684.1,906,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_A3AAF5A0,596,Edificio Cuba Connect,ASESOR_10B2BE3F,sin_clasificar,0.229,18647.93,1715,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_BE6B5B71,597,Edificio Cuba Connect,ASESOR_10B2BE3F,sin_clasificar,0.225,18582.25,1960,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_FCF1E4BF,598,Edificio Cuba Connect,ASESOR_10B2BE3F,sin_clasificar,0.225,18582.25,1897,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_BF7DB3A1,599,Matera,ASESOR_1F3B24E1,sin_clasificar,0.3993,18568.01,360,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_182DC6B9,600,Tizón y Bueno,ASESOR_C931A67B,sin_clasificar,0.3676,18471.89,1027,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_284B7E6D,601,Torre Nápoles,ASESOR_B56EAA59,sin_clasificar,0.6254,18293.96,195,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_36C1CC2F,602,Edificio Saenz,ASESOR_C931A67B,sin_clasificar,0.2488,18288.79,2287,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_AEE4848A,603,Los Jardines de Urteaga,ASESOR_10B2BE3F,sin_clasificar,0.1619,18244.95,1832,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_97468F67,604,Los Jardines de Urteaga,ASESOR_10B2BE3F,sin_clasificar,0.1619,18244.95,1639,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_3B86DF3F,605,Torre Nápoles,ASESOR_BB88CD67,sin_clasificar,0.5526,18188.27,280,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_90B5BC7F,606,Edificio Mariategui,ASESOR_10B2BE3F,sin_clasificar,0.2442,18186.82,1069,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_F57B8252,607,Matera,ASESOR_1959B8DB,sin_clasificar,0.4477,18166.07,226,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_67EAB6DB,608,Torre Nápoles,ASESOR_BB88CD67,sin_clasificar,0.5842,17964.87,94,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_1DE4D95A,609,Matera,ASESOR_1959B8DB,sin_clasificar,0.4424,17925.99,302,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_1F594DA9,610,Edificio Santa Cruz Infinite,ASESOR_10B2BE3F,sin_clasificar,0.2013,17892.48,2484,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_01CE4B29,611,Edificio Santa Cruz Infinite,ASESOR_10B2BE3F,sin_clasificar,0.2013,17878.83,2413,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_97623535,612,Edificio Saenz,ASESOR_C931A67B,sin_clasificar,0.2401,17851.38,2379,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_55F0124B,613,Torre Nápoles,ASESOR_1959B8DB,sin_clasificar,0.6736,17782.73,263,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_7595DAE9,614,Torre Nápoles,ASESOR_59C3D8E4,sin_clasificar,0.5825,17781.04,46,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_FA7AEC4E,615,Edificio Santa Cruz Infinite,ASESOR_7178B923,sin_clasificar,0.3037,17764.15,2316,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_3DE83925,616,Edificio Cuba Connect,ASESOR_26DEBB0E,sin_clasificar,0.3853,17730.89,1745,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_683D0982,617,Matera,ASESOR_BB88CD67,sin_clasificar,0.3179,17660.27,301,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_85EA151B,618,Edificio Cuba Connect,ASESOR_26DEBB0E,sin_clasificar,0.3513,17546.58,1714,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_EE377871,619,Matera,ASESOR_2660085B,sin_clasificar,0.4511,17523.54,299,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_86A3F9B1,620,Edificio Santa Cruz Infinite,ASESOR_10B2BE3F,sin_clasificar,0.2258,17468.0,2224,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_524148F2,621,Matera,ASESOR_1959B8DB,sin_clasificar,0.4262,17271.66,293,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_90B0CE46,622,Edificio Santa Cruz Infinite,ASESOR_7178B923,sin_clasificar,0.2525,17233.22,1672,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_FC47B34E,623,Edificio Santa Cruz Infinite,ASESOR_7178B923,sin_clasificar,0.2619,17202.65,1767,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_FC71F2D6,624,Edificio Mariategui,ASESOR_7178B923,sin_clasificar,0.4096,16983.88,1383,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_1B3C3358,625,Edificio Santa Cruz Infinite,ASESOR_10B2BE3F,sin_clasificar,0.1966,16744.32,2404,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_AD723F42,626,Edificio Cuba Connect,ASESOR_26DEBB0E,sin_clasificar,0.2447,16736.42,1993,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_87ACB1E1,627,Matera,ASESOR_BB88CD67,sin_clasificar,0.3528,16707.95,219,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_9A35532C,628,Matera,ASESOR_BB88CD67,sin_clasificar,0.2674,16694.9,316,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_67C31233,629,Edificio Santa Cruz Infinite,ASESOR_10B2BE3F,sin_clasificar,0.1966,16658.81,2548,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_1AD269A7,630,Edificio Santa Cruz Infinite,ASESOR_10B2BE3F,sin_clasificar,0.1966,16598.37,2566,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_21900F41,631,Torre Nápoles,ASESOR_2660085B,sin_clasificar,0.5877,16572.23,276,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_7B81EB72,632,Torre Nápoles,ASESOR_1DCEA22A,sin_clasificar,0.6272,16525.92,255,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_3BCC1340,633,Edificio Santa Cruz Infinite,ASESOR_10B2BE3F,sin_clasificar,0.1966,16509.0,2414,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_B6B1B469,634,Edificio Santa Cruz Infinite,ASESOR_10B2BE3F,sin_clasificar,0.1966,16474.54,2543,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_709DF012,635,Edificio Santa Cruz Infinite,ASESOR_10B2BE3F,sin_clasificar,0.1966,16473.06,1276,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_2618182C,636,Edificio Cuba Connect,ASESOR_26DEBB0E,sin_clasificar,0.2873,16370.3,1404,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_02C000A3,637,Edificio Santa Cruz Infinite,ASESOR_7178B923,sin_clasificar,0.2365,16362.48,2309,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_BDA58405,638,Edificio Saenz,ASESOR_10B2BE3F,sin_clasificar,0.1698,16313.86,906,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_F4DD3013,639,Matera,ASESOR_2660085B,sin_clasificar,0.4171,16258.86,298,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_2CFD4B16,640,Matera,ASESOR_C931A67B,sin_clasificar,0.4031,16252.64,32,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_3F1BB7C0,641,Los Jardines de Urteaga,ASESOR_10B2BE3F,sin_clasificar,0.1566,16238.99,1995,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_455AE2DF,642,Los Jardines de Urteaga,ASESOR_10B2BE3F,sin_clasificar,0.1566,16238.99,1898,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_68FCD1EB,643,Matera,ASESOR_B56EAA59,sin_clasificar,0.4012,16158.57,298,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_62E66F3E,644,Matera,ASESOR_B56EAA59,sin_clasificar,0.4,16127.97,312,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_87E50B28,645,Edificio Santa Cruz Infinite,ASESOR_10B2BE3F,sin_clasificar,0.2136,16126.32,1228,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_3C2308B1,646,Matera,ASESOR_B56EAA59,sin_clasificar,0.4,16046.1,312,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_ED0B853B,647,Edificio Mariategui,ASESOR_10B2BE3F,sin_clasificar,0.2259,15992.11,1529,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_86BC00BF,648,Edificio Saenz,ASESOR_10B2BE3F,sin_clasificar,0.1697,15897.06,906,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_C86A2932,649,Edificio Santa Cruz Infinite,ASESOR_10B2BE3F,sin_clasificar,0.2136,15841.15,2408,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_5480AB85,650,Edificio Mariategui,ASESOR_6BEEF0AF,sin_clasificar,0.3562,15766.76,980,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_2099A9B5,651,Fenix,ASESOR_10B2BE3F,sin_clasificar,0.2871,15585.96,590,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_E9AD42E2,652,Matera,ASESOR_26DEBB0E,sin_clasificar,0.3971,15488.83,290,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_83EAF4DC,653,Edificio Cuba Connect,ASESOR_26DEBB0E,sin_clasificar,0.2787,15450.65,1557,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_5F128C83,654,Edificio Saenz,ASESOR_10B2BE3F,sin_clasificar,0.1683,15421.02,906,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_92A6A32F,655,Edificio Santa Cruz Infinite,ASESOR_7178B923,sin_clasificar,0.2355,15390.41,2390,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_9F6CB78C,656,Edificio Santa Cruz Infinite,ASESOR_10B2BE3F,sin_clasificar,0.2095,15378.41,1637,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_D62A7B3D,657,Edificio Santa Cruz Infinite,ASESOR_10B2BE3F,sin_clasificar,0.2095,15363.58,906,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_24BE8EE7,658,Edificio Urbanzen,ASESOR_10B2BE3F,sin_clasificar,0.3407,15349.35,966,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_C22E1A4A,659,Edificio Saenz,ASESOR_10B2BE3F,sin_clasificar,0.1683,15347.65,906,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_5C17CAC5,660,Tizón y Bueno,ASESOR_10B2BE3F,sin_clasificar,0.3109,15334.62,979,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_FC9E91CC,661,Edificio Mariategui,ASESOR_6BEEF0AF,sin_clasificar,0.3624,15323.03,1174,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_316C0F93,662,Edificio Santa Cruz Infinite,ASESOR_10B2BE3F,sin_clasificar,0.2095,15277.86,906,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_81F27F8A,663,Edificio Santa Cruz Infinite,ASESOR_10B2BE3F,sin_clasificar,0.2095,15277.86,906,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_4B8BA4B1,664,Edificio Saenz,ASESOR_10B2BE3F,sin_clasificar,0.2429,14939.49,906,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_09EAC95E,665,Los Jardines de Urteaga,ASESOR_10B2BE3F,sin_clasificar,0.1464,14838.86,2471,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_9AE8F17C,666,Los Jardines de Urteaga,ASESOR_10B2BE3F,sin_clasificar,0.1464,14834.3,2687,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_C7E61682,667,Los Jardines de Urteaga,ASESOR_10B2BE3F,sin_clasificar,0.1464,14834.3,2678,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_8B5551EA,668,Los Jardines de Urteaga,ASESOR_10B2BE3F,sin_clasificar,0.1464,14834.3,2586,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_6F81082B,669,Edificio Saenz,ASESOR_10B2BE3F,sin_clasificar,0.1895,14748.74,906,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_BF31E612,670,Sialia,ASESOR_10B2BE3F,sin_clasificar,0.3038,14581.74,447,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_172E1676,671,Los Jardines de Urteaga,ASESOR_10B2BE3F,sin_clasificar,0.1464,14426.69,2473,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_00BEBC5B,672,Los Jardines de Urteaga,ASESOR_10B2BE3F,sin_clasificar,0.1464,14426.69,2334,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_12F26AF0,673,Los Jardines de Urteaga,ASESOR_10B2BE3F,sin_clasificar,0.1464,14426.69,2199,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_F4466A4B,674,Los Jardines de Urteaga,ASESOR_10B2BE3F,sin_clasificar,0.1464,14423.33,2868,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_8EF532F4,675,Los Jardines de Urteaga,ASESOR_10B2BE3F,sin_clasificar,0.1464,14423.33,2558,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_A440868C,676,Los Jardines de Urteaga,ASESOR_10B2BE3F,sin_clasificar,0.1464,14423.33,2162,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_63DB0204,677,Los Jardines de Urteaga,ASESOR_10B2BE3F,sin_clasificar,0.1464,14423.33,1597,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_2782526E,678,Los Jardines de Urteaga,ASESOR_10B2BE3F,sin_clasificar,0.1484,14412.98,3030,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_CEBE3D9D,679,Matera,ASESOR_C931A67B,sin_clasificar,0.3717,14341.0,360,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_34E2AD7B,680,Los Jardines de Urteaga,ASESOR_10B2BE3F,sin_clasificar,0.1491,14307.88,2334,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_A4C6AF0C,681,Edificio Santa Cruz Infinite,ASESOR_10B2BE3F,sin_clasificar,0.1988,14287.53,2506,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_1C8DCC51,682,Los Jardines de Urteaga,ASESOR_10B2BE3F,sin_clasificar,0.1507,14060.93,2836,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_EC1C7D93,683,Los Jardines de Urteaga,ASESOR_10B2BE3F,sin_clasificar,0.1507,14060.93,2715,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_07BED92A,684,Los Jardines de Urteaga,ASESOR_10B2BE3F,sin_clasificar,0.1507,14060.93,2639,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_10BA045E,685,Edificio Santa Cruz Infinite,ASESOR_10B2BE3F,sin_clasificar,0.1988,14017.95,906,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_BB9B8EF8,686,Edificio Saenz,ASESOR_10B2BE3F,sin_clasificar,0.1662,13992.4,1023,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_162753C2,687,Edificio Santa Cruz Infinite,ASESOR_10B2BE3F,sin_clasificar,0.1988,13947.57,1828,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_C2077253,688,Edificio Saenz,ASESOR_10B2BE3F,sin_clasificar,0.17,13859.29,1555,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_1C63ED91,689,Los Jardines de Urteaga,ASESOR_10B2BE3F,sin_clasificar,0.1518,13764.13,2945,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_FC4FB94D,690,Los Jardines de Urteaga,ASESOR_10B2BE3F,sin_clasificar,0.1518,13764.13,2579,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_F6103CA1,691,Los Jardines de Urteaga,ASESOR_10B2BE3F,sin_clasificar,0.1518,13764.13,2545,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_809E63D5,692,Edificio Santa Cruz Infinite,ASESOR_10B2BE3F,sin_clasificar,0.1988,13694.08,1766,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_4CC3D9CB,693,Los Jardines de Urteaga,ASESOR_10B2BE3F,sin_clasificar,0.1507,13674.62,2477,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_8B7FB6AE,694,Los Jardines de Urteaga,ASESOR_10B2BE3F,sin_clasificar,0.1507,13674.62,2476,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_A6C2A232,695,Los Jardines de Urteaga,ASESOR_10B2BE3F,sin_clasificar,0.1507,13674.62,2339,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_11F8E31C,696,Edificio Santa Cruz Infinite,ASESOR_10B2BE3F,sin_clasificar,0.1988,13613.56,1680,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_677FE64A,697,Edificio Santa Cruz Infinite,ASESOR_10B2BE3F,sin_clasificar,0.1988,13568.83,1889,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_D6723FA9,698,Los Jardines de Urteaga,ASESOR_10B2BE3F,sin_clasificar,0.153,13490.24,2486,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_E4C6A9F3,699,Edificio Santa Cruz Infinite,ASESOR_10B2BE3F,sin_clasificar,0.1988,13383.94,1919,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_C9A5DA07,700,Edificio Santa Cruz Infinite,ASESOR_7178B923,sin_clasificar,0.2133,13355.52,2465,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_99EE5022,701,Edificio Cuba Connect,ASESOR_26DEBB0E,sin_clasificar,0.3455,13209.18,2199,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_290A0B92,702,Edificio Cuba Connect,ASESOR_26DEBB0E,sin_clasificar,0.2779,13175.54,1796,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_47FEC9F4,703,Edificio Santa Cruz Infinite,ASESOR_10B2BE3F,sin_clasificar,0.1988,13002.22,1766,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_769E881D,704,Edificio Santa Cruz Infinite,ASESOR_10B2BE3F,sin_clasificar,0.1988,12981.35,1979,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_E4E54940,705,Edificio Santa Cruz Infinite,ASESOR_10B2BE3F,sin_clasificar,0.1988,12981.35,1828,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_BD94717D,706,Los Jardines de Urteaga,ASESOR_10B2BE3F,sin_clasificar,0.1508,12901.81,2934,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_35254AA9,707,Edificio Saenz,ASESOR_10B2BE3F,sin_clasificar,0.142,10991.01,906,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_5B60F221,708,Edificio Cuba Connect,ASESOR_10B2BE3F,sin_clasificar,0.1638,10685.42,906,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_1706BE6C,709,Edificio Mariategui,ASESOR_10B2BE3F,sin_clasificar,0.2215,10463.71,945,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_92C5FD04,710,Edificio Mariategui,ASESOR_10B2BE3F,sin_clasificar,0.2427,9989.05,1633,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_4EC24A2D,711,Edificio Mariategui,ASESOR_10B2BE3F,sin_clasificar,0.222,9934.76,1007,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_2499D690,712,Edificio Santa Cruz Infinite,ASESOR_10B2BE3F,sin_clasificar,0.1686,9003.58,906,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_9B09D7F6,713,Edificio Saenz,ASESOR_10B2BE3F,sin_clasificar,0.1202,8925.36,906,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_40F8D6D2,714,Edificio Cuba Connect,ASESOR_10B2BE3F,sin_clasificar,0.1443,8248.37,2481,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_C66BBE9D,715,Edificio Cuba Connect,ASESOR_10B2BE3F,sin_clasificar,0.1443,8248.37,2101,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_35C71BD7,716,Edificio Saenz,ASESOR_10B2BE3F,sin_clasificar,0.1152,8142.32,906,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_2E00B312,717,Edificio Saenz,ASESOR_10B2BE3F,sin_clasificar,0.1152,8135.41,906,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_D536A8C1,718,Edificio Saenz,ASESOR_10B2BE3F,sin_clasificar,0.1152,8055.94,906,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_6C0F3412,719,Edificio Saenz,ASESOR_10B2BE3F,sin_clasificar,0.1152,8042.12,906,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_02837C19,720,Edificio Saenz,ASESOR_10B2BE3F,sin_clasificar,0.1152,8012.06,906,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_D829857E,721,Edificio Saenz,ASESOR_10B2BE3F,sin_clasificar,0.1152,8004.11,906,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_74DE057F,722,Edificio Cuba Connect,ASESOR_10B2BE3F,sin_clasificar,0.141,7835.26,2424,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_0EBB3519,723,Edificio Cuba Connect,ASESOR_10B2BE3F,sin_clasificar,0.141,7611.4,2683,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_07E46896,724,Edificio Cuba Connect,ASESOR_10B2BE3F,sin_clasificar,0.141,7611.4,2559,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_68C6C6E9,725,Edificio Cuba Connect,ASESOR_10B2BE3F,sin_clasificar,0.141,7280.16,1896,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_5C3E9040,726,Edificio Cuba Connect,ASESOR_10B2BE3F,sin_clasificar,0.141,7280.16,1805,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_9DCBE7E3,727,Edificio Cuba Connect,ASESOR_10B2BE3F,sin_clasificar,0.141,7280.16,1777,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_30E4C022,728,Edificio Saenz,ASESOR_10B2BE3F,sin_clasificar,0.1051,7151.27,906,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_7C3D9000,729,Edificio Saenz,ASESOR_10B2BE3F,sin_clasificar,0.1051,7113.77,906,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_509694B0,730,Edificio Saenz,ASESOR_10B2BE3F,sin_clasificar,0.1051,7113.77,906,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_61182F39,731,Edificio Cuba Connect,ASESOR_10B2BE3F,sin_clasificar,0.141,7072.16,1994,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_F24F1A64,732,Edificio Saenz,ASESOR_10B2BE3F,sin_clasificar,0.104,7022.91,906,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_81DEFD9E,733,Edificio Saenz,ASESOR_10B2BE3F,sin_clasificar,0.104,6887.79,906,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_367461E6,734,Edificio Saenz,ASESOR_10B2BE3F,sin_clasificar,0.104,6855.66,906,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_C2A181D8,735,Edificio Saenz,ASESOR_10B2BE3F,sin_clasificar,0.104,6841.29,906,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_1A42D526,736,Edificio Saenz,ASESOR_10B2BE3F,sin_clasificar,0.104,6781.06,906,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_2B9449F3,737,Edificio Saenz,ASESOR_10B2BE3F,sin_clasificar,0.1044,6647.14,906,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_BC8DB39F,738,Edificio Saenz,ASESOR_10B2BE3F,sin_clasificar,0.1044,6628.04,906,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_102624AC,739,Edificio Saenz,ASESOR_10B2BE3F,sin_clasificar,0.103,6485.38,906,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_40962624,740,Edificio Saenz,ASESOR_10B2BE3F,sin_clasificar,0.103,6476.1,906,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_234666D7,741,Edificio Saenz,ASESOR_10B2BE3F,sin_clasificar,0.103,6446.74,906,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_75F7313C,742,Edificio Saenz,ASESOR_10B2BE3F,sin_clasificar,0.103,6428.19,906,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_CCBCD0D6,743,Edificio Saenz,ASESOR_10B2BE3F,sin_clasificar,0.103,6415.92,906,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_0DF5486B,744,Edificio Saenz,ASESOR_10B2BE3F,sin_clasificar,0.103,6400.22,906,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_A15FAF6F,745,Edificio Saenz,ASESOR_10B2BE3F,sin_clasificar,0.103,6388.0,906,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_42C60249,746,Edificio Saenz,ASESOR_10B2BE3F,sin_clasificar,0.103,6388.0,906,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_5DAD6478,747,Edificio Saenz,ASESOR_10B2BE3F,sin_clasificar,0.103,6342.87,906,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_6F90A5A0,748,Edificio Saenz,ASESOR_10B2BE3F,sin_clasificar,0.103,6337.0,906,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_0C658EB5,749,Edificio Saenz,ASESOR_10B2BE3F,sin_clasificar,0.103,6335.45,906,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_6165D33E,750,Edificio Saenz,ASESOR_10B2BE3F,sin_clasificar,0.103,6290.32,906,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_64D095F2,751,Edificio Saenz,ASESOR_10B2BE3F,sin_clasificar,0.103,6290.32,906,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_D3B913CD,752,Edificio Saenz,ASESOR_10B2BE3F,sin_clasificar,0.103,6261.26,906,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_8B80F49E,753,Edificio Saenz,ASESOR_10B2BE3F,sin_clasificar,0.103,6188.31,906,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_A8CEE66E,754,Edificio Saenz,ASESOR_10B2BE3F,sin_clasificar,0.103,6188.31,906,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_4099ED5B,755,Edificio Saenz,ASESOR_10B2BE3F,sin_clasificar,0.103,6111.03,906,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_86AB8CBE,756,Edificio Saenz,ASESOR_10B2BE3F,sin_clasificar,0.103,6085.37,906,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_A7F0B84D,757,Edificio Saenz,ASESOR_10B2BE3F,sin_clasificar,0.103,6085.37,906,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_B6BC077D,758,Edificio Saenz,ASESOR_10B2BE3F,sin_clasificar,0.103,5988.62,906,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_F15223DC,759,Edificio Saenz,ASESOR_10B2BE3F,sin_clasificar,0.103,5988.62,906,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_B967FB22,760,Edificio Saenz,ASESOR_10B2BE3F,sin_clasificar,0.103,5967.6,906,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_AFCCD937,761,Edificio Saenz,ASESOR_10B2BE3F,sin_clasificar,0.103,5967.6,906,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_C78961D3,762,Edificio Saenz,ASESOR_10B2BE3F,sin_clasificar,0.103,5942.25,906,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe
+OP_9B6C13F0,763,Edificio Saenz,ASESOR_10B2BE3F,sin_clasificar,0.103,5930.81,906,P3_backlog,168,Backlog: no intervenir salvo nueva señal o capacidad disponible.,crm_aggregated_safe

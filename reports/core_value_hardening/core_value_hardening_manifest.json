@@ -1,0 +1,130 @@
+{
+  "version": "v2.7_core_value_hardening",
+  "generated_at": "2026-07-04T23:05:18",
+  "capacity": {
+    "total_operaciones": 763,
+    "daily_capacity": 30,
+    "priority_counts": {
+      "P3_backlog": 463,
+      "P2_monitor_72h": 200,
+      "P1_next_48h": 70,
+      "P0_top_capacity_today": 30
+    },
+    "p0_p1_operaciones": 100,
+    "p0_p1_valor_en_riesgo": 5297247.93
+  },
+  "model": {
+    "roc_auc_test": 0.516553185295402,
+    "average_precision_test": 0.11474678184880849,
+    "top_decile_lift": 1.038961038961039,
+    "calibration_gap": 0.42624710583107517,
+    "claim_level": "modelo_apto_solo_como_ranking_debil_y_gobernado",
+    "recommended_commercial_message": "Vender como sistema de priorización y aprendizaje, no como predicción de alta precisión.",
+    "precision_at_k": [
+      {
+        "k": 10,
+        "positives": 2,
+        "precision_at_k": 0.2,
+        "capture_rate_at_k": 0.0259740259740259
+      },
+      {
+        "k": 20,
+        "positives": 2,
+        "precision_at_k": 0.1,
+        "capture_rate_at_k": 0.0259740259740259
+      },
+      {
+        "k": 50,
+        "positives": 5,
+        "precision_at_k": 0.1,
+        "capture_rate_at_k": 0.0649350649350649
+      },
+      {
+        "k": 100,
+        "positives": 10,
+        "precision_at_k": 0.1,
+        "capture_rate_at_k": 0.1298701298701298
+      },
+      {
+        "k": 200,
+        "positives": 15,
+        "precision_at_k": 0.075,
+        "capture_rate_at_k": 0.1948051948051948
+      },
+      {
+        "k": 880,
+        "positives": 77,
+        "precision_at_k": 0.0875,
+        "capture_rate_at_k": 1.0
+      }
+    ]
+  },
+  "scorecard": [
+    {
+      "modulo": "Marts reales",
+      "evidencia": "reports/real_marts/REAL_MART_EXPANSION.md",
+      "estado": "parcial",
+      "riesgo": "Falta validar reglas oficiales con gerencia."
+    },
+    {
+      "modulo": "Cohortes",
+      "evidencia": "CORE_ANALYTICS_30D_PLAN_v1",
+      "estado": "planificado",
+      "riesgo": "Todavía debe ejecutarse sobre CRM privado."
+    },
+    {
+      "modulo": "Modelo riesgo",
+      "evidencia": "reports/modeling/lift_metrics.json",
+      "estado": "débil_gobernado",
+      "riesgo": "No vender como alta precisión."
+    },
+    {
+      "modulo": "Ranking accionable",
+      "evidencia": "data/processed/core_value_hardening/capacity_risk_queue_safe.csv",
+      "estado": "mejorado",
+      "riesgo": "Ahora depende de capacidad comercial."
+    },
+    {
+      "modulo": "Feedback real",
+      "evidencia": "data/processed/action_feedback/feedback_events_safe.csv",
+      "estado": "estructura",
+      "riesgo": "Falta captura sostenida 7d/30d."
+    },
+    {
+      "modulo": "Impacto causal",
+      "evidencia": "reports/experiments/EXPERIMENTATION_CAUSAL_IMPACT_LAB.md",
+      "estado": "prematuro",
+      "riesgo": "Muestra insuficiente."
+    },
+    {
+      "modulo": "Dashboard público",
+      "evidencia": "reports/public/DECISION_DASHBOARD_PUBLIC.html",
+      "estado": "mejorado",
+      "riesgo": "Debe mantenerse agregado y anonimizado."
+    },
+    {
+      "modulo": "Demo comercial",
+      "evidencia": "reports/core_value_hardening/EXECUTIVE_VALUE_BRIEF.html",
+      "estado": "enfocado",
+      "riesgo": "Reducir a historia de valor."
+    }
+  ],
+  "outputs": {
+    "executive_brief_md": "C:\\Repos\\freelance\\ml_university_ready\\reports\\core_value_hardening\\EXECUTIVE_VALUE_BRIEF.md",
+    "executive_brief_html": "C:\\Repos\\freelance\\ml_university_ready\\reports\\core_value_hardening\\EXECUTIVE_VALUE_BRIEF.html",
+    "public_payload": "C:\\Repos\\freelance\\ml_university_ready\\reports\\public\\decision_dashboard_payload_public.json",
+    "public_dashboard": "C:\\Repos\\freelance\\ml_university_ready\\reports\\public\\DECISION_DASHBOARD_PUBLIC.html",
+    "capacity_queue_safe": "C:\\Repos\\freelance\\ml_university_ready\\data\\processed\\core_value_hardening\\capacity_risk_queue_safe.csv",
+    "model_review": "C:\\Repos\\freelance\\ml_university_ready\\reports\\core_value_hardening\\MODEL_BASELINE_LIFT_REVIEW.md",
+    "capacity_review": "C:\\Repos\\freelance\\ml_university_ready\\reports\\core_value_hardening\\CAPACITY_PRIORITIZATION_REVIEW.md"
+  },
+  "validation": {
+    "status": "ok",
+    "forbidden_hits": {},
+    "checked_paths": [
+      "C:\\Repos\\freelance\\ml_university_ready\\reports\\public\\decision_dashboard_payload_public.json",
+      "C:\\Repos\\freelance\\ml_university_ready\\reports\\public\\DECISION_DASHBOARD_PUBLIC.html",
+      "C:\\Repos\\freelance\\ml_university_ready\\reports\\core_value_hardening\\EXECUTIVE_VALUE_BRIEF.html"
+    ]
+  }
+}
