@@ -523,19 +523,25 @@ def client_ready_metadata_endpoint():
 @app.get("/demo/client-ready", response_class=HTMLResponse)
 def client_ready_demo_endpoint(demo_token: str | None = Query(default=None), x_demo_token: str | None = Header(default=None)):
     """
-    Yo sirvo la landing cliente con token simple opcional para demos externas.
+    Yo sirvo la landing cliente con ejemplos públicos peruanos y token simple opcional.
     """
-    from src.mlu.client_ready_branding_and_deployment import (
-        LANDING_HTML,
-        run_client_ready_branding_and_deployment,
-        validate_demo_token,
-    )
+    from src.mlu.client_ready_branding_and_deployment import validate_demo_token
+    from src.mlu.public_peru_demo import LANDING_HTML, build_public_peru_demo_html
     token = x_demo_token or demo_token
     if not validate_demo_token(token):
         raise HTTPException(status_code=401, detail="Demo token inválido o ausente")
     if not LANDING_HTML.exists():
-        run_client_ready_branding_and_deployment()
+        build_public_peru_demo_html()
     return HTMLResponse(LANDING_HTML.read_text(encoding="utf-8"))
+
+
+@app.get("/metadata/public-peru-examples")
+def public_peru_examples_metadata_endpoint():
+    """
+    Yo expongo las inmobiliarias públicas usadas como ejemplos de mercado, nunca como clientes reales.
+    """
+    from src.mlu.public_peru_demo import public_examples_metadata
+    return public_examples_metadata()
 
 
 @app.get("/demo/landing", response_class=HTMLResponse)
@@ -762,4 +768,53 @@ def client_success_package_endpoint(tenant_id: str):
         return get_client_success_package(tenant_id)
     except FileNotFoundError:
         raise HTTPException(status_code=404, detail="Client success package no encontrado")
+
+# --- v2.6 dashboard generated files route fix ---
+def _serve_generated_dashboard_artifact(file_path: str):
+    """
+    Yo sirvo archivos HTML/Markdown/JSON generados desde el catálogo sin exponer data privada.
+    Esta ruta corrige links tipo /dashboard/reports/generated_dashboards/<familia>/<dashboard>.html.
+    """
+    from src.mlu.dashboard_generator import GENERATED_DIR, generate_dashboards_from_catalog
+    safe_path = Path(file_path)
+    if safe_path.is_absolute() or ".." in safe_path.parts:
+        raise HTTPException(status_code=404, detail="Not Found")
+    if safe_path.parts and safe_path.parts[0] == "reports":
+        safe_path = Path(*safe_path.parts[2:]) if len(safe_path.parts) >= 3 and safe_path.parts[1] == "generated_dashboards" else safe_path
+    path = GENERATED_DIR / safe_path
+    if not path.exists():
+        generate_dashboards_from_catalog()
+    if not path.exists() or not path.is_file():
+        raise HTTPException(status_code=404, detail="Dashboard generado no encontrado")
+    if path.suffix.lower() == ".html":
+        return HTMLResponse(path.read_text(encoding="utf-8"))
+    if path.suffix.lower() in {".md", ".txt"}:
+        return HTMLResponse("<html><body><pre style='white-space:pre-wrap;font-family:Arial'>" + html.escape(path.read_text(encoding="utf-8")) + "</pre></body></html>")
+    if path.suffix.lower() == ".json":
+        return json.loads(path.read_text(encoding="utf-8"))
+    raise HTTPException(status_code=404, detail="Tipo de archivo no permitido")
+
+
+@app.get("/dashboard/reports/generated_dashboards/{file_path:path}")
+def dashboard_generated_reports_alias(file_path: str):
+    """
+    Yo corrijo los links absolutos que apuntan a /dashboard/reports/generated_dashboards/.
+    """
+    return _serve_generated_dashboard_artifact(file_path)
+
+
+@app.get("/reports/generated_dashboards/{file_path:path}")
+def generated_dashboards_public_alias(file_path: str):
+    """
+    Yo sirvo una ruta directa para artefactos generados seguros.
+    """
+    return _serve_generated_dashboard_artifact(file_path)
+
+
+@app.get("/dashboard/{file_path:path}")
+def dashboard_generated_short_alias(file_path: str):
+    """
+    Yo permito que los links relativos del índice /dashboard/catalog abran como /dashboard/<familia>/<archivo>.html.
+    """
+    return _serve_generated_dashboard_artifact(file_path)
 

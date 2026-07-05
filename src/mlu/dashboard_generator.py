@@ -64,7 +64,7 @@ def load_generation_config(path: Path = GENERATION_CONFIG_PATH) -> dict[str, Any
         return yaml.safe_load(path.read_text(encoding="utf-8")) or {}
     return {
         "project": "machine_learning_university",
-        "version": "v1.5_dashboard_metrics_engine",
+        "version": "v2.6_public_peru_demo_and_dashboard_route_fix",
         "generate_markdown": True,
         "generate_html": True,
         "generate_json": True,
@@ -460,7 +460,7 @@ def generate_dashboards_from_catalog() -> dict[str, Any]:
 
     manifest = {
         "project": catalog.get("project"),
-        "version": "v1.5_dashboard_metrics_engine",
+        "version": "v2.6_public_peru_demo_and_dashboard_route_fix",
         "generated_at": datetime.now().isoformat(timespec="seconds"),
         "total_generated": len(generated),
         "families": sorted({item.family for item in generated}),
@@ -514,7 +514,7 @@ def generate_dashboard_index(manifest: dict[str, Any] | None = None) -> tuple[Pa
     cards = []
     for item in dashboards:
         rel = Path(item["html_path"]).relative_to(GENERATED_DIR.relative_to(PROJECT_ROOT)) if item["html_path"].startswith("reports/generated_dashboards/") else item["html_path"]
-        cards.append(f"<div class='card'><h3>{html.escape(item['name'])}</h3><p>{html.escape(item['family'])} · {html.escape(item['priority'])}</p><p><code>{html.escape(item['params_ref'])}</code></p><a href='{html.escape(str(rel))}'>Abrir dashboard</a></div>")
+        cards.append(f"<div class='card'><h3>{html.escape(item['name'])}</h3><p>{html.escape(item['family'])} · {html.escape(item['priority'])}</p><p class='label'>Donde cambiar · parámetro interno</p><p><code>{html.escape(item['params_ref'])}</code></p><a href='/dashboard/reports/generated_dashboards/{html.escape(str(rel))}'>Abrir dashboard</a></div>")
     INDEX_HTML_PATH.write_text(f"""<!doctype html><html lang='es'><head><meta charset='utf-8'><meta name='viewport' content='width=device-width, initial-scale=1'><title>Dashboard Generator</title><style>body{{font-family:Arial,sans-serif;margin:32px;background:#f7f8fb;color:#0b2538}}.grid{{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px}}.card{{background:white;border:1px solid #d9e0e8;border-radius:14px;padding:18px;box-shadow:0 2px 8px rgba(0,0,0,.04)}}a{{color:#0a66c2}}code{{background:#eef3f7;padding:3px 6px;border-radius:5px}}</style></head><body><h1>Dashboard Generator From Catalog</h1><p>Generados: {len(dashboards)} · {html.escape(str(manifest.get('generated_at','')))}</p><div class='grid'>{''.join(cards)}</div></body></html>""", encoding="utf-8")
     return INDEX_MD_PATH, INDEX_HTML_PATH
 

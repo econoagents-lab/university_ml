@@ -195,7 +195,7 @@
       }
     ],
     "data_mode": "crm",
-    "fecha_generacion": "2026-07-04T20:10:16"
+    "fecha_generacion": "2026-07-04T20:23:55"
   },
   "family_metrics": {
     "metric_group": "market",
@@ -212,5 +212,5 @@
     "decision": "Yo uso brecha de precio/m² para distinguir problema de precio, producto o presión de mercado."
   },
   "recommended_action": "Usar el tablero para convertir datos en decisión, responsable, plazo y métrica de resultado.",
-  "generated_at": "2026-07-04T20:23:23"
+  "generated_at": "2026-07-04T22:36:20"
 }

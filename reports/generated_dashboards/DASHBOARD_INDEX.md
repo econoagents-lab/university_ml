@@ -1,8 +1,8 @@
 # Dashboard Generator From Catalog
 
-**Versión:** v1.5_dashboard_metrics_engine  
+**Versión:** v2.6_public_peru_demo_and_dashboard_route_fix  
 **Generados:** 62  
-**Fecha:** 2026-07-04T20:23:23
+**Fecha:** 2026-07-04T22:36:20
 
 Yo genero estos dashboards desde `config/dashboard_catalog.yml`. Si cambia una pregunta económica, owner o parámetro, cambio configuración y regenero.
 

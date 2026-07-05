@@ -17,7 +17,7 @@
 - Riesgo promedio: **0.398**
 - Operaciones P0/P1: **{'operaciones': 761, 'valor_en_riesgo': 21191194.15}**
 - Data mode: **crm**
-- Fecha generación KPI: **2026-07-04T20:10:16**
+- Fecha generación KPI: **2026-07-04T20:23:55**
 
 ## Top proyectos agregados
 

@@ -219,7 +219,7 @@
       }
     ],
     "data_mode": "crm",
-    "fecha_generacion": "2026-07-04T20:10:16"
+    "fecha_generacion": "2026-07-04T20:23:55"
   },
   "family_metrics": {
     "metric_group": "real_marts",
@@ -240,5 +240,5 @@
     "decision": "Yo uso este control para saber qué dashboard se defiende con mart real y cuál sigue requiriendo fuente oficial."
   },
   "recommended_action": "Usar el tablero para convertir datos en decisión, responsable, plazo y métrica de resultado.",
-  "generated_at": "2026-07-04T20:23:23"
+  "generated_at": "2026-07-04T22:36:20"
 }

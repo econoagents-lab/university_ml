@@ -1,0 +1,118 @@
+{
+  "version": "2.6.0",
+  "release_name": "v2.6_public_peru_demo_and_dashboard_route_fix",
+  "mode": "public_market_examples",
+  "disclaimer": "Los nombres y datos de empresas se usan únicamente como referencias públicas de mercado para demostrar cómo se vería el análisis. No implica afiliación, validación, sponsorship ni acceso a CRM de esas empresas.\n",
+  "company_count": 3,
+  "companies": [
+    {
+      "company_id": "besco_public_example",
+      "company_name": "Besco",
+      "public_segment": "Vivienda multifamiliar / proyectos masivos",
+      "public_positioning": "Construcción y venta de departamentos con presencia en Lima y provincia.",
+      "public_footprint": {
+        "public_years_reference": "+27 años / desde 1998 según fuente pública",
+        "public_units_reference": "+27,000 departamentos entregados según fuente pública",
+        "public_projects_reference": "+27 proyectos entregados según fuente pública",
+        "public_locations_reference": "Rímac, Cercado de Lima, San Juan de Lurigancho, Independencia, Piura y otros ejemplos publicados"
+      },
+      "public_signals": [
+        "Volumen y cobertura territorial",
+        "Inventario por distrito y etapa de proyecto",
+        "Producto ideal para stock, absorción, riesgo y pricing de ticket accesible"
+      ],
+      "source_urls": [
+        "https://besco.com.pe/quienes-somos",
+        "https://besco.com.pe/venta-departamentos"
+      ],
+      "use_case_fit": [
+        "Stock lento por proyecto/distrito",
+        "Riesgo de caída en pipeline de alto volumen",
+        "Priorización de asesores y canales por valor en riesgo"
+      ],
+      "example_dashboard_focus": [
+        "Public Decision Dashboard",
+        "Stock & Absorption",
+        "Risk-to-Action Queue"
+      ],
+      "replacement_path": "config/public_peru_client_examples.yml > companies[besco_public_example]"
+    },
+    {
+      "company_id": "edifica_public_example",
+      "company_name": "Edifica",
+      "public_segment": "Departamentos urbanos / segmentos medios-altos y premium",
+      "public_positioning": "Proyectos inmobiliarios en distritos como Miraflores, Barranco y otros, según fuente pública.",
+      "public_footprint": {
+        "public_years_reference": "Empresa visible en portales públicos con proyectos en venta",
+        "public_units_reference": "No usar unidades internas; solo referencias públicas agregadas",
+        "public_projects_reference": "Portafolio de proyectos en venta publicado en web/portales",
+        "public_locations_reference": "Miraflores, Barranco y más según fuente pública"
+      },
+      "public_signals": [
+        "Ubicación como variable de pricing",
+        "Brecha precio/m² vs mercado urbano",
+        "Conversión por producto de mayor ticket"
+      ],
+      "source_urls": [
+        "https://edifica.com.pe/venta-departamentos-oficinas/",
+        "https://edifica.com.pe/"
+      ],
+      "use_case_fit": [
+        "Pricing por unidad y precio/m²",
+        "Benchmark distrito/proyecto",
+        "Cohortes lead → separación → minuta"
+      ],
+      "example_dashboard_focus": [
+        "Pricing Gap vs Mercado",
+        "Funnel por Proyecto",
+        "CEO Brief Ejecutivo"
+      ],
+      "replacement_path": "config/public_peru_client_examples.yml > companies[edifica_public_example]"
+    },
+    {
+      "company_id": "paz_public_example",
+      "company_name": "Paz Inmobiliaria",
+      "public_segment": "Departamentos urbanos / proyectos residenciales en Lima",
+      "public_positioning": "Desarrollador con proyectos en Lima y trayectoria pública declarada.",
+      "public_footprint": {
+        "public_years_reference": "+18 años desarrollando proyectos inmobiliarios según fuente pública",
+        "public_units_reference": "+9,200 unidades/departamentos entregados según fuente pública",
+        "public_projects_reference": "+31 proyectos desarrollados según fuente pública",
+        "public_locations_reference": "Miraflores, San Miguel, Pueblo Libre, La Victoria, Jesús María, San Isidro y otros ejemplos publicados"
+      },
+      "public_signals": [
+        "Portafolio urbano diversificado",
+        "Comparación por distrito y velocidad de absorción",
+        "Riesgo de pipeline por proyecto/canal"
+      ],
+      "source_urls": [
+        "https://paz.pe/",
+        "https://paz.pe/departamentos-en-venta"
+      ],
+      "use_case_fit": [
+        "Market Intelligence",
+        "Absorción mensual",
+        "Experiment Policy para intervención comercial"
+      ],
+      "example_dashboard_focus": [
+        "Market Intelligence",
+        "Absorción Mensual",
+        "Experiment Policy"
+      ],
+      "replacement_path": "config/public_peru_client_examples.yml > companies[paz_public_example]"
+    }
+  ],
+  "allowed_public_fields": [
+    "company_id",
+    "company_name",
+    "public_segment",
+    "public_positioning",
+    "public_footprint",
+    "public_signals",
+    "source_urls",
+    "use_case_fit",
+    "example_dashboard_focus",
+    "replacement_path"
+  ],
+  "generated_at": "2026-07-05T03:36:20+00:00"
+}

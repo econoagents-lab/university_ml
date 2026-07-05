@@ -221,7 +221,7 @@
       }
     ],
     "data_mode": "crm",
-    "fecha_generacion": "2026-07-04T20:10:16"
+    "fecha_generacion": "2026-07-04T20:23:55"
   },
   "family_metrics": {
     "metric_group": "action_feedback",
@@ -238,5 +238,5 @@
     "decision": "Yo uso esta familia para medir si las alertas realmente se convierten en acciones, resultados y aprendizaje."
   },
   "recommended_action": "Usar el tablero para convertir datos en decisión, responsable, plazo y métrica de resultado.",
-  "generated_at": "2026-07-04T20:23:23"
+  "generated_at": "2026-07-04T22:36:20"
 }

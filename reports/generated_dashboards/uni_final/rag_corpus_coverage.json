@@ -188,7 +188,7 @@
       }
     ],
     "data_mode": "crm",
-    "fecha_generacion": "2026-07-04T20:10:16"
+    "fecha_generacion": "2026-07-04T20:23:55"
   },
   "family_metrics": {
     "metric_group": "rag",
@@ -204,5 +204,5 @@
     "decision": "Yo no presento el asistente como confiable si falla citas, relevancia o preguntas trampa."
   },
   "recommended_action": "Validar citas, guardrails y métricas de evaluación antes de presentar o publicar el asistente.",
-  "generated_at": "2026-07-04T20:23:23"
+  "generated_at": "2026-07-04T22:36:20"
 }

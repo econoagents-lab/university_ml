@@ -178,7 +178,7 @@
       }
     ],
     "data_mode": "crm",
-    "fecha_generacion": "2026-07-04T20:10:16"
+    "fecha_generacion": "2026-07-04T20:23:55"
   },
   "family_metrics": {
     "metric_group": "funnel",
@@ -196,5 +196,5 @@
     "decision": "Yo uso tasas reales por etapa para decidir dónde está el cuello de botella comercial."
   },
   "recommended_action": "Comparar conversión por etapa, canal y asesor; priorizar los cuellos de botella con mayor valor comercial.",
-  "generated_at": "2026-07-04T20:23:22"
+  "generated_at": "2026-07-04T22:36:20"
 }

@@ -3,7 +3,7 @@
 <head>
 <meta charset='utf-8'>
 <meta name='viewport' content='width=device-width, initial-scale=1'>
-<title>Commercial Intelligence OS · Demo Cliente</title>
+<title>Commercial Intelligence OS · Demo Perú</title>
 <style>:root {
   --bg: #070A12; --surface: #10182A; --surface2: #151F35; --gold: #D6A84F; --blue: #6EA8FE;
   --text: #F5F7FB; --muted: #AAB4C8; --success: #38D39F; --warning: #FFC857; --danger: #FF5C7A;
@@ -25,50 +25,99 @@ p { color:var(--muted); font-size:18px; line-height:1.65; }
 .badge { display:inline-block; padding:7px 10px; border-radius:999px; background:rgba(56,211,159,.12); color:var(--success); border:1px solid rgba(56,211,159,.25); font-weight:700; font-size:12px; }
 .badge.warning { color:var(--warning); background:rgba(255,200,87,.10); border-color:rgba(255,200,87,.25); }
 .footer { max-width:1180px; margin:0 auto; padding:24px; color:var(--muted); border-top:1px solid rgba(255,255,255,.08); }
-code { background:#050816; padding:2px 6px; border-radius:6px; color:#dbe7ff; }</style>
+code { background:#050816; padding:2px 6px; border-radius:6px; color:#dbe7ff; }
+
+.company-section{max-width:1180px;margin:20px auto 70px;padding:0 24px}.section-head{margin:16px 0 22px}.section-head h2{font-size:34px;margin:0 0 8px}.company-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:18px}.company-card{background:linear-gradient(180deg,rgba(255,255,255,.06),rgba(255,255,255,.025));border:1px solid rgba(214,168,79,.25);border-radius:22px;padding:22px}.company-topline{color:var(--gold);font-size:11px;letter-spacing:.12em;text-transform:uppercase;font-weight:800}.company-card h3{font-size:28px;margin:8px 0}.company-card h4{margin:20px 0 8px;color:#f3d48a}.mini-grid{display:grid;grid-template-columns:1fr;gap:8px;margin:16px 0}.mini-grid div{background:rgba(0,0,0,.18);border:1px solid rgba(255,255,255,.08);border-radius:14px;padding:10px}.mini-grid strong{display:block;color:var(--gold)}.mini-grid span{font-size:12px;color:var(--muted)}.location{font-size:14px}.chips{display:flex;gap:8px;flex-wrap:wrap}.chips span{border:1px solid rgba(110,168,254,.30);background:rgba(110,168,254,.10);border-radius:999px;padding:7px 10px;font-size:12px}.sources{margin-top:14px}.mini-link{display:inline-block;margin-right:8px;color:#0b1220;background:var(--gold);padding:7px 10px;border-radius:999px;font-weight:800}.disclaimer{max-width:1180px;margin:0 auto 28px;padding:0 24px;color:var(--muted);font-size:14px}.route-card a{display:block;margin:8px 0}.metric-label{color:var(--muted);font-size:13px}.payload-card .metric{letter-spacing:-.02em}
+</style>
 </head>
 <body>
   <main class='hero'>
-    <div class='eyebrow'>EconoAgents Intelligence Factory</div>
-    <h1>Tu primera área de inteligencia comercial inmobiliaria</h1>
-    <p>Un sistema operativo que convierte CRM, modelos, RAG y dashboards en decisiones de venta, caja y stock.</p>
+    <div class='eyebrow'>EconoAgents Intelligence Factory · Demo pública Perú</div>
+    <h1>Inteligencia comercial inmobiliaria con ejemplos públicos peruanos.</h1>
+    <p>Yo muestro cómo el sistema analizaría perfiles inmobiliarios peruanos usando señales públicas y payloads agregados. Cuando conectes una base histórica real, reemplazas estos ejemplos por métricas CRM agregadas por cliente.</p>
     <div class='cta-row'>
-      <a class='btn' href='/public/decision-dashboard'>Ver demo segura</a>
-      <a class='btn secondary' href='/product/demo/package'>Revisar paquete ejecutivo</a>
+      <a class='btn' href='/public/decision-dashboard'>Ver dashboard seguro</a>
+      <a class='btn secondary' href='/dashboard/catalog'>Explorar catálogo</a>
     </div>
   </main>
+
   <section class='grid'>
-    <div class='card'><h3>Operaciones evaluadas</h3><div class='metric'>763</div><p>Payload público agregado. Sin clientes ni documentos.</p></div>
-    <div class='card'><h3>Valor en riesgo</h3><div class='metric'>S/ 21232580.48</div><p>Lectura comercial agregada para priorización ejecutiva.</p></div>
-    <div class='card'><h3>Riesgo promedio</h3><div class='metric'>0.3982</div><p>Modo de data: <code>crm</code></p></div>
-    <div class='card'><h3>P0 + P1</h3><div class='metric'>{&#x27;operaciones&#x27;: 761, &#x27;valor_en_riesgo&#x27;: 21191194.15}</div><p>Operaciones que requieren política comercial y SLA.</p></div>
+    <div class='card payload-card'><h3>Operaciones evaluadas</h3><div class='metric'>763</div><p class='metric-label'>Payload CRM agregado si existe; sin filas operativas.</p></div>
+    <div class='card payload-card'><h3>Valor en riesgo</h3><div class='metric'>S/ 21,232,580</div><p class='metric-label'>Lectura ejecutiva agregada.</p></div>
+    <div class='card payload-card'><h3>Riesgo promedio</h3><div class='metric'>0.3982</div><p class='metric-label'>Modo: <code>crm</code></p></div>
+    <div class='card payload-card'><h3>P0 + P1</h3><div class='metric'>{&#x27;operaciones&#x27;: 761, &#x27;valor_en_riesgo&#x27;: 21191194.15}</div><p class='metric-label'>Operaciones agregadas que requieren SLA.</p></div>
   </section>
-  <section class='grid'>
+
+  <section class='company-section'>
+    <div class='section-head'>
+      <div class='eyebrow'>Análisis público publicado en docs y Railway</div>
+      <h2>Tres ejemplos públicos de inmobiliarias peruanas</h2>
+      <p>Yo uso estas compañías como ejemplos de mercado publicados, no como clientes reales. El objetivo es mostrar cómo el sistema explicaría valor para distintos perfiles inmobiliarios.
+</p>
+    </div>
+    <div class='company-grid'>
+    <article class='company-card'>
+      <div class='company-topline'>Vivienda multifamiliar / proyectos masivos</div>
+      <h3>Besco</h3>
+      <p>Construcción y venta de departamentos con presencia en Lima y provincia.</p>
+      <div class='mini-grid'>
+        <div><strong>+27 años / desde 1998 según fuente pública</strong><span>Trayectoria pública</span></div>
+        <div><strong>+27,000 departamentos entregados según fuente pública</strong><span>Escala pública</span></div>
+        <div><strong>+27 proyectos entregados según fuente pública</strong><span>Portafolio público</span></div>
+      </div>
+      <p class='location'>Rímac, Cercado de Lima, San Juan de Lurigancho, Independencia, Piura y otros ejemplos publicados</p>
+      <h4>Qué analizaría el sistema</h4>
+      <ul><li>Stock lento por proyecto/distrito</li><li>Riesgo de caída en pipeline de alto volumen</li><li>Priorización de asesores y canales por valor en riesgo</li></ul>
+      <h4>Dashboards ejemplo</h4>
+      <div class='chips'><span>Public Decision Dashboard</span><span>Stock &amp; Absorption</span><span>Risk-to-Action Queue</span></div>
+      <div class='sources'><a class='mini-link' href='https://besco.com.pe/quienes-somos' target='_blank' rel='noopener'>fuente</a><a class='mini-link' href='https://besco.com.pe/venta-departamentos' target='_blank' rel='noopener'>fuente</a></div>
+    </article>
     
-        <section class='card'>
-          <span class='badge'>ok</span>
-          <h3>RAG Business Memory</h3>
-          <p>¿Qué evidencia explica una decisión comercial?</p>
-          <p><code>/metadata/uni-final-rag</code></p>
-        </section>
-        
-        <section class='card'>
-          <span class='badge'>ok</span>
-          <h3>GitHub Alerts &amp; Automation Tower</h3>
-          <p>¿Qué alerta se activó y qué debe hacerse?</p>
-          <p><code>/metadata/productized-os</code></p>
-        </section>
-        
-  </section>
-  <section class='grid'>
-    <div class='card' style='grid-column:1/-1'>
-      <h3>Rutas de demo</h3>
-      <p>Yo muestro solo rutas seguras y agregadas para cliente externo.</p>
-      <div class='cta-row'><a class='btn secondary' href='/demo/client-ready'>/demo/client-ready</a><a class='btn secondary' href='/public/decision-dashboard'>/public/decision-dashboard</a><a class='btn secondary' href='/dashboard/productized-os'>/dashboard/productized-os</a><a class='btn secondary' href='/product/demo/package'>/product/demo/package</a></div>
+    <article class='company-card'>
+      <div class='company-topline'>Departamentos urbanos / segmentos medios-altos y premium</div>
+      <h3>Edifica</h3>
+      <p>Proyectos inmobiliarios en distritos como Miraflores, Barranco y otros, según fuente pública.</p>
+      <div class='mini-grid'>
+        <div><strong>Empresa visible en portales públicos con proyectos en venta</strong><span>Trayectoria pública</span></div>
+        <div><strong>No usar unidades internas; solo referencias públicas agregadas</strong><span>Escala pública</span></div>
+        <div><strong>Portafolio de proyectos en venta publicado en web/portales</strong><span>Portafolio público</span></div>
+      </div>
+      <p class='location'>Miraflores, Barranco y más según fuente pública</p>
+      <h4>Qué analizaría el sistema</h4>
+      <ul><li>Pricing por unidad y precio/m²</li><li>Benchmark distrito/proyecto</li><li>Cohortes lead → separación → minuta</li></ul>
+      <h4>Dashboards ejemplo</h4>
+      <div class='chips'><span>Pricing Gap vs Mercado</span><span>Funnel por Proyecto</span><span>CEO Brief Ejecutivo</span></div>
+      <div class='sources'><a class='mini-link' href='https://edifica.com.pe/venta-departamentos-oficinas/' target='_blank' rel='noopener'>fuente</a><a class='mini-link' href='https://edifica.com.pe/' target='_blank' rel='noopener'>fuente</a></div>
+    </article>
+    
+    <article class='company-card'>
+      <div class='company-topline'>Departamentos urbanos / proyectos residenciales en Lima</div>
+      <h3>Paz Inmobiliaria</h3>
+      <p>Desarrollador con proyectos en Lima y trayectoria pública declarada.</p>
+      <div class='mini-grid'>
+        <div><strong>+18 años desarrollando proyectos inmobiliarios según fuente pública</strong><span>Trayectoria pública</span></div>
+        <div><strong>+9,200 unidades/departamentos entregados según fuente pública</strong><span>Escala pública</span></div>
+        <div><strong>+31 proyectos desarrollados según fuente pública</strong><span>Portafolio público</span></div>
+      </div>
+      <p class='location'>Miraflores, San Miguel, Pueblo Libre, La Victoria, Jesús María, San Isidro y otros ejemplos publicados</p>
+      <h4>Qué analizaría el sistema</h4>
+      <ul><li>Market Intelligence</li><li>Absorción mensual</li><li>Experiment Policy para intervención comercial</li></ul>
+      <h4>Dashboards ejemplo</h4>
+      <div class='chips'><span>Market Intelligence</span><span>Absorción Mensual</span><span>Experiment Policy</span></div>
+      <div class='sources'><a class='mini-link' href='https://paz.pe/' target='_blank' rel='noopener'>fuente</a><a class='mini-link' href='https://paz.pe/departamentos-en-venta' target='_blank' rel='noopener'>fuente</a></div>
+    </article>
     </div>
   </section>
-  <footer class='footer'>
-    De CRM operativo a decisiones comerciales con memoria, evidencia y acción. · generado 2026-07-05T01:23:15+00:00
-  </footer>
+
+  <section class='grid'>
+    <div class='card route-card' style='grid-column:1/-1'>
+      <h3>Rutas priorizadas</h3>
+      <p>Yo mantengo Railway como demo viva y GitHub Pages como hub público de links.</p>
+      <div class='cta-row'><a class='btn secondary' href='/public/decision-dashboard'>Dashboard Público Seguro</a><a class='btn secondary' href='/dashboard/catalog'>Catálogo de Dashboards</a><a class='btn secondary' href='/dashboard/action-feedback'>Action Feedback</a><a class='btn secondary' href='/dashboard/experiment-power-policy'>Experiment Policy</a><a class='btn secondary' href='/product/demo/package'>Demo Package</a><a class='btn secondary' href='/docs'>Swagger API Docs</a></div>
+    </div>
+  </section>
+
+  <div class='disclaimer'><strong>Gobierno:</strong> Los nombres y datos de empresas se usan únicamente como referencias públicas de mercado para demostrar cómo se vería el análisis. No implica afiliación, validación, sponsorship ni acceso a CRM de esas empresas.
+ Generado: 2026-07-05T03:36:20+00:00.</div>
 </body>
 </html>
