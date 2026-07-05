@@ -3,7 +3,7 @@
   "release_name": "v2.1_client_ready_branding_and_deployment",
   "product_name": "Commercial Intelligence OS",
   "brand_name": "EconoAgents Intelligence Factory",
-  "generated_at": "2026-07-05T01:11:13+00:00",
+  "generated_at": "2026-07-05T01:23:15+00:00",
   "productized_os_status": "ok",
   "public_payload_exists": true,
   "auth_enabled": false,
@@ -112,7 +112,7 @@
           {
             "path": "reports/public/decision_dashboard_payload_public.json",
             "exists": true,
-            "size_bytes": 3753
+            "size_bytes": 3916
           }
         ]
       },

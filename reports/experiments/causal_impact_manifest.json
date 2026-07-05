@@ -1,6 +1,6 @@
 {
   "version": "v1.8_experimentation_causal_impact_lab",
-  "generated_at": "2026-07-05T01:11:24.997883+00:00",
+  "generated_at": "2026-07-05T01:23:32.324317+00:00",
   "experiment_id": "riesgo_caida_action_impact_v1",
   "status": "needs_more_feedback",
   "counts": {
@@ -10,7 +10,7 @@
   },
   "impact": {
     "version": "v1.8_experimentation_causal_impact_lab",
-    "generated_at": "2026-07-05T01:11:24.989987+00:00",
+    "generated_at": "2026-07-05T01:23:32.312825+00:00",
     "status": "needs_more_feedback",
     "treatment_n": 153,
     "control_n": 68,

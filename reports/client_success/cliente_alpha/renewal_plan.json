@@ -1,6 +1,6 @@
 {
   "tenant_id": "cliente_alpha",
-  "generated_at": "2026-07-05T01:11:13+00:00",
+  "generated_at": "2026-07-05T01:23:15+00:00",
   "health_band": "red",
   "churn_risk": "high",
   "renewal_recommendation": "plan_de_rescate_churn",

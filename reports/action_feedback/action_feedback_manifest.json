@@ -1,6 +1,6 @@
 {
   "version": "v1.7_decision_action_feedback_lab",
-  "generated_at": "2026-07-05T01:11:24.147104+00:00",
+  "generated_at": "2026-07-05T01:23:31.268757+00:00",
   "artifacts": {
     "queue_csv": "data\\processed\\action_feedback\\decision_action_queue_safe.csv",
     "assignment_template_csv": "data\\processed\\action_feedback\\action_assignment_template.csv",
@@ -16,7 +16,7 @@
   },
   "retraining_signal": {
     "version": "v1.7_decision_action_feedback_lab",
-    "generated_at": "2026-07-05T01:11:24.140412+00:00",
+    "generated_at": "2026-07-05T01:23:31.263214+00:00",
     "feedback_events": 100,
     "negative_rate_30d": 0.0,
     "should_retrain_or_recalibrate": false,

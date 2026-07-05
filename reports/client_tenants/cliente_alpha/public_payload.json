@@ -1,43 +1,5 @@
 {
-  "data_mode": "crm",
   "total_operaciones": 763,
-  "top_proyectos": [
-    {
-      "proyecto": "Tizón y Bueno",
-      "operaciones": 82,
-      "valor_en_riesgo": 2769922.88,
-      "riesgo_promedio": 0.5073,
-      "p0_p1": 82
-    },
-    {
-      "proyecto": "Edificio Cuba Connect",
-      "operaciones": 83,
-      "valor_en_riesgo": 1986299.7,
-      "riesgo_promedio": 0.2822,
-      "p0_p1": 83
-    },
-    {
-      "proyecto": "Edificio Urbanzen",
-      "operaciones": 45,
-      "valor_en_riesgo": 1783878.84,
-      "riesgo_promedio": 0.4903,
-      "p0_p1": 45
-    },
-    {
-      "proyecto": "Edificio Santa Cruz Infinite",
-      "operaciones": 84,
-      "valor_en_riesgo": 1772295.82,
-      "riesgo_promedio": 0.2639,
-      "p0_p1": 84
-    },
-    {
-      "proyecto": "Modena",
-      "operaciones": 53,
-      "valor_en_riesgo": 1672002.71,
-      "riesgo_promedio": 0.4932,
-      "p0_p1": 53
-    }
-  ],
   "top_asesores": [
     {
       "asesor_anon": "Asesor_26DEBB0E",
@@ -80,7 +42,8 @@
       "asesor": "Asesor_4B227777"
     }
   ],
-  "riesgo_promedio": 0.3982,
+  "fecha_generacion": "2026-07-04T20:10:16",
+  "data_mode": "crm",
   "top_canales": [
     {
       "canal": "sin_clasificar",
@@ -90,12 +53,49 @@
       "p0_p1": 761
     }
   ],
+  "top_proyectos": [
+    {
+      "proyecto": "Tizón y Bueno",
+      "operaciones": 82,
+      "valor_en_riesgo": 2769922.88,
+      "riesgo_promedio": 0.5073,
+      "p0_p1": 82
+    },
+    {
+      "proyecto": "Edificio Cuba Connect",
+      "operaciones": 83,
+      "valor_en_riesgo": 1986299.7,
+      "riesgo_promedio": 0.2822,
+      "p0_p1": 83
+    },
+    {
+      "proyecto": "Edificio Urbanzen",
+      "operaciones": 45,
+      "valor_en_riesgo": 1783878.84,
+      "riesgo_promedio": 0.4903,
+      "p0_p1": 45
+    },
+    {
+      "proyecto": "Edificio Santa Cruz Infinite",
+      "operaciones": 84,
+      "valor_en_riesgo": 1772295.82,
+      "riesgo_promedio": 0.2639,
+      "p0_p1": 84
+    },
+    {
+      "proyecto": "Modena",
+      "operaciones": 53,
+      "valor_en_riesgo": 1672002.71,
+      "riesgo_promedio": 0.4932,
+      "p0_p1": 53
+    }
+  ],
+  "riesgo_promedio": 0.3982,
   "p0_p1": {
     "operaciones": 761,
     "valor_en_riesgo": 21191194.15
   },
   "valor_total_en_riesgo": 21232580.48,
-  "fecha_generacion": "2026-07-04T20:10:16",
   "tenant_id": "cliente_alpha",
   "tenant_segment": "desarrollador_inmobiliario",
   "enabled_modules": [

@@ -2,7 +2,7 @@
   "version": "2.2.0",
   "product_name": "Commercial Intelligence OS",
   "packaging_mode": "multi_tenant_demo_safe",
-  "generated_at": "2026-07-05T01:11:25+00:00",
+  "generated_at": "2026-07-05T01:23:32+00:00",
   "tenant_count": 3,
   "privacy_ok_count": 3,
   "status": "ok",
@@ -11,7 +11,7 @@
       "tenant_id": "cliente_alpha",
       "display_name": "Cliente Alpha · Desarrollador multifamiliar",
       "segment": "desarrollador_inmobiliario",
-      "generated_at": "2026-07-05T01:11:25+00:00",
+      "generated_at": "2026-07-05T01:23:32+00:00",
       "token_env_var": "MLU_DEMO_TOKEN_CLIENTE_ALPHA",
       "enabled_modules": [
         "ceo_brief",
@@ -40,7 +40,7 @@
       "tenant_id": "cliente_bravo",
       "display_name": "Cliente Bravo · Gerencia comercial",
       "segment": "gerencia_comercial",
-      "generated_at": "2026-07-05T01:11:25+00:00",
+      "generated_at": "2026-07-05T01:23:32+00:00",
       "token_env_var": "MLU_DEMO_TOKEN_CLIENTE_BRAVO",
       "enabled_modules": [
         "ceo_brief",
@@ -69,7 +69,7 @@
       "tenant_id": "cliente_condor",
       "display_name": "Cliente Cóndor · Comité de inversión",
       "segment": "inversion_y_directorio",
-      "generated_at": "2026-07-05T01:11:25+00:00",
+      "generated_at": "2026-07-05T01:23:32+00:00",
       "token_env_var": "MLU_DEMO_TOKEN_CLIENTE_CONDOR",
       "enabled_modules": [
         "ceo_brief",
