@@ -1,6 +1,6 @@
 {
   "version": "v1.9_experiment_power_and_policy_engine",
-  "generated_at": "2026-07-04T23:15:15.141360+00:00",
+  "generated_at": "2026-07-05T01:11:24.605630+00:00",
   "policy_mode": "mvp_operational_policy",
   "power_decision": "seguir_acumulando_muestra_y_feedback",
   "capacity_status": "capacity_warning",

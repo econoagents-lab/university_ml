@@ -1,0 +1,14 @@
+{
+  "run_at": "2026-07-04T20:10:01",
+  "private_data_dir": "C:\\Repos\\freelance\\ml_university_ready\\data\\raw\\sperant",
+  "private_dir_exists": true,
+  "status": "ready_for_core_build",
+  "next_steps": [
+    "build_core_marts",
+    "build_cohorts",
+    "build_stock_cobranza",
+    "recalibrate_model",
+    "capture_feedback",
+    "generate_ceo_brief"
+  ]
+}

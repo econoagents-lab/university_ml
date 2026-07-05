@@ -32,8 +32,8 @@
 | expansion | expansion | 0.0 | rescue_only | after_rescue_plan |
 
 ## Plan de renovación
-- QBR objetivo: **2026-07-18**
-- Renovación objetivo: **2026-09-02**
+- QBR objetivo: **2026-07-19**
+- Renovación objetivo: **2026-09-03**
 - Valor upsell estimado: **USD 0.00**
 - Listo para referido: **False**
 

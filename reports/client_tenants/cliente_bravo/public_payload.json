@@ -1,9 +1,6 @@
 {
-  "p0_p1": {
-    "operaciones": 761,
-    "valor_en_riesgo": 21191194.15
-  },
   "data_mode": "crm",
+  "total_operaciones": 763,
   "top_proyectos": [
     {
       "proyecto": "Tizón y Bueno",
@@ -41,7 +38,6 @@
       "p0_p1": 53
     }
   ],
-  "valor_total_en_riesgo": 21232580.48,
   "top_asesores": [
     {
       "asesor_anon": "Asesor_26DEBB0E",
@@ -84,7 +80,7 @@
       "asesor": "Asesor_4B227777"
     }
   ],
-  "total_operaciones": 763,
+  "riesgo_promedio": 0.3982,
   "top_canales": [
     {
       "canal": "sin_clasificar",
@@ -94,8 +90,12 @@
       "p0_p1": 761
     }
   ],
-  "fecha_generacion": "2026-07-04T04:23:08",
-  "riesgo_promedio": 0.3982,
+  "p0_p1": {
+    "operaciones": 761,
+    "valor_en_riesgo": 21191194.15
+  },
+  "valor_total_en_riesgo": 21232580.48,
+  "fecha_generacion": "2026-07-04T20:10:16",
   "tenant_id": "cliente_bravo",
   "tenant_segment": "gerencia_comercial",
   "enabled_modules": [

@@ -1,11 +1,11 @@
 {
   "tenant_id": "cliente_bravo",
-  "generated_at": "2026-07-04T23:16:39+00:00",
+  "generated_at": "2026-07-05T01:11:13+00:00",
   "health_band": "red",
   "churn_risk": "high",
   "renewal_recommendation": "plan_de_rescate_churn",
-  "qbr_target_date": "2026-07-18",
-  "renewal_target_date": "2026-09-02",
+  "qbr_target_date": "2026-07-19",
+  "renewal_target_date": "2026-09-03",
   "estimated_upsell_value": 0,
   "currency": "USD",
   "actions": [

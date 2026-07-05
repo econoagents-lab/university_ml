@@ -2,7 +2,7 @@
 
 Yo calculo métricas específicas por familia para que el catálogo deje de heredar solo KPIs globales.
 
-**Generado:** 2026-07-04T18:15:17  
+**Generado:** 2026-07-04T20:11:27  
 **Safe aggregate only:** True
 
 ## action_feedback

@@ -1,0 +1,669 @@
+diff --git a/mnt/data/tmp_v25/machine_learning_university_v2_5_client_success_and_renewal_intelligence/.github/workflows/multi_tenant_client_packaging.yml b/./.github/workflows/multi_tenant_client_packaging.yml
+index 4885635..b1325d3 100644
+--- a/mnt/data/tmp_v25/machine_learning_university_v2_5_client_success_and_renewal_intelligence/.github/workflows/multi_tenant_client_packaging.yml
++++ b/./.github/workflows/multi_tenant_client_packaging.yml
+@@ -25,7 +25,8 @@ jobs:
+       - name: Install dependencies
+         run: |
+           python -m pip install --upgrade pip
+-          pip install pyyaml pandas pytest fastapi pydantic httpx
++          # Yo instalo dependencias CI suficientes para importar FastAPI sin romper por ML opcional.
++          pip install pyyaml pandas pytest fastapi pydantic httpx numpy scikit-learn joblib
+       - name: Build tenant packages
+         run: python scripts/116_run_v22_multi_tenant_client_packaging.py
+       - name: Test tenant packaging
+diff --git a/./.pytest_cache/.gitignore b/./.pytest_cache/.gitignore
+new file mode 100644
+index 0000000..bc1a1f6
+--- /dev/null
++++ b/./.pytest_cache/.gitignore
+@@ -0,0 +1,2 @@
++# Created by pytest automatically.
++*
+diff --git a/./.pytest_cache/CACHEDIR.TAG b/./.pytest_cache/CACHEDIR.TAG
+new file mode 100644
+index 0000000..fce15ad
+--- /dev/null
++++ b/./.pytest_cache/CACHEDIR.TAG
+@@ -0,0 +1,4 @@
++Signature: 8a477f597d28d172789f06886806bc55
++# This file is a cache directory tag created by pytest.
++# For information about cache directory tags, see:
++#	https://bford.info/cachedir/spec.html
+diff --git a/./.pytest_cache/README.md b/./.pytest_cache/README.md
+new file mode 100644
+index 0000000..b89018c
+--- /dev/null
++++ b/./.pytest_cache/README.md
+@@ -0,0 +1,8 @@
++# pytest cache directory #
++
++This directory contains data from the pytest's cache plugin,
++which provides the `--lf` and `--ff` options, as well as the `cache` fixture.
++
++**Do not** commit this to version control.
++
++See [the docs](https://docs.pytest.org/en/stable/how-to/cache.html) for more information.
+diff --git a/./.pytest_cache/v/cache/nodeids b/./.pytest_cache/v/cache/nodeids
+new file mode 100644
+index 0000000..496aa2b
+--- /dev/null
++++ b/./.pytest_cache/v/cache/nodeids
+@@ -0,0 +1,7 @@
++[
++  "tests/test_multi_tenant_client_packaging.py::test_api_multi_tenant_endpoints",
++  "tests/test_multi_tenant_client_packaging.py::test_build_all_tenant_packages_creates_artifacts",
++  "tests/test_multi_tenant_client_packaging.py::test_get_tenant_package",
++  "tests/test_multi_tenant_client_packaging.py::test_payloads_do_not_expose_forbidden_fields",
++  "tests/test_multi_tenant_client_packaging.py::test_validate_multi_tenant_packaging_ok"
++]
+\ No newline at end of file
+diff --git a/./api/__pycache__/main.cpython-313.pyc b/./api/__pycache__/main.cpython-313.pyc
+new file mode 100644
+index 0000000..9d69a1a
+Binary files /dev/null and b/./api/__pycache__/main.cpython-313.pyc differ
+diff --git a/./api/__pycache__/schemas.cpython-313.pyc b/./api/__pycache__/schemas.cpython-313.pyc
+new file mode 100644
+index 0000000..c0f3ca9
+Binary files /dev/null and b/./api/__pycache__/schemas.cpython-313.pyc differ
+diff --git a/./api/__pycache__/services.cpython-313.pyc b/./api/__pycache__/services.cpython-313.pyc
+new file mode 100644
+index 0000000..7773b0a
+Binary files /dev/null and b/./api/__pycache__/services.cpython-313.pyc differ
+diff --git a/mnt/data/tmp_v25/machine_learning_university_v2_5_client_success_and_renewal_intelligence/api/services.py b/./api/services.py
+index d978727..d14c688 100644
+--- a/mnt/data/tmp_v25/machine_learning_university_v2_5_client_success_and_renewal_intelligence/api/services.py
++++ b/./api/services.py
+@@ -4,7 +4,6 @@ import pandas as pd
+ 
+ from src.mlu.config import MODEL_PATH
+ from src.mlu.economics import recommend_decision, expected_value_at_risk
+-from src.mlu.model import load_model
+ 
+ 
+ def infer_channel(medio: str) -> str:
+@@ -49,10 +48,16 @@ def predict_riesgo_caida(payload: dict) -> dict:
+     modelo_usado = "baseline_rule"
+     if MODEL_PATH.exists():
+         try:
++            # Yo importo el modelo de forma diferida para que endpoints de demo, metadata
++            # y multi-tenant no dependan de joblib/scikit-learn durante tests livianos de CI.
++            from src.mlu.model import load_model
++
+             model = load_model(MODEL_PATH)
+             riesgo = float(model.predict_proba(pd.DataFrame([row]))[:, 1][0])
+             modelo_usado = "riesgo_caida_model.joblib"
+         except Exception:
++            # Yo protejo la API: si el artefacto del modelo o sus dependencias no están
++            # disponibles, sirvo baseline en vez de romper rutas que no necesitan ML.
+             riesgo = baseline_score(payload)
+     else:
+         riesgo = baseline_score(payload)
+diff --git a/./docs/CI_DEPENDENCY_AND_LAZY_MODEL_FIX_v2_5_1.md b/./docs/CI_DEPENDENCY_AND_LAZY_MODEL_FIX_v2_5_1.md
+new file mode 100644
+index 0000000..7f1be6c
+--- /dev/null
++++ b/./docs/CI_DEPENDENCY_AND_LAZY_MODEL_FIX_v2_5_1.md
+@@ -0,0 +1,21 @@
++# v2.5.1 · CI Dependency & Lazy Model Fix
++
++## Problema
++
++El workflow `multi_tenant_client_packaging.yml` instalaba dependencias mínimas, pero `tests/test_multi_tenant_client_packaging.py` importaba `api.main`. Esa importación cargaba `api.services`, que importaba `src.mlu.model` y por tanto requería `joblib` y `scikit-learn` aunque el test solo validara endpoints multi-tenant.
++
++## Decisión
++
++1. Yo hago lazy import de `load_model` dentro de `predict_riesgo_caida`.
++2. Yo refuerzo el workflow multi-tenant instalando `numpy`, `scikit-learn` y `joblib`.
++3. Yo agrego `requirements-ci.txt` como set liviano para workflows de metadata/demo.
++
++## Por qué esto es correcto
++
++Los endpoints de demo, metadata y multi-tenant no deben depender del artefacto ML. El modelo debe cargarse solo cuando se llama un endpoint predictivo o cuando existe el artefacto `.joblib`.
++
++## Comando de validación
++
++```powershell
++pytest -q tests/test_multi_tenant_client_packaging.py
++```
+diff --git a/mnt/data/tmp_v25/machine_learning_university_v2_5_client_success_and_renewal_intelligence/reports/client_tenants/cliente_alpha/client_demo_package.json b/./reports/client_tenants/cliente_alpha/client_demo_package.json
+index fd2cc37..d0c62e0 100644
+--- a/mnt/data/tmp_v25/machine_learning_university_v2_5_client_success_and_renewal_intelligence/reports/client_tenants/cliente_alpha/client_demo_package.json
++++ b/./reports/client_tenants/cliente_alpha/client_demo_package.json
+@@ -2,7 +2,7 @@
+   "tenant_id": "cliente_alpha",
+   "display_name": "Cliente Alpha · Desarrollador multifamiliar",
+   "segment": "desarrollador_inmobiliario",
+-  "generated_at": "2026-07-04T22:15:37+00:00",
++  "generated_at": "2026-07-05T01:14:57+00:00",
+   "token_env_var": "MLU_DEMO_TOKEN_CLIENTE_ALPHA",
+   "enabled_modules": [
+     "ceo_brief",
+diff --git a/mnt/data/tmp_v25/machine_learning_university_v2_5_client_success_and_renewal_intelligence/reports/client_tenants/cliente_alpha/landing.html b/./reports/client_tenants/cliente_alpha/landing.html
+index 4f1881e..5b0ef60 100644
+--- a/mnt/data/tmp_v25/machine_learning_university_v2_5_client_success_and_renewal_intelligence/reports/client_tenants/cliente_alpha/landing.html
++++ b/./reports/client_tenants/cliente_alpha/landing.html
+@@ -38,6 +38,6 @@ code { background:#050816; color:#DFE8FF; border-radius:7px; padding:2px 6px; }
+   </section>
+   <section class='grid'><section class='card'><span>Módulo</span><h3>ceo_brief</h3><p>Producto habilitado para esta demo.</p></section><section class='card'><span>Módulo</span><h3>railway_public_dashboard</h3><p>Producto habilitado para esta demo.</p></section><section class='card'><span>Módulo</span><h3>risk_to_action_queue</h3><p>Producto habilitado para esta demo.</p></section><section class='card'><span>Módulo</span><h3>stock_pricing</h3><p>Producto habilitado para esta demo.</p></section><section class='card'><span>Módulo</span><h3>rag_business_memory</h3><p>Producto habilitado para esta demo.</p></section><section class='card'><span>Módulo</span><h3>github_alerts</h3><p>Producto habilitado para esta demo.</p></section></section>
+   <section class='grid'><div class='card' style='grid-column:1/-1'><span>Rutas</span><h3>Demo habilitada</h3><p>Yo expongo solo rutas seguras para este cliente.</p><a class='btn secondary' href='/public/decision-dashboard'>/public/decision-dashboard</a><a class='btn secondary' href='/dashboard/catalog'>/dashboard/catalog</a><a class='btn secondary' href='/dashboard/action-feedback'>/dashboard/action-feedback</a><a class='btn secondary' href='/dashboard/experiment-power-policy'>/dashboard/experiment-power-policy</a></div></section>
+-  <footer class='footer'>Commercial Intelligence OS · Tenant <code>cliente_alpha</code> · generado 2026-07-04T22:15:37+00:00</footer>
++  <footer class='footer'>Commercial Intelligence OS · Tenant <code>cliente_alpha</code> · generado 2026-07-05T01:14:57+00:00</footer>
+ </body>
+ </html>
+\ No newline at end of file
+diff --git a/mnt/data/tmp_v25/machine_learning_university_v2_5_client_success_and_renewal_intelligence/reports/client_tenants/cliente_alpha/public_payload.json b/./reports/client_tenants/cliente_alpha/public_payload.json
+index b002fc1..5fa7a5f 100644
+--- a/mnt/data/tmp_v25/machine_learning_university_v2_5_client_success_and_renewal_intelligence/reports/client_tenants/cliente_alpha/public_payload.json
++++ b/./reports/client_tenants/cliente_alpha/public_payload.json
+@@ -1,8 +1,47 @@
+ {
+-  "p0_p1": {
+-    "operaciones": 761,
+-    "valor_en_riesgo": 21191194.15
+-  },
++  "top_asesores": [
++    {
++      "asesor_anon": "Asesor_26DEBB0E",
++      "operaciones": 130,
++      "valor_en_riesgo": 4395201.77,
++      "riesgo_promedio": 0.4635,
++      "p0_p1": 130,
++      "asesor": "Asesor_B23A6A84"
++    },
++    {
++      "asesor_anon": "Asesor_10B2BE3F",
++      "operaciones": 216,
++      "valor_en_riesgo": 3678489.2,
++      "riesgo_promedio": 0.2044,
++      "p0_p1": 216,
++      "asesor": "Asesor_6B86B273"
++    },
++    {
++      "asesor_anon": "Asesor_C931A67B",
++      "operaciones": 66,
++      "valor_en_riesgo": 2219467.94,
++      "riesgo_promedio": 0.4375,
++      "p0_p1": 65,
++      "asesor": "Asesor_D4735E3A"
++    },
++    {
++      "asesor_anon": "Asesor_1F3B24E1",
++      "operaciones": 58,
++      "valor_en_riesgo": 1961023.49,
++      "riesgo_promedio": 0.5103,
++      "p0_p1": 58,
++      "asesor": "Asesor_4E074085"
++    },
++    {
++      "asesor_anon": "Asesor_B56EAA59",
++      "operaciones": 58,
++      "valor_en_riesgo": 1892075.93,
++      "riesgo_promedio": 0.5045,
++      "p0_p1": 58,
++      "asesor": "Asesor_4B227777"
++    }
++  ],
++  "fecha_generacion": "2026-07-04T04:23:08",
+   "top_proyectos": [
+     {
+       "proyecto": "Tizón y Bueno",
+@@ -40,6 +79,14 @@
+       "p0_p1": 53
+     }
+   ],
++  "riesgo_promedio": 0.3982,
++  "valor_total_en_riesgo": 21232580.48,
++  "data_mode": "crm",
++  "p0_p1": {
++    "operaciones": 761,
++    "valor_en_riesgo": 21191194.15
++  },
++  "total_operaciones": 763,
+   "top_canales": [
+     {
+       "canal": "sin_clasificar",
+@@ -49,53 +96,6 @@
+       "p0_p1": 761
+     }
+   ],
+-  "fecha_generacion": "2026-07-04T04:23:08",
+-  "valor_total_en_riesgo": 21232580.48,
+-  "total_operaciones": 763,
+-  "top_asesores": [
+-    {
+-      "asesor_anon": "Asesor_26DEBB0E",
+-      "operaciones": 130,
+-      "valor_en_riesgo": 4395201.77,
+-      "riesgo_promedio": 0.4635,
+-      "p0_p1": 130,
+-      "asesor": "Asesor_B23A6A84"
+-    },
+-    {
+-      "asesor_anon": "Asesor_10B2BE3F",
+-      "operaciones": 216,
+-      "valor_en_riesgo": 3678489.2,
+-      "riesgo_promedio": 0.2044,
+-      "p0_p1": 216,
+-      "asesor": "Asesor_6B86B273"
+-    },
+-    {
+-      "asesor_anon": "Asesor_C931A67B",
+-      "operaciones": 66,
+-      "valor_en_riesgo": 2219467.94,
+-      "riesgo_promedio": 0.4375,
+-      "p0_p1": 65,
+-      "asesor": "Asesor_D4735E3A"
+-    },
+-    {
+-      "asesor_anon": "Asesor_1F3B24E1",
+-      "operaciones": 58,
+-      "valor_en_riesgo": 1961023.49,
+-      "riesgo_promedio": 0.5103,
+-      "p0_p1": 58,
+-      "asesor": "Asesor_4E074085"
+-    },
+-    {
+-      "asesor_anon": "Asesor_B56EAA59",
+-      "operaciones": 58,
+-      "valor_en_riesgo": 1892075.93,
+-      "riesgo_promedio": 0.5045,
+-      "p0_p1": 58,
+-      "asesor": "Asesor_4B227777"
+-    }
+-  ],
+-  "riesgo_promedio": 0.3982,
+-  "data_mode": "crm",
+   "tenant_id": "cliente_alpha",
+   "tenant_segment": "desarrollador_inmobiliario",
+   "enabled_modules": [
+diff --git a/mnt/data/tmp_v25/machine_learning_university_v2_5_client_success_and_renewal_intelligence/reports/client_tenants/cliente_bravo/client_demo_package.json b/./reports/client_tenants/cliente_bravo/client_demo_package.json
+index bbae9f3..818cca4 100644
+--- a/mnt/data/tmp_v25/machine_learning_university_v2_5_client_success_and_renewal_intelligence/reports/client_tenants/cliente_bravo/client_demo_package.json
++++ b/./reports/client_tenants/cliente_bravo/client_demo_package.json
+@@ -2,7 +2,7 @@
+   "tenant_id": "cliente_bravo",
+   "display_name": "Cliente Bravo · Gerencia comercial",
+   "segment": "gerencia_comercial",
+-  "generated_at": "2026-07-04T22:15:37+00:00",
++  "generated_at": "2026-07-05T01:14:57+00:00",
+   "token_env_var": "MLU_DEMO_TOKEN_CLIENTE_BRAVO",
+   "enabled_modules": [
+     "ceo_brief",
+diff --git a/mnt/data/tmp_v25/machine_learning_university_v2_5_client_success_and_renewal_intelligence/reports/client_tenants/cliente_bravo/landing.html b/./reports/client_tenants/cliente_bravo/landing.html
+index 68f8a98..5fd7812 100644
+--- a/mnt/data/tmp_v25/machine_learning_university_v2_5_client_success_and_renewal_intelligence/reports/client_tenants/cliente_bravo/landing.html
++++ b/./reports/client_tenants/cliente_bravo/landing.html
+@@ -38,6 +38,6 @@ code { background:#050816; color:#DFE8FF; border-radius:7px; padding:2px 6px; }
+   </section>
+   <section class='grid'><section class='card'><span>Módulo</span><h3>ceo_brief</h3><p>Producto habilitado para esta demo.</p></section><section class='card'><span>Módulo</span><h3>funnel_conversion</h3><p>Producto habilitado para esta demo.</p></section><section class='card'><span>Módulo</span><h3>advisor_project_matrix</h3><p>Producto habilitado para esta demo.</p></section><section class='card'><span>Módulo</span><h3>risk_to_action_queue</h3><p>Producto habilitado para esta demo.</p></section><section class='card'><span>Módulo</span><h3>feedback_loop</h3><p>Producto habilitado para esta demo.</p></section><section class='card'><span>Módulo</span><h3>experiment_policy</h3><p>Producto habilitado para esta demo.</p></section></section>
+   <section class='grid'><div class='card' style='grid-column:1/-1'><span>Rutas</span><h3>Demo habilitada</h3><p>Yo expongo solo rutas seguras para este cliente.</p><a class='btn secondary' href='/dashboard/action-feedback'>/dashboard/action-feedback</a><a class='btn secondary' href='/experiments/policy/recommendations'>/experiments/policy/recommendations</a><a class='btn secondary' href='/experiments/policy/segments'>/experiments/policy/segments</a><a class='btn secondary' href='/product/demo/package'>/product/demo/package</a></div></section>
+-  <footer class='footer'>Commercial Intelligence OS · Tenant <code>cliente_bravo</code> · generado 2026-07-04T22:15:37+00:00</footer>
++  <footer class='footer'>Commercial Intelligence OS · Tenant <code>cliente_bravo</code> · generado 2026-07-05T01:14:57+00:00</footer>
+ </body>
+ </html>
+\ No newline at end of file
+diff --git a/mnt/data/tmp_v25/machine_learning_university_v2_5_client_success_and_renewal_intelligence/reports/client_tenants/cliente_bravo/public_payload.json b/./reports/client_tenants/cliente_bravo/public_payload.json
+index a2cb5b9..8e249d9 100644
+--- a/mnt/data/tmp_v25/machine_learning_university_v2_5_client_success_and_renewal_intelligence/reports/client_tenants/cliente_bravo/public_payload.json
++++ b/./reports/client_tenants/cliente_bravo/public_payload.json
+@@ -1,8 +1,47 @@
+ {
+-  "p0_p1": {
+-    "operaciones": 761,
+-    "valor_en_riesgo": 21191194.15
+-  },
++  "top_asesores": [
++    {
++      "asesor_anon": "Asesor_26DEBB0E",
++      "operaciones": 130,
++      "valor_en_riesgo": 4395201.77,
++      "riesgo_promedio": 0.4635,
++      "p0_p1": 130,
++      "asesor": "Asesor_B23A6A84"
++    },
++    {
++      "asesor_anon": "Asesor_10B2BE3F",
++      "operaciones": 216,
++      "valor_en_riesgo": 3678489.2,
++      "riesgo_promedio": 0.2044,
++      "p0_p1": 216,
++      "asesor": "Asesor_6B86B273"
++    },
++    {
++      "asesor_anon": "Asesor_C931A67B",
++      "operaciones": 66,
++      "valor_en_riesgo": 2219467.94,
++      "riesgo_promedio": 0.4375,
++      "p0_p1": 65,
++      "asesor": "Asesor_D4735E3A"
++    },
++    {
++      "asesor_anon": "Asesor_1F3B24E1",
++      "operaciones": 58,
++      "valor_en_riesgo": 1961023.49,
++      "riesgo_promedio": 0.5103,
++      "p0_p1": 58,
++      "asesor": "Asesor_4E074085"
++    },
++    {
++      "asesor_anon": "Asesor_B56EAA59",
++      "operaciones": 58,
++      "valor_en_riesgo": 1892075.93,
++      "riesgo_promedio": 0.5045,
++      "p0_p1": 58,
++      "asesor": "Asesor_4B227777"
++    }
++  ],
++  "fecha_generacion": "2026-07-04T04:23:08",
+   "top_proyectos": [
+     {
+       "proyecto": "Tizón y Bueno",
+@@ -40,6 +79,14 @@
+       "p0_p1": 53
+     }
+   ],
++  "riesgo_promedio": 0.3982,
++  "valor_total_en_riesgo": 21232580.48,
++  "data_mode": "crm",
++  "p0_p1": {
++    "operaciones": 761,
++    "valor_en_riesgo": 21191194.15
++  },
++  "total_operaciones": 763,
+   "top_canales": [
+     {
+       "canal": "sin_clasificar",
+@@ -49,53 +96,6 @@
+       "p0_p1": 761
+     }
+   ],
+-  "fecha_generacion": "2026-07-04T04:23:08",
+-  "valor_total_en_riesgo": 21232580.48,
+-  "total_operaciones": 763,
+-  "top_asesores": [
+-    {
+-      "asesor_anon": "Asesor_26DEBB0E",
+-      "operaciones": 130,
+-      "valor_en_riesgo": 4395201.77,
+-      "riesgo_promedio": 0.4635,
+-      "p0_p1": 130,
+-      "asesor": "Asesor_B23A6A84"
+-    },
+-    {
+-      "asesor_anon": "Asesor_10B2BE3F",
+-      "operaciones": 216,
+-      "valor_en_riesgo": 3678489.2,
+-      "riesgo_promedio": 0.2044,
+-      "p0_p1": 216,
+-      "asesor": "Asesor_6B86B273"
+-    },
+-    {
+-      "asesor_anon": "Asesor_C931A67B",
+-      "operaciones": 66,
+-      "valor_en_riesgo": 2219467.94,
+-      "riesgo_promedio": 0.4375,
+-      "p0_p1": 65,
+-      "asesor": "Asesor_D4735E3A"
+-    },
+-    {
+-      "asesor_anon": "Asesor_1F3B24E1",
+-      "operaciones": 58,
+-      "valor_en_riesgo": 1961023.49,
+-      "riesgo_promedio": 0.5103,
+-      "p0_p1": 58,
+-      "asesor": "Asesor_4E074085"
+-    },
+-    {
+-      "asesor_anon": "Asesor_B56EAA59",
+-      "operaciones": 58,
+-      "valor_en_riesgo": 1892075.93,
+-      "riesgo_promedio": 0.5045,
+-      "p0_p1": 58,
+-      "asesor": "Asesor_4B227777"
+-    }
+-  ],
+-  "riesgo_promedio": 0.3982,
+-  "data_mode": "crm",
+   "tenant_id": "cliente_bravo",
+   "tenant_segment": "gerencia_comercial",
+   "enabled_modules": [
+diff --git a/mnt/data/tmp_v25/machine_learning_university_v2_5_client_success_and_renewal_intelligence/reports/client_tenants/cliente_condor/client_demo_package.json b/./reports/client_tenants/cliente_condor/client_demo_package.json
+index ce442bf..c7d391b 100644
+--- a/mnt/data/tmp_v25/machine_learning_university_v2_5_client_success_and_renewal_intelligence/reports/client_tenants/cliente_condor/client_demo_package.json
++++ b/./reports/client_tenants/cliente_condor/client_demo_package.json
+@@ -2,7 +2,7 @@
+   "tenant_id": "cliente_condor",
+   "display_name": "Cliente Cóndor · Comité de inversión",
+   "segment": "inversion_y_directorio",
+-  "generated_at": "2026-07-04T22:15:37+00:00",
++  "generated_at": "2026-07-05T01:14:57+00:00",
+   "token_env_var": "MLU_DEMO_TOKEN_CLIENTE_CONDOR",
+   "enabled_modules": [
+     "ceo_brief",
+diff --git a/mnt/data/tmp_v25/machine_learning_university_v2_5_client_success_and_renewal_intelligence/reports/client_tenants/cliente_condor/landing.html b/./reports/client_tenants/cliente_condor/landing.html
+index 87eca7c..7d0f703 100644
+--- a/mnt/data/tmp_v25/machine_learning_university_v2_5_client_success_and_renewal_intelligence/reports/client_tenants/cliente_condor/landing.html
++++ b/./reports/client_tenants/cliente_condor/landing.html
+@@ -38,6 +38,6 @@ code { background:#050816; color:#DFE8FF; border-radius:7px; padding:2px 6px; }
+   </section>
+   <section class='grid'><section class='card'><span>Módulo</span><h3>ceo_brief</h3><p>Producto habilitado para esta demo.</p></section><section class='card'><span>Módulo</span><h3>real_mart_evidence_layer</h3><p>Producto habilitado para esta demo.</p></section><section class='card'><span>Módulo</span><h3>market_intelligence</h3><p>Producto habilitado para esta demo.</p></section><section class='card'><span>Módulo</span><h3>pricing_gap</h3><p>Producto habilitado para esta demo.</p></section><section class='card'><span>Módulo</span><h3>productized_os</h3><p>Producto habilitado para esta demo.</p></section><section class='card'><span>Módulo</span><h3>privacy_audit</h3><p>Producto habilitado para esta demo.</p></section></section>
+   <section class='grid'><div class='card' style='grid-column:1/-1'><span>Rutas</span><h3>Demo habilitada</h3><p>Yo expongo solo rutas seguras para este cliente.</p><a class='btn secondary' href='/dashboard/real-marts'>/dashboard/real-marts</a><a class='btn secondary' href='/dashboard/productized-os'>/dashboard/productized-os</a><a class='btn secondary' href='/metadata/real-marts'>/metadata/real-marts</a><a class='btn secondary' href='/metadata/productized-os'>/metadata/productized-os</a></div></section>
+-  <footer class='footer'>Commercial Intelligence OS · Tenant <code>cliente_condor</code> · generado 2026-07-04T22:15:37+00:00</footer>
++  <footer class='footer'>Commercial Intelligence OS · Tenant <code>cliente_condor</code> · generado 2026-07-05T01:14:57+00:00</footer>
+ </body>
+ </html>
+\ No newline at end of file
+diff --git a/mnt/data/tmp_v25/machine_learning_university_v2_5_client_success_and_renewal_intelligence/reports/client_tenants/cliente_condor/public_payload.json b/./reports/client_tenants/cliente_condor/public_payload.json
+index 01228be..37ece7e 100644
+--- a/mnt/data/tmp_v25/machine_learning_university_v2_5_client_success_and_renewal_intelligence/reports/client_tenants/cliente_condor/public_payload.json
++++ b/./reports/client_tenants/cliente_condor/public_payload.json
+@@ -1,8 +1,47 @@
+ {
+-  "p0_p1": {
+-    "operaciones": 761,
+-    "valor_en_riesgo": 21191194.15
+-  },
++  "top_asesores": [
++    {
++      "asesor_anon": "Asesor_26DEBB0E",
++      "operaciones": 130,
++      "valor_en_riesgo": 4395201.77,
++      "riesgo_promedio": 0.4635,
++      "p0_p1": 130,
++      "asesor": "Asesor_B23A6A84"
++    },
++    {
++      "asesor_anon": "Asesor_10B2BE3F",
++      "operaciones": 216,
++      "valor_en_riesgo": 3678489.2,
++      "riesgo_promedio": 0.2044,
++      "p0_p1": 216,
++      "asesor": "Asesor_6B86B273"
++    },
++    {
++      "asesor_anon": "Asesor_C931A67B",
++      "operaciones": 66,
++      "valor_en_riesgo": 2219467.94,
++      "riesgo_promedio": 0.4375,
++      "p0_p1": 65,
++      "asesor": "Asesor_D4735E3A"
++    },
++    {
++      "asesor_anon": "Asesor_1F3B24E1",
++      "operaciones": 58,
++      "valor_en_riesgo": 1961023.49,
++      "riesgo_promedio": 0.5103,
++      "p0_p1": 58,
++      "asesor": "Asesor_4E074085"
++    },
++    {
++      "asesor_anon": "Asesor_B56EAA59",
++      "operaciones": 58,
++      "valor_en_riesgo": 1892075.93,
++      "riesgo_promedio": 0.5045,
++      "p0_p1": 58,
++      "asesor": "Asesor_4B227777"
++    }
++  ],
++  "fecha_generacion": "2026-07-04T04:23:08",
+   "top_proyectos": [
+     {
+       "proyecto": "Tizón y Bueno",
+@@ -40,6 +79,14 @@
+       "p0_p1": 53
+     }
+   ],
++  "riesgo_promedio": 0.3982,
++  "valor_total_en_riesgo": 21232580.48,
++  "data_mode": "crm",
++  "p0_p1": {
++    "operaciones": 761,
++    "valor_en_riesgo": 21191194.15
++  },
++  "total_operaciones": 763,
+   "top_canales": [
+     {
+       "canal": "sin_clasificar",
+@@ -49,53 +96,6 @@
+       "p0_p1": 761
+     }
+   ],
+-  "fecha_generacion": "2026-07-04T04:23:08",
+-  "valor_total_en_riesgo": 21232580.48,
+-  "total_operaciones": 763,
+-  "top_asesores": [
+-    {
+-      "asesor_anon": "Asesor_26DEBB0E",
+-      "operaciones": 130,
+-      "valor_en_riesgo": 4395201.77,
+-      "riesgo_promedio": 0.4635,
+-      "p0_p1": 130,
+-      "asesor": "Asesor_B23A6A84"
+-    },
+-    {
+-      "asesor_anon": "Asesor_10B2BE3F",
+-      "operaciones": 216,
+-      "valor_en_riesgo": 3678489.2,
+-      "riesgo_promedio": 0.2044,
+-      "p0_p1": 216,
+-      "asesor": "Asesor_6B86B273"
+-    },
+-    {
+-      "asesor_anon": "Asesor_C931A67B",
+-      "operaciones": 66,
+-      "valor_en_riesgo": 2219467.94,
+-      "riesgo_promedio": 0.4375,
+-      "p0_p1": 65,
+-      "asesor": "Asesor_D4735E3A"
+-    },
+-    {
+-      "asesor_anon": "Asesor_1F3B24E1",
+-      "operaciones": 58,
+-      "valor_en_riesgo": 1961023.49,
+-      "riesgo_promedio": 0.5103,
+-      "p0_p1": 58,
+-      "asesor": "Asesor_4E074085"
+-    },
+-    {
+-      "asesor_anon": "Asesor_B56EAA59",
+-      "operaciones": 58,
+-      "valor_en_riesgo": 1892075.93,
+-      "riesgo_promedio": 0.5045,
+-      "p0_p1": 58,
+-      "asesor": "Asesor_4B227777"
+-    }
+-  ],
+-  "riesgo_promedio": 0.3982,
+-  "data_mode": "crm",
+   "tenant_id": "cliente_condor",
+   "tenant_segment": "inversion_y_directorio",
+   "enabled_modules": [
+diff --git a/mnt/data/tmp_v25/machine_learning_university_v2_5_client_success_and_renewal_intelligence/reports/client_tenants/multi_tenant_manifest.json b/./reports/client_tenants/multi_tenant_manifest.json
+index 84b983a..2ac1de8 100644
+--- a/mnt/data/tmp_v25/machine_learning_university_v2_5_client_success_and_renewal_intelligence/reports/client_tenants/multi_tenant_manifest.json
++++ b/./reports/client_tenants/multi_tenant_manifest.json
+@@ -2,7 +2,7 @@
+   "version": "2.2.0",
+   "product_name": "Commercial Intelligence OS",
+   "packaging_mode": "multi_tenant_demo_safe",
+-  "generated_at": "2026-07-04T22:15:37+00:00",
++  "generated_at": "2026-07-05T01:14:57+00:00",
+   "tenant_count": 3,
+   "privacy_ok_count": 3,
+   "status": "ok",
+@@ -11,7 +11,7 @@
+       "tenant_id": "cliente_alpha",
+       "display_name": "Cliente Alpha · Desarrollador multifamiliar",
+       "segment": "desarrollador_inmobiliario",
+-      "generated_at": "2026-07-04T22:15:37+00:00",
++      "generated_at": "2026-07-05T01:14:57+00:00",
+       "token_env_var": "MLU_DEMO_TOKEN_CLIENTE_ALPHA",
+       "enabled_modules": [
+         "ceo_brief",
+@@ -40,7 +40,7 @@
+       "tenant_id": "cliente_bravo",
+       "display_name": "Cliente Bravo · Gerencia comercial",
+       "segment": "gerencia_comercial",
+-      "generated_at": "2026-07-04T22:15:37+00:00",
++      "generated_at": "2026-07-05T01:14:57+00:00",
+       "token_env_var": "MLU_DEMO_TOKEN_CLIENTE_BRAVO",
+       "enabled_modules": [
+         "ceo_brief",
+@@ -69,7 +69,7 @@
+       "tenant_id": "cliente_condor",
+       "display_name": "Cliente Cóndor · Comité de inversión",
+       "segment": "inversion_y_directorio",
+-      "generated_at": "2026-07-04T22:15:37+00:00",
++      "generated_at": "2026-07-05T01:14:57+00:00",
+       "token_env_var": "MLU_DEMO_TOKEN_CLIENTE_CONDOR",
+       "enabled_modules": [
+         "ceo_brief",
+diff --git a/mnt/data/tmp_v25/machine_learning_university_v2_5_client_success_and_renewal_intelligence/reports/client_tenants/multi_tenant_validation.json b/./reports/client_tenants/multi_tenant_validation.json
+index 24995e8..4f25adc 100644
+--- a/mnt/data/tmp_v25/machine_learning_university_v2_5_client_success_and_renewal_intelligence/reports/client_tenants/multi_tenant_validation.json
++++ b/./reports/client_tenants/multi_tenant_validation.json
+@@ -1,6 +1,6 @@
+ {
+   "status": "ok",
+-  "generated_at": "2026-07-04T22:15:37+00:00",
++  "generated_at": "2026-07-05T01:14:57+00:00",
+   "errors": [],
+   "warnings": [],
+   "tenant_count": 3,
+diff --git a/./requirements-ci.txt b/./requirements-ci.txt
+new file mode 100644
+index 0000000..60e8439
+--- /dev/null
++++ b/./requirements-ci.txt
+@@ -0,0 +1,10 @@
++# Yo uso este set liviano para workflows que solo validan API/demo/metadata.
++pandas>=2.0
++numpy>=1.24
++pyyaml>=6.0
++pytest>=8.0
++fastapi>=0.110
++pydantic>=2.0
++httpx>=0.27
++scikit-learn>=1.3
++joblib>=1.3
+diff --git a/./src/mlu/__pycache__/__init__.cpython-313.pyc b/./src/mlu/__pycache__/__init__.cpython-313.pyc
+new file mode 100644
+index 0000000..c090512
+Binary files /dev/null and b/./src/mlu/__pycache__/__init__.cpython-313.pyc differ
+diff --git a/./src/mlu/__pycache__/config.cpython-313.pyc b/./src/mlu/__pycache__/config.cpython-313.pyc
+new file mode 100644
+index 0000000..ba275a7
+Binary files /dev/null and b/./src/mlu/__pycache__/config.cpython-313.pyc differ
+diff --git a/./src/mlu/__pycache__/economics.cpython-313.pyc b/./src/mlu/__pycache__/economics.cpython-313.pyc
+new file mode 100644
+index 0000000..19a530e
+Binary files /dev/null and b/./src/mlu/__pycache__/economics.cpython-313.pyc differ
+diff --git a/./src/mlu/__pycache__/multi_tenant_client_packaging.cpython-313.pyc b/./src/mlu/__pycache__/multi_tenant_client_packaging.cpython-313.pyc
+new file mode 100644
+index 0000000..2824d89
+Binary files /dev/null and b/./src/mlu/__pycache__/multi_tenant_client_packaging.cpython-313.pyc differ
+diff --git a/./tests/__pycache__/test_multi_tenant_client_packaging.cpython-313-pytest-9.0.2.pyc b/./tests/__pycache__/test_multi_tenant_client_packaging.cpython-313-pytest-9.0.2.pyc
+new file mode 100644
+index 0000000..a1acb93
+Binary files /dev/null and b/./tests/__pycache__/test_multi_tenant_client_packaging.cpython-313-pytest-9.0.2.pyc differ

@@ -1,3 +1,3 @@
 amount,amount_formatted,concept,currency,due_date,issue_date,milestone_id,payment_id,status
-9000.0,"USD 9,000.00","Kickoff, gobierno y privacidad",USD,2026-07-14,2026-07-07,M1,PAY-M1,pending
-9000.0,"USD 9,000.00","Demo ejecutiva, handoff y cierre MVP",USD,2026-08-06,2026-07-30,M3,PAY-M3,pending
+9000.0,"USD 9,000.00","Kickoff, gobierno y privacidad",USD,2026-07-15,2026-07-08,M1,PAY-M1,pending
+9000.0,"USD 9,000.00","Demo ejecutiva, handoff y cierre MVP",USD,2026-08-07,2026-07-31,M3,PAY-M3,pending

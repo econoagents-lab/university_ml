@@ -25,7 +25,8 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install pyyaml pandas pytest fastapi pydantic httpx
+          # Yo instalo dependencias CI suficientes para importar FastAPI sin romper por ML opcional.
+          pip install pyyaml pandas pytest fastapi pydantic httpx numpy scikit-learn joblib
       - name: Build tenant packages
         run: python scripts/116_run_v22_multi_tenant_client_packaging.py
       - name: Test tenant packaging

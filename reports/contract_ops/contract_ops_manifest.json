@@ -1,6 +1,6 @@
 {
   "version": "v2.4_contract_to_signature_and_invoice_ops",
-  "created_at": "2026-07-04T23:15:04+00:00",
+  "created_at": "2026-07-05T01:11:13+00:00",
   "tenant_count": 3,
   "status": "ok",
   "index_html": "reports/contract_ops/contract_ops_index.html",
@@ -9,20 +9,20 @@
   "tenants": [
     {
       "tenant_id": "cliente_alpha",
-      "work_order_id": "WO-CLIENTE_ALPHA-20260704",
-      "invoice_id": "CI-OS-CLIENTE_ALPHA-20260704",
+      "work_order_id": "WO-CLIENTE_ALPHA-20260705",
+      "invoice_id": "CI-OS-CLIENTE_ALPHA-20260705",
       "total": "USD 7,500.00"
     },
     {
       "tenant_id": "cliente_bravo",
-      "work_order_id": "WO-CLIENTE_BRAVO-20260704",
-      "invoice_id": "CI-OS-CLIENTE_BRAVO-20260704",
+      "work_order_id": "WO-CLIENTE_BRAVO-20260705",
+      "invoice_id": "CI-OS-CLIENTE_BRAVO-20260705",
       "total": "USD 18,000.00"
     },
     {
       "tenant_id": "cliente_condor",
-      "work_order_id": "WO-CLIENTE_CONDOR-20260704",
-      "invoice_id": "CI-OS-CLIENTE_CONDOR-20260704",
+      "work_order_id": "WO-CLIENTE_CONDOR-20260705",
+      "invoice_id": "CI-OS-CLIENTE_CONDOR-20260705",
       "total": "USD 38,000.00"
     }
   ]

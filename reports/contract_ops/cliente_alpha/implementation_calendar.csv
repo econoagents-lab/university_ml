@@ -1,4 +1,4 @@
 acceptance_criteria,billing_pct,end_date,milestone_id,name,owner,start_date,status
-contrato de métricas aprobado; política de privacidad aprobada; ruta privada de data confirmada,50.0,2026-07-10,M1,"Kickoff, gobierno y privacidad",Product Owner / CDO,2026-07-07,planned
-ranking de riesgo generado; payload público agregado validado; dashboards base generados,0.0,2026-07-23,M2,"Marts, scoring y dashboards base",Data/MLOps,2026-07-13,planned
-demo ejecutiva presentada; handoff técnico entregado; checklist de aceptación firmado,50.0,2026-08-05,M3,"Demo ejecutiva, handoff y cierre MVP",Intelligence Lead,2026-07-30,planned
+contrato de métricas aprobado; política de privacidad aprobada; ruta privada de data confirmada,50.0,2026-07-11,M1,"Kickoff, gobierno y privacidad",Product Owner / CDO,2026-07-08,planned
+ranking de riesgo generado; payload público agregado validado; dashboards base generados,0.0,2026-07-24,M2,"Marts, scoring y dashboards base",Data/MLOps,2026-07-14,planned
+demo ejecutiva presentada; handoff técnico entregado; checklist de aceptación firmado,50.0,2026-08-06,M3,"Demo ejecutiva, handoff y cierre MVP",Intelligence Lead,2026-07-31,planned

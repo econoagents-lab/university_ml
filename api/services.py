@@ -4,7 +4,6 @@ import pandas as pd
 
 from src.mlu.config import MODEL_PATH
 from src.mlu.economics import recommend_decision, expected_value_at_risk
-from src.mlu.model import load_model
 
 
 def infer_channel(medio: str) -> str:
@@ -49,10 +48,16 @@ def predict_riesgo_caida(payload: dict) -> dict:
     modelo_usado = "baseline_rule"
     if MODEL_PATH.exists():
         try:
+            # Yo importo el modelo de forma diferida para que endpoints de demo, metadata
+            # y multi-tenant no dependan de joblib/scikit-learn durante tests livianos de CI.
+            from src.mlu.model import load_model
+
             model = load_model(MODEL_PATH)
             riesgo = float(model.predict_proba(pd.DataFrame([row]))[:, 1][0])
             modelo_usado = "riesgo_caida_model.joblib"
         except Exception:
+            # Yo protejo la API: si el artefacto del modelo o sus dependencias no están
+            # disponibles, sirvo baseline en vez de romper rutas que no necesitan ML.
             riesgo = baseline_score(payload)
     else:
         riesgo = baseline_score(payload)

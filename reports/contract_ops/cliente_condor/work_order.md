@@ -1,10 +1,10 @@
 # Orden de Trabajo · cliente_condor
 
 ## Resumen
-- Work order: **WO-CLIENTE_CONDOR-20260704**
+- Work order: **WO-CLIENTE_CONDOR-20260705**
 - Paquete: **Commercial Intelligence OS Enterprise**
 - Estado: **work_order_created**
-- Inicio tentativo: **2026-07-06**
+- Inicio tentativo: **2026-07-07**
 - Setup fee: **USD 38,000.00**
 - Mensualidad: **USD 4,500.00**
 - Total año 1: **USD 92,000.00**
@@ -18,9 +18,9 @@ No se envía PII del CRM. Los anexos comerciales usan métricas agregadas, contr
 ## Hitos
 | milestone_id | name | start_date | end_date | billing_pct | status |
 | --- | --- | --- | --- | --- | --- |
-| M1 | Kickoff, gobierno y privacidad | 2026-07-07 | 2026-07-10 | 50.0 | planned |
-| M2 | Marts, scoring y dashboards base | 2026-07-13 | 2026-07-23 | 0.0 | planned |
-| M3 | Demo ejecutiva, handoff y cierre MVP | 2026-07-30 | 2026-08-05 | 50.0 | planned |
+| M1 | Kickoff, gobierno y privacidad | 2026-07-08 | 2026-07-11 | 50.0 | planned |
+| M2 | Marts, scoring y dashboards base | 2026-07-14 | 2026-07-24 | 0.0 | planned |
+| M3 | Demo ejecutiva, handoff y cierre MVP | 2026-07-31 | 2026-08-06 | 50.0 | planned |
 
 ## Entregables
 | deliverable_id | deliverable | milestone_id | owner | status |
@@ -46,11 +46,11 @@ No se envía PII del CRM. Los anexos comerciales usan métricas agregadas, contr
 ## Calendario de pagos
 | payment_id | concept | issue_date | due_date | amount_formatted | status |
 | --- | --- | --- | --- | --- | --- |
-| PAY-M1 | Kickoff, gobierno y privacidad | 2026-07-07 | 2026-07-14 | USD 19,000.00 | pending |
-| PAY-M3 | Demo ejecutiva, handoff y cierre MVP | 2026-07-30 | 2026-08-06 | USD 19,000.00 | pending |
+| PAY-M1 | Kickoff, gobierno y privacidad | 2026-07-08 | 2026-07-15 | USD 19,000.00 | pending |
+| PAY-M3 | Demo ejecutiva, handoff y cierre MVP | 2026-07-31 | 2026-08-07 | USD 19,000.00 | pending |
 
 ## Proforma
-- ID: **CI-OS-CLIENTE_CONDOR-20260704**
+- ID: **CI-OS-CLIENTE_CONDOR-20260705**
 - Total: **USD 38,000.00**
 
 ## Siguiente acción

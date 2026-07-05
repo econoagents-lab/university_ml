@@ -177,7 +177,7 @@
       }
     ],
     "data_mode": "crm",
-    "fecha_generacion": "2026-07-04T04:23:08"
+    "fecha_generacion": "2026-07-04T20:10:16"
   },
   "family_metrics": {
     "metric_group": "public_privacy",
@@ -199,5 +199,5 @@
     "decision": "Yo sirvo solo payload público agregado en Railway y bloqueo fallback demo en producción."
   },
   "recommended_action": "Servir solo agregados públicos; bloquear sample fallback y cualquier campo sensible.",
-  "generated_at": "2026-07-04T18:15:07"
+  "generated_at": "2026-07-04T20:11:17"
 }

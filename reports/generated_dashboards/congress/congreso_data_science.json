@@ -189,7 +189,7 @@
       }
     ],
     "data_mode": "crm",
-    "fecha_generacion": "2026-07-04T04:23:08"
+    "fecha_generacion": "2026-07-04T20:10:16"
   },
   "family_metrics": {
     "metric_group": "executive",
@@ -197,5 +197,5 @@
     "decision": "Yo combino riesgo, RAG y MLOps para decidir qué debe revisar gerencia."
   },
   "recommended_action": "Validar citas, guardrails y métricas de evaluación antes de presentar o publicar el asistente.",
-  "generated_at": "2026-07-04T18:15:07"
+  "generated_at": "2026-07-04T20:11:17"
 }
